@@ -1,0 +1,16 @@
+{
+  "name": "loruni",
+  "private": true,
+  "packageManager": "pnpm@10.34.5",
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "dev": "pnpm --parallel -r dev",
+    "dev:website": "pnpm --filter @loruni/website dev",
+    "dev:ds": "pnpm --filter @loruni/design-system dev",
+    "build": "pnpm -r build",
+    "build:website": "pnpm --filter @loruni/website build",
+    "build:ds": "pnpm --filter @loruni/design-system build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  }
+}

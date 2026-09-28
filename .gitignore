@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+.env*
+!.env.example
+.vercel/
+*.log
+.DS_Store
+Thumbs.db
+.playwright-cli/
+.impeccable/hook.cache.json
+.impeccable/config.local.json
+.impeccable/review/
+.impeccable/mocks/
