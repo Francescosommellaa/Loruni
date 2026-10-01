@@ -58,6 +58,31 @@ Quando un concetto ricorre, identificarlo, standardizzarlo e riutilizzarlo. Prim
 - Usare CSS per feedback semplici e Motion per movimento React che lo richiede. GSAP solo per una necessità concreta, senza più librerie per lo stesso comportamento.
 - Conservare originali del marchio in `Logo/`; usare gli asset condivisi tramite `packages/ui`. Asset esclusivi restano nell'app. Non duplicare asset senza un vincolo tecnico o un uso concreto.
 
+## Coerenza UI e layout
+
+Regole vincolanti approvate dall'utente il 2026-10-01. Consultare i contratti e lo stato della base in `DESIGN.md` prima di ogni modifica visiva.
+
+- Assegnare un solo proprietario a ogni responsabilità: container per larghezza/gutter, pagina o sezione per ritmo tra blocchi, grid/stack/flex per gap tra fratelli, superficie per padding interno, ruolo tipografico per metriche del testo. Un figlio non replica la responsabilità del parent.
+- Distinguere gutter della pagina, distanza tra sezioni, gap del gruppo e padding interno. I componenti riutilizzabili non aggiungono margin esterni di default. Non basare il layout sul margin collapsing.
+- Prima di cambiare spazio, ricostruire parent, child e wrapper: gap, padding, margin, line-height, metriche font, baseline, icona e bordi. Correggere la causa nel livello proprietario, non compensarla con offset, margin negativi o transform arbitrari.
+- Non sommare padding sullo stesso asse senza intenzione esplicita. Per una sola superficie evitare anche border, background, shadow e radius duplicati tra wrapper e contenuto. Eliminare wrapper senza responsabilità reale.
+- Usare una scala condivisa per spacing e ruoli semantici per tipografia, icone, radius, motion e livelli di sovrapposizione. Consumare i token esistenti; introdurre quelli mancanti nella fonte CSS condivisa quando si implementa il concetto. Non copiare gli esempi numerici delle istruzioni come valori approvati né creare scale preventive.
+- Mantenere un pattern principale di container; rendere esplicite le sezioni full bleed. Non cambiare il container globale per una sola pagina. La pagina decide posizione e larghezza nel contesto; il componente decide la propria superficie e i controlli interni.
+- Definire responsive e relativo proprietario insieme al componente: cosa cambia e a quale soglia. Preferire adattamento al contenuto con grid, minmax, wrapping e clamp; usare soglie documentate del sistema, evitando media query disperse per lo stesso layout.
+- Definire un contratto per ogni famiglia realmente presente: Button, campi, superfici, layout e tipografia. Riutilizzare altezza, padding, radius, gap icona e stati della stessa variant. Aggiungere variant semantiche solo per differenze reali; `className` e `style` non devono aggirare abitualmente il contratto.
+- Documentare le eccezioni presso il codice e, se sistemiche, in `DESIGN.md`: motivo, proprietario, consumer coinvolti e limiti. Le prove locali del playground restano identificate come esperimenti, senza alterare silenziosamente le fondamenta comuni.
+- Usare flusso normale per il layout; absolute soltanto per sovrapposizioni intenzionali, decorazioni e dimostrazioni che lo richiedono. Preferire dimensioni guidate dal contenuto, min-height o ratio ai contenitori di testo con altezza fissa; definire ratio e fit dei media quando necessari.
+- Ogni animazione ha un proprietario: controllo per feedback, superficie per ingresso/uscita, sezione per reveal, navigazione per transizioni di pagina. Evitare delay, transform e fade sommati tra parent e child. Usare durate/easing condivisi e rispettare movimento ridotto.
+- Prima di aggiungere z-index, transform, opacity, filter o isolation, verificare gli stacking context. Usare livelli semantici quando servono, senza valori enormi per vincere conflitti. Risolvere specificità e ownership; non usare `!important` come patch visiva.
+- Il CSS condiviso contiene soltanto fondamenta, primitive e regole comuni, senza fix di pagina. Le composizioni appartengono all'app o alla feature; non distribuire la stessa proprietà fra globale, componente, inline e override locali.
+- Considerare default, hover, active, focus, disabled, selected, loading ed error quando applicabili. Preservare focus accessibile; riutilizzare pattern coerenti per vuoto/caricamento/errore quando esistono consumer reali.
+- Verificare contenuti corti/lunghi, assenti o numerosi e media mancanti. Per modifiche condivise cercare tutti i consumer e confrontare pagine analoghe; non riparare regressioni globali con patch locali senza localizzarne la causa.
+- Quando cambia una decisione sistemica, implementarla nel proprietario, allineare i consumer interessati e aggiornare `DESIGN.md` nella stessa task. Una decisione precedente resta il default; nuove primitive richiedono un pattern frequente, stabile e utile.
+
+Preflight UI: individuare parent, proprietari di larghezza/gutter/gap/padding, componente o pattern più vicino, token e responsive; consultare decisioni precedenti prima di implementare.
+
+Postflight UI: controllare spacing e superfici doppi, valori fuori sistema, wrapper/override, contratti, contenuti variabili, mobile/tablet/desktop, consumer condivisi, stati e accessibilità. Correggere i problemi e registrare le decisioni; il superamento di lint/build non attesta coerenza visiva.
+
 ## Workflow, test e manutenzione
 
 - Prima di scrivere: leggere queste regole, individuare la casa del codice, cercare implementazioni analoghe e scegliere la soluzione più semplice coerente con il progetto.
