@@ -1,0 +1,17 @@
+.landing-header, .landing-footer { display: flex; justify-content: space-between; align-items: center; padding: 1rem clamp(1.25rem, 5vw, 5rem); gap: 1.5rem; }
+.landing-header { border-bottom: 1px solid var(--line); }
+.landing-header img { display: block; width: 132px; height: 84px; }
+.landing-header a { display: inline-flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+.landing-header a:last-child { padding-block: 0.75rem; }
+.landing-hero { min-height: 75svh; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(3rem, 8vw, 8rem) clamp(1.25rem, 5vw, 5rem) 3rem; gap: 4rem; }
+.landing-hero h1 { max-width: 18ch; font-size: clamp(3rem, 7.5vw, 6rem); letter-spacing: -0.035em; margin: 0; }
+.landing-hero h1 span { color: var(--color-corallo); }
+.hero-bottom { display: flex; justify-content: space-between; align-items: end; gap: 2rem; }
+.hero-bottom p { font-size: 1.25rem; margin: 0; }
+.landing-themes { background: var(--color-avorio); color: var(--color-grafite); padding: clamp(3rem, 7vw, 6rem) clamp(1.25rem, 5vw, 5rem); scroll-margin-top: 2rem; }
+.landing-themes h2 { font-size: clamp(2.5rem, 5vw, 4.5rem); letter-spacing: -0.025em; max-width: 12ch; margin-bottom: 3rem; }
+.landing-themes ul { list-style: none; padding: 0; margin: 0 0 0 auto; max-width: 800px; }
+.landing-themes li { display: flex; justify-content: space-between; align-items: center; gap: 1rem; border-top: 1px solid currentColor; padding-block: 1.25rem; font-family: var(--font-display), sans-serif; font-size: clamp(2rem, 4vw, 3rem); }
+.landing-themes li:last-child { border-bottom: 1px solid currentColor; }
+.landing-footer { min-height: 100px; }
+@media (max-width: 640px) { .landing-header img { width: 105px; height: 67px; } .hero-bottom { align-items: start; flex-direction: column; } .landing-hero { min-height: 70svh; } .hero-bottom .button { width: 100%; } }

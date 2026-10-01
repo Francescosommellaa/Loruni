@@ -1,0 +1,14 @@
+{
+  "name": "@loruni/ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./fonts": "./src/fonts.ts",
+    "./styles.css": "./src/styles.css",
+    "./brand/*": "./brand/*"
+  },
+  "scripts": { "typecheck": "tsc --noEmit" },
+  "dependencies": { "next": "catalog:", "react": "catalog:" }
+}

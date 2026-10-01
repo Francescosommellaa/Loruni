@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+dist/
+coverage/
+*.tsbuildinfo
+.env*
+!.env.example
+output/
+.playwright-cli/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/config.local.json
+*.log
+.DS_Store
+Thumbs.db
