@@ -53,6 +53,7 @@ docs/
   architecture.md
   design.md
   playground.md
+  seo.md
   verification.md
 scripts/
   sync-fonts.mjs
@@ -70,7 +71,7 @@ Il playground parte con tre aree: Layout (editoriale, griglia, righe), Component
 
 Questa inizializzazione rende entrambe le app eseguibili. La landing è una prima composizione tipografica: copy, fotografie, contatti e contenuti operativi definitivi devono ancora essere scelti. Non sono inventati indirizzi, prezzi, orari o servizi. Nessun esperimento è stato promosso automaticamente.
 
-Il playground invia direttive `noindex, nofollow` e un `robots.txt` che esclude tutti i percorsi. Queste direttive non sono autenticazione: prima di ospitare materiale riservato occorre proteggere l'accesso sul servizio di hosting.
+Il playground invia direttive `noindex, nofollow` e un `robots.txt` che esclude tutti i percorsi. Il blocco della scansione può impedire ai crawler di leggere `noindex`: l'esclusione effettiva va verificata sull'hosting. Queste direttive non sono autenticazione: prima di ospitare materiale riservato occorre proteggere l'accesso. La policy e le integrazioni ancora necessarie sono in [SEO e discovery AI](docs/seo.md).
 
 ## Documentazione
 
@@ -78,6 +79,7 @@ Il playground invia direttive `noindex, nofollow` e un `robots.txt` che esclude 
 - [Architettura](docs/architecture.md)
 - [Direzione visiva](docs/design.md)
 - [Workflow del playground](docs/playground.md)
+- [SEO e discovery AI](docs/seo.md)
 - [Verifiche e limiti](docs/verification.md)
 - [Istruzioni operative](AGENTS.md)
 

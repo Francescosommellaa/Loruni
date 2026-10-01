@@ -83,6 +83,17 @@ Preflight UI: individuare parent, proprietari di larghezza/gutter/gap/padding, c
 
 Postflight UI: controllare spacing e superfici doppi, valori fuori sistema, wrapper/override, contratti, contenuti variabili, mobile/tablet/desktop, consumer condivisi, stati e accessibilità. Correggere i problemi e registrare le decisioni; il superamento di lint/build non attesta coerenza visiva.
 
+## SEO, ricerca e discovery AI
+
+Regole vincolanti approvate dall'utente il 2026-10-01. `docs/seo.md` è la fonte delle decisioni sistemiche, delle policy per ambiente e dei limiti attuali. SEO e discovery fanno parte dell'architettura e della definizione di done di ogni pagina pubblica.
+
+- Prima di creare o modificare una pagina consultare `docs/seo.md`, routing, metadata ereditati, link interni, robots/header e configurazione corrente. Definire intento distinto, URL stabile, indexability, title/description/H1, canonical, accesso tramite link, sitemap, social preview e schema applicabile.
+- Usare Next.js nativo e una sola fonte per origine pubblica, dati locali e contenuti di pagina; derivare gli output tecnici da queste fonti. Non duplicare inventari o configurazioni, aggiungere librerie SEO preventive o usare localhost/preview come fallback di produzione.
+- Loruni è un luogo fisico; città, categoria e dati operativi richiedono conferma. Metadata, UI e JSON-LD devono dire la stessa cosa. Non inventare indirizzi, servizi, eventi, recensioni, FAQ, profili o pagine per keyword. Preservare HTML leggibile, accessibilità e performance.
+- Distinguere scansione, indicizzazione e protezione d'accesso; verificare ogni ambiente. Playground fuori dalla discovery pubblica. Separare permessi per ricerca AI e addestramento e verificare i crawler su documentazione ufficiale, comprese eventuali regole CDN/WAF.
+- Rinomine/rimozioni aggiornano insieme redirect/status, link, canonical, sitemap e schema. Dopo le modifiche verificare HTML e risposte effettive secondo il perimetro; automatizzare invarianti tecnici utili, senza automatizzare ciecamente il significato editoriale.
+- Aggiornare `docs/seo.md` quando cambia una decisione sistemica. Lint/build non attestano indicizzazione, SEO di produzione, rich result o visibilità AI; registrarne evidenze e limiti senza simulare verifiche esterne.
+
 ## Workflow, test e manutenzione
 
 - Prima di scrivere: leggere queste regole, individuare la casa del codice, cercare implementazioni analoghe e scegliere la soluzione più semplice coerente con il progetto.
