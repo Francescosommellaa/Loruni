@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T22:31:11.412Z",
+  "generatedAt": "2026-10-01T23:36:48.563Z",
   "title": "Design System: Loruni",
   "extensions": {
     "colorMeta": {
@@ -64,23 +64,23 @@
     "typographyMeta": {
       "display": {
         "displayName": "display",
-        "purpose": "Ruolo display condiviso; nessun display editoriale scelto per la home."
+        "purpose": "Apertura, convergenza e visita dello scheletro home Fase 02; ruolo condiviso, trattamento editoriale definitivo ancora aperto."
       },
       "heading-1": {
         "displayName": "heading-1",
-        "purpose": "Ruolo heading ampio disponibile nelle fondamenta."
+        "purpose": "Titoli delle altre scene della home Fase 02, con le metriche condivise."
       },
       "heading-2": {
         "displayName": "heading-2",
-        "purpose": "Titolo del banco delle fondamenta."
+        "purpose": "Titolo del banco delle fondamenta e del menu locale della home."
       },
       "heading-3": {
         "displayName": "heading-3",
-        "purpose": "Stato foundation e titolo della diagnostica GSAP."
+        "purpose": "Titolo diagnostica GSAP, app e testo di convergenza della home Fase 02."
       },
       "body-large": {
         "displayName": "body-large",
-        "purpose": "Ruolo per lettura ampia disponibile nelle fondamenta."
+        "purpose": "Teaser eventi e invito anche senza giocare nello scheletro home."
       },
       "body": {
         "displayName": "body",
@@ -88,7 +88,7 @@
       },
       "small": {
         "displayName": "small",
-        "purpose": "Ruolo per testo secondario disponibile nelle fondamenta."
+        "purpose": "Descrizioni dei placeholder media e note sui dati ancora da confermare."
       },
       "label": {
         "displayName": "label",
@@ -138,6 +138,14 @@
       "css": ".ds-preview { background: var(--color-background, #1A1917); color: var(--color-text, #F4F0E8); }\n.ds-button { font-family: var(--font-body, \"Funnel Sans\"), \"Funnel Sans\", sans-serif; font-size: var(--text-body, 1rem); line-height: var(--leading-body, 1.5); display: inline-flex; align-items: center; justify-content: center; gap: var(--space-sm, 0.5rem); min-height: var(--control-height, 3rem); padding: var(--space-sm, 0.5rem) var(--space-lg, 1.5rem); border: 1px solid transparent; border-radius: var(--radius-control, 0); font-weight: 600; text-decoration: none; transition: background-color var(--duration-feedback, 120ms), color var(--duration-feedback, 120ms), border-color var(--duration-feedback, 120ms); }\n.ds-primary { background: var(--color-accent, #FF5538); color: var(--color-on-accent, #1A1917); }\n.ds-primary:hover:not(:disabled) { background: var(--color-text, #F4F0E8); color: var(--color-background, #1A1917); }\n.ds-secondary { border-color: var(--color-border, color-mix(in srgb, #F4F0E8 50%, #1A1917)); color: var(--color-text, #F4F0E8); background: transparent; }\n.ds-secondary:hover:not(:disabled) { border-color: var(--color-text, #F4F0E8); }\n.ds-button:active:not(:disabled) { border-color: currentColor; }\n.ds-button:disabled { opacity: 0.45; cursor: not-allowed; }\n.ds-button:focus-visible, .ds-switch:focus-visible { outline: 2px solid var(--color-focus, #F4F0E8); outline-offset: var(--space-xs, 0.25rem); }@media (prefers-reduced-motion: reduce) { .ds-button, .ds-switch::before, .ds-thumb { transition-duration: 0ms; } }\n.ds-button:not(:disabled), .ds-switch:not(:disabled) { cursor: pointer; }"
     },
     {
+      "name": "Link di azione principale",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "ButtonLink è un anchor nativo con href obbligatorio; condivide CSS e metriche di Button, nelle variant primary/secondary. Nessuno stato disabled nativo: le azioni non disponibili usano Button. La cornice è soltanto anteprima del tema sorgente.",
+      "html": "<div class=\"ds-preview\"><a class=\"ds-button ds-primary\" href=\"#ds-visit\">Vieni a trovarci</a><span id=\"ds-visit\"></span></div>",
+      "css": ".ds-preview { background: var(--color-background, #1A1917); color: var(--color-text, #F4F0E8); }\n.ds-button { font-family: var(--font-body, \"Funnel Sans\"), \"Funnel Sans\", sans-serif; font-size: var(--text-body, 1rem); line-height: var(--leading-body, 1.5); display: inline-flex; align-items: center; justify-content: center; gap: var(--space-sm, 0.5rem); min-height: var(--control-height, 3rem); padding: var(--space-sm, 0.5rem) var(--space-lg, 1.5rem); border: 1px solid transparent; border-radius: var(--radius-control, 0); font-weight: 600; text-decoration: none; transition: background-color var(--duration-feedback, 120ms), color var(--duration-feedback, 120ms), border-color var(--duration-feedback, 120ms); }\n.ds-primary { background: var(--color-accent, #FF5538); color: var(--color-on-accent, #1A1917); }\n.ds-primary:hover:not(:disabled) { background: var(--color-text, #F4F0E8); color: var(--color-background, #1A1917); }\n.ds-secondary { border-color: var(--color-border, color-mix(in srgb, #F4F0E8 50%, #1A1917)); color: var(--color-text, #F4F0E8); background: transparent; }\n.ds-secondary:hover:not(:disabled) { border-color: var(--color-text, #F4F0E8); }\n.ds-button:active:not(:disabled) { border-color: currentColor; }\n.ds-button:disabled { opacity: 0.45; cursor: not-allowed; }\n.ds-button:focus-visible, .ds-switch:focus-visible { outline: 2px solid var(--color-focus, #F4F0E8); outline-offset: var(--space-xs, 0.25rem); }@media (prefers-reduced-motion: reduce) { .ds-button, .ds-switch::before, .ds-thumb { transition-duration: 0ms; } }\n.ds-button:not(:disabled), .ds-switch:not(:disabled) { cursor: pointer; }"
+    },
+    {
       "name": "Switch",
       "kind": "custom",
       "description": "Switch controllato reale; anteprima dello stato attivo. React possiede cambio stato ed etichetta accessibile. La cornice di anteprima riproduce il fondo del tema sorgente; non è una nuova superficie UI.",
@@ -146,7 +154,7 @@
     }
   ],
   "narrative": {
-    "overview": "Loruni è sociale, immersivo e contemporaneo. Atmosfera notturna, composizione editoriale ed energia da poster appartengono al contesto della moodboard Figma fornita dall'utente. Palette, Funnel Display per titoli, Funnel Sans per testi e feedback/switch veloci sono confermati; gli asset ufficiali mantengono proporzioni e contenuto originali.\n\nStato verificato il 2026-10-02: Fase 01 delle fondamenta. La home mostra soltanto logo e «Foundation ready», allineati a sinistra nel container. Il playground verifica tema, controlli e ciclo di vita GSAP. La strategia della futura home continua rimane in `docs/landing-brief.md`: non è un sistema visivo già implementato né un'approvazione di hero, fotografie o sezioni commerciali.\n\nIl frontmatter fotografa i token effettivi, derivati da `packages/ui/src/brand.ts` e `styles.css`; il runtime resta la fonte eseguibile. Spacing, ruoli semantici e metriche sono default tecnici iniziali da validare nella fase narrativa, non una nuova art direction definitiva. La review Fase 01 ha riscontrato coerenza delle fondamenta nelle nove acquisizioni mobile/tablet/desktop, inclusa la prova chiara; non certifica WCAG, deploy o compatibilità fra browser.",
+    "overview": "Loruni è sociale, immersivo e contemporaneo. Atmosfera notturna, composizione editoriale ed energia da poster appartengono al contesto della moodboard Figma fornita dall'utente. Palette, Funnel Display per titoli, Funnel Sans per testi e feedback/switch veloci sono confermati; gli asset ufficiali mantengono proporzioni e contenuto originali.\n\nStato verificato nel codice il 2026-10-02: le fondamenta Fase 01 alimentano lo scheletro narrativo navigabile Fase 02 della home. Otto momenti server compongono «una notte dentro Loruni»: apertura, socialità, cocktail, tavolo, gaming digitale, app/eventi, convergenza e visita. Copy e slot media sono provvisori e identificati; percorso, ritmo e responsabilità locali sono in `docs/landing-narrative.md`. Il playground continua a verificare tema, controlli e ciclo di vita GSAP. Visual direction + Static composition rimane la prossima fase: lo scheletro non approva copy, fotografie, composizione o motion definitivi.\n\nIl frontmatter fotografa i token effettivi, derivati da `packages/ui/src/brand.ts` e `styles.css`; il runtime resta la fonte eseguibile. Spacing, ruoli semantici e metriche restano i default tecnici condivisi della Fase 01, consumati anche dallo scheletro narrativo senza nuova art direction definitiva. La review Fase 01 ha riscontrato coerenza delle fondamenta nelle nove acquisizioni mobile/tablet/desktop, inclusa la prova chiara; non certifica WCAG, deploy o compatibilità fra browser.",
     "keyCharacteristics": [
       "Palette e coppia Funnel preservate.",
       "Fondamenta piane, geometria netta e proprietà del layout esplicite.",

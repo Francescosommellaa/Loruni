@@ -1,0 +1,88 @@
+/* Local pacing measurements are test parameters, not shared design tokens.
+   Each scene owns its vertical duration; Container alone owns page gutters. */
+.night { overflow-wrap: anywhere; }
+.night section { scroll-margin-block-start: var(--journey-nav-height, 0px); }
+.opening, .social, .experience, .digital, .expansion, .connection, .visit { display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; padding-block: var(--space-3xl); }
+.opening { min-height: 100svh; }
+.openingContent { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-lg); justify-items: start; }
+.brandReveal { position: relative; width: 13.75rem; max-width: 100%; aspect-ratio: 11 / 7; }
+.openingMark, .openingLogo { position: absolute; inset: 0; width: 100%; height: 100%; }
+/* One technical emergence, completed within 1s or immediately on input. */
+.openingMark { animation: mark-emergence 1s both; }
+.openingLogo { animation: logo-emergence 1s both; }
+[data-intro-complete='true'] .openingMark { animation: none; opacity: 0; }
+[data-intro-complete='true'] .openingLogo { animation: none; opacity: 1; }
+.scrollHint { min-height: var(--control-height); display: inline-flex; align-items: center; color: var(--color-text-secondary); }
+.social { min-height: 90svh; }
+.socialContent { display: grid; gap: var(--space-xl); }
+.copy { display: grid; gap: var(--space-lg); justify-items: start; }
+.copy h2, .cocktailContent h2, .tableContent h2, .digitalContent h2 { max-width: 18ch; }
+.media { margin: 0; min-width: 0; min-height: 40svh; background: var(--color-surface-elevated); display: grid; align-items: end; padding: var(--space-lg); }
+.media figcaption { display: grid; gap: var(--space-xs); max-width: 42ch; color: var(--color-text-secondary); }
+.media figcaption span { color: var(--color-text); font-weight: 600; }
+.atmosphereMedia { min-height: 45svh; }
+/* The shared passage deliberately has no border, break or separate surfaces. */
+.tablePassage { background: var(--color-background-secondary); }
+.experience { min-height: 110svh; }
+.cocktailContent, .tableContent, .digitalContent { display: grid; gap: var(--space-2xl); }
+.tableContent h2 { justify-self: end; }
+.digital { min-height: 110svh; background: var(--color-background); color: var(--color-text); }
+.roomMedia { min-height: 50svh; }
+.expansion { min-height: 85svh; }
+.expansionContent { display: grid; gap: var(--space-xl); }
+.extension { display: grid; gap: var(--space-lg); }
+.extension .media { min-height: 25svh; }
+.eventTeaser { color: var(--color-text-secondary); }
+.connection { min-height: 130svh; }
+.connectionContent { display: grid; gap: var(--space-xl); }
+.connectionContent h2 { max-width: 12ch; }
+.convergenceMedia { min-height: 50svh; }
+.convergenceWords { max-width: 30ch; }
+.connectionContent > img { justify-self: end; }
+.visit { min-height: 100svh; }
+.visitContent { display: grid; gap: var(--space-lg); justify-items: start; }
+.visitContent h2 { max-width: 12ch; }
+.visitDetails { display: flex; flex-wrap: wrap; gap: var(--space-xl); align-items: start; }
+.visitDetails p { max-width: 24ch; }
+.close { display: flex; flex-wrap: wrap; gap: var(--space-xl); padding-block-start: var(--space-2xl); }
+.close a { min-height: var(--control-height); display: inline-flex; align-items: center; }
+
+/* Navigation owns the viewport layer; native dialog uses the top layer.
+   z-index 0 keeps the existing shared skip link (1) above the navbar. */
+.navigation { position: fixed; inset: 0 0 auto; z-index: 0; background: var(--color-background); color: var(--color-text); }
+.navigation[data-hidden='true'] { visibility: hidden; }
+.navigationContent { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm); padding-block: var(--space-sm); }
+.navigationContent > a:first-child { display: inline-flex; flex-shrink: 0; }
+.visitShortcut { margin-inline-start: auto; display: inline-flex; align-items: center; min-height: var(--control-height); font-size: var(--text-small); }
+.navigationContent button { padding-inline: var(--space-md); }
+.progress { height: 2px; background: var(--color-text); transform: scaleX(var(--journey-progress, 0)); transform-origin: left; }
+.menu { inset: 0; width: 100%; max-width: none; height: 100%; max-height: none; margin: 0; border: 0; padding: 0; background: var(--color-background); color: var(--color-text); overflow: auto; }
+.menu::backdrop { background: var(--color-background); }
+.menuContent { display: grid; gap: var(--space-xl); padding-block: var(--space-xl); }
+.menuTop { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-md); }
+.menuLinks { display: grid; gap: var(--space-sm); list-style: none; padding: 0; margin: 0; }
+.menuLinks a { display: inline-flex; align-items: center; min-height: var(--control-height); font-family: var(--font-display), sans-serif; font-size: var(--text-heading-2); }
+.menuLinks [aria-current] { text-decoration-thickness: 2px; }
+
+/* 48rem is the composition threshold: two real columns fit beside the media.
+   Mobile keeps native vertical reading order and reduces convergence layers. */
+@media (min-width: 48rem) {
+  .socialContent { grid-template-columns: 1.2fr 1fr; align-items: end; }
+  .atmosphereMedia { min-height: 65svh; }
+  .cocktailContent { grid-template-columns: 1fr 1.2fr; align-items: center; }
+  .tableContent { grid-template-columns: 1.2fr 1fr; align-items: center; }
+  .tableContent h2 { justify-self: start; }
+  .experience .media { min-height: 65svh; }
+  .digitalContent { grid-template-columns: 1fr 1.4fr; align-items: start; }
+  .roomMedia { min-height: 70svh; }
+  .extension { grid-template-columns: 1fr 1fr; align-items: center; }
+  .connectionContent { grid-template-columns: 1fr 1fr; align-items: center; }
+  .convergenceMedia { min-height: 75svh; }
+  .connectionContent > img { justify-self: end; }
+}
+@keyframes mark-emergence { 0%, 25% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes logo-emergence { 0%, 25% { opacity: 0; } 100% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .openingMark { animation: none; opacity: 0; }
+  .openingLogo { animation: none; opacity: 1; }
+}

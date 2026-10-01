@@ -1,19 +1,19 @@
-# Landing brief — Fase 01
+# Landing brief — prodotto e confini correnti
 
-Brief approvato dall'utente; la prossima fase è ARCHITETTURA NARRATIVA DELLA HOME.
+Brief Fase 01/02 approvati dall'utente. La fase corrente costruisce lo scheletro narrativo; la prossima è VISUAL DIRECTION + STATIC COMPOSITION, da non anticipare.
 
 ## Identità e obiettivo
 Loruni: locale serale di socializzazione, cocktail e gaming, pensato anche per chi non gioca. Socialità contenitore principale; cocktail e gaming pari dignità. Gaming digitale e giochi da tavolo distinti. Target principale 18–35: giovani adulti, amici, gamer, coppie e persone interessate soprattutto a cocktail/socialità.
 
-Obiettivo: portare persone fisicamente nel locale. CTA primaria «Vieni a trovarci», secondaria «Scarica l’app». L'app sarà visibile senza diventare il centro della home. Link azione fisica e store aspettano dati reali, non sono controlli finti nella foundation.
+Obiettivo: portare persone fisicamente nel locale. CTA primaria «Vieni a trovarci», secondaria «Scarica l’app». L'app sarà visibile senza diventare il centro della home. La CTA fisica raggiunge la scena finale con dati noti; Maps/indicazioni attendono l'indirizzo. Store mancanti: CTA app disabilitata con spiegazione, nessuna destinazione inventata.
 
 Sociale, immersivo, contemporaneo; mai burocratico, dating/erotico, nerd stereotipato, corporate/SaaS, gaming o nightlife generico. Copy home minimo, diretto, carismatico, evocativo, leggermente misterioso; pagine dedicate più informative.
 
 ## Confine della fase
-Solo fondazioni tecniche/visive/SEO e / minimale con brand e «Foundation ready». Non scegliere hero, sezioni commerciali, fotografie finali, narrativa, cinematic motion o interazioni decorative. Nessuna route futura o directory vuota. Due app restano autorizzate; playground solo prove, senza promozione implicita.
+Fase 01 conclusa. Fase 02 autorizza una home navigabile per ordine, gerarchia, ritmo, continuità, scroll naturale e responsive secondo [landing-narrative.md](landing-narrative.md). Copy e slot media sono provvisori. Nessun design finale, fotografia definitiva, motion decorativo o pagina interna. Due app restano autorizzate; playground solo prove, senza promozione implicita.
 
-## Vincoli della fase narrativa futura
-Home come esperienza continua: scroll, immagini, composizione, typography e motion nella stessa narrativa, senza successione evidente hero/sezioni/card/CTA/footer. Drinkstill è la reference richiesta per ritmo, scroll, composizione, timing, microinterazioni e atmosfera; URL/reference precisa da identificare con l'utente nella prossima fase, nessuna copia di design/layout/identità.
+## Vincoli dell'esperienza
+Home come esperienza continua: scroll, immagini, composizione, typography e motion nella stessa narrativa, senza successione evidente hero/sezioni/card/CTA/footer. Drinkstill è la reference richiesta per ritmo, scroll, composizione, timing, microinterazioni e atmosfera; URL/reference precisa ancora da identificare, nessuna copia di design/layout/identità.
 
 Esperienza visiva e motion 9/10; priorità 60% spettacolarità/40% performance. Ogni effetto giustifica il costo. Nessuno scroll incontrollabile, attesa inutile o interazione incomprensibile. Mobile prioritario: identità/narrativa/contenuti comuni, composizioni/timing/interazioni touch possono differire. Browser moderni, tastiera/focus, WCAG AA e reduced motion completi.
 

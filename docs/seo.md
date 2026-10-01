@@ -1,6 +1,6 @@
-# SEO, ricerca e discovery AI — Fase 01
+# SEO, ricerca e discovery AI — Fase 02
 
-Fonte delle decisioni sistemiche, aggiornata al brief Fase 01 e alla conferma del dominio. Le regole SEO fornite dall'utente restano vincolanti; implementazione locale non equivale a indicizzazione o distribuzione.
+Fonte delle decisioni sistemiche, aggiornata allo scheletro narrativo Fase 02 e alla conferma del dominio. Le regole SEO fornite dall'utente restano vincolanti; implementazione locale non equivale a indicizzazione o distribuzione.
 
 ## Fonti
 config/site.ts possiede https://loruni.it, lingua it, identità/business, profilo Instagram, CTA e sola route pubblica implementata /. config/environment.ts possiede SITE_ENV e token di verifica opzionali; config/seo.ts deriva metadata, robots e graph. brand.ts possiede palette/asset. Niente origine preview/localhost nelle URL pubbliche, duplicazione di dati, CMS fittizio o libreria SEO.
@@ -10,12 +10,12 @@ Loruni: locale serale a Napoli di socialità, cocktail e gaming, anche per chi n
 ## Route e output correnti
 | Fonte/output | Decisione |
 | --- | --- |
-| Landing / | Brand/stato foundation; metadata server con title/description, canonical, OG e X |
+| Landing / | Scheletro narrativo server; unico H1, heading/ancore reali, metadata globali con title/description, canonical, OG e X |
 | robots.txt | Nativo Next; policy ambiente e search/training distinti |
 | sitemap.xml | Solo / in production; vuota negli altri ambienti, niente lastmod inventato |
 | manifest.webmanifest e icon.png | Identità/lingua, browser display; non una promessa PWA/installazione |
 | opengraph-image | PNG 1200×630 con logo raster ufficiale invariato, da verificare sulle piattaforme dopo deploy |
-| JSON-LD | WebSite emesso sulla foundation; graph LocalBusiness preparato con ID stabili e fatti noti, da emettere quando la home presenta il locale. Solo addressLocality Napoli, nessuna via/coordinate/orari inventati |
+| JSON-LD | Graph WebSite + LocalBusiness ora emesso: la home presenta il locale, Napoli e Instagram. ID stabili e solo addressLocality Napoli, nessuna via/coordinate/orari inventati; schema locale incompleto, non prova di rich result |
 | Playground / | Noindex/nofollow HTML+header, robots crawlable per leggere noindex, nessuna sitemap |
 
 Inventario derivato dal routing e dalla build; non mantenere un catalogo duplicato di title/URL. Frammenti e endpoint tecnici non sono pagine editoriali. Future route restano nel brief finché implementate.

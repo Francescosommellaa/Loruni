@@ -25,7 +25,7 @@ export function robotsPolicy(): MetadataRoute.Robots {
 export function websiteStructuredData() {
   return { '@context': 'https://schema.org', '@type': 'WebSite', '@id': siteUrl('/#website'), url: siteUrl(), name: site.name, inLanguage: site.language };
 }
-// Emit the business graph when the real home presents these confirmed facts.
+// Only confirmed facts presented by the home; indicative hours stay out.
 export function businessStructuredData() {
   return {
     '@context': 'https://schema.org',
