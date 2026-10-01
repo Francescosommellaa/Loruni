@@ -10,6 +10,7 @@ dist/
 .cache/
 .eslintcache
 /output/
+/apps/*/public/brand/
 .playwright-cli/
 
 # Reports, logs and local temporary files

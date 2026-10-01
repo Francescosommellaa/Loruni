@@ -1,10 +1,10 @@
 {
   "name": "@loruni/playground", "version": "0.1.0", "private": true,
   "scripts": {
-    "dev": "next dev --hostname 127.0.0.1 --port 3001",
-    "build": "next build",
+    "dev": "node ../../scripts/sync-brand-assets.mjs playground && next dev --hostname 127.0.0.1 --port 3001",
+    "build": "node ../../scripts/sync-brand-assets.mjs playground && next build",
     "start": "next start --hostname 127.0.0.1 --port 3001",
     "typecheck": "next typegen && tsc --noEmit"
   },
-  "dependencies": { "@loruni/ui": "workspace:*", "next": "catalog:", "react": "catalog:", "react-dom": "catalog:", "motion": "catalog:" }
+  "dependencies": { "@loruni/ui": "workspace:*", "next": "catalog:", "react": "catalog:", "react-dom": "catalog:" }
 }

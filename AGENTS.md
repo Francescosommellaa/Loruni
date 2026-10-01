@@ -16,7 +16,8 @@ Quando un concetto ricorre, identificarlo, standardizzarlo e riutilizzarlo. Prim
 - Non importare esperimenti dal playground nella landing. Una scelta esplicita precede la promozione.
 - Il playground è richiesto dall'utente dal 2026-10-01; il precedente divieto di laboratorio è superato.
 - Conservare modifiche non pertinenti. Leggere `PRODUCT.md`, `docs/design.md` e `docs/architecture.md` prima di cambiare il perimetro.
-- Verificare secondo la modifica. Prima del push eseguire `pnpm check` e `git diff --check`; per UI verificare browser, mobile, tastiera e reduced motion dove applicabili.
+- Fase 01 approvata: `/` mostra solo brand e stato delle fondamenta. Nessuna hero, narrativa, sezione commerciale o effetto decorativo. Il brief vincolante corrente è `docs/landing-brief.md`; la fase successiva è l'architettura narrativa, da non anticipare.
+- Verificare secondo la modifica. Prima del push eseguire `pnpm check` e `git diff --check`; per UI verificare browser, mobile/tablet/desktop, tastiera e reduced motion dove applicabili.
 
 ## Git e igiene del repository
 
@@ -64,10 +65,10 @@ Regole vincolanti approvate dall'utente il 2026-10-01. Versionare source, contra
 
 ## Styling, movimento e asset
 
-- Usare CSS e classi semantiche; fondamenta condivise in `packages/ui/src/styles.css`, composizioni specifiche nell'app. Riutilizzare token per valori ricorrenti dello stesso concetto; non globalizzare ogni misura locale.
-- I CSS sono la fonte eseguibile dei token; `DESIGN.md` ne documenta uso e direzione. `.impeccable/design.json` è un artefatto derivato, non una seconda fonte da aggiornare indipendentemente.
+- Usare CSS Modules per componenti/composizioni; reset, ruoli tipografici e token semantici in `packages/ui/src/styles.css`. I quattro valori palette e i percorsi asset sono in `packages/ui/src/brand.ts`, consumati dai layout come custom properties e dagli output SEO: nessuna copia hex nei componenti.
+- `docs/design-system.md` e `DESIGN.md` documentano il sistema; `.impeccable/design.json` è derivato, non una seconda fonte da aggiornare indipendentemente.
 - Adattare la stessa struttura al responsive, salvo un'esperienza realmente diversa. Conservare HTML semantico, focus, tastiera, touch e movimento ridotto.
-- Usare CSS per feedback semplici e Motion per movimento React che lo richiede. GSAP solo per una necessità concreta, senza più librerie per lo stesso comportamento.
+- Dal brief Fase 01 GSAP sostituisce Motion. CSS per feedback semplici; GSAP/ScrollTrigger per coordinamento complesso quando serve, importando solo `@loruni/ui/motion`. Registrazione centralizzata, scope e cleanup obbligatori, reduced motion reattivo. Nessuna smooth-scroll library, provider globale, cursor, parallax, pinning o transizione di pagina anticipati.
 - Conservare originali del marchio in `Logo/`; usare gli asset condivisi tramite `packages/ui`. Asset esclusivi restano nell'app. Non duplicare asset senza un vincolo tecnico o un uso concreto.
 
 ## Coerenza UI e layout
@@ -101,7 +102,7 @@ Regole vincolanti approvate dall'utente il 2026-10-01. `docs/seo.md` è la fonte
 
 - Prima di creare o modificare una pagina consultare `docs/seo.md`, routing, metadata ereditati, link interni, robots/header e configurazione corrente. Definire intento distinto, URL stabile, indexability, title/description/H1, canonical, accesso tramite link, sitemap, social preview e schema applicabile.
 - Usare Next.js nativo e una sola fonte per origine pubblica, dati locali e contenuti di pagina; derivare gli output tecnici da queste fonti. Non duplicare inventari o configurazioni, aggiungere librerie SEO preventive o usare localhost/preview come fallback di produzione.
-- Loruni è un luogo fisico; città, categoria e dati operativi richiedono conferma. Metadata, UI e JSON-LD devono dire la stessa cosa. Non inventare indirizzi, servizi, eventi, recensioni, FAQ, profili o pagine per keyword. Preservare HTML leggibile, accessibilità e performance.
+- Loruni è un locale serale a Napoli per socialità, cocktail e gaming, anche senza giocare. Fonte globale: `apps/landing/src/config/site.ts`; orari indicativi non diventano orari ufficiali nello schema. Indirizzo, telefono e store sono TBD. Metadata, UI e JSON-LD devono essere coerenti; niente dati mancanti inventati.
 - Distinguere scansione, indicizzazione e protezione d'accesso; verificare ogni ambiente. Playground fuori dalla discovery pubblica. Separare permessi per ricerca AI e addestramento e verificare i crawler su documentazione ufficiale, comprese eventuali regole CDN/WAF.
 - Rinomine/rimozioni aggiornano insieme redirect/status, link, canonical, sitemap e schema. Dopo le modifiche verificare HTML e risposte effettive secondo il perimetro; automatizzare invarianti tecnici utili, senza automatizzare ciecamente il significato editoriale.
 - Aggiornare `docs/seo.md` quando cambia una decisione sistemica. Lint/build non attestano indicizzazione, SEO di produzione, rich result o visibilità AI; registrarne evidenze e limiti senza simulare verifiche esterne.

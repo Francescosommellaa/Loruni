@@ -5,5 +5,20 @@
       "maxFindings": 5,
       "maxChars": 8000
     }
+  },
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-radius",
+        "value": "20px",
+        "files": [
+          "packages/ui/src/switch.module.css"
+        ],
+        "createdAt": "2026-10-01T21:56:03.783Z",
+        "reason": "Agent: existing switch track geometry documented in DESIGN.md; no new surface radius."
+      }
+    ]
   }
 }
