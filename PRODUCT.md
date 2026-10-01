@@ -16,7 +16,7 @@ La landing si rivolge a chi vuole conoscere Loruni. Il playground serve al lavor
 
 ## Product Purpose
 
-La landing è il biglietto da visita Loruni. Il playground consente di provare layout, componenti, animazioni e combinazioni prima di sceglierli per il sito.
+Loruni è un luogo fisico, confermato dall'utente nelle regole SEO del 2026-10-01. La landing è il suo biglietto da visita. Il playground consente di provare layout, componenti, animazioni e combinazioni prima di sceglierli per il sito.
 
 ## Operating Context
 
@@ -28,7 +28,7 @@ Nome e loghi Loruni esistenti. Moodboard Figma fornita dall'utente; palette graf
 
 ## Evidence on Hand
 
-Asset originali in `Logo/`; copie SVG utilizzate in `packages/ui/brand`. Analisi moodboard nel Brain Loruni. Non sono confermati sede, indirizzo, orari, prezzi, contatti, immagini della sede o altre promesse operative.
+Asset originali in `Logo/`; copie SVG utilizzate in `packages/ui/brand`. Analisi moodboard nel Brain Loruni. Non sono confermati categoria dell'attività, città, ubicazione, indirizzo, orari, prezzi, contatti, immagini della sede o altre promesse operative. Gli esempi nelle regole SEO non sono dati confermati di Loruni.
 
 ## Capabilities and Constraints
 
