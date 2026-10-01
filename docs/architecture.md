@@ -2,53 +2,28 @@
 
 ## Workspace
 
-Il monorepo pnpm contiene due app Next.js App Router indipendenti: `apps/website` (`@loruni/website`) e `apps/design-system` (`@loruni/design-system`). Non ci sono package condivisi o import fra app. La duplicazione delle piccole configurazioni è intenzionale: ogni app deve poter evolvere e venire distribuita separatamente.
+Il workspace pnpm include `apps/*` e `packages/*`. Una versione comune di Next.js, React e Motion è definita nel catalogo di `pnpm-workspace.yaml`; le dipendenze locali usano `workspace:*`. Il lockfile è unico e la CI usa `--frozen-lockfile`.
 
-La root possiede il lockfile unico e i comandi di orchestrazione. Ogni app possiede Next.js, TypeScript strict, ESLint, Tailwind/PostCSS, registry delle route e configurazione del sito. Non sono previsti Turborepo, formatter aggiuntivi, hook Git o un generatore di pagine.
+Le app Next.js App Router sono indipendenti, con build, avvio e metadati propri. `transpilePackages` compila il sorgente TypeScript di `@loruni/ui`; non serve un processo di build separato per il pacchetto. Turbopack usa la root del monorepo.
 
-## Stack approvato
+## Confini
 
-| Strumento | Versione iniziale | Ruolo |
-| --- | --- | --- |
-| Node.js | 24.x | Runtime |
-| pnpm | 10.34.5 | Workspace e dipendenze |
-| Next.js | 16.3.6 | App Router e metadata nativi |
-| React / React DOM | 19.3.0 | Rendering |
-| TypeScript | 6.0.3 | Tipi strict |
-| ESLint | 9.39.5 | Analisi statica con configurazione Next.js |
-| Tailwind CSS | 4.3.3 | Styling principale tramite PostCSS |
-| Motion | 13.4.3 | Future interazioni e transizioni di stato React |
-| GSAP | 3.15.0 | Future timeline e animazioni su scroll |
+```text
+apps/landing ──────┐
+                  ├── packages/ui
+apps/playground ──┘
+```
 
-I manifest e `pnpm-lock.yaml` sono la fonte corrente delle versioni. pnpm 10 segue il supporto automatico Vercel; TypeScript ed ESLint restano nelle versioni approvate per la compatibilità dello stack. Un aggiornamento richiede verifica dei peer dependency e ripetizione di lint, typecheck e build.
+Nessuna dipendenza fra le app. I prototipi appartengono al playground. Solo il materiale confermato può entrare nel pacchetto comune e poi nella landing. Il pacchetto contiene attualmente font, palette, loghi, Button, Switch e Arrow: nessun catalogo astratto preventivo.
 
-Le pagine sono Server Component. I soli Client Component iniziali sono gli error boundary richiesti da Next.js. Motion e GSAP sono installati ma non importati: in futuro introdurre piccoli confini client accanto ai consumer reali, senza provider globali preventivi. Non esistono ancora tema brand, token o scala tipografica.
+Le pagine e i layout della landing sono Server Components. Il playground usa un Client Component per il banco interattivo. Il componente Switch è una piccola boundary client; Motion resta nella sola app sperimentale.
 
-## Fonti di verità
+## Font e asset
 
-| Tema | Fonte |
-| --- | --- |
-| Comandi, versioni e dipendenze risolte | Manifest root/app e lockfile |
-| Route effettivamente esposte | `src/app/` nell'app |
-| Titoli, descrizioni, flag SEO e navigazione | `src/config/routes.ts` nell'app |
-| Nome e dominio canonico | `src/config/site.ts` nell'app |
-| Ambiente di indicizzazione | `src/config/environment.ts` nell'app e `VERCEL_ENV` |
-| Decisioni strutturali | Questa guida, verificata contro il codice |
-| Ownership di layout e stile | [Contratto visuale](visual-ownership.md), verificato contro gli owner nel codice |
+I WOFF2 latini variabili sono inclusi in repo con licenza OFL e caricati con `next/font/local`. `scripts/sync-fonts.mjs` li rigenera dalle versioni Fontsource fissate nel manifest. I loghi SVG sono copie degli asset originali presenti in `Logo/`.
 
-Il sito pubblico usa la porta 3000; il design system usa la 3001. `pnpm dev` avvia entrambi tramite parallelismo pnpm. I typecheck eseguono `next typegen` prima di `tsc --noEmit`.
+## Distribuzione
 
-## CI e predisposizione Vercel
+Entrambe le app possono essere distribuite separatamente impostando la root dell'app e rendendo disponibile il workspace completo. Hosting, domini, URL canonical e controllo di accesso del playground sono decisioni aperte. Le direttive robots non sono controllo di accesso. Nessun deploy automatico è configurato.
 
-Il workflow GitHub esegue installazione con lockfile congelato, lint, typecheck e build delle due app. Il successo locale non equivale al successo del workflow remoto.
-
-La configurazione prevista usa due progetti Vercel collegati allo stesso repository:
-
-| Progetto | Root Directory | Preset | Dominio canonico |
-| --- | --- | --- | --- |
-| Website | `apps/website` | Next.js | `loruni.it` |
-| Design system | `apps/design-system` | Next.js | `ds.loruni.it` |
-
-Usare Node 24.x e i comandi standard rilevati da Vercel, con installazione del workspace dal lockfile root. Non serve `vercel.json`. Vercel fornisce `VERCEL_ENV`; non aggiungere variabili per cambiare i domini canonici. Seguire la guida [monorepo Vercel](https://vercel.com/docs/monorepos) e il [supporto package manager](https://vercel.com/docs/package-managers) quando si configurano i progetti.
-
-Non è stato richiesto un deploy. Prima della pubblicazione servono contenuti approvati, verifica SEO per ambiente e prova del rilascio effettivo. Anche la produzione mantiene inizialmente tutti i placeholder `noindex`.
+Fonti tecniche: [pnpm workspaces](https://pnpm.io/workspaces), [Next.js transpilePackages](https://nextjs.org/docs/app/api-reference/config/next-config-js/transpilePackages), [Motion reduced motion](https://motion.dev/docs/react-accessibility).

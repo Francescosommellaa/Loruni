@@ -1,16 +1,31 @@
 {
   "name": "loruni",
+  "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.34.5",
-  "engines": { "node": "24.x" },
+  "packageManager": "pnpm@11.24.0",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
-    "dev": "pnpm --parallel -r dev",
-    "dev:website": "pnpm --filter @loruni/website dev",
-    "dev:ds": "pnpm --filter @loruni/design-system dev",
-    "build": "pnpm -r build",
-    "build:website": "pnpm --filter @loruni/website build",
-    "build:ds": "pnpm --filter @loruni/design-system build",
-    "lint": "pnpm -r lint",
-    "typecheck": "pnpm -r typecheck"
+    "dev": "pnpm --parallel --filter @loruni/landing --filter @loruni/playground dev",
+    "dev:landing": "pnpm --filter @loruni/landing dev",
+    "dev:playground": "pnpm --filter @loruni/playground dev",
+    "build": "pnpm --filter @loruni/landing --filter @loruni/playground --workspace-concurrency=1 build",
+    "build:landing": "pnpm --filter @loruni/landing build",
+    "build:playground": "pnpm --filter @loruni/playground build",
+    "lint": "eslint apps/landing apps/playground packages/ui scripts --max-warnings 0",
+    "typecheck": "pnpm -r --workspace-concurrency=1 typecheck",
+    "check": "pnpm lint && pnpm typecheck && pnpm build",
+    "fonts:sync": "node scripts/sync-fonts.mjs"
+  },
+  "devDependencies": {
+    "@fontsource-variable/funnel-display": "5.3.0",
+    "@fontsource-variable/funnel-sans": "5.3.0",
+    "@types/node": "24.19.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.8",
+    "typescript": "6.0.3"
   }
 }
