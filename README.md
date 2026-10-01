@@ -75,6 +75,7 @@ Il playground invia direttive `noindex, nofollow` e un `robots.txt` che esclude 
 ## Documentazione
 
 - [Prodotto e perimetro](PRODUCT.md)
+- [Git e igiene repository](docs/repository-hygiene.md)
 - [Architettura](docs/architecture.md)
 - [Direzione visiva](docs/design.md)
 - [Workflow del playground](docs/playground.md)

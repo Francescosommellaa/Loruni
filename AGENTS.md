@@ -18,6 +18,18 @@ Quando un concetto ricorre, identificarlo, standardizzarlo e riutilizzarlo. Prim
 - Conservare modifiche non pertinenti. Leggere `PRODUCT.md`, `docs/design.md` e `docs/architecture.md` prima di cambiare il perimetro.
 - Verificare secondo la modifica. Prima del push eseguire `pnpm check` e `git diff --check`; per UI verificare browser, mobile, tastiera e reduced motion dove applicabili.
 
+## Git e igiene del repository
+
+Regole vincolanti approvate dall'utente il 2026-10-01. Versionare source, contratti e configurazione condivisa necessari a comprendere e riprodurre il progetto; escludere segreti, stato locale, cache, build, log, sessioni, output temporanei e configurazioni personali. La policy e le eccezioni concrete sono in `docs/repository-hygiene.md`; `.gitignore` è la fonte eseguibile.
+
+- Analizzare la funzione del file, non il nome, il prefisso `.` o il fatto che sia stato prodotto da un agente. Conservare source/test/fixture/baseline intenzionali, asset pubblici, licenze, pnpm-lock.yaml, workflow, regole AGENTS e configurazioni/skill realmente condivise.
+- Non committare valori environment reali, credenziali MCP/deploy/CI o chiavi private, neppure in commenti, documenti, fixture e messaggi Git. Template `.env.example`/`.env.*.example` solo con nomi necessari e valori vuoti; gli esempi di test devono essere palesemente falsi. `NEXT_PUBLIC_*` è pubblico.
+- `.gitignore` non elimina file già tracciati né protegge un segreto già pubblicato. Una credenziale committata va considerata compromessa: revocare/ruotare, rimuovere e valutare bonifica della cronologia; non riscrivere o forzare la storia condivisa senza autorizzazione.
+- Usare ignore precisi per lo stack reale. Non nascondere genericamente JSON/Markdown/immagini, public/docs, .github, .agents, .codex o .impeccable. Separare configurazione condivisa da runtime personale e verificare sia ciò che deve essere ignorato sia ciò che deve restare visibile.
+- Skill terze parti necessarie al workflow condiviso restano repo-local con provenienza/versione quando disponibili; strumenti personali appartengono all'ambiente utente. Non migrare/cancellare tooling o mantenere installazioni divergenti implicitamente. Codex condiviso deve usare percorsi portabili e variabili per credenziali; stato/sessioni restano fuori Git.
+- File generati versionati richiedono una ragione concreta documentata. Build e install non devono produrre nuove modifiche Git; prima di aggiungere un tool distinguere source, output, cache e dati personali, poi configurare destinazioni prevedibili e ignore pertinenti.
+- Prima del commit rivedere `git status`, diff e staged diff; cercare segreti/file locali e controllare che source/config necessari non siano ignorati. Stage esplicito del solo perimetro autorizzato; preservare modifiche altrui. Non usare ignore/reset/clean per far apparire pulito un checkout con lavoro reale.
+
 ## Posizione del codice e dipendenze
 
 - Seguire la mappa in `docs/architecture.md`. Creare le directory previste soltanto quando contengono codice necessario; non aggiungere nuovi contenitori equivalenti.
