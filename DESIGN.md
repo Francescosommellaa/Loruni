@@ -51,6 +51,30 @@ Lettere tagliate, ripetizioni e deformazioni della moodboard appartengono alla g
 
 ## Layout
 
+### Decisione sistemica del 2026-10-01
+
+L'utente ha confermato le regole di coerenza UI: ogni responsabilità visiva ha un solo proprietario. Le istruzioni operative e i controlli prima/dopo una modifica sono in `AGENTS.md`; questo documento registra il contratto e la base osservata, senza duplicare l'intero regolamento.
+
+| Responsabilità | Proprietario | Confine |
+| --- | --- | --- |
+| Larghezza massima e gutter | Pattern container della pagina | I contenuti interni non aggiungono un secondo gutter |
+| Ritmo tra sezioni/blocchi | Pagina o sezione | I componenti interni non aggiungono distanza esterna equivalente |
+| Distanza tra fratelli | Grid, stack o flex parent | I figli non aggiungono margin che duplica il gap |
+| Superficie e spazio interno | Componente che possiede la superficie | I wrapper interni non replicano padding, border o radius |
+| Metriche del testo | Ruolo tipografico | Il layout non corregge la baseline con offset arbitrari |
+| Responsive | Elemento proprietario della struttura | Cambiamenti raggruppati e guidati dal contenuto |
+| Movimento | Elemento che cambia stato | Parent e child non sommano la stessa transizione |
+
+Il container è un pattern di responsabilità, non l'obbligo di introdurre un componente React. Le sezioni full bleed sono casi espliciti. Una scala unica di spacing e soglie responsive documentate devono guidare l'implementazione definitiva; gli esempi numerici delle regole non stabiliscono valori Loruni.
+
+### Stato dello scaffold
+
+Palette, font e durate CSS sono già condivisi in `packages/ui/src/styles.css` e `packages/ui/src/fonts.ts`. La base usa ancora misure locali per gutter, spacing e dimensioni di composizione; non esiste una scala di spacing centralizzata completa. La landing usa una soglia a 640 px; il playground usa 850 px per il banco e 500 px per la composizione stretta. Queste sono scelte provvisorie osservate, non nuovi breakpoint definitivi approvati.
+
+Il recepimento delle regole è documentale: non attesta una migrazione dei CSS né una nuova review visiva. Prima della prossima modifica UI, allineare i valori e i consumer del perimetro ai contratti, documentando eventuali eccezioni. Il playground può confrontare alternative locali senza promuoverle nel sistema.
+
+### Direzione compositiva
+
 Griglia coerente e composizioni asimmetriche, con allineamenti precisi. Alternare densità, grandi vuoti, fotografie immersive e passaggi informativi semplici. Le sezioni avorio segnano pause nel ritmo scuro. Usare righe, poster, elenchi e immagini ampie secondo il contenuto; evitare una sequenza uniforme di card.
 
 Su mobile ricomporre l'ordine di lettura e i ritagli, conservando gerarchia e carattere. Nessuna informazione essenziale tagliata per l'effetto poster. Testi lunghi su fondo stabile; testo sopra foto solo con contrasto verificato.
@@ -72,6 +96,18 @@ Geometrie nette, campiture piene e angoli prevalentemente retti. Cerchi e arroto
 Pulsante principale corallo con testo grafite, secondario delineato e focus percepibile. Switch controllato, accessibile con tastiera e stato espresso da `aria-checked`. Target interattivi almeno 44 px; i pulsanti base sono alti almeno 48 px. Stati disabilitati non rispondono all'input. I cambi non spostano la struttura della pagina.
 
 Tab del playground utilizzabili con frecce, Home ed End. Gli esperimenti mostrano il proprio stato non approvato; nessun cambio locale si propaga alla landing. La promozione richiede una scelta esplicita e prove nel contesto finale.
+
+### Contratti osservati
+
+| Famiglia presente | Possiede | Il contesto possiede |
+| --- | --- | --- |
+| Button e link con classe `button` | Altezza minima 48 px, padding 12/24 px, gap icona 12 px, bordo/radius, tipografia e stati della variant | Posizione, larghezza nel layout e distanza dagli altri elementi |
+| Switch | Target 52 × 44 px, track/thumb, etichetta accessibile, stato controllato e feedback | Posizione e distanza dagli altri controlli; lo stato appartiene al consumer |
+| Arrow | SVG 20 × 20 px, tratto e orientamento | Significato dell'azione e spazio intorno all'icona |
+| Banco e controlli del playground | `.workspace` possiede colonne/gap, `.controls` e `.controls-group` il flusso dei gruppi | La pagina possiede gutter e composizione complessiva |
+| Superfici dimostrative | Padding e contenuto locale; il parent organizza la composizione | Nessuna approvazione implicita come Card o pattern pubblico definitivo |
+
+Non esistono ancora contratti di produzione per Card, Modal o famiglie complete di campi: definirli quando un uso reale lo richiede. Le dimensioni meccaniche dello switch e il marker assoluto del test di movimento sono geometrie locali intenzionali; non sono valori della scala di spacing. La regola globale `prefers-reduced-motion` usa `!important` per rispettare la preferenza accessibile, non per correggere un conflitto di layout.
 
 ## Do's and Don'ts
 
