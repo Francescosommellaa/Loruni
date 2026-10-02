@@ -16,7 +16,7 @@ Quando un concetto ricorre, identificarlo, standardizzarlo e riutilizzarlo. Prim
 - Non importare esperimenti dal playground nella landing. Una scelta esplicita precede la promozione.
 - Il playground è richiesto dall'utente dal 2026-10-01; il precedente divieto di laboratorio è superato.
 - Conservare modifiche non pertinenti. Leggere `PRODUCT.md`, `docs/design.md` e `docs/architecture.md` prima di cambiare il perimetro.
-- Fase 02 autorizzata: `/` implementa lo scheletro narrativo navigabile descritto in `docs/landing-narrative.md`, superando il limite home-only della Fase 01. Brief di prodotto in `docs/landing-brief.md`; non anticipare visual direction/static composition, media o motion definitivi.
+- Fase 03 autorizzata: `/` consolida la composizione visuale statica sul percorso `docs/landing-narrative.md`. Direzione e media reference in `docs/visual-direction.md`; fotografie sintetiche dichiarate, non sede reale. Brief prodotto in `docs/landing-brief.md`. Nessun motion definitivo: prossima fase Motion System + Scroll Choreography.
 - Verificare secondo la modifica. Prima del push eseguire `pnpm check` e `git diff --check`; per UI verificare browser, mobile/tablet/desktop, tastiera e reduced motion dove applicabili.
 
 ## Git e igiene del repository

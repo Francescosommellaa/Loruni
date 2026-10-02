@@ -2,16 +2,19 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { Button, Container } from '@loruni/ui';
+import { Container } from '@loruni/ui';
 import { brand } from '@loruni/ui/brand';
 import { site } from '../config/site';
 import { journey, narrative } from './narrative-content';
+import { ReferencePhoto } from './reference-photo';
+import type { ReferenceMediaName } from './reference-media';
 import styles from './narrative.module.css';
 
 // Progressive navigation only: the complete narrative is rendered on the server.
 export function NarrativeControls() {
   const [scene, setScene] = useState({ id: narrative.opening.id as string, theme: 'dark' });
   const [menuOpen, setMenuOpen] = useState(false);
+  const [preview, setPreview] = useState<ReferenceMediaName>('social');
   const dialogRef = useRef<HTMLDialogElement>(null);
   const navigationRef = useRef<HTMLElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
@@ -22,7 +25,6 @@ export function NarrativeControls() {
     const reversedScenes = [...scenes].reverse();
     const previousNavHeight = document.documentElement.style.getPropertyValue('--journey-nav-height');
     let frame = 0;
-    const finishIntro = () => { if (opening) opening.dataset.introComplete = 'true'; };
     const update = () => {
       frame = 0;
       // The same measured height owns both anchor clearance and theme detection.
@@ -33,7 +35,6 @@ export function NarrativeControls() {
       const range = document.documentElement.scrollHeight - window.innerHeight;
       const progress = range > 0 ? Math.max(0, Math.min(1, window.scrollY / range)) : 0;
       progressRef.current?.style.setProperty('--journey-progress', String(progress));
-      if (window.scrollY > 0) finishIntro();
     };
     const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
     update();
@@ -41,9 +42,6 @@ export function NarrativeControls() {
     window.addEventListener('resize', schedule);
     const resizeObserver = new ResizeObserver(schedule);
     if (navigationRef.current) resizeObserver.observe(navigationRef.current);
-    // Input ends the autonomous intro immediately; none of these cancels input.
-    const inputs = ['pointerdown', 'keydown', 'wheel', 'touchstart'] as const;
-    inputs.forEach((event) => window.addEventListener(event, finishIntro, { passive: true }));
     return () => {
       cancelAnimationFrame(frame);
       resizeObserver.disconnect();
@@ -51,7 +49,6 @@ export function NarrativeControls() {
       else document.documentElement.style.removeProperty('--journey-nav-height');
       window.removeEventListener('scroll', schedule);
       window.removeEventListener('resize', schedule);
-      inputs.forEach((event) => window.removeEventListener(event, finishIntro));
     };
   }, []);
 
@@ -77,21 +74,30 @@ export function NarrativeControls() {
     }
   }
 
+  function previewScene(id: string) {
+    const media: ReferenceMediaName = id === narrative.cocktail.id ? 'cocktail' : id === narrative.table.id ? 'table' : id === narrative.digital.id ? 'gaming' : 'social';
+    setPreview(media);
+  }
+
   return <>
     <header ref={navigationRef} className={styles.navigation} data-theme={scene.theme} data-hidden={scene.id === narrative.opening.id} inert={scene.id === narrative.opening.id} aria-hidden={scene.id === narrative.opening.id}>
       <Container className={styles.navigationContent}>
-        <a href={`#${narrative.opening.id}`} aria-label="Loruni, torna all’inizio"><Image src={scene.theme === 'light' ? brand.assets.logoDark : brand.assets.logoLight} alt="" width={88} height={56} /></a>
+        <a href={`#${narrative.opening.id}`} aria-label="Loruni, torna all’inizio"><Image src={scene.theme === 'light' ? brand.assets.iconDark : brand.assets.iconLight} alt="" width={64} height={64} /></a>
         <a className={styles.visitShortcut} href={`#${narrative.visit.id}`}>{site.actions.primary}</a>
-        <Button variant="secondary" aria-haspopup="dialog" aria-expanded={menuOpen} aria-controls="journey-menu" onClick={openMenu}>Menu</Button>
+        <button className={styles.navButton} type="button" aria-haspopup="dialog" aria-expanded={menuOpen} aria-controls="journey-menu" onClick={openMenu}>Menu<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1 8h14M8 1v14" stroke="currentColor" /></svg></button>
       </Container>
       <div ref={progressRef} className={styles.progress} aria-hidden="true" />
     </header>
     <dialog id="journey-menu" ref={dialogRef} className={styles.menu} aria-labelledby="menu-title" onClose={() => setMenuOpen(false)}>
       <Container className={styles.menuContent}>
-        <div className={styles.menuTop}><h2 id="menu-title" data-type="heading-2">Dentro Loruni</h2><Button variant="secondary" onClick={() => dialogRef.current?.close()}>Chiudi</Button></div>
-        <nav aria-label="Momenti della serata"><ul className={styles.menuLinks}>
-          {journey.map((item) => <li key={item.id}><a href={`#${item.id}`} aria-current={scene.id === item.id ? 'location' : undefined} onClick={() => goToScene(item.id)}>{item.label}</a></li>)}
-        </ul></nav>
+        <div className={styles.menuTop}><h2 id="menu-title">Dentro Loruni</h2><button className={styles.navButton} type="button" onClick={() => dialogRef.current?.close()}>Chiudi</button></div>
+        <div className={styles.menuBody}>
+          <nav aria-label="Momenti della serata"><ul className={styles.menuLinks}>
+            {journey.map((item) => <li key={item.id}><a href={`#${item.id}`} aria-current={scene.id === item.id ? 'location' : undefined} onClick={() => goToScene(item.id)} onMouseEnter={() => previewScene(item.id)} onFocus={() => previewScene(item.id)}>{item.label}</a></li>)}
+          </ul></nav>
+          {menuOpen && <ReferencePhoto media={preview} className={styles.menuPreview} sizes="(min-width: 48rem) 45vw, 100vw" />}
+        </div>
+        <div className={styles.menuFooter}><span>{site.business.city}</span><a href={site.social.instagram}>@loruni.it</a></div>
       </Container>
     </dialog>
   </>;

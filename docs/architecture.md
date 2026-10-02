@@ -1,10 +1,11 @@
-# Architettura — Fase 02
+# Architettura — Fase 03
 
 Una repo pnpm, due app Next.js indipendenti: landing (3000) e playground interno (3001). Nessuna dipendenza fra app; entrambe consumano @loruni/ui tramite transpilePackages. App Router, React, TypeScript strict. Versioni Next/React stabili correnti verificate nel registry all'inizio della task; manifest/catalog e lockfile sono le fonti.
 
 | Casa del codice | Responsabilità attuale |
 | --- | --- |
-| apps/landing/src/app | Composizione narrativa server e contenuti locali, placeholder media, enhancement navigazione/menu; layout e metadata nativi |
+| apps/landing/src/app | Composizione statica server, copy/reference locali, navigazione/menu client; layout e metadata nativi |
+| apps/landing/public/media/reference | Quattro fotografie sintetiche temporanee, source WebP versionato |
 | apps/landing/src/config | Dati globali sito/business, ambiente e SEO |
 | apps/playground/src/components | Prove di tema, controlli e ciclo di vita GSAP |
 | packages/ui/src | Brand, font, token/reset globali, CSS Modules e primitive realmente usate |
@@ -15,7 +16,7 @@ Una repo pnpm, due app Next.js indipendenti: landing (3000) e playground interno
 
 Local first, shared when necessary. Niente CMS fittizio, store globale, provider motion, registry o directory vuote per future feature. Dati repository-driven: site.ts distingue gaming digitale/giochi da tavolo e mantiene null per dati mancanti. Quando arriverà un CMS cambierà la fonte, non la responsabilità del rendering.
 
-La home compone otto landmark senza componenti per ogni scena. `narrative-content.ts` possiede soltanto copy provvisorio/intenzioni media e ID/label per menu. `NarrativeControls` è il confine client: navbar/progressione su scroll nativo e `dialog` fullscreen accessibile, con cleanup e ripristino dell'overflow. Nessun provider o motore motion globale. `ButtonLink` condivide il CSS Button mantenendo semantica anchor. Ritmo e soglia responsive 48rem restano locali alla home; vedere [narrativa](landing-narrative.md).
+La home compone otto landmark senza componenti per ogni scena. `narrative-content.ts` possiede copy provvisorio e ID/label per menu; `reference-media.ts` percorsi e alt delle quattro reference. `ReferencePhoto` possiede figura/didascalia, la scena dimensioni/crop. `JourneyLink` e freccia condividono l'affordance delle CTA editoriali locali. Il precedente `ButtonLink` è rimosso, senza consumer residui. `NarrativeControls` è il confine client: navbar/progressione su scroll nativo e `dialog` fullscreen con preview su hover/focus, cleanup e ripristino dell'overflow. Nessun provider o motore motion globale. Soglie locali 48rem/64rem; vedere [direzione visuale](visual-direction.md).
 
 CSS Modules possiedono composizioni e controlli; styles.css possiede reset e ruoli semantici. brand.ts possiede valori palette e percorsi brand; i due layout li espongono come CSS custom properties. Container possiede larghezza/gutter/centratura, Section solo ritmo verticale, flex parent il gap. Vedere design-system.md.
 

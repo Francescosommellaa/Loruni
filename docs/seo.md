@@ -1,6 +1,6 @@
-# SEO, ricerca e discovery AI — Fase 02
+# SEO, ricerca e discovery AI — Fase 03
 
-Fonte delle decisioni sistemiche, aggiornata allo scheletro narrativo Fase 02 e alla conferma del dominio. Le regole SEO fornite dall'utente restano vincolanti; implementazione locale non equivale a indicizzazione o distribuzione.
+Fonte delle decisioni sistemiche, aggiornata alla composizione statica Fase 03 e alla conferma del dominio. Le regole SEO fornite dall'utente restano vincolanti; implementazione locale non equivale a indicizzazione o distribuzione. Le fotografie sintetiche sono dichiarate negli alt/didascalie e non attestano la sede. Nessun dato/schema/crawler viene inventato o modificato per questa fase.
 
 ## Fonti
 config/site.ts possiede https://loruni.it, lingua it, identità/business, profilo Instagram, CTA e sola route pubblica implementata /. config/environment.ts possiede SITE_ENV e token di verifica opzionali; config/seo.ts deriva metadata, robots e graph. brand.ts possiede palette/asset. Niente origine preview/localhost nelle URL pubbliche, duplicazione di dati, CMS fittizio o libreria SEO.
@@ -10,7 +10,7 @@ Loruni: locale serale a Napoli di socialità, cocktail e gaming, anche per chi n
 ## Route e output correnti
 | Fonte/output | Decisione |
 | --- | --- |
-| Landing / | Scheletro narrativo server; unico H1, heading/ancore reali, metadata globali con title/description, canonical, OG e X |
+| Landing / | Composizione statica server; unico H1, heading/ancore reali, metadata globali con title/description, canonical, OG e X |
 | robots.txt | Nativo Next; policy ambiente e search/training distinti |
 | sitemap.xml | Solo / in production; vuota negli altri ambienti, niente lastmod inventato |
 | manifest.webmanifest e icon.png | Identità/lingua, browser display; non una promessa PWA/installazione |

@@ -1,6 +1,6 @@
 # Loruni
 
-Un repository pnpm, due app indipendenti: landing pubblica e playground. **Fase 02: architettura narrativa**. La home è uno scheletro navigabile di «una notte dentro Loruni», con copy provvisorio e placeholder neutri. Design/static composition e motion definitivi verranno sviluppati nelle fasi successive.
+Un repository pnpm, due app indipendenti: landing pubblica e playground. **Fase 03: Visual direction + Static composition**. La home compone «una notte dentro Loruni» con fotografie sintetiche dichiarate, typography e brand ufficiale. Copy e media sono provvisori; il motion definitivo appartiene alla fase successiva.
 
 | App | Percorso | Avvio locale |
 | --- | --- | --- |
@@ -68,6 +68,8 @@ GitHub Actions verifica installazione deterministica, lint, tipi e build su push
 
 - [Prodotto](PRODUCT.md) e [brief landing](docs/landing-brief.md)
 - [Narrativa home](docs/landing-narrative.md): scene, ritmo relativo, transizioni future e mobile
+- [Direzione visuale](docs/visual-direction.md): composizioni statiche e responsive
+- [Reference fotografiche](docs/reference-media.md): provenienza sintetica, prompt e asset temporanei
 - [Architettura](docs/architecture.md)
 - [Design system](docs/design-system.md) e [DESIGN.md](DESIGN.md)
 - [SEO e discovery AI](docs/seo.md)
