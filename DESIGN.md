@@ -1,12 +1,24 @@
 ---
 name: Loruni
-description: Identità Loruni, fondazioni condivise e stato dello scheletro narrativo Fase 02.
+description: Identità Loruni, fondamenta condivise e composizione statica Fase 03.
 colors:
   grafite: "#1A1917"
   avorio: "#F4F0E8"
   corallo: "#FF5538"
   lime: "#C8F24A"
 typography:
+  poster:
+    fontFamily: "Funnel Display, sans-serif"
+    fontSize: "clamp(4rem, 20vw, 14rem)"
+    fontWeight: 600
+    lineHeight: 0.94
+    letterSpacing: "-0.025em"
+  scene:
+    fontFamily: "Funnel Display, sans-serif"
+    fontSize: "clamp(2.5rem, 12vw, 8rem)"
+    fontWeight: 600
+    lineHeight: 1.05
+    letterSpacing: "-0.025em"
   display:
     fontFamily: "Funnel Display, sans-serif"
     fontSize: "clamp(3rem, 8vw, 6rem)"
@@ -70,15 +82,15 @@ components:
 
 ## Overview
 
-Loruni è sociale, immersivo e contemporaneo. Atmosfera notturna, composizione editoriale ed energia da poster appartengono al contesto della moodboard Figma fornita dall'utente. Palette, Funnel Display per titoli, Funnel Sans per testi e feedback/switch veloci sono confermati; gli asset ufficiali mantengono proporzioni e contenuto originali.
+Loruni è sociale, immersivo e contemporaneo. Il mondo ereditato usa grafite/avorio, accenti corallo/lime rari, Funnel e asset ufficiali intatti. La Fase 03 richiesta dall'utente porta nella landing un carattere notturno, editoriale, materico e audace: fotografia umana, tipografia da poster e ritagli netti, senza estetica SaaS, catalogo di card o gaming RGB.
 
-Stato verificato nel codice il 2026-10-02: le fondamenta Fase 01 alimentano lo scheletro narrativo navigabile Fase 02 della home. Otto momenti server compongono «una notte dentro Loruni»: apertura, socialità, cocktail, tavolo, gaming digitale, app/eventi, convergenza e visita. Copy e slot media sono provvisori e identificati; percorso, ritmo e responsabilità locali sono in `docs/landing-narrative.md`. Il playground continua a verificare tema, controlli e ciclo di vita GSAP. Visual direction + Static composition rimane la prossima fase: lo scheletro non approva copy, fotografie, composizione o motion definitivi.
+Stato verificato nel codice il 2026-10-02: la home compone staticamente otto scene server lungo uno scroll verticale nativo. Composizioni e ritmo restano locali, in `docs/visual-direction.md` e `docs/landing-narrative.md`; non diventano un template globale. Le fotografie sono reference sintetiche dichiarate, non immagini della sede; schermate app e store restano mancanti, copy provvisorio. Non esiste una pagina generata approvata come comp. Prossima fase: Motion System + Scroll Choreography, non iniziata.
 
-Il frontmatter fotografa i token effettivi, derivati da `packages/ui/src/brand.ts` e `styles.css`; il runtime resta la fonte eseguibile. Spacing, ruoli semantici e metriche restano i default tecnici condivisi della Fase 01, consumati anche dallo scheletro narrativo senza nuova art direction definitiva. La review Fase 01 ha riscontrato coerenza delle fondamenta nelle nove acquisizioni mobile/tablet/desktop, inclusa la prova chiara; non certifica WCAG, deploy o compatibilità fra browser.
+Il frontmatter e `.impeccable/design.json` descrivono il codice effettivo; `packages/ui/src/brand.ts` e `styles.css` restano le fonti eseguibili. Fase 03 aggiunge i ruoli riusati poster/scene, depth/media-shade e i livelli navigation/skip-link; spacing, radius e contratti Button/Switch restano invariati. Il playground conserva le prove delle fondamenta e del ciclo di vita GSAP. Le evidenze browser e i limiti appartengono a `docs/verification.md`; questo documento non attesta un audit WCAG completo, deploy o approvazione editoriale finale.
 
 **Key Characteristics:**
 - Palette e coppia Funnel preservate.
-- Fondamenta piane, geometria netta e proprietà del layout esplicite.
+- Poster fotografici locali, fondamenta piane e proprietà del layout esplicite.
 - Contenuto leggibile subito, movimento ridotto e controlli nativi.
 - Playground interno, senza promozione implicita degli esperimenti.
 
@@ -93,8 +105,9 @@ Grafite e avorio costruiscono la base; corallo concentra l'energia e lime introd
 - **Lime:** stato positivo dello switch tramite positive; nessuna associazione fissa a una categoria commerciale.
 
 ### Neutral
-- **Grafite e avorio:** background/text invertiti nel tema chiaro. I layout espongono i quattro valori tramite `brandVariables`; componenti e composizioni consumano i ruoli semantici. La scena digitale usa il tema chiaro come taglio provvisorio di ambiente, senza assegnare un colore definitivo al gaming; la prova tema del playground resta interna.
+- **Grafite e avorio:** background/text invertiti nel tema chiaro. I layout espongono i quattro valori tramite `brandVariables`; componenti e composizioni consumano i ruoli semantici. La landing mantiene scura la stanza digitale e usa la pausa avorio per app/eventi; la prova tema del playground resta interna.
 - Background-secondary/surface (4%), surface-elevated (8%), text-secondary (80%), text-muted (65%) e border (50%) mescolano text e background in sRGB; focus usa text. Le percentuali indicano la quota di text. I ruoli si ricalcolano nello scope del tema chiaro.
+- Depth mescola background all'80% con black; media-shade mescola grafite all'88% con transparent. Il primo sostiene gli ambienti profondi e i frame media, il secondo didascalie e gradienti locali di leggibilità. Sono derivazioni della palette, non nuovi colori di marca.
 
 Usare avorio su grafite e grafite su avorio, corallo o lime. Non usare testo avorio su corallo o lime per normali testi informativi. Contrasti calcolati: grafite/avorio 15.46:1, grafite/corallo 5.53:1, grafite/lime 13.60:1.
 
@@ -104,9 +117,9 @@ Le luci rosse, verdi e le altre tinte delle fotografie appartengono alla scena; 
 
 ## Typography
 
-Funnel Display per display/heading, Funnel Sans per body/UI, con fallback sans-serif. Font latini variabili locali (300–800) con licenze OFL in `packages/ui/fonts`, caricati tramite `next/font/local`.
+Funnel Display per poster/scene/display/heading, Funnel Sans per body/UI, con fallback sans-serif. Font latini variabili locali (300–800) con licenze OFL in `packages/ui/fonts`, caricati tramite `next/font/local`.
 
-Gli otto ruoli `data-type` seguono le metriche del frontmatter: display e heading-1/2/3 per gerarchia visiva; body-large/body per lettura; small/label per UI. La gerarchia HTML resta distinta dal ruolo visivo. Nello scheletro della home, l'H1 di apertura e gli H2 di convergenza/visita usano display; gli altri titoli di scena heading-1; app e testo di convergenza heading-3; il menu heading-2. Diagnostica e banco del playground conservano heading-3 e heading-2. È un uso narrativo dei ruoli esistenti, senza scelta di trattamento editoriale definitivo. Button e ButtonLink ereditano la dimensione body con peso 600. Frasi e paragrafi in cassa naturale; maiuscolo breve solo quando utile.
+I dieci ruoli `data-type` seguono le metriche del frontmatter. Poster introduce una scala monumentale compatta, usata per apertura/socialità/cocktail/convergenza/visita; scene contiene tavolo/digitale/espansione. Il vecchio massimo del display resta proprio di quel ruolo, non limita i poster. Display e heading-1/2/3 rimangono disponibili per le fondamenta; body-large/body servono lettura, small/label dettagli e UI. La gerarchia HTML è distinta dal ruolo visivo: un H1, titoli H2 delle scene, H3 app/eventi. Il menu locale usa heading-2, heading-1 da desktop; il suo titolo usa metriche body. Diagnostica e banco del playground conservano heading-3 e heading-2. Button eredita body con peso 600; JourneyLink locale usa heading-3. Frasi e paragrafi in cassa naturale.
 
 Lettere tagliate, ripetizioni e deformazioni della moodboard appartengono alla grafica espressiva. Navigazione, titoli informativi e istruzioni rimangono leggibili per intero.
 
@@ -130,15 +143,15 @@ L'utente ha confermato le regole di coerenza UI: ogni responsabilità visiva ha 
 
 ### Fondamenta implementate
 
-La scala condivisa comprende i sette passi del frontmatter. Gutter fluido `clamp(1rem, 4vw, 2rem)` e larghezza massima 72rem alimentano Container in entrambe le app; Section usa space-2xl verticalmente nel playground. La home Fase 02 compone sezioni native con ritmo locale, senza alterare il contratto Section.
+La scala condivisa comprende i sette passi del frontmatter. Gutter fluido `clamp(1rem, 4vw, 2rem)` e larghezza massima 72rem alimentano Container in entrambe le app; Section usa space-2xl verticalmente nel playground. La home Fase 03 compone sezioni native con ritmo locale, senza alterare il contratto Section.
 
-Le fondamenta condivise rispondono tramite dimensioni fluide e wrapping, senza breakpoint di layout globali. Nel playground il gruppo azioni va a capo; le descrizioni hanno misura massima 65ch e i controlli 30rem, limiti locali del banco. Le misure QA della base Fase 01 sono 390×844, 768×1024 e 1440×900, senza overflow rilevato e con font locali caricati: sono misure di verifica, non breakpoint.
+Le fondamenta condivise rispondono tramite dimensioni fluide e wrapping, senza breakpoint di layout globali. Nel playground il gruppo azioni va a capo; le descrizioni hanno misura massima 65ch e i controlli 30rem, limiti locali del banco. Le misure QA 390×844, 768×1024 e 1440×900 sono viewport di verifica, non breakpoint; aggiungere reflow/zoom quando pertinente.
 
-Nella home Fase 02, `narrative.module.css` possiede la soglia locale 48rem: i gruppi compatibili passano dal flusso verticale a due colonne quando il contenuto entra. Container conserva larghezza/gutter; ogni scena possiede il proprio padding verticale e ritmo minimo, grid/flex i gap. Quote di viewport, misure dei placeholder e relazioni fra scene sono parametri locali di prova documentati in `docs/landing-narrative.md`, non token o composizioni globali.
+Nella landing `narrative.module.css` possiede responsive, crop e overlap: tavolo/app usano una colonna su mobile, poi sei tracce da 48rem dove necessarie; da 64rem dodici tracce e sovrapposizioni desktop. Cocktail e convergenza conservano sei tracce locali anche su mobile per i rapporti fra fotografie. Container conserva larghezza/gutter, scena il ritmo verticale e i minimi svh, grid/flex i gap. Quote e crop appartengono alla composizione, non ai token globali. Al testo ingrandito evitare tracce vuote che moltiplicano il gap; il contenuto può allungare le scene.
 
 ### Contesto della moodboard
 
-Griglie, asimmetrie, righe, poster e immagini ampie sono riferimenti compositivi, non pattern già promossi nelle fondamenta. Il loro trattamento definitivo nella home sarà deciso in Visual direction + Static composition; i token attuali non prescrivono una successione di sezioni o card.
+Griglie, asimmetrie, poster e fotografie ampie sono ora applicati nella composizione statica locale della home; non sono componenti promossi nelle fondamenta né una successione obbligatoria per altre pagine.
 
 Su mobile ricomporre l'ordine di lettura e i ritagli, conservando gerarchia e carattere. Nessuna informazione essenziale tagliata per l'effetto poster. Testi lunghi su fondo stabile; testo sopra foto solo con contrasto verificato.
 
@@ -146,15 +159,17 @@ La moodboard fotografica mostra persone insieme, ambienti e dettagli di gesti/at
 
 ## Elevation & Depth
 
-La base è piana, senza shadow: campiture, contrasto e bordi sottili organizzano lo spazio. Surface/elevated sono ruoli tonali disponibili, non una famiglia Card già implementata. Immagini e rapporti di scala appartengono al contesto della moodboard. Evitare glow diffuso, vetro sistematico e gradienti ornamentali.
+La base è piana, senza shadow UI: campiture, contrasto e bordi sottili organizzano lo spazio. Surface/elevated sono ruoli tonali, non una famiglia Card. Nella landing profondità fotografica, crop, rapporti di scala e watermark stratificato sostengono il materiale; gradienti da depth/media-shade sono locali alla leggibilità del testo sulle foto. Evitare glow diffuso, vetro sistematico e gradienti ornamentali.
+
+Il main usa isolation per contenere i layer media a z-index 1. Navigation usa layer-navigation (1), lo skip link layer-skip-link (2); il dialog nativo vive nel top layer. Non aumentare numeri per compensare ownership o stacking context errati.
 
 ## Shapes
 
-Geometrie nette, campiture piene e controlli ad angoli retti. Track (20px) e thumb circolare dello switch sono geometria meccanica locale preesistente, non token di superficie; l'eccezione detector è limitata a `packages/ui/src/switch.module.css` in `.impeccable/config.json`. Bande, forme radiali, cifre grandi e ripetizioni restano risorse della moodboard, non decorazioni obbligatorie.
+Geometrie nette, campiture piene e controlli ad angoli retti. Frame fotografici senza radius aggiunto; watermark ufficiale usato come finestra, strato ed eco senza modificare gli originali. Track (20px) e thumb circolare dello switch sono geometria meccanica locale preesistente, non token di superficie; l'eccezione detector è limitata a `packages/ui/src/switch.module.css` in `.impeccable/config.json`. Le risorse grafiche della moodboard non diventano decorazioni obbligatorie.
 
 ## Components
 
-`packages/ui` contiene Button e ButtonLink primary/secondary, Switch, Container e Section, oltre a brand, font, CSS base e entrypoint motion separato. Gli SVG del marchio e il raster ufficiale sono copie senza trasformazioni: mantenere proporzioni e non aggiungere effetti.
+`packages/ui` contiene Button primary/secondary, Switch, Container e Section, oltre a brand, font, CSS base e entrypoint motion separato. ButtonLink dello scaffold è stato rimosso senza consumer: i link editoriali hanno responsabilità locale. Gli SVG del marchio e il raster ufficiale mantengono proporzioni e contenuto originali.
 
 Pulsante principale corallo con testo grafite, secondario delineato e focus percepibile. Switch controllato, accessibile con tastiera e stato espresso da `aria-checked`. Target interattivi almeno 44 px; i pulsanti base sono alti almeno 48 px. Stati disabilitati non rispondono all'input. I cambi non spostano la struttura della pagina.
 
@@ -165,7 +180,6 @@ Il playground mantiene locale tema, contatore e diagnostica; la promozione richi
 | Famiglia presente | Possiede | Il contesto possiede |
 | --- | --- | --- |
 | Button | Altezza minima 48 px, padding sm/lg (8/24 px), gap sm (8 px), radius-control, peso 600 e stati semantici | Posizione, larghezza e distanza dagli altri elementi |
-| ButtonLink | Anchor nativa con href obbligatorio, variant primary/secondary e stesso CSS, metriche e stati applicabili di Button | Destinazione, posizione, larghezza e distanza; disabled resta una capacità del Button nativo |
 | Switch | Target 52 × 44 px, track/thumb, etichetta, stato controllato e feedback; field possiede gap lg | Posizione esterna e stato nel consumer |
 | Container | Larghezza, gutter, centratura | Ritmo verticale e gap interni |
 | Section | Padding verticale section-space | Larghezza e gutter tramite Container |
@@ -175,11 +189,13 @@ Primary usa accent/on-accent; hover text/background. Secondary usa bordo semanti
 
 CSS per feedback (120ms) e switch (160ms), easing condiviso `cubic-bezier(0.16, 1, 0.3, 1)` sul thumb. Sono default tecnici effettivi, non timing narrativi approvati. Reduced motion porta durate e ritardi a 0ms; il solo `!important` globale è l'override accessibile, non una patch di layout.
 
-### Composizione locale della home Fase 02
+### Composizione locale della home Fase 03
 
-Le otto scene e i link sono renderizzati sul server in un unico percorso verticale nativo. MediaPlaceholder è uno slot neutro con descrizione esplicita, esclusivo della landing: geometria e campiture non definiscono una famiglia Card o un contratto media condiviso. L'apertura sovrappone watermark e logo ufficiali con un'emergenza CSS entro 1s; input/scroll la completano e reduced motion mostra subito il logo. Il contenuto non attende il reveal.
+Le otto scene e i link sono renderizzati sul server in un percorso verticale nativo. Apertura: claim/fotografia nella prima riga, watermark come finestra e logo/Napoli nel registro inferiore, senza eyebrow. Il precedente reveal CSS Fase 02 è rimosso: tutto è visibile staticamente. ReferencePhoto locale possiede figura, alt e dichiarazione sintetica; la scena possiede dimensioni/crop. Next/Image usa fill/cover e sizes orientato al crop. B/W episodico nel dettaglio sociale e teaser eventi; niente texture artificiale. Lo slot app resta esplicito, senza finta UI o mockup telefono.
 
-NarrativeControls possiede navbar dopo l'apertura, linea di progressione e menu fullscreen tramite `dialog` nativo. L'altezza misurata della navbar alimenta il solo offset locale `--journey-nav-height`, condiviso da ancore e rilevamento del tema della scena; ResizeObserver, listener e RAF vengono puliti. Il menu conserva focus/ESC, ancore e ripristino dell'overflow del body alla chiusura. Sono comportamenti locali dello scheletro, senza pinning, smooth scroll, cursore o motion narrativo definitivo.
+JourneyLink locale è un anchor sottolineato con freccia SVG, target minimo control-height e hover corallo; focus eredita il contratto comune. Il link finale usa la scala poster e una destinazione Instagram spiegata, fino a disponibilità dell'indirizzo. La CTA store assente usa Button secondary disabilitato con nota. Queste composizioni non creano nuove primitive condivise.
+
+NarrativeControls possiede navbar dopo l'apertura con icona ufficiale, linea di progressione e menu fullscreen tramite `dialog` nativo. L'altezza misurata della navbar alimenta il solo offset locale `--journey-nav-height`, condiviso da ancore e rilevamento del tema; ResizeObserver, listener e RAF vengono puliti. Il menu conserva focus/ESC, ancore e ripristino dell'overflow del body; preview fotografica aggiornata su hover e focus, senza animazione. Scroll naturale, nessun pinning, smooth scroll, cursore o motion narrativo definitivo.
 
 GSAP/ScrollTrigger passano da `@loruni/ui/motion`: import lazy nel browser, registrazione centralizzata una volta, scope e cleanup. `matchMedia` reagisce alla preferenza e `revert` pulisce il consumer. La diagnostica verifica caricamento/lifecycle senza tween decorativi; la landing non carica il motore. Non esistono Arrow, Tab, Card, Modal condivisi o contratti completi per campi; il dialog della navigazione resta locale.
 
@@ -190,6 +206,7 @@ GSAP/ScrollTrigger passano da `@loruni/ui/motion`: import lazy nel browser, regi
 - **Do** assegnare un solo proprietario a gutter, gap, padding, superficie e movimento.
 - **Do** conservare contenuti e controlli accessibili senza attendere animazioni.
 - **Do** verificare mobile, focus, touch e reduced motion sul risultato reale.
+- **Do** dichiarare le reference sintetiche e mantenere espliciti app/media/dati mancanti.
 
 ### Don't:
 - **Don't** inventare sede, contatti, prezzi, orari, servizi o testimonianze.
