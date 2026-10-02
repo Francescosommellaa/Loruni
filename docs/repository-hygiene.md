@@ -32,7 +32,8 @@ Non versionare conversazioni, prompt temporanei, scratchpad, browser state o log
 ## Eccezioni concrete per artefatti generati
 
 - I WOFF2 e le licenze in `packages/ui/fonts` sono asset distribuiti dal prodotto e consumati da `next/font/local`: restano disponibili nel checkout senza una generazione obbligatoria prima della build. `scripts/sync-fonts.mjs` li sincronizza dalle versioni fissate nel manifest. Le licenze incluse sono SIL OFL; preservarle insieme ai font. Non pubblicare futuri font con licenza non redistribuibile.
-- `.impeccable/design.json` è il sidecar condiviso utilizzato dagli strumenti di design, esplicitamente ammesso dalla policy. È derivato: CSS e `DESIGN.md` restano le fonti del sistema, senza una seconda configurazione da modificare indipendentemente.
+- `.impeccable/design.json` è il sidecar condiviso utilizzato dagli strumenti di design, esplicitamente ammesso dalla policy. È derivato: brand config, CSS e `DESIGN.md` restano le fonti del sistema, senza una seconda configurazione da modificare indipendentemente.
+- `apps/*/public/brand/` contiene esclusivamente copie generate da `scripts/sync-brand-assets.mjs` prima di dev/build. È ignorato; SVG sorgenti in `packages/ui/brand` e PNG originali in `Logo` restano versionati. Non inserire qui asset nuovi senza aggiungerne la fonte e la sincronizzazione.
 - Loghi esportati, icone e baseline intenzionali appartengono al prodotto o alla documentazione quando scelti esplicitamente; non sono screenshot di debug solo perché esportati da uno strumento.
 
 Per ogni altro generato chiedere se serve per utilizzo, distribuzione/pubblicazione o come artefatto intenzionale. Se ricostruibile durante install/build senza tale motivo, preferire di non tracciarlo. Non introdurre cartelle di backup o copie `final2` per conservare vecchie versioni: la cronologia è Git.

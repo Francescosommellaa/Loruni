@@ -1,0 +1,2 @@
+.container { width: min(calc(100% - 2 * var(--page-gutter)), var(--container-max)); margin-inline: auto; }
+.section { padding-block: var(--section-space); }

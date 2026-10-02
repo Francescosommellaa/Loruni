@@ -3,33 +3,25 @@
 <!-- impeccable:product-schema 1 -->
 
 ## Platform
-
 web
 
 ## Stack
-
-Next.js App Router, React, TypeScript e pnpm workspaces. Continuità con lo stack del precedente scaffold della repo. Due app indipendenti, Node.js 24.
+Next.js App Router, React, TypeScript strict, CSS Modules e pnpm workspaces. GSAP/ScrollTrigger isolati e caricati su richiesta; CSS per feedback semplici. Node.js 24.
 
 ## Users
-
-La landing si rivolge a chi vuole conoscere Loruni. Il playground serve al lavoro interno di esplorazione e confronto. Pubblico specifico e contesto operativo della landing restano da dettagliare.
+Target principale 18–35 anni: giovani adulti, amici, gamer, coppie, chi cerca cocktail o socialità anche senza giocare.
 
 ## Product Purpose
-
-Loruni è un luogo fisico, confermato dall'utente nelle regole SEO del 2026-10-01. La landing è il suo biglietto da visita. Il playground consente di provare layout, componenti, animazioni e combinazioni prima di sceglierli per il sito.
+Locale serale di socializzazione, cocktail e gaming a Napoli. Socialità come contenitore; cocktail e gaming con pari dignità. Gaming digitale e giochi da tavolo distinti. Obiettivo del sito: portare persone fisicamente da Loruni. CTA primaria «Vieni a trovarci», secondaria «Scarica l’app»; app visibile ma non centro della home.
 
 ## Operating Context
-
-Una repo con due app. Si sperimenta nel playground; le scelte confermate si integrano nella landing. Gli esperimenti non diventano decisioni definitive automaticamente.
+Due app indipendenti: landing e playground interno. Fase 01 ha costruito le fondamenta; Fase 02 il percorso narrativo. Fase 03 compone staticamente «una notte dentro Loruni», con reference fotografiche sintetiche dichiarate e copy provvisorio. Prossima fase: Motion System + Scroll Choreography. Nessun prototipo viene promosso automaticamente.
 
 ## Brand Commitments
-
-Nome e loghi Loruni esistenti. Moodboard Figma fornita dall'utente; palette grafite/avorio/corallo/lime e coppia Funnel Display per titoli, Funnel Sans per testi. Animazioni e switch veloci.
+Sociale, immersivo, contemporaneo. Copy futuro minimale, diretto, carismatico, evocativo, leggermente misterioso. Palette moodboard esistente grafite/avorio/corallo/lime come base, ruoli semantici provvisori. Funnel Display e Funnel Sans locali. Asset ufficiali intatti. Niente stereotipi nerd/gamer, dating, corporate, SaaS o nightlife generico.
 
 ## Evidence on Hand
-
-Asset originali in `Logo/`; copie SVG utilizzate in `packages/ui/brand`. Analisi moodboard nel Brain Loruni. Non sono confermati categoria dell'attività, città, ubicazione, indirizzo, orari, prezzi, contatti, immagini della sede o altre promesse operative. Gli esempi nelle regole SEO non sono dati confermati di Loruni.
+Brief Fase 01/02/03 e dominio loruni.it confermati dall'utente. Napoli, Instagram @loruni.it, orari indicativi 18:30–02:00. Indirizzo, telefono, store, orari definitivi/giorni e fotografie definitive TBD. Asset in Logo e packages/ui/brand; moodboard nel Brain. La composizione implementata non costituisce approvazione editoriale finale o testimonianza fotografica del locale.
 
 ## Capabilities and Constraints
-
-Il laboratorio è esplicitamente autorizzato dall'utente il 2026-10-01: supera il precedente vincolo che lo escludeva. Hosting, contenuti definitivi e azione principale della landing restano aperti. La base attuale è uno scaffold funzionante, non il sito finale.
+Mobile first, browser moderni, baseline WCAG AA, reduced motion obbligatorio. Esperienza/motion 9/10, priorità 60% spettacolarità/40% performance senza UX frustrante: ogni effetto deve giustificare il costo. Fase 03: notturno/editoriale/materico/audace/immersivo, statico prima del motion; scroll verticale nativo, niente pin o scroll-jacking. Reference Drinkstill precisa ancora da identificare, senza copiarne l'identità. Analytics privacy-friendly da scegliere sui bisogni reali; consenso soltanto se necessario ai servizi effettivi.

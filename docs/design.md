@@ -1,5 +1,5 @@
 # Design Loruni
 
-La fonte normativa è [DESIGN.md](../DESIGN.md) nella root: palette, font, ritmo, componenti e vincoli. Questo file mantiene il collegamento dal percorso documentale senza duplicare il sistema.
+[DESIGN.md](../DESIGN.md) registra l'identità confermata e il sistema visuale implementato. [Design system](design-system.md) descrive i contratti operativi e i rispettivi owner; CSS e brand config restano le fonti eseguibili.
 
-Lo stile guida l'inizializzazione autorizzata dall'utente il 2026-10-01. I layout e i contenuti provvisori restano da scegliere; le varianti si esplorano nel playground prima di essere promosse. Il nuovo laboratorio è esplicitamente richiesto e supera il precedente vincolo landing-first.
+Fase 01: palette/font ufficiali e fondamenta; Fase 02: percorso narrativo; Fase 03: [composizione statica](visual-direction.md) cinematografica/editoriale. Copy e reference sintetiche non sono approvazione finale o fotografie della sede. Le prove del playground richiedono scelta esplicita prima di essere promosse. Consultare [brief landing](landing-brief.md) per vincoli; il motion definitivo appartiene alla fase successiva.

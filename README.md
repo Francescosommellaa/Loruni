@@ -1,15 +1,15 @@
 # Loruni
 
-Una repo, due app web: il biglietto da visita Loruni e uno spazio indipendente per esplorare layout, componenti e animazioni.
+Un repository pnpm, due app indipendenti: landing pubblica e playground. **Fase 03: Visual direction + Static composition**. La home compone «una notte dentro Loruni» con fotografie sintetiche dichiarate, typography e brand ufficiale. Copy e media sono provvisori; il motion definitivo appartiene alla fase successiva.
 
-| App | Percorso | Sviluppo locale |
+| App | Percorso | Avvio locale |
 | --- | --- | --- |
 | Landing | `apps/landing` | http://127.0.0.1:3000 |
 | Playground | `apps/playground` | http://127.0.0.1:3001 |
 
 ## Avvio
 
-Richiede Node.js 24 e pnpm 11.24.0. La versione Node di riferimento è in `.node-version`; pnpm è fissato in `package.json`.
+Richiede Node.js 24 (`.node-version`) e pnpm 11.24.0, fissato nel manifest.
 
 ```sh
 corepack enable
@@ -18,70 +18,63 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Per lavorare su una sola app:
-
-```sh
-pnpm dev:landing
-pnpm dev:playground
-```
-
-Non sono richiesti account, database o variabili d'ambiente per l'avvio locale. Entrambe le app possono essere costruite e distribuite separatamente.
-
-## Comandi
+Nessun account, database o environment reale è richiesto per lo sviluppo locale. Entrambe le app si costruiscono e distribuiscono separatamente.
 
 | Comando | Effetto |
 | --- | --- |
-| `pnpm check` | Lint, controllo TypeScript e build di entrambe le app |
-| `pnpm lint` | ESLint sul codice del monorepo |
-| `pnpm typecheck` | Tipi delle due app e del pacchetto condiviso |
-| `pnpm build` | Build di entrambe le app |
-| `pnpm build:landing` | Build della landing |
-| `pnpm build:playground` | Build del playground |
-| `pnpm --filter @loruni/landing start` | Avvio build landing sulla porta 3000 |
-| `pnpm --filter @loruni/playground start` | Avvio build playground sulla porta 3001 |
-| `pnpm fonts:sync` | Rigenera font locali e relative licenze dalle dipendenze fissate |
+| `pnpm dev:landing` / `pnpm dev:playground` | Sviluppo di una sola app |
+| `pnpm check` | Lint, TypeScript e build delle due app |
+| `pnpm lint` / `pnpm typecheck` / `pnpm build` | Gate separati |
+| `pnpm build:landing` / `pnpm build:playground` | Build indipendenti |
+| `pnpm --filter @loruni/landing start` | Landing production locale, porta 3000 |
+| `pnpm --filter @loruni/playground start` | Playground production locale, porta 3001 |
+| `pnpm assets:sync` | Copie pubbliche degli asset ufficiali; automatico prima di dev/build |
+| `pnpm fonts:sync` | Sincronizza font locali e licenze dalle versioni fissate |
 
 ## Struttura
 
 ```text
 apps/
-  landing/       Next.js App Router: base pubblica Loruni
-  playground/    Next.js App Router: esperimenti interattivi
-packages/
-  ui/            Font, palette, asset logo e pochi controlli condivisi
-docs/
-  architecture.md
-  design.md
-  playground.md
-  seo.md
-  verification.md
-scripts/
-  sync-fonts.mjs
+  landing/src/
+    app/              Route, layout, metadata nativi Next.js
+    config/           Site/business, ambiente e policy SEO
+  playground/src/
+    app/              Layout e route interne
+    components/       Controlli e diagnostica GSAP
+packages/ui/
+  src/                CSS Modules, token globali, primitive e motion scope
+  fonts/              Funnel Display, Funnel Sans e licenze
+  brand/              SVG ufficiali condivisi
+Logo/                 Export originali del marchio
+scripts/              Sincronizzazione font/asset
+docs/                 Decisioni e verifiche
 ```
 
-Next.js, React e TypeScript sono condivisi nel workspace pnpm. Motion è usato dal playground. I font Funnel Display e Funnel Sans sono locali: il browser non deve contattare Google Fonts. I file e le licenze sono inclusi in `packages/ui/fonts`.
+Next.js App Router, React, TypeScript strict e CSS Modules. GSAP/ScrollTrigger sono importati su richiesta tramite il modulo motion condiviso, con scope, cleanup e reduced motion; nessuna animazione scenografica è implementata. I font usano `next/font/local`, senza richieste a Google Fonts.
 
-## Dal playground alla landing
+Il playground prova tema, pulsanti e ciclo di vita del motore. Gli esperimenti restano locali: una scelta esplicita precede la promozione nella landing. La landing non importa dal playground.
 
-Gli esperimenti restano in `apps/playground`. Una scelta esplicita precede la promozione: si documenta il risultato, si estrae quanto riutilizzabile in `packages/ui` e si integra nella landing. La landing non importa codice dal playground. Cambiare tema, composizione o durata nell'app sperimentale non modifica il sito pubblico.
+## SEO e pubblicazione
 
-Il playground parte con tre aree: Layout (editoriale, griglia, righe), Componenti (pulsanti e switch) e Movimento (durata e inversione immediata della direzione). Le prove sono identificate come non approvate e usano contenuti dimostrativi.
+Origine pubblica confermata: **https://loruni.it**, in `apps/landing/src/config/site.ts`. Dati mancanti rimangono null/TBD.
 
-## Stato iniziale
+La build predefinita dello scaffold è **noindex** e ha sitemap vuota. `SITE_ENV=production` abilita indicizzazione e sitemap: impostarlo **prima della build**, soltanto quando la home reale sarà pronta sul dominio ufficiale. Le verification Google/Bing sono opzionali e reali, senza placeholder; vedere `.env.example` e [SEO](docs/seo.md).
 
-Questa inizializzazione rende entrambe le app eseguibili. La landing è una prima composizione tipografica: copy, fotografie, contatti e contenuti operativi definitivi devono ancora essere scelti. Non sono inventati indirizzi, prezzi, orari o servizi. Nessun esperimento è stato promosso automaticamente.
+Il playground è sempre noindex/nofollow, con header e metadata; robots consente la scansione per leggere noindex. Queste direttive non proteggono l'accesso: hosting e protezione del laboratorio sono TBD.
 
-Il playground invia direttive `noindex, nofollow` e un `robots.txt` che esclude tutti i percorsi. Il blocco della scansione può impedire ai crawler di leggere `noindex`: l'esclusione effettiva va verificata sull'hosting. Queste direttive non sono autenticazione: prima di ospitare materiale riservato occorre proteggere l'accesso. La policy e le integrazioni ancora necessarie sono in [SEO e discovery AI](docs/seo.md).
+GitHub Actions verifica installazione deterministica, lint, tipi e build su push/PR. Nessun deploy automatico è configurato.
 
 ## Documentazione
 
-- [Prodotto e perimetro](PRODUCT.md)
-- [Git e igiene repository](docs/repository-hygiene.md)
+- [Prodotto](PRODUCT.md) e [brief landing](docs/landing-brief.md)
+- [Narrativa home](docs/landing-narrative.md): scene, ritmo relativo, transizioni future e mobile
+- [Direzione visuale](docs/visual-direction.md): composizioni statiche e responsive
+- [Reference fotografiche](docs/reference-media.md): provenienza sintetica, prompt e asset temporanei
 - [Architettura](docs/architecture.md)
-- [Direzione visiva](docs/design.md)
-- [Workflow del playground](docs/playground.md)
+- [Design system](docs/design-system.md) e [DESIGN.md](DESIGN.md)
 - [SEO e discovery AI](docs/seo.md)
-- [Verifiche e limiti](docs/verification.md)
+- [Budget performance e strategia visual regression](docs/performance.md)
+- [Playground](docs/playground.md)
+- [Git e igiene repository](docs/repository-hygiene.md)
+- [Verifiche](docs/verification.md)
 - [Istruzioni operative](AGENTS.md)
-
-La pipeline GitHub esegue installazione con lockfile congelato, lint, tipi e build di entrambe le app. Il push del codice non pubblica automaticamente un sito: il target di hosting resta da definire.

@@ -1,121 +1,50 @@
-# SEO, ricerca e discovery AI
+# SEO, ricerca e discovery AI — Fase 03
 
-Fonte delle decisioni sistemiche SEO di Loruni. Regole vincolanti fornite dall'utente il 2026-10-01, consolidate qui; `AGENTS.md` definisce quando applicarle. Le regole sono approvate, mentre configurazione e contenuti mancanti restano decisioni aperte. Questo documento non attesta una distribuzione o indicizzazione già avvenuta.
+Fonte delle decisioni sistemiche, aggiornata alla composizione statica Fase 03 e alla conferma del dominio. Le regole SEO fornite dall'utente restano vincolanti; implementazione locale non equivale a indicizzazione o distribuzione. Le fotografie sintetiche sono dichiarate negli alt/didascalie e non attestano la sede. Nessun dato/schema/crawler viene inventato o modificato per questa fase.
 
-## Perimetro e stato verificato
+## Fonti
+config/site.ts possiede https://loruni.it, lingua it, identità/business, profilo Instagram, CTA e sola route pubblica implementata /. config/environment.ts possiede SITE_ENV e token di verifica opzionali; config/seo.ts deriva metadata, robots e graph. brand.ts possiede palette/asset. Niente origine preview/localhost nelle URL pubbliche, duplicazione di dati, CMS fittizio o libreria SEO.
 
-La landing è il sito pubblico. Il playground è interno e deve restare fuori da sitemap, navigazione pubblica, canonical e discovery del sito. Loruni è un luogo fisico, come confermato nelle istruzioni dell'utente. Categoria dell'attività, città, indirizzo, coordinate, telefono, orari, profili ufficiali e servizi effettivi non sono confermati. Gli esempi del testo non costituiscono dati dell'attività.
+Loruni: locale serale a Napoli di socialità, cocktail e gaming, anche per chi non gioca. Orari 18:30–02:00 indicativi, omessi dallo schema; indirizzo completo, telefono, coordinate, store e orari/giorni definitivi TBD. Gaming digitale/giochi da tavolo distinti nella fonte. Nessuna recensione, rating, evento o FAQ inventata.
 
-Inventario minimo ricavato dal routing corrente, verificato il 2026-10-01:
-
-| App e route | Intento e policy | Fonti eseguibili | Stato |
-| --- | --- | --- | --- |
-| Landing `/` | Presentare Loruni; candidata all'indicizzazione in produzione dopo completamento | `apps/landing/src/app/page.tsx`, `layout.tsx` | HTML server con H1, sezioni e link; title/description di base; copy provvisorio |
-| Playground `/` | Prove interne; esclusa dall'indicizzazione | `apps/playground/src/app/page.tsx`, `layout.tsx`, `robots.ts`, `next.config.ts` | Metadata e header `noindex, nofollow`; robots blocca `/`; protezione hosting da scegliere |
-
-Entrambe le app hanno `src/app/icon.png`. La landing non ha ancora dominio autorevole, `metadataBase`, canonical, Open Graph/X, `robots.ts`, `sitemap.ts` o JSON-LD. Il playground espone `/robots.txt`, senza sitemap. Frammenti come `#loruni` e `#main` non sono pagine separate. Gli endpoint tecnici e gli asset non sono pagine editoriali da indicizzare.
-
-Aggiornare questo inventario solo quando cambia una decisione utile. Derivare l'elenco effettivo delle route dal routing/configurazione e dall'output della build; non mantenere un secondo catalogo manuale di URL, title o description. Non creare un generatore per la singola route attuale.
-
-## Fonti e responsabilità
-
-- Le route possiedono intento, contenuti e metadata specifici; il layout dell'app possiede default sensati e title template quando necessario. Le pagine dinamiche derivano metadata e contenuti dagli stessi dati.
-- Usare le API native Next.js: Metadata API, `generateMetadata`, convenzioni `robots.ts`, `sitemap.ts`, icone e immagini social. Nessuna libreria SEO aggiuntiva senza una necessità concreta. [Metadata Next.js](https://nextjs.org/docs/app/api-reference/functions/generate-metadata)
-- Quando viene confermato il dominio, configurare una sola origine pubblica autorevole nell'app landing. Derivare da essa canonical, URL social, sitemap e identificatori delle entità. Validare configurazione e ambiente: produzione non può usare localhost, staging, preview o un dominio fittizio come fallback.
-- Quando arrivano dati locali confermati, introdurre una sola configurazione dell'attività nell'app proprietaria. UI, contatti, footer, pagine locali, schema e social devono consumarla. Non duplicare dati nel documento, nei componenti e nel JSON-LD.
-- I token di verifica per Search Console/Bing appartengono alla configurazione prevista dal framework/hosting; nessuna credenziale nel codice, nei log o nel Brain. La memoria dell'agente non sostituisce queste fonti.
-
-## URL, intento e collegamenti
-
-Ogni pagina risponde a un intento reale distinto. Prima di aggiungerla, cercare pagine equivalenti ed evitare cannibalizzazione, pagine sottili o varianti generate per parole chiave. URL brevi, leggibili, descrittivi e stabili; una sola convenzione per slash finale, maiuscole e dominio, definita con l'hosting.
-
-Ogni pagina pubblica utile deve essere raggiungibile tramite link interni reali con `href`, anchor descrittive e navigazione coerente. Non usare pulsanti JavaScript come unico accesso né creare pagine orfane. Breadcrumb solo con una gerarchia reale; paginazione con URL e link percorribili quando esiste contenuto paginato.
-
-Query di tracking e varianti tecniche non generano nuove pagine indicizzabili automaticamente. Definire canonical coerenti con il contenuto e con l'intento; per filtri e parametri funzionali scegliere esplicitamente la policy. Una canonical non sostituisce un redirect o una decisione di esclusione.
-
-Quando cambia una route: stabilire la destinazione, applicare un redirect permanente appropriato, aggiornare link, canonical, sitemap, metadata social e schema, eliminando riferimenti interni obsoleti. Evitare catene e loop. Quando una pagina viene rimossa: usare una sostituzione equivalente solo se esiste, altrimenti uno stato 404/410 appropriato; rimuovere riferimenti e sitemap. Nessun redirect indiscriminato alla home né errore servito con status 200. Le pagine 404 devono aiutare la navigazione senza risultare contenuto valido.
-
-## Indicizzazione e ambienti
-
-| Ambiente | Policy richiesta prima della pubblicazione |
+## Route e output correnti
+| Fonte/output | Decisione |
 | --- | --- |
-| Landing produzione | Consentire discovery delle sole pagine pubbliche valide; canonical sul dominio confermato; robots e sitemap coerenti; nessun `noindex` accidentale |
-| Landing preview/staging | Esclusione dall'indicizzazione, indipendente dalla policy produzione; protezione d'accesso quando opportuna; nessuna URL preview nelle fonti pubbliche |
-| Playground, in ogni ambiente | Nessuna sitemap o promozione pubblica; protezione d'accesso per materiale riservato; verificare l'esclusione effettiva sul servizio scelto |
-| Locale | Non è un'origine pubblica; nessuna prova di indicizzazione o visibilità reale |
+| Landing / | Composizione statica server; unico H1, heading/ancore reali, metadata globali con title/description, canonical, OG e X |
+| robots.txt | Nativo Next; policy ambiente e search/training distinti |
+| sitemap.xml | Solo / in production; vuota negli altri ambienti, niente lastmod inventato |
+| manifest.webmanifest e icon.png | Identità/lingua, browser display; non una promessa PWA/installazione |
+| opengraph-image | PNG 1200×630 con logo raster ufficiale invariato, da verificare sulle piattaforme dopo deploy |
+| JSON-LD | Graph WebSite + LocalBusiness ora emesso: la home presenta il locale, Napoli e Instagram. ID stabili e solo addressLocality Napoli, nessuna via/coordinate/orari inventati; schema locale incompleto, non prova di rich result |
+| Playground / | Noindex/nofollow HTML+header, robots crawlable per leggere noindex, nessuna sitemap |
 
-`robots.txt` controlla la scansione e non protegge l'accesso. Un crawler bloccato da robots può non vedere una direttiva `noindex`; una URL può quindi apparire nei risultati tramite riferimenti esterni. Il playground attuale combina entrambe le direttive: prima di ospitarlo scegliere protezione d'accesso oppure una policy che consenta di leggere `noindex` per contenuto pubblico non riservato. Non dichiarare garantita l'esclusione sulla base dei soli file locali. [Google: noindex e robots](https://developers.google.com/search/docs/crawling-indexing/block-indexing)
+Inventario derivato dal routing e dalla build; non mantenere un catalogo duplicato di title/URL. Frammenti e endpoint tecnici non sono pagine editoriali. Future route restano nel brief finché implementate.
 
-La produzione deve esporre `/robots.txt` valido con il riferimento alla sitemap. Non bloccare risorse necessarie a rendere le pagine. La policy deve distinguere host e ambiente, essere verificata sulla risposta realmente servita e non copiata alla cieca dalla preview.
+## Ambienti e crawl policy
+SITE_ENV vuoto/default development, oppure preview: HTML noindex/nofollow e sitemap vuota. Robots consente scansione per leggere noindex. La foundation locale rimane esclusa anche con next build/start; NODE_ENV production da solo non equivale al deploy pubblico.
 
-## Sitemap
+Solo SITE_ENV=production **durante build e distribuzione del sito pubblico pronto** abilita index/follow e sitemap /. Non pubblicare la pagina foundation come home definitiva. Configurare la separazione preview/production nell'hosting; access protection per materiale riservato, non affidarsi a robots. La policy compilata non cambia impostando solo l'env dopo una build statica.
 
-Generare con gli strumenti nativi dalle fonti del sito: solo URL pubbliche, canoniche, indicizzabili e valide, che rispondono correttamente. Escludere playground, preview, pagine private/noindex, errori, redirect, duplicati e varianti di tracking. Nuove pagine, eliminazioni e rinomine devono aggiornare automaticamente l'output insieme alla fonte delle route. [Sitemap Next.js](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap)
+Search/discovery consentiti per Googlebot, bingbot e OAI-SearchBot; normale crawling pubblico consentito. GPTBot e Google-Extended disabilitati prudenzialmente in ogni ambiente, separati dalla ricerca. La scelta consente la ricerca richiesta senza un'autorizzazione implicita al training. Altri token training/proprietari vanno valutati su fonte ufficiale e scopo, senza blanket allow dedicati a bot AI. Google-Extended controlla anche alcuni usi di grounding Gemini/Vertex: il diniego può limitarli e non equivale a disabilitare Google Search. [OpenAI](https://developers.openai.com/api/docs/bots), [Google crawler](https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers)
 
-`lastmod` descrive una modifica significativa del contenuto, se la data è disponibile e attendibile. Non usare l'ora corrente di ogni build come aggiornamento editoriale né inventare date. Gestire suddivisione e indici solo se il volume reale li richiede.
+Verificare CDN/WAF, bot protection e IP ufficiali quando necessario: nome user agent non prova identità. ChatGPT-User riguarda azioni utente, distinto da SearchBot e GPTBot. Nessuna garanzia di inclusion/ranking/risposta AI; controllare i requisiti correnti delle piattaforme al deploy, inclusa l'idoneità AI in Search Console. llms.txt sperimentale/facoltativo e IndexNow solo per una necessità reale, non implementati.
 
-## Metadata, HTML e contenuti
+## Contratti per le future pagine
+Ogni pagina: intento reale distinto, URL leggibile/stabile, title/description/H1 specifici, link href interni descrittivi, canonical/indexability, preview social, sitemap e schema pertinenti. Default/layout non devono mascherare metadata mancanti. Niente cannibalizzazione, pagine sottili/keyword o copy AI generato ciecamente; contenuto originale Loruni people-first.
 
-Ogni pagina indicizzabile deve avere title specifico, description utile e coerente con la pagina, H1 descrittivo, canonical e preview social appropriate. Il title template aggiunge il brand senza ripetizioni. Default e fallback non devono mascherare dati mancanti o rendere tutte le pagine identiche; la lunghezza deve favorire chiarezza, senza una soglia magica universale.
+HTML server e semantico, main e gerarchia heading, contenuti accessibili senza JS/animazione. No hidden text, versioni separate per bot, informazioni essenziali soltanto in immagini o FAQ artificiali. Performance/accessibilità fanno parte della SEO; ratio/alt/media/font, LCP/CLS/INP e costo JS secondo performance.md. Non usare alt/heading come keyword stuffing.
 
-Contenuti e metadata devono arrivare dal server attraverso il framework, non essere inseriti soltanto dopo il caricamento client. Usare `main`, header/nav/footer, sezioni e heading con gerarchia logica; un H1 principale per pagina, senza scegliere il livello soltanto per la dimensione visiva. Informazioni chiave disponibili come testo HTML reale, accessibile anche senza un'animazione iniziale o un'interazione obbligatoria.
+URL canonica unica; query tracking/varianti tecniche non diventano pagine. Filtri/paginazione con policy e link percorribili quando esistono; breadcrumb con gerarchia reale. Rinomine: redirect permanente appropriato, link/canonical/sitemap/social/schema aggiornati, nessun loop/catena. Rimozioni: destinazione equivalente solo se reale, altrimenti 404/410 corretti; nessun soft-404 o redirect indiscriminato alla home.
 
-Scrivere per le persone: identità, offerta reale, ubicazione, modalità di visita o contatto quando confermate. Brand, categoria e luogo devono essere comprensibili e coerenti; mai dedurre una categoria o una città dagli esempi. Rispondere alle domande utili con contenuti chiari, non FAQ artificiali o una sequenza di keyword. Niente testo nascosto, contenuti diversi per crawler, recensioni/citazioni inventate, menzioni simulate o pagine AI generate in massa. Il design e le animazioni devono preservare leggibilità, tastiera, focus e movimento ridotto.
+Schema corrispondente a contenuti/fatti reali e UI, con entità/@id stabili, profili ufficiali in sameAs e fonti dati comuni. LocalBusiness è un tipo prudente per l'identità mista; schema locale incompleto non attesta idoneità rich result. Futuri eventi con date/fuso/stato/offerte reali; aggiornare eventi passati senza inventare novità. Nessun aggregateRating/review/FAQ non autentico. [Schema.org](https://schema.org/LocalBusiness)
 
-L'italiano è l'unica lingua attuale (`lang="it"`). Introdurre altre lingue solo con contenuti realmente tradotti e URL proprie. `hreflang` reciproci, canonical e sitemap devono riferirsi a equivalenti reali; niente alternati verso pagine inesistenti o tutte verso la home.
+Solo it ora; multilingua e hreflang reciproci solo per vere traduzioni/URL equivalenti. Canonical/sitemap/locale coerenti. Verifiche Google/Bing tramite env reali, nessun token finto. Analytics e consent management secondo servizi realmente scelti.
 
-## Entità e structured data
+## Done e pubblicazione
+Preflight: intento/URL, metadata ereditati, indexability, link, canonical, sitemap, schema/social e proprietario. Postflight: HTML/risposte reali, status/errori/redirect/link, metadata finali, robots/header/env, sitemap solo URL canoniche valide, schema/UI, media/accessibilità e performance. Automatizzare invarianti ripetibili pertinenti; significato editoriale/categoria/copy richiedono review.
 
-JSON-LD solo per entità e contenuti realmente presenti, pertinenti alla pagina e coerenti con la UI. Usare il tipo più preciso sostenuto dai fatti, non categorie incompatibili per intercettare ricerche. Loruni è un luogo fisico: il sottotipo di `LocalBusiness` resta da scegliere sui dati confermati. [Schema.org: LocalBusiness](https://schema.org/LocalBusiness)
+Prima/dopo deploy: HTTPS/origine canonica, CDN/WAF, robots/sitemap/header, social preview e strumenti Search Console/Bing/validazione schema. Robots non è noindex né protezione d'accesso; il crawler deve leggere la direttiva. [Google noindex](https://developers.google.com/search/docs/crawling-indexing/block-indexing)
 
-Collegare sito, attività, pagine ed eventuali eventi con identificatori `@id` stabili derivati dall'origine pubblica. Non introdurre ora URL inventate. `sameAs` contiene soltanto profili ufficiali verificati. Nome, logo, indirizzo, coordinate, contatti e orari devono essere coerenti fra sito e profili pubblici; includere eccezioni agli orari soltanto quando reali.
+Audit al cambio route, contenuti, dati locali, dominio, lingue o policy; periodicità operativa da concordare. Fonti: documentazione ufficiale piattaforme, standard web, Schema.org, framework; per standard emergenti verificare data/adozione/scopo. API native [Next metadata](https://nextjs.org/docs/app/api-reference/functions/generate-metadata) e convenzioni robots/sitemap/manifest/OG, nessuna nuova libreria.
 
-Eventi soltanto se confermati: titolo, date/fuso, luogo, stato ed eventuali offerte reali. Non trasformare ogni promozione in un evento né inventare disponibilità o prezzi. Per eventi passati conservare informazioni storiche corrette se utili, aggiornare stato e collegamenti secondo la decisione editoriale, senza riciclare date per simulare novità. Nessuna recensione, rating o FAQ schema senza contenuto autentico e requisiti applicabili.
-
-Validare sintassi, proprietà, identificatori e corrispondenza con la pagina con gli strumenti appropriati. La validità non garantisce rich result o visibilità.
-
-## Media, social e performance
-
-Usare immagini pertinenti e originali quando disponibili, nomi leggibili, formati/dimensioni adeguati, ratio e spazio riservato per evitare spostamenti. Alt descrittivo secondo il contenuto; alt vuoto per decorazioni, senza keyword stuffing. Non sostituire informazioni essenziali con testo dentro immagini.
-
-Ottimizzare l'immagine LCP: non caricarla pigramente; lazy loading per media fuori dalla prima vista quando appropriato. Controllare font, CSS, peso media, JavaScript, layout shift e risposta alle interazioni. LCP, CLS e INP richiedono misurazioni appropriate; una build riuscita non attesta Core Web Vitals sul campo. Le animazioni non devono nascondere contenuti se lo script fallisce né bloccare la lettura o le interazioni.
-
-Open Graph e X condividono contenuti, identità e origine con i metadata della pagina. Prevedere una social image del brand e immagini specifiche dove utili, raggiungibili pubblicamente, con proporzioni, dimensioni e alt dichiarati; verificare la preview reale. Favicon e logo devono riflettere Loruni. Non considerare la sola favicon una social preview completa.
-
-## Ricerca AI e crawler
-
-La discovery AI usa lo stesso sito utile alle persone, con informazioni esplicite, entità coerenti e contenuto originale. Nessuna versione parallela per i bot, protocollo futuro ipotetico o ottimizzazione basata su promesse non documentate. Verificare i requisiti correnti della piattaforma prima della distribuzione; la guida Google consultata il 2026-10-01 comprende anche l'idoneità delle funzionalità AI in Search Console. Nessuna garanzia di inclusione o ranking. [Google: ricerca generativa](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)
-
-Per OpenAI distinguere tre scopi: `OAI-SearchBot` per la ricerca ChatGPT, `GPTBot` per contenuti utilizzabili nell'addestramento, `ChatGPT-User` per richieste avviate dall'utente. Ricerca e addestramento hanno impostazioni indipendenti; una scelta non autorizza automaticamente l'altra. La policy di produzione per ricerca e training va registrata esplicitamente prima di configurare robots e hosting. È ancora aperta: il testo dell'utente richiede la distinzione, non decide i permessi. [OpenAI: crawler](https://developers.openai.com/api/docs/bots)
-
-Per ogni altro crawler identificare proprietario, documentazione ufficiale, scopo (search, training, user fetch o altro) e policy applicabile prima di aggiungerlo. Controllare anche CDN/WAF e, se richiesto, gli intervalli IP pubblicati ufficialmente; il nome dello user agent da solo non prova l'identità. Non copiare liste di bot da fonti non verificate.
-
-`llms.txt` rimane sperimentale e facoltativo, da introdurre solo con un consumer e un beneficio verificabili; non è un requisito universale SEO. IndexNow solo con una reale esigenza e una piattaforma che lo supporta. Nessuno dei due è implementato ora.
-
-## Verifiche e definizione di done
-
-Prima di creare o cambiare una pagina stabilire: intento distinto, URL, ambiente/indexability, title, description, H1, accesso tramite link, canonical, sitemap, preview social e structured data realmente applicabile. Leggere metadata ereditati, robots/header, routing, redirect e policy hosting prima di scegliere il proprietario della modifica.
-
-Dopo una modifica pertinente verificare sulla risposta e sull'HTML prodotti:
-
-- URL/status, redirect e 404 reali; link interni validi e assenza di pagine orfane, loop o destinazioni obsolete.
-- Metadata finali, canonical assoluta sul dominio corretto, coerenza fra robots/header e ambiente; nessun noindex accidentale in produzione.
-- Sitemap valida e aggiornata, solo URL canoniche indexable; riferimento corretto da robots.
-- H1, heading, contenuto leggibile, accessibilità e assenza di informazioni false o nascoste.
-- JSON-LD coerente con UI, identità e dati locali; media, social preview e prestazioni secondo il cambiamento.
-
-Automatizzare gli invarianti tecnici ripetibili quando implementati: origine valida, campi richiesti, riferimenti/URL, unicità pertinente, output robots/sitemap/schema e regressioni di routing. Non imporre unicità cieca dove un contenuto condiviso è intenzionale né automatizzare significato editoriale, categoria o copy senza review. Usare build e convenzioni native, senza creare un secondo sistema di routing o un'infrastruttura SEO preventiva.
-
-Prima della pubblicazione servono controlli sull'host reale: HTTPS e dominio canonico, HTML servito, sitemap/robots, header, CDN/WAF, preview social, strumenti di validazione e proprietà Search Console/Bing quando configurate. Dopo, monitorare scansione, indicizzazione, errori e prestazioni, riesaminando anche l'idoneità AI secondo le fonti ufficiali. Un push GitHub non dimostra questi esiti.
-
-Audit quando cambiano architettura, route, contenuti, dati locali, dominio, lingue o policy crawler; definire la periodicità operativa con chi gestisce il sito. Priorità delle fonti: documentazione ufficiale del motore/piattaforma, standard web, Schema.org, framework, poi fonti tecniche autorevoli. Per standard emergenti controllare fonte, data, adozione e scopo; non presentare una sperimentazione come requisito consolidato.
-
-## Decisioni aperte e prossima implementazione
-
-- Dominio pubblico, hosting e separazione produzione/preview/playground.
-- Categoria, ubicazione, contatti, orari, profili e servizi confermati; copy e azione principale della landing.
-- Permessi distinti per crawler di ricerca e addestramento; protezione del playground.
-- Implementazione nativa di origine, metadata/canonical/social, robots/sitemap e schema applicabile una volta disponibili le fonti reali.
-- Strumenti di verifica/monitoraggio sul dominio e soglie operative fondate sulle misure.
-
-Le modifiche del 2026-10-01 recepiscono le regole nella documentazione; non implementano queste integrazioni né certificano la SEO della futura produzione.
+TBD reali: hosting e access protection playground, indirizzo/telefono/store, orari definitivi, media e contenuti della futura home, verifiche motori e analytics. Tutta la presenza sui motori/CWV di produzione resta da attestare.

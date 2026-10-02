@@ -1,6 +1,7 @@
 'use client';
 
 import { useId } from 'react';
+import styles from './switch.module.css';
 
 type SwitchProps = {
   label: string;
@@ -12,11 +13,11 @@ type SwitchProps = {
 export function Switch({ label, checked, onChange, disabled = false }: SwitchProps) {
   const labelId = useId();
   return (
-    <div className="switch-field">
+    <div className={styles.field}>
       <span id={labelId}>{label}</span>
       <button type="button" role="switch" aria-checked={checked} aria-labelledby={labelId}
-        disabled={disabled} className="switch" onClick={() => onChange(!checked)}>
-        <span className="switch__thumb" />
+        disabled={disabled} className={styles.switch} onClick={() => onChange(!checked)}>
+        <span className={styles.thumb} />
       </button>
     </div>
   );

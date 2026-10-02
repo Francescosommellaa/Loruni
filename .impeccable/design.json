@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T20:37:25.904Z",
+  "generatedAt": "2026-10-01T23:36:48.563Z",
   "title": "Design System: Loruni",
   "extensions": {
     "colorMeta": {
@@ -63,12 +63,36 @@
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Titoli",
-        "purpose": "Titoli ampi e compatti, gerarchia forte e interruzioni di riga intenzionali."
+        "displayName": "display",
+        "purpose": "Apertura, convergenza e visita dello scheletro home Fase 02; ruolo condiviso, trattamento editoriale definitivo ancora aperto."
+      },
+      "heading-1": {
+        "displayName": "heading-1",
+        "purpose": "Titoli delle altre scene della home Fase 02, con le metriche condivise."
+      },
+      "heading-2": {
+        "displayName": "heading-2",
+        "purpose": "Titolo del banco delle fondamenta e del menu locale della home."
+      },
+      "heading-3": {
+        "displayName": "heading-3",
+        "purpose": "Titolo diagnostica GSAP, app e testo di convergenza della home Fase 02."
+      },
+      "body-large": {
+        "displayName": "body-large",
+        "purpose": "Teaser eventi e invito anche senza giocare nello scheletro home."
       },
       "body": {
-        "displayName": "Testi e controlli",
-        "purpose": "Navigazione, etichette e controlli usano Funnel Sans nella base iniziale."
+        "displayName": "body",
+        "purpose": "Testi correnti e dimensione ereditata dai controlli."
+      },
+      "small": {
+        "displayName": "small",
+        "purpose": "Descrizioni dei placeholder media e note sui dati ancora da confermare."
+      },
+      "label": {
+        "displayName": "label",
+        "purpose": "Ruolo UI a peso 600; distinto dalla gerarchia HTML."
       }
     },
     "shadows": [],
@@ -76,111 +100,90 @@
       {
         "name": "duration-feedback",
         "value": "120ms",
-        "purpose": "Feedback dei pulsanti e dei tab nella base iniziale; valore provvisorio."
+        "purpose": "Feedback CSS dei Button; default tecnico iniziale, non timing narrativo approvato."
       },
       {
         "name": "duration-switch",
         "value": "160ms",
-        "purpose": "Cambio di stato degli switch; valore provvisorio, regolabile nel playground."
-      },
-      {
-        "name": "duration-reveal",
-        "value": "260ms",
-        "purpose": "Riferimento condiviso per reveal futuri; nessun reveal canonico implementato."
+        "purpose": "Feedback CSS del track/thumb; default tecnico iniziale."
       },
       {
         "name": "ease-out",
         "value": "cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Trasformazione del thumb e movimento interrompibile del playground."
+        "purpose": "Trasformazione del thumb dello Switch."
       },
       {
         "name": "reduced-motion",
         "value": "0ms",
-        "purpose": "Transizioni e animazioni immediate con prefers-reduced-motion: reduce."
+        "purpose": "Durate e ritardi immediati con prefers-reduced-motion: reduce; GSAP matchMedia reagisce alla preferenza."
       }
     ],
-    "breakpoints": [
-      {
-        "name": "landing-mobile",
-        "value": "640px"
-      },
-      {
-        "name": "playground-workspace",
-        "value": "850px"
-      },
-      {
-        "name": "playground-mobile",
-        "value": "500px"
-      }
-    ]
+    "breakpoints": []
   },
   "components": [
     {
       "name": "Pulsante principale",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Azione principale corallo; geometria netta e feedback breve.",
-      "html": "<button class=\"ds-button ds-button-primary\" type=\"button\">Prova il pulsante</button>",
-      "css": ".ds-button { display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem; min-height: 48px; padding: 0.75rem 1.5rem; border: 1px solid transparent; border-radius: 0; font-family: var(--font-body), sans-serif; font-weight: 600; text-decoration: none; transition: background-color var(--duration-feedback), color var(--duration-feedback), transform var(--duration-feedback); cursor: pointer; } .ds-button:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; } .ds-button:active:not(:disabled) { transform: translateY(1px); } .ds-button:disabled { opacity: 0.45; cursor: not-allowed; } @media (prefers-reduced-motion: reduce) { .ds-button { transition-duration: 0ms; } } .ds-button-primary { background: var(--color-corallo); color: var(--color-grafite); } .ds-button-primary:hover:not(:disabled) { background: var(--color-avorio); color: var(--color-grafite); }"
+      "description": "Button primary semantico; hover, active, focus e disabled del componente reale. La cornice di anteprima riproduce il fondo del tema sorgente; non è una nuova superficie UI.",
+      "html": "<div class=\"ds-preview\"><button class=\"ds-button ds-primary\" type=\"button\">Prova pulsante</button></div>",
+      "css": ".ds-preview { background: var(--color-background, #1A1917); color: var(--color-text, #F4F0E8); }\n.ds-button { font-family: var(--font-body, \"Funnel Sans\"), \"Funnel Sans\", sans-serif; font-size: var(--text-body, 1rem); line-height: var(--leading-body, 1.5); display: inline-flex; align-items: center; justify-content: center; gap: var(--space-sm, 0.5rem); min-height: var(--control-height, 3rem); padding: var(--space-sm, 0.5rem) var(--space-lg, 1.5rem); border: 1px solid transparent; border-radius: var(--radius-control, 0); font-weight: 600; text-decoration: none; transition: background-color var(--duration-feedback, 120ms), color var(--duration-feedback, 120ms), border-color var(--duration-feedback, 120ms); }\n.ds-primary { background: var(--color-accent, #FF5538); color: var(--color-on-accent, #1A1917); }\n.ds-primary:hover:not(:disabled) { background: var(--color-text, #F4F0E8); color: var(--color-background, #1A1917); }\n.ds-secondary { border-color: var(--color-border, color-mix(in srgb, #F4F0E8 50%, #1A1917)); color: var(--color-text, #F4F0E8); background: transparent; }\n.ds-secondary:hover:not(:disabled) { border-color: var(--color-text, #F4F0E8); }\n.ds-button:active:not(:disabled) { border-color: currentColor; }\n.ds-button:disabled { opacity: 0.45; cursor: not-allowed; }\n.ds-button:focus-visible, .ds-switch:focus-visible { outline: 2px solid var(--color-focus, #F4F0E8); outline-offset: var(--space-xs, 0.25rem); }@media (prefers-reduced-motion: reduce) { .ds-button, .ds-switch::before, .ds-thumb { transition-duration: 0ms; } }\n.ds-button:not(:disabled), .ds-switch:not(:disabled) { cursor: pointer; }"
     },
     {
       "name": "Pulsante secondario",
       "kind": "button",
-      "description": "Azione secondaria delineata, come Azzera nel playground.",
-      "html": "<button class=\"ds-button ds-button-secondary\" type=\"button\">Azzera</button>",
-      "css": ".ds-button { display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem; min-height: 48px; padding: 0.75rem 1.5rem; border: 1px solid transparent; border-radius: 0; font-family: var(--font-body), sans-serif; font-weight: 600; text-decoration: none; transition: background-color var(--duration-feedback), color var(--duration-feedback), transform var(--duration-feedback); cursor: pointer; } .ds-button:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; } .ds-button:active:not(:disabled) { transform: translateY(1px); } .ds-button:disabled { opacity: 0.45; cursor: not-allowed; } @media (prefers-reduced-motion: reduce) { .ds-button { transition-duration: 0ms; } } .ds-button-secondary { border-color: var(--line); color: var(--ink); background: transparent; } .ds-button-secondary:hover:not(:disabled) { border-color: var(--ink); }"
+      "refersTo": "button-secondary",
+      "description": "Button secondary delineato; stessi ingombri e stati del primary. La cornice di anteprima riproduce il fondo del tema sorgente; non è una nuova superficie UI.",
+      "html": "<div class=\"ds-preview\"><button class=\"ds-button ds-secondary\" type=\"button\">Azzera</button></div>",
+      "css": ".ds-preview { background: var(--color-background, #1A1917); color: var(--color-text, #F4F0E8); }\n.ds-button { font-family: var(--font-body, \"Funnel Sans\"), \"Funnel Sans\", sans-serif; font-size: var(--text-body, 1rem); line-height: var(--leading-body, 1.5); display: inline-flex; align-items: center; justify-content: center; gap: var(--space-sm, 0.5rem); min-height: var(--control-height, 3rem); padding: var(--space-sm, 0.5rem) var(--space-lg, 1.5rem); border: 1px solid transparent; border-radius: var(--radius-control, 0); font-weight: 600; text-decoration: none; transition: background-color var(--duration-feedback, 120ms), color var(--duration-feedback, 120ms), border-color var(--duration-feedback, 120ms); }\n.ds-primary { background: var(--color-accent, #FF5538); color: var(--color-on-accent, #1A1917); }\n.ds-primary:hover:not(:disabled) { background: var(--color-text, #F4F0E8); color: var(--color-background, #1A1917); }\n.ds-secondary { border-color: var(--color-border, color-mix(in srgb, #F4F0E8 50%, #1A1917)); color: var(--color-text, #F4F0E8); background: transparent; }\n.ds-secondary:hover:not(:disabled) { border-color: var(--color-text, #F4F0E8); }\n.ds-button:active:not(:disabled) { border-color: currentColor; }\n.ds-button:disabled { opacity: 0.45; cursor: not-allowed; }\n.ds-button:focus-visible, .ds-switch:focus-visible { outline: 2px solid var(--color-focus, #F4F0E8); outline-offset: var(--space-xs, 0.25rem); }@media (prefers-reduced-motion: reduce) { .ds-button, .ds-switch::before, .ds-thumb { transition-duration: 0ms; } }\n.ds-button:not(:disabled), .ds-switch:not(:disabled) { cursor: pointer; }"
+    },
+    {
+      "name": "Link di azione principale",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "ButtonLink è un anchor nativo con href obbligatorio; condivide CSS e metriche di Button, nelle variant primary/secondary. Nessuno stato disabled nativo: le azioni non disponibili usano Button. La cornice è soltanto anteprima del tema sorgente.",
+      "html": "<div class=\"ds-preview\"><a class=\"ds-button ds-primary\" href=\"#ds-visit\">Vieni a trovarci</a><span id=\"ds-visit\"></span></div>",
+      "css": ".ds-preview { background: var(--color-background, #1A1917); color: var(--color-text, #F4F0E8); }\n.ds-button { font-family: var(--font-body, \"Funnel Sans\"), \"Funnel Sans\", sans-serif; font-size: var(--text-body, 1rem); line-height: var(--leading-body, 1.5); display: inline-flex; align-items: center; justify-content: center; gap: var(--space-sm, 0.5rem); min-height: var(--control-height, 3rem); padding: var(--space-sm, 0.5rem) var(--space-lg, 1.5rem); border: 1px solid transparent; border-radius: var(--radius-control, 0); font-weight: 600; text-decoration: none; transition: background-color var(--duration-feedback, 120ms), color var(--duration-feedback, 120ms), border-color var(--duration-feedback, 120ms); }\n.ds-primary { background: var(--color-accent, #FF5538); color: var(--color-on-accent, #1A1917); }\n.ds-primary:hover:not(:disabled) { background: var(--color-text, #F4F0E8); color: var(--color-background, #1A1917); }\n.ds-secondary { border-color: var(--color-border, color-mix(in srgb, #F4F0E8 50%, #1A1917)); color: var(--color-text, #F4F0E8); background: transparent; }\n.ds-secondary:hover:not(:disabled) { border-color: var(--color-text, #F4F0E8); }\n.ds-button:active:not(:disabled) { border-color: currentColor; }\n.ds-button:disabled { opacity: 0.45; cursor: not-allowed; }\n.ds-button:focus-visible, .ds-switch:focus-visible { outline: 2px solid var(--color-focus, #F4F0E8); outline-offset: var(--space-xs, 0.25rem); }@media (prefers-reduced-motion: reduce) { .ds-button, .ds-switch::before, .ds-thumb { transition-duration: 0ms; } }\n.ds-button:not(:disabled), .ds-switch:not(:disabled) { cursor: pointer; }"
     },
     {
       "name": "Switch",
       "kind": "custom",
-      "description": "Switch controllato; lo snippet mostra lo stato attivo, mentre la gestione dello stato appartiene al componente React.",
-      "html": "<div class=\"ds-switch-field\"><span id=\"ds-switch-label\">Attiva la prova</span><button class=\"ds-switch\" type=\"button\" role=\"switch\" aria-checked=\"true\" aria-labelledby=\"ds-switch-label\"><span class=\"ds-switch-thumb\"></span></button></div>",
-      "css": ".ds-switch-field { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; font-family: var(--font-body), sans-serif; color: var(--ink); } .ds-switch { width: 52px; min-width: 52px; height: 44px; padding: 9px 4px; background: transparent; border: 0; position: relative; cursor: pointer; } .ds-switch::before { content: ''; position: absolute; inset: 9px 0; background: var(--muted); border-radius: 20px; transition: background-color var(--duration-switch); } .ds-switch[aria-checked='true']::before { background: var(--color-lime); } .ds-switch-thumb { display: block; position: relative; width: 18px; height: 18px; background: var(--color-grafite); border-radius: 50%; transition: transform var(--duration-switch) var(--ease-out); } .ds-switch[aria-checked='true'] .ds-switch-thumb { transform: translateX(26px); } .ds-switch:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; } .ds-switch:disabled { opacity: 0.45; cursor: not-allowed; } @media (prefers-reduced-motion: reduce) { .ds-switch::before, .ds-switch-thumb { transition-duration: 0ms; } }"
-    },
-    {
-      "name": "Selettore composizione",
-      "kind": "input",
-      "description": "Campo nativo del playground per scegliere una composizione sperimentale.",
-      "html": "<label class=\"ds-select-label\" for=\"ds-layout\">Composizione</label><select class=\"ds-select\" id=\"ds-layout\"><option>Editoriale</option><option>Griglia</option><option>Righe</option></select>",
-      "css": ".ds-select-label { display: block; margin-bottom: 0.75rem; color: var(--ink); font-family: var(--font-body), sans-serif; } .ds-select { color: var(--ink); background: var(--surface); border: 1px solid var(--line); padding: 0.75rem; width: 100%; min-height: 48px; font-family: var(--font-body), sans-serif; cursor: pointer; } .ds-select:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }"
-    },
-    {
-      "name": "Tab degli esperimenti",
-      "kind": "nav",
-      "description": "Navigazione delle prove con stato selezionato; frecce, Home ed End sono gestiti dal componente React.",
-      "html": "<div class=\"ds-tabs\" role=\"tablist\" aria-label=\"Tipo di esperimento\"><button class=\"ds-tab\" type=\"button\" role=\"tab\" aria-selected=\"true\" tabindex=\"0\">Layout<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.5\"/></svg></button><button class=\"ds-tab\" type=\"button\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Componenti</button><button class=\"ds-tab\" type=\"button\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Movimento</button></div>",
-      "css": ".ds-tabs { display: flex; flex-direction: column; } .ds-tab { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem 0; min-height: 52px; text-align: left; background: none; border: 0; border-bottom: 1px solid var(--line); color: var(--muted); font-family: var(--font-body), sans-serif; transition: color var(--duration-feedback); cursor: pointer; } .ds-tab[aria-selected='true'] { color: var(--ink); font-weight: 600; } .ds-tab:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; } .ds-tab svg { opacity: 0; } .ds-tab[aria-selected='true'] svg { opacity: 1; } @media (max-width: 850px) { .ds-tabs { flex-direction: row; gap: 1rem; } .ds-tab { flex: 1; } .ds-tab svg { display: none; } } @media (prefers-reduced-motion: reduce) { .ds-tab { transition-duration: 0ms; } }"
-    },
-    {
-      "name": "Stato sperimentale",
-      "kind": "chip",
-      "description": "Indicatore lime che rende esplicito lo stato non approvato del playground.",
-      "html": "<span class=\"ds-experiment-status\">Esplorazione · non approvata</span>",
-      "css": ".ds-experiment-status { display: inline-block; font-family: var(--font-body), sans-serif; font-size: 0.875rem; padding: 0.45rem 0.8rem; background: var(--color-lime); color: var(--color-grafite); }"
-    },
-    {
-      "name": "Durata sperimentale",
-      "kind": "input",
-      "description": "Range nativo da 80 a 300 ms per confrontare il movimento nel playground.",
-      "html": "<label class=\"ds-range-label\" for=\"ds-duration\">Durata: 160 ms</label><input class=\"ds-range\" id=\"ds-duration\" type=\"range\" min=\"80\" max=\"300\" step=\"10\" value=\"160\" />",
-      "css": ".ds-range-label { display: block; margin-bottom: 0.75rem; color: var(--ink); font-family: var(--font-body), sans-serif; } .ds-range { width: 100%; min-height: 44px; accent-color: var(--color-corallo); } .ds-range:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }"
+      "description": "Switch controllato reale; anteprima dello stato attivo. React possiede cambio stato ed etichetta accessibile. La cornice di anteprima riproduce il fondo del tema sorgente; non è una nuova superficie UI.",
+      "html": "<div class=\"ds-preview\"><div class=\"ds-field\"><span id=\"ds-theme-label\">Tema chiaro</span><button class=\"ds-switch\" type=\"button\" role=\"switch\" aria-checked=\"true\" aria-labelledby=\"ds-theme-label\"><span class=\"ds-thumb\"></span></button></div></div>",
+      "css": ".ds-preview { background: var(--color-background, #1A1917); color: var(--color-text, #F4F0E8); }\n.ds-field { font-family: var(--font-body, \"Funnel Sans\"), \"Funnel Sans\", sans-serif; font-size: var(--text-body, 1rem); line-height: var(--leading-body, 1.5); color: var(--color-text, #F4F0E8); display: flex; align-items: center; justify-content: space-between; gap: var(--space-lg, 1.5rem); }\n\n.ds-switch { width: 52px; min-width: 52px; height: 44px; padding: 9px 4px; background: transparent; border: 0; position: relative; }\n.ds-switch::before { content: ''; position: absolute; inset: 9px 0; background: var(--color-text-muted, color-mix(in srgb, #F4F0E8 65%, #1A1917)); border: 1px solid var(--color-border, color-mix(in srgb, #F4F0E8 50%, #1A1917)); border-radius: 20px; transition: background-color var(--duration-switch, 160ms); }\n.ds-switch[aria-checked='true']::before { background: var(--color-positive, #C8F24A); }\n.ds-thumb { display: block; position: relative; width: 18px; height: 18px; background: var(--color-on-accent, #1A1917); border-radius: 50%; transition: transform var(--duration-switch, 160ms) var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); }\n.ds-switch[aria-checked='true'] .ds-thumb { transform: translateX(26px); }\n.ds-switch:disabled { opacity: 0.45; cursor: not-allowed; }\n.ds-button:focus-visible, .ds-switch:focus-visible { outline: 2px solid var(--color-focus, #F4F0E8); outline-offset: var(--space-xs, 0.25rem); }@media (prefers-reduced-motion: reduce) { .ds-button, .ds-switch::before, .ds-thumb { transition-duration: 0ms; } }\n.ds-button:not(:disabled), .ds-switch:not(:disabled) { cursor: pointer; }"
     }
   ],
   "narrative": {
-    "overview": "Loruni prende forma attraverso socialità, atmosfera notturna, fotografia immersiva e composizione editoriale. La moodboard Figma fornita dall'utente è il riferimento visivo. Palette, Funnel Display per titoli, Funnel Sans per testi e animazioni/switch veloci sono confermati in chat.\n\nL'utente ha autorizzato l'inizializzazione di landing e playground il 2026-10-01. Questo documento registra la base condivisa; non approva automaticamente copy, fotografie, layout o varianti del playground. La prima landing è una composizione tipografica provvisoria, senza fotografie di sede o contenuti operativi inventati.\n\nMovimento breve e reattivo: feedback immediato, interazioni interrompibili, niente code o ritardi artificiali. Valori iniziali implementati: feedback 120 ms, switch 160 ms, riferimento reveal 260 ms. Sono valori provvisori, non risultati di un confronto definitivo. Il playground consente prove da 80 a 300 ms; con reduced motion le transizioni diventano immediate.",
-    "keyCharacteristics": [],
-    "rules": [],
+    "overview": "Loruni è sociale, immersivo e contemporaneo. Atmosfera notturna, composizione editoriale ed energia da poster appartengono al contesto della moodboard Figma fornita dall'utente. Palette, Funnel Display per titoli, Funnel Sans per testi e feedback/switch veloci sono confermati; gli asset ufficiali mantengono proporzioni e contenuto originali.\n\nStato verificato nel codice il 2026-10-02: le fondamenta Fase 01 alimentano lo scheletro narrativo navigabile Fase 02 della home. Otto momenti server compongono «una notte dentro Loruni»: apertura, socialità, cocktail, tavolo, gaming digitale, app/eventi, convergenza e visita. Copy e slot media sono provvisori e identificati; percorso, ritmo e responsabilità locali sono in `docs/landing-narrative.md`. Il playground continua a verificare tema, controlli e ciclo di vita GSAP. Visual direction + Static composition rimane la prossima fase: lo scheletro non approva copy, fotografie, composizione o motion definitivi.\n\nIl frontmatter fotografa i token effettivi, derivati da `packages/ui/src/brand.ts` e `styles.css`; il runtime resta la fonte eseguibile. Spacing, ruoli semantici e metriche restano i default tecnici condivisi della Fase 01, consumati anche dallo scheletro narrativo senza nuova art direction definitiva. La review Fase 01 ha riscontrato coerenza delle fondamenta nelle nove acquisizioni mobile/tablet/desktop, inclusa la prova chiara; non certifica WCAG, deploy o compatibilità fra browser.",
+    "keyCharacteristics": [
+      "Palette e coppia Funnel preservate.",
+      "Fondamenta piane, geometria netta e proprietà del layout esplicite.",
+      "Contenuto leggibile subito, movimento ridotto e controlli nativi.",
+      "Playground interno, senza promozione implicita degli esperimenti."
+    ],
+    "rules": [
+      {
+        "name": "The Single Palette Rule",
+        "body": "I quattro hex e i percorsi brand appartengono soltanto a `brand.ts`; il sidecar è derivato. Le rampe del pannello sono metadati di anteprima, non colori aggiuntivi approvati.",
+        "section": "colors"
+      },
+      {
+        "name": "The Single Owner Rule",
+        "body": "Container possiede larghezza, gutter e centratura; Section soltanto il padding verticale; il parent il gap. Nessun controllo aggiunge margin esterni di default. Le sezioni full bleed richiedono un caso esplicito.",
+        "section": "layout"
+      }
+    ],
     "dos": [
-      "Conservare palette e gerarchia della coppia Funnel.",
-      "Dare a ogni composizione un gesto dominante e spazio per leggere.",
-      "Conservare contenuti e controlli accessibili senza attendere animazioni.",
-      "Verificare mobile, focus, touch e reduced motion sul risultato reale."
+      "**Do** conservare palette, asset ufficiali e gerarchia della coppia Funnel.",
+      "**Do** assegnare un solo proprietario a gutter, gap, padding, superficie e movimento.",
+      "**Do** conservare contenuti e controlli accessibili senza attendere animazioni.",
+      "**Do** verificare mobile, focus, touch e reduced motion sul risultato reale."
     ],
     "donts": [
-      "Non inventare sede, contatti, prezzi, orari, servizi o testimonianze.",
-      "Non assegnare un colore fisso a Events/Community/Drink/Gaming senza scelta esplicita.",
-      "Non copiare integralmente layout, simboli o immagini di altri marchi dalla moodboard.",
-      "Non considerare una prova, un default tecnico o un risultato di build come approvazione di design."
+      "**Don't** inventare sede, contatti, prezzi, orari, servizi o testimonianze.",
+      "**Don't** assegnare un colore fisso a Events/Community/Drink/Gaming senza scelta esplicita.",
+      "**Don't** copiare integralmente layout, simboli o immagini di altri marchi dalla moodboard.",
+      "**Don't** considerare una prova, un default tecnico o un risultato di build come approvazione di design."
     ]
   }
 }

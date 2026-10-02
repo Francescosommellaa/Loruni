@@ -1,3 +1,3 @@
 # Landing Loruni
 
-Eredita le istruzioni della root. Sito pubblico e indipendente dal playground. Contenuti provvisori documentati: non inventare sede, orari, prezzi, contatti o testimonianze. Usare `@loruni/ui` per le fondamenta confermate; integrare varianti solo dopo scelta esplicita. Avvio: `pnpm dev:landing` dalla root.
+Eredita AGENTS.md root. Fase 03: composizione statica della narrativa in `src/app`, contratti in `docs/visual-direction.md` e `docs/landing-narrative.md`. Nessuna choreography o motion definitivo. Media sintetici temporanei dichiarati e con provenienza documentata; non attestano la sede. Site/business config in `src/config/site.ts`; Napoli/dominio confermati, orari indicativi. Non inventare indirizzo, contatti, prezzi o store. SEO/ambiente in `docs/seo.md`. Nessun import dal playground. Avvio: `pnpm dev:landing`.
