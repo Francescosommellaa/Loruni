@@ -1,4 +1,24 @@
-# Verifiche — Fase 02
+# Verifiche — Fase 03
+
+Verifica del 2026-10-02 Europe/Rome su composizione statica e build production locale. `pnpm check` supera lint, TypeScript strict e build delle due app; `git diff --check` passa. Nessuna nuova dipendenza o modifica del lockfile. La successiva richiesta Fase 04 approva la composizione statica e autorizza il motion, senza ridisegnarla.
+
+## Composizione, responsive e comportamento
+
+Otto scene server/unico H1; socialità continua, cocktail/tavolo caldi e gaming fisicamente distinto. Quote minime 100/95/110/110/110/contenuto/125/100svh, scroll nativo. Altezze effettive 7305/8824/7835px a390×844/768×1024/1440×900. Quattro fotografie sintetiche esplicitamente dichiarate; non documentano la sede. App senza schermate/store reali resta placeholder con CTA disabilitata.
+
+43 catture finali ricatturate e aperte dopo le correzioni: otto scene/menu/full a390/768/1440px; apertura/full a320/430/399/1280/1920px; reduced motion, senza JS e reflow. Due ulteriori catture tavolo/app a320px/root200%. Nessun overflow negli otto viewport standard; reflow200% senza overflow o perdita del finale. Tavolo/app mobile usano una colonna, sei tracce da48rem dove necessarie, composizioni desktop da64rem.
+
+Skip link primo Tab/outline ed Enter→main; menu Enter/focus/ESC/restauro focus e overflow; preview hover/focus, ancore/tema, visita e ritorno all'inizio; app disabled. Reduced motion e senza JS conservano otto scene, contenuto e azioni. Regressione Button/Switch del playground verificata. Nessun errore runtime/console nella matrice finale.
+
+Review Impeccable fresca: tre fix materiali (reflow, persistenza DESIGN/sidecar, Napoli senza eyebrow) corretti e verificati dalla stessa reviewer; verdetto ship limitato ai tre fix. Due round self-QA, nessuna nuova caccia al difetto dopo il verdetto.
+
+## SEO, costo e limiti
+
+HTTP200, canonical https://loruni.it, default noindex/nofollow/sitemap vuota, graph WebSite+LocalBusiness solo con fatti confermati. Nessun indirizzo, telefono, coordinate, rating o orario ufficiale inventato. Playground noindex. Policy crawler invariata; queste sono prove locali, non attestazione di discovery in produzione.
+
+Sette script HTML inclusa compatibilità legacy: **178,1KiB gzip**. Nessun GSAP/third-party nella home statica. Quattro WebP1536×1024:332312byte (324,5KiB); font35.180byte. Misure di payload locale, non Lighthouse/CWV sul campo. Media/copy definitivi, store, indirizzo/telefono e orari ufficiali restano aperti; hardware meno potente, cross-browser/screen reader, audit WCAG completo, deploy e indicizzazione non attestati. Le prove sotto sono storiche.
+
+## Storico Fase 02 — non attesta la nuova UI
 
 Verifica corrente del 2026-10-02 Europe/Rome, Chromium su build production locale predefinita noindex. `pnpm check` supera lint senza warning, TypeScript strict e build delle due app; `git diff --check` passa. Nessuna dipendenza nuova o modifica del lockfile. SHA/CI remoti sono attestati separatamente nel Brain e su GitHub.
 
