@@ -1,5 +1,0 @@
-.page { min-height: 100svh; background: var(--color-background); color: var(--color-text); }
-.stack { display: flex; flex-direction: column; gap: var(--space-lg); align-items: stretch; }
-.description { max-width: 65ch; color: var(--color-text-secondary); }
-.controls { display: flex; flex-direction: column; gap: var(--space-md); max-width: 30rem; }
-.actions { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
