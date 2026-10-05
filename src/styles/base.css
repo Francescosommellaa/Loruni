@@ -1,0 +1,13 @@
+/* Temporary bootstrap presentation. These values are not Loruni design tokens. */
+:root {
+  font-family: system-ui, sans-serif;
+  color: #171717;
+  background: #fff;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 60rem; margin-inline: auto; padding: clamp(1rem, 5vw, 3rem); }
+h1 { font-size: 2rem; line-height: 1.2; }
+p { max-width: 65ch; line-height: 1.6; }
