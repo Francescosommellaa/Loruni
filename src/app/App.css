@@ -1,0 +1,9 @@
+/* Development status layout, not a Framer section or a design token. */
+.development-status {
+  max-width: 60rem;
+  margin-inline: auto;
+  padding: clamp(1rem, 5vw, 3rem);
+}
+.development-status > * + * { margin-block-start: 1rem; }
+.development-catalog-link { display: inline-block; color: var(--color-brand-primary); text-underline-offset: .25em; }
+.development-catalog-link:focus-visible { outline: 2px solid var(--color-brand-accent); outline-offset: 5px; }
