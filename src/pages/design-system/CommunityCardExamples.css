@@ -1,0 +1,8 @@
+/* Keep this content card's real examples readable at the catalog's full stage width. */
+#ds-component-community-card .ds-component-grid { grid-template-columns: minmax(0, 1fr); }
+.ds-community-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-60) var(--space-8); background: var(--color-neutral-950); }
+.ds-community-card-intrinsic { width: var(--source-width-value516px); max-width: 100%; background: var(--color-neutral-950); }
+.ds-community-controls__fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-16); margin-bottom: var(--space-24); }
+.ds-community-controls__fields label { display: flex; flex-direction: column; gap: var(--space-8); }
+.ds-community-controls__fields textarea { min-height: 100px; }
+@media (max-width: 809.98px) { .ds-community-cards { grid-template-columns: minmax(0, 1fr); } }

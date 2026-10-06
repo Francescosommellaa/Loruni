@@ -32,3 +32,5 @@ CMS schema/counts are captured; content records are not yet migrated. Dynamic ro
 - [Framer inventory](framer/INVENTORY.md) — observed source and its limits.
 
 Verification is recorded in [BOOTSTRAP-VERIFICATION.md](BOOTSTRAP-VERIFICATION.md).
+
+CommunityCard is the current Community moment preview, mapped to legacy Framer Cards/Blog Card. Four content controls only; parent owns width, links and CMS selection. Reuses canonical typography/geometry/tween and live motion policy. See COMMUNITY-CARD.md.

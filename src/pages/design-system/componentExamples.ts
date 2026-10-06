@@ -14,6 +14,7 @@ import { defaultTestimonials, type Testimonials } from '../../components/Testimo
 import { colors, primitive, motion as motionTokens } from '../../styles/token'
 import { ProcessHomeExample, ProcessRowControlsExample } from './ProcessRowExamples'
 import { OurStoryControlsExample, OurStoryDefaultExample, OurStoryRealCardsExample } from './OurStoryCardExamples'
+import { CommunityCardControlsExample, CommunityCardDefaultExample, CommunityCardRealExamples } from './CommunityCardExamples'
 
 export type ComponentExample = {
   name: string
@@ -75,6 +76,17 @@ function attributedTestimonials(): Testimonials {
 }
 
 export const componentExamples: readonly ComponentExample[] = [
+  {
+    name: 'Community Card',
+    description: 'Fotografia e momento Community. Un’unica card fluida, titolo H2/H3 e zoom hover originale; griglia, link e selezione CMS appartengono al parent.',
+    source: 'Community Card · legacy Cards/Blog Card',
+    examples: [
+      { name: 'Community · H2 · quattro momenti reali', preview: createElement(CommunityCardRealExamples, { h3: false }) },
+      { name: 'Esperienza / Vieni a trovarci / altri momenti · H3', preview: createElement(CommunityCardRealExamples, { h3: true }) },
+      { name: 'Contenuti configurabili e semantica', preview: createElement(CommunityCardControlsExample) },
+      { name: 'Default nativo · nessuna fotografia', preview: createElement(CommunityCardDefaultExample) },
+    ],
+  },
   {
     name: 'Our Story Card',
     description: 'Due sole varianti native Desktop/Mobile, quattro contenuti stringa e spring originale. Selezione variante e sizing esterno appartengono al consumer.',

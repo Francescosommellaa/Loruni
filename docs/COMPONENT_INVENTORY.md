@@ -94,7 +94,7 @@ Nessuna definizione separata individuata nella fonte acquisita: tabs, tooltip, s
 019. [Our Story Section](#component-019) — page-specific · CRITICAL/XL
 020. [Our Story Card](#component-020) — page-specific · MEDIUM/S
 021. [Load More](#component-021) — shared · HIGH/M
-022. [Blog Card](#component-022) — shared · HIGH/S
+022. [Community Card](#component-022) — shared · HIGH/S
 023. [👀 Pre-Loader](#component-023) — page-specific · CRITICAL/XL
 024. [Logo](#component-024) — global · HIGH/S
 025. [TextFitWidth](#component-025) — shared · HIGH/L
@@ -3955,9 +3955,9 @@ Hidden/conditional:4; condizioni esatte nel JSON. Varianti non selezionate conse
 | bottom = -64px | Plf6aN2jf/vzw524_Q6dZSnalprj · 1 occorrenze · structural/canvas/calculated |
 Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
 <a id="component-022"></a>
-### 022. Blog Card
+### 022. Community Card (legacy Cards/Blog Card)
 
-framer-f8_TXnRzt · original-name · canvas · content component · shared · not-migrated.
+framer-f8_TXnRzt · current runtime-name CommunityCard / legacy source Cards/Blog Card · canvas · content component · shared · completed.
 
 Uso:12 serializzati/4 indipendenti/12 diretti pagina-template. Pagine: /community, /community/:Community, /esperienza, /vieni-a-trovarci.
 
@@ -17299,3 +17299,7 @@ Original name Image;6nodi/2origini Home/Community. Struttura un img, asset local
 ### Process Row e Our Story Card — chiusura 2026-10-06
 
 Port mirati completed: Process Row T0VLBAAXc (una variante/12istanze Home) e Our Story Card nZX03KIzW (Desktop/Mobile/6istanze Our Story Section). API, riuso Divider/token, configurazioni responsive/motion e prove: [PROCESS-ROW.md](PROCESS-ROW.md), [OUR-STORY-CARD.md](OUR-STORY-CARD.md) e relativi VERIFICATION.json. Nessun consumer/pagina/Section migrato, nessuna modifica Framer, nessun token nuovo. Tutte le capacità reali implementate; remainingWork vuoto. Matrici misurate senza scostamenti; limiti di browser/frame timing e contesto canvas espliciti nelle prove. Lavoro concorrente Icon Engine/atom/catalogo preservato.
+
+### Community Card — completed,2026-10-06
+
+Current Community moment preview replaces legacy Blog Card naming in runtime. Twelve instances/four contexts, image/title/subtitle/h3 controls, one visual heading selecting H2/H3; fluid width and native exact516/440 ratio. Existing typography/tokens/tween/live policy reused; hover1→1.1→1. Current CMS photos confirmed in native canvas and twelve on-demand captures; published preview contains older media. All compared source/local geometry/typo/colors/crop profiles match. API/evidence/digests/limits: COMMUNITY-CARD.md and COMMUNITY-CARD-VERIFICATION.json. Inventory137/18completed/119not-migrated/0to-complete; no parent page/section/CMS/navigation or next component ported.

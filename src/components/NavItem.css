@@ -1,0 +1,17 @@
+.loruni-nav-item {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--component-nav-item-desktop-gap);
+  width: min-content;
+  height: min-content;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+  cursor: pointer;
+  text-decoration: none;
+}
+.loruni-nav-item > .loruni-rolling-text { flex: none; width: auto; height: auto; }

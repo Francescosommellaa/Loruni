@@ -1,5 +1,9 @@
 # Work plans
 
+Current authorized layer: [Atom di contenuto e form](plans/2026-10-06-content-form-atoms.md). Prior cards remain closed; no subsequent layer authorized.
+
+Current authorized component slice: [Community Card](plans/2026-10-06-community-card.md), replacing legacy Blog Card terminology only for this implementation.
+
 Completed authorized slices: [Our Story Card](plans/2026-10-06-our-story-card.md) and [Process Row](plans/2026-10-06-process-row.md), with final shared input digest/checks in their verification records. No next component authorized.
 
 Bounded current slice: [Process Row](plans/2026-10-06-process-row.md), one complete component migration; existing plans/work preserved.
