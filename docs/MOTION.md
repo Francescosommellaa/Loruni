@@ -1,6 +1,6 @@
 # Animation boundaries
 
-Current: 2026-10-05. Installed GSAP + @gsap/react + Motion. No motion effects, custom clock, ScrollTrigger registrations or smooth scrolling are active in the bootstrap.
+Current: 2026-10-06. GSAP + @gsap/react + Motion installed. Motion is active in migrated UI components; no custom clock, ScrollTrigger registration or smooth scrolling is active.
 
 | Boundary | Owner |
 | --- | --- |
@@ -16,4 +16,6 @@ When GSAP effects are implemented, register plugins centrally, acquire scoped co
 
 Native scrolling is the initial transport. Smoothing is not installed merely because an earlier removed application used Lenis. If source behavior later requires it, choose one root-owned transport and verify its clock, cleanup and native/reduced fallbacks.
 
-An inventory effect configuration is structural evidence. Timing, spring feel and responsive choreography still require preview observation and comparison. No animation fidelity, FPS budget or accessibility certification has been executed in this slice.
+An inventory effect configuration is structural evidence. Timing, spring feel and responsive choreography require preview observation and comparison. Component-specific evidence and limits live in the migration records; no all-site FPS/accessibility certification is implied.
+
+Process Row uses a once/in-view glyph reveal grouped by rendered line: opacity/y only, with source spring0.6, initial delay0.1 and line stagger0.05. Our Story Card uses scoped variant layout projection, source spring0.4/bounce0.2, initialfalse; it has no headline reveal or interaction. Both consume the existing MotionConfig policy and live OS preference through useReducedMotionPreference. Readable reduced/failure paths and disposal remain local. See PROCESS-ROW.md and OUR-STORY-CARD.md; no new scroll owner/RAF/smoothing.

@@ -1,0 +1,49 @@
+.loruni-our-story-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: var(--component-our-story-card-desktop-width);
+  height: var(--component-our-story-card-desktop-height);
+  padding: var(--component-our-story-card-desktop-padding);
+  overflow: visible;
+  /* Native distributed stack emits no gap80 between Content and Number. */
+}
+.loruni-our-story-card__content,
+.loruni-our-story-card__headline,
+.loruni-our-story-card__texts {
+  position: relative;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 100%;
+  height: min-content;
+}
+.loruni-our-story-card__content {
+  justify-content: center;
+  gap: var(--component-our-story-card-desktop-content-gap);
+  overflow: clip;
+}
+.loruni-our-story-card__headline { justify-content: flex-start; gap: var(--space-24); }
+.loruni-our-story-card__texts { flex-direction: row; justify-content: center; gap: var(--space-80); overflow: clip; }
+.loruni-our-story-card__title { position: relative; flex: none; width: 100%; height: auto; white-space: pre-wrap; overflow-wrap: break-word; word-break: break-word; }
+.loruni-our-story-card__divider { position: relative; flex: none; width: var(--source-width-value82px); height: var(--source-height-value6px); }
+.loruni-our-story-card__text { position: relative; flex: 1 0 0; width: var(--source-width-value1px); height: auto; white-space: pre-wrap; overflow-wrap: break-word; word-break: break-word; }
+.loruni-our-story-card__number { position: relative; flex: none; width: auto; height: auto; white-space: pre; opacity: var(--source-opacity-value0point3); }
+.loruni-our-story-card h3,
+.loruni-our-story-card p { margin: 0; color: var(--color-neutral-50); }
+.loruni-our-story-card[data-variant="Mobile"] {
+  width: var(--component-our-story-card-mobile-width);
+  height: min-content;
+  padding: var(--component-our-story-card-mobile-padding);
+  justify-content: center;
+  gap: var(--component-our-story-card-mobile-gap);
+}
+.loruni-our-story-card[data-variant="Mobile"] .loruni-our-story-card__content { gap: var(--component-our-story-card-mobile-content-gap); }
+.loruni-our-story-card[data-variant="Mobile"] .loruni-our-story-card__headline { gap: var(--space-16); }
+.loruni-our-story-card[data-variant="Mobile"] .loruni-our-story-card__texts { flex-direction: column; gap: var(--space-24); }
+.loruni-our-story-card[data-variant="Mobile"] .loruni-our-story-card__text { flex: none; width: 100%; }

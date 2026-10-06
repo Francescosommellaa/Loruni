@@ -1,0 +1,5 @@
+.loruni-divider {
+  position: relative;
+  flex: none;
+  height: var(--source-height-value6px);
+}

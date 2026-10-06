@@ -1,0 +1,28 @@
+.loruni-category-label {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--component-category-label-variant1-gap);
+  width: min-content;
+  height: min-content;
+  padding: var(--component-category-label-variant1-padding);
+  position: relative;
+  overflow: clip;
+}
+
+.loruni-category-label__text {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  position: relative;
+  white-space: pre;
+}
+
+.loruni-category-label__text > p {
+  margin: 0;
+  white-space: pre;
+  overflow-wrap: normal;
+}

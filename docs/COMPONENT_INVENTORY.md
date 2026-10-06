@@ -1,21 +1,23 @@
 # LORUNI — COMPONENT_INVENTORY
 
-Total components: 135
+Total components: 137
 Global: 23
-Shared: 16
+Shared: 18
 Page-specific: 93
 Interactive: 68
-Animated: 53
+Animated: 55
 High-risk: 83
 Catalog-only: 3
 With variants: 24 (19 con più varianti native)
-Possible / ambiguous components: 24
+Possible / ambiguous components: 22
 
-Data:2026-10-06. Fonte: [progetto Framer LORUNI](https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6). Fase solo osservativa; tutti i record not-migrated.
+Data:2026-10-06. Fonte: [progetto Framer LORUNI](https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6). Audit strutturale e migrazioni autorizzate: 17 complete, 0 da ultimare, 120 non iniziate.
+
+Metodo/copertura e schede originali sotto descrivono la cattura iniziale. Lo stato corrente e le prove dei port sono nella sezione finale delle migrazioni e nei record `migration` JSON; le limitazioni dell'audit generale non riaprono i componenti verificati successivamente.
 
 **Stato: mappa strutturale acquisita; copertura dei dettagli di fedeltà PARZIALE.** Interni non esposti e stati non esercitati impediscono di certificare una ricostruzione pixel-perfect senza riaprire Framer. Non vengono presentati come verificati.
 
-135 unità censite separatamente includono parent/child, pattern pagina, campi, slot e grafiche oltre ai componenti dichiarati. Non equivale a135 componenti React autonomi. Pattern simili non unificati.
+137 unità censite separatamente includono parent/child, pattern pagina, campi, slot e grafiche oltre ai componenti dichiarati. Non equivale a137 componenti React autonomi. Pattern simili non unificati.
 
 Questo documento e [component-inventory.json](framer/component-inventory.json) formano un inventario unico. Le schede sono navigabili; il JSON conserva **tutte le proprietà lette per ogni nodo**, gerarchie complete, override di istanza, delta responsive/gesture, binding, asset, preset originali, motion e immagini native. Cercare components[].id o sourceNodes["scopeId/nodeId"]. Nessun valore arrotondato.
 
@@ -205,7 +207,9 @@ Nessuna definizione separata individuata nella fonte acquisita: tabs, tooltip, s
 132. [Logo · Icon set](#component-132) — global · HIGH/XS
 133. [Quote · Icon set](#component-133) — shared · MEDIUM/S
 134. [arrow_forward](#component-134) — shared · LOW/XS
-135. [Freccia vettoriale · Button](#component-135) — shared · CRITICAL/XL · ambiguous
+135. [Freccia vettoriale · Button](#component-135) — shared · CRITICAL/XL (rischio storico; geometria ora risolta)
+136. [Divider](#atom-divider) — shared · LOW/XS · completed
+137. [Circular Image](#atom-circular-image) — shared · MEDIUM/XS · completed
 
 ## Schede
 
@@ -429,7 +433,9 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-002"></a>
 ### 002. Label
 
-framer-v7uHI8k53 · original-name · canvas · UI component · shared · not-migrated.
+framer-v7uHI8k53 · original-name · canvas · UI component · shared · completed.
+
+Migrazione completata: [stato e prove aggiornate](#stato-migrazioni-autorizzate--2026-10-06). I dettagli della cattura iniziale sotto restano provenance storica; per le configurazioni runtime correnti consultare anche `migration` nel JSON.
 
 Uso:39 serializzati/15 indipendenti/33 diretti pagina-template. Pagine: /, /esperienza, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -1407,7 +1413,9 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-008"></a>
 ### 008. Category Label
 
-framer-rkq8vGIWn · original-name · canvas · UI component · shared · not-migrated.
+framer-rkq8vGIWn · original-name · canvas · UI component · shared · completed.
+
+Migrazione completata: [stato e prove aggiornate](#stato-migrazioni-autorizzate--2026-10-06). I dettagli della cattura iniziale sotto restano provenance storica; per le configurazioni runtime correnti consultare anche `migration` nel JSON.
 
 Uso:33 serializzati/13 indipendenti/21 diretti pagina-template. Pagine: /, /community/:Community, /eventi/:Eventi.
 
@@ -1811,7 +1819,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-011"></a>
 ### 011. FAQ Icon
 
-framer-i5MJ8t0r9 · original-name · canvas · primitive · page-specific · not-migrated.
+framer-i5MJ8t0r9 · original-name · canvas · primitive · page-specific · completed.
 
 Uso:2 serializzati/1 indipendenti/0 diretti pagina-template. Pagine: /vieni-a-trovarci.
 
@@ -1925,7 +1933,7 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 | left = 0px | i5MJ8t0r9/a0njak0Uv · 1 occorrenze · structural/canvas/calculated |
 | top = 0px | i5MJ8t0r9/a0njak0Uv · 2 occorrenze · structural/canvas/calculated |
 | left = 88px | i5MJ8t0r9/evmhjHU1P · 1 occorrenze · structural/canvas/calculated |
-Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
+Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Stato della cattura originaria; migrazione verificata nella sezione finale FAQ Icon.
 <a id="component-012"></a>
 ### 012. Main form button
 
@@ -2327,7 +2335,9 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-014"></a>
 ### 014. Testimonials Section
 
-framer-nkDvTeO6Q · original-name · canvas · section · shared · not-migrated.
+Migrazione completata: [carousel e prove aggiornate](#testimonials-section--migrazione-verificata-2026-10-06). Le otto variant e le sei istanze sono state rilette integralmente; sorgenti correnti e mapping nel record `migration` JSON.
+
+framer-nkDvTeO6Q · original-name · canvas · section · shared · completed.
 
 Uso:6 serializzati/2 indipendenti/6 diretti pagina-template. Pagine: /, /esperienza.
 
@@ -3282,7 +3292,9 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-018"></a>
 ### 018. Testimonials Arrow
 
-framer-PwJSSuRWe · original-name · canvas · interactive component · shared · not-migrated.
+framer-PwJSSuRWe · original-name · canvas · interactive component · shared · completed.
+
+Migrazione corrente: [stato e prove aggiornate](#testimonials-arrow--migrazione-verificata-2026-10-06). I dettagli della cattura iniziale sotto restano provenance storica; Icon e geometria sono recuperati nel record `migration` JSON.
 
 Uso:16 serializzati/2 indipendenti/0 diretti pagina-template. Pagine: /, /esperienza.
 
@@ -4888,7 +4900,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-029"></a>
 ### 029. Rolling Text
 
-FiiQ0BKlVUNzxXjo8hFs · original-name · external · interactive component · global · not-migrated.
+FiiQ0BKlVUNzxXjo8hFs · original-name · external · interactive component · global · completed.
 
 Uso:14 serializzati/3 indipendenti/0 diretti pagina-template. Pagine: /, /404, /community, /community/:Community, /esperienza, /eventi, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -5492,7 +5504,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-035"></a>
 ### 035. Red Bull
 
-kzYpAYTcIrmL7AqAiMfc · original-name · external · media component · catalog-only · not-migrated.
+kzYpAYTcIrmL7AqAiMfc · original-name · external · media component · catalog-only · completed.
 
 Uso:0 serializzati/0 indipendenti/0 diretti pagina-template. Pagine: solo catalogo.
 
@@ -5553,7 +5565,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-036"></a>
 ### 036. Arrow Right Alt
 
-uii4O6Q2YMyHUZDfJBlW · original-name · external · media component · catalog-only · not-migrated.
+uii4O6Q2YMyHUZDfJBlW · original-name · external · media component · catalog-only · completed.
 
 Uso:0 serializzati/0 indipendenti/0 diretti pagina-template. Pagine: solo catalogo.
 
@@ -11387,7 +11399,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-082"></a>
 ### 082. “ · /eventi/:Eventi
 
-pattern-kt1uJzx2N · original-name · pattern · decorative component · page-specific · not-migrated.
+pattern-kt1uJzx2N · original-name · pattern · decorative component · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /eventi/:Eventi.
 
@@ -16754,7 +16766,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-132"></a>
 ### 132. Logo · Icon set
 
-iconset-cpJ186_Ri · original-name · icon-set · primitive · global · not-migrated.
+iconset-cpJ186_Ri · original-name · icon-set · primitive · global · completed.
 
 Uso:2 serializzati/1 indipendenti/0 diretti pagina-template. Pagine: /, /404, /community, /community/:Community, /esperienza, /eventi, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -16828,7 +16840,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-133"></a>
 ### 133. Quote · Icon set
 
-iconset-YfS5AmUgj · original-name · icon-set · primitive · shared · not-migrated.
+iconset-YfS5AmUgj · original-name · icon-set · primitive · shared · completed.
 
 Uso:17 serializzati/6 indipendenti/3 diretti pagina-template. Pagine: /, /esperienza.
 
@@ -16958,11 +16970,13 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-134"></a>
 ### 134. arrow_forward
 
-svg-RlCDNYngw · original-name · svg · primitive · shared · not-migrated.
+svg-RlCDNYngw · original-name · svg · primitive · shared · completed.
 
-Uso:1 serializzati/1 indipendenti/0 diretti pagina-template. Pagine: /, /eventi, /eventi/:Eventi.
+Migrazione completata: [stato e prove aggiornate](#stato-migrazioni-autorizzate--2026-10-06). I dettagli della cattura iniziale sotto restano provenance storica; per le configurazioni runtime correnti consultare anche `migration` nel JSON.
 
-**LOW / XS**: Struttura esplicita contenuta; verifica di fedeltà da effettuare prima del port.
+Uso:6 serializzati/1 originale/0 diretti pagina-template; 21 consumer Project Card catturati. Pagine: /, /eventi, /eventi/:Eventi.
+
+**MEDIUM / S**: Struttura esplicita contenuta; verifica di fedeltà da effettuare prima del port.
 
 **1. Source e gerarchia**
 
@@ -17031,7 +17045,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-135"></a>
 ### 135. Freccia vettoriale · Button
 
-vector-DZHx41Gi8 · inferred-name · vector · primitive · shared · not-migrated.
+vector-DZHx41Gi8 · inferred-name · vector · primitive · shared · completed.
 
 Uso:1 serializzati/1 indipendenti/0 diretti pagina-template. Pagine: /, /404, /eventi/:Eventi.
 
@@ -17173,3 +17187,115 @@ JSON:ID/source/dipendenze univoci e risolvibili; tutti not-migrated. Screenshot 
 **AUDIT COMPLETE — NO COMPONENTS MIGRATED**
 
 La dicitura chiude osservazione/documentazione delle fonti accessibili, non certifica fedeltà pixel-perfect completa degli interni non esposti.
+
+
+## Stato migrazioni autorizzate — 2026-10-06
+
+| Componente | Stato | Implementazione | Da ultimare |
+| --- | --- | --- | --- |
+| Label | completed | src/components/Label.tsx + Label.css | Nessuna attività interna pendente |
+| Category Label | completed | src/components/CategoryLabel.tsx + CategoryLabel.css | Nessuna attività interna pendente |
+| arrow_forward | completed | src/components/ArrowForward.tsx + ArrowForward.css | Nessuna configurazione attuale pendente |
+| FAQ Icon | completed | src/components/FaqIcon.tsx + FaqIcon.css | Entrambe le variant e Click; peculiarità native preservate |
+| Testimonials Arrow | completed | src/components/TestimonialsArrow.tsx + TestimonialsArrow.css | Tre icone reali, stati e callback autonomo |
+| Testimonials Section | completed | src/components/TestimonialsSection.tsx + TestimonialsSection.css + TestimonialsSection.data.ts | Quattro contenuti, loop, otto variant, responsive e motion verificati |
+
+Gli altri129 record restano `not-migrated`. Sei componenti `completed`, zero `to-complete`. Nessun consumer prodotto migrato. Label e Category Label mantengono le precedenti verifiche Framer/locale a Desktop, Tablet e Phone; file invariati. Il fallback Framer Placeholder non è presente localmente: font attivo e metriche coincidono. Nessuna certificazione di dispositivi fisici o altri browser.
+
+### Chiusura arrow_forward
+
+SVG originale esatto: viewBox `0 0 40 40`, path catturato, mask alpha/userSpaceOnUse40×40 e rect `#D9D9D9`, path `#FFFEF7`. Nessuna variazione di fill osservata. Gli ID mask sono univoci per istanza; geometria identica. Nessun nuovo token, font, asset o SVG sostitutivo.
+
+| Parent variant / stato | Nodo | API equivalente |
+| --- | --- | --- |
+| Main page Desktop / default | RlCDNYngw | size40, rotation−45, visibletrue |
+| Inner page Desktop / default | mTtKCz6IfRlCDNYngw | size28, rotation−45, visibletrue |
+| Main page Desktop / hover | TAa8EHiniRlCDNYngw | size40, rotation0, visibletrue |
+| Inner page Desktop / hover | oD0vauAT0RlCDNYngw | size28, rotation0, visibletrue |
+| Main Mobile | WVc2KOxeKRlCDNYngw | visiblefalse: nodo assente |
+| Inner page mobile | hCSVl9psKRlCDNYngw | visiblefalse: nodo assente |
+
+L'inventario precedente censiva solo l'originale; ora la scheda JSON conserva anche le cinque repliche. Tutti i21 consumer Project Card riletti live: Main Desktop su Desktop/Tablet, Main Mobile su Phone; Inner Desktop su Desktop/Tablet, Inner mobile su Phone. Breakpoint originali: ≥1200,810–1199.98,≤809.98px. Il parent sceglie il contesto; l'API dell'icona riproduce tutte le configurazioni senza nuove modifiche o media query inventate.
+
+La rotazione è controllata dal parent come Framer; nessun hover autonomo sull'icona. La transizione interna al cambio di rotation usa il tween originale `0.5s`, delay `0s`, ease `[0.85,0.05,0.26,0.96]` dal token `motion.transitions.projectCardMainPageDesktopTransition`. Motion è l'unico writer del transform; nessun RAF/owner scroll aggiuntivo. Dimensioni: primitive width/height28px e40px per equivalenza esatta, senza nuovo ruolo semantico.
+
+Verifiche: preview Framer default/hover40/28 ed entrambe le assenze mobile; SVG/path/fill/mask confrontati; catalogo a1200/810/390 con tutti gli stati, transizione avanti/indietro40/28 e mask multiple; console pulita; typecheck/lint/build pass. `LazyMotion` usa solo domAnimation e non aggiunge wrapper DOM. Bounding rect ruotati: differenze inferiori a0.0001px per precisione float legata alle coordinate browser; width/height/matrice/origine coincidono, nessun arrotondamento. Latenza frame hardware e altri browser non certificati.
+
+Lavoro confinato ad ArrowForward, registro del catalogo e inventario Markdown/JSON. Nessun altro componente ricostruito.
+
+### FAQ Icon — migrazione verificata, 2026-10-06
+
+Source: Misc/FAQ Icon i5MJ8t0r9; Plus a0njak0Uv / Minus evmhjHU1P. Albero/controls completi riletti live, due istanze FAQ Row (Minus/Plus) e tre consumer FAQ Section Desktop/Tablet/Phone; modulo generato originale letto per SVG/CSS/handler/tween. Dettagli e SHA in components[].migration del JSON. Nessun consumer migrato.
+
+API: variant Plus|Minus (default Plus), onClick nativo; className e aria-label solo integrazione/accessibilità. Button → Icon frame → due barre SVG originali separate. Root32x32 intrinseco, padding4/gap0/stackorizzontale centrato; frame24x24 ruotato-90; prima barra0 iniziale/90 Minus, seconda-90. Colore explicit source style → Neutral/950. Canvas left/top/centerAnchor esclusi.
+
+La geometria originale17x1.5/radius1 è conservata nel path/viewBox esatto. Il CSS generato Framer usa frame17x2 a left3/top11, SVG preserveAspectRatio none; questa resa runtime è preservata, senza arrotondare il path. Il gap10 del frame senza stack è generato ma inerte con child assoluti.
+
+Peculiarità nativa dimostrata: Plus dopo Minus conserva la rotazione90 della prima barra, perché il modulo genera solo override Minus. Il preview Framer conferma il target trattenuto; implementazione corrente lo preserva esplicitamente. Plus iniziale resta correttamente a0. Callback non cambia autonomamente variant; le azioni consumer, inclusa DISMISS_OVERLAY, restano del consumer.
+
+Tween originale0.2s, delay0, ease[0.44,0,0.56,1]; token già esistente con equivalenza esatta, nessuna dipendenza da FAQ Section. Geometria/path/colore/auto-sizing verificati a1200/810/390; click pointer e Enter/Space: callback una sola volta. Typecheck/lint/build PASS, console pulita; nessuna suite aggiunta/eseguita. Nessuna mediaquery interna, nessun nuovo token, nessun altro componente modificato. Limiti: browser disponibile, touch fisico/cross-browser e timing frame-by-frame non certificati. Stato completed, nessuna attività interna pendente.
+
+### Testimonials Arrow — migrazione verificata, 2026-10-06
+
+Source: Misc/Testimonials Arrow PwJSSuRWe; primary MkgHo9N8N, hover b0vgUxuTg, pressed nWeFa5wMJ. Riletti live root/variabili, tre gesture root e tutte16istanze nelle8variant Testimonials Section. La serializzazione profonda resta limitata dall'icona, ma root variable, catalogo/controls e moduli generati originali recuperano completamente Icon. URL e SHA256 dei cinque moduli nel JSON; nessun codice generato completo copiato, nessuna modifica Framer.
+
+API: icon = Arrow Right Alt | Arrow Back | Arrow Forward (default Arrow Right Alt), onClick nativo; className/aria-label tecnici. Icon Set Material originale JIScivAkNLgXrcOUxHXD, controlli Icon + Click. Le8istanze della prima arrow usano Arrow Back, le8della seconda Arrow Forward; nessuna rotazione o altra configurazione visuale. Il default originale Arrow Right Alt ha geometria distinta e resta disponibile. Questi nomi descrivono icone, non azioni del carousel.
+
+Button nativo40×40 → icon frame20×20, aspect1/relative/flexnone, centrato con10px di inset. Stack orizzontale/nowrap/center, padding0, gap80 (inerte con un child), overflowclip. Canvas left/top/anchor esclusi. Path e viewBox0 0 24 24 originali, translate(4 8) per Alt e translate(4 4) per Back/Forward; mask alpha center/auto come Framer, senza SVG/librerie sostitutive. ID SVG non referenziati omessi, variabile privata rinominata semanticamente, secondo layer mask vuoto omesso: geometria e alpha invariati.
+
+Default backgroundNeutral950 rgb(26,25,23); hover/pressed backgroundNeutral700 rgb(74,71,66), pressedopacity0.8. Token component.testimonialsArrow e primitive.width.value20px già esistenti; mapping colori esplicito. Icon fill: bindinglegacy727de3e5 non risolto in canvas/preview, fallbackeffettivo rgb(247,247,247), che non esiste tra i token attuali; mantenuto localmente senza inventare alias a Neutral50 o cambiare token. Nessuna API fill/dimensione/rotation/stato artificiale.
+
+Spring originale duration0.4s/bounce0.2/delay0, applicata da Motion solo a background/opacity tramite hover/tap. Il token motion.transitions.eventiEventiDesktopTransition rappresenta configurazione esattamente equivalente, senza dipendenza o relazione semantica con Eventi. React emette soltanto onClick: nessun indice, next/previous, loop, array, SET_VARIANT o conoscenza del carousel. Product consumer non migrati.
+
+Source preview: defaultAlt, entrambe le direzioni in Testimonials Section e hover; source canvas tre endpoint incluso pressed0.8. Locale: tutte3icone a1200/810/390, root/frame/inset/gap/padding/clip/radius0/transformnone/fill e mask confrontati; callback singolo click/Enter/Space per ciascuna. Pressed pulse e ritornoopacity1 osservati per ciascuna; pressione pointer breve/annullamento osservati. Il target0.8 è verificato nella sorgente e nell'implementazione, non è una misura di un long-press locale stabilizzato. Nessuna mediaquery interna: mobile cambia parent, non arrow.
+
+Typecheck/lint/build PASS (477.99kB JS,119.97kB gzip,127.43kB CSS, zero warning); console browser pulita. ECC verification-loop applicata alle verifiche pertinenti; nessuna suite automatica aggiunta/eseguita per vincolo progetto. Limiti: browser disponibile, touchfisico/cross-browser, long-press stabilizzato e timing springframe-by-frame non certificati. Nessuna differenza visuale residua osservata nelle configurazioni confrontate. Nessun altro componente migrato.
+
+### Testimonials Section — migrazione verificata, 2026-10-06
+
+Source: Section/Testimonials Section nkDvTeO6Q. Rilette tutte le otto variant Desktop 1–4 / Mobile 1–4 (44 nodi ciascuna), venti controls contenuto, sei istanze Home/Esperienza, moduli originali section/reveal/quote e runtime dei text effects. Root e digest dei tre moduli ricontrollati invariati alla chiusura. Capture completa, URL/SHA256 e prove nei dati migration JSON; nessuna modifica Framer.
+
+API: testimonials è una tuple tipizzata di quattro oggetti image/title/text/name/jobTitle; image può conservare src/srcSet/alt. initialIndex 0–3(default0), className/style solo integrazione. Stato React semantico e aggiornamenti funzionali: previous=(index+3)%4, next=(index+1)%4. TestimonialsArrow invariato riceve soltanto callback, Arrow Back/Forward e nome accessibile. Nessun ID Framer nel runtime, timer carousel, autoplay, drag, slider standard o copia delle otto composizioni.
+
+I default dei controls mantengono tutti i nomi LORUNI e job title originali; le pagine impostano Ray Oldenburg/Bernard Suits/Sid Meier/Ray Oldenburg & Karen Christensen. Due esempi reali separano default e override; testi conservano sei spazi iniziali. Quattro immagini originali verificate caricate, cover/center, due1536×1024 e due1024×1536. Quote SVG originale63×56/path/translate(1 1), senza geometria ridisegnata.
+
+Desktop/Tablet: grid12 minmax50, gap0/8, span4+1+7, content gap56; image top padding16. Default browser1168×750, image384×734, content678, title593×66 (slide2/4:132), divider80×6, footer quote63×56. Il canvas registra749.5px ma il modulo/runtime750px: usato il primitive750 già esistente, senza arrotondare/modificare token. Max width titolo593, testo1=610/altri698, terzo titolo auto-width e differenze di group alignment preservati.
+
+Phone≤809.98: root stackorizzontale/contentverticale gap20, defaultwidth390/heightmin-content; slot titolo140 e testo320, image/spacer/quote assenti. Default390×540; attribuzioni reali possono produrre556.78125 per wrapping nome/job. Preset Headline/76: Funnel Display600,60/44/32px,line1.1,tracking−0.05em,uppercase; Text/32 P: Funnel Sans400,32/28/20,line1.2/1.2/1.3,tracking−0.02em; Headline/16: Funnel Sans400,16,line1.1,uppercase. Colori/preset e31CSSreferenze token esistenti, nessun token nuovo o corretto.
+
+Desktop↔Tablet mantiene l'indice; attraversando Phone si riparte da initialIndex, come cambio di variante iniziale nel preview Home. Altezze/aspect/min/max-width/offset dei sei parent restano esterni: Home640/aspect1.63, Tablet600, Phoneauto; Esperienza84vh con min/max distinti. Le pagine non sono migrate.
+
+Motion originale: variante tween0.3s/delay0/ease[0.82,0.18,0.23,0.74], proiezione delle posizioni interne. Nuova immagine: cover da left0/width100% a left−1px/width1px dopo0.6s, stesso tween; nessuna opacity/scale/traslazione inventata dell'immagine. Titolo: viewport del RichText padre, opacity0.001→1, split per spazi, spring0.5s/bounce0/restDelta0.001/stagger0.06, startDelay0/threshold0/once. Body: opacity0.001→1 con wrapper0.7, threshold0.5, tween0.3, startDelay0.2/stagger0.004. Runtime Framer q1 usa stagger(delay,{startDelay}): il singolo elemento parte a0.2s, senza aggiungere0.004. Token transizione titolo Eventi riusato per equivalenza della configurazione, senza relazione semantica Eventi. Reduced-motion usa contesto esistente e target immediati; nessun RAF o writer scroll nuovo.
+
+Quote/reveal sono interni privati necessari alla Section, non port indipendenti dei rispettivi record riutilizzabili. La variabile Icon cal non è collegata nel modulo/controls: nessuna API inventata.
+
+Verifiche native e locali: cicli completi avanti/inverso, quattrocontenuti/immagini, clickrapidi, keyboardEnter/Space, Desktop1200/Tablet810/Phone390 effettivi; viewport1600 supplementare per composizione completa. Gerarchia/metriche/font/crop/colore/visibility/wrapping confrontati. Campioni temporali di cover nativa/locale e stagger/body osservati; formule/parametri letti dal runtime originale. Console locale pulita. Typecheck/lint/build PASS sul codice finale;445moduli,JS541.15kB/gzip138.01,CSS142.25kB/gzip16.32; warningVitechunk>500kB preservato. Nessuna suite automatica aggiunta/eseguita.
+
+Nessuna differenza residua osservata nelle configurazioni confrontate. Limiti: browser disponibile; touch fisico, altri engine, preferenza reduced-motion live e frame-latency sincronizzata non attestati. Capture sequenziale con hash, non revisione Framer immutabile. Nessuna modifica ad altri componenti, token, consumer, asset o routing; lavoro concorrente del catalogo/Brain preservato. Stato completed, nessuna attività interna pendente.
+
+## Fondamenta / Atom UI — chiusura verificata, 2026-10-06
+
+Icon Engine unico: 38 entry tipizzate, geometria originale di quote/frecce/barre FAQ, brand di riferimento e due spinner, più20SVG ufficiali Logo/SVG importati direttamente e invariati. Button exportSVG risolve la geometria prima non esposta; Quote Event è geometria identica dopo traslazione e condivide il glyph, senza unificare i parent. Le limitazioni delle schede originarie restano dati storici, superati solo dalla prova specifica di questa migrazione.
+
+Rolling Text:14istanze/sette configurazioni font, controlli originali e hover/leave con shadow e stagger. Divider:40nodi/8origini,80×6 Brand Primary/Accent e82×6 Brand Primary. Circular Image (inferred-name):6istanze/2origini,64×64 oppure Home Phone56×56 renderizzati; il nodo Phone registra altezza60 ma aspect1 impone56 nel canvas/preview originale. CMS visibility e selezione responsive restano al parent; entrambe le dimensioni sono già esposte, nessuna modifica futura al primitive richiesta.
+
+Schede complete/mapping/override e classificazione di ciascuna unità nel JSON `atomUi`; dettagli in [ATOM-UI.md](ATOM-UI.md), [ICON-ENGINE.md](ICON-ENGINE.md), prove/digest in [ATOM-UI-VERIFICATION.json](ATOM-UI-VERIFICATION.json). Nuove unità inferite: `atom-divider`, `atom-circular-image`, entrambe shared/primitive/completed; originale nome Divider/Image preservato nei riferimenti. I sette record quote/logo/button-vector/Event quote/Rolling Text/Red Bull/Arrow Right Alt sono completed. Port precedenti mantengono la prova storica e aggiungono l’integrazione Icon Engine.
+
+Esclusioni documentate: Headline trigger100vh trasparenti (scroll/layout), TextFitWidth/TextStagger (composizione tipografica), reveal/parallax/liquid/grain/preloader, linked Logo/navigation, card/form/section/layout/CMS/runtime. Nessuno di questi è dichiarato migrato. Label/divider interno e consumer già chiusi non riaperti. Il lavoro concorrente Process Row/Our Story Card/catalogo resta indipendente.
+
+Scansione finale: zero atom autonomi visuali eleggibili not-migrated; zero duplicazioni SVG del prodotto fuori dal motore. Due SVG copy/search solo documentazione CatalogTools esclusi motivatamente. Browser disponibile1200/810/390, sette hover/leave, due dimensioni avatar, tre divider,38entry/20logo caricati, callback FAQ/Testimonials invariati. Typecheck/lint/build e digest finali nella prova; nessuna suite frontend aggiunta/eseguita, nessuna modifica token/asset/Framer o pubblicazione. Limiti: non certifica touch fisico, altri engine, preferenzaOSlive né pixel-perfect delle pagine non migrate.
+
+<a id="atom-divider"></a>
+### 136. Divider — inferred-name / completed
+
+40nodi,8originali deduplicati, tutti i riferimenti in components[id=atom-divider].source/nodeKeys. Frame solo,80/82×6, fill source Primary/Accent, nessuno stato/motion/radius/border. API width80|82,color esplicito; token width80/82,height6. Canvas/parent offsets esclusi. Esempi reali in catalogo; nessuna variante nativa inventata.
+
+<a id="atom-circular-image"></a>
+### 137. Circular Image — inferred-name / completed
+
+Original name Image;6nodi/2origini Home/Community. Struttura un img, asset locale/remoto/CMS fornito dal consumer, cover e crop50%50%, radius56. API src/alt/size56|64/className/style tecnico. Desktop/Tablet64×64; Home Phone56×56 effettivi con aspect1 nonostante height60 del nodo. Community64×64 in tutti i breakpoint; isSet visibility resta CMSconsumer. Token width/height56/64,radiusavatar, nessuna mediaquery o stato/motion inventato. Screenshot/metriche originali e locali confrontati; entrambi gli asset esempio caricati ai treviewport.
+
+
+### Process Row e Our Story Card — chiusura 2026-10-06
+
+Port mirati completed: Process Row T0VLBAAXc (una variante/12istanze Home) e Our Story Card nZX03KIzW (Desktop/Mobile/6istanze Our Story Section). API, riuso Divider/token, configurazioni responsive/motion e prove: [PROCESS-ROW.md](PROCESS-ROW.md), [OUR-STORY-CARD.md](OUR-STORY-CARD.md) e relativi VERIFICATION.json. Nessun consumer/pagina/Section migrato, nessuna modifica Framer, nessun token nuovo. Tutte le capacità reali implementate; remainingWork vuoto. Matrici misurate senza scostamenti; limiti di browser/frame timing e contesto canvas espliciti nelle prove. Lavoro concorrente Icon Engine/atom/catalogo preservato.

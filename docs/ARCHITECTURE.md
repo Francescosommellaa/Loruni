@@ -11,7 +11,7 @@ Current: 2026-10-06. This checkout was empty except for Git metadata and pre-exi
 - `src/styles/base.css`: layered HTML reset and defaults, imports local fonts and generated named/geometric tokens. See [BASE-CSS.md](BASE-CSS.md).
 - `src/styles/token.ts`, `token.css`, `fonts.css`: named Framer colors/text/link styles, semantic references, responsive slots and three approved font families. Generated from token-source.json plus token-policy.json by scripts/framer/tokens.mjs; Framer IDs stay in reference snapshots outside browser imports. See [TOKENS.md](TOKENS.md).
 - `src/styles/geometry.ts/css`: compatibility wrappers around the canonical token files; consumer-derived spacing/radii/borders/shadow/layout from geometry-source.json through geometry.mjs; re-exported by tokens.ts. Recurrence audit stays outside runtime. See [LAYOUT-TOKENS.md](LAYOUT-TOKENS.md).
-- GSAP, @gsap/react and Motion installed and pinned; no custom animation runtime or smoothing yet.
+- GSAP, @gsap/react and Motion installed and pinned. Motion is active in migrated UI; no custom scroll runtime or smoothing.
 - `scripts/framer`: read-only source capture, named/geometric/design audit derivation and hardcode classification. `tokens:check` verifies canonical files and compatibility wrappers. See docs/TOKEN-AUDIT.md.
 - `docs/framer`: dated migration data, used only as development reference.
 - `.agents/skills`: three project-scoped migration skills.

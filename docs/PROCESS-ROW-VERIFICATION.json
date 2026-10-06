@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-06",
+  "head": "6b85d4cbcf4f77b517732fe3c9b9307555b93842",
+  "method": "ordered path + NUL + SHA256(file) + LF",
+  "fileHashes": {
+    "src/components/Divider.css": "17928efb08cc2f285f5d7f1ba224646964b6cc6fe1509d4eb001b897af03973a",
+    "src/components/Divider.tsx": "50c1cd194894765fc995eeba6d56b5dc445b87090c5c4cd314d2f2cf92256a83",
+    "src/components/ProcessRow.css": "9b87dca232674c6dde95b4bbe19fce62e5ca9efef4fdbe965618719759994611",
+    "src/components/ProcessRow.tsx": "9f954cb2ef02800be572aa1593930cf53f4b3dbd087a2153242c4b3b567f0a21",
+    "src/motion/useLineReveal.ts": "8abeb9d67508956c954a835c133e6e33c46feac7eac4189ac41f115394780413",
+    "src/motion/useReducedMotionPreference.ts": "95fa2412ca6cc27c936fe512403469ff0f42bcb0585e67fa771a5f4c557b6acc",
+    "src/pages/design-system/ProcessRowExamples.css": "ce05b873a63348b1eea2cf9f4dc5fa6aa6623b835b7d3da1454ae723554f72a6",
+    "src/pages/design-system/ProcessRowExamples.tsx": "757effb67d5de7dd6957b626b11a95334abcc075c98c4175e0a52585a307ab62",
+    "src/pages/design-system/componentExamples.ts": "07d8ccc5aedc90b6bedde1ef61bc8fc96dc6467f1aede5bb545e0fc99de03f96"
+  },
+  "digest": "0d59ec7e3305382b053995585547d4f7e84baf49f106c9347db2c17a713c68df",
+  "browserEvidence": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a11165-e8ea-7390-9c38-ef9ddeba1abb/process-row/",
+  "comparisons": {
+    "390": {
+      "sourceViewport": [
+        390,
+        1000
+      ],
+      "localViewport": [
+        390,
+        1000
+      ],
+      "differences": []
+    },
+    "809": {
+      "sourceViewport": [
+        809,
+        1000
+      ],
+      "localViewport": [
+        809,
+        1000
+      ],
+      "differences": []
+    },
+    "810": {
+      "sourceViewport": [
+        810,
+        1000
+      ],
+      "localViewport": [
+        810,
+        1000
+      ],
+      "differences": []
+    },
+    "1199": {
+      "sourceViewport": [
+        1199,
+        1000
+      ],
+      "localViewport": [
+        1199,
+        1000
+      ],
+      "differences": []
+    },
+    "1200": {
+      "sourceViewport": [
+        1200,
+        1000
+      ],
+      "localViewport": [
+        1200,
+        1000
+      ],
+      "differences": []
+    },
+    "1440": {
+      "sourceViewport": [
+        1440,
+        1000
+      ],
+      "localViewport": [
+        1440,
+        1000
+      ],
+      "differences": []
+    }
+  },
+  "checks": {
+    "typecheck": "PASS",
+    "lint": "PASS (0 warnings/errors)",
+    "build": "PASS",
+    "tokensCheck": "PASS after canonical generation; only source hardcode audit refresh, canonical tokens unchanged",
+    "testSuites": "not run per project direction",
+    "buildOutputs": {
+      "modules": 483,
+      "cssKB": 147.86,
+      "jsKB": 639.44,
+      "jsGzipKB": 158.07
+    },
+    "warnings": [
+      "Existing Vite bundle>500kB warning preserved"
+    ]
+  },
+  "browserChecks": [
+    "four real rows at six widths",
+    "resize through 810/1200",
+    "once in-view opacity/y spring",
+    "multiline title glyph offsetTop lines",
+    "unset/empty text removed",
+    "number string 0001 preserved",
+    "four-sided configurable padding",
+    "MotionConfig always static/readable before in-view",
+    "no document overflow"
+  ],
+  "limits": [
+    "available browser engine",
+    "no synchronized frame-by-frame timing proof",
+    "physical OS reduced preference toggle not exercised; live subscription implemented",
+    "no automated suites per project direction"
+  ],
+  "status": "completed",
+  "closureInputs": "docs/COMPONENT-CLOSURE-INPUTS.json",
+  "closureDigest": "7e8ac0e93afd733ab9393f6f081c18f3459d69513e38de1890c5d3f3b1760828",
+  "sourceCaptureSha256": "fdd60db8a05683eafc072945619e41481485720042a2fe8cf0feca94e8e7287b"
+}
