@@ -1,0 +1,606 @@
+{
+  "verifiedAt": "2026-10-07",
+  "source": {
+    "project": "https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6",
+    "component": "A7qEQUCm0",
+    "capture": "docs/framer/faq-row-source.json",
+    "readOnly": true,
+    "states": {
+      "Opened": "Rc3vqmBuS",
+      "Closed": "qXi8EAPaH"
+    },
+    "sectionInstances": [
+      "ff4ZaYpEp",
+      "yiMdeh57Z",
+      "fkkz5g15O",
+      "L3CLSOC7B",
+      "FEfRpyHC5",
+      "ZL7RLjxNB",
+      "nasIWz3vx",
+      "lzoBn8Uti"
+    ],
+    "populated": 5,
+    "hiddenByConsumer": 3,
+    "page": "/vieni-a-trovarci",
+    "reducedMotion": true
+  },
+  "api": {
+    "title": "required string",
+    "text": "required string",
+    "open": "required boolean",
+    "onOpenChange": "required (open:boolean)=>void",
+    "onClick": "optional ()=>void; first",
+    "technical": [
+      "className",
+      "style"
+    ]
+  },
+  "stateModel": {
+    "opened": "open=true",
+    "closed": "open=false; answer retained/absolute/opacity0/inert",
+    "owner": "parent; no sibling policy or title-isSet logic"
+  },
+  "reuse": [
+    "FaqIcon decorative composition, original Icon glyph and bar retention",
+    "Headline28/Text20",
+    "Neutral950/component/source geometry tokens",
+    "faqSectionDefaultTransition exact canonical .2 tween",
+    "global focus-visible",
+    "useReducedMotionPreference"
+  ],
+  "motion": {
+    "duration": 0.2,
+    "ease": [
+      0.44,
+      0,
+      0.56,
+      1
+    ],
+    "delay": 0,
+    "root": "Motion layout size",
+    "children": "Motion layout position",
+    "answerOpacity": [
+      0,
+      1
+    ],
+    "closedBottom": {
+      "serialized": -80.5,
+      "runtime": -80
+    },
+    "localFrameSamples": {
+      "openedHeight": [
+        105.60845947265624,
+        125.8880615234375,
+        141.7255859375,
+        148.8515625,
+        152
+      ],
+      "opacity": [
+        0.42627,
+        0.680761,
+        0.876875,
+        0.960075,
+        1
+      ]
+    },
+    "sourceSampling": "Settled snapshots only; no synchronized intermediate frame timing proof"
+  },
+  "browser": {
+    "source": [
+      {
+        "viewport": 1200,
+        "width": 472.5,
+        "titleSize": 28,
+        "opened": [
+          180,
+          180,
+          180,
+          208,
+          209.59375
+        ],
+        "closed": [
+          72,
+          72,
+          72,
+          72,
+          101.59375
+        ],
+        "answer": [
+          108,
+          108,
+          108,
+          136,
+          108
+        ]
+      },
+      {
+        "viewport": 810,
+        "width": 353.5,
+        "titleSize": 24,
+        "opened": [
+          208,
+          208,
+          180,
+          256.8125,
+          228.8125
+        ],
+        "closed": [
+          72,
+          72,
+          72,
+          92.8125,
+          92.8125
+        ],
+        "answer": [
+          136,
+          136,
+          108,
+          164,
+          136
+        ]
+      },
+      {
+        "viewport": 390,
+        "width": 351,
+        "titleSize": 20,
+        "opened": [
+          208,
+          208,
+          208,
+          236,
+          208
+        ],
+        "closed": [
+          72,
+          72,
+          72,
+          72,
+          72
+        ],
+        "answer": [
+          136,
+          136,
+          136,
+          164,
+          136
+        ]
+      }
+    ],
+    "local": [
+      {
+        "viewport": 1200,
+        "opened": [
+          {
+            "answerHeight": 108,
+            "height": 180,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "28px",
+            "width": 472.5
+          },
+          {
+            "answerHeight": 108,
+            "height": 180,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "28px",
+            "width": 472.5
+          },
+          {
+            "answerHeight": 108,
+            "height": 180,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "28px",
+            "width": 472.5
+          },
+          {
+            "answerHeight": 108,
+            "height": 180,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "28px",
+            "width": 472.5
+          },
+          {
+            "answerHeight": 136,
+            "height": 208,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "28px",
+            "width": 472.5
+          },
+          {
+            "answerHeight": 108,
+            "height": 209.59375,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "28px",
+            "width": 472.5
+          }
+        ],
+        "closed": [
+          {
+            "answerHeight": 108,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "28px",
+            "width": 472.5
+          },
+          {
+            "answerHeight": 108,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "28px",
+            "width": 472.5
+          },
+          {
+            "answerHeight": 108,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "28px",
+            "width": 472.5
+          },
+          {
+            "answerHeight": 108,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "28px",
+            "width": 472.5
+          },
+          {
+            "answerHeight": 136,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "28px",
+            "width": 472.5
+          },
+          {
+            "answerHeight": 108,
+            "height": 101.59375,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "28px",
+            "width": 472.5
+          }
+        ]
+      },
+      {
+        "viewport": 810,
+        "opened": [
+          {
+            "answerHeight": 136,
+            "height": 208,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "24px",
+            "width": 353.5
+          },
+          {
+            "answerHeight": 136,
+            "height": 208,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "24px",
+            "width": 353.5
+          },
+          {
+            "answerHeight": 136,
+            "height": 208,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "24px",
+            "width": 353.5
+          },
+          {
+            "answerHeight": 108,
+            "height": 180,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "24px",
+            "width": 353.5
+          },
+          {
+            "answerHeight": 164,
+            "height": 256.8125,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "24px",
+            "width": 353.5
+          },
+          {
+            "answerHeight": 136,
+            "height": 228.8125,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "24px",
+            "width": 353.5
+          }
+        ],
+        "closed": [
+          {
+            "answerHeight": 136,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "24px",
+            "width": 353.5
+          },
+          {
+            "answerHeight": 136,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "24px",
+            "width": 353.5
+          },
+          {
+            "answerHeight": 136,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "24px",
+            "width": 353.5
+          },
+          {
+            "answerHeight": 108,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "24px",
+            "width": 353.5
+          },
+          {
+            "answerHeight": 164,
+            "height": 92.8125,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "24px",
+            "width": 353.5
+          },
+          {
+            "answerHeight": 136,
+            "height": 92.8125,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "24px",
+            "width": 353.5
+          }
+        ]
+      },
+      {
+        "viewport": 390,
+        "opened": [
+          {
+            "answerHeight": 136,
+            "height": 208,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "20px",
+            "width": 351
+          },
+          {
+            "answerHeight": 136,
+            "height": 208,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "20px",
+            "width": 351
+          },
+          {
+            "answerHeight": 136,
+            "height": 208,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "20px",
+            "width": 351
+          },
+          {
+            "answerHeight": 136,
+            "height": 208,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "20px",
+            "width": 351
+          },
+          {
+            "answerHeight": 164,
+            "height": 236,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "20px",
+            "width": 351
+          },
+          {
+            "answerHeight": 136,
+            "height": 208,
+            "inert": false,
+            "opacity": "1",
+            "state": "Opened",
+            "titleFont": "20px",
+            "width": 351
+          }
+        ],
+        "closed": [
+          {
+            "answerHeight": 136,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "20px",
+            "width": 351
+          },
+          {
+            "answerHeight": 136,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "20px",
+            "width": 351
+          },
+          {
+            "answerHeight": 136,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "20px",
+            "width": 351
+          },
+          {
+            "answerHeight": 136,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "20px",
+            "width": 351
+          },
+          {
+            "answerHeight": 164,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "20px",
+            "width": 351
+          },
+          {
+            "answerHeight": 136,
+            "height": 72,
+            "inert": true,
+            "opacity": "0",
+            "state": "Closed",
+            "titleFont": "20px",
+            "width": 351
+          }
+        ]
+      }
+    ],
+    "comparisons": [
+      {
+        "viewport": 1200,
+        "allFiveMatch": true
+      },
+      {
+        "viewport": 810,
+        "allFiveMatch": true
+      },
+      {
+        "viewport": 390,
+        "allFiveMatch": true
+      }
+    ],
+    "sourceIsolated": {
+      "width": 550,
+      "closedHeight": 72,
+      "openedHeight": 152,
+      "questionHeight": 72,
+      "textWidth": 548,
+      "textHeight": 56
+    },
+    "interactions": [
+      "Question/Answer click toggle and one Click per activation; source icon pointer area consumes click without row activation",
+      "Click emitted before onOpenChange in source and local contract",
+      "Enter/Space native accordion activation",
+      "focus-visible 2px solid Neutral950/offset-2 within clip",
+      "stable useId/controls/labelledby and one native trigger",
+      "Closed aria-hidden+inert retained answer; no nested or hidden controls",
+      "parent forced open/close without Click",
+      "rapid double-click reversals settle Closed; two callbacks",
+      "reduced-always yields immediate layout/opacity",
+      "FaqIcon standalone Enter/Space increments Click 0->1->2 and remains native button32x32",
+      "all8source slots checked;5realtexts and3title-isSet empty",
+      "fluid catalog widths550/473/293 without rigid component width"
+    ],
+    "console": "no local warn/error observed",
+    "screenshot": ".agent/proofs/faq-row-desktop.jpg",
+    "metrics": ".agent/proofs/faq-row-browser-metrics.json",
+    "comparison": "DOM metrics and visual inspection, no pixel-diff",
+    "finalIconArea": "Opened icon click: count9->9/stateOpened; Enter count10Closed, Space count11Opened, Answerclick count12Closed, dblclickcount14Closed72/inert/opacity0. Closed icon remains separate pointer area."
+  },
+  "sourceObservations": [
+    "Current isolated Section and page permit two simultaneously Opened rows; controlled parent can implement requested exclusivity later",
+    "FaqIcon retains bar90 after Minus->Plus, matching prior migration",
+    "Source nested icon DISMISS_OVERLAY absorbs pointer click; passive composition preserves its non-toggling area without inventing an overlay action",
+    "Source root Enter works; Space did not open; native button deliberately implements required Enter/Space"
+  ],
+  "checks": {
+    "typecheck": "PASS: pnpm typecheck",
+    "lint": "PASS: pnpm lint",
+    "build": "PASS: pnpm build",
+    "modules": 526,
+    "jsKB": 679.64,
+    "jsGzipKB": 168.11,
+    "cssKB": 161.5,
+    "cssGzipKB": 19.16,
+    "warning": "Existing chunk >500kB preserved",
+    "frontendSuite": "not-added-not-run",
+    "finalGates": "Repeated PASS after preserving source icon click area; git diff --check PASS"
+  },
+  "revision": "cf680410bf6dc8d3382a1816e49501239027b9bb",
+  "inputDigest": "57a2c098a11131b81418a3e5e357107fd01715e25b59ba8a9368d26d7d42e3fe",
+  "inputCount": 123,
+  "inputProof": ".agent/proofs/faq-row-build-inputs.json",
+  "remainingWork": [],
+  "limits": [
+    "Physical touch/held pointer-down/screen-reader/cross-engine not exercised",
+    "No real OS reduced-motion toggle, synchronized source/local exact-frame timing or raster pixel-diff",
+    "Source reads sequential, not atomic; Framer references locally ignored",
+    "FAQ Section/sibling policy/CMS availability/consumer layout are parent responsibilities"
+  ],
+  "concurrentChanges": {
+    "preserved": true,
+    "observed": "ImageReveal migration closed independently during FAQ task; its runtime/catalog/inventory/docs preserved, no new QA attribution"
+  },
+  "finalComparison": {
+    "capturedAt": "2026-10-07T08:35:14.840Z",
+    "digest": "57a2c098a11131b81418a3e5e357107fd01715e25b59ba8a9368d26d7d42e3fe",
+    "unchangedInputs": 123,
+    "recordStatus": "completed",
+    "counts": {
+      "completed": 57,
+      "not-migrated": 79,
+      "legacy-unused": 1
+    },
+    "catalogEntryCount": 26,
+    "faqSectionStatus": "not-migrated",
+    "browser": "Opened icon click count9 remains9; Closed icon count14 remains14, both states stable. NativeEnter/Space/Answer/double-click count10->11->12->14, Closed72/inert/opacity0; Entercount15Opened. Original focus and stableID verified. No warnings/errors; viewport reset and catalog retained."
+  }
+}

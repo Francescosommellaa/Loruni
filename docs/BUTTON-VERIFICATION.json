@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-06",
+  "component": "Button",
+  "source": "Framer Nav/Button dLxvGaGxG",
+  "sourceCapture": "docs/framer/button-source.json",
+  "sourceReadOnly": true,
+  "publicVariants": [
+    "Primary",
+    "Secondary",
+    "Primary Mobile"
+  ],
+  "instanceCount": 9,
+  "nativePreviewWidths": [
+    1200,
+    810,
+    390
+  ],
+  "localViewportWidths": [
+    1440,
+    810,
+    390
+  ],
+  "browser": "Codex in-app browser, current session",
+  "measurements": [
+    {
+      "text": "VEDI LE SERATE",
+      "variant": "Primary",
+      "width": 371.09375,
+      "height": 52.796875,
+      "fontSize": 48,
+      "gap": 12,
+      "arrowFrame": [
+        26,
+        36
+      ],
+      "svgBox": [
+        26,
+        26
+      ],
+      "hoverRotation": 135,
+      "rollingY": -52.8
+    },
+    {
+      "text": "VEDI LE SERATE",
+      "variant": "Secondary",
+      "width": 123.078125,
+      "height": 17.59375,
+      "fontSize": 16,
+      "gap": 4,
+      "arrowFrame": [
+        8,
+        12
+      ],
+      "svgBox": [
+        8,
+        8
+      ],
+      "hoverRotation": 45,
+      "rollingY": -17.6
+    },
+    {
+      "text": "VEDI LE SERATE",
+      "variant": "Primary Mobile",
+      "width": 228.328125,
+      "height": 30.796875,
+      "fontSize": 28,
+      "gap": 8,
+      "arrowFrame": [
+        26,
+        21
+      ],
+      "svgBox": [
+        14,
+        14
+      ],
+      "hoverRotation": 0,
+      "rollingY": -30.8
+    },
+    {
+      "text": "TORNA A LORUNI",
+      "variant": "Primary",
+      "width": 403.59375,
+      "height": 52.796875
+    },
+    {
+      "text": "TORNA A LORUNI",
+      "variant": "Primary Mobile",
+      "width": 247.28125,
+      "height": 30.796875
+    },
+    {
+      "text": "INFO SULLA SERATA",
+      "variant": "Secondary",
+      "width": 154.546875,
+      "height": 17.59375
+    }
+  ],
+  "colors": {
+    "primaryAndMobile": "rgb(255,85,56) Brand/Primary",
+    "secondary": "rgb(244,240,232) Neutral/50"
+  },
+  "observations": [
+    "Live source: all nine instance nodes, actual controls, five native states/variants inspected. Only three public variants.",
+    "Native isolated component: default, text/arrow hover and completed click inspected; no pressed scale/opacity or mobile arrow rotation observed.",
+    "Home, 404 and event detail at three preview widths: original variant selection and DOM dimensions compared with local examples.",
+    "Native keyboard Enter: Home to Eventi, 404 to Home, event INFO SULLA SERATA to Vieni a trovarci confirmed.",
+    "Local text hover endpoints and arrow135/45/0; independent text/arrow hover and leave; Mobile rollingY-30.8 and static arrow confirmed.",
+    "Local keyboard focus-visible: existing outline2px/currentColor, offset4px, unsplit accessible name, no invented focus animation.",
+    "Editable variant/text/link controls, missing href, newTab target/rel/accessible description inspected.",
+    "Local Enter navigated same tab to root; newTab Enter created separate root tab, then closed. External URL anchor target/rel inspected without duplicating the Framer editor.",
+    "No local console warn/error entries observed. Existing RollingText/Icon implementation files unchanged by this task. No new frontend suite run."
+  ],
+  "checks": {
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "build": "PASS",
+    "bundleWarning": "JS chunk662.92kB over500kB",
+    "inputDrift": "zero changed inputs before/after final checks",
+    "frontendSuites": "none added or run",
+    "closure": "21 Button/runtime/config inputs unchanged after final checks; later unrelated atom CSS changes excluded from Button proof"
+  },
+  "revision": "cf680410bf6dc8d3382a1816e49501239027b9bb",
+  "inputSha256": {
+    "index.html": "44f13097dd232672c98b796a7215ea16e4992481803b8648aaecfb144ee9b7e0",
+    "package.json": "cc27f65a7f9c38e35273b32581e362cb22d22883eaf76faf9053c086d461aafa",
+    "pnpm-lock.yaml": "2edc4414d3a4a56374025c4b73b1b91b6f72be87cc820ca7683cfd39d550c90c",
+    "src/app/App.css": "1033236985b6266a919f3cef583c58ccde23600a196e138f316653ab54f258e3",
+    "src/app/App.tsx": "b07169fa9f0773155a3f39a86c9b0c1e0e2275f9a71fdff8b006e19cc25424f7",
+    "src/components/ArrowForward.tsx": "d1fdae923c6446798a358f4aa6043b80be8e05a8a04e1d24c1302ccd899875d1",
+    "src/components/Button.css": "4a7683f35ba05a67b5df45bbdeaa62335fb648412a099407b1606dacb6d0c5df",
+    "src/components/Button.tsx": "05a6363b534c504a072544b39c78f26b2abd6810a0112e00a7e1cd2b45724351",
+    "src/components/CategoryLabel.css": "40ff09fe5781eac06c476790288df8cde41c37dd309db09ec85976d48a1c9889",
+    "src/components/CategoryLabel.tsx": "2bf7640c6fc5a22226a94ee63d2fd7d6df7826c9471709aaa751d83f1068f25f",
+    "src/components/CategoryLabelGroup.css": "bed14c40c1fe066e4f5b3875b5a77c453d6e459cea6047d3668f14b02b663ea6",
+    "src/components/CategoryLabelGroup.tsx": "5671077cf5a12fdcf52acbcc1b6899465914686bdc3c66ef08878d0b7960e83a",
+    "src/components/CircularImage.css": "2bc4c6ca552a588a6cea4f65c5c13337169adac9d30cd91782c0178b031cb1c5",
+    "src/components/CircularImage.tsx": "544fc4f920ec56a224a192ef15c1f112e64e7ef0eef6d154743943d133ae1ce7",
+    "src/components/CommunityCard.css": "8a1d35dd4df47902f64b653947b2a8818a2b4e88772078ff2823565f5536e1bc",
+    "src/components/CommunityCard.tsx": "7c0c812a0a179c264de40a0d10dc2dec823ed0db4f7a2e94ba146d19473647a2",
+    "src/components/CommunityDetails.css": "1513d9384b58e8e8ba779e69fa903fb4de08e0203823b7dc7b3ee48e0518cedb",
+    "src/components/CommunityDetails.tsx": "ee0393e2d4e324d0dd4c58120d638ad3b189c94de842229fda7bdd98529f9ce9",
+    "src/components/ContentHeadline.css": "0a49ede2cf8626290d668e26079086ada805568d3ca58977dd626f2d1871f71d",
+    "src/components/ContentHeadline.tsx": "6c1880e64268d97bd319efff784474f65e20132cb7385c57441c83dacaa53000",
+    "src/components/Divider.css": "17928efb08cc2f285f5d7f1ba224646964b6cc6fe1509d4eb001b897af03973a",
+    "src/components/Divider.tsx": "50c1cd194894765fc995eeba6d56b5dc445b87090c5c4cd314d2f2cf92256a83",
+    "src/components/FaqIcon.css": "a8959dc96aa4f462abcdfdea9b15d64cd055613ad3a16cc0b49de4dc0b93a7a9",
+    "src/components/FaqIcon.tsx": "cc3a4139ceef68bc1e347a9856525e86f8f666f044a9d2d9bb5334d62cfea9f4",
+    "src/components/FormField.css": "9966f4a79bcc468cd5bfa63d93d8983cbcff18f0d3939bdecfaef7e81dec40e2",
+    "src/components/FormField.data.ts": "d424a8f3b5eeb69024c6c0818e51acb41245b4b8615e1b9eb17d8211b45cc6bf",
+    "src/components/FormField.tsx": "5e2ecf168670d75866cf7c3b79f00254f1af79fca1e7191aa380250d9687a4d7",
+    "src/components/Icon.css": "960e58c118f8e2f4f629b33ad6ca2d8185f0b6ada194d91f00572facd6d71a95",
+    "src/components/Icon.registry.ts": "9663485bfc2536f3de500f6b70afe9d59c0a8da2debfb034c15c404ccec4982c",
+    "src/components/Icon.tsx": "75e884f5f6922e97d9afd34ced0b4b0fe1846f87d8d7dda08e3e8fe0e4bce8dd",
+    "src/components/ImageFill.css": "41b9b7eb60764c96273e7287a3b73f1c8f2e1ac215c5c0ddf825d46891e89829",
+    "src/components/ImageFill.tsx": "0b58e3ebd72d3a3243cb074a3ce6571f72c9255f24ca07ccc2633dfb1b2d3b5e",
+    "src/components/Label.css": "2111cf9c19f7f871bf177b998073e0398a0d8bfdf78d68509ba9429b0f126f31",
+    "src/components/Label.tsx": "1059191c8a44e0c4566c2b215314e52cc575db31aa24b30d4576a436ce12d754",
+    "src/components/NavItem.css": "58dbef95a795f25586048d6c396e114e3ffff8552db61948d00a0a61fa8b5371",
+    "src/components/NavItem.tsx": "d5564efb2459e9202a3cd779764d8ff85ab4c6751552418ebf397b646a9be88e",
+    "src/components/OurStoryCard.css": "2a3a2558f3d7098fdc52d5a1c03e649caaf55092456a4348a8925b4d2d9926b7",
+    "src/components/OurStoryCard.tsx": "2e7897abe58d9e29d932673bb8f2c1665a19bdacc20a9e0c89a956004c076636",
+    "src/components/ProcessRow.css": "9b87dca232674c6dde95b4bbe19fce62e5ca9efef4fdbe965618719759994611",
+    "src/components/ProcessRow.tsx": "9f954cb2ef02800be572aa1593930cf53f4b3dbd087a2153242c4b3b567f0a21",
+    "src/components/RollingText.css": "dcfb66a6566f40a83b40b8bc66a86c20e3dc00a003a4b1b07a87e55cf91b5dbd",
+    "src/components/RollingText.tsx": "5f95f4704dc66f53fdc4aa5e14765dfb7f38372b21691b9773bae5ea3479273e",
+    "src/components/SplitContent.css": "b5ea3ab3a0dab8a9a80a0a8d760dec00c9e9ee2a2d8da3525a637c4dae563dad",
+    "src/components/SplitContent.tsx": "3c98d731ea727332bb55b3215f235d8c22d33714c2e77ff1f5733a83ef18dc88",
+    "src/components/StatRow.css": "e39b23ce200ba6cdc409f523b45e186baf1f20f145448151926c0aac63648877",
+    "src/components/StatRow.tsx": "877c43a3ca718b88127389a8f69d0fe49d03c55fc2de570c86181ffa083d3f16",
+    "src/components/TestimonialsArrow.css": "b44ffa8a215a340ae82b063c41e380f1f5fbcf015f535f7371c04a4258af18ab",
+    "src/components/TestimonialsArrow.tsx": "0acda604a7070b7527bad7ebb98747b46dedf3fe8be98e52e407792dc4bb7eb1",
+    "src/components/TestimonialsSection.css": "ce09b12960e63d5e4433340f911154c6fb59169a5971b8e2968db3a174dc974e",
+    "src/components/TestimonialsSection.data.ts": "438503e6a9ceed516eed936b4574ee1b6eca4928ed56e5c0f79947f3946d6c09",
+    "src/components/TestimonialsSection.tsx": "6ba28e13a09204020119e160067b0706029aae03ccd61fd2c3bc86a8dc4a5419",
+    "src/main.tsx": "283d218fb37551de93f4be090329390b2d6f4dea093e4021b866c264b21b0934",
+    "src/motion/useLineReveal.ts": "8abeb9d67508956c954a835c133e6e33c46feac7eac4189ac41f115394780413",
+    "src/motion/useReducedMotionPreference.ts": "95fa2412ca6cc27c936fe512403469ff0f42bcb0585e67fa771a5f4c557b6acc",
+    "src/pages/design-system/ButtonExamples.tsx": "e6a5380b0602dc3db49b29add541256c8c8ac9cf2467f6894d93b61d8fd98bcf",
+    "src/pages/design-system/CatalogTools.tsx": "62cbabae45a7d6d0be24e587e766b68adfeb009a83b8aff5c1e38c3638d8065e",
+    "src/pages/design-system/CommunityCardExamples.css": "7c3fa7d0d45e71f9d88652571619531e122e6a1a7861b3ed611260241b759901",
+    "src/pages/design-system/CommunityCardExamples.data.ts": "90efc015eacc30b7116a0400594ed61d2a4fc11b525bc629c16d890f63558ecf",
+    "src/pages/design-system/CommunityCardExamples.tsx": "af9667cbf2d644e7daf3ad77fd40e479a2106f2da8ddb1eb38603619f524895e",
+    "src/pages/design-system/ContentFormAtomExamples.css": "b19ac945661bdd21d847da758f5d6f4d29a46050bb3866c3144e92e0316e52ce",
+    "src/pages/design-system/ContentFormAtomExamples.data.ts": "36c123bd7f43e61bbd071925352ba45c4c86ec6d15bb549ed0c9cecff1ad4872",
+    "src/pages/design-system/ContentFormAtomExamples.tsx": "33fc4cdbad5d1fe4283fd3a66b9839eebc2caeda2357850f2e00ced39050c388",
+    "src/pages/design-system/DesignSystemPage.css": "0c2ac3169b248bf8c624c60e018e9683c7e935c16cca07a493ba1ae9c9ac966d",
+    "src/pages/design-system/DesignSystemPage.tsx": "51a5910e8b87baa2abb646a4695f24fd5f5a8c27b8673f7a4bd801eab3afd153",
+    "src/pages/design-system/GeometryCatalog.tsx": "ce18efce4324df91dd310710b5a67cabfc3738bc169a566145d9f96b3e98b678",
+    "src/pages/design-system/OurStoryCardExamples.css": "15db3b827da4670d97daedb0f28e62b7f67b1716deee12a168d05018aaf1f8bd",
+    "src/pages/design-system/OurStoryCardExamples.tsx": "81ce96a0fec496093ddbf85f02daf42df4900b6759ab03018c3e67c7992d4e9b",
+    "src/pages/design-system/ProcessRowExamples.css": "ce05b873a63348b1eea2cf9f4dc5fa6aa6623b835b7d3da1454ae723554f72a6",
+    "src/pages/design-system/ProcessRowExamples.tsx": "757effb67d5de7dd6957b626b11a95334abcc075c98c4175e0a52585a307ab62",
+    "src/pages/design-system/SourceCatalog.tsx": "be64f60645c6900702f8fe66392d427064e75428b14adb8da38079033f082aeb",
+    "src/pages/design-system/catalogIndex.ts": "eaec1f0cd3de932ebab62013536ed8c08a316169effa728676be176218ffc666",
+    "src/pages/design-system/componentExamples.ts": "805eb1e08d1e8c820ee10bebd68e2ce890c45327104a545b3bf975adfb3a9ba3",
+    "src/styles/base.css": "8407467005167e85a2d55c26019d6ec1b236c26eac9b1a255da1f61458c70f69",
+    "src/styles/fonts.css": "edacce7d8c78f94e9e1637b83864f029bc1f2148232da624bc8d7b81b67b8e69",
+    "src/styles/geometry.css": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b",
+    "src/styles/geometry.ts": "0dc588e40f4f38af4a433477ee48030097eee212b0eb675c27c55cf71767d515",
+    "src/styles/token.css": "fb153ef97d0a931254d40b8c98fcefa35160bc39a87da1633870276009db85fd",
+    "src/styles/token.ts": "badd46b62fdbc1e4ff716712335952736092113b0658a6d9de3406cc75725876",
+    "src/styles/tokens.css": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b",
+    "src/styles/tokens.ts": "332968b0a8e8a69b2afad954061eb9896d9133e4548d44fc5c7c956c3e4511c0",
+    "tsconfig.app.json": "a3379db7120040b34b19981d958c14f6ef3b48268cc596df4fab84829bb7f286",
+    "tsconfig.json": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808",
+    "tsconfig.node.json": "8e04d5d603fdaa9eac3e5d5b0f98f0dc1696ee2fae2852470dcd23e42e798d82",
+    "vite.config.ts": "e1eefd0ed1639c88d1213884ef760516884db9e168190e223fee6b063ad3e088"
+  },
+  "limits": [
+    "Physical touch and held pointer-down unavailable; no device/cross-browser certification.",
+    "OS reduced-motion toggle not exercised; existing root policy reused without modification.",
+    "Timing endpoints/configuration compared, no synchronized video or pixel-diff proof.",
+    "Focus uses global accessible outline instead of native Framer suppressed outline.",
+    "Existing app has no migrated product routes/CMS backend; destinations are consumer-resolved anchors.",
+    "Source snapshots docs/framer are locally ignored by existing repository policy.",
+    "Concurrent unrelated component/catalog changes preserved; checks attest captured input hashes."
+  ],
+  "observedVisualDifferences": [],
+  "status": "implemented-and-browser-compared",
+  "inputDigest": "e7c2cf57e9c6a076dbe6fe9201e9b8b2f7dbc042f45dc3bd73446488f36cbece",
+  "closureInputSha256": {
+    "index.html": "44f13097dd232672c98b796a7215ea16e4992481803b8648aaecfb144ee9b7e0",
+    "package.json": "cc27f65a7f9c38e35273b32581e362cb22d22883eaf76faf9053c086d461aafa",
+    "pnpm-lock.yaml": "2edc4414d3a4a56374025c4b73b1b91b6f72be87cc820ca7683cfd39d550c90c",
+    "src/components/Button.css": "4a7683f35ba05a67b5df45bbdeaa62335fb648412a099407b1606dacb6d0c5df",
+    "src/components/Button.tsx": "05a6363b534c504a072544b39c78f26b2abd6810a0112e00a7e1cd2b45724351",
+    "src/components/Icon.css": "960e58c118f8e2f4f629b33ad6ca2d8185f0b6ada194d91f00572facd6d71a95",
+    "src/components/Icon.registry.ts": "9663485bfc2536f3de500f6b70afe9d59c0a8da2debfb034c15c404ccec4982c",
+    "src/components/Icon.tsx": "75e884f5f6922e97d9afd34ced0b4b0fe1846f87d8d7dda08e3e8fe0e4bce8dd",
+    "src/components/RollingText.css": "dcfb66a6566f40a83b40b8bc66a86c20e3dc00a003a4b1b07a87e55cf91b5dbd",
+    "src/components/RollingText.tsx": "5f95f4704dc66f53fdc4aa5e14765dfb7f38372b21691b9773bae5ea3479273e",
+    "src/main.tsx": "283d218fb37551de93f4be090329390b2d6f4dea093e4021b866c264b21b0934",
+    "src/pages/design-system/ButtonExamples.tsx": "e6a5380b0602dc3db49b29add541256c8c8ac9cf2467f6894d93b61d8fd98bcf",
+    "src/pages/design-system/componentExamples.ts": "805eb1e08d1e8c820ee10bebd68e2ce890c45327104a545b3bf975adfb3a9ba3",
+    "src/styles/base.css": "8407467005167e85a2d55c26019d6ec1b236c26eac9b1a255da1f61458c70f69",
+    "src/styles/fonts.css": "edacce7d8c78f94e9e1637b83864f029bc1f2148232da624bc8d7b81b67b8e69",
+    "src/styles/token.css": "fb153ef97d0a931254d40b8c98fcefa35160bc39a87da1633870276009db85fd",
+    "src/styles/token.ts": "badd46b62fdbc1e4ff716712335952736092113b0658a6d9de3406cc75725876",
+    "tsconfig.app.json": "a3379db7120040b34b19981d958c14f6ef3b48268cc596df4fab84829bb7f286",
+    "tsconfig.json": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808",
+    "tsconfig.node.json": "8e04d5d603fdaa9eac3e5d5b0f98f0dc1696ee2fae2852470dcd23e42e798d82",
+    "vite.config.ts": "e1eefd0ed1639c88d1213884ef760516884db9e168190e223fee6b063ad3e088"
+  },
+  "closureInputDigest": "7bec8c6d7c388584620b7980c2fddacc2f66adfa9eb3b191ce78e16953200b8d",
+  "postCheckUnrelatedChanges": [
+    "src/components/StatRow.css",
+    "src/pages/design-system/ContentFormAtomExamples.css"
+  ]
+}

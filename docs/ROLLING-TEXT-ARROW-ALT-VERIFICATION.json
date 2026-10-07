@@ -1,0 +1,3684 @@
+{
+  "verifiedAt": "2026-10-07T14:00:21.944Z",
+  "status": "closed",
+  "scope": [
+    "Rolling Text",
+    "Arrow Right Alt"
+  ],
+  "canonical": "src/components/RollingText.tsx",
+  "head": "cf680410bf6dc8d3382a1816e49501239027b9bb",
+  "inputCount": 131,
+  "inputDigest": "b4a2ba637b43856c788d3cad5719d5bdb8bec3c21b74e7cf4946d3d9ad5f88f8",
+  "digestMethod": "Sorted path + NUL + SHA256(file) + LF; src/public/scripts/tests and build config.",
+  "sameInputs": true,
+  "inputs": [
+    {
+      "path": "index.html",
+      "sha256": "44f13097dd232672c98b796a7215ea16e4992481803b8648aaecfb144ee9b7e0"
+    },
+    {
+      "path": "package.json",
+      "sha256": "cc27f65a7f9c38e35273b32581e362cb22d22883eaf76faf9053c086d461aafa"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "2edc4414d3a4a56374025c4b73b1b91b6f72be87cc820ca7683cfd39d550c90c"
+    },
+    {
+      "path": "public/fonts/funnel-display-600-normal.woff2",
+      "sha256": "0eb50930cbadee5871422774e228fe11d0d2fbcf53c69e52a59fd9fd1f1a0d3c"
+    },
+    {
+      "path": "public/fonts/funnel-display-800-normal.woff2",
+      "sha256": "76d9900b48ce832f407756ef281d22d2873dd23d6340b06df59b6ff5d71612e4"
+    },
+    {
+      "path": "public/fonts/funnel-display-OFL.txt",
+      "sha256": "a32303f6ea3542927121212a9e4f3fe3548741e6d448d9dc6f29e97cf50102e6"
+    },
+    {
+      "path": "public/fonts/funnel-sans-400-italic.woff2",
+      "sha256": "e5d6074b15b7672d491704d3ba40af0cb2e20b1c57c1bf99de0783cbfaf26daa"
+    },
+    {
+      "path": "public/fonts/funnel-sans-400-normal.woff2",
+      "sha256": "89eb0ff8e0896d5cc9c91fd43c29828da93a9517955129fe5f390759afac9ac7"
+    },
+    {
+      "path": "public/fonts/funnel-sans-600-italic.woff2",
+      "sha256": "87538f38352e86c372ad3301bc4ac0626398c553e29afca74dd3a50b2dbb5dd5"
+    },
+    {
+      "path": "public/fonts/funnel-sans-600-normal.woff2",
+      "sha256": "53c595beb5ae285bbba974362953b9f823c697753200e183380bbeab250f3192"
+    },
+    {
+      "path": "public/fonts/funnel-sans-700-italic.woff2",
+      "sha256": "aa3d4735dc5c6d421d98251035ff6794133ade221b3586cfce2c29f063e47048"
+    },
+    {
+      "path": "public/fonts/funnel-sans-700-normal.woff2",
+      "sha256": "a5326e42e54c221a0b482b21137ad8217a48295ba4397e764362f192e8f027b5"
+    },
+    {
+      "path": "public/fonts/funnel-sans-800-italic.woff2",
+      "sha256": "b69f6f2eef6065ff3f5cc5634a7e7eb08721c8bba0207fe8e9594cb01cd7884a"
+    },
+    {
+      "path": "public/fonts/funnel-sans-800-normal.woff2",
+      "sha256": "b9063a30b7d3f94b6a78e443b9567a4b4befc6d7791ab201b2839b2b0b966298"
+    },
+    {
+      "path": "public/fonts/funnel-sans-OFL.txt",
+      "sha256": "a32303f6ea3542927121212a9e4f3fe3548741e6d448d9dc6f29e97cf50102e6"
+    },
+    {
+      "path": "public/fonts/ibm-plex-sans-600-italic.woff2",
+      "sha256": "b5ca90658b5e340bae097b15084047194bc69881f0a36aba82cfb92203c2fd79"
+    },
+    {
+      "path": "public/fonts/ibm-plex-sans-600-normal.woff2",
+      "sha256": "48b4a50176dbc8389ab3db4824289692fbed1863541c427f89f4ca500d3f1ca8"
+    },
+    {
+      "path": "public/fonts/ibm-plex-sans-OFL.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "scripts/framer/capture-geometry.js",
+      "sha256": "253687f744aecf90c738ef9b81a199305401b8bfe296ca077bf4bc744371f87f"
+    },
+    {
+      "path": "scripts/framer/capture-inventory.ps1",
+      "sha256": "4a4dd03b47dda79e2c10eb471244f15fd7486543dd19cc0eef3527bafb21116b"
+    },
+    {
+      "path": "scripts/framer/design-audit.mjs",
+      "sha256": "6a5e896a2e38b308e9f163b89ff1bbca150ccc23be2b2f2de0b070dc602bae8e"
+    },
+    {
+      "path": "scripts/framer/export-inventory.js",
+      "sha256": "5e5c3243050253246515b458dc7879c870c154007c35050b8ce85607c6a58756"
+    },
+    {
+      "path": "scripts/framer/geometry.mjs",
+      "sha256": "e9fa7d1cabf9bc61a339f8cc23054107716012029cb8880f0936c90fa8da7b5f"
+    },
+    {
+      "path": "scripts/framer/hardcodes.mjs",
+      "sha256": "39cdea67d610b62e23d3fd0089e312fac6028ed81f4548862760d1a35338deb1"
+    },
+    {
+      "path": "scripts/framer/model.mjs",
+      "sha256": "fa4b6be1564c78080531c8db1d233be0e0b232f8c06410112991a3ded704bee8"
+    },
+    {
+      "path": "scripts/framer/report.mjs",
+      "sha256": "3eb213db96b36302c12e13eb6e1d69ede25d3a46c73c6d48133f7fd26244dfac"
+    },
+    {
+      "path": "scripts/framer/tokens.mjs",
+      "sha256": "b0e35826da4bd95c2d6303be6c4158c3d14d3081e9f2e528f8b079fd5bb6e984"
+    },
+    {
+      "path": "src/app/App.css",
+      "sha256": "1033236985b6266a919f3cef583c58ccde23600a196e138f316653ab54f258e3"
+    },
+    {
+      "path": "src/app/App.tsx",
+      "sha256": "080a415e82f559e01c141ad420a10c2d402f79eb027b254674eb6c3da49e033d"
+    },
+    {
+      "path": "src/components/ArrowForward.tsx",
+      "sha256": "d1fdae923c6446798a358f4aa6043b80be8e05a8a04e1d24c1302ccd899875d1"
+    },
+    {
+      "path": "src/components/Button.css",
+      "sha256": "4a7683f35ba05a67b5df45bbdeaa62335fb648412a099407b1606dacb6d0c5df"
+    },
+    {
+      "path": "src/components/Button.tsx",
+      "sha256": "78448e843852e848837a335060ef9f39c5fc9ebe815f8af870fb04c35b93477d"
+    },
+    {
+      "path": "src/components/CategoryLabel.css",
+      "sha256": "40ff09fe5781eac06c476790288df8cde41c37dd309db09ec85976d48a1c9889"
+    },
+    {
+      "path": "src/components/CategoryLabel.tsx",
+      "sha256": "2bf7640c6fc5a22226a94ee63d2fd7d6df7826c9471709aaa751d83f1068f25f"
+    },
+    {
+      "path": "src/components/CategoryLabelGroup.css",
+      "sha256": "05bc1cb2814e8fe536605bda0ada26f03a15acc275b161ea9cf8c035ffb8dedf"
+    },
+    {
+      "path": "src/components/CategoryLabelGroup.tsx",
+      "sha256": "5671077cf5a12fdcf52acbcc1b6899465914686bdc3c66ef08878d0b7960e83a"
+    },
+    {
+      "path": "src/components/CircularImage.css",
+      "sha256": "2bc4c6ca552a588a6cea4f65c5c13337169adac9d30cd91782c0178b031cb1c5"
+    },
+    {
+      "path": "src/components/CircularImage.tsx",
+      "sha256": "544fc4f920ec56a224a192ef15c1f112e64e7ef0eef6d154743943d133ae1ce7"
+    },
+    {
+      "path": "src/components/CommunityCard.css",
+      "sha256": "8a1d35dd4df47902f64b653947b2a8818a2b4e88772078ff2823565f5536e1bc"
+    },
+    {
+      "path": "src/components/CommunityCard.tsx",
+      "sha256": "7c0c812a0a179c264de40a0d10dc2dec823ed0db4f7a2e94ba146d19473647a2"
+    },
+    {
+      "path": "src/components/CommunityDetails.css",
+      "sha256": "51ebd26e6af435a528012c1ada49ac7a48afe0b3024fca204c15900872b26d7f"
+    },
+    {
+      "path": "src/components/CommunityDetails.tsx",
+      "sha256": "2a03e5b630b2ae9da8d7f51f3522b3b13e9655d3b3a4d2b0d35a8be68e80dc1e"
+    },
+    {
+      "path": "src/components/ContentHeadline.css",
+      "sha256": "0a49ede2cf8626290d668e26079086ada805568d3ca58977dd626f2d1871f71d"
+    },
+    {
+      "path": "src/components/ContentHeadline.tsx",
+      "sha256": "6c1880e64268d97bd319efff784474f65e20132cb7385c57441c83dacaa53000"
+    },
+    {
+      "path": "src/components/Divider.css",
+      "sha256": "17928efb08cc2f285f5d7f1ba224646964b6cc6fe1509d4eb001b897af03973a"
+    },
+    {
+      "path": "src/components/Divider.tsx",
+      "sha256": "50c1cd194894765fc995eeba6d56b5dc445b87090c5c4cd314d2f2cf92256a83"
+    },
+    {
+      "path": "src/components/FAQRow.css",
+      "sha256": "be410c1830990b0dd572ce0ae6dd626899ad10764f460cf773850161c6783c24"
+    },
+    {
+      "path": "src/components/FAQRow.tsx",
+      "sha256": "ac2c0d450192c8017214a46a11054108b76a1955afdec75f022ae7e40788f178"
+    },
+    {
+      "path": "src/components/FaqIcon.css",
+      "sha256": "a8959dc96aa4f462abcdfdea9b15d64cd055613ad3a16cc0b49de4dc0b93a7a9"
+    },
+    {
+      "path": "src/components/FaqIcon.tsx",
+      "sha256": "64dec0483deb6f59890775b8abcb810808b399485b71003cea1189e6c007ee2b"
+    },
+    {
+      "path": "src/components/FormField.css",
+      "sha256": "9966f4a79bcc468cd5bfa63d93d8983cbcff18f0d3939bdecfaef7e81dec40e2"
+    },
+    {
+      "path": "src/components/FormField.data.ts",
+      "sha256": "d424a8f3b5eeb69024c6c0818e51acb41245b4b8615e1b9eb17d8211b45cc6bf"
+    },
+    {
+      "path": "src/components/FormField.tsx",
+      "sha256": "5e2ecf168670d75866cf7c3b79f00254f1af79fca1e7191aa380250d9687a4d7"
+    },
+    {
+      "path": "src/components/Icon.css",
+      "sha256": "960e58c118f8e2f4f629b33ad6ca2d8185f0b6ada194d91f00572facd6d71a95"
+    },
+    {
+      "path": "src/components/Icon.registry.ts",
+      "sha256": "9663485bfc2536f3de500f6b70afe9d59c0a8da2debfb034c15c404ccec4982c"
+    },
+    {
+      "path": "src/components/Icon.tsx",
+      "sha256": "75e884f5f6922e97d9afd34ced0b4b0fe1846f87d8d7dda08e3e8fe0e4bce8dd"
+    },
+    {
+      "path": "src/components/ImageFill.css",
+      "sha256": "41b9b7eb60764c96273e7287a3b73f1c8f2e1ac215c5c0ddf825d46891e89829"
+    },
+    {
+      "path": "src/components/ImageFill.tsx",
+      "sha256": "0c16e4b102b6f6a77096ebf17e4fb5b49991f632d99b851cd199329652f9b739"
+    },
+    {
+      "path": "src/components/ImageParallax.css",
+      "sha256": "c03fca7af5a912e1d3f533d2240d07f10eb797f24ef60b3923acfe95133f80eb"
+    },
+    {
+      "path": "src/components/ImageParallax.tsx",
+      "sha256": "2b08af49505676764d7ca2943da5f44df21ba10d465ad8b7de05458738bb075b"
+    },
+    {
+      "path": "src/components/ImageReveal.css",
+      "sha256": "37560ca0d6aa8edf94f60a3144075a258638b23380c53b6fad10dcf0916972ef"
+    },
+    {
+      "path": "src/components/ImageReveal.tsx",
+      "sha256": "6e66d3b6b310abb9e14ea6c18ff0205fd9d0570c99ae02a83efa095f628b4916"
+    },
+    {
+      "path": "src/components/Label.css",
+      "sha256": "2111cf9c19f7f871bf177b998073e0398a0d8bfdf78d68509ba9429b0f126f31"
+    },
+    {
+      "path": "src/components/Label.tsx",
+      "sha256": "1059191c8a44e0c4566c2b215314e52cc575db31aa24b30d4576a436ce12d754"
+    },
+    {
+      "path": "src/components/LoadMore.css",
+      "sha256": "8fe537e82e553fbbcf3d856a82c38a06c790d7beb7c0052686d56a5f11ed08bb"
+    },
+    {
+      "path": "src/components/LoadMore.tsx",
+      "sha256": "1d777185c4fd8d70b57bc717f8a221d65e761298fa199685a3fe837455bff080"
+    },
+    {
+      "path": "src/components/MainFormButton.css",
+      "sha256": "6f91c5fe23aacf50166b9122a3df37d01d988fb1c941a78a0b242a629ba39cf9"
+    },
+    {
+      "path": "src/components/MainFormButton.state.ts",
+      "sha256": "b01c7c682ed5d9c05222c238ebb35ae223bd18ee4df6a422174f7f88723673a8"
+    },
+    {
+      "path": "src/components/MainFormButton.tsx",
+      "sha256": "9b144473bcb2a94cd920a04475058042e06c03aed54ff42527288f3535c2e959"
+    },
+    {
+      "path": "src/components/NavItem.css",
+      "sha256": "58dbef95a795f25586048d6c396e114e3ffff8552db61948d00a0a61fa8b5371"
+    },
+    {
+      "path": "src/components/NavItem.tsx",
+      "sha256": "ef775192b11d192a4f2b213891a7936234fd62814e4d878b6f741e8e69ac1edf"
+    },
+    {
+      "path": "src/components/OurStoryCard.css",
+      "sha256": "2a3a2558f3d7098fdc52d5a1c03e649caaf55092456a4348a8925b4d2d9926b7"
+    },
+    {
+      "path": "src/components/OurStoryCard.tsx",
+      "sha256": "2e7897abe58d9e29d932673bb8f2c1665a19bdacc20a9e0c89a956004c076636"
+    },
+    {
+      "path": "src/components/ProcessRow.css",
+      "sha256": "9b87dca232674c6dde95b4bbe19fce62e5ca9efef4fdbe965618719759994611"
+    },
+    {
+      "path": "src/components/ProcessRow.tsx",
+      "sha256": "9f954cb2ef02800be572aa1593930cf53f4b3dbd087a2153242c4b3b567f0a21"
+    },
+    {
+      "path": "src/components/RollingText.css",
+      "sha256": "dcfb66a6566f40a83b40b8bc66a86c20e3dc00a003a4b1b07a87e55cf91b5dbd"
+    },
+    {
+      "path": "src/components/RollingText.tsx",
+      "sha256": "e498beb88c24046a9a55f316957e56449fe4c4a09f3d1535314819c4705f6259"
+    },
+    {
+      "path": "src/components/SplitContent.css",
+      "sha256": "b5ea3ab3a0dab8a9a80a0a8d760dec00c9e9ee2a2d8da3525a637c4dae563dad"
+    },
+    {
+      "path": "src/components/SplitContent.tsx",
+      "sha256": "3c98d731ea727332bb55b3215f235d8c22d33714c2e77ff1f5733a83ef18dc88"
+    },
+    {
+      "path": "src/components/StatRow.css",
+      "sha256": "c0996048294dfd66b52dcafe545d283436dca89af5452c0c6dddabd35827b415"
+    },
+    {
+      "path": "src/components/StatRow.tsx",
+      "sha256": "877c43a3ca718b88127389a8f69d0fe49d03c55fc2de570c86181ffa083d3f16"
+    },
+    {
+      "path": "src/components/TestimonialsArrow.css",
+      "sha256": "b44ffa8a215a340ae82b063c41e380f1f5fbcf015f535f7371c04a4258af18ab"
+    },
+    {
+      "path": "src/components/TestimonialsArrow.tsx",
+      "sha256": "0acda604a7070b7527bad7ebb98747b46dedf3fe8be98e52e407792dc4bb7eb1"
+    },
+    {
+      "path": "src/components/TestimonialsSection.css",
+      "sha256": "9afb853b2f84bf9c877a676f68e275a448844e74c60a9e77d972c5126f2a6ac2"
+    },
+    {
+      "path": "src/components/TestimonialsSection.data.ts",
+      "sha256": "49336c6e4de59dd912d5da41086edbfce9dcc5e44388c53273f542a9bab61c97"
+    },
+    {
+      "path": "src/components/TestimonialsSection.tsx",
+      "sha256": "d419f42fedb6278e925489a4210132b98000c26a9a27da9cada0a7f4ac026d11"
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "283d218fb37551de93f4be090329390b2d6f4dea093e4021b866c264b21b0934"
+    },
+    {
+      "path": "src/motion/imageParallax.ts",
+      "sha256": "58e6e15cbfcc770e4f0ac37c7d185bf465904fa5ee04f19eb84c19736f3183b6"
+    },
+    {
+      "path": "src/motion/useLineReveal.ts",
+      "sha256": "8abeb9d67508956c954a835c133e6e33c46feac7eac4189ac41f115394780413"
+    },
+    {
+      "path": "src/motion/useReducedMotionPreference.ts",
+      "sha256": "95fa2412ca6cc27c936fe512403469ff0f42bcb0585e67fa771a5f4c557b6acc"
+    },
+    {
+      "path": "src/pages/design-system/ButtonExamples.tsx",
+      "sha256": "e6a5380b0602dc3db49b29add541256c8c8ac9cf2467f6894d93b61d8fd98bcf"
+    },
+    {
+      "path": "src/pages/design-system/CatalogTools.tsx",
+      "sha256": "62cbabae45a7d6d0be24e587e766b68adfeb009a83b8aff5c1e38c3638d8065e"
+    },
+    {
+      "path": "src/pages/design-system/CommunityCardExamples.css",
+      "sha256": "7c3fa7d0d45e71f9d88652571619531e122e6a1a7861b3ed611260241b759901"
+    },
+    {
+      "path": "src/pages/design-system/CommunityCardExamples.data.ts",
+      "sha256": "90efc015eacc30b7116a0400594ed61d2a4fc11b525bc629c16d890f63558ecf"
+    },
+    {
+      "path": "src/pages/design-system/CommunityCardExamples.tsx",
+      "sha256": "af9667cbf2d644e7daf3ad77fd40e479a2106f2da8ddb1eb38603619f524895e"
+    },
+    {
+      "path": "src/pages/design-system/ContentFormAtomExamples.css",
+      "sha256": "ae880aebda1c52a5e0b4d98b94fe8f59b8ecec992203d7843c991a36343a255d"
+    },
+    {
+      "path": "src/pages/design-system/ContentFormAtomExamples.data.ts",
+      "sha256": "36c123bd7f43e61bbd071925352ba45c4c86ec6d15bb549ed0c9cecff1ad4872"
+    },
+    {
+      "path": "src/pages/design-system/ContentFormAtomExamples.tsx",
+      "sha256": "a912a3c6d3964e574088b7a0b6bd484ddb17ff85adb614b2d044003d774857c7"
+    },
+    {
+      "path": "src/pages/design-system/DesignSystemPage.css",
+      "sha256": "0c2ac3169b248bf8c624c60e018e9683c7e935c16cca07a493ba1ae9c9ac966d"
+    },
+    {
+      "path": "src/pages/design-system/DesignSystemPage.tsx",
+      "sha256": "51a5910e8b87baa2abb646a4695f24fd5f5a8c27b8673f7a4bd801eab3afd153"
+    },
+    {
+      "path": "src/pages/design-system/FAQRowExamples.css",
+      "sha256": "43928c7d839097135de63a4c38b3de3814c803af79b09c74d6eb3d86c138dec2"
+    },
+    {
+      "path": "src/pages/design-system/FAQRowExamples.data.ts",
+      "sha256": "dd6f094776c068c728b934e777ba3e6b4369a2dc04c328ac524c9508ef5395cf"
+    },
+    {
+      "path": "src/pages/design-system/FAQRowExamples.tsx",
+      "sha256": "b159c5057bc5ba480ffa682a362609698e4a28f44b8eda84e7dae90ba3c7cd50"
+    },
+    {
+      "path": "src/pages/design-system/GeometryCatalog.tsx",
+      "sha256": "ce18efce4324df91dd310710b5a67cabfc3738bc169a566145d9f96b3e98b678"
+    },
+    {
+      "path": "src/pages/design-system/ImageParallaxExamples.css",
+      "sha256": "5f75b4c1e43d44d5887deb193b6e707955ffb594f6d8d2a0e96e34ca1a22978e"
+    },
+    {
+      "path": "src/pages/design-system/ImageParallaxExamples.tsx",
+      "sha256": "0eccbd1fa98e73e795ae0fac569c27b8266b445344c03cd77143f62ed2019420"
+    },
+    {
+      "path": "src/pages/design-system/ImageRevealExamples.tsx",
+      "sha256": "529d6aad7d1a5a21c25b8790e77c62717fcf91b3679f127e0f57654069c77f04"
+    },
+    {
+      "path": "src/pages/design-system/LoadMoreExamples.tsx",
+      "sha256": "788304e2af5af0ac9d1fa063a37226d423f741a767ccfa0a3d8875e30fd7f2b0"
+    },
+    {
+      "path": "src/pages/design-system/MainFormButtonExamples.tsx",
+      "sha256": "cb7e67584a14b1af7fc0b88b49c2c20060046bc6440553ec8af34c8c4f7f2b36"
+    },
+    {
+      "path": "src/pages/design-system/OurStoryCardExamples.css",
+      "sha256": "15db3b827da4670d97daedb0f28e62b7f67b1716deee12a168d05018aaf1f8bd"
+    },
+    {
+      "path": "src/pages/design-system/OurStoryCardExamples.tsx",
+      "sha256": "81ce96a0fec496093ddbf85f02daf42df4900b6759ab03018c3e67c7992d4e9b"
+    },
+    {
+      "path": "src/pages/design-system/ProcessRowExamples.css",
+      "sha256": "ce05b873a63348b1eea2cf9f4dc5fa6aa6623b835b7d3da1454ae723554f72a6"
+    },
+    {
+      "path": "src/pages/design-system/ProcessRowExamples.tsx",
+      "sha256": "757effb67d5de7dd6957b626b11a95334abcc075c98c4175e0a52585a307ab62"
+    },
+    {
+      "path": "src/pages/design-system/RollingTextExamples.data.ts",
+      "sha256": "e5660a1ae2703d7ad3653559ee85fcc3deefd0e53253b1a9238ef6f27c332456"
+    },
+    {
+      "path": "src/pages/design-system/RollingTextExamples.tsx",
+      "sha256": "3ffde1d4a2c2fb76b794c78659536ac21cec6fe4f59e2ee3c3f110cbe3a870eb"
+    },
+    {
+      "path": "src/pages/design-system/SourceCatalog.tsx",
+      "sha256": "be64f60645c6900702f8fe66392d427064e75428b14adb8da38079033f082aeb"
+    },
+    {
+      "path": "src/pages/design-system/catalogIndex.ts",
+      "sha256": "eaec1f0cd3de932ebab62013536ed8c08a316169effa728676be176218ffc666"
+    },
+    {
+      "path": "src/pages/design-system/componentExamples.ts",
+      "sha256": "c4f80da02f35064e83bf9107842a217dace0a864b4f3a04422699271487229d5"
+    },
+    {
+      "path": "src/styles/base.css",
+      "sha256": "8407467005167e85a2d55c26019d6ec1b236c26eac9b1a255da1f61458c70f69"
+    },
+    {
+      "path": "src/styles/fonts.css",
+      "sha256": "edacce7d8c78f94e9e1637b83864f029bc1f2148232da624bc8d7b81b67b8e69"
+    },
+    {
+      "path": "src/styles/geometry.css",
+      "sha256": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b"
+    },
+    {
+      "path": "src/styles/geometry.ts",
+      "sha256": "0dc588e40f4f38af4a433477ee48030097eee212b0eb675c27c55cf71767d515"
+    },
+    {
+      "path": "src/styles/token.css",
+      "sha256": "fb153ef97d0a931254d40b8c98fcefa35160bc39a87da1633870276009db85fd"
+    },
+    {
+      "path": "src/styles/token.ts",
+      "sha256": "badd46b62fdbc1e4ff716712335952736092113b0658a6d9de3406cc75725876"
+    },
+    {
+      "path": "src/styles/tokens.css",
+      "sha256": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b"
+    },
+    {
+      "path": "src/styles/tokens.ts",
+      "sha256": "332968b0a8e8a69b2afad954061eb9896d9133e4548d44fc5c7c956c3e4511c0"
+    },
+    {
+      "path": "tests/inventory.test.mjs",
+      "sha256": "c30f304f5ad3f258b352e7657881f18a81b9f8e06db90dede2f8a8f4c5e2d309"
+    },
+    {
+      "path": "tsconfig.app.json",
+      "sha256": "a3379db7120040b34b19981d958c14f6ef3b48268cc596df4fab84829bb7f286"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+    },
+    {
+      "path": "tsconfig.node.json",
+      "sha256": "8e04d5d603fdaa9eac3e5d5b0f98f0dc1696ee2fae2852470dcd23e42e798d82"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "e1eefd0ed1639c88d1213884ef760516884db9e168190e223fee6b063ad3e088"
+    }
+  ],
+  "implementationInputs": [
+    {
+      "path": "src/components/RollingText.tsx",
+      "sha256": "e498beb88c24046a9a55f316957e56449fe4c4a09f3d1535314819c4705f6259"
+    },
+    {
+      "path": "src/components/RollingText.css",
+      "sha256": "dcfb66a6566f40a83b40b8bc66a86c20e3dc00a003a4b1b07a87e55cf91b5dbd"
+    },
+    {
+      "path": "src/components/NavItem.tsx",
+      "sha256": "ef775192b11d192a4f2b213891a7936234fd62814e4d878b6f741e8e69ac1edf"
+    },
+    {
+      "path": "src/components/Button.tsx",
+      "sha256": "78448e843852e848837a335060ef9f39c5fc9ebe815f8af870fb04c35b93477d"
+    },
+    {
+      "path": "src/components/MainFormButton.tsx",
+      "sha256": "9b144473bcb2a94cd920a04475058042e06c03aed54ff42527288f3535c2e959"
+    },
+    {
+      "path": "src/motion/useReducedMotionPreference.ts",
+      "sha256": "95fa2412ca6cc27c936fe512403469ff0f42bcb0585e67fa771a5f4c557b6acc"
+    },
+    {
+      "path": "src/pages/design-system/RollingTextExamples.tsx",
+      "sha256": "3ffde1d4a2c2fb76b794c78659536ac21cec6fe4f59e2ee3c3f110cbe3a870eb"
+    },
+    {
+      "path": "src/pages/design-system/RollingTextExamples.data.ts",
+      "sha256": "e5660a1ae2703d7ad3653559ee85fcc3deefd0e53253b1a9238ef6f27c332456"
+    },
+    {
+      "path": "src/pages/design-system/componentExamples.ts",
+      "sha256": "c4f80da02f35064e83bf9107842a217dace0a864b4f3a04422699271487229d5"
+    },
+    {
+      "path": "src/components/Icon.registry.ts",
+      "sha256": "9663485bfc2536f3de500f6b70afe9d59c0a8da2debfb034c15c404ccec4982c"
+    },
+    {
+      "path": "src/components/Icon.tsx",
+      "sha256": "75e884f5f6922e97d9afd34ced0b4b0fe1846f87d8d7dda08e3e8fe0e4bce8dd"
+    },
+    {
+      "path": "src/components/Icon.css",
+      "sha256": "960e58c118f8e2f4f629b33ad6ca2d8185f0b6ada194d91f00572facd6d71a95"
+    }
+  ],
+  "taskFiles": [
+    "src/components/RollingText.tsx",
+    "src/components/NavItem.tsx",
+    "src/components/Button.tsx",
+    "src/components/MainFormButton.tsx",
+    "src/pages/design-system/RollingTextExamples.tsx",
+    "src/pages/design-system/RollingTextExamples.data.ts",
+    "src/pages/design-system/componentExamples.ts",
+    "docs/ROLLING-TEXT.md",
+    "docs/ROLLING-TEXT-ARROW-ALT-VERIFICATION.json",
+    "docs/COMPONENT_INVENTORY.md",
+    "docs/MIGRATION-STATUS.md",
+    "docs/ARCHITECTURE.md",
+    "docs/MOTION.md",
+    "docs/DESIGN-SYSTEM.md",
+    "docs/framer/component-inventory.json",
+    "docs/framer/rolling-text-arrow-alt-source.json",
+    "docs/framer/hardcoded-audit.json",
+    ".agent/PLANS.md",
+    ".agent/plans/2026-10-07-rolling-text-arrow-alt.md"
+  ],
+  "incidentalBuildCorrection": {
+    "file": "src/pages/design-system/ImageParallaxExamples.tsx",
+    "change": "Remove unreachable story-horizontal check inside kind=controls branch; effective sizes unchanged.",
+    "reason": "Concurrent addition blocked required typecheck/build; no Parallax migration or fidelity claim."
+  },
+  "checks": {
+    "typecheck": "PASS",
+    "lint": "PASS, no warnings",
+    "build": "PASS",
+    "tokensCheck": "PASS",
+    "diffCheck": "PASS",
+    "suite": "Not added or run, per project/user policy",
+    "initialFailures": [
+      "TS2367 in concurrent ImageParallaxExamples, corrected only unreachable conditional.",
+      "Fast Refresh warnings in RollingTextExamples removed by separating catalog data.",
+      "Hardcoded audit stale after catalog data split; regenerated, runtime tokens/fonts/geometry byte-identical."
+    ]
+  },
+  "build": {
+    "modules": 538,
+    "jsKB": 804,
+    "jsGzipKB": 216.54,
+    "cssKB": 162.65,
+    "cssGzipKB": 19.34,
+    "warning": "Existing >500kB chunk warning retained; concurrent Parallax code included, not attributed to this utility."
+  },
+  "source": {
+    "path": "docs/framer/rolling-text-arrow-alt-source.json",
+    "sha256": "32b9123d9cbef7caf38cfbc33412f84490a7bc8084a6ac6459a544d8946f9951",
+    "instances": 14,
+    "independentConfigurations": 7,
+    "consumerRoots": 3,
+    "moduleSha256": "6b6bcf6374a6433f3ca173487cf7ec2a6186556a731bd3c4d156a68e0e6f60c1",
+    "finalTreesUnchanged": true,
+    "restoration": {
+      "node": "jXWsoUgZ9",
+      "property": "top",
+      "original": "0px",
+      "accidental": "620px",
+      "restored": "0px",
+      "method": "Framer editor Y field restored from initial source capture"
+    }
+  },
+  "motion": {
+    "glyphShadow": true,
+    "hover": "0 -> negative absolute line height",
+    "leave": "negative absolute line height -> 0",
+    "type": "tween",
+    "duration": 0.3,
+    "ease": [
+      0.82,
+      0.14,
+      0.29,
+      0.91
+    ],
+    "stagger": 60,
+    "delayFormula": "duration/text.length*characterIndex*stagger/100",
+    "reverse": "Delay order only, roll direction unchanged",
+    "policy": "Existing useReducedMotionPreference + MotionConfig; immediate y0/no delays when reduced"
+  },
+  "browser": {
+    "provider": "IAB / available Chromium",
+    "nativeConfigurations": [
+      {
+        "color": "rgb(244, 240, 232)",
+        "font": "28px / 28px \"Funnel Sans\", \"Funnel Sans Placeholder\", sans-serif",
+        "frame": [
+          118.1875,
+          28
+        ],
+        "overflow": "hidden",
+        "shadow": "rgb(244, 240, 232) 0px 28px 0px",
+        "tag": "P",
+        "text": "NAV ITEM",
+        "tracking": "-1.12px"
+      },
+      {
+        "color": "rgb(244, 240, 232)",
+        "font": "16px / 16px \"Funnel Sans\", \"Funnel Sans Placeholder\", sans-serif",
+        "frame": [
+          67.546875,
+          16
+        ],
+        "overflow": "hidden",
+        "shadow": "rgb(244, 240, 232) 0px 16px 0px",
+        "tag": "P",
+        "text": "NAV ITEM",
+        "tracking": "-0.64px"
+      },
+      {
+        "color": "rgb(244, 240, 232)",
+        "font": "22px / 22px \"Funnel Sans\", \"Funnel Sans Placeholder\", sans-serif",
+        "frame": [
+          92.859375,
+          22
+        ],
+        "overflow": "hidden",
+        "shadow": "rgb(244, 240, 232) 0px 22px 0px",
+        "tag": "P",
+        "text": "NAV ITEM",
+        "tracking": "-0.88px"
+      },
+      {
+        "color": "rgb(255, 85, 56)",
+        "font": "600 48px / 52.8px \"Funnel Sans\", \"Funnel Sans Placeholder\", sans-serif",
+        "frame": [
+          333.09375,
+          52.796875
+        ],
+        "overflow": "hidden",
+        "shadow": "rgb(255, 85, 56) 0px 52.8px 0px",
+        "tag": "P",
+        "text": "VEDI LE SERATE",
+        "tracking": "-1.92px"
+      },
+      {
+        "color": "rgb(244, 240, 232)",
+        "font": "600 16px / 17.6px \"Funnel Sans\", \"Funnel Sans Placeholder\", sans-serif",
+        "frame": [
+          111.078125,
+          17.59375
+        ],
+        "overflow": "hidden",
+        "shadow": "rgb(244, 240, 232) 0px 17.6px 0px",
+        "tag": "P",
+        "text": "VEDI LE SERATE",
+        "tracking": "-0.64px"
+      },
+      {
+        "color": "rgb(255, 85, 56)",
+        "font": "600 28px / 30.8px \"Funnel Sans\", \"Funnel Sans Placeholder\", sans-serif",
+        "frame": [
+          194.328125,
+          30.796875
+        ],
+        "overflow": "hidden",
+        "shadow": "rgb(255, 85, 56) 0px 30.8px 0px",
+        "tag": "P",
+        "text": "VEDI LE SERATE",
+        "tracking": "-1.12px"
+      },
+      {
+        "color": "rgb(244, 240, 232)",
+        "font": "20px / 20px \"Funnel Sans\", \"Funnel Sans Placeholder\", sans-serif",
+        "frame": [
+          157.84375,
+          20
+        ],
+        "overflow": "hidden",
+        "shadow": "rgb(244, 240, 232) 0px 20px 0px",
+        "tag": "P",
+        "text": "INVIA MESSAGGIO",
+        "tracking": "-0.8px"
+      }
+    ],
+    "localConfigurations": [
+      {
+        "font": "22px / 22px \"Funnel Sans\", sans-serif",
+        "glyphWidth": 92.859375,
+        "height": 22,
+        "shadow": "rgb(244, 240, 232) 0px 22px 0px",
+        "text": "NAV ITEM",
+        "tracking": "-0.88px"
+      },
+      {
+        "font": "28px / 28px \"Funnel Sans\", sans-serif",
+        "glyphWidth": 118.1875,
+        "height": 28,
+        "shadow": "rgb(244, 240, 232) 0px 28px 0px",
+        "text": "NAV ITEM",
+        "tracking": "-1.12px"
+      },
+      {
+        "font": "16px / 16px \"Funnel Sans\", sans-serif",
+        "glyphWidth": 67.546875,
+        "height": 16,
+        "shadow": "rgb(244, 240, 232) 0px 16px 0px",
+        "text": "NAV ITEM",
+        "tracking": "-0.64px"
+      },
+      {
+        "font": "20px / 20px \"Funnel Sans\", sans-serif",
+        "glyphWidth": 157.84375,
+        "height": 20,
+        "shadow": "rgb(244, 240, 232) 0px 20px 0px",
+        "text": "INVIA MESSAGGIO",
+        "tracking": "-0.8px"
+      },
+      {
+        "font": "600 48px / 52.8px \"Funnel Sans\", sans-serif",
+        "glyphWidth": 333.09375,
+        "height": 52.796875,
+        "shadow": "rgb(255, 85, 56) 0px 52.8px 0px",
+        "text": "VEDI LE SERATE",
+        "tracking": "-1.92px"
+      },
+      {
+        "font": "600 16px / 17.6px \"Funnel Sans\", sans-serif",
+        "glyphWidth": 111.078125,
+        "height": 17.59375,
+        "shadow": "rgb(244, 240, 232) 0px 17.6px 0px",
+        "text": "VEDI LE SERATE",
+        "tracking": "-0.64px"
+      },
+      {
+        "font": "600 28px / 30.8px \"Funnel Sans\", sans-serif",
+        "glyphWidth": 194.328125,
+        "height": 30.796875,
+        "shadow": "rgb(255, 85, 56) 0px 30.8px 0px",
+        "text": "VEDI LE SERATE",
+        "tracking": "-1.12px"
+      }
+    ],
+    "consumerEvidence": [
+      {
+        "consumer": "Main form button",
+        "hover": {
+          "size": "20px",
+          "transforms": [
+            "matrix(1, 0, 0, 1, 0, -20)",
+            "matrix(1, 0, 0, 1, 0, -20)",
+            "matrix(1, 0, 0, 1, 0, -20)",
+            "matrix(1, 0, 0, 1, 0, -20)",
+            "matrix(1, 0, 0, 1, 0, -20)",
+            "matrix(1, 0, 0, 1, 0, -20)",
+            "matrix(1, 0, 0, 1, 0, -20)",
+            "matrix(1, 0, 0, 1, 0, -20)",
+            "matrix(1, 0, 0, 1, 0, -20)",
+            "matrix(1, 0, 0, 1, 0, -20)",
+            "matrix(1, 0, 0, 1, 0, -20)",
+            "matrix(1, 0, 0, 1, 0, -20)",
+            "matrix(1, 0, 0, 1, 0, -20)",
+            "matrix(1, 0, 0, 1, 0, -19.8909)",
+            "matrix(1, 0, 0, 1, 0, -19.7346)"
+          ]
+        }
+      },
+      {
+        "consumer": "Nav Item",
+        "variant": "Desktop",
+        "size": "22px",
+        "incoming": [
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ]
+        ],
+        "leave": [
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none"
+        ]
+      },
+      {
+        "consumer": "Nav Item",
+        "variant": "Mobile",
+        "size": "28px",
+        "incoming": [
+          [
+            "matrix(1, 0, 0, 1, 0, -27.3919)",
+            "matrix(1, 0, 0, 1, 0, -26.2781)",
+            "matrix(1, 0, 0, 1, 0, -24.1491)",
+            "matrix(1, 0, 0, 1, 0, -19.2454)",
+            "matrix(1, 0, 0, 1, 0, -9.94393)",
+            "matrix(1, 0, 0, 1, 0, -5.27315)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -27.8332)",
+            "matrix(1, 0, 0, 1, 0, -27.1279)",
+            "matrix(1, 0, 0, 1, 0, -25.7876)",
+            "matrix(1, 0, 0, 1, 0, -23.1345)",
+            "matrix(1, 0, 0, 1, 0, -16.5007)",
+            "matrix(1, 0, 0, 1, 0, -8.11713)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -27.668)",
+            "matrix(1, 0, 0, 1, 0, -26.8067)",
+            "matrix(1, 0, 0, 1, 0, -25.1819)",
+            "matrix(1, 0, 0, 1, 0, -21.7971)",
+            "matrix(1, 0, 0, 1, 0, -13.3716)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -27.5576)",
+            "matrix(1, 0, 0, 1, 0, -26.6058)",
+            "matrix(1, 0, 0, 1, 0, -24.7854)",
+            "matrix(1, 0, 0, 1, 0, -20.8671)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -27.9354)",
+            "matrix(1, 0, 0, 1, 0, -27.3376)",
+            "matrix(1, 0, 0, 1, 0, -26.1798)",
+            "matrix(1, 0, 0, 1, 0, -23.9502)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -27.8473)",
+            "matrix(1, 0, 0, 1, 0, -27.158)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)",
+            "matrix(1, 0, 0, 1, 0, -28)"
+          ]
+        ],
+        "leave": [
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none"
+        ]
+      },
+      {
+        "consumer": "Nav Item",
+        "variant": "Compact",
+        "size": "16px",
+        "incoming": [
+          [
+            "matrix(1, 0, 0, 1, 0, -15.6525)",
+            "matrix(1, 0, 0, 1, 0, -15.0161)",
+            "matrix(1, 0, 0, 1, 0, -13.7995)",
+            "matrix(1, 0, 0, 1, 0, -10.9974)",
+            "matrix(1, 0, 0, 1, 0, -5.68225)",
+            "matrix(1, 0, 0, 1, 0, -3.01323)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -15.9047)",
+            "matrix(1, 0, 0, 1, 0, -15.5017)",
+            "matrix(1, 0, 0, 1, 0, -14.7358)",
+            "matrix(1, 0, 0, 1, 0, -13.2197)",
+            "matrix(1, 0, 0, 1, 0, -9.429)",
+            "matrix(1, 0, 0, 1, 0, -4.63836)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -15.8103)",
+            "matrix(1, 0, 0, 1, 0, -15.3181)",
+            "matrix(1, 0, 0, 1, 0, -14.3897)",
+            "matrix(1, 0, 0, 1, 0, -12.4555)",
+            "matrix(1, 0, 0, 1, 0, -7.64091)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -15.6937)",
+            "matrix(1, 0, 0, 1, 0, -15.1035)",
+            "matrix(1, 0, 0, 1, 0, -13.9624)",
+            "matrix(1, 0, 0, 1, 0, -11.4196)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -15.9631)",
+            "matrix(1, 0, 0, 1, 0, -15.6215)",
+            "matrix(1, 0, 0, 1, 0, -14.9599)",
+            "matrix(1, 0, 0, 1, 0, -13.6858)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -15.8853)",
+            "matrix(1, 0, 0, 1, 0, -15.4622)",
+            "matrix(1, 0, 0, 1, 0, -14.6678)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -15.7876)",
+            "matrix(1, 0, 0, 1, 0, -15.274)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -15.9793)",
+            "matrix(1, 0, 0, 1, 0, -15.6525)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -15.9047)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)",
+            "matrix(1, 0, 0, 1, 0, -16)"
+          ]
+        ],
+        "leave": [
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none"
+        ]
+      },
+      {
+        "consumer": "Button",
+        "variant": "Primary",
+        "geometry": {
+          "font": "600 48px / 52.8px \"Funnel Sans\", sans-serif",
+          "width": 333.09375
+        },
+        "incoming": [
+          [
+            "matrix(1, 0, 0, 1, 0, -52.3164)",
+            "matrix(1, 0, 0, 1, 0, -51.8013)",
+            "matrix(1, 0, 0, 1, 0, -51.1125)",
+            "matrix(1, 0, 0, 1, 0, -50.2048)",
+            "matrix(1, 0, 0, 1, 0, -49.0241)",
+            "matrix(1, 0, 0, 1, 0, -47.4416)",
+            "matrix(1, 0, 0, 1, 0, -45.314)",
+            "matrix(1, 0, 0, 1, 0, -42.3047)",
+            "matrix(1, 0, 0, 1, 0, -37.7473)",
+            "matrix(1, 0, 0, 1, 0, -30.6428)",
+            "matrix(1, 0, 0, 1, 0, -22.4831)",
+            "matrix(1, 0, 0, 1, 0, -16.5568)",
+            "matrix(1, 0, 0, 1, 0, -12.5768)",
+            "matrix(1, 0, 0, 1, 0, -9.71855)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.686)",
+            "matrix(1, 0, 0, 1, 0, -52.2966)",
+            "matrix(1, 0, 0, 1, 0, -51.7649)",
+            "matrix(1, 0, 0, 1, 0, -51.0691)",
+            "matrix(1, 0, 0, 1, 0, -50.154)",
+            "matrix(1, 0, 0, 1, 0, -48.946)",
+            "matrix(1, 0, 0, 1, 0, -47.3527)",
+            "matrix(1, 0, 0, 1, 0, -45.1884)",
+            "matrix(1, 0, 0, 1, 0, -42.1074)",
+            "matrix(1, 0, 0, 1, 0, -37.4337)",
+            "matrix(1, 0, 0, 1, 0, -30.1687)",
+            "matrix(1, 0, 0, 1, 0, -22.0755)",
+            "matrix(1, 0, 0, 1, 0, -16.2985)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.6625)",
+            "matrix(1, 0, 0, 1, 0, -52.2666)",
+            "matrix(1, 0, 0, 1, 0, -51.7281)",
+            "matrix(1, 0, 0, 1, 0, -51.0253)",
+            "matrix(1, 0, 0, 1, 0, -50.0857)",
+            "matrix(1, 0, 0, 1, 0, -48.8674)",
+            "matrix(1, 0, 0, 1, 0, -47.2408)",
+            "matrix(1, 0, 0, 1, 0, -45.0367)",
+            "matrix(1, 0, 0, 1, 0, -41.9088)",
+            "matrix(1, 0, 0, 1, 0, -37.1184)",
+            "matrix(1, 0, 0, 1, 0, -29.6934)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.6466)",
+            "matrix(1, 0, 0, 1, 0, -52.2463)",
+            "matrix(1, 0, 0, 1, 0, -51.6909)",
+            "matrix(1, 0, 0, 1, 0, -50.9811)",
+            "matrix(1, 0, 0, 1, 0, -50.0341)",
+            "matrix(1, 0, 0, 1, 0, -48.7882)",
+            "matrix(1, 0, 0, 1, 0, -47.1506)",
+            "matrix(1, 0, 0, 1, 0, -44.884)",
+            "matrix(1, 0, 0, 1, 0, -41.6805)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.6305)",
+            "matrix(1, 0, 0, 1, 0, -52.2156)",
+            "matrix(1, 0, 0, 1, 0, -51.6658)",
+            "matrix(1, 0, 0, 1, 0, -50.9215)",
+            "matrix(1, 0, 0, 1, 0, -49.9647)",
+            "matrix(1, 0, 0, 1, 0, -48.7084)",
+            "matrix(1, 0, 0, 1, 0, -47.0372)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.4944)",
+            "matrix(1, 0, 0, 1, 0, -52.0333)",
+            "matrix(1, 0, 0, 1, 0, -51.4188)",
+            "matrix(1, 0, 0, 1, 0, -50.6135)",
+            "matrix(1, 0, 0, 1, 0, -49.5531)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.7166)",
+            "matrix(1, 0, 0, 1, 0, -52.3359)",
+            "matrix(1, 0, 0, 1, 0, -51.8254)",
+            "matrix(1, 0, 0, 1, 0, -51.1412)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.5893)",
+            "matrix(1, 0, 0, 1, 0, -52.1634)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.7753)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)",
+            "matrix(1, 0, 0, 1, 0, -52.8)"
+          ]
+        ],
+        "leave": [
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none"
+        ]
+      },
+      {
+        "consumer": "Button",
+        "variant": "Secondary",
+        "geometry": {
+          "font": "600 16px / 17.6px \"Funnel Sans\", sans-serif",
+          "width": 111.078125
+        },
+        "incoming": [
+          [
+            "matrix(1, 0, 0, 1, 0, -17.1662)",
+            "matrix(1, 0, 0, 1, 0, -16.9026)",
+            "matrix(1, 0, 0, 1, 0, -16.5602)",
+            "matrix(1, 0, 0, 1, 0, -16.1071)",
+            "matrix(1, 0, 0, 1, 0, -15.5094)",
+            "matrix(1, 0, 0, 1, 0, -14.6751)",
+            "matrix(1, 0, 0, 1, 0, -13.4662)",
+            "matrix(1, 0, 0, 1, 0, -11.5688)",
+            "matrix(1, 0, 0, 1, 0, -8.86177)",
+            "matrix(1, 0, 0, 1, 0, -6.44986)",
+            "matrix(1, 0, 0, 1, 0, -4.82869)",
+            "matrix(1, 0, 0, 1, 0, -3.70703)",
+            "matrix(1, 0, 0, 1, 0, -2.87233)",
+            "matrix(1, 0, 0, 1, 0, -2.22269)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.4518)",
+            "matrix(1, 0, 0, 1, 0, -17.2831)",
+            "matrix(1, 0, 0, 1, 0, -17.0566)",
+            "matrix(1, 0, 0, 1, 0, -16.7629)",
+            "matrix(1, 0, 0, 1, 0, -16.3736)",
+            "matrix(1, 0, 0, 1, 0, -15.8653)",
+            "matrix(1, 0, 0, 1, 0, -15.1712)",
+            "matrix(1, 0, 0, 1, 0, -14.1949)",
+            "matrix(1, 0, 0, 1, 0, -12.7278)",
+            "matrix(1, 0, 0, 1, 0, -10.4281)",
+            "matrix(1, 0, 0, 1, 0, -7.6759)",
+            "matrix(1, 0, 0, 1, 0, -5.64859)",
+            "matrix(1, 0, 0, 1, 0, -4.28317)",
+            "matrix(1, 0, 0, 1, 0, -3.30515)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.5697)",
+            "matrix(1, 0, 0, 1, 0, -17.4421)",
+            "matrix(1, 0, 0, 1, 0, -17.2711)",
+            "matrix(1, 0, 0, 1, 0, -17.0423)",
+            "matrix(1, 0, 0, 1, 0, -16.7405)",
+            "matrix(1, 0, 0, 1, 0, -16.3478)",
+            "matrix(1, 0, 0, 1, 0, -15.8286)",
+            "matrix(1, 0, 0, 1, 0, -15.1297)",
+            "matrix(1, 0, 0, 1, 0, -14.1297)",
+            "matrix(1, 0, 0, 1, 0, -12.6241)",
+            "matrix(1, 0, 0, 1, 0, -10.2819)",
+            "matrix(1, 0, 0, 1, 0, -7.53972)",
+            "matrix(1, 0, 0, 1, 0, -5.56208)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.527)",
+            "matrix(1, 0, 0, 1, 0, -17.3843)",
+            "matrix(1, 0, 0, 1, 0, -17.1922)",
+            "matrix(1, 0, 0, 1, 0, -16.9436)",
+            "matrix(1, 0, 0, 1, 0, -16.6139)",
+            "matrix(1, 0, 0, 1, 0, -16.1755)",
+            "matrix(1, 0, 0, 1, 0, -15.5949)",
+            "matrix(1, 0, 0, 1, 0, -14.8065)",
+            "matrix(1, 0, 0, 1, 0, -13.6525)",
+            "matrix(1, 0, 0, 1, 0, -11.8828)",
+            "matrix(1, 0, 0, 1, 0, -9.23835)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.5965)",
+            "matrix(1, 0, 0, 1, 0, -17.48)",
+            "matrix(1, 0, 0, 1, 0, -17.3219)",
+            "matrix(1, 0, 0, 1, 0, -17.1079)",
+            "matrix(1, 0, 0, 1, 0, -16.8285)",
+            "matrix(1, 0, 0, 1, 0, -16.4683)",
+            "matrix(1, 0, 0, 1, 0, -15.9808)",
+            "matrix(1, 0, 0, 1, 0, -15.3345)",
+            "matrix(1, 0, 0, 1, 0, -14.4335)",
+            "matrix(1, 0, 0, 1, 0, -13.0963)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.5594)",
+            "matrix(1, 0, 0, 1, 0, -17.4289)",
+            "matrix(1, 0, 0, 1, 0, -17.2509)",
+            "matrix(1, 0, 0, 1, 0, -17.0182)",
+            "matrix(1, 0, 0, 1, 0, -16.7066)",
+            "matrix(1, 0, 0, 1, 0, -16.3023)",
+            "matrix(1, 0, 0, 1, 0, -15.7693)",
+            "matrix(1, 0, 0, 1, 0, -15.046)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.5156)",
+            "matrix(1, 0, 0, 1, 0, -17.37)",
+            "matrix(1, 0, 0, 1, 0, -17.1706)",
+            "matrix(1, 0, 0, 1, 0, -16.9129)",
+            "matrix(1, 0, 0, 1, 0, -16.5722)",
+            "matrix(1, 0, 0, 1, 0, -16.1277)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.5797)",
+            "matrix(1, 0, 0, 1, 0, -17.455)",
+            "matrix(1, 0, 0, 1, 0, -17.287)",
+            "matrix(1, 0, 0, 1, 0, -17.066)",
+            "matrix(1, 0, 0, 1, 0, -16.774)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.5489)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)",
+            "matrix(1, 0, 0, 1, 0, -17.6)"
+          ]
+        ],
+        "leave": [
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none"
+        ]
+      },
+      {
+        "consumer": "Button",
+        "variant": "Primary Mobile",
+        "geometry": {
+          "font": "600 28px / 30.8px \"Funnel Sans\", sans-serif",
+          "width": 194.328125
+        },
+        "incoming": [
+          [
+            "matrix(1, 0, 0, 1, 0, -30.153)",
+            "matrix(1, 0, 0, 1, 0, -29.739)",
+            "matrix(1, 0, 0, 1, 0, -29.1865)",
+            "matrix(1, 0, 0, 1, 0, -28.4598)",
+            "matrix(1, 0, 0, 1, 0, -27.5045)",
+            "matrix(1, 0, 0, 1, 0, -26.1823)",
+            "matrix(1, 0, 0, 1, 0, -24.3136)",
+            "matrix(1, 0, 0, 1, 0, -21.4491)",
+            "matrix(1, 0, 0, 1, 0, -17.0433)",
+            "matrix(1, 0, 0, 1, 0, -12.423)",
+            "matrix(1, 0, 0, 1, 0, -9.20779)",
+            "matrix(1, 0, 0, 1, 0, -7.02113)",
+            "matrix(1, 0, 0, 1, 0, -5.42541)",
+            "matrix(1, 0, 0, 1, 0, -4.2135)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.7011)",
+            "matrix(1, 0, 0, 1, 0, -30.4591)",
+            "matrix(1, 0, 0, 1, 0, -30.1384)",
+            "matrix(1, 0, 0, 1, 0, -29.7042)",
+            "matrix(1, 0, 0, 1, 0, -29.146)",
+            "matrix(1, 0, 0, 1, 0, -28.4132)",
+            "matrix(1, 0, 0, 1, 0, -27.4383)",
+            "matrix(1, 0, 0, 1, 0, -26.1076)",
+            "matrix(1, 0, 0, 1, 0, -24.1964)",
+            "matrix(1, 0, 0, 1, 0, -21.2446)",
+            "matrix(1, 0, 0, 1, 0, -16.7848)",
+            "matrix(1, 0, 0, 1, 0, -12.2064)",
+            "matrix(1, 0, 0, 1, 0, -9.07737)",
+            "matrix(1, 0, 0, 1, 0, -6.91688)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.6007)",
+            "matrix(1, 0, 0, 1, 0, -30.3266)",
+            "matrix(1, 0, 0, 1, 0, -29.9627)",
+            "matrix(1, 0, 0, 1, 0, -29.4781)",
+            "matrix(1, 0, 0, 1, 0, -28.8521)",
+            "matrix(1, 0, 0, 1, 0, -28.0161)",
+            "matrix(1, 0, 0, 1, 0, -26.8917)",
+            "matrix(1, 0, 0, 1, 0, -25.3378)",
+            "matrix(1, 0, 0, 1, 0, -23.0422)",
+            "matrix(1, 0, 0, 1, 0, -19.4389)",
+            "matrix(1, 0, 0, 1, 0, -14.5889)",
+            "matrix(1, 0, 0, 1, 0, -10.649)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.7939)",
+            "matrix(1, 0, 0, 1, 0, -30.59)",
+            "matrix(1, 0, 0, 1, 0, -30.3066)",
+            "matrix(1, 0, 0, 1, 0, -29.9388)",
+            "matrix(1, 0, 0, 1, 0, -29.4499)",
+            "matrix(1, 0, 0, 1, 0, -28.8087)",
+            "matrix(1, 0, 0, 1, 0, -27.9664)",
+            "matrix(1, 0, 0, 1, 0, -26.8213)",
+            "matrix(1, 0, 0, 1, 0, -25.2428)",
+            "matrix(1, 0, 0, 1, 0, -22.883)",
+            "matrix(1, 0, 0, 1, 0, -19.187)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.7244)",
+            "matrix(1, 0, 0, 1, 0, -30.4947)",
+            "matrix(1, 0, 0, 1, 0, -30.1819)",
+            "matrix(1, 0, 0, 1, 0, -29.7733)",
+            "matrix(1, 0, 0, 1, 0, -29.2366)",
+            "matrix(1, 0, 0, 1, 0, -28.529)",
+            "matrix(1, 0, 0, 1, 0, -27.5833)",
+            "matrix(1, 0, 0, 1, 0, -26.301)",
+            "matrix(1, 0, 0, 1, 0, -24.4965)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.6524)",
+            "matrix(1, 0, 0, 1, 0, -30.3912)",
+            "matrix(1, 0, 0, 1, 0, -30.0485)",
+            "matrix(1, 0, 0, 1, 0, -29.5886)",
+            "matrix(1, 0, 0, 1, 0, -28.9909)",
+            "matrix(1, 0, 0, 1, 0, -28.2115)",
+            "matrix(1, 0, 0, 1, 0, -27.1688)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.6372)",
+            "matrix(1, 0, 0, 1, 0, -30.3785)",
+            "matrix(1, 0, 0, 1, 0, -30.0254)",
+            "matrix(1, 0, 0, 1, 0, -29.5613)",
+            "matrix(1, 0, 0, 1, 0, -28.9592)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.7644)",
+            "matrix(1, 0, 0, 1, 0, -30.5518)",
+            "matrix(1, 0, 0, 1, 0, -30.2592)",
+            "matrix(1, 0, 0, 1, 0, -29.8656)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.6964)",
+            "matrix(1, 0, 0, 1, 0, -30.4531)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)",
+            "matrix(1, 0, 0, 1, 0, -30.8)"
+          ]
+        ],
+        "leave": [
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none"
+        ]
+      },
+      {
+        "consumer": "Nav Item reduced",
+        "transforms": [
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none"
+        ]
+      }
+    ],
+    "controlsEvidence": [
+      {
+        "requestedTag": "p",
+        "rendered": {
+          "height": 22,
+          "tag": "P"
+        }
+      },
+      {
+        "requestedTag": "span",
+        "rendered": {
+          "height": 22,
+          "tag": "SPAN"
+        }
+      },
+      {
+        "requestedTag": "h1",
+        "rendered": {
+          "height": 22,
+          "tag": "H1"
+        }
+      },
+      {
+        "requestedTag": "h2",
+        "rendered": {
+          "height": 22,
+          "tag": "H2"
+        }
+      },
+      {
+        "requestedTag": "h3",
+        "rendered": {
+          "height": 22,
+          "tag": "H3"
+        }
+      },
+      {
+        "requestedTag": "h4",
+        "rendered": {
+          "height": 64,
+          "tag": "H4"
+        }
+      },
+      {
+        "requestedTag": "h5",
+        "rendered": {
+          "height": 22,
+          "tag": "H5"
+        }
+      },
+      {
+        "requestedTag": "h6",
+        "rendered": {
+          "height": 22,
+          "tag": "H6"
+        }
+      },
+      {
+        "requestedTransform": "none",
+        "rendered": {
+          "glyphs": [
+            {
+              "text": "L",
+              "transform": "none"
+            },
+            {
+              "text": "O",
+              "transform": "none"
+            },
+            {
+              "text": "R",
+              "transform": "none"
+            },
+            {
+              "text": "U",
+              "transform": "none"
+            },
+            {
+              "text": "N",
+              "transform": "none"
+            },
+            {
+              "text": "I",
+              "transform": "none"
+            },
+            {
+              "text": " ",
+              "transform": "none"
+            },
+            {
+              "text": "c",
+              "transform": "none"
+            },
+            {
+              "text": "i",
+              "transform": "none"
+            },
+            {
+              "text": " ",
+              "transform": "none"
+            },
+            {
+              "text": "v",
+              "transform": "none"
+            },
+            {
+              "text": "e",
+              "transform": "none"
+            },
+            {
+              "text": "d",
+              "transform": "none"
+            },
+            {
+              "text": "i",
+              "transform": "none"
+            },
+            {
+              "text": "a",
+              "transform": "none"
+            },
+            {
+              "text": "m",
+              "transform": "none"
+            },
+            {
+              "text": "o",
+              "transform": "none"
+            },
+            {
+              "text": " ",
+              "transform": "none"
+            },
+            {
+              "text": "q",
+              "transform": "none"
+            },
+            {
+              "text": "u",
+              "transform": "none"
+            },
+            {
+              "text": "i",
+              "transform": "none"
+            }
+          ],
+          "transform": "none"
+        }
+      },
+      {
+        "requestedTransform": "uppercase",
+        "rendered": {
+          "glyphs": [
+            {
+              "text": "L",
+              "transform": "uppercase"
+            },
+            {
+              "text": "O",
+              "transform": "uppercase"
+            },
+            {
+              "text": "R",
+              "transform": "uppercase"
+            },
+            {
+              "text": "U",
+              "transform": "uppercase"
+            },
+            {
+              "text": "N",
+              "transform": "uppercase"
+            },
+            {
+              "text": "I",
+              "transform": "uppercase"
+            },
+            {
+              "text": " ",
+              "transform": "uppercase"
+            },
+            {
+              "text": "c",
+              "transform": "uppercase"
+            },
+            {
+              "text": "i",
+              "transform": "uppercase"
+            },
+            {
+              "text": " ",
+              "transform": "uppercase"
+            },
+            {
+              "text": "v",
+              "transform": "uppercase"
+            },
+            {
+              "text": "e",
+              "transform": "uppercase"
+            },
+            {
+              "text": "d",
+              "transform": "uppercase"
+            },
+            {
+              "text": "i",
+              "transform": "uppercase"
+            },
+            {
+              "text": "a",
+              "transform": "uppercase"
+            },
+            {
+              "text": "m",
+              "transform": "uppercase"
+            },
+            {
+              "text": "o",
+              "transform": "uppercase"
+            },
+            {
+              "text": " ",
+              "transform": "uppercase"
+            },
+            {
+              "text": "q",
+              "transform": "uppercase"
+            },
+            {
+              "text": "u",
+              "transform": "uppercase"
+            },
+            {
+              "text": "i",
+              "transform": "uppercase"
+            }
+          ],
+          "transform": "uppercase"
+        }
+      },
+      {
+        "requestedTransform": "lowercase",
+        "rendered": {
+          "glyphs": [
+            {
+              "text": "L",
+              "transform": "lowercase"
+            },
+            {
+              "text": "O",
+              "transform": "lowercase"
+            },
+            {
+              "text": "R",
+              "transform": "lowercase"
+            },
+            {
+              "text": "U",
+              "transform": "lowercase"
+            },
+            {
+              "text": "N",
+              "transform": "lowercase"
+            },
+            {
+              "text": "I",
+              "transform": "lowercase"
+            },
+            {
+              "text": " ",
+              "transform": "lowercase"
+            },
+            {
+              "text": "c",
+              "transform": "lowercase"
+            },
+            {
+              "text": "i",
+              "transform": "lowercase"
+            },
+            {
+              "text": " ",
+              "transform": "lowercase"
+            },
+            {
+              "text": "v",
+              "transform": "lowercase"
+            },
+            {
+              "text": "e",
+              "transform": "lowercase"
+            },
+            {
+              "text": "d",
+              "transform": "lowercase"
+            },
+            {
+              "text": "i",
+              "transform": "lowercase"
+            },
+            {
+              "text": "a",
+              "transform": "lowercase"
+            },
+            {
+              "text": "m",
+              "transform": "lowercase"
+            },
+            {
+              "text": "o",
+              "transform": "lowercase"
+            },
+            {
+              "text": " ",
+              "transform": "lowercase"
+            },
+            {
+              "text": "q",
+              "transform": "lowercase"
+            },
+            {
+              "text": "u",
+              "transform": "lowercase"
+            },
+            {
+              "text": "i",
+              "transform": "lowercase"
+            }
+          ],
+          "transform": "lowercase"
+        }
+      },
+      {
+        "requestedTransform": "capitalize",
+        "rendered": {
+          "glyphs": [
+            {
+              "text": "L",
+              "transform": "capitalize"
+            },
+            {
+              "text": "O",
+              "transform": "capitalize"
+            },
+            {
+              "text": "R",
+              "transform": "capitalize"
+            },
+            {
+              "text": "U",
+              "transform": "capitalize"
+            },
+            {
+              "text": "N",
+              "transform": "capitalize"
+            },
+            {
+              "text": "I",
+              "transform": "capitalize"
+            },
+            {
+              "text": " ",
+              "transform": "capitalize"
+            },
+            {
+              "text": "c",
+              "transform": "capitalize"
+            },
+            {
+              "text": "i",
+              "transform": "capitalize"
+            },
+            {
+              "text": " ",
+              "transform": "capitalize"
+            },
+            {
+              "text": "v",
+              "transform": "capitalize"
+            },
+            {
+              "text": "e",
+              "transform": "capitalize"
+            },
+            {
+              "text": "d",
+              "transform": "capitalize"
+            },
+            {
+              "text": "i",
+              "transform": "capitalize"
+            },
+            {
+              "text": "a",
+              "transform": "capitalize"
+            },
+            {
+              "text": "m",
+              "transform": "capitalize"
+            },
+            {
+              "text": "o",
+              "transform": "capitalize"
+            },
+            {
+              "text": " ",
+              "transform": "capitalize"
+            },
+            {
+              "text": "q",
+              "transform": "capitalize"
+            },
+            {
+              "text": "u",
+              "transform": "capitalize"
+            },
+            {
+              "text": "i",
+              "transform": "capitalize"
+            }
+          ],
+          "transform": "capitalize"
+        }
+      },
+      {
+        "padding": "4px 12px 8px 16px"
+      },
+      {
+        "reverse": false,
+        "incoming": [
+          [
+            "matrix(1, 0, 0, 1, 0, -21.7215)",
+            "matrix(1, 0, 0, 1, 0, -21.0356)",
+            "matrix(1, 0, 0, 1, 0, -19.7303)",
+            "matrix(1, 0, 0, 1, 0, -16.9924)",
+            "matrix(1, 0, 0, 1, 0, -10.2352)",
+            "matrix(1, 0, 0, 1, 0, -5.16495)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -21.638)",
+            "matrix(1, 0, 0, 1, 0, -20.869)",
+            "matrix(1, 0, 0, 1, 0, -19.416)",
+            "matrix(1, 0, 0, 1, 0, -16.2307)",
+            "matrix(1, 0, 0, 1, 0, -9.02864)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -21.9807)",
+            "matrix(1, 0, 0, 1, 0, -21.5379)",
+            "matrix(1, 0, 0, 1, 0, -20.6851)",
+            "matrix(1, 0, 0, 1, 0, -19.0565)",
+            "matrix(1, 0, 0, 1, 0, -15.3207)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -21.9294)",
+            "matrix(1, 0, 0, 1, 0, -21.4356)",
+            "matrix(1, 0, 0, 1, 0, -20.491)",
+            "matrix(1, 0, 0, 1, 0, -18.6483)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -21.8689)",
+            "matrix(1, 0, 0, 1, 0, -21.3148)",
+            "matrix(1, 0, 0, 1, 0, -20.2617)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -21.7985)",
+            "matrix(1, 0, 0, 1, 0, -21.1795)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -21.7215)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ]
+        ],
+        "outgoing": [
+          [
+            "matrix(1, 0, 0, 1, 0, -0.27853)",
+            "matrix(1, 0, 0, 1, 0, -0.96436)",
+            "matrix(1, 0, 0, 1, 0, -2.26971)",
+            "matrix(1, 0, 0, 1, 0, -5.00758)",
+            "matrix(1, 0, 0, 1, 0, -11.7648)",
+            "matrix(1, 0, 0, 1, 0, -16.8351)"
+          ],
+          [
+            "none",
+            "matrix(1, 0, 0, 1, 0, -0.36199)",
+            "matrix(1, 0, 0, 1, 0, -1.13095)",
+            "matrix(1, 0, 0, 1, 0, -2.58397)",
+            "matrix(1, 0, 0, 1, 0, -5.76933)",
+            "matrix(1, 0, 0, 1, 0, -12.9714)"
+          ],
+          [
+            "none",
+            "matrix(1, 0, 0, 1, 0, -0.0193)",
+            "matrix(1, 0, 0, 1, 0, -0.46213)",
+            "matrix(1, 0, 0, 1, 0, -1.31486)",
+            "matrix(1, 0, 0, 1, 0, -2.94354)",
+            "matrix(1, 0, 0, 1, 0, -6.67925)"
+          ],
+          [
+            "none",
+            "none",
+            "matrix(1, 0, 0, 1, 0, -0.07064)",
+            "matrix(1, 0, 0, 1, 0, -0.56435)",
+            "matrix(1, 0, 0, 1, 0, -1.50905)",
+            "matrix(1, 0, 0, 1, 0, -3.35173)"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "matrix(1, 0, 0, 1, 0, -0.13105)",
+            "matrix(1, 0, 0, 1, 0, -0.6852)",
+            "matrix(1, 0, 0, 1, 0, -1.73834)"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "matrix(1, 0, 0, 1, 0, -0.20151)",
+            "matrix(1, 0, 0, 1, 0, -0.82045)"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "matrix(1, 0, 0, 1, 0, -0.27853)"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ]
+        ]
+      },
+      {
+        "reverse": true,
+        "incoming": [
+          [
+            "matrix(1, 0, 0, 1, 0, -5.06491)",
+            "matrix(1, 0, 0, 1, 0, -9.97878)",
+            "matrix(1, 0, 0, 1, 0, -16.8451)",
+            "matrix(1, 0, 0, 1, 0, -19.6649)",
+            "matrix(1, 0, 0, 1, 0, -21.0018)",
+            "matrix(1, 0, 0, 1, 0, -21.708)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -8.00683)",
+            "matrix(1, 0, 0, 1, 0, -15.3208)",
+            "matrix(1, 0, 0, 1, 0, -19.0565)",
+            "matrix(1, 0, 0, 1, 0, -20.6851)",
+            "matrix(1, 0, 0, 1, 0, -21.5379)",
+            "matrix(1, 0, 0, 1, 0, -21.9807)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -15.1214)",
+            "matrix(1, 0, 0, 1, 0, -18.9743)",
+            "matrix(1, 0, 0, 1, 0, -20.6471)",
+            "matrix(1, 0, 0, 1, 0, -21.5222)",
+            "matrix(1, 0, 0, 1, 0, -21.9715)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -18.1771)",
+            "matrix(1, 0, 0, 1, 0, -20.2617)",
+            "matrix(1, 0, 0, 1, 0, -21.3148)",
+            "matrix(1, 0, 0, 1, 0, -21.8689)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -20.0115)",
+            "matrix(1, 0, 0, 1, 0, -21.1796)",
+            "matrix(1, 0, 0, 1, 0, -21.7985)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -20.9046)",
+            "matrix(1, 0, 0, 1, 0, -21.6524)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -21.5585)",
+            "matrix(1, 0, 0, 1, 0, -21.9897)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -21.88)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)",
+            "matrix(1, 0, 0, 1, 0, -22)"
+          ]
+        ],
+        "outgoing": [
+          [
+            "matrix(1, 0, 0, 1, 0, -16.3912)",
+            "matrix(1, 0, 0, 1, 0, -10.6945)",
+            "matrix(1, 0, 0, 1, 0, -4.49066)",
+            "matrix(1, 0, 0, 1, 0, -2.04186)",
+            "matrix(1, 0, 0, 1, 0, -0.84598)",
+            "matrix(1, 0, 0, 1, 0, -0.2139)"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -10.9656)",
+            "matrix(1, 0, 0, 1, 0, -4.60929)",
+            "matrix(1, 0, 0, 1, 0, -2.09572)",
+            "matrix(1, 0, 0, 1, 0, -0.87829)",
+            "matrix(1, 0, 0, 1, 0, -0.23069)",
+            "none"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -5.29107)",
+            "matrix(1, 0, 0, 1, 0, -2.39171)",
+            "matrix(1, 0, 0, 1, 0, -1.03257)",
+            "matrix(1, 0, 0, 1, 0, -0.31023)",
+            "none",
+            "none"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -2.72177)",
+            "matrix(1, 0, 0, 1, 0, -1.20326)",
+            "matrix(1, 0, 0, 1, 0, -0.40112)",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -1.39132)",
+            "matrix(1, 0, 0, 1, 0, -0.499)",
+            "matrix(1, 0, 0, 1, 0, -0.03792)",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -0.61514)",
+            "matrix(1, 0, 0, 1, 0, -0.09479)",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "matrix(1, 0, 0, 1, 0, -0.15767)",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ]
+        ]
+      },
+      {
+        "reduced": true,
+        "transforms": [
+          "none",
+          "none",
+          "none",
+          "none",
+          "none",
+          "none"
+        ]
+      },
+      {
+        "reduced": false,
+        "transforms": [
+          "matrix(1, 0, 0, 1, 0, -22)",
+          "matrix(1, 0, 0, 1, 0, -22)",
+          "matrix(1, 0, 0, 1, 0, -22)",
+          "matrix(1, 0, 0, 1, 0, -22)",
+          "matrix(1, 0, 0, 1, 0, -22)",
+          "matrix(1, 0, 0, 1, 0, -22)"
+        ]
+      },
+      {
+        "textInput": "A",
+        "rendered": {
+          "clip": "hidden",
+          "glyphCount": 1,
+          "height": 22,
+          "rootClip": "hidden",
+          "text": "A",
+          "width": 13.09375
+        }
+      },
+      {
+        "textInput": "LORUNI ci vediamo qui — una frase lunga che continua oltre il contenitore senza andare a capo",
+        "rendered": {
+          "clip": "hidden",
+          "glyphCount": 93,
+          "height": 22,
+          "rootClip": "hidden",
+          "text": "LORUNI ci vediamo qui — una frase lunga che continua oltre il contenitore senza andare a capo",
+          "width": 296.328125
+        }
+      },
+      {
+        "textInput": "Ciao 👋 LORUNI",
+        "rendered": {
+          "clip": "hidden",
+          "glyphCount": 13,
+          "height": 22,
+          "rootClip": "hidden",
+          "text": "Ciao 👋 LORUNI",
+          "width": 153.234375
+        }
+      },
+      {
+        "textInput": "",
+        "rendered": {
+          "clip": "hidden",
+          "glyphCount": 0,
+          "height": 0,
+          "rootClip": "hidden",
+          "text": "",
+          "width": 0
+        }
+      }
+    ],
+    "viewportEvidence": [
+      {
+        "documentWidth": 1425,
+        "glyphCount": 73,
+        "height": 22,
+        "root": [
+          296.328125,
+          94
+        ],
+        "rootClip": "hidden",
+        "textClip": "hidden",
+        "viewport": 1440
+      },
+      {
+        "documentWidth": 795,
+        "glyphCount": 73,
+        "height": 22,
+        "root": [
+          471,
+          94
+        ],
+        "rootClip": "hidden",
+        "textClip": "hidden",
+        "viewport": 810
+      },
+      {
+        "documentWidth": 375,
+        "glyphCount": 73,
+        "height": 22,
+        "root": [
+          291,
+          94
+        ],
+        "rootClip": "hidden",
+        "textClip": "hidden",
+        "viewport": 390
+      }
+    ],
+    "arrowFillEvidence": [
+      {
+        "fill": "rgb(255, 85, 56)"
+      },
+      {
+        "fill": "rgb(0, 255, 0)"
+      },
+      {
+        "fill": "rgb(244, 240, 232)"
+      }
+    ],
+    "errors": [],
+    "sourceFinalCapture": ".agent/proofs/rolling-framer-restored.png",
+    "localFinalCapture": ".agent/proofs/rolling-local-final.png",
+    "screenshots": [
+      ".agent/proofs/rolling-local-1440.png",
+      ".agent/proofs/rolling-local-810.png",
+      ".agent/proofs/rolling-local-390.png"
+    ],
+    "rawNative": ".agent/proofs/rolling-native-browser.json",
+    "rawLocal": ".agent/proofs/rolling-local-browser.json",
+    "finalProofReuse": "Canonical utility, three consumers, all seven configurations, icon registry and catalog source byte-identical to browser observation; only concurrent ImageParallaxExamples changed. Final full checks repeated."
+  },
+  "arrow": {
+    "externalId": "uii4O6Q2YMyHUZDfJBlW",
+    "classification": "LEGACY / UNUSED — NO MIGRATION REQUIRED",
+    "globalInstances": 362,
+    "moduleUses": 0,
+    "completeScopes": 33,
+    "iconNodes": 25,
+    "localCodeFiles": 2,
+    "existingGlyph": "testimonial-arrow",
+    "geometry": "Original native Material mask already in Icon.registry; unchanged.",
+    "standaloneModuleEquivalentProven": false,
+    "newRuntime": false,
+    "fill": "Existing Icon fill override verified"
+  },
+  "currentInventory": {
+    "total": 137,
+    "completed": 56,
+    "pending": 79,
+    "legacyUnused": 2,
+    "closedRuntimeFiles": 26,
+    "closedCatalogEntries": 26,
+    "observedCatalogEntries": 27,
+    "concurrent": "ImageParallax in progress, not certified or closed by this task."
+  },
+  "limits": [
+    "Sequential capture, not immutable Framer revision or synchronized timing/pixel-diff.",
+    "Native public controls not present in actual14uses inspected in original module branches; exercised locally without modifying source controls.",
+    "Physical touch/cross-engine/screen reader/physical OS preference switch untested; live MotionConfig policy exercised.",
+    "Reference snapshots are locally ignored and never imported by browser runtime.",
+    "Only accidental canvas position changed and restored; complete three-tree equality verified."
+  ],
+  "remainingWork": [],
+  "finalInputConfirmation": {
+    "at": "2026-10-07T14:05:30.184Z",
+    "inputCount": 131,
+    "digest": "b4a2ba637b43856c788d3cad5719d5bdb8bec3c21b74e7cf4946d3d9ad5f88f8",
+    "changed": []
+  },
+  "brain": {
+    "savedAndReread": true,
+    "note": "03_Components/rolling-text-arrow-alt.md",
+    "indexUpdated": true,
+    "sessionLogAppendedAndReread": true
+  },
+  "previousChecks": {
+    "inputDigest": "ed043bcbe2964b624b3836248a8e40f6c6650b198b9feff80c6b984f238a274b",
+    "reason": "Concurrent ImageParallaxExamples changed after first closure gate; all checks repeated. Utility/browser implementation inputs unchanged."
+  }
+}

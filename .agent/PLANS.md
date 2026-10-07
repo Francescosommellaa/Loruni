@@ -1,6 +1,25 @@
+Completed authorized ONE TOUCH slice: [Image Parallax](plans/2026-10-07-image-parallax.md). All11instances, shared media/scroll ownership; Grain/TextFitWidth/TextStagger excluded.
+
 # Work plans
 
-Current authorized layer: [Atom di contenuto e form](plans/2026-10-06-content-form-atoms.md). Prior cards remain closed; no subsequent layer authorized.
+Completed authorized ONE TOUCH slice: [Rolling Text / Arrow Right Alt](plans/2026-10-07-rolling-text-arrow-alt.md). Canonical utility consolidation and unused external-module audit only.
+
+Completed authorized ONE TOUCH slice: [FAQ Row](plans/2026-10-07-faq-row.md). FAQ Section and sibling orchestration excluded.
+
+Current authorized ONE TOUCH slice: [Image Reveal](plans/2026-10-07-image-reveal.md).
+Only the shared media reveal, extraction from Testimonials and catalog evidence.
+
+Completed authorized ONE TOUCH slice: [Load More](plans/2026-10-07-load-more.md). Controlled pagination UI only; parent owns requests, collections and placement.
+
+Completed documentary audit: [Inventory reconciliation](plans/2026-10-07-inventory-reconciliation.md).37 stale metadata corrected, source/runtime names mapped; no new migration.
+
+Resolved authorized audit: [BTN 2](plans/2026-10-07-btn-2.md) — legacy/unused, no migration required; no runtime change.
+
+Current authorized ONE TOUCH slice: [Main form button](plans/2026-10-06-main-form-button.md). Only this submit control and its controlled form-state integration.
+
+Current authorized ONE TOUCH slice: [Button](plans/2026-10-06-button.md). Only Nav/Button; subsequent interactive controls remain unauthorized.
+
+Completed authorized layer: [Atom di contenuto e form](plans/2026-10-06-content-form-atoms.md).34 records closed, shared APIs and browser/build evidence recorded. Prior cards remain closed; no subsequent layer authorized.
 
 Current authorized component slice: [Community Card](plans/2026-10-06-community-card.md), replacing legacy Blog Card terminology only for this implementation.
 

@@ -3,9 +3,10 @@ import { domMax, LazyMotion, m, useReducedMotion } from 'motion/react'
 import { motion as motionTokens, primitive } from '../styles/token'
 import { TestimonialsArrow } from './TestimonialsArrow'
 import { Icon } from './Icon'
+import { ImageReveal } from './ImageReveal'
 import './TestimonialsSection.css'
 
-import { defaultTestimonials, type TestimonialImage, type Testimonials, type TestimonialIndex } from './TestimonialsSection.data'
+import { defaultTestimonials, type Testimonials, type TestimonialIndex } from './TestimonialsSection.data'
 export type { Testimonial, TestimonialImage, Testimonials, TestimonialIndex } from './TestimonialsSection.data'
 
 export type TestimonialsSectionProps = {
@@ -30,7 +31,6 @@ const titleTransition = {
   restDelta: 0.001,
 }
 const wordDelay = Number.parseFloat(sourceTitleTransition.delay)
-const revealDelay = Number.parseFloat(primitive.motionDelay.value0Point6s.value)
 const bodyDelay = Number.parseFloat(primitive.motionDelay.value0Point2s.value)
 const desktopQuery = '(min-width: 810px)'
 function subscribeViewport(listener: () => void) {
@@ -40,25 +40,6 @@ function subscribeViewport(listener: () => void) {
 }
 function desktopSnapshot() { return window.matchMedia(desktopQuery).matches }
 function serverSnapshot() { return true }
-
-// This section's nested reveal: the cover retracts towards the left after 600ms.
-// It is not an independent port of the reusable Framer Image reveal component.
-function ImageReveal({ image }: { image: TestimonialImage }) {
-  const reducedMotion = useReducedMotion()
-  const data = typeof image === 'string' ? { src: image } : image
-  return (
-    <div className="loruni-testimonials__reveal">
-      <img alt="" {...data} decoding="async" className="loruni-testimonials__image" />
-      <m.div
-        className="loruni-testimonials__cover"
-        aria-hidden="true"
-        initial={reducedMotion ? false : { left: 0, width: '100%' }}
-        animate={{ left: '-1px', width: '1px' }}
-        transition={reducedMotion ? { duration: 0 } : { ...transition, delay: revealDelay }}
-      />
-    </div>
-  )
-}
 
 export function TestimonialsSection({ testimonials = defaultTestimonials, initialIndex = 0, className, style }: TestimonialsSectionProps) {
   const desktop = useSyncExternalStore(subscribeViewport, desktopSnapshot, serverSnapshot)

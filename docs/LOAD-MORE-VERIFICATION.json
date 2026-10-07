@@ -1,0 +1,187 @@
+{
+  "verifiedAt": "2026-10-07",
+  "source": {
+    "project": "https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6",
+    "component": "hZwon9KVq",
+    "capture": "docs/framer/load-more-source.json",
+    "readOnly": true,
+    "variants": {
+      "Default": "VazIGZNPi",
+      "Loading": "UyEuHoHR4",
+      "Hidden": "YCl0PsQUj"
+    },
+    "instances": [
+      {
+        "page": "/eventi",
+        "breakpoint": "Desktop",
+        "id": "dZSnalprj"
+      },
+      {
+        "page": "/eventi",
+        "breakpoint": "Tablet",
+        "id": "tZGO1nSYedZSnalprj"
+      },
+      {
+        "page": "/eventi",
+        "breakpoint": "Phone",
+        "id": "vzw524_Q6dZSnalprj"
+      },
+      {
+        "page": "/community",
+        "breakpoint": "Desktop",
+        "id": "joSPJUqsV"
+      },
+      {
+        "page": "/community",
+        "breakpoint": "Tablet",
+        "id": "Iu0OsQtQKjoSPJUqsV"
+      },
+      {
+        "page": "/community",
+        "breakpoint": "Phone",
+        "id": "ESboSSM4ujoSPJUqsV"
+      }
+    ]
+  },
+  "api": {
+    "loading": "optional boolean default false",
+    "hasMore": "required boolean",
+    "onLoadMore": "required ()=>void",
+    "nativeAttributes": "forwarded except owned content/type/disabled/click/busy/label"
+  },
+  "stateModel": {
+    "default": "hasMore && !loading",
+    "loading": "hasMore && loading",
+    "hidden": "!hasMore: null"
+  },
+  "reuse": [
+    "Icon shared private spinner renderer / load-more-spinner configuration",
+    "Functional16",
+    "generated component tokens",
+    "global focus-visible",
+    "existing reduced-motion policy"
+  ],
+  "checks": {
+    "typecheck": "PASS: pnpm typecheck",
+    "lint": "PASS: pnpm lint",
+    "build": "PASS: pnpm build",
+    "modules": 521,
+    "jsKB": 673.43,
+    "jsGzipKB": 166.23,
+    "cssKB": 159.9,
+    "cssGzipKB": 18.93,
+    "buildWarning": "Existing chunk >500 kB warning preserved",
+    "frontendSuite": "not-added-not-run",
+    "browserConsole": "no local warn/error observed"
+  },
+  "browser": {
+    "widths": [
+      1200,
+      810,
+      390
+    ],
+    "sourceDefault": {
+      "width": 173,
+      "height": 40,
+      "textWidth": 116.78125,
+      "textHeight": 17.59375,
+      "font": "Funnel Sans",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "lineHeight": 17.6,
+      "tracking": "normal",
+      "background": "rgb(244, 240, 232)",
+      "textColor": "rgb(26, 25, 23)",
+      "gap": 10
+    },
+    "sourceLoading": {
+      "width": 173,
+      "height": 40,
+      "spinner": [
+        20,
+        20
+      ],
+      "conic": [
+        20,
+        20
+      ],
+      "round": [
+        2,
+        2
+      ],
+      "rotation": "changing matrices observed",
+      "sourceConicSerializedSize": [
+        20,
+        11
+      ],
+      "sourceConicRuntimeSize": [
+        20,
+        20
+      ]
+    },
+    "local": "same button/text/spinner metrics at all widths; 8 visible buttons and one Hidden example",
+    "interactions": [
+      "source native click/Enter/Space and focus-visible observed in isolated Default preview",
+      "source hover showed no background/transform/opacity change",
+      "local double-click => one callback and loading disabled/busy spinner-only",
+      "forced disabled click => count remains 1",
+      "local Enter then retry then Space => callback counts 2 then 3",
+      "parent completion hasMore=false => zero button DOM and wrapper height 0",
+      "reset restores Default; Phone click enters Loading"
+    ],
+    "focus": {
+      "local": "2px solid currentColor / offset4 global focus-visible",
+      "source": "outline suppressed; accessible global fallback intentionally preserved"
+    },
+    "sourceConsumerPreview": "Eventi and Community hide Load More at all 3 widths with current exhausted content",
+    "sharedPrimitiveRegression": "form-spinner runtime remains24x24 at all 3 widths; shared source files unchanged",
+    "comparison": "visual inspection and DOM metrics; no automated pixel-diff",
+    "finalSnapshotRecheck": "1200/810/390 geometry/spinner identical; double-click count1/disabled/busy, Hidden DOM0height0; Enter/Space count2 and focus-visible2px; no local warnings/errors; viewport reset"
+  },
+  "revision": "cf680410bf6dc8d3382a1816e49501239027b9bb",
+  "inputDigest": "6d5a54d5b1330c31312548e043f3945cccade5819de6cbf6798356e56d03f780",
+  "inputCount": 118,
+  "inputProof": ".agent/proofs/load-more-build-inputs.json",
+  "digestCapture": "final capture after repeated successful gates and concurrent ImageReveal integration; compared again at closure",
+  "remainingWork": [],
+  "limits": [
+    "Physical touch and held pointer-down not exercised with available browser input",
+    "No live OS reduced-motion toggle, screen-reader, cross-engine or exact-frame timing proof",
+    "Source next-page request unavailable with exhausted current content; no source content changes",
+    "Consumer collection/request/placement remain parent responsibilities; no product page or CMS backend migration",
+    "Source capture is locally ignored and source reads are sequential, not an atomic Framer revision"
+  ],
+  "concurrentChanges": {
+    "files": [
+      "src/components/ImageFill.tsx",
+      "src/components/ImageReveal.tsx",
+      "src/components/ImageReveal.css",
+      "src/components/TestimonialsSection.tsx",
+      "src/components/TestimonialsSection.css",
+      "src/components/TestimonialsSection.data.ts",
+      "src/pages/design-system/ImageRevealExamples.tsx",
+      "src/pages/design-system/componentExamples.ts"
+    ],
+    "preserved": true,
+    "taskFix": "One null-safe fallback on the concurrent catalog ImageRevealExamples image index was required to make final typecheck/build pass; no ImageReveal behavior migration claimed.",
+    "catalogEntryCount": 25,
+    "runtimeComponentFileCount": 25
+  },
+  "finalComparison": {
+    "capturedAt": "2026-10-07T07:58:15.402Z",
+    "unchangedInputs": 118,
+    "digest": "6d5a54d5b1330c31312548e043f3945cccade5819de6cbf6798356e56d03f780",
+    "sharedPrimitiveFilesUnchanged": [
+      "src/components/Icon.tsx",
+      "src/components/Icon.css",
+      "src/components/Icon.registry.ts",
+      "src/components/Button.tsx",
+      "src/components/MainFormButton.tsx",
+      "src/components/RollingText.tsx",
+      "src/styles/token.ts",
+      "src/styles/token.css",
+      "src/styles/base.css"
+    ],
+    "diffWhitespace": "git diff --check PASS; CRLF informational warnings only"
+  }
+}

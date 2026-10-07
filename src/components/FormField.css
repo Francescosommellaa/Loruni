@@ -51,11 +51,11 @@
   appearance: none;
 }
 .loruni-form-control__input::placeholder { color: var(--color-neutral-950); opacity: 1; }
-.loruni-form-control[data-control='textarea'] { height: auto; min-height: var(--source-min-height-value100); padding: 0; }
+.loruni-form-control[data-control='textarea'] { height: auto; min-height: var(--source-height-value100px); padding: 0; }
 .loruni-form-control[data-sizing='fixed'] { height: var(--source-height-value100px); }
 .loruni-form-control textarea {
   height: var(--source-height-value100px);
-  min-height: var(--source-min-height-value100);
+  min-height: var(--source-height-value100px);
   padding: var(--space-12);
   resize: vertical;
 }

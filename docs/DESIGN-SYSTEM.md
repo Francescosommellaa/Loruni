@@ -38,3 +38,28 @@ CSS della pagina isolato in DesignSystemPage.css; dimensioni della documentazion
 Rispetta le correzioni utente: tre famiglie, nessun UUID nel runtime, nessuna suite aggiunta o eseguita per questa rifinitura. Prove correnti in [DESIGN-SYSTEM-REFINEMENT.md](DESIGN-SYSTEM-REFINEMENT.md). Verifica precedente della fondazione in [FOUNDATION-VERIFICATION.md](FOUNDATION-VERIFICATION.md); [DESIGN-SYSTEM-VERIFICATION.md](DESIGN-SYSTEM-VERIFICATION.md) documenta la creazione iniziale. Fonte token e limiti in [TOKENS.md](TOKENS.md).
 
 Community Card: four current Community CMS photos with H2/H3, content/heading controls and native empty-image default. Actual component in CommunityCard.tsx, example data in CommunityCardExamples.data.ts; responsive grid is catalog-only. Legacy Blog Card naming appears only in provenance/source tokens, not the new API.
+
+Button: fifteen real examples at #ds-component-button cover three public variants, nine Home/404/Event configurations, editable text/link/newTab, external new tab and missing href. Source/API/interaction evidence is in BUTTON.md and BUTTON-VERIFICATION.json.
+
+Content/form atoms add eight real catalog entries with shared form configurations, Nav variants/callback/link/reduced controls, seven headline records, five Event content choices, four Community details and conditional visibility, four stats, label wrapping and source media. See CONTENT-FORM-ATOMS.md.
+
+Main form button: real five-state auto/fill matrices and native form lifecycle example, with existing FormField and production mapping/submit guard. Documentation completion controls never submit externally. See MAIN-FORM-BUTTON.md.
+
+
+Load More adds nine real examples at #ds-component-load-more: Default parent lifecycle, Loading, Hidden and six Eventi/Community configurations. Catalog parent completion/retry/exhaustion controls are separate from the production pagination UI. See LOAD-MORE.md.
+
+
+Image Reveal adds four real examples at #ds-component-image-reveal: source260×256, fluid Testimonials/Neutral50, Eventi/Neutral950 and empty media. Catalog-only controls exercise remount, image update, retained visibility and live reduced policy; responsive descriptor uses captured source candidates. See IMAGE-REVEAL.md.
+
+
+FAQ Row adds eleven real examples at #ds-component-faq-row: controlled toggle/Click/reduced policy and measured widths, Opened/Closed, all eight source slots (five populated, three consumer-hidden). Fixtures and document controls remain outside the product row. See FAQ-ROW.md.
+
+
+### Rolling Text / Arrow Right Alt — closed 2026-10-07
+
+Rolling Text has the seven real font configurations plus one interactive canonical-utility example for all tags, transforms, reverse, stagger, padding, short/long text and live reduced policy. Icon Engine adds an existing testimonial-arrow fill specimen; no orphan external-module entry or duplicate icon implementation. [Contract and evidence](ROLLING-TEXT.md).
+
+
+### Image Parallax — 2026-10-07
+
+Seven real examples at #ds-component-image-parallax: page92vh Y30, Service responsive X−50/Y50, Our Story640px Y50/660px X−50, controls for both axes, image/crop/decorations/reduced/unmount and full-width comparison. Fixture /design-system?fixture=image-parallax reuses the same examples; only this documentation parent owns geometry and breakpoints. See IMAGE-PARALLAX.md and IMAGE-PARALLAX-VERIFICATION.json.

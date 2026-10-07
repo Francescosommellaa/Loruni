@@ -1,0 +1,2581 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-06",
+  "layer": "Atom di contenuto e form",
+  "status": "closed",
+  "source": {
+    "project": "https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6",
+    "readOnly": true,
+    "session": 1,
+    "captures": [
+      {
+        "file": "docs/framer/content-form-atoms-source.initial.json",
+        "sha256": "0a7fece9f1e2c0a14463787daf912bb0875da6df0d1a1f4c80491179434efbe2"
+      },
+      {
+        "file": "docs/framer/content-form-atoms-patterns.json",
+        "sha256": "ba51c28252dd2342a5b5d4906be1343b587d329d0c8b18f99cc56c30094f11ef"
+      },
+      {
+        "file": "docs/framer/content-form-atoms-additional.json",
+        "sha256": "e4abb9abadaaf2213fd87213fdb22a7560d9cbf64db246b5cb9a3fb315b438d9"
+      },
+      {
+        "file": "docs/framer/content-form-atoms-cms.reference.json",
+        "sha256": "6cd2b86a63ceaac4243d4eefe0f19f1b7128d12a247be97fb72804e16194baa9"
+      }
+    ],
+    "scope": "All 48 Nav instances; both contact/Template fields and groups; 105 targeted pattern roots across three breakpoints plus Community detail; five Eventi and four Community content choices.",
+    "currentSourceResolution": "Published Community details/media were older; current editor canvas and project preview used for those consumers."
+  },
+  "revision": {
+    "head": "cf680410bf6dc8d3382a1816e49501239027b9bb",
+    "dirtyWorkspace": true,
+    "inputs": {
+      "digest": "d4db28e7c46ba0ae3b760cf1347d4c921475bdd6fce682144d3dac612349cd8b",
+      "method": "SHA256 of sorted path NUL file SHA256 LF records",
+      "entries": [
+        {
+          "file": "docs/framer/geometry-source.json",
+          "sha256": "ce95f507365cc3dc0b659e5e59ef023b7aaa838dd2a6776096a4c4e6571c19bb"
+        },
+        {
+          "file": "docs/framer/token-policy.json",
+          "sha256": "ffeb47478ea041d55c9f10445107d38c961bdd6e3fc31f71f22214507ac3f67e"
+        },
+        {
+          "file": "docs/framer/token-source.json",
+          "sha256": "91c309cbcbc998913c404d0c032e601a777ffe313b3455a804274e9ad5bd4012"
+        },
+        {
+          "file": "index.html",
+          "sha256": "44f13097dd232672c98b796a7215ea16e4992481803b8648aaecfb144ee9b7e0"
+        },
+        {
+          "file": "package.json",
+          "sha256": "cc27f65a7f9c38e35273b32581e362cb22d22883eaf76faf9053c086d461aafa"
+        },
+        {
+          "file": "pnpm-lock.yaml",
+          "sha256": "2edc4414d3a4a56374025c4b73b1b91b6f72be87cc820ca7683cfd39d550c90c"
+        },
+        {
+          "file": "public/fonts/funnel-display-600-normal.woff2",
+          "sha256": "0eb50930cbadee5871422774e228fe11d0d2fbcf53c69e52a59fd9fd1f1a0d3c"
+        },
+        {
+          "file": "public/fonts/funnel-display-800-normal.woff2",
+          "sha256": "76d9900b48ce832f407756ef281d22d2873dd23d6340b06df59b6ff5d71612e4"
+        },
+        {
+          "file": "public/fonts/funnel-display-OFL.txt",
+          "sha256": "a32303f6ea3542927121212a9e4f3fe3548741e6d448d9dc6f29e97cf50102e6"
+        },
+        {
+          "file": "public/fonts/funnel-sans-400-italic.woff2",
+          "sha256": "e5d6074b15b7672d491704d3ba40af0cb2e20b1c57c1bf99de0783cbfaf26daa"
+        },
+        {
+          "file": "public/fonts/funnel-sans-400-normal.woff2",
+          "sha256": "89eb0ff8e0896d5cc9c91fd43c29828da93a9517955129fe5f390759afac9ac7"
+        },
+        {
+          "file": "public/fonts/funnel-sans-600-italic.woff2",
+          "sha256": "87538f38352e86c372ad3301bc4ac0626398c553e29afca74dd3a50b2dbb5dd5"
+        },
+        {
+          "file": "public/fonts/funnel-sans-600-normal.woff2",
+          "sha256": "53c595beb5ae285bbba974362953b9f823c697753200e183380bbeab250f3192"
+        },
+        {
+          "file": "public/fonts/funnel-sans-700-italic.woff2",
+          "sha256": "aa3d4735dc5c6d421d98251035ff6794133ade221b3586cfce2c29f063e47048"
+        },
+        {
+          "file": "public/fonts/funnel-sans-700-normal.woff2",
+          "sha256": "a5326e42e54c221a0b482b21137ad8217a48295ba4397e764362f192e8f027b5"
+        },
+        {
+          "file": "public/fonts/funnel-sans-800-italic.woff2",
+          "sha256": "b69f6f2eef6065ff3f5cc5634a7e7eb08721c8bba0207fe8e9594cb01cd7884a"
+        },
+        {
+          "file": "public/fonts/funnel-sans-800-normal.woff2",
+          "sha256": "b9063a30b7d3f94b6a78e443b9567a4b4befc6d7791ab201b2839b2b0b966298"
+        },
+        {
+          "file": "public/fonts/funnel-sans-OFL.txt",
+          "sha256": "a32303f6ea3542927121212a9e4f3fe3548741e6d448d9dc6f29e97cf50102e6"
+        },
+        {
+          "file": "public/fonts/ibm-plex-sans-600-italic.woff2",
+          "sha256": "b5ca90658b5e340bae097b15084047194bc69881f0a36aba82cfb92203c2fd79"
+        },
+        {
+          "file": "public/fonts/ibm-plex-sans-600-normal.woff2",
+          "sha256": "48b4a50176dbc8389ab3db4824289692fbed1863541c427f89f4ca500d3f1ca8"
+        },
+        {
+          "file": "public/fonts/ibm-plex-sans-OFL.txt",
+          "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+        },
+        {
+          "file": "scripts/framer/capture-geometry.js",
+          "sha256": "253687f744aecf90c738ef9b81a199305401b8bfe296ca077bf4bc744371f87f"
+        },
+        {
+          "file": "scripts/framer/capture-inventory.ps1",
+          "sha256": "4a4dd03b47dda79e2c10eb471244f15fd7486543dd19cc0eef3527bafb21116b"
+        },
+        {
+          "file": "scripts/framer/design-audit.mjs",
+          "sha256": "6a5e896a2e38b308e9f163b89ff1bbca150ccc23be2b2f2de0b070dc602bae8e"
+        },
+        {
+          "file": "scripts/framer/export-inventory.js",
+          "sha256": "5e5c3243050253246515b458dc7879c870c154007c35050b8ce85607c6a58756"
+        },
+        {
+          "file": "scripts/framer/geometry.mjs",
+          "sha256": "e9fa7d1cabf9bc61a339f8cc23054107716012029cb8880f0936c90fa8da7b5f"
+        },
+        {
+          "file": "scripts/framer/hardcodes.mjs",
+          "sha256": "39cdea67d610b62e23d3fd0089e312fac6028ed81f4548862760d1a35338deb1"
+        },
+        {
+          "file": "scripts/framer/model.mjs",
+          "sha256": "fa4b6be1564c78080531c8db1d233be0e0b232f8c06410112991a3ded704bee8"
+        },
+        {
+          "file": "scripts/framer/report.mjs",
+          "sha256": "3eb213db96b36302c12e13eb6e1d69ede25d3a46c73c6d48133f7fd26244dfac"
+        },
+        {
+          "file": "scripts/framer/tokens.mjs",
+          "sha256": "b0e35826da4bd95c2d6303be6c4158c3d14d3081e9f2e528f8b079fd5bb6e984"
+        },
+        {
+          "file": "src/app/App.css",
+          "sha256": "1033236985b6266a919f3cef583c58ccde23600a196e138f316653ab54f258e3"
+        },
+        {
+          "file": "src/app/App.tsx",
+          "sha256": "b07169fa9f0773155a3f39a86c9b0c1e0e2275f9a71fdff8b006e19cc25424f7"
+        },
+        {
+          "file": "src/components/ArrowForward.tsx",
+          "sha256": "d1fdae923c6446798a358f4aa6043b80be8e05a8a04e1d24c1302ccd899875d1"
+        },
+        {
+          "file": "src/components/Button.css",
+          "sha256": "4a7683f35ba05a67b5df45bbdeaa62335fb648412a099407b1606dacb6d0c5df"
+        },
+        {
+          "file": "src/components/Button.tsx",
+          "sha256": "05a6363b534c504a072544b39c78f26b2abd6810a0112e00a7e1cd2b45724351"
+        },
+        {
+          "file": "src/components/CategoryLabel.css",
+          "sha256": "40ff09fe5781eac06c476790288df8cde41c37dd309db09ec85976d48a1c9889"
+        },
+        {
+          "file": "src/components/CategoryLabel.tsx",
+          "sha256": "2bf7640c6fc5a22226a94ee63d2fd7d6df7826c9471709aaa751d83f1068f25f"
+        },
+        {
+          "file": "src/components/CategoryLabelGroup.css",
+          "sha256": "05bc1cb2814e8fe536605bda0ada26f03a15acc275b161ea9cf8c035ffb8dedf"
+        },
+        {
+          "file": "src/components/CategoryLabelGroup.tsx",
+          "sha256": "5671077cf5a12fdcf52acbcc1b6899465914686bdc3c66ef08878d0b7960e83a"
+        },
+        {
+          "file": "src/components/CircularImage.css",
+          "sha256": "2bc4c6ca552a588a6cea4f65c5c13337169adac9d30cd91782c0178b031cb1c5"
+        },
+        {
+          "file": "src/components/CircularImage.tsx",
+          "sha256": "544fc4f920ec56a224a192ef15c1f112e64e7ef0eef6d154743943d133ae1ce7"
+        },
+        {
+          "file": "src/components/CommunityCard.css",
+          "sha256": "8a1d35dd4df47902f64b653947b2a8818a2b4e88772078ff2823565f5536e1bc"
+        },
+        {
+          "file": "src/components/CommunityCard.tsx",
+          "sha256": "7c0c812a0a179c264de40a0d10dc2dec823ed0db4f7a2e94ba146d19473647a2"
+        },
+        {
+          "file": "src/components/CommunityDetails.css",
+          "sha256": "51ebd26e6af435a528012c1ada49ac7a48afe0b3024fca204c15900872b26d7f"
+        },
+        {
+          "file": "src/components/CommunityDetails.tsx",
+          "sha256": "2a03e5b630b2ae9da8d7f51f3522b3b13e9655d3b3a4d2b0d35a8be68e80dc1e"
+        },
+        {
+          "file": "src/components/ContentHeadline.css",
+          "sha256": "0a49ede2cf8626290d668e26079086ada805568d3ca58977dd626f2d1871f71d"
+        },
+        {
+          "file": "src/components/ContentHeadline.tsx",
+          "sha256": "6c1880e64268d97bd319efff784474f65e20132cb7385c57441c83dacaa53000"
+        },
+        {
+          "file": "src/components/Divider.css",
+          "sha256": "17928efb08cc2f285f5d7f1ba224646964b6cc6fe1509d4eb001b897af03973a"
+        },
+        {
+          "file": "src/components/Divider.tsx",
+          "sha256": "50c1cd194894765fc995eeba6d56b5dc445b87090c5c4cd314d2f2cf92256a83"
+        },
+        {
+          "file": "src/components/FaqIcon.css",
+          "sha256": "a8959dc96aa4f462abcdfdea9b15d64cd055613ad3a16cc0b49de4dc0b93a7a9"
+        },
+        {
+          "file": "src/components/FaqIcon.tsx",
+          "sha256": "cc3a4139ceef68bc1e347a9856525e86f8f666f044a9d2d9bb5334d62cfea9f4"
+        },
+        {
+          "file": "src/components/FormField.css",
+          "sha256": "9966f4a79bcc468cd5bfa63d93d8983cbcff18f0d3939bdecfaef7e81dec40e2"
+        },
+        {
+          "file": "src/components/FormField.data.ts",
+          "sha256": "d424a8f3b5eeb69024c6c0818e51acb41245b4b8615e1b9eb17d8211b45cc6bf"
+        },
+        {
+          "file": "src/components/FormField.tsx",
+          "sha256": "5e2ecf168670d75866cf7c3b79f00254f1af79fca1e7191aa380250d9687a4d7"
+        },
+        {
+          "file": "src/components/Icon.css",
+          "sha256": "960e58c118f8e2f4f629b33ad6ca2d8185f0b6ada194d91f00572facd6d71a95"
+        },
+        {
+          "file": "src/components/Icon.registry.ts",
+          "sha256": "9663485bfc2536f3de500f6b70afe9d59c0a8da2debfb034c15c404ccec4982c"
+        },
+        {
+          "file": "src/components/Icon.tsx",
+          "sha256": "75e884f5f6922e97d9afd34ced0b4b0fe1846f87d8d7dda08e3e8fe0e4bce8dd"
+        },
+        {
+          "file": "src/components/ImageFill.css",
+          "sha256": "41b9b7eb60764c96273e7287a3b73f1c8f2e1ac215c5c0ddf825d46891e89829"
+        },
+        {
+          "file": "src/components/ImageFill.tsx",
+          "sha256": "0b58e3ebd72d3a3243cb074a3ce6571f72c9255f24ca07ccc2633dfb1b2d3b5e"
+        },
+        {
+          "file": "src/components/Label.css",
+          "sha256": "2111cf9c19f7f871bf177b998073e0398a0d8bfdf78d68509ba9429b0f126f31"
+        },
+        {
+          "file": "src/components/Label.tsx",
+          "sha256": "1059191c8a44e0c4566c2b215314e52cc575db31aa24b30d4576a436ce12d754"
+        },
+        {
+          "file": "src/components/MainFormButton.css",
+          "sha256": "6f91c5fe23aacf50166b9122a3df37d01d988fb1c941a78a0b242a629ba39cf9"
+        },
+        {
+          "file": "src/components/MainFormButton.state.ts",
+          "sha256": "b01c7c682ed5d9c05222c238ebb35ae223bd18ee4df6a422174f7f88723673a8"
+        },
+        {
+          "file": "src/components/MainFormButton.tsx",
+          "sha256": "01d7651abf53548176774911c9ad3734255e38145096aec7117912bd5c64a1f6"
+        },
+        {
+          "file": "src/components/NavItem.css",
+          "sha256": "58dbef95a795f25586048d6c396e114e3ffff8552db61948d00a0a61fa8b5371"
+        },
+        {
+          "file": "src/components/NavItem.tsx",
+          "sha256": "9ed2cd7cc67c3df005214ccf91559de34fece7b43798bf217d3e67112cef1755"
+        },
+        {
+          "file": "src/components/OurStoryCard.css",
+          "sha256": "2a3a2558f3d7098fdc52d5a1c03e649caaf55092456a4348a8925b4d2d9926b7"
+        },
+        {
+          "file": "src/components/OurStoryCard.tsx",
+          "sha256": "2e7897abe58d9e29d932673bb8f2c1665a19bdacc20a9e0c89a956004c076636"
+        },
+        {
+          "file": "src/components/ProcessRow.css",
+          "sha256": "9b87dca232674c6dde95b4bbe19fce62e5ca9efef4fdbe965618719759994611"
+        },
+        {
+          "file": "src/components/ProcessRow.tsx",
+          "sha256": "9f954cb2ef02800be572aa1593930cf53f4b3dbd087a2153242c4b3b567f0a21"
+        },
+        {
+          "file": "src/components/RollingText.css",
+          "sha256": "dcfb66a6566f40a83b40b8bc66a86c20e3dc00a003a4b1b07a87e55cf91b5dbd"
+        },
+        {
+          "file": "src/components/RollingText.tsx",
+          "sha256": "5f95f4704dc66f53fdc4aa5e14765dfb7f38372b21691b9773bae5ea3479273e"
+        },
+        {
+          "file": "src/components/SplitContent.css",
+          "sha256": "b5ea3ab3a0dab8a9a80a0a8d760dec00c9e9ee2a2d8da3525a637c4dae563dad"
+        },
+        {
+          "file": "src/components/SplitContent.tsx",
+          "sha256": "3c98d731ea727332bb55b3215f235d8c22d33714c2e77ff1f5733a83ef18dc88"
+        },
+        {
+          "file": "src/components/StatRow.css",
+          "sha256": "c0996048294dfd66b52dcafe545d283436dca89af5452c0c6dddabd35827b415"
+        },
+        {
+          "file": "src/components/StatRow.tsx",
+          "sha256": "877c43a3ca718b88127389a8f69d0fe49d03c55fc2de570c86181ffa083d3f16"
+        },
+        {
+          "file": "src/components/TestimonialsArrow.css",
+          "sha256": "b44ffa8a215a340ae82b063c41e380f1f5fbcf015f535f7371c04a4258af18ab"
+        },
+        {
+          "file": "src/components/TestimonialsArrow.tsx",
+          "sha256": "0acda604a7070b7527bad7ebb98747b46dedf3fe8be98e52e407792dc4bb7eb1"
+        },
+        {
+          "file": "src/components/TestimonialsSection.css",
+          "sha256": "ce09b12960e63d5e4433340f911154c6fb59169a5971b8e2968db3a174dc974e"
+        },
+        {
+          "file": "src/components/TestimonialsSection.data.ts",
+          "sha256": "438503e6a9ceed516eed936b4574ee1b6eca4928ed56e5c0f79947f3946d6c09"
+        },
+        {
+          "file": "src/components/TestimonialsSection.tsx",
+          "sha256": "6ba28e13a09204020119e160067b0706029aae03ccd61fd2c3bc86a8dc4a5419"
+        },
+        {
+          "file": "src/main.tsx",
+          "sha256": "283d218fb37551de93f4be090329390b2d6f4dea093e4021b866c264b21b0934"
+        },
+        {
+          "file": "src/motion/useLineReveal.ts",
+          "sha256": "8abeb9d67508956c954a835c133e6e33c46feac7eac4189ac41f115394780413"
+        },
+        {
+          "file": "src/motion/useReducedMotionPreference.ts",
+          "sha256": "95fa2412ca6cc27c936fe512403469ff0f42bcb0585e67fa771a5f4c557b6acc"
+        },
+        {
+          "file": "src/pages/design-system/ButtonExamples.tsx",
+          "sha256": "e6a5380b0602dc3db49b29add541256c8c8ac9cf2467f6894d93b61d8fd98bcf"
+        },
+        {
+          "file": "src/pages/design-system/CatalogTools.tsx",
+          "sha256": "62cbabae45a7d6d0be24e587e766b68adfeb009a83b8aff5c1e38c3638d8065e"
+        },
+        {
+          "file": "src/pages/design-system/CommunityCardExamples.css",
+          "sha256": "7c3fa7d0d45e71f9d88652571619531e122e6a1a7861b3ed611260241b759901"
+        },
+        {
+          "file": "src/pages/design-system/CommunityCardExamples.data.ts",
+          "sha256": "90efc015eacc30b7116a0400594ed61d2a4fc11b525bc629c16d890f63558ecf"
+        },
+        {
+          "file": "src/pages/design-system/CommunityCardExamples.tsx",
+          "sha256": "af9667cbf2d644e7daf3ad77fd40e479a2106f2da8ddb1eb38603619f524895e"
+        },
+        {
+          "file": "src/pages/design-system/ContentFormAtomExamples.css",
+          "sha256": "ae880aebda1c52a5e0b4d98b94fe8f59b8ecec992203d7843c991a36343a255d"
+        },
+        {
+          "file": "src/pages/design-system/ContentFormAtomExamples.data.ts",
+          "sha256": "36c123bd7f43e61bbd071925352ba45c4c86ec6d15bb549ed0c9cecff1ad4872"
+        },
+        {
+          "file": "src/pages/design-system/ContentFormAtomExamples.tsx",
+          "sha256": "a912a3c6d3964e574088b7a0b6bd484ddb17ff85adb614b2d044003d774857c7"
+        },
+        {
+          "file": "src/pages/design-system/DesignSystemPage.css",
+          "sha256": "0c2ac3169b248bf8c624c60e018e9683c7e935c16cca07a493ba1ae9c9ac966d"
+        },
+        {
+          "file": "src/pages/design-system/DesignSystemPage.tsx",
+          "sha256": "51a5910e8b87baa2abb646a4695f24fd5f5a8c27b8673f7a4bd801eab3afd153"
+        },
+        {
+          "file": "src/pages/design-system/GeometryCatalog.tsx",
+          "sha256": "ce18efce4324df91dd310710b5a67cabfc3738bc169a566145d9f96b3e98b678"
+        },
+        {
+          "file": "src/pages/design-system/MainFormButtonExamples.tsx",
+          "sha256": "cb7e67584a14b1af7fc0b88b49c2c20060046bc6440553ec8af34c8c4f7f2b36"
+        },
+        {
+          "file": "src/pages/design-system/OurStoryCardExamples.css",
+          "sha256": "15db3b827da4670d97daedb0f28e62b7f67b1716deee12a168d05018aaf1f8bd"
+        },
+        {
+          "file": "src/pages/design-system/OurStoryCardExamples.tsx",
+          "sha256": "81ce96a0fec496093ddbf85f02daf42df4900b6759ab03018c3e67c7992d4e9b"
+        },
+        {
+          "file": "src/pages/design-system/ProcessRowExamples.css",
+          "sha256": "ce05b873a63348b1eea2cf9f4dc5fa6aa6623b835b7d3da1454ae723554f72a6"
+        },
+        {
+          "file": "src/pages/design-system/ProcessRowExamples.tsx",
+          "sha256": "757effb67d5de7dd6957b626b11a95334abcc075c98c4175e0a52585a307ab62"
+        },
+        {
+          "file": "src/pages/design-system/SourceCatalog.tsx",
+          "sha256": "be64f60645c6900702f8fe66392d427064e75428b14adb8da38079033f082aeb"
+        },
+        {
+          "file": "src/pages/design-system/catalogIndex.ts",
+          "sha256": "eaec1f0cd3de932ebab62013536ed8c08a316169effa728676be176218ffc666"
+        },
+        {
+          "file": "src/pages/design-system/componentExamples.ts",
+          "sha256": "482a0f9093af16dc35bc0e4ff5ab829a43fa846c0b70c2a139be56bf9c194c7c"
+        },
+        {
+          "file": "src/styles/base.css",
+          "sha256": "8407467005167e85a2d55c26019d6ec1b236c26eac9b1a255da1f61458c70f69"
+        },
+        {
+          "file": "src/styles/fonts.css",
+          "sha256": "edacce7d8c78f94e9e1637b83864f029bc1f2148232da624bc8d7b81b67b8e69"
+        },
+        {
+          "file": "src/styles/geometry.css",
+          "sha256": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b"
+        },
+        {
+          "file": "src/styles/geometry.ts",
+          "sha256": "0dc588e40f4f38af4a433477ee48030097eee212b0eb675c27c55cf71767d515"
+        },
+        {
+          "file": "src/styles/token.css",
+          "sha256": "fb153ef97d0a931254d40b8c98fcefa35160bc39a87da1633870276009db85fd"
+        },
+        {
+          "file": "src/styles/token.ts",
+          "sha256": "badd46b62fdbc1e4ff716712335952736092113b0658a6d9de3406cc75725876"
+        },
+        {
+          "file": "src/styles/tokens.css",
+          "sha256": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b"
+        },
+        {
+          "file": "src/styles/tokens.ts",
+          "sha256": "332968b0a8e8a69b2afad954061eb9896d9133e4548d44fc5c7c956c3e4511c0"
+        },
+        {
+          "file": "tsconfig.app.json",
+          "sha256": "a3379db7120040b34b19981d958c14f6ef3b48268cc596df4fab84829bb7f286"
+        },
+        {
+          "file": "tsconfig.json",
+          "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+        },
+        {
+          "file": "tsconfig.node.json",
+          "sha256": "8e04d5d603fdaa9eac3e5d5b0f98f0dc1696ee2fae2852470dcd23e42e798d82"
+        },
+        {
+          "file": "vite.config.ts",
+          "sha256": "e1eefd0ed1639c88d1213884ef760516884db9e168190e223fee6b063ad3e088"
+        }
+      ],
+      "beforeAfterIdentical": true
+    },
+    "implementation": {
+      "digest": "e1d07865d2eeeb47946840abfcaccf686b1768375b2c02497c2f271b3ea8119e",
+      "entries": [
+        {
+          "file": "src/components/CategoryLabelGroup.css",
+          "sha256": "05bc1cb2814e8fe536605bda0ada26f03a15acc275b161ea9cf8c035ffb8dedf"
+        },
+        {
+          "file": "src/components/CategoryLabelGroup.tsx",
+          "sha256": "5671077cf5a12fdcf52acbcc1b6899465914686bdc3c66ef08878d0b7960e83a"
+        },
+        {
+          "file": "src/components/CommunityDetails.css",
+          "sha256": "51ebd26e6af435a528012c1ada49ac7a48afe0b3024fca204c15900872b26d7f"
+        },
+        {
+          "file": "src/components/CommunityDetails.tsx",
+          "sha256": "2a03e5b630b2ae9da8d7f51f3522b3b13e9655d3b3a4d2b0d35a8be68e80dc1e"
+        },
+        {
+          "file": "src/components/ContentHeadline.css",
+          "sha256": "0a49ede2cf8626290d668e26079086ada805568d3ca58977dd626f2d1871f71d"
+        },
+        {
+          "file": "src/components/ContentHeadline.tsx",
+          "sha256": "6c1880e64268d97bd319efff784474f65e20132cb7385c57441c83dacaa53000"
+        },
+        {
+          "file": "src/components/FormField.css",
+          "sha256": "9966f4a79bcc468cd5bfa63d93d8983cbcff18f0d3939bdecfaef7e81dec40e2"
+        },
+        {
+          "file": "src/components/FormField.data.ts",
+          "sha256": "d424a8f3b5eeb69024c6c0818e51acb41245b4b8615e1b9eb17d8211b45cc6bf"
+        },
+        {
+          "file": "src/components/FormField.tsx",
+          "sha256": "5e2ecf168670d75866cf7c3b79f00254f1af79fca1e7191aa380250d9687a4d7"
+        },
+        {
+          "file": "src/components/ImageFill.css",
+          "sha256": "41b9b7eb60764c96273e7287a3b73f1c8f2e1ac215c5c0ddf825d46891e89829"
+        },
+        {
+          "file": "src/components/ImageFill.tsx",
+          "sha256": "0b58e3ebd72d3a3243cb074a3ce6571f72c9255f24ca07ccc2633dfb1b2d3b5e"
+        },
+        {
+          "file": "src/components/NavItem.css",
+          "sha256": "58dbef95a795f25586048d6c396e114e3ffff8552db61948d00a0a61fa8b5371"
+        },
+        {
+          "file": "src/components/NavItem.tsx",
+          "sha256": "9ed2cd7cc67c3df005214ccf91559de34fece7b43798bf217d3e67112cef1755"
+        },
+        {
+          "file": "src/components/SplitContent.css",
+          "sha256": "b5ea3ab3a0dab8a9a80a0a8d760dec00c9e9ee2a2d8da3525a637c4dae563dad"
+        },
+        {
+          "file": "src/components/SplitContent.tsx",
+          "sha256": "3c98d731ea727332bb55b3215f235d8c22d33714c2e77ff1f5733a83ef18dc88"
+        },
+        {
+          "file": "src/components/StatRow.css",
+          "sha256": "c0996048294dfd66b52dcafe545d283436dca89af5452c0c6dddabd35827b415"
+        },
+        {
+          "file": "src/components/StatRow.tsx",
+          "sha256": "877c43a3ca718b88127389a8f69d0fe49d03c55fc2de570c86181ffa083d3f16"
+        },
+        {
+          "file": "src/pages/design-system/ContentFormAtomExamples.css",
+          "sha256": "ae880aebda1c52a5e0b4d98b94fe8f59b8ecec992203d7843c991a36343a255d"
+        },
+        {
+          "file": "src/pages/design-system/ContentFormAtomExamples.data.ts",
+          "sha256": "36c123bd7f43e61bbd071925352ba45c4c86ec6d15bb549ed0c9cecff1ad4872"
+        },
+        {
+          "file": "src/pages/design-system/ContentFormAtomExamples.tsx",
+          "sha256": "a912a3c6d3964e574088b7a0b6bd484ddb17ff85adb614b2d044003d774857c7"
+        }
+      ]
+    }
+  },
+  "checks": [
+    {
+      "command": "pnpm typecheck",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm lint",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm tokens:generate",
+      "exitCode": 0,
+      "note": "Refreshed audit; canonical tokens preserved."
+    },
+    {
+      "command": "pnpm tokens:check",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm build",
+      "exitCode": 0,
+      "modules": 515,
+      "cssKB": 159.38,
+      "cssGzipKB": 18.86,
+      "jsKB": 667.97,
+      "jsGzipKB": 164.74,
+      "warning": "Vite chunk above 500 kB remains."
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
+  ],
+  "browser": {
+    "engine": "Codex in-app browser",
+    "manual": true,
+    "widths": [
+      1200,
+      1199,
+      810,
+      809,
+      390
+    ],
+    "finalLocal": [
+      {
+        "clientWidth": 1185,
+        "details": {
+          "flow": "row",
+          "h": 64,
+          "w": 1025,
+          "wrap": "nowrap"
+        },
+        "fields": [
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Name",
+            "required": true,
+            "resize": "none",
+            "type": "text",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Gruppo",
+            "required": false,
+            "resize": "none",
+            "type": "text",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Email",
+            "required": true,
+            "resize": "none",
+            "type": "email",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 100,
+            "name": "message",
+            "required": true,
+            "resize": "vertical",
+            "type": "textarea",
+            "w": 285.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Name",
+            "required": true,
+            "resize": "none",
+            "type": "text",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Gruppo",
+            "required": false,
+            "resize": "none",
+            "type": "text",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Email",
+            "required": true,
+            "resize": "none",
+            "type": "email",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 100,
+            "name": "message",
+            "required": true,
+            "resize": "vertical",
+            "type": "textarea",
+            "w": 285.671875
+          }
+        ],
+        "headlines": [
+          {
+            "color": "rgb(26, 25, 23)",
+            "font": "128px",
+            "h": 384,
+            "line": "128px",
+            "text": "Ci vediamo da LORUNI",
+            "w": 680.671875
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "128px",
+            "h": 256,
+            "line": "128px",
+            "text": "Momenti da LORUNI",
+            "w": 680.671875
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "128px",
+            "h": 128,
+            "line": "128px",
+            "text": "Vita da LORUNI",
+            "w": 1025
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "80px",
+            "h": 80,
+            "line": "80px",
+            "text": "E le altre sere?",
+            "w": 1025
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "80px",
+            "h": 80,
+            "line": "80px",
+            "text": "Il diario continua",
+            "w": 1025
+          },
+          {
+            "color": "rgb(26, 25, 23)",
+            "font": "128px",
+            "h": 512,
+            "line": "128px",
+            "text": "Ci vediamo da LORUNI?",
+            "w": 571.328125
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "60px",
+            "h": 132,
+            "line": "66px",
+            "text": "Dentro la serata",
+            "w": 480
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "60px",
+            "h": 66,
+            "line": "66px",
+            "text": "Dopo la serata",
+            "w": 508.5
+          }
+        ],
+        "media": [
+          {
+            "fit": "cover",
+            "h": 0,
+            "loaded": true,
+            "w": 0
+          },
+          {
+            "fit": "contain",
+            "h": 724.328125,
+            "loaded": true,
+            "w": 1025
+          }
+        ],
+        "scrollWidth": 1185,
+        "split": [
+          {
+            "flow": "row",
+            "gap": "8px",
+            "h": 368.84375,
+            "w": 1025
+          },
+          {
+            "flow": "row",
+            "gap": "8px",
+            "h": 368.84375,
+            "w": 1025
+          }
+        ],
+        "stats": [
+          {
+            "h": 74,
+            "w": 122
+          },
+          {
+            "h": 74,
+            "w": 52.078125
+          },
+          {
+            "h": 74,
+            "w": 57.578125
+          },
+          {
+            "h": 74,
+            "w": 192.21875
+          }
+        ],
+        "width": 1200
+      },
+      {
+        "clientWidth": 1184,
+        "details": {
+          "flow": "row",
+          "h": 64,
+          "w": 1104,
+          "wrap": "nowrap"
+        },
+        "fields": [
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Name",
+            "required": true,
+            "resize": "none",
+            "type": "text",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Gruppo",
+            "required": false,
+            "resize": "none",
+            "type": "text",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Email",
+            "required": true,
+            "resize": "none",
+            "type": "email",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 100,
+            "name": "message",
+            "required": true,
+            "resize": "vertical",
+            "type": "textarea",
+            "w": 285.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Name",
+            "required": true,
+            "resize": "none",
+            "type": "text",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Gruppo",
+            "required": false,
+            "resize": "none",
+            "type": "text",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Email",
+            "required": true,
+            "resize": "none",
+            "type": "email",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 100,
+            "name": "message",
+            "required": true,
+            "resize": "vertical",
+            "type": "textarea",
+            "w": 285.671875
+          }
+        ],
+        "headlines": [
+          {
+            "color": "rgb(26, 25, 23)",
+            "font": "84px",
+            "h": 168,
+            "line": "84px",
+            "text": "Ci vediamo da LORUNI",
+            "w": 733.34375
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "84px",
+            "h": 168,
+            "line": "84px",
+            "text": "Momenti da LORUNI",
+            "w": 733.34375
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "84px",
+            "h": 84,
+            "line": "84px",
+            "text": "Vita da LORUNI",
+            "w": 1104
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "48px",
+            "h": 48,
+            "line": "48px",
+            "text": "E le altre sere?",
+            "w": 1104
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "48px",
+            "h": 48,
+            "line": "48px",
+            "text": "Il diario continua",
+            "w": 1104
+          },
+          {
+            "color": "rgb(26, 25, 23)",
+            "font": "84px",
+            "h": 336,
+            "line": "84px",
+            "text": "Ci vediamo da LORUNI?",
+            "w": 428.671875
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "44px",
+            "h": 48.40625,
+            "line": "48.4px",
+            "text": "Dentro la serata",
+            "w": 480
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "44px",
+            "h": 48.40625,
+            "line": "48.4px",
+            "text": "Dopo la serata",
+            "w": 532
+          }
+        ],
+        "media": [
+          {
+            "fit": "cover",
+            "h": 1080,
+            "loaded": true,
+            "w": 1104
+          },
+          {
+            "fit": "contain",
+            "h": 1075.546875,
+            "loaded": true,
+            "w": 1104
+          }
+        ],
+        "scrollWidth": 1184,
+        "split": [
+          {
+            "flow": "row",
+            "gap": "40px",
+            "h": 301.5625,
+            "w": 1104
+          },
+          {
+            "flow": "row",
+            "gap": "40px",
+            "h": 267.96875,
+            "w": 1104
+          }
+        ],
+        "stats": [
+          {
+            "h": 74,
+            "w": 122
+          },
+          {
+            "h": 74,
+            "w": 52.078125
+          },
+          {
+            "h": 74,
+            "w": 57.578125
+          },
+          {
+            "h": 74,
+            "w": 192.21875
+          }
+        ],
+        "width": 1199
+      },
+      {
+        "clientWidth": 795,
+        "details": {
+          "flow": "row",
+          "h": 64,
+          "w": 715,
+          "wrap": "nowrap"
+        },
+        "fields": [
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Name",
+            "required": true,
+            "resize": "none",
+            "type": "text",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Gruppo",
+            "required": false,
+            "resize": "none",
+            "type": "text",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Email",
+            "required": true,
+            "resize": "none",
+            "type": "email",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 100,
+            "name": "message",
+            "required": true,
+            "resize": "vertical",
+            "type": "textarea",
+            "w": 285.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Name",
+            "required": true,
+            "resize": "none",
+            "type": "text",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Gruppo",
+            "required": false,
+            "resize": "none",
+            "type": "text",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Email",
+            "required": true,
+            "resize": "none",
+            "type": "email",
+            "w": 261.671875
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 100,
+            "name": "message",
+            "required": true,
+            "resize": "vertical",
+            "type": "textarea",
+            "w": 285.671875
+          }
+        ],
+        "headlines": [
+          {
+            "color": "rgb(26, 25, 23)",
+            "font": "84px",
+            "h": 168,
+            "line": "84px",
+            "text": "Ci vediamo da LORUNI",
+            "w": 474
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "84px",
+            "h": 168,
+            "line": "84px",
+            "text": "Momenti da LORUNI",
+            "w": 474
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "84px",
+            "h": 84,
+            "line": "84px",
+            "text": "Vita da LORUNI",
+            "w": 715
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "48px",
+            "h": 48,
+            "line": "48px",
+            "text": "E le altre sere?",
+            "w": 715
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "48px",
+            "h": 48,
+            "line": "48px",
+            "text": "Il diario continua",
+            "w": 715
+          },
+          {
+            "color": "rgb(26, 25, 23)",
+            "font": "84px",
+            "h": 336,
+            "line": "84px",
+            "text": "Ci vediamo da LORUNI?",
+            "w": 428.671875
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "44px",
+            "h": 96.8125,
+            "line": "48.4px",
+            "text": "Dentro la serata",
+            "w": 337.5
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "44px",
+            "h": 96.8125,
+            "line": "48.4px",
+            "text": "Dopo la serata",
+            "w": 337.5
+          }
+        ],
+        "media": [
+          {
+            "fit": "cover",
+            "h": 1080,
+            "loaded": true,
+            "w": 715
+          },
+          {
+            "fit": "contain",
+            "h": 696.578125,
+            "loaded": true,
+            "w": 715
+          }
+        ],
+        "scrollWidth": 795,
+        "split": [
+          {
+            "flow": "row",
+            "gap": "40px",
+            "h": 402.34375,
+            "w": 715
+          },
+          {
+            "flow": "row",
+            "gap": "40px",
+            "h": 368.75,
+            "w": 715
+          }
+        ],
+        "stats": [
+          {
+            "h": 74,
+            "w": 122
+          },
+          {
+            "h": 74,
+            "w": 52.078125
+          },
+          {
+            "h": 74,
+            "w": 57.578125
+          },
+          {
+            "h": 74,
+            "w": 192.21875
+          }
+        ],
+        "width": 810
+      },
+      {
+        "clientWidth": 794,
+        "details": {
+          "flow": "column",
+          "h": 170.203125,
+          "w": 770,
+          "wrap": "wrap"
+        },
+        "fields": [
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Name",
+            "required": true,
+            "resize": "none",
+            "type": "text",
+            "w": 746
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Gruppo",
+            "required": false,
+            "resize": "none",
+            "type": "text",
+            "w": 746
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Email",
+            "required": true,
+            "resize": "none",
+            "type": "email",
+            "w": 746
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 100,
+            "name": "message",
+            "required": true,
+            "resize": "vertical",
+            "type": "textarea",
+            "w": 770
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Name",
+            "required": true,
+            "resize": "none",
+            "type": "text",
+            "w": 746
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Gruppo",
+            "required": false,
+            "resize": "none",
+            "type": "text",
+            "w": 746
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Email",
+            "required": true,
+            "resize": "none",
+            "type": "email",
+            "w": 746
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 100,
+            "name": "message",
+            "required": true,
+            "resize": "vertical",
+            "type": "textarea",
+            "w": 770
+          }
+        ],
+        "headlines": [
+          {
+            "color": "rgb(26, 25, 23)",
+            "font": "64px",
+            "h": 64,
+            "line": "64px",
+            "text": "Ci vediamo da LORUNI",
+            "w": 770
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "64px",
+            "h": 64,
+            "line": "64px",
+            "text": "Momenti da LORUNI",
+            "w": 770
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "64px",
+            "h": 64,
+            "line": "64px",
+            "text": "Vita da LORUNI",
+            "w": 770
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "48px",
+            "h": 48,
+            "line": "48px",
+            "text": "E le altre sere?",
+            "w": 770
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "48px",
+            "h": 48,
+            "line": "48px",
+            "text": "Il diario continua",
+            "w": 770
+          },
+          {
+            "color": "rgb(26, 25, 23)",
+            "font": "64px",
+            "h": 256,
+            "line": "64px",
+            "text": "Ci vediamo da LORUNI?",
+            "w": 311
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "32px",
+            "h": 35.203125,
+            "line": "35.2px",
+            "text": "Dentro la serata",
+            "w": 480
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "32px",
+            "h": 35.203125,
+            "line": "35.2px",
+            "text": "Dopo la serata",
+            "w": 640
+          }
+        ],
+        "media": [
+          {
+            "fit": "cover",
+            "h": 844,
+            "loaded": true,
+            "w": 770
+          },
+          {
+            "fit": "contain",
+            "h": 750.15625,
+            "loaded": true,
+            "w": 770
+          }
+        ],
+        "scrollWidth": 794,
+        "split": [
+          {
+            "flow": "column",
+            "gap": "40px",
+            "h": 253.203125,
+            "w": 770
+          },
+          {
+            "flow": "column",
+            "gap": "40px",
+            "h": 253.203125,
+            "w": 770
+          }
+        ],
+        "stats": [
+          {
+            "h": 74,
+            "w": 381
+          },
+          {
+            "h": 74,
+            "w": 381
+          },
+          {
+            "h": 74,
+            "w": 381
+          },
+          {
+            "h": 74,
+            "w": 381
+          }
+        ],
+        "width": 809
+      },
+      {
+        "clientWidth": 375,
+        "details": {
+          "flow": "column",
+          "h": 198.40625,
+          "w": 351,
+          "wrap": "wrap"
+        },
+        "fields": [
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Name",
+            "required": true,
+            "resize": "none",
+            "type": "text",
+            "w": 327
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Gruppo",
+            "required": false,
+            "resize": "none",
+            "type": "text",
+            "w": 327
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Email",
+            "required": true,
+            "resize": "none",
+            "type": "email",
+            "w": 327
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 100,
+            "name": "message",
+            "required": true,
+            "resize": "vertical",
+            "type": "textarea",
+            "w": 351
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Name",
+            "required": true,
+            "resize": "none",
+            "type": "text",
+            "w": 327
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Gruppo",
+            "required": false,
+            "resize": "none",
+            "type": "text",
+            "w": 327
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 24,
+            "name": "Email",
+            "required": true,
+            "resize": "none",
+            "type": "email",
+            "w": 327
+          },
+          {
+            "font": "18px / 21.6px \"Funnel Sans\", sans-serif",
+            "h": 100,
+            "name": "message",
+            "required": true,
+            "resize": "vertical",
+            "type": "textarea",
+            "w": 351
+          }
+        ],
+        "headlines": [
+          {
+            "color": "rgb(26, 25, 23)",
+            "font": "64px",
+            "h": 128,
+            "line": "64px",
+            "text": "Ci vediamo da LORUNI",
+            "w": 351
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "64px",
+            "h": 128,
+            "line": "64px",
+            "text": "Momenti da LORUNI",
+            "w": 351
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "64px",
+            "h": 128,
+            "line": "64px",
+            "text": "Vita da LORUNI",
+            "w": 351
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "48px",
+            "h": 96,
+            "line": "48px",
+            "text": "E le altre sere?",
+            "w": 351
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "48px",
+            "h": 96,
+            "line": "48px",
+            "text": "Il diario continua",
+            "w": 351
+          },
+          {
+            "color": "rgb(26, 25, 23)",
+            "font": "64px",
+            "h": 256,
+            "line": "64px",
+            "text": "Ci vediamo da LORUNI?",
+            "w": 311
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "32px",
+            "h": 35.203125,
+            "line": "35.2px",
+            "text": "Dentro la serata",
+            "w": 351
+          },
+          {
+            "color": "rgb(244, 240, 232)",
+            "font": "32px",
+            "h": 35.203125,
+            "line": "35.2px",
+            "text": "Dopo la serata",
+            "w": 351
+          }
+        ],
+        "media": [
+          {
+            "fit": "cover",
+            "h": 844,
+            "loaded": true,
+            "w": 351
+          },
+          {
+            "fit": "contain",
+            "h": 341.953125,
+            "loaded": true,
+            "w": 351
+          }
+        ],
+        "scrollWidth": 375,
+        "split": [
+          {
+            "flow": "column",
+            "gap": "40px",
+            "h": 331.203125,
+            "w": 351
+          },
+          {
+            "flow": "column",
+            "gap": "40px",
+            "h": 331.203125,
+            "w": 351
+          }
+        ],
+        "stats": [
+          {
+            "h": 74,
+            "w": 171.5
+          },
+          {
+            "h": 74,
+            "w": 171.5
+          },
+          {
+            "h": 74,
+            "w": 171.5
+          },
+          {
+            "h": 74,
+            "w": 171.5
+          }
+        ],
+        "width": 390
+      }
+    ],
+    "currentPreviewCommunity": [
+      {
+        "clientWidth": 1185,
+        "details": {
+          "flow": "row",
+          "gap": "80px",
+          "h": 64,
+          "headings": [],
+          "images": [
+            {
+              "fit": "cover",
+              "h": 64,
+              "src": "https://framerusercontent.com/images/DNw1LVgfe6vA5TOajXNwumUqIY.png?width=1536&height=1024",
+              "w": 64
+            }
+          ],
+          "labels": [
+            {
+              "bg": "rgba(0, 0, 0, 0)",
+              "color": "rgb(244, 240, 232)",
+              "text": "LORUNI"
+            },
+            {
+              "bg": "rgba(0, 0, 0, 0)",
+              "color": "rgb(244, 240, 232)",
+              "text": "Diario · bozza"
+            },
+            {
+              "bg": "rgb(244, 240, 232)",
+              "color": "rgb(26, 25, 23)",
+              "text": "Persone"
+            },
+            {
+              "bg": "rgb(244, 240, 232)",
+              "color": "rgb(26, 25, 23)",
+              "text": "Community"
+            },
+            {
+              "bg": "rgb(244, 240, 232)",
+              "color": "rgb(26, 25, 23)",
+              "text": "LORUNI"
+            },
+            {
+              "bg": "rgb(244, 240, 232)",
+              "color": "rgb(26, 25, 23)",
+              "text": "Immagini provvisorie"
+            }
+          ],
+          "w": 1025
+        },
+        "width": 1200
+      },
+      {
+        "clientWidth": 795,
+        "details": {
+          "flow": "row",
+          "gap": "80px",
+          "h": 64,
+          "headings": [],
+          "images": [
+            {
+              "fit": "cover",
+              "h": 64,
+              "src": "https://framerusercontent.com/images/DNw1LVgfe6vA5TOajXNwumUqIY.png?width=1536&height=1024",
+              "w": 64
+            }
+          ],
+          "labels": [
+            {
+              "bg": "rgba(0, 0, 0, 0)",
+              "color": "rgb(244, 240, 232)",
+              "text": "LORUNI"
+            },
+            {
+              "bg": "rgba(0, 0, 0, 0)",
+              "color": "rgb(244, 240, 232)",
+              "text": "Diario · bozza"
+            },
+            {
+              "bg": "rgb(244, 240, 232)",
+              "color": "rgb(26, 25, 23)",
+              "text": "Persone"
+            },
+            {
+              "bg": "rgb(244, 240, 232)",
+              "color": "rgb(26, 25, 23)",
+              "text": "Community"
+            },
+            {
+              "bg": "rgb(244, 240, 232)",
+              "color": "rgb(26, 25, 23)",
+              "text": "LORUNI"
+            },
+            {
+              "bg": "rgb(244, 240, 232)",
+              "color": "rgb(26, 25, 23)",
+              "text": "Immagini provvisorie"
+            }
+          ],
+          "w": 715
+        },
+        "width": 810
+      },
+      {
+        "clientWidth": 375,
+        "details": {
+          "flow": "column",
+          "gap": "80px",
+          "h": 198.40625,
+          "headings": [],
+          "images": [
+            {
+              "fit": "cover",
+              "h": 64,
+              "src": "https://framerusercontent.com/images/DNw1LVgfe6vA5TOajXNwumUqIY.png?width=1536&height=1024",
+              "w": 64
+            }
+          ],
+          "labels": [
+            {
+              "bg": "rgba(0, 0, 0, 0)",
+              "color": "rgb(244, 240, 232)",
+              "text": "LORUNI"
+            },
+            {
+              "bg": "rgba(0, 0, 0, 0)",
+              "color": "rgb(244, 240, 232)",
+              "text": "Diario · bozza"
+            },
+            {
+              "bg": "rgb(244, 240, 232)",
+              "color": "rgb(26, 25, 23)",
+              "text": "Persone"
+            },
+            {
+              "bg": "rgb(244, 240, 232)",
+              "color": "rgb(26, 25, 23)",
+              "text": "Community"
+            },
+            {
+              "bg": "rgb(244, 240, 232)",
+              "color": "rgb(26, 25, 23)",
+              "text": "LORUNI"
+            },
+            {
+              "bg": "rgb(244, 240, 232)",
+              "color": "rgb(26, 25, 23)",
+              "text": "Immagini provvisorie"
+            }
+          ],
+          "w": 351
+        },
+        "width": 390
+      }
+    ],
+    "contentChoices": [
+      {
+        "kind": "event",
+        "index": "0",
+        "text": [
+          "Si parte dalle regole. Poi arrivano i turni, le mosse sbagliate e qualcuno che chiede un’altra partita. Giochi, accesso ed eventuali posti saranno indicati nel programma confermato. Per ora questa è una proposta di format.",
+          "Qui arriveranno le foto della serata: il tavolo prima della prima mano, chi guarda e chi entra in partita. Per ora non è un racconto di un evento già avvenuto. Le immagini sono provvisorie e non ritraggono LORUNI."
+        ]
+      },
+      {
+        "kind": "event",
+        "index": "1",
+        "text": [
+          "Un drink al bancone, una conversazione tra due pezzi. Il programma musicale arriverà con l’annuncio della serata. Qui troverai orario, accesso ed eventuale iscrizione. Nessun artista o appuntamento è ancora confermato.",
+          "Qui arriveranno le foto della serata: il tavolo prima della prima mano, chi guarda e chi entra in partita. Per ora non è un racconto di un evento già avvenuto. Le immagini sono provvisorie e non ritraggono LORUNI."
+        ]
+      },
+      {
+        "kind": "event",
+        "index": "2",
+        "text": [
+          "Non serve un giro di presentazioni. Una domanda al bancone, una sedia spostata e il discorso cambia tavolo. La proposta è questa. Programma, modalità di accesso ed eventuali posti arriveranno con la conferma della serata.",
+          "Qui arriveranno le foto della serata: il tavolo prima della prima mano, chi guarda e chi entra in partita. Per ora non è un racconto di un evento già avvenuto. Le immagini sono provvisorie e non ritraggono LORUNI."
+        ]
+      },
+      {
+        "kind": "event",
+        "index": "3",
+        "text": [
+          "Il mazzo passa di mano. Qualcuno chiede le regole, qualcun altro propone subito la rivincita. Il gioco preciso e le modalità di partecipazione non sono ancora confermati. Troverai qui i dettagli, compresi gli eventuali posti.",
+          "Qui arriveranno le foto della serata: il tavolo prima della prima mano, chi guarda e chi entra in partita. Per ora non è un racconto di un evento già avvenuto. Le immagini sono provvisorie e non ritraggono LORUNI."
+        ]
+      },
+      {
+        "kind": "event",
+        "index": "4",
+        "text": [
+          "C’è chi si concentra sullo schermo e chi ha già un consiglio per ogni azione. Gioco, regole, posti ed eventuali premi arriveranno con il programma confermato. Per ora si tratta di una proposta, non di un torneo aperto alle iscrizioni.",
+          "Qui arriveranno le foto della serata: il tavolo prima della prima mano, chi guarda e chi entra in partita. Per ora non è un racconto di un evento già avvenuto. Le immagini sono provvisorie e non ritraggono LORUNI."
+        ]
+      },
+      {
+        "kind": "community",
+        "index": "0",
+        "text": [
+          "LORUNI",
+          "Diario · bozza",
+          "Persone",
+          "Community",
+          "LORUNI",
+          "Immagini provvisorie"
+        ]
+      },
+      {
+        "kind": "community",
+        "index": "1",
+        "text": [
+          "LORUNI",
+          "Diario · bozza",
+          "Gioco",
+          "Community",
+          "LORUNI",
+          "Immagini provvisorie"
+        ]
+      },
+      {
+        "kind": "community",
+        "index": "2",
+        "text": [
+          "LORUNI",
+          "Diario · bozza",
+          "Serate",
+          "Community",
+          "LORUNI",
+          "Immagini provvisorie"
+        ]
+      },
+      {
+        "kind": "community",
+        "index": "3",
+        "text": [
+          "LORUNI",
+          "Diario · bozza",
+          "Drink",
+          "Community",
+          "LORUNI",
+          "Immagini provvisorie"
+        ]
+      }
+    ],
+    "form": {
+      "labelsAssociated": true,
+      "requiredAndNamesPreserved": true,
+      "emailTypeMismatchObserved": true,
+      "focusShadow": "rgb(26, 25, 23) 2px 2px 0px 0px",
+      "resize": "Native drag: textarea100→160; auto frame follows160, Template frame remains100 with clip.",
+      "minimumHeight": 100,
+      "resizeAxis": "vertical"
+    },
+    "navigation": {
+      "variants": [
+        "Desktop",
+        "Mobile",
+        "Compact"
+      ],
+      "fontSizes": [
+        22,
+        28,
+        16
+      ],
+      "sourceEventiBounds": [
+        [
+          68.765625,
+          22
+        ],
+        [
+          87.5,
+          28
+        ],
+        [
+          50,
+          16
+        ]
+      ],
+      "hoverAndLeaveEndpoints": true,
+      "keyboardCallbackCount": 2,
+      "newTabAttributes": {
+        "target": "_blank",
+        "rel": "noopener"
+      },
+      "reducedMotion": "MotionConfig always observed: all six Mobile glyphs move to -28 simultaneously, zero duration/stagger; projection disabled.",
+      "colorDefault": "Neutral50"
+    },
+    "media": {
+      "home": {
+        "fit": "cover",
+        "clip": true,
+        "desktopHidden": true,
+        "tabletSourceFrame": [
+          810,
+          1080
+        ],
+        "phoneSourceFrame": [
+          390,
+          844
+        ]
+      },
+      "experienceSvg": {
+        "fit": "contain",
+        "sourceFrames": [
+          [
+            1200,
+            848
+          ],
+          [
+            1003,
+            977.156
+          ],
+          [
+            818,
+            796.922
+          ]
+        ],
+        "naturalSize": [
+          2562,
+          2496
+        ]
+      },
+      "loaded": true,
+      "parentFrameAndVisibilityExternal": true
+    },
+    "artifacts": [
+      {
+        "path": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a11165-e8ea-7390-9c38-ef9ddeba1abb/content-form-atoms/catalog-form-field.jpg",
+        "sha256": "11850e0ab4a0aa6aec47e18f86cc3abae751dfd68f508f466cee802fd1693038"
+      },
+      {
+        "path": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a11165-e8ea-7390-9c38-ef9ddeba1abb/content-form-atoms/local-details-phone.jpg",
+        "sha256": "57de475de9f7b4fc3d5c11f7674bdfedd9bc91ba83c0f19a66d04cb8ecb26d31"
+      },
+      {
+        "path": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a11165-e8ea-7390-9c38-ef9ddeba1abb/content-form-atoms/local-fields-phone.jpg",
+        "sha256": "1be3d81d3d681d726c4e3f23eab8f04480be36cf70fe204655f89e5e6cc7a9df"
+      },
+      {
+        "path": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a11165-e8ea-7390-9c38-ef9ddeba1abb/content-form-atoms/local-split-1200.jpg",
+        "sha256": "d580aac37114f26bfc0f861ed07b7da5465802a3ad1ee2618efd874adfe90426"
+      },
+      {
+        "path": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a11165-e8ea-7390-9c38-ef9ddeba1abb/content-form-atoms/local-split-390.jpg",
+        "sha256": "feebdce394a6eacec4e71471a6f241dda85f9c1c2682146cf0c7e5d845ab4de4"
+      },
+      {
+        "path": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a11165-e8ea-7390-9c38-ef9ddeba1abb/content-form-atoms/local-split-810.jpg",
+        "sha256": "c5018dab69dbb840bb9954aeb5ba6118c37a1cacfc5f243e5db9cab952d6ee33"
+      },
+      {
+        "path": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a11165-e8ea-7390-9c38-ef9ddeba1abb/content-form-atoms/local-split-phone.jpg",
+        "sha256": "27b503ab7ff995105b394491dc32ae92c726f7e1057eefe1f25c15e59cf01c63"
+      },
+      {
+        "path": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a11165-e8ea-7390-9c38-ef9ddeba1abb/content-form-atoms/source-canvas-home.jpg",
+        "sha256": "4f6a32db2ed36cb645b0f1a6f3808b2071d561a58f1bee7d279533d40f4d17c3"
+      },
+      {
+        "path": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a11165-e8ea-7390-9c38-ef9ddeba1abb/content-form-atoms/source-current-details-phone.jpg",
+        "sha256": "35acb1de8867164a5a52ed1ccba5abca42281a27fe847313ac3572f16758f4eb"
+      },
+      {
+        "path": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a11165-e8ea-7390-9c38-ef9ddeba1abb/content-form-atoms/source-event-1200.jpg",
+        "sha256": "7da90356a88ebfea02ab61521827a56d867895a0bd40953213f07386e144cc84"
+      }
+    ],
+    "artifactNotes": "final-local-metrics.json and current-preview-details.json are final measurements. Older intermediate/source public captures are retained separately and do not attest current media or Community bindings."
+  },
+  "inventory": {
+    "total": 137,
+    "statusCounts": {
+      "not-migrated": 83,
+      "completed": 54
+    },
+    "included": [
+      {
+        "id": "pattern-rBICZcWuo",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-uV6GPGFUr",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-ebE9WIWRE",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-hZSckX7gj",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-fmFFqtjF4",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-AbzmaKuIg",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-KdHT0OxwM",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-IRkjye6Ll",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-blKM_n5tw",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-xvOOrP2uV",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-KklDpWuyS",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-ytvirBom_",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-A7QIJFFnm",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-vt6OKYbIq",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-C37cggxuY",
+        "component": "FormField"
+      },
+      {
+        "id": "pattern-YErXHZjPw",
+        "component": "FormField"
+      },
+      {
+        "id": "framer-sfeabPGEm",
+        "component": "NavItem"
+      },
+      {
+        "id": "pattern-EAJKyYveW",
+        "component": "ImageFill"
+      },
+      {
+        "id": "pattern-Zzb09zCxr",
+        "component": "ImageFill"
+      },
+      {
+        "id": "pattern-SkaeXzDD6",
+        "component": "StatRow"
+      },
+      {
+        "id": "pattern-HQY_XVsoI",
+        "component": "StatRow"
+      },
+      {
+        "id": "pattern-GFcKvi6c1",
+        "component": "StatRow"
+      },
+      {
+        "id": "pattern-Yni8C4MAB",
+        "component": "StatRow"
+      },
+      {
+        "id": "pattern-wIf2vBmrp",
+        "component": "ContentHeadline"
+      },
+      {
+        "id": "pattern-VuSLlvonD",
+        "component": "ContentHeadline"
+      },
+      {
+        "id": "pattern-qgLuHW8XG",
+        "component": "ContentHeadline"
+      },
+      {
+        "id": "pattern-UNMBQYnKg",
+        "component": "ContentHeadline"
+      },
+      {
+        "id": "pattern-dR7SkYjAS",
+        "component": "ContentHeadline"
+      },
+      {
+        "id": "pattern-IMQdwgcx4",
+        "component": "ContentHeadline"
+      },
+      {
+        "id": "pattern-GXDcxsQa9",
+        "component": "ContentHeadline"
+      },
+      {
+        "id": "pattern-RuA0JWZsP",
+        "component": "SplitContent"
+      },
+      {
+        "id": "pattern-nN8BISdtN",
+        "component": "SplitContent"
+      },
+      {
+        "id": "pattern-W_o5GRkl4",
+        "component": "CategoryLabelGroup"
+      },
+      {
+        "id": "pattern-v0a9rAOnN",
+        "component": "CommunityDetails"
+      }
+    ],
+    "excluded": [
+      {
+        "id": "framer-mIHy1XHUz",
+        "name": "Project Card",
+        "reason": "Complex content card with multiple variants and interaction."
+      },
+      {
+        "id": "framer-MbD5vvr42",
+        "name": "Service card",
+        "reason": "Complex content card with multiple variants and interaction."
+      },
+      {
+        "id": "framer-E3CLvSQi8",
+        "name": "Header",
+        "reason": "Global navigation, section or advanced interaction/motion owner."
+      },
+      {
+        "id": "framer-rN_k4pVAj",
+        "name": "Footer",
+        "reason": "Global navigation, section or advanced interaction/motion owner."
+      },
+      {
+        "id": "framer-cWdeMLg1M",
+        "name": "FAQ Section",
+        "reason": "Global navigation, section or advanced interaction/motion owner."
+      },
+      {
+        "id": "framer-A7qEQUCm0",
+        "name": "FAQ Row",
+        "reason": "Interactive accordion open/closed, conditional answer and coordinated icon/motion."
+      },
+      {
+        "id": "framer-oG9J4ak1n",
+        "name": "Main form button",
+        "reason": "Submission control with success/error/loading variants and spinner; full form/interactive layer."
+      },
+      {
+        "id": "framer-dmfgfOdOP",
+        "name": "Testimonials Image reveal",
+        "reason": "Image reveal state/wipe transition integration; advanced media, not plain image."
+      },
+      {
+        "id": "framer-Va_5BuuHV",
+        "name": "Services Section",
+        "reason": "Global navigation, section or advanced interaction/motion owner."
+      },
+      {
+        "id": "framer-j6BGVOcku",
+        "name": "Mobile Nav",
+        "reason": "Global navigation, section or advanced interaction/motion owner."
+      },
+      {
+        "id": "framer-wUaTYVV3U",
+        "name": "Our Story Section",
+        "reason": "Global navigation, section or advanced interaction/motion owner."
+      },
+      {
+        "id": "framer-hZwon9KVq",
+        "name": "Load More",
+        "reason": "CMS pagination/loading behavior and spinner; application interaction."
+      },
+      {
+        "id": "framer-LdaCEGUab",
+        "name": "👀 Pre-Loader",
+        "reason": "Global navigation, section or advanced interaction/motion owner."
+      },
+      {
+        "id": "framer-pDiVZWXZp",
+        "name": "Logo",
+        "reason": "Linked global navigation logo component/variants; official visual assets already in Icon Engine."
+      },
+      {
+        "id": "codeFile/ijeV_im:default",
+        "name": "TextFitWidth",
+        "reason": "Measured typography / advanced text motion code component."
+      },
+      {
+        "id": "codeFile/VN4Z8bL:default",
+        "name": "TextStagger",
+        "reason": "Measured typography / advanced text motion code component."
+      },
+      {
+        "id": "bSeEZJm22jsjERCOGQvq",
+        "name": "Lenis",
+        "reason": "External advanced scroll/layout/media or interactive owner."
+      },
+      {
+        "id": "8OGeHARPZoZUqP5j1buZ",
+        "name": "Lenis Horizontal Section",
+        "reason": "External advanced scroll/layout/media or interactive owner."
+      },
+      {
+        "id": "h8ioHyt4BUxuvVCE1Q10",
+        "name": "Layout Jump Preventer",
+        "reason": "External advanced scroll/layout/media or interactive owner."
+      },
+      {
+        "id": "kjaMVdquZjJQkUAY4ixo",
+        "name": "Liquid Hover",
+        "reason": "External advanced scroll/layout/media or interactive owner."
+      },
+      {
+        "id": "zxcGfQb3lPhoJOWc1HTU",
+        "name": "Image Parallax",
+        "reason": "External advanced scroll/layout/media or interactive owner."
+      },
+      {
+        "id": "cKGD16u2MGB7MfqfVXFp",
+        "name": "Grain",
+        "reason": "External advanced scroll/layout/media or interactive owner."
+      },
+      {
+        "id": "58QxNnlZDpsRYqOWDie7",
+        "name": "BTN 2",
+        "reason": "External advanced scroll/layout/media or interactive owner."
+      },
+      {
+        "id": "template-ahDJpZJjb",
+        "name": "Template",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-H6RV6mcOu",
+        "name": "Hero · /",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-l4Hx2sTr1",
+        "name": "Headline · /",
+        "reason": "TextFitWidth measured hero typography and coordinates; advanced motion/layout layer."
+      },
+      {
+        "id": "pattern-T_kKQBX63",
+        "name": "Color container · /",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-CU36SWeyR",
+        "name": "Logos and Quote · /",
+        "reason": "Logo strip/ticker composition and section layout, not plain media atom."
+      },
+      {
+        "id": "pattern-Npr_ZavYL",
+        "name": "Logos · /",
+        "reason": "Logo strip/ticker composition and section layout, not plain media atom."
+      },
+      {
+        "id": "pattern-BvAMtkvhr",
+        "name": "Quote · /",
+        "reason": "Quote section with TextStagger and responsive section geometry."
+      },
+      {
+        "id": "pattern-ut4tqcHWL",
+        "name": "Recent Projects · /",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-n8mpVhYJ6",
+        "name": "Headline and 1st project · /",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-rG_Llb_4m",
+        "name": "Lista CMS · /",
+        "reason": "CMS list/data/layout/pagination consumer, not elementary content."
+      },
+      {
+        "id": "pattern-oXNPkQNkN",
+        "name": "Headline trigger · /",
+        "reason": "Transparent 100vh scroll target, no visual content; page choreography integration."
+      },
+      {
+        "id": "pattern-Vys401Mev",
+        "name": "Lista CMS · /",
+        "reason": "CMS list/data/layout/pagination consumer, not elementary content."
+      },
+      {
+        "id": "pattern-ZZ6z7kb1H",
+        "name": "Lista CMS · /",
+        "reason": "CMS list/data/layout/pagination consumer, not elementary content."
+      },
+      {
+        "id": "pattern-PyH9cfIM7",
+        "name": "Lista CMS · /",
+        "reason": "CMS list/data/layout/pagination consumer, not elementary content."
+      },
+      {
+        "id": "pattern-MxT1gxvg5",
+        "name": "Process · /",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-DUIrhpb0e",
+        "name": "Headline · /",
+        "reason": "Label + TextStagger reveal composition; advanced typography motion."
+      },
+      {
+        "id": "pattern-dyQ5jBO0A",
+        "name": "Testimonials · /",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-I5SNW1MVl",
+        "name": "Hero · /esperienza",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-pVmauuZ2g",
+        "name": "Content · /esperienza",
+        "reason": "Hero content includes TextFitWidth, positioning and blend behavior."
+      },
+      {
+        "id": "pattern-jyNRFDvt2",
+        "name": "Color container · /esperienza",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-ZPvGsPv3Z",
+        "name": "Logos and Intro · /esperienza",
+        "reason": "Logo strip/ticker composition and section layout, not plain media atom."
+      },
+      {
+        "id": "pattern-Jsd2pjqLq",
+        "name": "Logos · /esperienza",
+        "reason": "Logo strip/ticker composition and section layout, not plain media atom."
+      },
+      {
+        "id": "pattern-BDsGjDpwB",
+        "name": "Stats · /esperienza",
+        "reason": "Complete Stats section; all four elementary StatRow children migrated separately."
+      },
+      {
+        "id": "pattern-BGa5oNSIN",
+        "name": "Testimonials · /esperienza",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-Ik7aKijYN",
+        "name": "Blog · /esperienza",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-JI34iSQE6",
+        "name": "Lista CMS · /esperienza",
+        "reason": "CMS list/data/layout/pagination consumer, not elementary content."
+      },
+      {
+        "id": "pattern-aj8UocIEh",
+        "name": "Hero · /eventi/:Eventi",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-hfPb23Ta6",
+        "name": "Content · /eventi/:Eventi",
+        "reason": "Complete CMS hero content/title/labels; elementary label wrapper is migrated separately."
+      },
+      {
+        "id": "pattern-zLQBFP6XB",
+        "name": "Color container · /eventi/:Eventi",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-Rq9qdzotO",
+        "name": "Intro · /eventi/:Eventi",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-oeZu6j5Sf",
+        "name": "Section 1 · /eventi/:Eventi",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-WFPN6Mc9q",
+        "name": "Section 2 · /eventi/:Eventi",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-EQzpqx6Vl",
+        "name": "Testimonial · /eventi/:Eventi",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-OC7BXKW3i",
+        "name": "More Projects · /eventi/:Eventi",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-whW0aCLUP",
+        "name": "Lista CMS · /eventi/:Eventi",
+        "reason": "CMS list/data/layout/pagination consumer, not elementary content."
+      },
+      {
+        "id": "pattern-F2ZIXiJXy",
+        "name": "Main · /eventi",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-xE8PURxwx",
+        "name": "Recent Projects · /eventi",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-xXCtTmpiE",
+        "name": "Headline and 1st project · /eventi",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-X2iRXrVnI",
+        "name": "Lista CMS · /eventi",
+        "reason": "CMS list/data/layout/pagination consumer, not elementary content."
+      },
+      {
+        "id": "pattern-fu2tf1hGp",
+        "name": "Headline trigger · /eventi",
+        "reason": "Transparent 100vh scroll target, no visual content; page choreography integration."
+      },
+      {
+        "id": "pattern-Jo1JXGYo6",
+        "name": "Lista CMS · /eventi",
+        "reason": "CMS list/data/layout/pagination consumer, not elementary content."
+      },
+      {
+        "id": "pattern-r89Pf6QJy",
+        "name": "Main · /vieni-a-trovarci",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-JMRvZFIEA",
+        "name": "Contact · /vieni-a-trovarci",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-n_vp9VrGq",
+        "name": "Modulo · /vieni-a-trovarci",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-KWxSIDWdL",
+        "name": "FAQ · /vieni-a-trovarci",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-OygYg_WNE",
+        "name": "Blog · /vieni-a-trovarci",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-EWW2HEI9X",
+        "name": "Lista CMS · /vieni-a-trovarci",
+        "reason": "CMS list/data/layout/pagination consumer, not elementary content."
+      },
+      {
+        "id": "pattern-JcLLUP2Jf",
+        "name": "Main · /404",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-B853j3_Yd",
+        "name": "Blog · /community",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-zkyIqN31n",
+        "name": "Lista CMS · /community",
+        "reason": "CMS list/data/layout/pagination consumer, not elementary content."
+      },
+      {
+        "id": "pattern-QOkfs6Ps9",
+        "name": "Main · /community/:Community",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-ndrT49rsU",
+        "name": "Hero · /community/:Community",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-sRThMEavK",
+        "name": "Content · /community/:Community",
+        "reason": "Sticky CMS rich-text/image detail section: 100vh desktop / 640px tablet-phone, not an elementary content wrapper."
+      },
+      {
+        "id": "pattern-GRPA250EV",
+        "name": "More content · /community/:Community",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-yjtNkZRh_",
+        "name": "Lista CMS · /community/:Community",
+        "reason": "CMS list/data/layout/pagination consumer, not elementary content."
+      },
+      {
+        "id": "pattern-POmM3Cn0Y",
+        "name": "Overlay menu · Template",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-slofgrfjX",
+        "name": "Contact From · Template",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "pattern-XXZunElsz",
+        "name": "Content container · Template",
+        "reason": "Complete contact composition: responsive headline/form allocation and intro copy; full form excluded."
+      },
+      {
+        "id": "pattern-sUr7gnSzE",
+        "name": "Modulo · Template",
+        "reason": "Complete section, hero, form, page layout or composite content consumer; elementary children captured/migrated separately when inventoried."
+      },
+      {
+        "id": "slot-Hj3TkRU1e",
+        "name": "Desktop · Services Section",
+        "reason": "Section content slot / composite section, not a standalone atom."
+      },
+      {
+        "id": "slot-ECF_um_EE",
+        "name": "The story · Our Story Section",
+        "reason": "Section content slot / composite section, not a standalone atom."
+      }
+    ],
+    "eligibleNotMigrated": 0,
+    "incompleteIncluded": [],
+    "unclassifiedNotMigrated": []
+  },
+  "existingReused": [
+    "canonical typography/color/border/shadow/geometry/motion tokens",
+    "Label",
+    "CategoryLabel",
+    "CircularImage",
+    "RollingText",
+    "useReducedMotionPreference",
+    "MotionConfig"
+  ],
+  "consolidation": "16 contact/Template fields and groups become shared FormControl/FormFieldGroup/FormField plus four content configs; textarea frame height is the only real context difference.",
+  "noAutomatedFrontendSuite": true,
+  "unchangedPriorComponents": [
+    "ProcessRow",
+    "OurStoryCard",
+    "CommunityCard"
+  ],
+  "remainingWork": [],
+  "limits": [
+    "Sequential Framer captures are not an immutable source revision.",
+    "Available browser only; no synchronized frame benchmark, multi-engine/device/screen-reader certification or physical OS reduced-motion toggle.",
+    "Parent/page/section/application/backend behavior excluded; comparison used isolated equal-width parent compositions.",
+    "Reference captures under docs/framer are locally ignored; clean-clone availability is a separate repository limitation.",
+    "Concurrent Button/MainFormButton work preserved and excluded from this migration attribution."
+  ]
+}

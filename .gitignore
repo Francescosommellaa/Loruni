@@ -30,5 +30,8 @@ _reference-repos/
 *.sln
 *.sw?
 
+.agent/proofs/
+
+
 
 docs/framer

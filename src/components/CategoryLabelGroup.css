@@ -1,0 +1,5 @@
+.loruni-category-label-group { position: relative; display: flex; flex-flow: row wrap; align-items: center; justify-content: flex-end; gap: var(--space-2); width: 100%; min-width: 0; height: auto; overflow: clip; }
+.loruni-category-label-group[data-wrap='phone'] { flex-wrap: nowrap; }
+.loruni-category-label-group > * { flex: none; }
+@media (width < 810px) { .loruni-category-label-group { justify-content: flex-start; flex-wrap: wrap; } }
+@media (width < 810px) { .loruni-category-label-group[data-wrap='phone'] { flex-wrap: wrap; } }

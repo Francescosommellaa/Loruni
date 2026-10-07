@@ -1,4 +1,5 @@
-export type TestimonialImage = string | { src: string; srcSet?: string; alt?: string }
+import type { ImageFillImage } from './ImageFill'
+export type TestimonialImage = ImageFillImage
 export type Testimonial = {
   image: TestimonialImage
   title: string
@@ -38,4 +39,3 @@ export const defaultTestimonials: Testimonials = [
     jobTitle: 'Il bar',
   },
 ]
-

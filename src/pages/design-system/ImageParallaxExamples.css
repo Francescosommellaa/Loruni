@@ -1,0 +1,9 @@
+.ds-parallax-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 12px; }
+.ds-parallax-controls label { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.ds-parallax-stage { width: 100%; overflow: clip; }
+.ds-parallax-frame { max-width: 100%; }
+.ds-parallax-comparison > header { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 12px; }
+.ds-parallax-comparison select { max-width: 100%; }
+.ds-parallax-comparison > header label { display: block; min-width: 0; max-width: 100%; }
+.ds-parallax-comparison > header select { display: block; width: 100%; }
+.ds-parallax-comparison input[type='number'] { max-width: 120px; }

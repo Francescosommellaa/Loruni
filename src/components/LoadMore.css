@@ -1,0 +1,21 @@
+.loruni-load-more {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: var(--component-load-more-default-width);
+  height: var(--component-load-more-default-height);
+  gap: var(--component-load-more-default-gap);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  appearance: none;
+  background: var(--component-load-more-default-fill);
+  color: var(--color-neutral-950);
+  opacity: 1;
+  overflow: visible;
+  user-select: none;
+}
+.loruni-load-more:disabled { cursor: default; }
+.loruni-load-more > .text-functional-16 { flex: none; width: max-content; white-space: pre; }

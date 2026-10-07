@@ -11,17 +11,17 @@ Catalog-only: 3
 With variants: 24 (19 con più varianti native)
 Possible / ambiguous components: 22
 
-Data:2026-10-06. Fonte: [progetto Framer LORUNI](https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6). Audit strutturale e migrazioni autorizzate: 17 complete, 0 da ultimare, 120 non iniziate.
+Data stato corrente:2026-10-07. Fonte: [progetto Framer LORUNI](https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6) e riconciliazione del codice locale. Stato:57 completed,0 to-complete,78 not-migrated,2 legacy-unused. Mapping source/runtime e confini: [MIGRATION-STATUS.md](MIGRATION-STATUS.md).
 
 Metodo/copertura e schede originali sotto descrivono la cattura iniziale. Lo stato corrente e le prove dei port sono nella sezione finale delle migrazioni e nei record `migration` JSON; le limitazioni dell'audit generale non riaprono i componenti verificati successivamente.
 
-**Stato: mappa strutturale acquisita; copertura dei dettagli di fedeltà PARZIALE.** Interni non esposti e stati non esercitati impediscono di certificare una ricostruzione pixel-perfect senza riaprire Framer. Non vengono presentati come verificati.
+**Stato della cattura strutturale iniziale: copertura dei dettagli di fedeltà PARZIALE.** Interni non esposti e stati non esercitati impediscono di certificare una ricostruzione pixel-perfect senza riaprire Framer. Non vengono presentati come verificati.
 
 137 unità censite separatamente includono parent/child, pattern pagina, campi, slot e grafiche oltre ai componenti dichiarati. Non equivale a137 componenti React autonomi. Pattern simili non unificati.
 
 Questo documento e [component-inventory.json](framer/component-inventory.json) formano un inventario unico. Le schede sono navigabili; il JSON conserva **tutte le proprietà lette per ogni nodo**, gerarchie complete, override di istanza, delta responsive/gesture, binding, asset, preset originali, motion e immagini native. Cercare components[].id o sourceNodes["scopeId/nodeId"]. Nessun valore arrotondato.
 
-Nessuna modifica a componenti/token/CSS/asset/copy/Framer; nessun form inviato e nessuna pubblicazione. Nessun generatore/build/suite di test eseguito: documentazione verificata per integrità, copertura e assenza di altre scritture.
+La cattura strutturale iniziale era documentale, senza modifiche runtime o verifiche build. Le successive migrazioni hanno prove dedicate e datate; non usare questo paragrafo storico per dedurre lo stato corrente. La riconciliazione2026-10-07 modifica soltanto documentazione/metadati.
 
 ## Metodo e limiti
 
@@ -32,7 +32,7 @@ Nessuna modifica a componenti/token/CSS/asset/copy/Framer; nessun form inviato e
 - **interactive**: Explicit actions/links/input/states/gesture/trigger. pointerEvents and elementID alone excluded.
 - **variants**: Native declared/recovered variants including gestures. Page breakpoint replicas are not new variants.
 
-Il repository locale contiene la shell Vite e /design-system, non le pagine prodotto migrate. componentExamples.ts è vuoto. File locali analizzati con hash/import/definizioni in repositoryAudit. ID Framer = riferimenti di audit, non nomi runtime.
+Il repository locale contiene la shell Vite e /design-system, non le pagine prodotto migrate. Il catalogo corrente ha27voci reali e27file componenti TSX. I57record completed hanno mapping dedicato; FAQRow chiusa nella propria task, ImageReveal attestato dal suo port indipendente. Il vecchio repositoryAudit descrive il bootstrap e non lo stato runtime corrente. ID Framer = riferimenti di audit, non nomi runtime.
 
 - Acquisizione sequenziale non atomica; timestamp/hash identificano i dati letti, non una revisione immutabile Framer.
 - Logo/Testimonials Arrow: frame/figli e screenshot recuperati; risoluzione controlli icone continua a fallire.
@@ -771,7 +771,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-004"></a>
 ### 004. Process Row
 
-framer-T0VLBAAXc · original-name · canvas · content component · page-specific · not-migrated.
+framer-T0VLBAAXc · original-name · canvas · content component · page-specific · completed.
 
 Uso:12 serializzati/4 indipendenti/12 diretti pagina-template. Pagine: /.
 
@@ -1100,7 +1100,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-006"></a>
 ### 006. Nav Item
 
-framer-sfeabPGEm · original-name · canvas · navigation · global · not-migrated.
+framer-sfeabPGEm · original-name · canvas · navigation · global · completed.
 
 Uso:48 serializzati/16 indipendenti/6 diretti pagina-template. Pagine: /, /404, /community, /community/:Community, /esperienza, /eventi, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -1679,7 +1679,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-010"></a>
 ### 010. FAQ Row
 
-framer-A7qEQUCm0 · original-name · canvas · content component · page-specific · not-migrated.
+framer-A7qEQUCm0 · original-name · canvas · content component · page-specific · completed.
 
 Uso:8 serializzati/8 indipendenti/0 diretti pagina-template. Pagine: /vieni-a-trovarci.
 
@@ -1937,7 +1937,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-012"></a>
 ### 012. Main form button
 
-framer-oG9J4ak1n · original-name · canvas · interactive component · global · not-migrated.
+framer-oG9J4ak1n · original-name · canvas · interactive component · global · completed.
 
 Uso:6 serializzati/2 indipendenti/6 diretti pagina-template. Pagine: /, /404, /community, /community/:Community, /esperienza, /eventi, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -2139,7 +2139,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-013"></a>
 ### 013. Button
 
-framer-dLxvGaGxG · original-name · canvas · UI component · shared · not-migrated.
+framer-dLxvGaGxG · original-name · canvas · UI component · shared · completed.
 
 Uso:9 serializzati/3 indipendenti/9 diretti pagina-template. Pagine: /, /404, /eventi/:Eventi.
 
@@ -2689,7 +2689,9 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-015"></a>
 ### 015. Testimonials Image reveal
 
-framer-dmfgfOdOP · original-name · canvas · media component · shared · not-migrated.
+framer-dmfgfOdOP · original-name · canvas · media component · shared · completed.
+
+Runtime condiviso ImageReveal, estratto dal private Section e chiuso2026-10-07. Contratto e prove35istanze/5slot: [IMAGE-REVEAL.md](IMAGE-REVEAL.md).
 
 Uso:35 serializzati/5 indipendenti/3 diretti pagina-template. Pagine: /, /esperienza, /eventi/:Eventi.
 
@@ -3651,7 +3653,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-020"></a>
 ### 020. Our Story Card
 
-framer-nZX03KIzW · original-name · canvas · content component · page-specific · not-migrated.
+framer-nZX03KIzW · original-name · canvas · content component · page-specific · completed.
 
 Uso:6 serializzati/4 indipendenti/0 diretti pagina-template. Pagine: /esperienza.
 
@@ -3786,7 +3788,9 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-021"></a>
 ### 021. Load More
 
-framer-hZwon9KVq · original-name · canvas · interactive component · shared · not-migrated.
+framer-hZwon9KVq · original-name · canvas · interactive component · shared · completed.
+
+Chiusura ONE TOUCH 2026-10-07: [LOAD-MORE.md](LOAD-MORE.md), tre stati semantici e sei istanze, spinner Icon condiviso, parent pagination separato.
 
 Uso:6 serializzati/2 indipendenti/6 diretti pagina-template. Pagine: /community, /eventi.
 
@@ -3953,7 +3957,7 @@ Hidden/conditional:4; condizioni esatte nel JSON. Varianti non selezionate conse
 | left = 400px | hZwon9KVq/YCl0PsQUj · 1 occorrenze · structural/canvas/calculated |
 | bottom = -80px | Plf6aN2jf/dZSnalprj · 4 occorrenze · structural/canvas/calculated |
 | bottom = -64px | Plf6aN2jf/vzw524_Q6dZSnalprj · 1 occorrenze · structural/canvas/calculated |
-Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
+Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Stato storico della cattura; LoadMore è ora completed: LOAD-MORE.md.
 <a id="component-022"></a>
 ### 022. Community Card (legacy Cards/Blog Card)
 
@@ -5240,7 +5244,9 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-032"></a>
 ### 032. Image Parallax
 
-zxcGfQb3lPhoJOWc1HTU · original-name · external · media component · shared · not-migrated.
+zxcGfQb3lPhoJOWc1HTU · original-name · external · media component · shared · completed.
+
+ONE TOUCH2026-10-07: all11instances/module/live preview read; current algorithm/crop/API and native-preview limits supersede the historical external-internals blocker below. See [IMAGE-PARALLAX.md](IMAGE-PARALLAX.md).
 
 Uso:11 serializzati/5 indipendenti/6 diretti pagina-template. Pagine: /, /esperienza, /vieni-a-trovarci.
 
@@ -5440,7 +5446,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-034"></a>
 ### 034. BTN 2
 
-58QxNnlZDpsRYqOWDie7 · original-name · external · interactive component · catalog-only · not-migrated.
+58QxNnlZDpsRYqOWDie7 · original-name · external · interactive component · catalog-only · legacy-unused.
 
 Uso:0 serializzati/0 indipendenti/0 diretti pagina-template. Pagine: solo catalogo.
 
@@ -5565,7 +5571,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-036"></a>
 ### 036. Arrow Right Alt
 
-uii4O6Q2YMyHUZDfJBlW · original-name · external · media component · catalog-only · completed.
+uii4O6Q2YMyHUZDfJBlW · original-name · external · media component · catalog-only · legacy-unused.
 
 Uso:0 serializzati/0 indipendenti/0 diretti pagina-template. Pagine: solo catalogo.
 
@@ -6075,7 +6081,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-039"></a>
 ### 039. Mobile Image · /
 
-pattern-EAJKyYveW · original-name · pattern · section · page-specific · not-migrated.
+pattern-EAJKyYveW · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /.
 
@@ -8117,7 +8123,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-055"></a>
 ### 055. Headline · /
 
-pattern-wIf2vBmrp · original-name · pattern · section · page-specific · not-migrated.
+pattern-wIf2vBmrp · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /.
 
@@ -8463,7 +8469,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-058"></a>
 ### 058. Image · /esperienza
 
-pattern-Zzb09zCxr · original-name · pattern · layout component · page-specific · not-migrated.
+pattern-Zzb09zCxr · original-name · pattern · layout component · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /esperienza.
 
@@ -9266,7 +9272,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-063"></a>
 ### 063. Stat Row · /esperienza
 
-pattern-SkaeXzDD6 · original-name · pattern · section · page-specific · not-migrated.
+pattern-SkaeXzDD6 · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /esperienza.
 
@@ -9366,7 +9372,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-064"></a>
 ### 064. Stat Row · /esperienza
 
-pattern-HQY_XVsoI · original-name · pattern · section · page-specific · not-migrated.
+pattern-HQY_XVsoI · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /esperienza.
 
@@ -9464,7 +9470,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-065"></a>
 ### 065. Stat Row · /esperienza
 
-pattern-GFcKvi6c1 · original-name · pattern · section · page-specific · not-migrated.
+pattern-GFcKvi6c1 · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /esperienza.
 
@@ -9562,7 +9568,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-066"></a>
 ### 066. Stat Row · /esperienza
 
-pattern-Yni8C4MAB · original-name · pattern · section · page-specific · not-migrated.
+pattern-Yni8C4MAB · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /esperienza.
 
@@ -9775,7 +9781,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-068"></a>
 ### 068. Headline · /esperienza
 
-pattern-VuSLlvonD · original-name · pattern · section · page-specific · not-migrated.
+pattern-VuSLlvonD · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /esperienza.
 
@@ -9982,7 +9988,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-070"></a>
 ### 070. Headline · /esperienza
 
-pattern-qgLuHW8XG · original-name · pattern · section · page-specific · not-migrated.
+pattern-qgLuHW8XG · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /esperienza.
 
@@ -10380,7 +10386,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-074"></a>
 ### 074. Label Container · /eventi/:Eventi
 
-pattern-W_o5GRkl4 · original-name · pattern · section · page-specific · not-migrated.
+pattern-W_o5GRkl4 · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /eventi/:Eventi.
 
@@ -10940,7 +10946,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-078"></a>
 ### 078. Headline · /eventi/:Eventi
 
-pattern-RuA0JWZsP · original-name · pattern · section · page-specific · not-migrated.
+pattern-RuA0JWZsP · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /eventi/:Eventi.
 
@@ -11137,7 +11143,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-080"></a>
 ### 080. Headline · /eventi/:Eventi
 
-pattern-nN8BISdtN · original-name · pattern · section · page-specific · not-migrated.
+pattern-nN8BISdtN · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /eventi/:Eventi.
 
@@ -11577,7 +11583,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-084"></a>
 ### 084. Headline · /eventi/:Eventi
 
-pattern-UNMBQYnKg · original-name · pattern · section · page-specific · not-migrated.
+pattern-UNMBQYnKg · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /eventi/:Eventi.
 
@@ -12883,7 +12889,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-095"></a>
 ### 095. Gruppo campo · /vieni-a-trovarci
 
-pattern-rBICZcWuo · inferred-name · pattern · interactive component · page-specific · not-migrated.
+pattern-rBICZcWuo · inferred-name · pattern · interactive component · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /vieni-a-trovarci.
 
@@ -12989,7 +12995,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-096"></a>
 ### 096. Campo Name · /vieni-a-trovarci
 
-pattern-uV6GPGFUr · inferred-name · pattern · interactive component · page-specific · not-migrated.
+pattern-uV6GPGFUr · inferred-name · pattern · interactive component · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /vieni-a-trovarci.
 
@@ -13085,7 +13091,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-097"></a>
 ### 097. Gruppo campo · /vieni-a-trovarci
 
-pattern-ebE9WIWRE · inferred-name · pattern · interactive component · page-specific · not-migrated.
+pattern-ebE9WIWRE · inferred-name · pattern · interactive component · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /vieni-a-trovarci.
 
@@ -13191,7 +13197,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-098"></a>
 ### 098. Campo Gruppo · /vieni-a-trovarci
 
-pattern-hZSckX7gj · inferred-name · pattern · interactive component · page-specific · not-migrated.
+pattern-hZSckX7gj · inferred-name · pattern · interactive component · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /vieni-a-trovarci.
 
@@ -13287,7 +13293,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-099"></a>
 ### 099. Gruppo campo · /vieni-a-trovarci
 
-pattern-fmFFqtjF4 · inferred-name · pattern · interactive component · page-specific · not-migrated.
+pattern-fmFFqtjF4 · inferred-name · pattern · interactive component · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /vieni-a-trovarci.
 
@@ -13393,7 +13399,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-100"></a>
 ### 100. Campo Email · /vieni-a-trovarci
 
-pattern-AbzmaKuIg · inferred-name · pattern · interactive component · page-specific · not-migrated.
+pattern-AbzmaKuIg · inferred-name · pattern · interactive component · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /vieni-a-trovarci.
 
@@ -13489,7 +13495,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-101"></a>
 ### 101. Gruppo campo · /vieni-a-trovarci
 
-pattern-KdHT0OxwM · inferred-name · pattern · interactive component · page-specific · not-migrated.
+pattern-KdHT0OxwM · inferred-name · pattern · interactive component · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /vieni-a-trovarci.
 
@@ -13596,7 +13602,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-102"></a>
 ### 102. Campo message · /vieni-a-trovarci
 
-pattern-IRkjye6Ll · inferred-name · pattern · interactive component · page-specific · not-migrated.
+pattern-IRkjye6Ll · inferred-name · pattern · interactive component · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /vieni-a-trovarci.
 
@@ -14180,7 +14186,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-108"></a>
 ### 108. Headline · /community
 
-pattern-dR7SkYjAS · original-name · pattern · section · page-specific · not-migrated.
+pattern-dR7SkYjAS · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /community.
 
@@ -14601,7 +14607,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-112"></a>
 ### 112. Tech Details · /community/:Community
 
-pattern-v0a9rAOnN · original-name · pattern · section · page-specific · not-migrated.
+pattern-v0a9rAOnN · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /community/:Community.
 
@@ -14895,7 +14901,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-115"></a>
 ### 115. Headline · /community/:Community
 
-pattern-IMQdwgcx4 · original-name · pattern · section · page-specific · not-migrated.
+pattern-IMQdwgcx4 · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /community/:Community.
 
@@ -15492,7 +15498,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-120"></a>
 ### 120. Headline · Template
 
-pattern-GXDcxsQa9 · original-name · pattern · section · global · not-migrated.
+pattern-GXDcxsQa9 · original-name · pattern · section · global · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /, /404, /community, /community/:Community, /esperienza, /eventi, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -15726,7 +15732,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-122"></a>
 ### 122. Gruppo campo · Template
 
-pattern-blKM_n5tw · inferred-name · pattern · interactive component · global · not-migrated.
+pattern-blKM_n5tw · inferred-name · pattern · interactive component · global · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /, /404, /community, /community/:Community, /esperienza, /eventi, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -15832,7 +15838,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-123"></a>
 ### 123. Campo Name · Template
 
-pattern-xvOOrP2uV · inferred-name · pattern · interactive component · global · not-migrated.
+pattern-xvOOrP2uV · inferred-name · pattern · interactive component · global · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /, /404, /community, /community/:Community, /esperienza, /eventi, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -15928,7 +15934,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-124"></a>
 ### 124. Gruppo campo · Template
 
-pattern-KklDpWuyS · inferred-name · pattern · interactive component · global · not-migrated.
+pattern-KklDpWuyS · inferred-name · pattern · interactive component · global · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /, /404, /community, /community/:Community, /esperienza, /eventi, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -16034,7 +16040,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-125"></a>
 ### 125. Campo Gruppo · Template
 
-pattern-ytvirBom_ · inferred-name · pattern · interactive component · global · not-migrated.
+pattern-ytvirBom_ · inferred-name · pattern · interactive component · global · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /, /404, /community, /community/:Community, /esperienza, /eventi, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -16130,7 +16136,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-126"></a>
 ### 126. Gruppo campo · Template
 
-pattern-A7QIJFFnm · inferred-name · pattern · interactive component · global · not-migrated.
+pattern-A7QIJFFnm · inferred-name · pattern · interactive component · global · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /, /404, /community, /community/:Community, /esperienza, /eventi, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -16236,7 +16242,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-127"></a>
 ### 127. Campo Email · Template
 
-pattern-vt6OKYbIq · inferred-name · pattern · interactive component · global · not-migrated.
+pattern-vt6OKYbIq · inferred-name · pattern · interactive component · global · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /, /404, /community, /community/:Community, /esperienza, /eventi, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -16332,7 +16338,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-128"></a>
 ### 128. Gruppo campo · Template
 
-pattern-C37cggxuY · inferred-name · pattern · interactive component · global · not-migrated.
+pattern-C37cggxuY · inferred-name · pattern · interactive component · global · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /, /404, /community, /community/:Community, /esperienza, /eventi, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -16440,7 +16446,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-129"></a>
 ### 129. Campo message · Template
 
-pattern-YErXHZjPw · inferred-name · pattern · interactive component · global · not-migrated.
+pattern-YErXHZjPw · inferred-name · pattern · interactive component · global · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /, /404, /community, /community/:Community, /esperienza, /eventi, /eventi/:Eventi, /vieni-a-trovarci.
 
@@ -17288,10 +17294,14 @@ Scansione finale: zero atom autonomi visuali eleggibili not-migrated; zero dupli
 <a id="atom-divider"></a>
 ### 136. Divider — inferred-name / completed
 
+atom-divider · inferred-name · inferred-pattern · primitive · shared · completed.
+
 40nodi,8originali deduplicati, tutti i riferimenti in components[id=atom-divider].source/nodeKeys. Frame solo,80/82×6, fill source Primary/Accent, nessuno stato/motion/radius/border. API width80|82,color esplicito; token width80/82,height6. Canvas/parent offsets esclusi. Esempi reali in catalogo; nessuna variante nativa inventata.
 
 <a id="atom-circular-image"></a>
 ### 137. Circular Image — inferred-name / completed
+
+atom-circular-image · inferred-name · inferred-pattern · primitive · shared · completed.
 
 Original name Image;6nodi/2origini Home/Community. Struttura un img, asset locale/remoto/CMS fornito dal consumer, cover e crop50%50%, radius56. API src/alt/size56|64/className/style tecnico. Desktop/Tablet64×64; Home Phone56×56 effettivi con aspect1 nonostante height60 del nodo. Community64×64 in tutti i breakpoint; isSet visibility resta CMSconsumer. Token width/height56/64,radiusavatar, nessuna mediaquery o stato/motion inventato. Screenshot/metriche originali e locali confrontati; entrambi gli asset esempio caricati ai treviewport.
 
@@ -17303,3 +17313,42 @@ Port mirati completed: Process Row T0VLBAAXc (una variante/12istanze Home) e Our
 ### Community Card — completed,2026-10-06
 
 Current Community moment preview replaces legacy Blog Card naming in runtime. Twelve instances/four contexts, image/title/subtitle/h3 controls, one visual heading selecting H2/H3; fluid width and native exact516/440 ratio. Existing typography/tokens/tween/live policy reused; hover1→1.1→1. Current CMS photos confirmed in native canvas and twelve on-demand captures; published preview contains older media. All compared source/local geometry/typo/colors/crop profiles match. API/evidence/digests/limits: COMMUNITY-CARD.md and COMMUNITY-CARD-VERIFICATION.json. Inventory137/18completed/119not-migrated/0to-complete; no parent page/section/CMS/navigation or next component ported.
+
+
+### Atom di contenuto e form — 2026-10-06
+
+34 record chiusi con otto implementazioni condivise, incluse16 copie campi/gruppi e48 istanze Nav. contentFormAtoms registra inclusioni ed esclusioni per ogni residuo; remainingSimpleNotMigrated=0. Precedenti ProcessRow/OurStoryCard/CommunityCard preservati. API/prove in CONTENT-FORM-ATOMS.md e CONTENT-FORM-ATOMS-VERIFICATION.json.
+
+
+## Main form button — chiusura ONE TOUCH 2026-10-06
+
+Solo Nav/Main form button: cinque stati semantici, sei istanze contact/Template, mapping form completo e submit nativo. Auto/fill, RollingText e Icon form-spinner originali; contratti e limiti in [MAIN-FORM-BUTTON.md](MAIN-FORM-BUTTON.md), prove finali in [MAIN-FORM-BUTTON-VERIFICATION.json](MAIN-FORM-BUTTON-VERIFICATION.json). Typecheck/lint/build PASS; nessuna suite frontend. Altri record completed concorrenti sono preservati, non verificati da questa task; i conteggi correnti sono nel JSON.
+
+
+## BTN 2 — risolto senza migrazione, 2026-10-07
+
+**LEGACY / UNUSED — NO MIGRATION REQUIRED**. External Module 58QxNnlZDpsRYqOWDie7 è solo nel catalogo Framer Tom D. Audit live: otto pagine, un Template, tutti24componenti locali e loro variant/hidden layer,27breakpoint;362istanze globali, zero riferimenti. Due query child-instance risolvono il limite visuale Icon Set di Logo/TestimonialsArrow, entrambe zero child. Due code file locali e repo src/scripts senza riferimenti. Nessuna equivalenza/assorbimento nel Button inventata e nessun codice morto creato. Stato legacy-unused separato da completed e not-migrated;54completed/1legacy-unused/82not-migrated, altre migrazioni non attestate da questa task. [Prove, fonti e limiti](BTN-2-VERIFICATION.json), [decisione](BTN-2.md). Nessun code change; typecheck/lint/build non eseguiti per istruzione utente.
+
+
+## Load More — CLOSED, 2026-10-07
+
+Native LoadMore controlled via loading/hasMore/onLoadMore. Default/Loading173×40, Hidden null, existing exact Icon spinner20×20. Six Eventi/Community consumers checked; source placement/query remain parent-owned. Typecheck/lint/buildPASS, no suite. [Contratto/prove/limiti](LOAD-MORE.md). Inventario corrente55completed/81not-migrated/1legacy-unused.
+
+
+## FAQ Row — CLOSED, 2026-10-07
+
+Un solo FAQRow controllato title/text/open/onOpenChange/onClick. FaqIcon passivo e Icon Engine esistenti, preset/token/globalfocus, size/position/opacity tween originale. Otto slot letti, cinque valorizzati confrontati a1200/810/390 con misure coincidenti; Click/Answer/keyboard/focus/inert/controlled parent/rapid reversal verificati. Differenze accessibili e peculiarità della fonte documentate, Section e sibling policy escluse. [Contratto/prove/limiti](FAQ-ROW.md). Typecheck/lint/buildPASS; nessuna suite. Conteggi correnti57completed/79not-migrated/1legacy-unused.
+
+
+### Rolling Text / Arrow Right Alt — ONE TOUCH CLOSED, 2026-10-07
+
+Unica utility canonica RollingText:14istanze in NavItem/Button/MainFormButton, sette configurazioni native; glyph/shadow/line clipping, reverse sullo stagger, tag HTML reali e transform. Shared live reduced-motion integrata nella utility, nessun secondo renderer o typography responsive hardcoded. [Contratto](ROLLING-TEXT.md), [prove](ROLLING-TEXT-ARROW-ALT-VERIFICATION.json).
+
+Arrow Right Alt external uii4O6Q2YMyHUZDfJBlW: **LEGACY / UNUSED — NO MIGRATION REQUIRED**. Zero362istanze,33scope completi e code/IconNode; il glyph Material omonimo in TestimonialsArrow Default è già testimonial-arrow, conservato con fill configurabile. La vecchia attribuzione completed del modulo è superseded, non prova di utilizzo; le prove AtomUI restano storiche. Conteggi correnti56completed/79not-migrated/2legacy-unused,26runtime/catalogentries. Nessuna utility successiva.
+
+Catalogo osservato al check finale:27voci, inclusa ImageParallax concorrente in corso;26voci/file già chiusi nella riconciliazione restano distinti dal nuovo lavoro non attestato qui. Correzione build incidentale limitata a un ramo TypeScript irraggiungibile del suo esempio, senza cambiamento del valore effettivo.
+
+
+### Image Parallax — ONE TOUCH CLOSED,2026-10-07
+
+All11instances, shared ImageFill/live reduced policy, centralized GSAP/ScrollTrigger and source-derived X/Y/overscan. Seven catalog examples plus full-width comparison; exact source algorithm verified, hidden/native-wrapper limits explicit. [Contract](IMAGE-PARALLAX.md), [executed evidence](IMAGE-PARALLAX-VERIFICATION.json). Current57completed/78not-migrated/2legacy-unused;27runtime/catalogentries. Grain/TextFitWidth/TextStagger excluded.

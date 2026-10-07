@@ -26,9 +26,6 @@
   position: relative;
   overflow: visible;
 }
-.loruni-testimonials__reveal { display: flex; align-items: center; justify-content: center; flex: 1 0 0; width: 100%; height: 1px; gap: 0; padding: 0; position: relative; overflow: clip; }
-.loruni-testimonials__image { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center center; }
-.loruni-testimonials__cover { position: absolute; top: 0; bottom: 0; z-index: 2; overflow: clip; background-color: var(--source-control-background-color-testimonials-section-desktop1image-container-testimonials-image-reveal); }
 .loruni-testimonials__spacer { align-self: start; height: 100%; width: 100%; overflow: clip; position: relative; }
 .loruni-testimonials__content {
   grid-column: span var(--component-testimonials-section-desktop1-content-grid-item-column-span);

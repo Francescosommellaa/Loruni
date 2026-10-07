@@ -4,6 +4,19 @@ import { iconNames } from '../../components/Icon.registry'
 import { Divider } from '../../components/Divider'
 import { CircularImage } from '../../components/CircularImage'
 import { RollingText } from '../../components/RollingText'
+import { RollingTextControlsExample, ExistingArrowGlyphFillExample } from './RollingTextExamples'
+import { rollingTextConfigurations, rollingTextConfiguration } from './RollingTextExamples.data'
+import { Button } from '../../components/Button'
+import { ButtonControlsExample } from './ButtonExamples'
+import { MainFormButtonLifecycleExample, MainFormButtonStatesExample } from './MainFormButtonExamples'
+import { LoadMore } from '../../components/LoadMore'
+import { LoadMoreLifecycleExample } from './LoadMoreExamples'
+import { FAQRow } from '../../components/FAQRow'
+import { FAQRowExample } from './FAQRowExamples'
+import { faqRowSlots } from './FAQRowExamples.data'
+import { ImageRevealExample } from './ImageRevealExamples'
+import { ImageParallaxExample } from './ImageParallaxExamples'
+import { GrainDefaultExample, GrainHeroExample, LiquidControlsExample } from './GrainExamples'
 import { ArrowForward } from '../../components/ArrowForward'
 import { CategoryLabel } from '../../components/CategoryLabel'
 import { Label } from '../../components/Label'
@@ -11,10 +24,11 @@ import { FaqIcon } from '../../components/FaqIcon'
 import { TestimonialsArrow, type TestimonialsArrowProps } from '../../components/TestimonialsArrow'
 import { TestimonialsSection } from '../../components/TestimonialsSection'
 import { defaultTestimonials, type Testimonials } from '../../components/TestimonialsSection.data'
-import { colors, primitive, motion as motionTokens } from '../../styles/token'
+import { colors } from '../../styles/token'
 import { ProcessHomeExample, ProcessRowControlsExample } from './ProcessRowExamples'
 import { OurStoryControlsExample, OurStoryDefaultExample, OurStoryRealCardsExample } from './OurStoryCardExamples'
 import { CommunityCardControlsExample, CommunityCardDefaultExample, CommunityCardRealExamples } from './CommunityCardExamples'
+import { FormFieldsExample, NavItemsExample, HeadlinesExample, SplitContentsExample, StatRowsExample, CategoryLabelsExample, CommunityDetailsExample, ImageFillsExample } from './ContentFormAtomExamples'
 
 export type ComponentExample = {
   name: string
@@ -77,6 +91,103 @@ function attributedTestimonials(): Testimonials {
 
 export const componentExamples: readonly ComponentExample[] = [
   {
+    name: 'Grain',
+    description: 'Raster originale ripetuto, ciclo 8s a step verificato. Opacity interna separata dal layer. Mask, sizing e stacking appartengono al consumer Hero; overlay sempre passivo.',
+    source: 'Framer · Grain · Home Desktop / Tablet / Phone',
+    examples: [
+      { name: 'Default · opacity 0.5', preview: createElement(GrainDefaultExample) },
+      { name: 'Hero · opacity 1 × layer 0.1 · mask responsive', preview: createElement(GrainHeroExample) },
+    ],
+  },
+  {
+    name: 'Liquid Hover',
+    description: 'Distorsione fluida WebGL dell’immagine. Pointer e touch/drag; ImageFill statico per reduced motion o WebGL non disponibile. GSAP ticker condiviso, risorse GPU scoped.',
+    source: 'Framer · Liquid Hover · Home Desktop, replica Tablet/Phone nascoste; estensione touch autorizzata',
+    examples: [{ name: 'Controlli reali · image / resolution / cursor / power / distortion / touch', preview: createElement(LiquidControlsExample) }],
+  },
+  {
+    name: 'Image Parallax',
+    description: 'Primitive media fill. Y segue il passaggio verticale nel viewport; X la posizione orizzontale del parent. Overscan proporzionale, crop cover, policy reduced motion condivisa. Il parent seleziona breakpoint e risolve immagini/binding.',
+    source: 'Framer · Image Parallax · 11 istanze · Esperienza / Contatti / Service Card / Our Story',
+    examples: [
+      { name: '/esperienza · Y30 · 92vh', preview: createElement(ImageParallaxExample, { kind: 'experience' }) },
+      { name: '/vieni-a-trovarci · Y30 · 92vh', preview: createElement(ImageParallaxExample, { kind: 'contact' }) },
+      { name: 'Service Card · Desktop X−50 / Phone Y50 · fill', preview: createElement(ImageParallaxExample, { kind: 'service' }) },
+      { name: 'Our Story · Y50 · 640px', preview: createElement(ImageParallaxExample, { kind: 'story' }) },
+      { name: 'Our Story · X−50 · 660px × fill', preview: createElement(ImageParallaxExample, { kind: 'story-horizontal' }) },
+      { name: 'X+Y / immagine dinamica / crop / decorazioni / reduced / unmount', preview: createElement(ImageParallaxExample) },
+      { name: 'Confronto media a viewport intero', preview: createElement('a', { href: '/design-system?fixture=image-parallax' }, 'Apri confronto Image Parallax') },
+    ],
+  },
+  {
+    name: 'FAQ Row',
+    description: 'Row/FAQ Row · Opened / Closed, API controllata e Click. FAQ Icon riusato; il parent possiede sibling policy e title isSet. Risposta fuori flow/inert in Closed, tween originale 0.2s.',
+    source: 'Framer · Row/FAQ Row · FAQ Section · 8 istanze',
+    examples: [
+      { name: 'Controlled · click / answer / keyboard / focus / rapid reversal', preview: createElement(FAQRowExample) },
+      ...(['Opened', 'Closed'] as const).map(state => ({ name: state, preview: createElement('div', { style: { maxWidth: 'var(--component-faq-row-opened-width)', width: '100%', background: 'var(--color-neutral-50)' } }, createElement(FAQRow, { ...faqRowSlots[0], open: state === 'Opened', onOpenChange: () => {} })) })),
+      ...faqRowSlots.map((item, slot) => ({ name: `Istanza ${slot + 1} · ${item.title || 'title isSet=false'}`, preview: createElement(FAQRowExample, { slot }) })),
+    ],
+  },
+  {
+    name: 'Image Reveal',
+    description: 'Utility media condivisa: copertura che si ritrae verso sinistra dopo 0.6s, tween 0.3s originale. Il parent decide dimensioni, presenza e identità; il cambio immagine su un’istanza conservata non riavvia il reveal.',
+    source: 'Framer · Misc/Testimonials Image reveal · Testimonials Section / dettaglio Eventi · 35 istanze, 5 slot indipendenti',
+    examples: [
+      { name: 'Frame sorgente · 260×256 · reveal / reduced motion', preview: createElement(ImageRevealExample, { intrinsic: true }) },
+      { name: 'Testimonials · Neutral50 · fluido / remount / visibility / image update', preview: createElement(ImageRevealExample) },
+      { name: 'Event detail · Neutral950 · immagine assegnata dal parent', preview: createElement(ImageRevealExample, { event: true }) },
+      { name: 'Image assente · nessun media', preview: createElement(ImageRevealExample, { empty: true }) },
+    ],
+  },
+  {
+    name: 'Load More',
+    description: 'Nav/Load More · Default / Loading / Hidden. Il parent passa loading, hasMore e onLoadMore; layout e paginazione restano al consumer. Spinner originale condiviso nell’Icon Engine.',
+    source: 'Framer · Nav/Load More · /eventi /community · 6 istanze',
+    examples: [
+      { name: 'Default · hover / click / focus / keyboard', preview: createElement(LoadMoreLifecycleExample) },
+      { name: 'Loading · spinner 20×20 · callback bloccato', preview: createElement(LoadMore, { hasMore: true, loading: true, onLoadMore: () => {} }) },
+      { name: 'Hidden · hasMore=false · nessun ingombro o controllo', preview: createElement(LoadMore, { hasMore: false, onLoadMore: () => {} }) },
+      ...(['Eventi', 'Community'] as const).flatMap(consumer => (['Desktop', 'Tablet', 'Phone'] as const).map(breakpoint => ({
+        name: `${consumer} · ${breakpoint} · geometria invariata`,
+        preview: createElement(LoadMoreLifecycleExample),
+      }))),
+    ],
+  },
+  {
+    name: 'Main form button', description: 'Nav/Main form button · Default, Loading, Disabled, Success, Error. Mapping reale pending/incomplete/success/error; submit nativo, Rolling Text e spinner originali. Auto-width del contatto e fill del Template.',
+    source: 'Framer · Nav/Main form button · /vieni-a-trovarci / Template · 6 istanze',
+    examples: [
+      { name: 'Cinque stati · auto width · hover / focus / keyboard', preview: createElement(MainFormButtonStatesExample) },
+      { name: 'Cinque stati · fill width', preview: createElement(MainFormButtonStatesExample, { width: 'fill' }) },
+      { name: 'Form lifecycle · submit / pending / incomplete / success / error', preview: createElement(MainFormButtonLifecycleExample) },
+    ],
+  },
+  { name: 'Form Field', description: 'FormControl + FormFieldGroup: label nativa, input text/email e textarea ridimensionabile. Configurazioni condivise Name/Gruppo/Email/Message.', source: 'Framer · /vieni-a-trovarci + Template · 16 record', examples: [{ name: 'Contatti · altezza Message automatica', preview: createElement(FormFieldsExample) }, { name: 'Template · contenitore Message 100px', preview: createElement(FormFieldsExample, { fixed: true }) }] },
+  { name: 'Nav Item', description: 'Desktop 22px / Mobile 28px / Compact 16px, selezionati dal parent. Rolling Text, link, callback e nuova scheda.', source: 'Framer · Nav Item · 48 istanze', examples: [{ name: 'Variant / hover / leave / callback / link', preview: createElement(NavItemsExample) }] },
+  { name: 'Content Headline', description: 'Headline semplici: griglia con Label, titolo centrato e titolo contatto. Preset responsive e semantica originali.', source: 'Framer · Home / Esperienza / Eventi / Community / Template · 7 record', examples: [{ name: 'Tutte le configurazioni reali', preview: createElement(HeadlinesExample) }] },
+  { name: 'Split Content', description: 'Headline/76 + Text/32 P; due colonne Desktop/Tablet, stack Phone, misure titolo 480/640.', source: 'Framer · dettagli Eventi · 2 record', examples: [{ name: 'Cinque contenuti CMS · due blocchi', preview: createElement(SplitContentsExample) }] },
+  { name: 'Stat Row', description: 'Numeri stringa, incluso ∞. Due configurazioni reali della didascalia.', source: 'Framer · Esperienza · 4 record', examples: [{ name: 'Quattro righe reali', preview: createElement(StatRowsExample) }] },
+  { name: 'Category Label Group', description: 'Wrapper con gap 2px: allineamento a destra Desktop/Tablet, a sinistra Phone. Etichette e condizioni appartengono al consumer.', source: 'Framer · dettagli Eventi / Community', examples: [{ name: 'Etichette evento', preview: createElement(CategoryLabelsExample) }] },
+  { name: 'Community Details', description: 'Firma editoriale, tipo di momento, immagine e quattro etichette condizionali. Colori della sorgente conservati.', source: 'Framer · TechDetails · dettaglio Community', examples: [{ name: 'Quattro contenuti e visibility', preview: createElement(CommunityDetailsExample) }] },
+  { name: 'Image Fill', description: 'Media semplice cover/contain, center: dimensioni, posizione e visibility responsive assegnate dal parent.', source: 'Framer · Mobile Image Home / Image Esperienza', examples: [{ name: 'Due media sorgente', preview: createElement(ImageFillsExample) }] },
+  {
+    name: 'Button',
+    description: 'Nav/Button · tre variant pubbliche. Rolling Text e freccia originali; hover separato dalla configurazione, link nativo e focus globale. Il consumer seleziona variant responsive e risolve contenuto/href dinamici.',
+    source: 'Framer · Nav/Button · Home / 404 / Evento · 9 istanze',
+    examples: [
+      ...(['Primary', 'Secondary', 'Primary Mobile'] as const).map(variant => ({ name: `${variant} · default / hover / leave / focus`, preview: createElement('div', { style: { overflowX: 'auto', padding: '8px' } }, createElement(Button, { variant, link: '#ds-component-button' })) })),
+      ...(['Desktop', 'Tablet', 'Phone'] as const).flatMap(breakpoint => [
+        { name: `Home · ${breakpoint}`, preview: createElement('div', { style: { overflowX: 'auto', padding: '8px' } }, createElement(Button, { variant: breakpoint === 'Phone' ? 'Primary Mobile' : 'Primary', text: 'VEDI LE SERATE', link: '/eventi' })) },
+        { name: `404 · ${breakpoint}`, preview: createElement('div', { style: { overflowX: 'auto', padding: '8px' } }, createElement(Button, { variant: breakpoint === 'Phone' ? 'Primary Mobile' : 'Primary', text: 'TORNA A LORUNI', link: '/' })) },
+        { name: `Evento · ${breakpoint} · contenuto/link dal consumer`, preview: createElement(Button, { variant: 'Secondary', text: 'INFO SULLA SERATA', link: '/vieni-a-trovarci' }) },
+      ]),
+      { name: 'Variant / Text / Link / New Tab · navigazione e contenuti dinamici', preview: createElement(ButtonControlsExample) },
+      { name: 'Link esterno · nuova scheda', preview: createElement(Button, { variant: 'Secondary', text: 'LORUNI · Framer', link: 'https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6', newTab: true }) },
+      { name: 'Link non configurato · default sorgente', preview: createElement('div', { style: { overflowX: 'auto' } }, createElement(Button)) },
+    ],
+  },
+  {
     name: 'Community Card',
     description: 'Fotografia e momento Community. Un’unica card fluida, titolo H2/H3 e zoom hover originale; griglia, link e selezione CMS appartengono al parent.',
     source: 'Community Card · legacy Cards/Blog Card',
@@ -122,19 +233,8 @@ export const componentExamples: readonly ComponentExample[] = [
     description: 'Hover per carattere con copia text-shadow, stagger 60%, tween originale. Font e colori delle sette configurazioni realmente utilizzate; il consumer possiede la scelta responsive.',
     source: 'Framer · Rolling Text / Nav Item / Main form button / Button',
     examples: [
-      ...([
-        { name: 'Nav Item Desktop', text: 'NAV ITEM', size: 22, weight: 400, line: '1em', color: colors.neutral50 },
-        { name: 'Nav Item Mobile', text: 'NAV ITEM', size: 28, weight: 400, line: '1em', color: colors.neutral50 },
-        { name: 'Nav Item Compact', text: 'NAV ITEM', size: 16, weight: 400, line: '1em', color: colors.neutral50 },
-        { name: 'Main form button', text: 'INVIA MESSAGGIO', size: 20, weight: 400, line: '1em', color: colors.neutral50 },
-        { name: 'Button Primary', text: 'VEDI LE SERATE', size: 48, weight: 600, line: '1.1em', color: colors.brandPrimary },
-        { name: 'Button Secondary', text: 'VEDI LE SERATE', size: 16, weight: 600, line: '1.1em', color: colors.neutral50 },
-        { name: 'Button Primary Mobile', text: 'VEDI LE SERATE', size: 28, weight: 600, line: '1.1em', color: colors.brandPrimary },
-      ] as const).map(item => ({ name: `${item.name} · hover / leave`, preview: createElement(RollingText, {
-        text: item.text, color: `var(${item.color.cssVariable})`, stagger: 60,
-        font: { fontFamily: 'var(--font-funnel-sans)', fontSize: primitive.fontSize[`value${item.size}px`].value, fontWeight: item.weight, lineHeight: item.line, letterSpacing: primitive.letterSpacing.valueNegative0Point04em.value },
-        transition: { type: 'tween', duration: parseFloat(motionTokens.transitions.buttonPrimaryTransition.config.duration), ease: [...motionTokens.transitions.buttonPrimaryTransition.config.ease] },
-      }) })),
+      ...rollingTextConfigurations.map((item, index) => ({ name: `${item.name} · hover / leave`, preview: createElement(RollingText, rollingTextConfiguration(index)) })),
+      { name: 'Parametri reali · tag / transform / reverse / testo / reduced motion', preview: createElement(RollingTextControlsExample) },
     ],
   },
   {
@@ -151,6 +251,7 @@ export const componentExamples: readonly ComponentExample[] = [
     description: 'Registry unico: glyph originali, tre frecce Button, quote e spinner distinti. I controlli di stato e gli asset del brand restano separati dalle logiche applicative.',
     source: 'Framer · SVG originali / Logo/SVG ufficiali',
     examples: [
+      { name: 'testimonial-arrow · glyph esistente / fill configurabile', preview: createElement(ExistingArrowGlyphFillExample) },
       ...iconNames.map(name => ({ name, preview: createElement('div', { style: { maxWidth: '100%', overflowX: 'auto', backgroundColor: name === 'faq' || name === 'load-more-spinner' || name.startsWith('brand-') ? `var(${colors.neutral50.cssVariable})` : `var(${colors.neutral950.cssVariable})` } }, createElement(Icon, { name, label: name } as IconProps)) })),
       ...[{ width: 63, height: 52.5 }, { width: 55, height: 52.5 }, { width: 50, height: 45.5 }].map(dimensions => ({ name: `Quote · ${dimensions.width}×${dimensions.height} · istanza originale`, preview: createElement('div', { style: dimensions }, createElement(Icon, { name: 'quote', width: dimensions.width })) })),
       { name: 'Quote · Phone Testimonials · assente', preview: createElement(Icon, { name: 'quote', width: 50, height: 45.5, visible: false }) },
