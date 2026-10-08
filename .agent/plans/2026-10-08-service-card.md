@@ -1,0 +1,13 @@
+# Service Card — ONE TOUCH
+
+Scope: only Cards/Service card, twelve source instances and four actual Home contents. Services Section, horizontal transport, visibility orchestration, routing and other composites remain pending. Preserve pre-existing dirty work.
+
+1. Read source controls/two frames/all twelve bindings and parent slots; verify actual Home breakpoint and native media/typography/layout. Resolve canvas geometry separately from browser allocation. Record source preview failures rather than substituting claims.
+2. Port one responsive ServiceCard composing ImageParallax, CategoryLabel, Divider and canonical typography/colors/geometry. Parent supplies allocated width/height/id/content/visibility; no own gesture/scroll/timeline. Optional semantic labels array up to six, conditional price.
+3. Add real catalog fixtures for defaults/four Home contents and controls for optional labels/price/images/long text/parent allocation/offset/resize/reduced/disposal. Isolated source comparison route; no product Services Section.
+4. Native/local desktop/mobile measurements, screenshots, X/Y media positions, wrapping and breakpoint changes. Browser and typecheck/lint/build/tokenscheck, no automated frontend suite. Stable final input manifest.
+5. Persist source/runtime mapping, inventory/status/contracts and Brain/log/readback, report verified limits.
+
+Status: source read complete. Home uses Desktop Section at >=810 and Mobile below810. Desktop native horizontal slot currently renders empty; Phone four cards are visible. Native component Desktop remains available as a comparator. Phone card4 label5 is bound to card2 label5 (rivincite), while Desktop uses the empty card4 field; documentary consumer must preserve this difference.
+
+Closed: both frames, all12 instance contracts, Section variables/three Home overrides unchanged at final reread. One ServiceCard plus six catalog examples; no Services Section implementation. Six native/local numeric comparisons have no differences in measured fields; native/local screenshots and proportional X/Y cover inspected. Optional labels/price, dynamic images/text, fill/auto, eight viewport widths, horizontal parent offsets and reduced/lifecycle exercised. Typecheck/lint/build/tokenscheck/diffcheck PASS, canonical23 style/font inputs unchanged. Final167-input digest1fd1ba9a4ce7b2bfd5bad0cb70aeceb6860d92a41093e9c50ad7b497097615f2 stable across gates. Vite873.06kB chunk warning retained. Source horizontal preview/device/pixel limits are explicit in SERVICE-CARD.md and verification JSON. Inventory63/72/2,33runtime/catalog,60pending parts-available parents. Brain persistence and readback recorded in verification JSON; no global memory change.

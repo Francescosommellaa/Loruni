@@ -1,0 +1,2 @@
+/* Catalog presentation: enough room to inspect the source row at its natural width. */
+#ds-component-faq-row .ds-component-grid { grid-template-columns: minmax(0, 1fr); }

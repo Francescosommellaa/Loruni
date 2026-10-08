@@ -1,0 +1,16 @@
+.loruni-button {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: min-content;
+  height: min-content;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+  text-decoration: none;
+}
+.loruni-button[href] { cursor: pointer; }
+.loruni-button > .loruni-rolling-text { flex: none; width: auto; height: auto; }

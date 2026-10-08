@@ -1,0 +1,78 @@
+.loruni-project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  min-width: 0;
+  height: var(--component-project-card-main-page-desktop-height);
+  padding: var(--component-project-card-main-page-desktop-padding);
+  overflow: hidden;
+  color: var(--color-neutral-50);
+}
+.loruni-project-card__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1 0 0px;
+  min-height: 0;
+}
+.loruni-project-card__media { position: absolute; inset: 0; transform-origin: center; }
+.loruni-project-card__overlay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--source-padding-project-card-main-page-desktop-content-content);
+  width: 100%;
+  flex: 1 0 0px;
+  min-height: 0;
+}
+.loruni-project-card__top, .loruni-project-card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  flex: 0 0 auto;
+}
+.loruni-project-card__labels { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-4); }
+.loruni-project-card__labels > h3 { white-space: pre; overflow-wrap: normal; flex: 0 0 auto; }
+.loruni-project-card__year { opacity: var(--source-opacity-value0point3); flex: 0 0 auto; white-space: pre; }
+.loruni-project-card__bottom { align-items: flex-end; }
+.loruni-project-card__text {
+  display: flex;
+  align-items: center;
+  gap: var(--space-52);
+  width: 100%;
+  max-width: var(--source-max-width-value708px);
+  flex: 0 0 auto;
+}
+.loruni-project-card__title { flex: 0 0 auto; white-space: pre; }
+.loruni-project-card__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 0px;
+  width: 1px;
+  padding: var(--source-padding-project-card-main-page-desktop-content-content-bottom-text-container);
+}
+.loruni-project-card__description > p { width: 100%; }
+.loruni-project-card h3, .loruni-project-card p { margin: 0; color: var(--color-neutral-50); }
+.loruni-project-card__title > h3, .loruni-project-card__year > p, .loruni-project-card__description > p { white-space: pre-wrap; }
+.loruni-project-card[data-mode='inner'] { height: auto; padding: 0; aspect-ratio: 16 / 9; }
+.loruni-project-card[data-mode='inner'] .loruni-project-card__overlay { padding: var(--source-padding-project-card-inner-page-desktop-content-content); }
+.loruni-project-card[data-mode='inner'] .loruni-project-card__bottom { align-items: center; }
+.loruni-project-card[data-mode='inner'] .loruni-project-card__text { width: min-content; align-items: flex-start; }
+.loruni-project-card[data-mode='inner'] .loruni-project-card__description { min-height: 57px; }
+
+@media (max-width: 809.98px) {
+  .loruni-project-card { height: var(--component-project-card-main-mobile-height); padding: var(--component-project-card-main-mobile-padding); }
+  .loruni-project-card[data-mode='inner'] { height: var(--component-project-card-inner-page-mobile-height); aspect-ratio: auto; padding: 0; }
+  .loruni-project-card[data-mode] .loruni-project-card__overlay { padding: var(--source-padding-project-card-main-mobile-content-content); }
+  .loruni-project-card[data-mode] .loruni-project-card__bottom { align-items: flex-start; }
+  .loruni-project-card[data-mode] .loruni-project-card__text { flex: 1 0 0px; width: 1px; flex-direction: column; align-items: flex-start; gap: var(--space-12); }
+  .loruni-project-card[data-mode] .loruni-project-card__description { flex: 0 0 auto; width: 100%; min-height: 0; }
+}

@@ -1,0 +1,51 @@
+.loruni-label {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--component-label-variant1-gap);
+  width: min-content;
+  height: min-content;
+  padding: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.loruni-label__container {
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--component-label-variant1-container-gap);
+  width: min-content;
+  height: var(--component-label-variant1-container-height);
+  padding: var(--component-label-variant1-container-padding);
+  position: relative;
+  overflow: visible;
+}
+
+.loruni-label__divider {
+  flex: 0 0 auto;
+  width: var(--source-width-value4px);
+  height: 100%;
+  position: relative;
+  background-color: var(--color-brand-primary);
+}
+
+.loruni-label__text {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  position: relative;
+  white-space: pre;
+}
+
+.loruni-label__text > p {
+  margin: 0;
+  white-space: pre;
+  overflow-wrap: normal;
+  text-align: var(--component-label-variant1-intro-text-alignment);
+}

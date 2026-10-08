@@ -1,0 +1,10 @@
+/* Documentation composition: parent Home gap/surface, never part of the atom. */
+.ds-process-home { display: flex; flex-direction: column; gap: var(--space-80); background-color: var(--color-neutral-800); }
+@media (min-width: 810px) { .ds-process-home { gap: var(--space-160); } }
+.ds-process-controls { display: grid; gap: var(--space-24); }
+.ds-process-controls__fields { display: grid; gap: var(--space-12); }
+.ds-process-controls__fields label { display: grid; gap: var(--space-8); }
+.ds-process-controls__fields label:has(input[type="checkbox"]) { display: flex; align-items: center; }
+.ds-process-controls__fields :is(input:not([type="checkbox"]), textarea) { width: 100%; padding: var(--space-8); color: var(--color-neutral-50); background: var(--color-neutral-950); border: 1px solid var(--color-neutral-600); }
+.ds-process-controls__fields button { padding: var(--space-8); }
+.ds-process-controls__preview { background-color: var(--color-neutral-800); }

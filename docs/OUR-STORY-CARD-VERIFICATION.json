@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-06",
+  "status": "completed",
+  "head": "6b85d4cbcf4f77b517732fe3c9b9307555b93842",
+  "method": "ordered path + NUL + SHA256(file) + LF",
+  "fileHashes": {
+    "src/components/Divider.css": "17928efb08cc2f285f5d7f1ba224646964b6cc6fe1509d4eb001b897af03973a",
+    "src/components/Divider.tsx": "50c1cd194894765fc995eeba6d56b5dc445b87090c5c4cd314d2f2cf92256a83",
+    "src/components/OurStoryCard.css": "2a3a2558f3d7098fdc52d5a1c03e649caaf55092456a4348a8925b4d2d9926b7",
+    "src/components/OurStoryCard.tsx": "2e7897abe58d9e29d932673bb8f2c1665a19bdacc20a9e0c89a956004c076636",
+    "src/motion/useReducedMotionPreference.ts": "95fa2412ca6cc27c936fe512403469ff0f42bcb0585e67fa771a5f4c557b6acc",
+    "src/pages/design-system/OurStoryCardExamples.css": "15db3b827da4670d97daedb0f28e62b7f67b1716deee12a168d05018aaf1f8bd",
+    "src/pages/design-system/OurStoryCardExamples.tsx": "81ce96a0fec496093ddbf85f02daf42df4900b6759ab03018c3e67c7992d4e9b",
+    "src/pages/design-system/componentExamples.ts": "07d8ccc5aedc90b6bedde1ef61bc8fc96dc6467f1aede5bb545e0fc99de03f96"
+  },
+  "digest": "efa82a7f586dd155d627b2c64462717afb18e58f589035ef4b9752e7294a56fe",
+  "closureInputs": "docs/COMPONENT-CLOSURE-INPUTS.json",
+  "closureDigest": "7e8ac0e93afd733ab9393f6f081c18f3459d69513e38de1890c5d3f3b1760828",
+  "sourceCaptureSha256": "ec40583c1c5b2473baed16e69b84c78bb7c9bb5e75f295b59a8a8ac046ae8317",
+  "browserEvidence": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a11165-e8ea-7390-9c38-ef9ddeba1abb/our-story-card/",
+  "comparisons": {
+    "phone": {
+      "sourceViewport": [
+        390,
+        1000
+      ],
+      "localViewport": [
+        390,
+        1000
+      ],
+      "differences": []
+    },
+    "phone809": {
+      "sourceViewport": [
+        809,
+        1000
+      ],
+      "localViewport": [
+        809,
+        1000
+      ],
+      "differences": []
+    },
+    "defaultDesktop1200": {
+      "sourceViewport": [
+        1200,
+        1080
+      ],
+      "localViewport": [
+        1200,
+        1080
+      ],
+      "differences": []
+    },
+    "defaultDesktop810": {
+      "sourceViewport": [
+        810,
+        1080
+      ],
+      "localViewport": [
+        810,
+        1080
+      ],
+      "differences": []
+    },
+    "canvasDesktop": {
+      "method": "Native canvas scale0.25 removed from relative boxes; source default typography slot compared at local1200; source consumer height1000 kept local in proof fixture.",
+      "differences": []
+    }
+  },
+  "checks": {
+    "typecheck": "PASS",
+    "lint": "PASS (0 warnings/errors)",
+    "build": "PASS",
+    "tokensCheck": "PASS after canonical generation; only source hardcode audit refresh, canonical tokens unchanged",
+    "testSuites": "not run per project direction",
+    "buildOutputs": {
+      "modules": 483,
+      "cssKB": 147.86,
+      "jsKB": 639.44,
+      "jsGzipKB": 158.07
+    },
+    "warnings": [
+      "Existing Vite bundle>500kB warning preserved"
+    ]
+  },
+  "browserChecks": [
+    "native frontend default Desktop810/1200",
+    "two real Phone cards390/809",
+    "two native canvas Desktop cards with normalized zoom0.25/source default preset/local consumer height1000",
+    "six instances/source visibility and bindings read",
+    "four content controls/defaults and string0001",
+    "alternative title wrapping",
+    "variant spring, initialfalse and settled transforms",
+    "reduced always no layout transform",
+    "responsive presets and parent-selected variant",
+    "catalog1200/810/390 no document overflow"
+  ],
+  "limits": [
+    "Page Desktop/Tablet external detached slot not mounted in available preview; card Desktop inspected isolated and as native canvas real instances",
+    "Canvas zoom/consumer overrides explicitly separated from default1080 frontend proof",
+    "Available browser engine; no synchronized frame-by-frame timing, hardware touch/cross-engine/physical OS preference toggle",
+    "No raster pixel-diff suite or automated tests; Framer capture sequential"
+  ]
+}

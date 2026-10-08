@@ -1,0 +1,80 @@
+.loruni-service-card {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  gap: 0;
+  overflow: clip;
+}
+.loruni-service-card__media {
+  position: relative;
+  flex: 0 0 var(--component-service-card-deskop-image-container-width);
+  width: var(--component-service-card-deskop-image-container-width);
+  overflow: hidden;
+}
+.loruni-service-card__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1 0 0px;
+  min-width: 0;
+  padding: var(--component-service-card-deskop-content-padding);
+  gap: var(--component-service-card-deskop-content-gap);
+  background: var(--component-service-card-deskop-content-fill);
+  color: var(--color-neutral-50);
+}
+.loruni-service-card__headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--source-gap-service-card-deskop-content-headline);
+  width: 100%;
+  flex: 0 0 auto;
+}
+.loruni-service-card__headline > h3 { width: 100%; }
+.loruni-service-card__labels {
+  position: absolute;
+  right: 128px;
+  top: 74px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: var(--space-320);
+  max-width: var(--space-320);
+  gap: var(--space-2);
+}
+.loruni-service-card__labels > .loruni-category-label { flex: 0 0 auto; }
+.loruni-service-card__description {
+  width: 100%;
+  max-width: var(--source-max-width-value672px);
+  flex: 0 0 auto;
+  opacity: var(--source-opacity-value0point7);
+}
+.loruni-service-card__bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: var(--space-8);
+  width: 100%;
+  flex: 1 0 0px;
+}
+.loruni-service-card__price { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-4); flex: 1 0 0px; width: 1px; }
+.loruni-service-card__price > h3:first-child { opacity: var(--source-opacity-value0point7); white-space: pre; }
+.loruni-service-card__price > h3, .loruni-service-card__number { flex: 0 0 auto; }
+.loruni-service-card__number { opacity: var(--source-opacity-value0point3); width: max-content; }
+.loruni-service-card__headline h3, .loruni-service-card__description p, .loruni-service-card__price h3, .loruni-service-card__number h2 { margin: 0; color: var(--color-neutral-50); white-space: pre-wrap; }
+
+@media (max-width: 809.98px) {
+  .loruni-service-card { flex-direction: column; align-items: center; height: auto; }
+  .loruni-service-card__media { flex: 0 0 auto; width: 100%; height: var(--component-service-card-mobile-image-container-height); }
+  .loruni-service-card__content { flex: 0 0 auto; width: 100%; padding: var(--component-service-card-mobile-content-padding); gap: var(--component-service-card-mobile-content-gap); }
+  .loruni-service-card__headline { gap: var(--space-16); }
+  .loruni-service-card__labels { position: relative; top: auto; right: auto; width: 100%; max-width: none; justify-content: flex-start; }
+  .loruni-service-card__bottom { flex: 0 0 auto; }
+}

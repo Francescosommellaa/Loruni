@@ -1,0 +1,18 @@
+.ds-faq-section-source,
+.ds-faq-section-allocation {
+  max-width: 100%;
+  background: var(--color-brand-primary);
+}
+.ds-faq-section-source { width: 733.5px; }
+.ds-faq-section-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.ds-faq-section-controls label { display: flex; flex-direction: column; gap: 4px; }
+.ds-faq-section-controls input[type='checkbox'] { align-self: flex-start; }
+.ds-faq-section-after { margin: 0; padding: 24px 0; }
+.ds-faq-section-comparison { min-height: 200vh; padding: 0; }
+.ds-faq-section-comparison-controls { margin-top: 120px; }
+.ds-faq-section-frame iframe { display: block; border: 0; max-width: none; }

@@ -1,0 +1,273 @@
+{
+  "date": "2026-10-06",
+  "head": "6b85d4cbcf4f77b517732fe3c9b9307555b93842",
+  "method": "Sorted path + NUL + SHA256(file bytes) + LF; all src, public assets and build configuration, including concurrent component imports",
+  "digest": "f516d6c7c1357e45aae1e4b9ae9d7082cec3496d228f2cdbded22f5461bcd5bb",
+  "inputs": [
+    {
+      "path": "index.html",
+      "sha256": "44f13097dd232672c98b796a7215ea16e4992481803b8648aaecfb144ee9b7e0"
+    },
+    {
+      "path": "package.json",
+      "sha256": "cc27f65a7f9c38e35273b32581e362cb22d22883eaf76faf9053c086d461aafa"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "2edc4414d3a4a56374025c4b73b1b91b6f72be87cc820ca7683cfd39d550c90c"
+    },
+    {
+      "path": "public/fonts/funnel-display-600-normal.woff2",
+      "sha256": "0eb50930cbadee5871422774e228fe11d0d2fbcf53c69e52a59fd9fd1f1a0d3c"
+    },
+    {
+      "path": "public/fonts/funnel-display-800-normal.woff2",
+      "sha256": "76d9900b48ce832f407756ef281d22d2873dd23d6340b06df59b6ff5d71612e4"
+    },
+    {
+      "path": "public/fonts/funnel-display-OFL.txt",
+      "sha256": "a32303f6ea3542927121212a9e4f3fe3548741e6d448d9dc6f29e97cf50102e6"
+    },
+    {
+      "path": "public/fonts/funnel-sans-400-italic.woff2",
+      "sha256": "e5d6074b15b7672d491704d3ba40af0cb2e20b1c57c1bf99de0783cbfaf26daa"
+    },
+    {
+      "path": "public/fonts/funnel-sans-400-normal.woff2",
+      "sha256": "89eb0ff8e0896d5cc9c91fd43c29828da93a9517955129fe5f390759afac9ac7"
+    },
+    {
+      "path": "public/fonts/funnel-sans-600-italic.woff2",
+      "sha256": "87538f38352e86c372ad3301bc4ac0626398c553e29afca74dd3a50b2dbb5dd5"
+    },
+    {
+      "path": "public/fonts/funnel-sans-600-normal.woff2",
+      "sha256": "53c595beb5ae285bbba974362953b9f823c697753200e183380bbeab250f3192"
+    },
+    {
+      "path": "public/fonts/funnel-sans-700-italic.woff2",
+      "sha256": "aa3d4735dc5c6d421d98251035ff6794133ade221b3586cfce2c29f063e47048"
+    },
+    {
+      "path": "public/fonts/funnel-sans-700-normal.woff2",
+      "sha256": "a5326e42e54c221a0b482b21137ad8217a48295ba4397e764362f192e8f027b5"
+    },
+    {
+      "path": "public/fonts/funnel-sans-800-italic.woff2",
+      "sha256": "b69f6f2eef6065ff3f5cc5634a7e7eb08721c8bba0207fe8e9594cb01cd7884a"
+    },
+    {
+      "path": "public/fonts/funnel-sans-800-normal.woff2",
+      "sha256": "b9063a30b7d3f94b6a78e443b9567a4b4befc6d7791ab201b2839b2b0b966298"
+    },
+    {
+      "path": "public/fonts/funnel-sans-OFL.txt",
+      "sha256": "a32303f6ea3542927121212a9e4f3fe3548741e6d448d9dc6f29e97cf50102e6"
+    },
+    {
+      "path": "public/fonts/ibm-plex-sans-600-italic.woff2",
+      "sha256": "b5ca90658b5e340bae097b15084047194bc69881f0a36aba82cfb92203c2fd79"
+    },
+    {
+      "path": "public/fonts/ibm-plex-sans-600-normal.woff2",
+      "sha256": "48b4a50176dbc8389ab3db4824289692fbed1863541c427f89f4ca500d3f1ca8"
+    },
+    {
+      "path": "public/fonts/ibm-plex-sans-OFL.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "src/app/App.css",
+      "sha256": "1033236985b6266a919f3cef583c58ccde23600a196e138f316653ab54f258e3"
+    },
+    {
+      "path": "src/app/App.tsx",
+      "sha256": "b07169fa9f0773155a3f39a86c9b0c1e0e2275f9a71fdff8b006e19cc25424f7"
+    },
+    {
+      "path": "src/components/ArrowForward.css",
+      "sha256": "03bdad2c9bd5ff7261ab56114123c45d6d7e6d5fa5f51a1f302b0364c25e378e"
+    },
+    {
+      "path": "src/components/ArrowForward.tsx",
+      "sha256": "87511619fafb9f09c9d624ae264b04adf2fcc51741279578ee3752c15bfb51a1"
+    },
+    {
+      "path": "src/components/CategoryLabel.css",
+      "sha256": "40ff09fe5781eac06c476790288df8cde41c37dd309db09ec85976d48a1c9889"
+    },
+    {
+      "path": "src/components/CategoryLabel.tsx",
+      "sha256": "2bf7640c6fc5a22226a94ee63d2fd7d6df7826c9471709aaa751d83f1068f25f"
+    },
+    {
+      "path": "src/components/FaqIcon.css",
+      "sha256": "55861e8e2e88b28f111a352a42da8de02da20e6530d720c8108371afdd5204cf"
+    },
+    {
+      "path": "src/components/FaqIcon.tsx",
+      "sha256": "aa2475b87674ce35408115d66626cf26537bb974108aef400b0200c43ea4c650"
+    },
+    {
+      "path": "src/components/Label.css",
+      "sha256": "2111cf9c19f7f871bf177b998073e0398a0d8bfdf78d68509ba9429b0f126f31"
+    },
+    {
+      "path": "src/components/Label.tsx",
+      "sha256": "1059191c8a44e0c4566c2b215314e52cc575db31aa24b30d4576a436ce12d754"
+    },
+    {
+      "path": "src/components/TestimonialsArrow.css",
+      "sha256": "b44ffa8a215a340ae82b063c41e380f1f5fbcf015f535f7371c04a4258af18ab"
+    },
+    {
+      "path": "src/components/TestimonialsArrow.tsx",
+      "sha256": "662165ef1a0e2413fab732f77fd440997345feaa313c0bcf6c6967520ec6c678"
+    },
+    {
+      "path": "src/components/TestimonialsSection.css",
+      "sha256": "ce09b12960e63d5e4433340f911154c6fb59169a5971b8e2968db3a174dc974e"
+    },
+    {
+      "path": "src/components/TestimonialsSection.data.ts",
+      "sha256": "438503e6a9ceed516eed936b4574ee1b6eca4928ed56e5c0f79947f3946d6c09"
+    },
+    {
+      "path": "src/components/TestimonialsSection.tsx",
+      "sha256": "871858cbb9a453a76982ab34e8cb13a3cc7e6235f7282afa2b4e47ccc23382c6"
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "283d218fb37551de93f4be090329390b2d6f4dea093e4021b866c264b21b0934"
+    },
+    {
+      "path": "src/pages/design-system/CatalogTools.tsx",
+      "sha256": "62cbabae45a7d6d0be24e587e766b68adfeb009a83b8aff5c1e38c3638d8065e"
+    },
+    {
+      "path": "src/pages/design-system/DesignSystemPage.css",
+      "sha256": "0c2ac3169b248bf8c624c60e018e9683c7e935c16cca07a493ba1ae9c9ac966d"
+    },
+    {
+      "path": "src/pages/design-system/DesignSystemPage.tsx",
+      "sha256": "51a5910e8b87baa2abb646a4695f24fd5f5a8c27b8673f7a4bd801eab3afd153"
+    },
+    {
+      "path": "src/pages/design-system/GeometryCatalog.tsx",
+      "sha256": "ce18efce4324df91dd310710b5a67cabfc3738bc169a566145d9f96b3e98b678"
+    },
+    {
+      "path": "src/pages/design-system/SourceCatalog.tsx",
+      "sha256": "be64f60645c6900702f8fe66392d427064e75428b14adb8da38079033f082aeb"
+    },
+    {
+      "path": "src/pages/design-system/catalogIndex.ts",
+      "sha256": "eaec1f0cd3de932ebab62013536ed8c08a316169effa728676be176218ffc666"
+    },
+    {
+      "path": "src/pages/design-system/componentExamples.ts",
+      "sha256": "eedec7b118fab9dad25189f153ad1989507b045219abd02dbe68b3d34f60990c"
+    },
+    {
+      "path": "src/styles/base.css",
+      "sha256": "8407467005167e85a2d55c26019d6ec1b236c26eac9b1a255da1f61458c70f69"
+    },
+    {
+      "path": "src/styles/fonts.css",
+      "sha256": "edacce7d8c78f94e9e1637b83864f029bc1f2148232da624bc8d7b81b67b8e69"
+    },
+    {
+      "path": "src/styles/geometry.css",
+      "sha256": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b"
+    },
+    {
+      "path": "src/styles/geometry.ts",
+      "sha256": "0dc588e40f4f38af4a433477ee48030097eee212b0eb675c27c55cf71767d515"
+    },
+    {
+      "path": "src/styles/token.css",
+      "sha256": "fb153ef97d0a931254d40b8c98fcefa35160bc39a87da1633870276009db85fd"
+    },
+    {
+      "path": "src/styles/token.ts",
+      "sha256": "badd46b62fdbc1e4ff716712335952736092113b0658a6d9de3406cc75725876"
+    },
+    {
+      "path": "src/styles/tokens.css",
+      "sha256": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b"
+    },
+    {
+      "path": "src/styles/tokens.ts",
+      "sha256": "332968b0a8e8a69b2afad954061eb9896d9133e4548d44fc5c7c956c3e4511c0"
+    },
+    {
+      "path": "tsconfig.app.json",
+      "sha256": "a3379db7120040b34b19981d958c14f6ef3b48268cc596df4fab84829bb7f286"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+    },
+    {
+      "path": "tsconfig.node.json",
+      "sha256": "8e04d5d603fdaa9eac3e5d5b0f98f0dc1696ee2fae2852470dcd23e42e798d82"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "e1eefd0ed1639c88d1213884ef760516884db9e168190e223fee6b063ad3e088"
+    }
+  ],
+  "checks": {
+    "lint": "PASS",
+    "tokensCheck": "PASS",
+    "build": "PASS with Vite chunk size warning; JS 540.91 kB / gzip 137.95 kB, CSS 142.25 kB / gzip 16.32 kB"
+  },
+  "browser": {
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        1280,
+        720
+      ],
+      [
+        810,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "documentOverflow": false,
+    "verified": [
+      "search and more results",
+      "zero results and Escape",
+      "source/recipe/default deep links and focus",
+      "reload opens ancestor details",
+      "clipboard writes exact variable with live feedback",
+      "editable typography and reset",
+      "mobile index Enter and collapse after navigation",
+      "live viewport navigation switch",
+      "skip link Enter focuses main",
+      "FAQ callback in framed preview",
+      "base text/select/checkbox/button controls",
+      "console warnings/errors empty"
+    ],
+    "limits": [
+      "clipboard denial fallback not exercised",
+      "live reduced motion preference not exercised",
+      "screen reader, physical touch and cross-browser not exercised",
+      "product imports observed concurrently are not claimed as work of this task"
+    ]
+  },
+  "screenshots": {
+    "desktop": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a1113c-b227-7dd1-9d5a-c524a89b7d4a/design-system-desktop.jpg",
+    "phone": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a1113c-b227-7dd1-9d5a-c524a89b7d4a/design-system-phone.jpg"
+  },
+  "automatedSuites": "not added or run",
+  "previousVerifiedDigest": "20fd2c59f8c1c9b015c0541f87a820ecc567e0203da32e9c97c877d5b2ebc419",
+  "concurrentUpdate": "TestimonialsSection.tsx changed during persistence; build/lint/tokens:check repeated on this snapshot. Catalog source itself unchanged. Final browser reload, clean console and viewport overflow/menu measurements repeated at 390/810/1280/1440; screenshots recaptured. Earlier interactions refer to identical catalog inputs and unchanged FAQ/base preview inputs."
+}

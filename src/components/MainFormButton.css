@@ -1,0 +1,19 @@
+.loruni-main-form-button {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  border: 0;
+  border-radius: 0;
+  appearance: none;
+  opacity: 1;
+  cursor: pointer;
+  overflow: visible;
+  user-select: none;
+}
+.loruni-main-form-button:disabled { cursor: default; }
+.loruni-main-form-button > p { flex: none; width: max-content; margin: 0; white-space: pre; }
+.loruni-main-form-button > .loruni-rolling-text { flex: 1; width: auto; height: auto; }
+.loruni-main-form-button .loruni-rolling-text__text { text-align: center; }

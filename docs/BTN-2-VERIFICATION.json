@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-07",
+  "timezone": "Europe/Rome",
+  "sourceProject": "F3868vuk7YeE7pDEgpP6",
+  "component": "BTN 2",
+  "externalModuleId": "58QxNnlZDpsRYqOWDie7",
+  "classification": "LEGACY / UNUSED — NO MIGRATION REQUIRED",
+  "status": "closed-without-migration",
+  "activeUsageCount": 0,
+  "where": "Framer external catalog / Tom D only",
+  "currentFunction": null,
+  "absorbedByButton": false,
+  "absorptionEvidence": "No reference or documented replacement; no equivalence inferred from click/link controls or name.",
+  "sourceCapture": "docs/framer/btn-2-source.json",
+  "sourceSha256": "a4d820d3d7c3e3ab5f8010322fe1066692808da7c144a5d15399d8caca75104a",
+  "sourceReadOnly": true,
+  "coverage": {
+    "webPages": 8,
+    "templates": 1,
+    "localCanvasComponents": 24,
+    "completeScopeTrees": 31,
+    "serializedNodes": 2194,
+    "explicitHiddenNodes": 165,
+    "depth": 30,
+    "truncatedNodes": 0,
+    "globalComponentInstances": 362,
+    "globalMatches": 0,
+    "treeMatches": 0,
+    "codeFiles": 2,
+    "codeImportsOrNameMatches": 0,
+    "designPages": 0,
+    "pageTemplateBreakpoints": 27
+  },
+  "fallback": [
+    {
+      "id": "PwJSSuRWe",
+      "componentInstances": 0
+    },
+    {
+      "id": "pDiVZWXZp",
+      "componentInstances": 0
+    }
+  ],
+  "sourceReadErrors": [
+    {
+      "id": "PwJSSuRWe",
+      "name": "Testimonials Arrow",
+      "kind": "component",
+      "error": "FramerPluginError: Assertion Error: Could not resolve the icon set for variable \"Icon\"."
+    },
+    {
+      "id": "pDiVZWXZp",
+      "name": "Logo",
+      "kind": "component",
+      "error": "FramerPluginError: Assertion Error: Could not resolve the icon set for variable \"Upload Logo\"."
+    }
+  ],
+  "catalogReadback": {
+    "added": [
+      {
+        "id": "kzYpAYTcIrmL7AqAiMfc",
+        "displayName": "Red Bull"
+      },
+      {
+        "id": "uii4O6Q2YMyHUZDfJBlW",
+        "displayName": "Arrow Right Alt"
+      }
+    ],
+    "removed": [],
+    "localCatalogStable": true,
+    "targetStable": true
+  },
+  "finalGlobalQuery": {
+    "instances": 362,
+    "matches": []
+  },
+  "editorObservation": "Opened current main project, Assets search BTN 2 shows external Tom D / BTN 2 only; Pages show current routes and no design page. No insert or source mutation.",
+  "repositorySearch": {
+    "command": "rg -n 58QxNnlZDpsRYqOWDie7|BTN 2 src scripts",
+    "matches": [],
+    "inspected": [
+      "src/components/Button.tsx",
+      "src/components/MainFormButton.tsx",
+      "src/components/NavItem.tsx",
+      "src/pages/design-system/componentExamples.ts"
+    ],
+    "runtimeDigest": "679530e1067866393d4063f717045afcf4f035620a423b45439ef2b4a8b93127",
+    "runtimeFiles": 105,
+    "runtimeDrift": [],
+    "finalRuntimeDrift": []
+  },
+  "revision": "cf680410bf6dc8d3382a1816e49501239027b9bb",
+  "checks": {
+    "typecheck": "NOT RUN — no code change",
+    "lint": "NOT RUN — no code change",
+    "build": "NOT RUN — no code change",
+    "frontendSuite": "NOT RUN",
+    "metadataIntegrity": "PASS — only BTN 2 record changed; current counters sum137",
+    "brainReadback": "PASS"
+  },
+  "limits": [
+    "Sequential current-project capture, not immutable Framer revision.",
+    "External internals remain opaque; no appearance reconstructed.",
+    "Full serialization of Logo/Testimonials Arrow fails on Icon Set variables; independent child-instance queries succeed with zero children; global instance query succeeds for all project nodes.",
+    "External catalog gained existing Red Bull and Arrow Right Alt entries between reads; local catalog and BTN 2 entry stable, no global instance delta.",
+    "docs/framer capture is locally ignored by repository policy."
+  ],
+  "remainingWork": [],
+  "inventoryReadback": {
+    "changedRecords": [
+      "58QxNnlZDpsRYqOWDie7"
+    ],
+    "summary": {
+      "totalComponents": 137,
+      "global": 23,
+      "shared": 18,
+      "pageSpecific": 93,
+      "catalogOnly": 3,
+      "interactive": 68,
+      "animated": 55,
+      "withVariants": 24,
+      "highCriticalRisk": 83,
+      "ambiguous": 22,
+      "canvas": 24,
+      "code": 2,
+      "external": 10,
+      "withMultipleNativeVariants": 19,
+      "hardcodedRecordOccurrences": 833,
+      "completedComponents": 54,
+      "toCompleteComponents": 0,
+      "notMigratedComponents": 82,
+      "legacyUnusedComponents": 1
+    }
+  },
+  "documentSha256": {
+    "docs/BTN-2.md": "6e720aac224e8f2f9cf54019eb47103f6ede9788ad2aaa1a0704dee7f34d4b53",
+    "docs/COMPONENT_INVENTORY.md": "a3a6f7e5c9492079f6f0086a3034fdb693048bdfafe69246ac34a488f7b305fa",
+    "docs/framer/component-inventory.json": "9b137d34d68a90036a066aa488f28c1d13368adcd164ea13c6c318845c4a1ce7",
+    ".agent/PLANS.md": "f96d637070182b13b45a7e405428731affe4f5775abe3e414216a9ac0a2f8c31",
+    ".agent/plans/2026-10-07-btn-2.md": "5a78be7d93c922dadda7037a08718e838bbbafb003acacd4ddf7f096e4cd861b"
+  }
+}

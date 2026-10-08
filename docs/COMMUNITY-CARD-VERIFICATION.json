@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-06",
+  "status": "completed",
+  "head": "67953596c47c862eb0b0fbe07247b761f90d81af",
+  "method": "ordered path + NUL + SHA256(file) + LF",
+  "fileHashes": {
+    "src/components/CommunityCard.css": "8a1d35dd4df47902f64b653947b2a8818a2b4e88772078ff2823565f5536e1bc",
+    "src/components/CommunityCard.tsx": "7c0c812a0a179c264de40a0d10dc2dec823ed0db4f7a2e94ba146d19473647a2",
+    "src/motion/useReducedMotionPreference.ts": "95fa2412ca6cc27c936fe512403469ff0f42bcb0585e67fa771a5f4c557b6acc",
+    "src/pages/design-system/CommunityCardExamples.css": "7c3fa7d0d45e71f9d88652571619531e122e6a1a7861b3ed611260241b759901",
+    "src/pages/design-system/CommunityCardExamples.data.ts": "90efc015eacc30b7116a0400594ed61d2a4fc11b525bc629c16d890f63558ecf",
+    "src/pages/design-system/CommunityCardExamples.tsx": "af9667cbf2d644e7daf3ad77fd40e479a2106f2da8ddb1eb38603619f524895e",
+    "src/pages/design-system/componentExamples.ts": "3aa807033a89f7e97f863c5d017c356a87580112fc22c3fd3b2761f13bcb2d5a",
+    "src/styles/token.css": "fb153ef97d0a931254d40b8c98fcefa35160bc39a87da1633870276009db85fd",
+    "src/styles/token.ts": "badd46b62fdbc1e4ff716712335952736092113b0658a6d9de3406cc75725876"
+  },
+  "implementationDigest": "749afe6fd253d9d8b2a76e30150d2ee0c20f4261db6fa1da2522ba0ce9389c1a",
+  "closureInputs": "docs/COMMUNITY-CARD-CLOSURE-INPUTS.json",
+  "finalBuildInputCount": 76,
+  "finalBuildInputDigest": "63354da1ee6e54db4fe81db72a71c5d37f0e1f1e06501b7f7133d68a1f8130d3",
+  "unchangedAfterChecks": true,
+  "sourceCaptureSha256": "e1b23dd0495eff676abb3ab2c239a3c1ad4fec6ba271fa52dbe0c845405d67c7",
+  "sourceInstances": 12,
+  "currentCmsMoments": 4,
+  "nativeInstanceScreenshotCount": 12,
+  "browserEvidence": "C:/Users/FRA/.codex/visualizations/2026/10/06/01a11165-e8ea-7390-9c38-ef9ddeba1abb/community-card",
+  "comparisons": [
+    {
+      "profile": "public-parent",
+      "viewport": 390,
+      "cards": 4,
+      "differences": []
+    },
+    {
+      "profile": "public-parent",
+      "viewport": 809,
+      "cards": 4,
+      "differences": []
+    },
+    {
+      "profile": "public-parent",
+      "viewport": 810,
+      "cards": 4,
+      "differences": []
+    },
+    {
+      "profile": "public-parent",
+      "viewport": 1199,
+      "cards": 4,
+      "differences": []
+    },
+    {
+      "profile": "public-parent",
+      "viewport": 1200,
+      "cards": 4,
+      "differences": []
+    },
+    {
+      "profile": "public-parent",
+      "viewport": 1440,
+      "cards": 4,
+      "differences": []
+    },
+    {
+      "profile": "current-canvas",
+      "viewport": 1200,
+      "cards": 4,
+      "differences": []
+    },
+    {
+      "profile": "current-canvas",
+      "viewport": 810,
+      "cards": 4,
+      "differences": []
+    },
+    {
+      "profile": "current-canvas",
+      "viewport": 390,
+      "cards": 4,
+      "differences": []
+    }
+  ],
+  "motion": {
+    "source": [
+      {
+        "state": "hover",
+        "transform": "matrix(1.1, 0, 0, 1.1, 0, 0)"
+      },
+      {
+        "state": "leave-sample",
+        "transform": "matrix(1.1, 0, 0, 1.1, 0, 0)"
+      },
+      {
+        "state": "public-hover",
+        "transform": "matrix(1.1, 0, 0, 1.1, 0, 0)"
+      },
+      {
+        "state": "public-leave",
+        "transform": "none"
+      }
+    ],
+    "local": [
+      {
+        "state": "hover",
+        "transform": "matrix(1.1, 0, 0, 1.1, 0, 0)"
+      },
+      {
+        "state": "final-hover",
+        "transform": "matrix(1.1, 0, 0, 1.1, 0, 0)"
+      },
+      {
+        "state": "catalog-hover",
+        "transform": "matrix(1.1, 0, 0, 1.1, 0, 0)"
+      },
+      {
+        "state": "catalog-leave",
+        "transform": "none"
+      }
+    ],
+    "transition": {
+      "type": "tween",
+      "duration": 0.5,
+      "delay": 0,
+      "ease": [
+        0.85,
+        0.05,
+        0.26,
+        0.96
+      ]
+    },
+    "reducedPolicy": "always: scale1; root context and existing live preference hook reused"
+  },
+  "semantics": {
+    "headingBefore": {
+      "font": "28px",
+      "h": 30.796875,
+      "tag": "H3",
+      "w": 340
+    },
+    "headingAfter": {
+      "font": "28px",
+      "h": 30.796875,
+      "tag": "H2",
+      "w": 340
+    }
+  },
+  "checks": {
+    "typecheck": "PASS",
+    "lint": "PASS (0 warnings/errors)",
+    "build": "PASS",
+    "tokensCheck": "PASS",
+    "canonicalTokens": "byte-identical to previous closure",
+    "testSuites": "not run per project direction",
+    "outputs": {
+      "modules": 488,
+      "jsKB": 643.28,
+      "jsGzipKB": 158.95,
+      "cssKB": 150.55,
+      "cssGzipKB": 17.66
+    },
+    "warnings": [
+      "Existing Vite bundle>500kB warning retained",
+      "Browser Motion reduced preference notice from intentional always-policy fixture; no console errors"
+    ]
+  },
+  "otherChecks": [
+    "All four current images loaded; cover/center and native empty-image hatch",
+    "Responsive image object forwards srcSet and alt",
+    "Default contents, empty strings and H2/H3 switch",
+    "Real four contexts native browser1200/810/390 plus source twelve instance captures/ancestors",
+    "Resize809→810 and1199→1200, width can exceed516 while text max measures remain340/516"
+  ],
+  "remainingWork": [],
+  "limits": [
+    "Read-only Framer snapshots sequential, not immutable revision",
+    "Published preview photographs differ from current editor CMS; current canvas/on-demand screenshots used for media proof",
+    "Available browser only; no hardware touch, physical live OS toggle or synchronized frame-by-frame timing proof",
+    "Parent pages/sections/CMS routing not ported",
+    "docs/framer captures locally ignored by repository policy"
+  ],
+  "taskStartHead": "6b85d4cbcf4f77b517732fe3c9b9307555b93842",
+  "concurrentCommit": "Prior migrations committed independently during this task; existing build inputs remained byte-identical. Final scoped catalog presentation change checked on current HEAD.",
+  "catalog": "Scoped single-column example stages; browser1280x720/1280x1200 inspected, no document overflow. Product components unchanged by presentation adjustment."
+}

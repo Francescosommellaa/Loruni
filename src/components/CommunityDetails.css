@@ -1,0 +1,7 @@
+.loruni-community-details { position: relative; display: flex; flex-flow: row nowrap; align-items: center; justify-content: center; gap: var(--space-80); width: 100%; min-width: 0; height: auto; overflow: clip; }
+.loruni-community-details__person { display: flex; flex: none; flex-flow: row nowrap; align-items: center; justify-content: flex-start; gap: var(--space-16); width: auto; height: auto; }
+.loruni-community-details__identity { display: flex; flex-flow: column nowrap; align-items: flex-start; justify-content: flex-start; gap: var(--space-4); width: auto; height: auto; }
+.loruni-community-details p { color: var(--color-neutral-50); margin: 0; width: auto; text-align: start; }
+.loruni-community-details__role { opacity: var(--source-opacity-value0point7); }
+.loruni-community-details > .loruni-category-label-group { flex: 1 0 0; }
+@media (width < 810px) { .loruni-community-details { flex-direction: column; align-items: flex-start; } .loruni-community-details > .loruni-category-label-group { flex: none; } }

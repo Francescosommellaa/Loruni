@@ -1,0 +1,22 @@
+.ds-grain-hero { position: relative; width: 100%; height: 100vh; overflow: clip; background: var(--source-fill-home-desktop-hero); }
+.ds-grain-liquid, .ds-grain-static { position: absolute; inset: 0; }
+.ds-grain-static { display: none; z-index: 1; }
+.ds-grain-layer { position: absolute; inset: 0; z-index: 1; pointer-events: none; mask-image: var(--source-mask-home-desktop-hero-grain); -webkit-mask-image: var(--source-mask-home-desktop-hero-grain); }
+.ds-grain-hit { position: absolute; z-index: 1; bottom: 40px; left: 40px; }
+.ds-grain-controls { display: flex; flex-wrap: wrap; gap: 12px; padding: 12px; }
+.ds-grain-controls label { display: flex; flex-direction: column; }
+.ds-grain-controls input { width: 90px; }
+.ds-grain-default { position: relative; height: 320px; background: var(--source-fill-home-desktop-hero); }
+.ds-grain-default span { position: relative; }
+.ds-liquid-control-frame { width: 100%; height: 400px; overflow: clip; background: var(--source-fill-home-desktop-hero); }
+@media (max-width: 1199.98px) {
+  .ds-grain-liquid { display: none; }
+  .ds-grain-static { display: block; }
+  .ds-grain-layer { mask-image: var(--source-mask-home-tablet-hero-grain); -webkit-mask-image: var(--source-mask-home-tablet-hero-grain); }
+  .ds-grain-hero[data-mobile-liquid='true'] .ds-grain-liquid { display: block; }
+  .ds-grain-hero[data-mobile-liquid='true'] .ds-grain-static { display: none; }
+}
+@media (max-width: 809.98px) {
+  .ds-grain-layer { z-index: 2; mask-image: var(--source-mask-home-phone-hero-grain); -webkit-mask-image: var(--source-mask-home-phone-hero-grain); }
+  .ds-grain-hit { bottom: 80px; left: 12px; }
+}

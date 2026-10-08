@@ -1,0 +1,9 @@
+.loruni-circular-image {
+  display: block;
+  position: relative;
+  flex: none;
+  aspect-ratio: 1;
+  border-radius: var(--radius-avatar);
+  object-fit: cover;
+  object-position: center;
+}

@@ -1,0 +1,148 @@
+{
+  "verifiedAt": "2026-10-05T17:17:43.035396+00:00",
+  "installationTool": "skill-installer/scripts/install-skill-from-github.py",
+  "digestMethod": "SHA256 of sorted relative-path:SHA256(file bytes) records joined with LF; __pycache__ and pyc excluded",
+  "newGlobalSkills": [
+    {
+      "name": "impeccable",
+      "path": "C:\\Users\\FRA\\.codex\\skills\\impeccable",
+      "files": 64,
+      "sha256": "432ee467720e563249b5f48a28c5b981b8ced69288ecc20a28902cf5b070e993",
+      "repo": "pbakaus/impeccable",
+      "ref": "ece38d9904b8a619b3f77cab476eacad09c4fb11",
+      "upstreamPath": ".agents/skills/impeccable",
+      "validation": "quick_validate.py with -X utf8: pass",
+      "localSkillLinks": "all local SKILL.md Markdown targets exist",
+      "adaptations": [
+        "Bundled repository LICENSE",
+        "Bundled repository NOTICE.md"
+      ],
+      "probe": "Windows engine-probe: impeccable-engine 0.1.11, exit 0"
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "path": "C:\\Users\\FRA\\.codex\\skills\\ui-ux-pro-max",
+      "files": 74,
+      "sha256": "94a2b607e971abbd0ed27a5589e12adbe2686f57567c68869dd7b30b61b01e39",
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "ref": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+      "upstreamPath": ".claude/skills/ui-ux-pro-max",
+      "validation": "quick_validate.py with -X utf8: pass",
+      "localSkillLinks": "all local SKILL.md Markdown targets exist",
+      "adaptations": [
+        "Bundled repository LICENSE"
+      ],
+      "probe": "UX query keyboard focus modal: 2 results; React query effect cleanup: 1 result; exit 0"
+    },
+    {
+      "name": "hallmark",
+      "path": "C:\\Users\\FRA\\.codex\\skills\\hallmark",
+      "files": 108,
+      "sha256": "843a814356f6ee491d7bd0109f3bef46cf846f3f2d3e50207add4eeb975c4d3f",
+      "repo": "Nutlope/hallmark",
+      "ref": "13ac0ec7e148655948100b6396439e481361d690",
+      "upstreamPath": "skills/hallmark",
+      "validation": "quick_validate.py with -X utf8: pass",
+      "localSkillLinks": "all local SKILL.md Markdown targets exist",
+      "adaptations": [
+        "Bundled repository LICENSE",
+        "SKILL.md version moved into metadata.version",
+        "Three links outside skill folder changed to pinned GitHub URLs"
+      ],
+      "limitation": "Audit/instruction use; no pixel-cloning certification"
+    },
+    {
+      "name": "scroll-craft",
+      "path": "C:\\Users\\FRA\\.codex\\skills\\scroll-craft",
+      "files": 25,
+      "sha256": "879c7147e7de548014d71039d800818d6de0e7dbbff259ae74724ec49e194247",
+      "repo": "nateherkai/scroll-craft",
+      "ref": "75d81f74e83692add18cd7a8a8e078b8a887a579",
+      "upstreamPath": "plugins/nateherk-design/skills/scroll-craft",
+      "validation": "quick_validate.py with -X utf8: pass",
+      "localSkillLinks": "all local SKILL.md Markdown targets exist",
+      "adaptations": [
+        "Bundled repository LICENSE"
+      ],
+      "probe": "doctor.mjs exit 1: full FFmpeg absent; playwright-core unavailable from cwd; optional KIE key absent",
+      "limitation": "Reference use only in Loruni; engine is not imported"
+    },
+    {
+      "name": "design-token",
+      "path": "C:\\Users\\FRA\\.codex\\skills\\design-token",
+      "files": 2,
+      "sha256": "f3445be67e84873f143c4c7463474bcd79ef31bc11a5dfcfe15fb569a6d36713",
+      "repo": "Owl-Listener/designer-skills",
+      "ref": "9a6930cf84a822eb458624bd11c61aac5bbdf224",
+      "upstreamPath": "design-systems/skills/design-token",
+      "validation": "quick_validate.py with -X utf8: pass",
+      "localSkillLinks": "all local SKILL.md Markdown targets exist",
+      "adaptations": [
+        "Bundled repository LICENSE"
+      ]
+    },
+    {
+      "name": "handoff-spec",
+      "path": "C:\\Users\\FRA\\.codex\\skills\\handoff-spec",
+      "files": 2,
+      "sha256": "cfaf5104202fea48566ba7c356dce9145149299468f851402fdb3944ba67c3a8",
+      "repo": "Owl-Listener/designer-skills",
+      "ref": "9a6930cf84a822eb458624bd11c61aac5bbdf224",
+      "upstreamPath": "design-ops/skills/handoff-spec",
+      "validation": "quick_validate.py with -X utf8: pass",
+      "localSkillLinks": "all local SKILL.md Markdown targets exist",
+      "adaptations": [
+        "Bundled repository LICENSE"
+      ]
+    },
+    {
+      "name": "design-qa-checklist",
+      "path": "C:\\Users\\FRA\\.codex\\skills\\design-qa-checklist",
+      "files": 2,
+      "sha256": "32adb59685d9de6cdd9934e46af097794c125d28319083b7657c4764ae892e71",
+      "repo": "Owl-Listener/designer-skills",
+      "ref": "9a6930cf84a822eb458624bd11c61aac5bbdf224",
+      "upstreamPath": "design-ops/skills/design-qa-checklist",
+      "validation": "quick_validate.py with -X utf8: pass",
+      "localSkillLinks": "all local SKILL.md Markdown targets exist",
+      "adaptations": [
+        "Bundled repository LICENSE"
+      ]
+    }
+  ],
+  "alreadyPresent": [
+    {
+      "name": "design-taste-frontend",
+      "path": "C:\\Users\\FRA\\.agents\\skills\\design-taste-frontend",
+      "skillSha256": "2e064e92aca020b2e0bad69326fe7ea55d59005ed53d1a8cbce1bd135d44b8b3",
+      "source": "Leonxlnx/taste-skill",
+      "verifiedRef": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "upstreamMatchesNormalized": true
+    },
+    {
+      "name": "imagegen-frontend-web",
+      "path": "C:\\Users\\FRA\\.agents\\skills\\imagegen-frontend-web",
+      "skillSha256": "23e6d27ab410e97fe5e844d18db97c8e674d317abd8567f4c7726ee16f56da6e",
+      "source": "Leonxlnx/taste-skill",
+      "verifiedRef": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "upstreamMatchesNormalized": true
+    },
+    {
+      "name": "imagegen-frontend-mobile",
+      "path": "C:\\Users\\FRA\\.agents\\skills\\imagegen-frontend-mobile",
+      "skillSha256": "3cadf1bfbe836d377832d090e5db8479f98903453a4d1342be9636178755f9dd",
+      "source": "Leonxlnx/taste-skill",
+      "verifiedRef": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "upstreamMatchesNormalized": true
+    },
+    {
+      "name": "brandkit",
+      "path": "C:\\Users\\FRA\\.agents\\skills\\brandkit",
+      "skillSha256": "a250c7b41aecacc412260de2fb429d36ada5f668388aad1770289fa3e5c4f740",
+      "source": "Leonxlnx/taste-skill",
+      "verifiedRef": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "upstreamMatchesNormalized": true
+    }
+  ],
+  "applicationChanges": false
+}

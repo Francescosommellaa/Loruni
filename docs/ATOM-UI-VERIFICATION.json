@@ -1,0 +1,508 @@
+{
+  "verifiedAt": "2026-10-06T14:18:53.473Z",
+  "head": "6b85d4cbcf4f77b517732fe3c9b9307555b93842",
+  "scope": "Global Icon Engine and standalone visual Atom UI; no later-layer migrations. Shared catalog/ProcessRow/OurStoryCard work belongs to concurrent tasks.",
+  "inputDigest": {
+    "method": "SHA256 of sorted path NUL fileSHA256 LF records",
+    "count": 23,
+    "sha256": "bf7083c9c2e227c5cc3268cd76c74a2dec79fcef17d12003f65b86509ee391c4",
+    "files": {
+      "docs/framer/atom-source.json": "2e3f1e047836492f07fa3d2dc909c1c28d14aa89bcbd10be3e10ce3cce255980",
+      "docs/framer/component-inventory.json": "d9b6ab3482251b27eea096142c0ba38e8945009a8f431b536bfb6f4becf045e5",
+      "docs/framer/icon-source.json": "784229357311d6a25da90d52c81c1dc974dbdbf93f108167d5cbdd64ce46afa6",
+      "src/components/ArrowForward.tsx": "d1fdae923c6446798a358f4aa6043b80be8e05a8a04e1d24c1302ccd899875d1",
+      "src/components/CircularImage.css": "2bc4c6ca552a588a6cea4f65c5c13337169adac9d30cd91782c0178b031cb1c5",
+      "src/components/CircularImage.tsx": "544fc4f920ec56a224a192ef15c1f112e64e7ef0eef6d154743943d133ae1ce7",
+      "src/components/Divider.css": "17928efb08cc2f285f5d7f1ba224646964b6cc6fe1509d4eb001b897af03973a",
+      "src/components/Divider.tsx": "50c1cd194894765fc995eeba6d56b5dc445b87090c5c4cd314d2f2cf92256a83",
+      "src/components/FaqIcon.css": "a8959dc96aa4f462abcdfdea9b15d64cd055613ad3a16cc0b49de4dc0b93a7a9",
+      "src/components/FaqIcon.tsx": "cc3a4139ceef68bc1e347a9856525e86f8f666f044a9d2d9bb5334d62cfea9f4",
+      "src/components/Icon.css": "960e58c118f8e2f4f629b33ad6ca2d8185f0b6ada194d91f00572facd6d71a95",
+      "src/components/Icon.registry.ts": "9663485bfc2536f3de500f6b70afe9d59c0a8da2debfb034c15c404ccec4982c",
+      "src/components/Icon.tsx": "75e884f5f6922e97d9afd34ced0b4b0fe1846f87d8d7dda08e3e8fe0e4bce8dd",
+      "src/components/RollingText.css": "dcfb66a6566f40a83b40b8bc66a86c20e3dc00a003a4b1b07a87e55cf91b5dbd",
+      "src/components/RollingText.tsx": "5f95f4704dc66f53fdc4aa5e14765dfb7f38372b21691b9773bae5ea3479273e",
+      "src/components/TestimonialsArrow.css": "b44ffa8a215a340ae82b063c41e380f1f5fbcf015f535f7371c04a4258af18ab",
+      "src/components/TestimonialsArrow.tsx": "0acda604a7070b7527bad7ebb98747b46dedf3fe8be98e52e407792dc4bb7eb1",
+      "src/components/TestimonialsSection.css": "ce09b12960e63d5e4433340f911154c6fb59169a5971b8e2968db3a174dc974e",
+      "src/components/TestimonialsSection.data.ts": "438503e6a9ceed516eed936b4574ee1b6eca4928ed56e5c0f79947f3946d6c09",
+      "src/components/TestimonialsSection.tsx": "6ba28e13a09204020119e160067b0706029aae03ccd61fd2c3bc86a8dc4a5419",
+      "src/pages/design-system/componentExamples.ts": "07d8ccc5aedc90b6bedde1ef61bc8fc96dc6467f1aede5bb545e0fc99de03f96",
+      "src/styles/token.css": "fb153ef97d0a931254d40b8c98fcefa35160bc39a87da1633870276009db85fd",
+      "src/styles/token.ts": "badd46b62fdbc1e4ff716712335952736092113b0658a6d9de3406cc75725876"
+    }
+  },
+  "checks": {
+    "typecheck": {
+      "command": "pnpm typecheck",
+      "exitCode": 0
+    },
+    "lint": {
+      "command": "pnpm lint",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "pnpm build",
+      "exitCode": 0,
+      "modules": 483,
+      "jsKilobytes": 639.44,
+      "jsGzipKilobytes": 158.07,
+      "cssKilobytes": 147.86,
+      "warning": "Vite chunk above500kB; retained, not suppressed"
+    },
+    "automaticFrontendTests": "Not added or run, per project/user policy",
+    "inventoryIntegrity": "Unique137 IDs and all nodeKeys resolve to sourceNodes",
+    "inventorySummary": {
+      "totalComponents": 137,
+      "global": 23,
+      "shared": 18,
+      "pageSpecific": 93,
+      "catalogOnly": 3,
+      "interactive": 68,
+      "animated": 55,
+      "withVariants": 24,
+      "highCriticalRisk": 83,
+      "ambiguous": 22,
+      "canvas": 24,
+      "code": 2,
+      "external": 10,
+      "withMultipleNativeVariants": 19,
+      "hardcodedRecordOccurrences": 833,
+      "completedComponents": 15,
+      "toCompleteComponents": 0,
+      "notMigratedComponents": 122
+    },
+    "pendingEligibleAtoms": [],
+    "duplicateScan": {
+      "command": "rg <svg|<path|data:image/svg in src excluding central Icon and token files",
+      "productGeometryOutsideEngine": [],
+      "intentionalExceptions": [
+        "CatalogTools.tsx documentation-only copy/search"
+      ]
+    },
+    "gitDiffCheck": "pass; LF/CRLF notices only",
+    "officialSvgUnchanged": [
+      {
+        "file": "Logo/SVG/Type=Icon, background=Dark, Corner=Circle, Text=Light.svg",
+        "sha256": "175a20f4cd698f7e5dae2d323a4f2a551d9c6c71154fcc6a7276660d7c590593",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=Icon, background=Dark, Corner=Default, Text=Light.svg",
+        "sha256": "08a39e29fc8b1f84fdf59ec95c7f251e0ced369c5caa3754734da162f634e578",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=Icon, background=Dark, Corner=Rounded, Text=Light.svg",
+        "sha256": "92d7cd02e05e39ba6d51b3dec08a7a97376c95157efc21371cd5f8fd1f319d6d",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=Icon, background=Light, Corner=Circle, Text=dark.svg",
+        "sha256": "8243a7894b816963f31fb01c762e20c8e3e0440d13267c99062c5aa430b8846d",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=Icon, background=Light, Corner=Default, Text=dark.svg",
+        "sha256": "0dcc213de987eb6b405140b527c149f50a8a9f459ce1c4b7930b5edc5340e309",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=Icon, background=Light, Corner=Rounded, Text=dark.svg",
+        "sha256": "5635949a42443216f203d6e02548463599ec08d0c54b8da117db9b27b41a6dc7",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=logo, background=Dark, Corner=Circle, Text=Light.svg",
+        "sha256": "0cf770fda64e4fb70253ea65d2e8efe7ae8f8ce7de2ae428f078e890a84dc198",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=logo, background=Dark, Corner=Default, Text=Light.svg",
+        "sha256": "4e5bfa7d53a8892d9efe69e3b61f0563e97baf3085cf296a72af03e35eafd997",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=logo, background=Dark, Corner=Rounded, Text=Light.svg",
+        "sha256": "4e6623e765311cda54ee0ab3dcda272748da87f6dca9572158898b63ae96197b",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=logo, background=Light, Corner=Circle, Text=dark.svg",
+        "sha256": "a842068d742be7c7d5fc8fc90a7582e7f2f6c1178119a547a641fb3b3b388d5e",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=logo, background=Light, Corner=Default, Text=dark.svg",
+        "sha256": "fa0ee6936108d95f7eddc37008f63ad37dcff7834373e56224a6c7e2807efb00",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=logo, background=Light, Corner=Rounded, Text=dark.svg",
+        "sha256": "dfff45c7b68e0e610b00f849d0903e929aaa48cacd4d5258c94fe926907270dd",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=logo, background=Transparent, Corner=None, Text=dark.svg",
+        "sha256": "a5e38250716c8961963feee8c4c0112cebceb6eb6b9a2c9b19c0ff38f286a8d0",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=logo, background=Transparent, Corner=None, Text=Light.svg",
+        "sha256": "c319329c1bcb89abbaf4eb9a96f6b721f3026248b15c5c0258acb083e3a50d3f",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=Watermark, background=Dark, Corner=Circle, Text=Light.svg",
+        "sha256": "c8d13b59cdd5ba79ac0ded032001c02b582aca9a7593ad25e3f61e61c6b04040",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=Watermark, background=Dark, Corner=Default, Text=Light.svg",
+        "sha256": "d67b0caf2c06cdeef7598b400d2f7719c23be5d2c0b50a7dbd6b2e53dbe5149c",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=Watermark, background=Dark, Corner=Rounded, Text=Light.svg",
+        "sha256": "2c938ef07f2974fe44fccaff24733a719b7eb704055a5a8181742423163fd08f",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=Watermark, background=Light, Corner=Circle, Text=dark.svg",
+        "sha256": "81c7788af5555a8e4d7149c6025e8f57fda5c8c8df6cd1723b1f48bb1975c3d2",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=Watermark, background=Light, Corner=Default, Text=dark.svg",
+        "sha256": "81353aab360f77c18dd860e7027c0a6b17ba9556cb19910c1885335f0eadf6a1",
+        "matchesSource": true
+      },
+      {
+        "file": "Logo/SVG/Type=Watermark, background=Light, Corner=Rounded, Text=dark.svg",
+        "sha256": "06a80ab332959763d1e404d17f2d14efebefdc8672d939691c52b405f81c2a86",
+        "matchesSource": true
+      }
+    ]
+  },
+  "browser": {
+    "engine": "Available Chromium Codex IAB",
+    "localUrl": "http://127.0.0.1:5173/design-system",
+    "viewports": [
+      1200,
+      810,
+      390
+    ],
+    "consoleWarningsOrErrors": [],
+    "dividers": [
+      {
+        "width": 80,
+        "height": 6,
+        "color": "Brand/Primary"
+      },
+      {
+        "width": 80,
+        "height": 6,
+        "color": "Brand/Accent"
+      },
+      {
+        "width": 82,
+        "height": 6,
+        "color": "Brand/Primary"
+      }
+    ],
+    "circularImages": {
+      "allViewports": [
+        {
+          "width": 64,
+          "height": 64,
+          "radius": 56,
+          "fit": "cover",
+          "position": "50% 50%",
+          "loaded": true
+        },
+        {
+          "width": 56,
+          "height": 56,
+          "radius": 56,
+          "fit": "cover",
+          "position": "50% 50%",
+          "loaded": true
+        }
+      ],
+      "nativePhone": {
+        "storedWidth": 56,
+        "storedHeight": 60,
+        "aspectRatio": 1,
+        "renderedWidth": 56,
+        "renderedHeight": 56,
+        "previewViewport": 375
+      },
+      "nativeDesktopTablet": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    "rollingText": {
+      "hoverAndLeaveConfigurations": 7,
+      "fontSizes": [
+        22,
+        28,
+        16,
+        20,
+        48,
+        16,
+        28
+      ],
+      "finalTranslateY": [
+        -22,
+        -28,
+        -16,
+        -20,
+        -52.8,
+        -17.6,
+        -30.8
+      ],
+      "nativeDesktop": {
+        "height": 22,
+        "textWidth": 92.859375,
+        "tracking": -0.88,
+        "shadowOffset": 22
+      },
+      "localTextBounds": {
+        "390": [
+          [
+            92.859375,
+            22
+          ],
+          [
+            118.1875,
+            28
+          ],
+          [
+            67.546875,
+            16
+          ],
+          [
+            157.84375,
+            20
+          ],
+          [
+            293,
+            52.796875
+          ],
+          [
+            111.078125,
+            17.59375
+          ],
+          [
+            194.328125,
+            30.796875
+          ]
+        ],
+        "810": [
+          [
+            92.859375,
+            22
+          ],
+          [
+            118.1875,
+            28
+          ],
+          [
+            67.546875,
+            16
+          ],
+          [
+            157.84375,
+            20
+          ],
+          [
+            333.09375,
+            52.796875
+          ],
+          [
+            111.078125,
+            17.59375
+          ],
+          [
+            194.328125,
+            30.796875
+          ]
+        ],
+        "1200": [
+          [
+            92.859375,
+            22
+          ],
+          [
+            118.1875,
+            28
+          ],
+          [
+            67.546875,
+            16
+          ],
+          [
+            157.84375,
+            20
+          ],
+          [
+            333.09375,
+            52.796875
+          ],
+          [
+            111.078125,
+            17.59375
+          ],
+          [
+            194.328125,
+            30.796875
+          ]
+        ]
+      },
+      "phoneDocumentationClip": "Desktop48px sample flex text box constrained293 by documentation parent; source wrapper behavior retained, no internal responsive font change"
+    },
+    "registry": {
+      "entries": 38,
+      "examples": 44,
+      "mountedGlyphs": 43,
+      "hiddenQuote": true,
+      "officialSvgLoads": 20,
+      "quoteHeights": {
+        "50": 44.4375,
+        "55": 48.875,
+        "63": 56
+      },
+      "testimonialsPhoneQuote": "absent",
+      "buttonArrowHoverAndReturn": [
+        {
+          "rotation": 135
+        },
+        {
+          "rotation": 45
+        }
+      ],
+      "arrowForward": "40/28px, -45/0deg verified; both controlled forward and return transitions exercised",
+      "faq": "Plus/Minus, click and Enter callbacks; retained90deg after Minus→Plus confirmed settled",
+      "testimonialsArrow": "Three source glyphs,40px controls/20px glyphs; click/Enter/Space callback and hover smoke checks; previous pressed implementation retained",
+      "spinners": {
+        "formSize": [
+          24,
+          24
+        ],
+        "loadMoreSize": [
+          20,
+          20
+        ],
+        "observedTransforms": [
+          "rotate(313.2deg)",
+          "rotate(257.76deg)"
+        ],
+        "note": "Corrected initial rotate0 so the real linear1s loop runs, rather than initializing at360 with no delta."
+      }
+    }
+  },
+  "limits": [
+    "Sequential Framer captures are not an immutable source revision.",
+    "Browser proof is bounded; physical touch, cross-browser, live OS reduced-motion toggling and synchronized frame-latency not certified.",
+    "No all-site pixel-perfect claim; product pages and consumers remain unported.",
+    "Unrelated concurrent runtime/catalog work included in the workspace build but not claimed as this task.",
+    "Source captures and inventory are ignored local reference files; clean-clone availability remains separate existing repository concern."
+  ],
+  "revalidation": {
+    "verifiedAt": "2026-10-06T14:26:19.635Z",
+    "reason": "Repeated Atom UI closure request; no runtime changes or new eligible atoms.",
+    "head": "6b85d4cbcf4f77b517732fe3c9b9307555b93842",
+    "inputDigest": {
+      "method": "SHA256 of sorted path NUL fileSHA256 LF records",
+      "count": 22,
+      "sha256": "07d7fd1f840f7fcc74aebd7159daf234c1a7530c6bc20d437b3db97717d5c5c6",
+      "files": {
+        "docs/framer/atom-source.json": "2e3f1e047836492f07fa3d2dc909c1c28d14aa89bcbd10be3e10ce3cce255980",
+        "docs/framer/icon-source.json": "784229357311d6a25da90d52c81c1dc974dbdbf93f108167d5cbdd64ce46afa6",
+        "src/components/ArrowForward.tsx": "d1fdae923c6446798a358f4aa6043b80be8e05a8a04e1d24c1302ccd899875d1",
+        "src/components/CircularImage.css": "2bc4c6ca552a588a6cea4f65c5c13337169adac9d30cd91782c0178b031cb1c5",
+        "src/components/CircularImage.tsx": "544fc4f920ec56a224a192ef15c1f112e64e7ef0eef6d154743943d133ae1ce7",
+        "src/components/Divider.css": "17928efb08cc2f285f5d7f1ba224646964b6cc6fe1509d4eb001b897af03973a",
+        "src/components/Divider.tsx": "50c1cd194894765fc995eeba6d56b5dc445b87090c5c4cd314d2f2cf92256a83",
+        "src/components/FaqIcon.css": "a8959dc96aa4f462abcdfdea9b15d64cd055613ad3a16cc0b49de4dc0b93a7a9",
+        "src/components/FaqIcon.tsx": "cc3a4139ceef68bc1e347a9856525e86f8f666f044a9d2d9bb5334d62cfea9f4",
+        "src/components/Icon.css": "960e58c118f8e2f4f629b33ad6ca2d8185f0b6ada194d91f00572facd6d71a95",
+        "src/components/Icon.registry.ts": "9663485bfc2536f3de500f6b70afe9d59c0a8da2debfb034c15c404ccec4982c",
+        "src/components/Icon.tsx": "75e884f5f6922e97d9afd34ced0b4b0fe1846f87d8d7dda08e3e8fe0e4bce8dd",
+        "src/components/RollingText.css": "dcfb66a6566f40a83b40b8bc66a86c20e3dc00a003a4b1b07a87e55cf91b5dbd",
+        "src/components/RollingText.tsx": "5f95f4704dc66f53fdc4aa5e14765dfb7f38372b21691b9773bae5ea3479273e",
+        "src/components/TestimonialsArrow.css": "b44ffa8a215a340ae82b063c41e380f1f5fbcf015f535f7371c04a4258af18ab",
+        "src/components/TestimonialsArrow.tsx": "0acda604a7070b7527bad7ebb98747b46dedf3fe8be98e52e407792dc4bb7eb1",
+        "src/components/TestimonialsSection.css": "ce09b12960e63d5e4433340f911154c6fb59169a5971b8e2968db3a174dc974e",
+        "src/components/TestimonialsSection.data.ts": "438503e6a9ceed516eed936b4574ee1b6eca4928ed56e5c0f79947f3946d6c09",
+        "src/components/TestimonialsSection.tsx": "6ba28e13a09204020119e160067b0706029aae03ccd61fd2c3bc86a8dc4a5419",
+        "src/pages/design-system/componentExamples.ts": "07d8ccc5aedc90b6bedde1ef61bc8fc96dc6467f1aede5bb545e0fc99de03f96",
+        "src/styles/token.css": "fb153ef97d0a931254d40b8c98fcefa35160bc39a87da1633870276009db85fd",
+        "src/styles/token.ts": "badd46b62fdbc1e4ff716712335952736092113b0658a6d9de3406cc75725876"
+      }
+    },
+    "changedInputsSinceOriginalProof": [
+      "docs/framer/component-inventory.json"
+    ],
+    "changedInputReason": "ProcessRow and OurStoryCard independently marked completed; Atom UI records unchanged.",
+    "eligibleAtoms": 14,
+    "pendingEligibleAtoms": [],
+    "inventorySummary": {
+      "totalComponents": 137,
+      "global": 23,
+      "shared": 18,
+      "pageSpecific": 93,
+      "catalogOnly": 3,
+      "interactive": 68,
+      "animated": 55,
+      "withVariants": 24,
+      "highCriticalRisk": 83,
+      "ambiguous": 22,
+      "canvas": 24,
+      "code": 2,
+      "external": 10,
+      "withMultipleNativeVariants": 19,
+      "hardcodedRecordOccurrences": 833,
+      "completedComponents": 17,
+      "toCompleteComponents": 0,
+      "notMigratedComponents": 120
+    },
+    "checks": {
+      "typecheck": {
+        "command": "pnpm typecheck",
+        "exitCode": 0
+      },
+      "lint": {
+        "command": "pnpm lint",
+        "exitCode": 0
+      },
+      "build": {
+        "command": "pnpm build",
+        "exitCode": 0,
+        "modules": 483,
+        "jsKilobytes": 639.44,
+        "jsGzipKilobytes": 158.07,
+        "cssKilobytes": 147.86,
+        "cssGzipKilobytes": 17.1,
+        "warning": "Existing Vite chunk>500kB retained"
+      },
+      "inventoryIntegrity": "pass",
+      "officialSvgUnchanged": 20,
+      "productGeometryOutsideEngine": [],
+      "intentionalSvgExceptions": [
+        "CatalogTools documentation copy/search"
+      ],
+      "automatedTests": "Not run per project policy"
+    },
+    "browserEvidence": "Original1200/810/390 evidence reused because every implementation/catalog input is byte-identical; no new browser inspection claimed.",
+    "runtimeFilesChangedByThisRevalidation": [],
+    "inventoryAtomProof": {
+      "count": 14,
+      "sha256": "2508c5c76c3b8455bf56b080058530c5b5abd2d9ad4bf2efd14d94e480532d82",
+      "method": "SHA256 of JSON.stringify({atomUi, standalone visual atom records in inventory order})",
+      "wholeInventorySnapshotSha256": "dd24b3bcabea21d334bdc65eca64d81d390b8b61169b9e3a04643ad0cb5a6520",
+      "note": "Whole inventory is concurrently updated by independent component tasks. Closure attests scoped atom records and unchanged runtime/capture inputs, not all global migration metadata."
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.loruni-form-field {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--space-8);
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  position: relative;
+  color: var(--color-neutral-950);
+}
+.loruni-form-field > h3 { margin: 0; width: auto; text-align: start; color: var(--color-neutral-950); }
+.loruni-form-control {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  height: var(--source-height-value48px);
+  padding: var(--space-12);
+  overflow: hidden;
+  background: transparent;
+  border-radius: 0;
+}
+/* Source border is an overlay, not part of the content box. */
+.loruni-form-control::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: var(--border-form-input);
+  pointer-events: none;
+}
+.loruni-form-control:focus-within { box-shadow: var(--shadow-form-focus); }
+.loruni-form-control__input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  color: var(--color-neutral-950);
+  font-family: var(--font-funnel-sans);
+  font-size: var(--source-font-size-value18px);
+  font-weight: 400;
+  font-style: normal;
+  line-height: var(--source-line-height-value1point2em);
+  letter-spacing: var(--source-letter-spacing-value0em);
+  appearance: none;
+}
+.loruni-form-control__input::placeholder { color: var(--color-neutral-950); opacity: 1; }
+.loruni-form-control[data-control='textarea'] { height: auto; min-height: var(--source-height-value100px); padding: 0; }
+.loruni-form-control[data-sizing='fixed'] { height: var(--source-height-value100px); }
+.loruni-form-control textarea {
+  height: var(--source-height-value100px);
+  min-height: var(--source-height-value100px);
+  padding: var(--space-12);
+  resize: vertical;
+}

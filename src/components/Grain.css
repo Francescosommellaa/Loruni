@@ -1,0 +1,25 @@
+.loruni-grain { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.loruni-grain-texture {
+  position: absolute;
+  inset: -200%;
+  width: 400%;
+  height: 400%;
+  /* The source's final background shorthand resets its preceding 256px size. */
+  background: url('/media/grain.png') 0 0 / auto repeat;
+  pointer-events: none;
+  animation: loruni-grain-shift 8s steps(10, jump-start) infinite;
+  will-change: transform;
+}
+.loruni-grain[data-reduced='true'] .loruni-grain-texture { animation: none; transform: none; will-change: auto; }
+@keyframes loruni-grain-shift {
+  0% { transform: translate(0%, 0%); }
+  11.1111111111% { transform: translate(-5%, -10%); }
+  22.2222222222% { transform: translate(-15%, 5%); }
+  33.3333333333% { transform: translate(7%, -25%); }
+  44.4444444444% { transform: translate(-5%, 25%); }
+  55.5555555556% { transform: translate(-15%, 10%); }
+  66.6666666667% { transform: translate(15%, 0%); }
+  77.7777777778% { transform: translate(0%, 15%); }
+  88.8888888889% { transform: translate(3%, 35%); }
+  100% { transform: translate(-10%, 10%); }
+}

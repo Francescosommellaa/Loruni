@@ -1,0 +1,20 @@
+.ds-project-default { width: 100%; max-width: var(--component-project-card-main-page-desktop-width); }
+#ds-component-project-card .ds-component-grid { grid-template-columns: minmax(0, 1fr); }
+.ds-project-default--inner { max-width: var(--component-project-card-inner-page-desktop-width); }
+.ds-project-controls { display: flex; flex-wrap: wrap; gap: 12px; padding: 12px 0; }
+.ds-project-controls > label { display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+.ds-project-controls > label:has(input[type='checkbox']) { flex-direction: row; align-items: center; }
+.ds-project-controls input, .ds-project-controls select { max-width: 200px; }
+.ds-project-allocation > a { display: block; height: 100%; }
+.ds-project-allocation > a, .ds-project-comparison > a { text-decoration: none; color: inherit; }
+.ds-project-allocation--fill { height: 585px; }
+.ds-project-allocation--viewport { height: 100vh; }
+.ds-project-consumer { display: flex; flex-direction: column; gap: 8px; }
+.ds-project-consumer--events, .ds-project-consumer--event-detail { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ds-project-consumer--events > :first-child { grid-column: 1 / -1; }
+.ds-project-comparison > .ds-project-controls { padding: 20px; }
+@media (max-width: 1199.98px) { .ds-project-consumer--events { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 809.98px) {
+  .ds-project-comparison > .ds-project-controls { padding: 12px; }
+  .ds-project-consumer--event-detail { grid-template-columns: minmax(0, 1fr); }
+}

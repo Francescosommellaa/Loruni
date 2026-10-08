@@ -1,0 +1,5 @@
+.loruni-stat-row { position: relative; display: flex; flex-flow: column nowrap; align-items: center; justify-content: center; gap: var(--space-8); width: auto; height: auto; color: var(--color-neutral-950); }
+.loruni-stat-row p { flex: none; width: max-content; margin: 0; font-family: var(--font-funnel-display); font-weight: 600; font-style: normal; text-align: start; text-transform: uppercase; color: inherit; }
+.loruni-stat-row__number { font-size: var(--source-font-size-value48px); line-height: var(--source-line-height-value48px); letter-spacing: var(--source-letter-spacing-value-negative0point05em); }
+.loruni-stat-row__text { font-size: var(--source-font-size-value16px); line-height: var(--source-line-height-value18px); letter-spacing: var(--source-letter-spacing-value0em); }
+.loruni-stat-row[data-caption='compact'] .loruni-stat-row__text { width: var(--source-width-value122px); font-family: var(--font-funnel-sans); font-size: var(--source-font-size-value12px); }

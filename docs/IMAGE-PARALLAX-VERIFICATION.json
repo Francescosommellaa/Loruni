@@ -1,0 +1,301 @@
+{
+  "at": "2026-10-07",
+  "status": "closed",
+  "head": "cf680410bf6dc8d3382a1816e49501239027b9bb",
+  "dirtyWorkPreserved": true,
+  "source": {
+    "project": "F3868vuk7YeE7pDEgpP6",
+    "module": {
+      "url": "https://framerusercontent.com/modules/zxcGfQb3lPhoJOWc1HTU/UHrEi0qhIpd3yrAh6Rk2/ParallaxImage_prod.js",
+      "sha256": "f4f22372c340efe88d22128a9cb4ba72991d353548ddfdc4d84cfbf29e1e2038"
+    },
+    "instances": 11,
+    "independent": 5,
+    "allInstancesRead": true,
+    "finalReread": {
+      "instancesUnchanged": true,
+      "moduleUnchanged": true
+    },
+    "capture": "docs/framer/image-parallax-source.json",
+    "metrics": ".agent/proofs/parallax-source-metrics.json"
+  },
+  "files": {
+    "created": [
+      "src/components/ImageParallax.tsx",
+      "src/components/ImageParallax.css",
+      "src/motion/imageParallax.ts",
+      "src/pages/design-system/ImageParallaxExamples.tsx",
+      "src/pages/design-system/ImageParallaxExamples.css",
+      "docs/IMAGE-PARALLAX.md",
+      "docs/IMAGE-PARALLAX-VERIFICATION.json",
+      ".agent/plans/2026-10-07-image-parallax.md",
+      "docs/framer/image-parallax-source.json"
+    ],
+    "modified": [
+      "src/components/ImageFill.tsx",
+      "src/pages/design-system/componentExamples.ts",
+      "src/app/App.tsx",
+      "docs/ARCHITECTURE.md",
+      "docs/MOTION.md",
+      "docs/DESIGN-SYSTEM.md",
+      "docs/MIGRATION-STATUS.md",
+      "docs/COMPONENT_INVENTORY.md",
+      ".agent/PLANS.md",
+      "docs/framer/component-inventory.json",
+      "docs/framer/hardcoded-audit.json"
+    ],
+    "proofs": ".agent/proofs/parallax-* (only task artifacts; sibling proof files preserved)"
+  },
+  "checks": {
+    "typecheck": {
+      "command": "pnpm typecheck",
+      "result": "PASS"
+    },
+    "lint": {
+      "command": "pnpm lint",
+      "result": "PASS,0warnings final snapshot"
+    },
+    "build": {
+      "command": "pnpm build",
+      "result": "PASS",
+      "modules": 538,
+      "jsKB": 804.78,
+      "jsGzipKB": 216.74,
+      "cssKB": 162.65,
+      "cssGzipKB": 19.34,
+      "warning": "chunk>500kB preserved"
+    },
+    "tokens": {
+      "command": "pnpm tokens:check",
+      "result": "PASS; generated hardcode audit refreshed, seven runtime token/font files unchanged"
+    },
+    "automatedSuites": "none added or run"
+  },
+  "buildInputs": {
+    "count": 130,
+    "digest": "005a9b14e8a94577ba5640cc867beef90fd781ed49df99536c6927503f5b1605",
+    "before": ".agent/proofs/parallax-final-inputs-before.json",
+    "after": ".agent/proofs/parallax-final-inputs-after.json",
+    "unchangedThroughGates": true
+  },
+  "scoped": {
+    "files": [
+      {
+        "path": "src/components/ImageParallax.tsx",
+        "sha256": "2b08af49505676764d7ca2943da5f44df21ba10d465ad8b7de05458738bb075b"
+      },
+      {
+        "path": "src/components/ImageParallax.css",
+        "sha256": "c03fca7af5a912e1d3f533d2240d07f10eb797f24ef60b3923acfe95133f80eb"
+      },
+      {
+        "path": "src/components/ImageFill.tsx",
+        "sha256": "0c16e4b102b6f6a77096ebf17e4fb5b49991f632d99b851cd199329652f9b739"
+      },
+      {
+        "path": "src/motion/imageParallax.ts",
+        "sha256": "3866a5c8f091aae2a9f7576aed7b31d095db9ffc74919959cec451a2745ec129"
+      },
+      {
+        "path": "src/pages/design-system/ImageParallaxExamples.tsx",
+        "sha256": "13f1cd981e0410723e5930b58a1b8049069f4208f6bf7b243e6c63c8384a006b"
+      },
+      {
+        "path": "src/pages/design-system/ImageParallaxExamples.css",
+        "sha256": "5f75b4c1e43d44d5887deb193b6e707955ffb594f6d8d2a0e96e34ca1a22978e"
+      },
+      {
+        "path": "src/pages/design-system/componentExamples.ts",
+        "sha256": "c4f80da02f35064e83bf9107842a217dace0a864b4f3a04422699271487229d5"
+      },
+      {
+        "path": "src/app/App.tsx",
+        "sha256": "080a415e82f559e01c141ad420a10c2d402f79eb027b254674eb6c3da49e033d"
+      }
+    ],
+    "digest": "cfb1857cc67fc563818bb9265f7082115915f13e680cc5b4ab3272863ed4f0bb"
+  },
+  "visualComparison": {
+    "tool": "Pillow/NumPy paired explicit screenshot crops; no runnable repository visual harness found",
+    "metrics": ".agent/proofs/parallax-visual-comparison.json",
+    "results": [
+      {
+        "case": "phone-story",
+        "source": "parallax-source-phone-story.png",
+        "local": "parallax-local-phone-story-exact.png",
+        "clip": [
+          0,
+          60,
+          375,
+          530
+        ],
+        "meanAbsoluteChannelError": 1.711294562647754,
+        "channelsAbove10Percent": 2.43839243498818
+      },
+      {
+        "case": "service-desktop",
+        "source": "parallax-source-service-desktop.png",
+        "local": "parallax-local-service-desktop.png",
+        "clip": [
+          0,
+          60,
+          356,
+          850
+        ],
+        "meanAbsoluteChannelError": 4.756326743469398,
+        "channelsAbove10Percent": 14.127791210354147
+      },
+      {
+        "case": "tablet-y30",
+        "source": "parallax-source-tablet-y30.png",
+        "local": "parallax-local-tablet-y30.png",
+        "clip": [
+          0,
+          60,
+          795,
+          310
+        ],
+        "meanAbsoluteChannelError": 1.2551345911949685,
+        "channelsAbove10Percent": 0.6015932914046122
+      },
+      {
+        "case": "desktop-y30",
+        "source": "parallax-source-desktop-y30.png",
+        "local": "parallax-local-desktop-y30.png",
+        "clip": [
+          0,
+          60,
+          1425,
+          175
+        ],
+        "meanAbsoluteChannelError": 1.183812865497076,
+        "channelsAbove10Percent": 1.371573862191711
+      }
+    ],
+    "localMetrics": ".agent/proofs/parallax-local-metrics.json",
+    "preliminarySamples": "Early cached/stale-server captures and initial full-container-X-bound samples are superseded by current/final-named cases; not closure evidence.",
+    "viewport": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 810,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "consoleErrors": 0,
+    "finalCatalog": {
+      "simultaneous": 6,
+      "afterOneUnmount": 5,
+      "overflow": 0
+    }
+  },
+  "coverage": [
+    {
+      "case": "/esperienza Desktop Y30",
+      "proof": "native1440 plus local1425x828, linear range ±124.2px",
+      "status": "verified"
+    },
+    {
+      "case": "/esperienza Tablet Y30",
+      "proof": "native810 plus local795x828, linear movement with fractional top rounding",
+      "status": "verified"
+    },
+    {
+      "case": "/esperienza Phone Y30",
+      "proof": "native390 plus local375x776.46875; offsetHeight776; range ±116.4px",
+      "status": "verified"
+    },
+    {
+      "case": "/vieni-a-trovarci Y30",
+      "proof": "native/local1440/810/390,92vh frames, exact source algorithm",
+      "status": "verified"
+    },
+    {
+      "case": "Service Desktop X-50",
+      "proof": "native/local600x1013 at left-243.5 top-64; x138.229px; parent horizontal movement",
+      "status": "verified"
+    },
+    {
+      "case": "Service Mobile Y50",
+      "proof": "native variant390x640/local page-fill375x640; true viewport390 and parent breakpoint switch",
+      "status": "verified-with-parent-context"
+    },
+    {
+      "case": "Our Story Y50",
+      "proof": "native Phone375x640; local375x640; Desktop vertical source explicitly hidden",
+      "status": "verified-with-hidden-source-limit"
+    },
+    {
+      "case": "Our Story X-50",
+      "proof": "all source frame/bindings read; local660x1080, x20.625px at left300; algorithm native verified via Service. Native section wrapper exposes no parallax image in live preview.",
+      "status": "configuration-verified-native-section-unavailable"
+    },
+    {
+      "case": "92vh, fill/fill,640px frames",
+      "proof": "parent fixtures; primitive100%fill only",
+      "status": "verified"
+    },
+    {
+      "case": "dynamic image/CMS-bound value",
+      "proof": "all inherited bindings read; retained descriptor/static URL update, image absence/restore",
+      "status": "verified-parent-resolves-cms"
+    },
+    {
+      "case": "resize viewport",
+      "proof": "1440→810→390; Service X-50→Y50; root/cache invalidation; retained parent640→2000 and scrollY2669 beyond old maximum, y362.069px; deferred own-trigger refresh outside ResizeObserver",
+      "status": "verified"
+    },
+    {
+      "case": "fast scroll",
+      "proof": "PhoneY30 exit+116.4; multiple catalog instances after unmount one",
+      "status": "verified-browser-no-fps-benchmark"
+    },
+    {
+      "case": "reduced motion",
+      "proof": "live shared MotionConfiguser→always→user, both axes zero with same media640/960; no OS setting changed",
+      "status": "verified-live-policy"
+    },
+    {
+      "case": "crop/border/radius/shadow",
+      "proof": "object-fitcover/position30%70%; border2pxBrandPrimary,radius40px,shadow8/24; all consumersnone",
+      "status": "verified"
+    },
+    {
+      "case": "performance/cleanup",
+      "proof": "source review one centralST/ticker/observer; browserunmountzero/reacquire, finalcatalog6→5remain, no errors; no heap profiling",
+      "status": "verified-with-stated-limits"
+    }
+  ],
+  "remainingInternalWork": [],
+  "limitations": [
+    "Native hidden Our Story DesktopY and horizontal-content wrapper are not a full-section visual proof; shared algorithm/localframe verified.",
+    "Accessibleimg/background raster differences are quantified, not zero-pixel equivalence.",
+    "Positive-X extreme visible-edge safety limit intentionally differs from native unbounded behavior; all current X-50 formulas preserved.",
+    "Nativeemptyeditorialplaceholder replaced by transparentmedia.",
+    "No physical mobileFPS, heapbenchmark, crossengine, touch orscreenreader certification; live policytested,OSsettingsuntouched.",
+    "Reference source capture and globalinventory are ignored docs/framer artifacts, not browser imports."
+  ],
+  "inventory": {
+    "total": 137,
+    "completed": 57,
+    "notMigrated": 78,
+    "legacyUnused": 2,
+    "runtimeFiles": 27,
+    "catalogEntries": 27
+  },
+  "finalRangeRefresh": {
+    "parentBefore": 640,
+    "parentAfter": 2000,
+    "retainedInstance": true,
+    "scrollY": 2669,
+    "rootTop": -1600,
+    "transformY": 362.069,
+    "method": "ResizeObserver queues own-trigger range refresh on shared GSAP ticker"
+  }
+}

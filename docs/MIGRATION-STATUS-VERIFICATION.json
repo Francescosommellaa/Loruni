@@ -1,0 +1,1248 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-07",
+  "head": "cf680410bf6dc8d3382a1816e49501239027b9bb",
+  "scope": "Documentation/status reconciliation only",
+  "counts": {
+    "not-migrated": 82,
+    "completed": 54,
+    "legacy-unused": 1
+  },
+  "runtimeInputDigest": "ccd85dbbc73e5690b28cf0a39e561f0b807363609c77da64e494bfe710ac6efa",
+  "runtimeInputHashes": [
+    {
+      "file": "index.html",
+      "sha256": "44f13097dd232672c98b796a7215ea16e4992481803b8648aaecfb144ee9b7e0"
+    },
+    {
+      "file": "package.json",
+      "sha256": "cc27f65a7f9c38e35273b32581e362cb22d22883eaf76faf9053c086d461aafa"
+    },
+    {
+      "file": "pnpm-lock.yaml",
+      "sha256": "2edc4414d3a4a56374025c4b73b1b91b6f72be87cc820ca7683cfd39d550c90c"
+    },
+    {
+      "file": "public/fonts/funnel-display-600-normal.woff2",
+      "sha256": "0eb50930cbadee5871422774e228fe11d0d2fbcf53c69e52a59fd9fd1f1a0d3c"
+    },
+    {
+      "file": "public/fonts/funnel-display-800-normal.woff2",
+      "sha256": "76d9900b48ce832f407756ef281d22d2873dd23d6340b06df59b6ff5d71612e4"
+    },
+    {
+      "file": "public/fonts/funnel-display-OFL.txt",
+      "sha256": "a32303f6ea3542927121212a9e4f3fe3548741e6d448d9dc6f29e97cf50102e6"
+    },
+    {
+      "file": "public/fonts/funnel-sans-400-italic.woff2",
+      "sha256": "e5d6074b15b7672d491704d3ba40af0cb2e20b1c57c1bf99de0783cbfaf26daa"
+    },
+    {
+      "file": "public/fonts/funnel-sans-400-normal.woff2",
+      "sha256": "89eb0ff8e0896d5cc9c91fd43c29828da93a9517955129fe5f390759afac9ac7"
+    },
+    {
+      "file": "public/fonts/funnel-sans-600-italic.woff2",
+      "sha256": "87538f38352e86c372ad3301bc4ac0626398c553e29afca74dd3a50b2dbb5dd5"
+    },
+    {
+      "file": "public/fonts/funnel-sans-600-normal.woff2",
+      "sha256": "53c595beb5ae285bbba974362953b9f823c697753200e183380bbeab250f3192"
+    },
+    {
+      "file": "public/fonts/funnel-sans-700-italic.woff2",
+      "sha256": "aa3d4735dc5c6d421d98251035ff6794133ade221b3586cfce2c29f063e47048"
+    },
+    {
+      "file": "public/fonts/funnel-sans-700-normal.woff2",
+      "sha256": "a5326e42e54c221a0b482b21137ad8217a48295ba4397e764362f192e8f027b5"
+    },
+    {
+      "file": "public/fonts/funnel-sans-800-italic.woff2",
+      "sha256": "b69f6f2eef6065ff3f5cc5634a7e7eb08721c8bba0207fe8e9594cb01cd7884a"
+    },
+    {
+      "file": "public/fonts/funnel-sans-800-normal.woff2",
+      "sha256": "b9063a30b7d3f94b6a78e443b9567a4b4befc6d7791ab201b2839b2b0b966298"
+    },
+    {
+      "file": "public/fonts/funnel-sans-OFL.txt",
+      "sha256": "a32303f6ea3542927121212a9e4f3fe3548741e6d448d9dc6f29e97cf50102e6"
+    },
+    {
+      "file": "public/fonts/ibm-plex-sans-600-italic.woff2",
+      "sha256": "b5ca90658b5e340bae097b15084047194bc69881f0a36aba82cfb92203c2fd79"
+    },
+    {
+      "file": "public/fonts/ibm-plex-sans-600-normal.woff2",
+      "sha256": "48b4a50176dbc8389ab3db4824289692fbed1863541c427f89f4ca500d3f1ca8"
+    },
+    {
+      "file": "public/fonts/ibm-plex-sans-OFL.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "file": "scripts/framer/capture-geometry.js",
+      "sha256": "253687f744aecf90c738ef9b81a199305401b8bfe296ca077bf4bc744371f87f"
+    },
+    {
+      "file": "scripts/framer/capture-inventory.ps1",
+      "sha256": "4a4dd03b47dda79e2c10eb471244f15fd7486543dd19cc0eef3527bafb21116b"
+    },
+    {
+      "file": "scripts/framer/design-audit.mjs",
+      "sha256": "6a5e896a2e38b308e9f163b89ff1bbca150ccc23be2b2f2de0b070dc602bae8e"
+    },
+    {
+      "file": "scripts/framer/export-inventory.js",
+      "sha256": "5e5c3243050253246515b458dc7879c870c154007c35050b8ce85607c6a58756"
+    },
+    {
+      "file": "scripts/framer/geometry.mjs",
+      "sha256": "e9fa7d1cabf9bc61a339f8cc23054107716012029cb8880f0936c90fa8da7b5f"
+    },
+    {
+      "file": "scripts/framer/hardcodes.mjs",
+      "sha256": "39cdea67d610b62e23d3fd0089e312fac6028ed81f4548862760d1a35338deb1"
+    },
+    {
+      "file": "scripts/framer/model.mjs",
+      "sha256": "fa4b6be1564c78080531c8db1d233be0e0b232f8c06410112991a3ded704bee8"
+    },
+    {
+      "file": "scripts/framer/report.mjs",
+      "sha256": "3eb213db96b36302c12e13eb6e1d69ede25d3a46c73c6d48133f7fd26244dfac"
+    },
+    {
+      "file": "scripts/framer/tokens.mjs",
+      "sha256": "b0e35826da4bd95c2d6303be6c4158c3d14d3081e9f2e528f8b079fd5bb6e984"
+    },
+    {
+      "file": "src/app/App.css",
+      "sha256": "1033236985b6266a919f3cef583c58ccde23600a196e138f316653ab54f258e3"
+    },
+    {
+      "file": "src/app/App.tsx",
+      "sha256": "b07169fa9f0773155a3f39a86c9b0c1e0e2275f9a71fdff8b006e19cc25424f7"
+    },
+    {
+      "file": "src/components/ArrowForward.tsx",
+      "sha256": "d1fdae923c6446798a358f4aa6043b80be8e05a8a04e1d24c1302ccd899875d1"
+    },
+    {
+      "file": "src/components/Button.css",
+      "sha256": "4a7683f35ba05a67b5df45bbdeaa62335fb648412a099407b1606dacb6d0c5df"
+    },
+    {
+      "file": "src/components/Button.tsx",
+      "sha256": "05a6363b534c504a072544b39c78f26b2abd6810a0112e00a7e1cd2b45724351"
+    },
+    {
+      "file": "src/components/CategoryLabel.css",
+      "sha256": "40ff09fe5781eac06c476790288df8cde41c37dd309db09ec85976d48a1c9889"
+    },
+    {
+      "file": "src/components/CategoryLabel.tsx",
+      "sha256": "2bf7640c6fc5a22226a94ee63d2fd7d6df7826c9471709aaa751d83f1068f25f"
+    },
+    {
+      "file": "src/components/CategoryLabelGroup.css",
+      "sha256": "05bc1cb2814e8fe536605bda0ada26f03a15acc275b161ea9cf8c035ffb8dedf"
+    },
+    {
+      "file": "src/components/CategoryLabelGroup.tsx",
+      "sha256": "5671077cf5a12fdcf52acbcc1b6899465914686bdc3c66ef08878d0b7960e83a"
+    },
+    {
+      "file": "src/components/CircularImage.css",
+      "sha256": "2bc4c6ca552a588a6cea4f65c5c13337169adac9d30cd91782c0178b031cb1c5"
+    },
+    {
+      "file": "src/components/CircularImage.tsx",
+      "sha256": "544fc4f920ec56a224a192ef15c1f112e64e7ef0eef6d154743943d133ae1ce7"
+    },
+    {
+      "file": "src/components/CommunityCard.css",
+      "sha256": "8a1d35dd4df47902f64b653947b2a8818a2b4e88772078ff2823565f5536e1bc"
+    },
+    {
+      "file": "src/components/CommunityCard.tsx",
+      "sha256": "7c0c812a0a179c264de40a0d10dc2dec823ed0db4f7a2e94ba146d19473647a2"
+    },
+    {
+      "file": "src/components/CommunityDetails.css",
+      "sha256": "51ebd26e6af435a528012c1ada49ac7a48afe0b3024fca204c15900872b26d7f"
+    },
+    {
+      "file": "src/components/CommunityDetails.tsx",
+      "sha256": "2a03e5b630b2ae9da8d7f51f3522b3b13e9655d3b3a4d2b0d35a8be68e80dc1e"
+    },
+    {
+      "file": "src/components/ContentHeadline.css",
+      "sha256": "0a49ede2cf8626290d668e26079086ada805568d3ca58977dd626f2d1871f71d"
+    },
+    {
+      "file": "src/components/ContentHeadline.tsx",
+      "sha256": "6c1880e64268d97bd319efff784474f65e20132cb7385c57441c83dacaa53000"
+    },
+    {
+      "file": "src/components/Divider.css",
+      "sha256": "17928efb08cc2f285f5d7f1ba224646964b6cc6fe1509d4eb001b897af03973a"
+    },
+    {
+      "file": "src/components/Divider.tsx",
+      "sha256": "50c1cd194894765fc995eeba6d56b5dc445b87090c5c4cd314d2f2cf92256a83"
+    },
+    {
+      "file": "src/components/FaqIcon.css",
+      "sha256": "a8959dc96aa4f462abcdfdea9b15d64cd055613ad3a16cc0b49de4dc0b93a7a9"
+    },
+    {
+      "file": "src/components/FaqIcon.tsx",
+      "sha256": "cc3a4139ceef68bc1e347a9856525e86f8f666f044a9d2d9bb5334d62cfea9f4"
+    },
+    {
+      "file": "src/components/FormField.css",
+      "sha256": "9966f4a79bcc468cd5bfa63d93d8983cbcff18f0d3939bdecfaef7e81dec40e2"
+    },
+    {
+      "file": "src/components/FormField.data.ts",
+      "sha256": "d424a8f3b5eeb69024c6c0818e51acb41245b4b8615e1b9eb17d8211b45cc6bf"
+    },
+    {
+      "file": "src/components/FormField.tsx",
+      "sha256": "5e2ecf168670d75866cf7c3b79f00254f1af79fca1e7191aa380250d9687a4d7"
+    },
+    {
+      "file": "src/components/Icon.css",
+      "sha256": "960e58c118f8e2f4f629b33ad6ca2d8185f0b6ada194d91f00572facd6d71a95"
+    },
+    {
+      "file": "src/components/Icon.registry.ts",
+      "sha256": "9663485bfc2536f3de500f6b70afe9d59c0a8da2debfb034c15c404ccec4982c"
+    },
+    {
+      "file": "src/components/Icon.tsx",
+      "sha256": "75e884f5f6922e97d9afd34ced0b4b0fe1846f87d8d7dda08e3e8fe0e4bce8dd"
+    },
+    {
+      "file": "src/components/ImageFill.css",
+      "sha256": "41b9b7eb60764c96273e7287a3b73f1c8f2e1ac215c5c0ddf825d46891e89829"
+    },
+    {
+      "file": "src/components/ImageFill.tsx",
+      "sha256": "0b58e3ebd72d3a3243cb074a3ce6571f72c9255f24ca07ccc2633dfb1b2d3b5e"
+    },
+    {
+      "file": "src/components/Label.css",
+      "sha256": "2111cf9c19f7f871bf177b998073e0398a0d8bfdf78d68509ba9429b0f126f31"
+    },
+    {
+      "file": "src/components/Label.tsx",
+      "sha256": "1059191c8a44e0c4566c2b215314e52cc575db31aa24b30d4576a436ce12d754"
+    },
+    {
+      "file": "src/components/MainFormButton.css",
+      "sha256": "6f91c5fe23aacf50166b9122a3df37d01d988fb1c941a78a0b242a629ba39cf9"
+    },
+    {
+      "file": "src/components/MainFormButton.state.ts",
+      "sha256": "b01c7c682ed5d9c05222c238ebb35ae223bd18ee4df6a422174f7f88723673a8"
+    },
+    {
+      "file": "src/components/MainFormButton.tsx",
+      "sha256": "01d7651abf53548176774911c9ad3734255e38145096aec7117912bd5c64a1f6"
+    },
+    {
+      "file": "src/components/NavItem.css",
+      "sha256": "58dbef95a795f25586048d6c396e114e3ffff8552db61948d00a0a61fa8b5371"
+    },
+    {
+      "file": "src/components/NavItem.tsx",
+      "sha256": "9ed2cd7cc67c3df005214ccf91559de34fece7b43798bf217d3e67112cef1755"
+    },
+    {
+      "file": "src/components/OurStoryCard.css",
+      "sha256": "2a3a2558f3d7098fdc52d5a1c03e649caaf55092456a4348a8925b4d2d9926b7"
+    },
+    {
+      "file": "src/components/OurStoryCard.tsx",
+      "sha256": "2e7897abe58d9e29d932673bb8f2c1665a19bdacc20a9e0c89a956004c076636"
+    },
+    {
+      "file": "src/components/ProcessRow.css",
+      "sha256": "9b87dca232674c6dde95b4bbe19fce62e5ca9efef4fdbe965618719759994611"
+    },
+    {
+      "file": "src/components/ProcessRow.tsx",
+      "sha256": "9f954cb2ef02800be572aa1593930cf53f4b3dbd087a2153242c4b3b567f0a21"
+    },
+    {
+      "file": "src/components/RollingText.css",
+      "sha256": "dcfb66a6566f40a83b40b8bc66a86c20e3dc00a003a4b1b07a87e55cf91b5dbd"
+    },
+    {
+      "file": "src/components/RollingText.tsx",
+      "sha256": "5f95f4704dc66f53fdc4aa5e14765dfb7f38372b21691b9773bae5ea3479273e"
+    },
+    {
+      "file": "src/components/SplitContent.css",
+      "sha256": "b5ea3ab3a0dab8a9a80a0a8d760dec00c9e9ee2a2d8da3525a637c4dae563dad"
+    },
+    {
+      "file": "src/components/SplitContent.tsx",
+      "sha256": "3c98d731ea727332bb55b3215f235d8c22d33714c2e77ff1f5733a83ef18dc88"
+    },
+    {
+      "file": "src/components/StatRow.css",
+      "sha256": "c0996048294dfd66b52dcafe545d283436dca89af5452c0c6dddabd35827b415"
+    },
+    {
+      "file": "src/components/StatRow.tsx",
+      "sha256": "877c43a3ca718b88127389a8f69d0fe49d03c55fc2de570c86181ffa083d3f16"
+    },
+    {
+      "file": "src/components/TestimonialsArrow.css",
+      "sha256": "b44ffa8a215a340ae82b063c41e380f1f5fbcf015f535f7371c04a4258af18ab"
+    },
+    {
+      "file": "src/components/TestimonialsArrow.tsx",
+      "sha256": "0acda604a7070b7527bad7ebb98747b46dedf3fe8be98e52e407792dc4bb7eb1"
+    },
+    {
+      "file": "src/components/TestimonialsSection.css",
+      "sha256": "ce09b12960e63d5e4433340f911154c6fb59169a5971b8e2968db3a174dc974e"
+    },
+    {
+      "file": "src/components/TestimonialsSection.data.ts",
+      "sha256": "438503e6a9ceed516eed936b4574ee1b6eca4928ed56e5c0f79947f3946d6c09"
+    },
+    {
+      "file": "src/components/TestimonialsSection.tsx",
+      "sha256": "6ba28e13a09204020119e160067b0706029aae03ccd61fd2c3bc86a8dc4a5419"
+    },
+    {
+      "file": "src/main.tsx",
+      "sha256": "283d218fb37551de93f4be090329390b2d6f4dea093e4021b866c264b21b0934"
+    },
+    {
+      "file": "src/motion/useLineReveal.ts",
+      "sha256": "8abeb9d67508956c954a835c133e6e33c46feac7eac4189ac41f115394780413"
+    },
+    {
+      "file": "src/motion/useReducedMotionPreference.ts",
+      "sha256": "95fa2412ca6cc27c936fe512403469ff0f42bcb0585e67fa771a5f4c557b6acc"
+    },
+    {
+      "file": "src/pages/design-system/ButtonExamples.tsx",
+      "sha256": "e6a5380b0602dc3db49b29add541256c8c8ac9cf2467f6894d93b61d8fd98bcf"
+    },
+    {
+      "file": "src/pages/design-system/CatalogTools.tsx",
+      "sha256": "62cbabae45a7d6d0be24e587e766b68adfeb009a83b8aff5c1e38c3638d8065e"
+    },
+    {
+      "file": "src/pages/design-system/CommunityCardExamples.css",
+      "sha256": "7c3fa7d0d45e71f9d88652571619531e122e6a1a7861b3ed611260241b759901"
+    },
+    {
+      "file": "src/pages/design-system/CommunityCardExamples.data.ts",
+      "sha256": "90efc015eacc30b7116a0400594ed61d2a4fc11b525bc629c16d890f63558ecf"
+    },
+    {
+      "file": "src/pages/design-system/CommunityCardExamples.tsx",
+      "sha256": "af9667cbf2d644e7daf3ad77fd40e479a2106f2da8ddb1eb38603619f524895e"
+    },
+    {
+      "file": "src/pages/design-system/ContentFormAtomExamples.css",
+      "sha256": "ae880aebda1c52a5e0b4d98b94fe8f59b8ecec992203d7843c991a36343a255d"
+    },
+    {
+      "file": "src/pages/design-system/ContentFormAtomExamples.data.ts",
+      "sha256": "36c123bd7f43e61bbd071925352ba45c4c86ec6d15bb549ed0c9cecff1ad4872"
+    },
+    {
+      "file": "src/pages/design-system/ContentFormAtomExamples.tsx",
+      "sha256": "a912a3c6d3964e574088b7a0b6bd484ddb17ff85adb614b2d044003d774857c7"
+    },
+    {
+      "file": "src/pages/design-system/DesignSystemPage.css",
+      "sha256": "0c2ac3169b248bf8c624c60e018e9683c7e935c16cca07a493ba1ae9c9ac966d"
+    },
+    {
+      "file": "src/pages/design-system/DesignSystemPage.tsx",
+      "sha256": "51a5910e8b87baa2abb646a4695f24fd5f5a8c27b8673f7a4bd801eab3afd153"
+    },
+    {
+      "file": "src/pages/design-system/GeometryCatalog.tsx",
+      "sha256": "ce18efce4324df91dd310710b5a67cabfc3738bc169a566145d9f96b3e98b678"
+    },
+    {
+      "file": "src/pages/design-system/MainFormButtonExamples.tsx",
+      "sha256": "cb7e67584a14b1af7fc0b88b49c2c20060046bc6440553ec8af34c8c4f7f2b36"
+    },
+    {
+      "file": "src/pages/design-system/OurStoryCardExamples.css",
+      "sha256": "15db3b827da4670d97daedb0f28e62b7f67b1716deee12a168d05018aaf1f8bd"
+    },
+    {
+      "file": "src/pages/design-system/OurStoryCardExamples.tsx",
+      "sha256": "81ce96a0fec496093ddbf85f02daf42df4900b6759ab03018c3e67c7992d4e9b"
+    },
+    {
+      "file": "src/pages/design-system/ProcessRowExamples.css",
+      "sha256": "ce05b873a63348b1eea2cf9f4dc5fa6aa6623b835b7d3da1454ae723554f72a6"
+    },
+    {
+      "file": "src/pages/design-system/ProcessRowExamples.tsx",
+      "sha256": "757effb67d5de7dd6957b626b11a95334abcc075c98c4175e0a52585a307ab62"
+    },
+    {
+      "file": "src/pages/design-system/SourceCatalog.tsx",
+      "sha256": "be64f60645c6900702f8fe66392d427064e75428b14adb8da38079033f082aeb"
+    },
+    {
+      "file": "src/pages/design-system/catalogIndex.ts",
+      "sha256": "eaec1f0cd3de932ebab62013536ed8c08a316169effa728676be176218ffc666"
+    },
+    {
+      "file": "src/pages/design-system/componentExamples.ts",
+      "sha256": "482a0f9093af16dc35bc0e4ff5ab829a43fa846c0b70c2a139be56bf9c194c7c"
+    },
+    {
+      "file": "src/styles/base.css",
+      "sha256": "8407467005167e85a2d55c26019d6ec1b236c26eac9b1a255da1f61458c70f69"
+    },
+    {
+      "file": "src/styles/fonts.css",
+      "sha256": "edacce7d8c78f94e9e1637b83864f029bc1f2148232da624bc8d7b81b67b8e69"
+    },
+    {
+      "file": "src/styles/geometry.css",
+      "sha256": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b"
+    },
+    {
+      "file": "src/styles/geometry.ts",
+      "sha256": "0dc588e40f4f38af4a433477ee48030097eee212b0eb675c27c55cf71767d515"
+    },
+    {
+      "file": "src/styles/token.css",
+      "sha256": "fb153ef97d0a931254d40b8c98fcefa35160bc39a87da1633870276009db85fd"
+    },
+    {
+      "file": "src/styles/token.ts",
+      "sha256": "badd46b62fdbc1e4ff716712335952736092113b0658a6d9de3406cc75725876"
+    },
+    {
+      "file": "src/styles/tokens.css",
+      "sha256": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b"
+    },
+    {
+      "file": "src/styles/tokens.ts",
+      "sha256": "332968b0a8e8a69b2afad954061eb9896d9133e4548d44fc5c7c956c3e4511c0"
+    },
+    {
+      "file": "tsconfig.app.json",
+      "sha256": "a3379db7120040b34b19981d958c14f6ef3b48268cc596df4fab84829bb7f286"
+    },
+    {
+      "file": "tsconfig.json",
+      "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+    },
+    {
+      "file": "tsconfig.node.json",
+      "sha256": "8e04d5d603fdaa9eac3e5d5b0f98f0dc1696ee2fae2852470dcd23e42e798d82"
+    },
+    {
+      "file": "vite.config.ts",
+      "sha256": "e1eefd0ed1639c88d1213884ef760516884db9e168190e223fee6b063ad3e088"
+    }
+  ],
+  "runtimeUnchanged": true,
+  "componentGroups": [
+    {
+      "file": "src/components/ArrowForward.tsx",
+      "exports": [
+        "ArrowForward"
+      ],
+      "records": [
+        {
+          "id": "svg-RlCDNYngw",
+          "sourceName": "arrow_forward",
+          "inventoryName": "arrow_forward"
+        }
+      ]
+    },
+    {
+      "file": "src/components/Button.tsx",
+      "exports": [
+        "Button"
+      ],
+      "records": [
+        {
+          "id": "framer-dLxvGaGxG",
+          "sourceName": "Button",
+          "inventoryName": "Button"
+        }
+      ]
+    },
+    {
+      "file": "src/components/CategoryLabel.tsx",
+      "exports": [
+        "CategoryLabel"
+      ],
+      "records": [
+        {
+          "id": "framer-rkq8vGIWn",
+          "sourceName": "Category Label",
+          "inventoryName": "Category Label"
+        }
+      ]
+    },
+    {
+      "file": "src/components/CategoryLabelGroup.tsx",
+      "exports": [
+        "CategoryLabelGroup"
+      ],
+      "records": [
+        {
+          "id": "pattern-W_o5GRkl4",
+          "sourceName": "Label Container",
+          "inventoryName": "Label Container · /eventi/:Eventi"
+        }
+      ]
+    },
+    {
+      "file": "src/components/CircularImage.tsx",
+      "exports": [
+        "CircularImage"
+      ],
+      "records": [
+        {
+          "id": "atom-circular-image",
+          "sourceName": "Image",
+          "inventoryName": "Circular Image"
+        }
+      ]
+    },
+    {
+      "file": "src/components/CommunityCard.tsx",
+      "exports": [
+        "CommunityCard"
+      ],
+      "records": [
+        {
+          "id": "framer-f8_TXnRzt",
+          "sourceName": "Blog Card",
+          "inventoryName": "Community Card"
+        }
+      ]
+    },
+    {
+      "file": "src/components/CommunityDetails.tsx",
+      "exports": [
+        "CommunityDetails"
+      ],
+      "records": [
+        {
+          "id": "pattern-v0a9rAOnN",
+          "sourceName": "Tech Details",
+          "inventoryName": "Tech Details · /community/:Community"
+        }
+      ]
+    },
+    {
+      "file": "src/components/ContentHeadline.tsx",
+      "exports": [
+        "ContentHeadline"
+      ],
+      "records": [
+        {
+          "id": "pattern-wIf2vBmrp",
+          "sourceName": "Headline",
+          "inventoryName": "Headline · /"
+        },
+        {
+          "id": "pattern-VuSLlvonD",
+          "sourceName": "Headline",
+          "inventoryName": "Headline · /esperienza"
+        },
+        {
+          "id": "pattern-qgLuHW8XG",
+          "sourceName": "Headline",
+          "inventoryName": "Headline · /esperienza"
+        },
+        {
+          "id": "pattern-UNMBQYnKg",
+          "sourceName": "Headline",
+          "inventoryName": "Headline · /eventi/:Eventi"
+        },
+        {
+          "id": "pattern-dR7SkYjAS",
+          "sourceName": "Headline",
+          "inventoryName": "Headline · /community"
+        },
+        {
+          "id": "pattern-IMQdwgcx4",
+          "sourceName": "Headline",
+          "inventoryName": "Headline · /community/:Community"
+        },
+        {
+          "id": "pattern-GXDcxsQa9",
+          "sourceName": "Headline",
+          "inventoryName": "Headline · Template"
+        }
+      ]
+    },
+    {
+      "file": "src/components/Divider.tsx",
+      "exports": [
+        "Divider"
+      ],
+      "records": [
+        {
+          "id": "atom-divider",
+          "sourceName": "Divider",
+          "inventoryName": "Divider"
+        }
+      ]
+    },
+    {
+      "file": "src/components/FaqIcon.tsx",
+      "exports": [
+        "FaqIcon"
+      ],
+      "records": [
+        {
+          "id": "framer-i5MJ8t0r9",
+          "sourceName": "FAQ Icon",
+          "inventoryName": "FAQ Icon"
+        }
+      ]
+    },
+    {
+      "file": "src/components/FormField.tsx",
+      "exports": [
+        "FormControl",
+        "FormFieldGroup",
+        "FormField"
+      ],
+      "records": [
+        {
+          "id": "pattern-rBICZcWuo",
+          "sourceName": "Gruppo campo · /vieni-a-trovarci",
+          "inventoryName": "Gruppo campo · /vieni-a-trovarci"
+        },
+        {
+          "id": "pattern-uV6GPGFUr",
+          "sourceName": "Campo Name · /vieni-a-trovarci",
+          "inventoryName": "Campo Name · /vieni-a-trovarci"
+        },
+        {
+          "id": "pattern-ebE9WIWRE",
+          "sourceName": "Gruppo campo · /vieni-a-trovarci",
+          "inventoryName": "Gruppo campo · /vieni-a-trovarci"
+        },
+        {
+          "id": "pattern-hZSckX7gj",
+          "sourceName": "Campo Gruppo · /vieni-a-trovarci",
+          "inventoryName": "Campo Gruppo · /vieni-a-trovarci"
+        },
+        {
+          "id": "pattern-fmFFqtjF4",
+          "sourceName": "Gruppo campo · /vieni-a-trovarci",
+          "inventoryName": "Gruppo campo · /vieni-a-trovarci"
+        },
+        {
+          "id": "pattern-AbzmaKuIg",
+          "sourceName": "Campo Email · /vieni-a-trovarci",
+          "inventoryName": "Campo Email · /vieni-a-trovarci"
+        },
+        {
+          "id": "pattern-KdHT0OxwM",
+          "sourceName": "Gruppo campo · /vieni-a-trovarci",
+          "inventoryName": "Gruppo campo · /vieni-a-trovarci"
+        },
+        {
+          "id": "pattern-IRkjye6Ll",
+          "sourceName": "Campo message · /vieni-a-trovarci",
+          "inventoryName": "Campo message · /vieni-a-trovarci"
+        },
+        {
+          "id": "pattern-blKM_n5tw",
+          "sourceName": "Gruppo campo · Template",
+          "inventoryName": "Gruppo campo · Template"
+        },
+        {
+          "id": "pattern-xvOOrP2uV",
+          "sourceName": "Campo Name · Template",
+          "inventoryName": "Campo Name · Template"
+        },
+        {
+          "id": "pattern-KklDpWuyS",
+          "sourceName": "Gruppo campo · Template",
+          "inventoryName": "Gruppo campo · Template"
+        },
+        {
+          "id": "pattern-ytvirBom_",
+          "sourceName": "Campo Gruppo · Template",
+          "inventoryName": "Campo Gruppo · Template"
+        },
+        {
+          "id": "pattern-A7QIJFFnm",
+          "sourceName": "Gruppo campo · Template",
+          "inventoryName": "Gruppo campo · Template"
+        },
+        {
+          "id": "pattern-vt6OKYbIq",
+          "sourceName": "Campo Email · Template",
+          "inventoryName": "Campo Email · Template"
+        },
+        {
+          "id": "pattern-C37cggxuY",
+          "sourceName": "Gruppo campo · Template",
+          "inventoryName": "Gruppo campo · Template"
+        },
+        {
+          "id": "pattern-YErXHZjPw",
+          "sourceName": "Campo message · Template",
+          "inventoryName": "Campo message · Template"
+        }
+      ]
+    },
+    {
+      "file": "src/components/Icon.tsx",
+      "exports": [
+        "Icon"
+      ],
+      "records": [
+        {
+          "id": "kzYpAYTcIrmL7AqAiMfc",
+          "sourceName": "Red Bull",
+          "inventoryName": "Red Bull"
+        },
+        {
+          "id": "uii4O6Q2YMyHUZDfJBlW",
+          "sourceName": "Arrow Right Alt",
+          "inventoryName": "Arrow Right Alt"
+        },
+        {
+          "id": "pattern-kt1uJzx2N",
+          "sourceName": "“",
+          "inventoryName": "“ · /eventi/:Eventi"
+        },
+        {
+          "id": "iconset-cpJ186_Ri",
+          "sourceName": "Logo",
+          "inventoryName": "Logo · Icon set"
+        },
+        {
+          "id": "iconset-YfS5AmUgj",
+          "sourceName": "Quote",
+          "inventoryName": "Quote · Icon set"
+        },
+        {
+          "id": "svg-RlCDNYngw",
+          "sourceName": "arrow_forward",
+          "inventoryName": "arrow_forward"
+        },
+        {
+          "id": "vector-DZHx41Gi8",
+          "sourceName": "Freccia vettoriale · Button",
+          "inventoryName": "Freccia vettoriale · Button"
+        }
+      ]
+    },
+    {
+      "file": "src/components/ImageFill.tsx",
+      "exports": [
+        "ImageFill"
+      ],
+      "records": [
+        {
+          "id": "pattern-EAJKyYveW",
+          "sourceName": "Mobile Image",
+          "inventoryName": "Mobile Image · /"
+        },
+        {
+          "id": "pattern-Zzb09zCxr",
+          "sourceName": "Image",
+          "inventoryName": "Image · /esperienza"
+        }
+      ]
+    },
+    {
+      "file": "src/components/Label.tsx",
+      "exports": [
+        "Label"
+      ],
+      "records": [
+        {
+          "id": "framer-v7uHI8k53",
+          "sourceName": "Label",
+          "inventoryName": "Label"
+        }
+      ]
+    },
+    {
+      "file": "src/components/MainFormButton.tsx",
+      "exports": [
+        "MainFormButton"
+      ],
+      "records": [
+        {
+          "id": "framer-oG9J4ak1n",
+          "sourceName": "Main form button",
+          "inventoryName": "Main form button"
+        }
+      ]
+    },
+    {
+      "file": "src/components/NavItem.tsx",
+      "exports": [
+        "NavItem"
+      ],
+      "records": [
+        {
+          "id": "framer-sfeabPGEm",
+          "sourceName": "Nav Item",
+          "inventoryName": "Nav Item"
+        }
+      ]
+    },
+    {
+      "file": "src/components/OurStoryCard.tsx",
+      "exports": [
+        "OurStoryCard"
+      ],
+      "records": [
+        {
+          "id": "framer-nZX03KIzW",
+          "sourceName": "Our Story Card",
+          "inventoryName": "Our Story Card"
+        }
+      ]
+    },
+    {
+      "file": "src/components/ProcessRow.tsx",
+      "exports": [
+        "ProcessRow"
+      ],
+      "records": [
+        {
+          "id": "framer-T0VLBAAXc",
+          "sourceName": "Process Row",
+          "inventoryName": "Process Row"
+        }
+      ]
+    },
+    {
+      "file": "src/components/RollingText.tsx",
+      "exports": [
+        "RollingText"
+      ],
+      "records": [
+        {
+          "id": "FiiQ0BKlVUNzxXjo8hFs",
+          "sourceName": "Rolling Text",
+          "inventoryName": "Rolling Text"
+        }
+      ]
+    },
+    {
+      "file": "src/components/SplitContent.tsx",
+      "exports": [
+        "SplitContent"
+      ],
+      "records": [
+        {
+          "id": "pattern-RuA0JWZsP",
+          "sourceName": "Headline",
+          "inventoryName": "Headline · /eventi/:Eventi"
+        },
+        {
+          "id": "pattern-nN8BISdtN",
+          "sourceName": "Headline",
+          "inventoryName": "Headline · /eventi/:Eventi"
+        }
+      ]
+    },
+    {
+      "file": "src/components/StatRow.tsx",
+      "exports": [
+        "StatRow"
+      ],
+      "records": [
+        {
+          "id": "pattern-SkaeXzDD6",
+          "sourceName": "Stat Row",
+          "inventoryName": "Stat Row · /esperienza"
+        },
+        {
+          "id": "pattern-HQY_XVsoI",
+          "sourceName": "Stat Row",
+          "inventoryName": "Stat Row · /esperienza"
+        },
+        {
+          "id": "pattern-GFcKvi6c1",
+          "sourceName": "Stat Row",
+          "inventoryName": "Stat Row · /esperienza"
+        },
+        {
+          "id": "pattern-Yni8C4MAB",
+          "sourceName": "Stat Row",
+          "inventoryName": "Stat Row · /esperienza"
+        }
+      ]
+    },
+    {
+      "file": "src/components/TestimonialsArrow.tsx",
+      "exports": [
+        "TestimonialsArrow"
+      ],
+      "records": [
+        {
+          "id": "framer-PwJSSuRWe",
+          "sourceName": "Testimonials Arrow",
+          "inventoryName": "Testimonials Arrow"
+        }
+      ]
+    },
+    {
+      "file": "src/components/TestimonialsSection.tsx",
+      "exports": [
+        "TestimonialsSection"
+      ],
+      "records": [
+        {
+          "id": "framer-nkDvTeO6Q",
+          "sourceName": "Testimonials Section",
+          "inventoryName": "Testimonials Section"
+        }
+      ]
+    }
+  ],
+  "markdownCorrections": [
+    {
+      "id": "framer-T0VLBAAXc",
+      "name": "Process Row",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "framer-sfeabPGEm",
+      "name": "Nav Item",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "framer-dLxvGaGxG",
+      "name": "Button",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "framer-nZX03KIzW",
+      "name": "Our Story Card",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-EAJKyYveW",
+      "name": "Mobile Image · /",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-wIf2vBmrp",
+      "name": "Headline · /",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-Zzb09zCxr",
+      "name": "Image · /esperienza",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-SkaeXzDD6",
+      "name": "Stat Row · /esperienza",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-HQY_XVsoI",
+      "name": "Stat Row · /esperienza",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-GFcKvi6c1",
+      "name": "Stat Row · /esperienza",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-Yni8C4MAB",
+      "name": "Stat Row · /esperienza",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-VuSLlvonD",
+      "name": "Headline · /esperienza",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-qgLuHW8XG",
+      "name": "Headline · /esperienza",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-W_o5GRkl4",
+      "name": "Label Container · /eventi/:Eventi",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-RuA0JWZsP",
+      "name": "Headline · /eventi/:Eventi",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-nN8BISdtN",
+      "name": "Headline · /eventi/:Eventi",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-UNMBQYnKg",
+      "name": "Headline · /eventi/:Eventi",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-rBICZcWuo",
+      "name": "Gruppo campo · /vieni-a-trovarci",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-uV6GPGFUr",
+      "name": "Campo Name · /vieni-a-trovarci",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-ebE9WIWRE",
+      "name": "Gruppo campo · /vieni-a-trovarci",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-hZSckX7gj",
+      "name": "Campo Gruppo · /vieni-a-trovarci",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-fmFFqtjF4",
+      "name": "Gruppo campo · /vieni-a-trovarci",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-AbzmaKuIg",
+      "name": "Campo Email · /vieni-a-trovarci",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-KdHT0OxwM",
+      "name": "Gruppo campo · /vieni-a-trovarci",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-IRkjye6Ll",
+      "name": "Campo message · /vieni-a-trovarci",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-dR7SkYjAS",
+      "name": "Headline · /community",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-v0a9rAOnN",
+      "name": "Tech Details · /community/:Community",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-IMQdwgcx4",
+      "name": "Headline · /community/:Community",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-GXDcxsQa9",
+      "name": "Headline · Template",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-blKM_n5tw",
+      "name": "Gruppo campo · Template",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-xvOOrP2uV",
+      "name": "Campo Name · Template",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-KklDpWuyS",
+      "name": "Gruppo campo · Template",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-ytvirBom_",
+      "name": "Campo Gruppo · Template",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-A7QIJFFnm",
+      "name": "Gruppo campo · Template",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-vt6OKYbIq",
+      "name": "Campo Email · Template",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-C37cggxuY",
+      "name": "Gruppo campo · Template",
+      "before": "not-migrated",
+      "after": "completed"
+    },
+    {
+      "id": "pattern-YErXHZjPw",
+      "name": "Campo message · Template",
+      "before": "not-migrated",
+      "after": "completed"
+    }
+  ],
+  "unmappedRuntimeFiles": [],
+  "completedFilesMissing": [],
+  "fullStatusPromotions": [],
+  "pendingWithAvailableParts": 49,
+  "scopedCapabilities": [
+    {
+      "id": "framer-dmfgfOdOP",
+      "name": "Testimonials Image reveal",
+      "runtime": "TestimonialsSection.tsx::ImageReveal (private)",
+      "status": "scoped-implementation-only",
+      "note": "Private reveal required by the completed section is implemented. It is explicitly not the standalone reusable Framer Image reveal component; other consumers remain pending."
+    },
+    {
+      "id": "codeFile/VN4Z8bL:default",
+      "name": "TextStagger",
+      "runtime": "TestimonialsSection.tsx title/body reveals; useLineReveal.ts for ProcessRow",
+      "status": "scoped-capabilities-only",
+      "note": "Specific effects are implemented for completed consumers; no independent TextStagger port or full API equivalence."
+    },
+    {
+      "id": "pattern-oXNPkQNkN",
+      "name": "Headline trigger · Home",
+      "runtime": "useLineReveal.ts is a title reveal helper",
+      "status": "different-responsibility",
+      "note": "Transparent100vh page scroll target is not the title reveal helper; page trigger remains unported."
+    },
+    {
+      "id": "pattern-fu2tf1hGp",
+      "name": "Headline trigger · Eventi",
+      "runtime": "useLineReveal.ts is a title reveal helper",
+      "status": "different-responsibility",
+      "note": "Transparent page scroll target remains unported."
+    }
+  ],
+  "limits": [
+    "Existing closure evidence retained with original scope/date; no fresh Framer or visual inspection.",
+    "Source dependency mappings demonstrate available parts, not completed parent implementation.",
+    "Inventory counts represent source units/copies/patterns, not independent React components.",
+    "docs/framer reference is locally ignored by existing repository policy."
+  ],
+  "checks": [
+    "137metadata lines against current JSON statuses",
+    "54completed runtime mappings reference existing source files/exports",
+    "All23component TSX files covered by at least one completed record",
+    "Runtime source/config hashes before/after (validated separately)",
+    "Catalog AST23entries",
+    "All137metadata statuses PASS",
+    "git diff --check PASS"
+  ],
+  "tests": "No build/typecheck/lint/frontend suites: runtime unchanged.",
+  "catalog": {
+    "entryCount": 23,
+    "names": [
+      "Main form button",
+      "Form Field",
+      "Nav Item",
+      "Content Headline",
+      "Split Content",
+      "Stat Row",
+      "Category Label Group",
+      "Community Details",
+      "Image Fill",
+      "Button",
+      "Community Card",
+      "Our Story Card",
+      "Divider",
+      "Circular Image",
+      "Rolling Text",
+      "Process Row",
+      "Icon Engine",
+      "Testimonials Section",
+      "Testimonials Arrow",
+      "FAQ Icon",
+      "Label",
+      "Category Label",
+      "arrow_forward"
+    ],
+    "method": "TypeScript compiler AST: componentExamples initializer"
+  },
+  "metadataStandardizations": [
+    "BTN2 legacy-unused metadata retains its separate source decision",
+    "Divider and CircularImage receive explicit ID/status metadata lines"
+  ],
+  "metadataStatusesVerified": 137,
+  "runtimeDrift": [],
+  "faqRowFollowUp": {
+    "date": "2026-10-07",
+    "counts": {
+      "not-migrated": 79,
+      "completed": 57,
+      "legacy-unused": 1
+    },
+    "component": "FAQRow",
+    "runtimeImplementationFileCount": 26,
+    "catalogEntryCount": 26,
+    "proof": "docs/FAQ-ROW-VERIFICATION.json",
+    "scope": "Dedicated source/UI closure, historical reconciliation checks above remain unchanged"
+  }
+}

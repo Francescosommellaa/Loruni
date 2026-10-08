@@ -1,0 +1,45 @@
+.loruni-process-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: var(--process-row-padding-phone);
+  /* Framer's distributed stack does not emit the canvas gap1129px. */
+}
+.loruni-process-row__content {
+  display: flex;
+  flex: 1 0 0;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--component-process-row-desktop-content-gap);
+  height: auto;
+  position: relative;
+  overflow: clip;
+}
+.loruni-process-row__title {
+  width: 100%;
+  margin: 0;
+  color: var(--color-neutral-50);
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.loruni-process-row__title [data-reveal-glyph] { display: inline-block; }
+.loruni-process-row__text {
+  width: 100%;
+  max-width: var(--source-max-width-value680px);
+  margin: 0;
+  color: var(--color-neutral-50);
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.loruni-process-row__number { flex: none; width: auto; margin: 0; color: var(--color-neutral-50); overflow-wrap: normal; word-break: normal; }
+@media (min-width: 810px) { .loruni-process-row { padding: var(--process-row-padding-tablet); } }
+@media (min-width: 1200px) { .loruni-process-row { padding: var(--process-row-padding-desktop); } }

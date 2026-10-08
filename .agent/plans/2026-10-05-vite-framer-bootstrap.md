@@ -25,7 +25,7 @@ The workspace contains only `.git`. Git tracks Logo assets, all already deleted 
 - [x] Read-only Framer capture script, selected source data and readable inventory with completeness/errors.
 - [x] Skills for source inventory, faithful React port and animation ownership.
 - [x] Current architecture, usage and verification documentation.
-- [ ] Brain current-state update and session log, read back after persistence.
+- [x] Brain current-state update and session log, read back after persistence.
 
 ## Verification
 
@@ -37,4 +37,4 @@ Use a temporary Vite template and copy only new scaffold files into the workspac
 
 ## Completion
 
-Implementation/tooling/data digest `4df715dc5ec3dffdbf02e5b28dda72e93e63063494a190854f25591c10927de1`. Five Node tests, lint, typecheck, production build and frozen install pass. Three skills validate. IAB bootstrap smoke at1200×800 and390×844: rendered status, no overflow, captured error/warning list empty. Wrapper capture succeeds and wrong-session guard preserves snapshot. Two local component definitions unavailable due to Icon/Upload Logo; external internals, source visual/timing acceptance and CMS destination remain open. Exact evidence in docs/BOOTSTRAP-VERIFICATION.md. No commit/publish/deploy. Pre-existing deletions and independently appearing Logo/Favicon.ico left untouched. Brain persistence pending.
+Implementation/tooling/data digest `4df715dc5ec3dffdbf02e5b28dda72e93e63063494a190854f25591c10927de1`. Five Node tests, lint, typecheck, production build and frozen install pass. Three skills validate. IAB bootstrap smoke at1200×800 and390×844: rendered status, no overflow, captured error/warning list empty. Wrapper capture succeeds and wrong-session guard preserves snapshot. Two local component definitions unavailable due to Icon/Upload Logo; external internals, source visual/timing acceptance and CMS destination remain open. Exact evidence in docs/BOOTSTRAP-VERIFICATION.md. No commit/publish/deploy. Pre-existing deletions and independently appearing Logo/Favicon.ico left untouched. Brain current-state notes, index and session log saved through MCP and read back successfully.

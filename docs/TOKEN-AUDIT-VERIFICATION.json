@@ -1,0 +1,277 @@
+{
+  "verifiedAt": "2026-10-06T00:17:30.534Z",
+  "localDate": "2026-10-06 Europe/Rome",
+  "revision": "ddf60f332ec9a6fd07baf7c6447bb75cfccd4ca6",
+  "uncommitted": true,
+  "sha256": "598b4aa555a535e9744250e47203420aa8e843d10adaad2dcd2b23cd2ee9154b",
+  "method": "Sorted path + NUL + file SHA256 + LF; all src/scripts/tests/font assets and build/source inputs",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "953c0e3abb7cac44a316d247a5d880acf8ed3cd6812ed37311f6d8e2f657d778"
+    },
+    {
+      "path": "docs/framer/design-source.json",
+      "sha256": "1b024e135f8c15d6454225a61d0d5bc246560f9e0c03d864e679d8bd8e820409"
+    },
+    {
+      "path": "docs/framer/geometry-source.json",
+      "sha256": "ce95f507365cc3dc0b659e5e59ef023b7aaa838dd2a6776096a4c4e6571c19bb"
+    },
+    {
+      "path": "docs/framer/token-policy.json",
+      "sha256": "ffeb47478ea041d55c9f10445107d38c961bdd6e3fc31f71f22214507ac3f67e"
+    },
+    {
+      "path": "docs/framer/token-source.json",
+      "sha256": "91c309cbcbc998913c404d0c032e601a777ffe313b3455a804274e9ad5bd4012"
+    },
+    {
+      "path": "index.html",
+      "sha256": "44f13097dd232672c98b796a7215ea16e4992481803b8648aaecfb144ee9b7e0"
+    },
+    {
+      "path": "package.json",
+      "sha256": "cc27f65a7f9c38e35273b32581e362cb22d22883eaf76faf9053c086d461aafa"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "2edc4414d3a4a56374025c4b73b1b91b6f72be87cc820ca7683cfd39d550c90c"
+    },
+    {
+      "path": "public/fonts/funnel-display-600-normal.woff2",
+      "sha256": "0eb50930cbadee5871422774e228fe11d0d2fbcf53c69e52a59fd9fd1f1a0d3c"
+    },
+    {
+      "path": "public/fonts/funnel-display-800-normal.woff2",
+      "sha256": "76d9900b48ce832f407756ef281d22d2873dd23d6340b06df59b6ff5d71612e4"
+    },
+    {
+      "path": "public/fonts/funnel-display-OFL.txt",
+      "sha256": "a32303f6ea3542927121212a9e4f3fe3548741e6d448d9dc6f29e97cf50102e6"
+    },
+    {
+      "path": "public/fonts/funnel-sans-400-italic.woff2",
+      "sha256": "e5d6074b15b7672d491704d3ba40af0cb2e20b1c57c1bf99de0783cbfaf26daa"
+    },
+    {
+      "path": "public/fonts/funnel-sans-400-normal.woff2",
+      "sha256": "89eb0ff8e0896d5cc9c91fd43c29828da93a9517955129fe5f390759afac9ac7"
+    },
+    {
+      "path": "public/fonts/funnel-sans-600-italic.woff2",
+      "sha256": "87538f38352e86c372ad3301bc4ac0626398c553e29afca74dd3a50b2dbb5dd5"
+    },
+    {
+      "path": "public/fonts/funnel-sans-600-normal.woff2",
+      "sha256": "53c595beb5ae285bbba974362953b9f823c697753200e183380bbeab250f3192"
+    },
+    {
+      "path": "public/fonts/funnel-sans-700-italic.woff2",
+      "sha256": "aa3d4735dc5c6d421d98251035ff6794133ade221b3586cfce2c29f063e47048"
+    },
+    {
+      "path": "public/fonts/funnel-sans-700-normal.woff2",
+      "sha256": "a5326e42e54c221a0b482b21137ad8217a48295ba4397e764362f192e8f027b5"
+    },
+    {
+      "path": "public/fonts/funnel-sans-800-italic.woff2",
+      "sha256": "b69f6f2eef6065ff3f5cc5634a7e7eb08721c8bba0207fe8e9594cb01cd7884a"
+    },
+    {
+      "path": "public/fonts/funnel-sans-800-normal.woff2",
+      "sha256": "b9063a30b7d3f94b6a78e443b9567a4b4befc6d7791ab201b2839b2b0b966298"
+    },
+    {
+      "path": "public/fonts/funnel-sans-OFL.txt",
+      "sha256": "a32303f6ea3542927121212a9e4f3fe3548741e6d448d9dc6f29e97cf50102e6"
+    },
+    {
+      "path": "public/fonts/ibm-plex-sans-600-italic.woff2",
+      "sha256": "b5ca90658b5e340bae097b15084047194bc69881f0a36aba82cfb92203c2fd79"
+    },
+    {
+      "path": "public/fonts/ibm-plex-sans-600-normal.woff2",
+      "sha256": "48b4a50176dbc8389ab3db4824289692fbed1863541c427f89f4ca500d3f1ca8"
+    },
+    {
+      "path": "public/fonts/ibm-plex-sans-OFL.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "scripts/framer/capture-geometry.js",
+      "sha256": "253687f744aecf90c738ef9b81a199305401b8bfe296ca077bf4bc744371f87f"
+    },
+    {
+      "path": "scripts/framer/capture-inventory.ps1",
+      "sha256": "4a4dd03b47dda79e2c10eb471244f15fd7486543dd19cc0eef3527bafb21116b"
+    },
+    {
+      "path": "scripts/framer/design-audit.mjs",
+      "sha256": "6a5e896a2e38b308e9f163b89ff1bbca150ccc23be2b2f2de0b070dc602bae8e"
+    },
+    {
+      "path": "scripts/framer/export-inventory.js",
+      "sha256": "5e5c3243050253246515b458dc7879c870c154007c35050b8ce85607c6a58756"
+    },
+    {
+      "path": "scripts/framer/geometry.mjs",
+      "sha256": "e9fa7d1cabf9bc61a339f8cc23054107716012029cb8880f0936c90fa8da7b5f"
+    },
+    {
+      "path": "scripts/framer/hardcodes.mjs",
+      "sha256": "39cdea67d610b62e23d3fd0089e312fac6028ed81f4548862760d1a35338deb1"
+    },
+    {
+      "path": "scripts/framer/model.mjs",
+      "sha256": "fa4b6be1564c78080531c8db1d233be0e0b232f8c06410112991a3ded704bee8"
+    },
+    {
+      "path": "scripts/framer/report.mjs",
+      "sha256": "3eb213db96b36302c12e13eb6e1d69ede25d3a46c73c6d48133f7fd26244dfac"
+    },
+    {
+      "path": "scripts/framer/tokens.mjs",
+      "sha256": "b0e35826da4bd95c2d6303be6c4158c3d14d3081e9f2e528f8b079fd5bb6e984"
+    },
+    {
+      "path": "src/app/App.css",
+      "sha256": "1033236985b6266a919f3cef583c58ccde23600a196e138f316653ab54f258e3"
+    },
+    {
+      "path": "src/app/App.tsx",
+      "sha256": "b07169fa9f0773155a3f39a86c9b0c1e0e2275f9a71fdff8b006e19cc25424f7"
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "283d218fb37551de93f4be090329390b2d6f4dea093e4021b866c264b21b0934"
+    },
+    {
+      "path": "src/pages/design-system/DesignSystemPage.css",
+      "sha256": "19e3139dc4efc4c62660c77b9f304254bbae4a806be80768657f0665e4070106"
+    },
+    {
+      "path": "src/pages/design-system/DesignSystemPage.tsx",
+      "sha256": "bb51886c1cd0a124541c8b07d30ae17a3a4814202d5f9c77f6cec4b67dcbaad1"
+    },
+    {
+      "path": "src/pages/design-system/GeometryCatalog.tsx",
+      "sha256": "b0a0570534a3729ad5ced077e6d1432e44a451428f21d8c762fa8b7bdf568d91"
+    },
+    {
+      "path": "src/pages/design-system/SourceCatalog.tsx",
+      "sha256": "e9a4746f14bf102730951af6607f2404a58f16655a8f9d7b65b6ac3b372f5090"
+    },
+    {
+      "path": "src/pages/design-system/componentExamples.ts",
+      "sha256": "0b5fea772f65e7c797bdb3b9abd00695f68c5119b1a6009a3dbc5f189199aa64"
+    },
+    {
+      "path": "src/styles/base.css",
+      "sha256": "8407467005167e85a2d55c26019d6ec1b236c26eac9b1a255da1f61458c70f69"
+    },
+    {
+      "path": "src/styles/fonts.css",
+      "sha256": "edacce7d8c78f94e9e1637b83864f029bc1f2148232da624bc8d7b81b67b8e69"
+    },
+    {
+      "path": "src/styles/geometry.css",
+      "sha256": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b"
+    },
+    {
+      "path": "src/styles/geometry.ts",
+      "sha256": "0dc588e40f4f38af4a433477ee48030097eee212b0eb675c27c55cf71767d515"
+    },
+    {
+      "path": "src/styles/token.css",
+      "sha256": "fb153ef97d0a931254d40b8c98fcefa35160bc39a87da1633870276009db85fd"
+    },
+    {
+      "path": "src/styles/token.ts",
+      "sha256": "badd46b62fdbc1e4ff716712335952736092113b0658a6d9de3406cc75725876"
+    },
+    {
+      "path": "src/styles/tokens.css",
+      "sha256": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b"
+    },
+    {
+      "path": "src/styles/tokens.ts",
+      "sha256": "332968b0a8e8a69b2afad954061eb9896d9133e4548d44fc5c7c956c3e4511c0"
+    },
+    {
+      "path": "tests/inventory.test.mjs",
+      "sha256": "c30f304f5ad3f258b352e7657881f18a81b9f8e06db90dede2f8a8f4c5e2d309"
+    },
+    {
+      "path": "tsconfig.app.json",
+      "sha256": "a3379db7120040b34b19981d958c14f6ef3b48268cc596df4fab84829bb7f286"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+    },
+    {
+      "path": "tsconfig.node.json",
+      "sha256": "8e04d5d603fdaa9eac3e5d5b0f98f0dc1696ee2fae2852470dcd23e42e798d82"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "e1eefd0ed1639c88d1213884ef760516884db9e168190e223fee6b063ad3e088"
+    }
+  ],
+  "checks": {
+    "tokensCheck": "pass",
+    "lint": "pass",
+    "typecheck": "pass",
+    "build": "pass",
+    "existingInventoryTests": "5 pass",
+    "generatedCSSCounterparts": {
+      "declared": 1272,
+      "missing": 0
+    }
+  },
+  "counts": {
+    "sourcePrimitives": 508,
+    "namedColors": 19,
+    "uniqueNamedColors": 17,
+    "textPresets": 11,
+    "componentVariants": 71,
+    "transitions": 21
+  },
+  "browser": {
+    "viewportWidths": [
+      390,
+      809,
+      810,
+      1199,
+      1200,
+      1440
+    ],
+    "existingSpecimens": "computed typography/color/spacing/dimensions identical to baseline",
+    "overflow": false,
+    "consoleWarningsOrErrors": 0,
+    "sourceAliases": {
+      "buttonGap": "12px",
+      "arrowWidth": "26px",
+      "rollingTextColor": "rgb(255, 85, 56)"
+    },
+    "spring": {
+      "stiffness": 500,
+      "damping": 60,
+      "mass": 1,
+      "delay": "0s"
+    }
+  },
+  "limits": [
+    "Partial icon internals for Testimonials Arrow and Logo",
+    "External internals unavailable; controls and instances audited",
+    "Unresolved CMS/media bindings and unitless minHeight excluded",
+    "Not full-site Framer fidelity; product pages not ported",
+    "No physical-device, full motion, or cross-browser proof"
+  ],
+  "externalReadProof": {
+    "path": "docs/framer/external-audit.json",
+    "sha256": "fa1bae4622516991f1497b6d00009f6a225769bff15355deaba11e21b901d599",
+    "result": "9 metadata-only ExternalModuleNode records; no internal attributes/tree"
+  }
+}
