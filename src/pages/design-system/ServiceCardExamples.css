@@ -1,0 +1,9 @@
+#ds-component-service-card .ds-component-grid { grid-template-columns: minmax(0, 1fr); }
+.ds-service-overflow { width: 100%; overflow-x: auto; }
+.ds-service-allocation { width: 1912px; height: 1013px; }
+.ds-service-controls { display: flex; flex-wrap: wrap; gap: 12px; padding: 12px; }
+.ds-service-controls > label { display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+.ds-service-controls > label:has(input[type='checkbox']) { flex-direction: row; align-items: center; }
+.ds-service-controls input, .ds-service-controls select, .ds-service-controls textarea { max-width: 220px; }
+.ds-service-comparison { overflow: clip; }
+@media (max-width: 809.98px) { .ds-service-allocation { width: 100%; height: auto; } }

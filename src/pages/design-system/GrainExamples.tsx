@@ -21,8 +21,8 @@ export function GrainHeroExample({ comparison = false }: { comparison?: boolean 
     <MotionConfig reducedMotion={reduced ? 'always' : 'user'}>
       <div className="ds-grain-hero" data-mobile-liquid={mobileLiquid}>
         <div className="ds-grain-liquid"><LiquidHover image={dynamic ? secondImage : heroImage} resolution={3} cursorSize={.5} cursorPower={.3} distortionPower={.45} /></div>
-        <div className="ds-grain-static"><ImageFill image={dynamic ? secondImage : heroImage} /></div>
         {mounted && <div className="ds-grain-layer" style={{ opacity: layer }}><Grain opacity={internal} /></div>}
+        <div className="ds-grain-static"><ImageFill image={dynamic ? secondImage : heroImage} /></div>
         <button className="ds-grain-hit" type="button" onClick={() => setClicks(value => value + 1)}>Verifica click sotto Grain · {clicks}</button>
       </div>
     </MotionConfig>

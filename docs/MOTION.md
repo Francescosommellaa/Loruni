@@ -46,3 +46,24 @@ RollingText now owns its reduced-motion decision through useReducedMotionPrefere
 ImageParallax: src/motion/imageParallax.ts owns every media translate3d. One shared ScrollTrigger marks scroll geometry dirty; one GSAP ticker samples all moving horizontal parents, one ResizeObserver caches dimensions and invalidates layout. All root reads precede all media writes, unchanged transforms are skipped, no React frame state/component RAF/per-instance scroll listener. Final registration removal kills only this utility trigger/ticker/observer; live reduced policy releases registrations and retains the same overscan/crop at transform0. Source linear Y viewport passage and X horizontal-position formulas, bounds and evidence: IMAGE-PARALLAX.md.
 
 ResizeObserver additionally schedules an own-trigger range refresh on the shared ticker (outside its callback) when document/frame dimensions change. This keeps retained media responsive after the document grows beyond the previous max scroll, without a per-instance listener.
+
+Grain's original runtime animates a repeated PNG with ten percentage keyframes over8s, per-segment steps(10,start); inventory motion omission is superseded. CSS owns its transform, no JS frame work. Shared live reduced policy keeps static texture. LiquidHover uses GSAP's existing ticker for the source fixed-dt fluid pass order, with pointer-only input, cached resize and scoped GPU disposal; no new RAF/scroll progress or React frame state. Offscreen/background rendering is skipped. Reduced motion disposes canvas and exposes static ImageFill. Parent owns source Hero appear/parallax effects and mobile visibility. See GRAIN-LIQUID-HOVER.md.
+
+
+### TextFitWidth / TextStagger — 2026-10-07
+
+TextStagger uses existing Motion for y70→0 per visual line, source easing/delay/duration and one-shot inView/hover/click. Shared live reduced policy neutralizes transforms/timing; TextFit sizing remains active. Static wght500/700 and half-opacity are typography, not animation. No second scroll owner, component RAF or permanent will-change. Hover source guard is minimally fixed; keyboard support added. See [TEXT-UTILITIES.md](TEXT-UTILITIES.md) and executed proof.
+
+
+### Project Card — 2026-10-08
+
+ProjectCard React owns discrete hover/breakpoint state; Motion alone scales Inner media1/1.1, existing Icon alone rotates arrow−45/0 using tween.5s/ease[.85,.05,.26,.96]. Live reduced/Phone end hover and keep media1; no component RAF/scroll/measurement owner. Parent choreography stays separate. See PROJECT-CARD.md.
+
+### Service Card — 2026-10-08
+
+ServiceCard has no gesture/timeline: it selects existing ImageParallax X−50/Y0 or X0/Y50 on discrete breakpoint changes. Shared GSAP geometry sampling already follows horizontal parent transforms, with shared live reduced/crop/cleanup. Source spring metadata has no independent card state and adds no invented motion. Parent Section transport/visibility remains pending. See SERVICE-CARD.md.
+
+
+### FAQ Section — 2026-10-08
+
+Motion owns content-root size projection, sibling-wrapper position projection and existing FAQRow local targets; exact canonical0.2s/ease[.44,0,.56,1]. Outer height copies projected geometry only during discrete transitions, then one intrinsic ResizeObserver sync; no second height tween or component RAF/scroll owner. Existing live reduced policy cancels projection scheduling. See FAQ-SECTION.md.

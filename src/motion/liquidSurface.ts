@@ -40,7 +40,6 @@ export function createLiquidSurface(root: HTMLDivElement, canvas: HTMLCanvasElem
   let velocity: Pair, density: Pair, pressure: Pair, divergence: Target
   let imageTexture: WebGLTexture | null = null
   let imageAspect = 1
-  let lastTick = -1
   let currentPointer: number | null = null
   let moved = false
   let pointerX = root.clientWidth * .65, pointerY = root.clientHeight * .5, deltaX = 0, deltaY = 0
@@ -132,14 +131,10 @@ export function createLiquidSurface(root: HTMLDivElement, canvas: HTMLCanvasElem
       gl!.activeTexture(gl!.TEXTURE0); imageTexture = texture()
       gl!.texImage2D(gl!.TEXTURE_2D, 0, gl!.RGBA, gl!.RGBA, gl!.UNSIGNED_BYTE, image)
       imageAspect = image.naturalWidth / image.naturalHeight
-      lastTick = -1
     } catch { dispose() }
   }
-  function tick(time: number) {
+  function tick() {
     if (disposed || contextLost || !visible || document.hidden || !imageTexture) return
-    // Numerical source step is 1/60. Skip duplicate high-refresh callbacks.
-    if (lastTick >= 0 && time - lastTick < 1 / 60 - .001) return
-    lastTick = time
     try {
       if (dirtySize) measure()
       if (moved) {
@@ -206,7 +201,8 @@ export function createLiquidSurface(root: HTMLDivElement, canvas: HTMLCanvasElem
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW)
     observer = new ResizeObserver(() => { dirtySize = true }); observer.observe(root)
     visibility = new IntersectionObserver(entries => { visible = entries.some(entry => entry.isIntersecting) }); visibility.observe(root)
-    canvas.style.touchAction = settings.touch ? 'none' : 'auto'
+    // Keep native vertical page scrolling; touch cancellation releases capture.
+    canvas.style.touchAction = settings.touch ? 'pan-y' : 'auto'
     canvas.addEventListener('pointerdown', down); canvas.addEventListener('pointermove', move); canvas.addEventListener('pointerup', end); canvas.addEventListener('pointercancel', end); canvas.addEventListener('lostpointercapture', end); canvas.addEventListener('pointerleave', leave)
     canvas.addEventListener('webglcontextlost', lost); canvas.addEventListener('webglcontextrestored', restore)
     image.crossOrigin = 'anonymous'; image.addEventListener('load', upload); upload()

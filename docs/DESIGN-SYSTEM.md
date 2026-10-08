@@ -63,3 +63,26 @@ Rolling Text has the seven real font configurations plus one interactive canonic
 ### Image Parallax — 2026-10-07
 
 Seven real examples at #ds-component-image-parallax: page92vh Y30, Service responsive X−50/Y50, Our Story640px Y50/660px X−50, controls for both axes, image/crop/decorations/reduced/unmount and full-width comparison. Fixture /design-system?fixture=image-parallax reuses the same examples; only this documentation parent owns geometry and breakpoints. See IMAGE-PARALLAX.md and IMAGE-PARALLAX-VERIFICATION.json.
+
+### Grain / Liquid Hover — 2026-10-07
+
+Two real Grain examples at #ds-component-grain (default0.5 and responsive Hero media), one Liquid controls example at #ds-component-liquid-hover. /design-system?fixture=grain reuses the media consumer for source comparison; parent owns100vh, the three existing mask variables, outer0.1, DOM stacking and explicit mobile opt-in. Controls cover opacity, image change, live reduced motion, mount/empty and Liquid numerical settings/touch. No product Hero headline/nav/page port. Contract and executed limitations: GRAIN-LIQUID-HOVER.md and verification JSON. Current29real catalog entries.
+
+
+### TextFitWidth / TextStagger — 2026-10-07
+
+31 real component entries. TextFitWidth has six source fixtures, controls and Home/Esperienza responsive consumers; TextStagger has fifteen fixtures and CMS/trigger/font/weight/half-opacity/reduced/lifecycle controls. Parent-width sliders and isolated ?fixture=text-utilities comparisons reuse canonical utilities. Consumer controls/layout are documentation-only. See [TEXT-UTILITIES.md](TEXT-UTILITIES.md) and executed proof.
+
+
+### Project Card — 2026-10-08
+
+32 real component entries. Project Card has Main/Inner responsive examples, all current Home/Eventi/Related CMS contents and controls for missing labels, media descriptors/static/dynamic/empty images, auto/fill/100vh, live reduced and mount lifecycle. ?fixture=project-card compares allocated native dimensions; source21 allocations are listed. Catalog-only parent grids/links/CMS fixtures do not implement product pages. See PROJECT-CARD.md.
+
+### Service Card — 2026-10-08
+
+33 real component entries. Service Card exposes original defaults/four current Home contents, optional labels0–6/price, dynamic copy/media, parent width/height/offset, resize/reduced/lifecycle controls. ?fixture=service-card exposes isolated geometry without implementing Services Section. Its source Phone bar label5 cross-binding is resolved in documentary data. See SERVICE-CARD.md for native horizontal preview limitations.
+
+
+### FAQ Section — 2026-10-08
+
+34real component entries. FAQ Section has four real catalog examples: five source FAQs/eight slots, dynamic/exclusive/resize/reduced/lifecycle controls, answer-only empty state and native viewport iframe sandbox at ?fixture=faq-section-frame. Direct ?fixture=faq-section exposes isolated geometry and optional parent top offset for scroll verification. No product page or Layout Jump Preventer standalone entry.

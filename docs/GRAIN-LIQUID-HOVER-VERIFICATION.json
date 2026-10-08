@@ -1,0 +1,356 @@
+{
+  "at": "2026-10-07",
+  "status": "closed",
+  "scope": "Grain and explicitly authorized Liquid Hover + mobile touch utilities; product Home/Hero, TextFitWidth/TextStagger excluded",
+  "head": "67fd76e3bd308f9c30007882af49fa89ab52fcd2",
+  "concurrentWorkPreserved": true,
+  "agentCommit": false,
+  "files": {
+    "created": [
+      "src/components/Grain.tsx",
+      "src/components/Grain.css",
+      "src/components/LiquidHover.tsx",
+      "src/components/LiquidHover.css",
+      "src/motion/liquidSurface.ts",
+      "src/pages/design-system/GrainExamples.tsx",
+      "src/pages/design-system/GrainExamples.css",
+      "public/media/grain.png",
+      "docs/framer/grain-liquid-source.json",
+      "docs/GRAIN-LIQUID-HOVER.md",
+      "docs/GRAIN-LIQUID-HOVER-VERIFICATION.json",
+      ".agent/plans/2026-10-07-grain-liquid-hover.md"
+    ],
+    "modified": [
+      "src/app/App.tsx",
+      "src/pages/design-system/componentExamples.ts",
+      ".agent/PLANS.md",
+      "docs/ARCHITECTURE.md",
+      "docs/MOTION.md",
+      "docs/DESIGN-SYSTEM.md",
+      "docs/COMPONENT_INVENTORY.md",
+      "docs/MIGRATION-STATUS.md",
+      "docs/framer/component-inventory.json",
+      "docs/framer/hardcoded-audit.json"
+    ],
+    "note": "User committed portions during work; current dirty diff alone does not describe all task output. docs/framer and proof artifacts are locally ignored by existing repository policy."
+  },
+  "source": {
+    "capture": "docs/framer/grain-liquid-source.json",
+    "allInstancesRead": {
+      "Grain": 3,
+      "LiquidHover": 3
+    },
+    "nativeFinalPreviewRefreshed": true,
+    "moduleFinalHashes": {
+      "grain": {
+        "url": "https://framerusercontent.com/modules/cKGD16u2MGB7MfqfVXFp/wiztTCbXokZrMicHAmZc/Grain.js",
+        "sha256": "f9b5d4693fe5b36a7243c294ad014f52fa6e525658c42a6264ad1510720561b0",
+        "unchanged": true
+      },
+      "liquid": {
+        "url": "https://framerusercontent.com/modules/kjaMVdquZjJQkUAY4ixo/BFo4iKLNtCTDPzShzKHL/LiquidHover_prod.js",
+        "sha256": "1aa4371ebc8c3f2cdb170c98b77d0350047c53b5c2cab8f486a17ce24d508e18",
+        "unchanged": true
+      }
+    },
+    "finalNodeReread": "VM session1 expired; earlier same-task serialization retained, final native preview reread instead.",
+    "texture": {
+      "path": "public/media/grain.png",
+      "width": 256,
+      "height": 256,
+      "bytes": 22927,
+      "sha256": "7867172cbddd0172eb2fcf5803679ab8fb337eddb8397d43c918788016181409"
+    }
+  },
+  "checks": {
+    "typecheck": "pnpm typecheck PASS",
+    "lint": "pnpm lint PASS",
+    "tokens": "pnpm tokens:check PASS; generated audit refreshed, runtime token.ts/tokens.css/font inputs unchanged",
+    "build": {
+      "command": "pnpm build",
+      "result": "PASS",
+      "modules": 545,
+      "jsKB": 820.11,
+      "jsGzipKB": 221.27,
+      "cssKB": 165.48,
+      "cssGzipKB": 19.93,
+      "warning": "Existing >500kB chunk warning retained"
+    },
+    "diff": "git diff --check PASS",
+    "automatedFrontendSuites": "Not added or run, explicit project instruction"
+  },
+  "browser": {
+    "engine": "Available Chromium in-app browser",
+    "viewportCSS": [
+      [
+        1440,
+        900
+      ],
+      [
+        810,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "sourceAndLocalHeroFrames": [
+      [
+        1425,
+        900
+      ],
+      [
+        795,
+        900
+      ],
+      [
+        375,
+        844
+      ]
+    ],
+    "desktopCanvas": {
+      "x": -142.5,
+      "y": -90,
+      "width": 1710,
+      "height": 1080
+    },
+    "executed": [
+      "Native source and local three-breakpoint media/mask/stacking comparison",
+      "Native Desktop and local Desktop mouse drag",
+      "Local Phone mobile extension mouse drag; pointer touch handling inspected",
+      "Inner0.5/layer0.2 distinct computed opacity; source1/layer0.1 restored",
+      "Click below Grain increments counter",
+      "Grain unmount/remount",
+      "Liquid numeric minima and maxima render ready",
+      "Liquid unmount/remount and empty image canvas0/img0",
+      "Live MotionConfig reduced: Liquid canvas0 and static image, Grain animation/transform none",
+      "Live reduced restore; touch false sets touch-action auto",
+      "Dynamic Hero/Story image changes",
+      "Resize Phone/Tablet/Desktop preserves cached canvas geometry"
+    ],
+    "consoleErrorsWarnings": [],
+    "notExecuted": [
+      "Physical finger input/touch hardware",
+      "OS preference switch (shared policy exercised via live MotionConfig instead)",
+      "GPU failure/context loss injection",
+      "FPS/heap benchmark",
+      "Screen reader or cross-engine"
+    ]
+  },
+  "visual": {
+    "pairedCrops": [
+      ".agent/proofs/grain-comparison-desktop.png",
+      ".agent/proofs/grain-comparison-tablet.png",
+      ".agent/proofs/grain-comparison-phone.png"
+    ],
+    "metrics": {
+      "desktop": {
+        "region": [
+          0,
+          110,
+          320,
+          280
+        ],
+        "sourceCaptureSize": [
+          1440,
+          900
+        ],
+        "localCaptureSize": [
+          1425,
+          891
+        ],
+        "normalizedLocalCaptureSize": [
+          1440,
+          900
+        ],
+        "meanAbsoluteRGBError": 2.9714215686274508,
+        "p95AbsoluteRGBError": 12,
+        "note": "Capture extent normalized to matching CSS viewport; source nav/headline excluded. Different animated grain phases and resampling prevent pixel-identity certification."
+      },
+      "tablet": {
+        "region": [
+          0,
+          140,
+          300,
+          350
+        ],
+        "sourceCaptureSize": [
+          810,
+          900
+        ],
+        "localCaptureSize": [
+          795,
+          883
+        ],
+        "normalizedLocalCaptureSize": [
+          810,
+          900
+        ],
+        "meanAbsoluteRGBError": 0.6857142857142857,
+        "p95AbsoluteRGBError": 2,
+        "note": "Capture extent normalized to matching CSS viewport; source nav/headline excluded. Different animated grain phases and resampling prevent pixel-identity certification."
+      },
+      "phone": {
+        "region": [
+          0,
+          90,
+          250,
+          270
+        ],
+        "sourceCaptureSize": [
+          390,
+          844
+        ],
+        "localCaptureSize": [
+          375,
+          812
+        ],
+        "normalizedLocalCaptureSize": [
+          390,
+          844
+        ],
+        "meanAbsoluteRGBError": 1.9424074074074074,
+        "p95AbsoluteRGBError": 8,
+        "note": "Capture extent normalized to matching CSS viewport; source nav/headline excluded. Different animated grain phases and resampling prevent pixel-identity certification."
+      }
+    },
+    "limitations": "Local top-level capture extents differ from embedded source capture despite same CSS geometry; paired crops explicitly normalize raster extents. Grain phases and fluid pointer samples unsynchronized. No pixel-identity/full-Hero claim."
+  },
+  "api": {
+    "Grain": {
+      "opacity": 0.5,
+      "technical": [
+        "className",
+        "style"
+      ]
+    },
+    "LiquidHover": {
+      "image": "shared ImageFill string/responsive descriptor or resolved CMS binding",
+      "alt": "optional",
+      "resolution": 4,
+      "cursorSize": 0.5,
+      "cursorPower": 0.6,
+      "distortionPower": 0.5,
+      "touch": true,
+      "technical": [
+        "className",
+        "style"
+      ]
+    }
+  },
+  "residualDifferences": [
+    "Shared live reduced motion keeps static texture/image; original Grain runtime continues animation.",
+    "Authorized mobile extension, immediate tap impulse and pan-y vertical page scroll instead of source preventDefault touchmove.",
+    "Missing Liquid image uses transparent ImageFill rather than Framer editorial ComponentMessage.",
+    "WebGL failure/context restore uses static fallback until remount/reconfiguration."
+  ],
+  "inputProof": {
+    "method": "Sorted path + NUL + SHA256(file) + LF; src/public and build configs",
+    "count": 129,
+    "digest": "1564363119f138584bb9f0bf4b90ad2845edc87b77ae0922c537a301b697240a",
+    "stableAcrossGates": true,
+    "manifest": ".agent/proofs/grain-inputs-after.json"
+  },
+  "scopeProof": {
+    "method": "Ordered path+NUL+SHA256(file)+LF; proof JSON excluded to avoid self-reference",
+    "digest": "bcb032c5793c12d27333383a32ede6fa5a673187f6f9472fef8fc23ee78e64d6",
+    "files": [
+      {
+        "path": "src/components/Grain.tsx",
+        "sha256": "1f8258d2cfc3e44008d632e3ce1c6d117ad0a9e9ccaf0846fa3803f959b9b285"
+      },
+      {
+        "path": "src/components/Grain.css",
+        "sha256": "3c5568b631121d2dc257bc7cfe31903c90a11cee97781925f65c24e5d085427d"
+      },
+      {
+        "path": "src/components/LiquidHover.tsx",
+        "sha256": "acebbdbb069178464c02f2fcf83bba0b1e26f36aadca129edde1536d996911a0"
+      },
+      {
+        "path": "src/components/LiquidHover.css",
+        "sha256": "5f31dfed8e8dbb211c16d755da1b75c8cbbcc668331092a2f0adfda969536d37"
+      },
+      {
+        "path": "src/motion/liquidSurface.ts",
+        "sha256": "7f20830c10c27e1dceb2a32486a559c53c5785ce816fde2c4b57b4f6cc4c25b3"
+      },
+      {
+        "path": "src/pages/design-system/GrainExamples.tsx",
+        "sha256": "aec9da2e4abf3dc98b3d86b12fa583c000494c484228bb217c7e580fa7f64b23"
+      },
+      {
+        "path": "src/pages/design-system/GrainExamples.css",
+        "sha256": "da81f28af79821274e5dd0c29c5aee73ad3c46d91ed17c38a1885934e454e2d5"
+      },
+      {
+        "path": "public/media/grain.png",
+        "sha256": "7867172cbddd0172eb2fcf5803679ab8fb337eddb8397d43c918788016181409"
+      },
+      {
+        "path": "docs/framer/grain-liquid-source.json",
+        "sha256": "c4d568a3451dba2fabcfb1a87437e7eef1ee999726c311ee811eacf845b01972"
+      },
+      {
+        "path": "docs/GRAIN-LIQUID-HOVER.md",
+        "sha256": "620da3c9858a163960d71d0d96ee1b0ee14f8287852cbb6efbd0cae88be04a39"
+      },
+      {
+        "path": ".agent/plans/2026-10-07-grain-liquid-hover.md",
+        "sha256": "65a7b1128cca78167c00abbafcffc39d5430a0c0337332507ce7f8fc0401d949"
+      },
+      {
+        "path": "src/app/App.tsx",
+        "sha256": "177ba3abb41eba02616ed9456eb89f851d153ba31a05ca00993ca85194440ac4"
+      },
+      {
+        "path": "src/pages/design-system/componentExamples.ts",
+        "sha256": "a7d724fdf7c5448a895ea77f9a7bca876e8dcd0e4ebbfa1deb665662b9ef0a82"
+      },
+      {
+        "path": ".agent/PLANS.md",
+        "sha256": "0c3ce65eaf442da51e3fce76a5f4887271d529909cebb89275cfee0fee9bbfc7"
+      },
+      {
+        "path": "docs/ARCHITECTURE.md",
+        "sha256": "acbc7d6bb0b40133897382769e5e59b49302971d6d1f9f3280492d169804f102"
+      },
+      {
+        "path": "docs/MOTION.md",
+        "sha256": "48dda414c1516d4dfa54dbeb205e2c5427295a3bff9b89973f38013cb21bab86"
+      },
+      {
+        "path": "docs/DESIGN-SYSTEM.md",
+        "sha256": "26869d02b86189aed697a5b0cdea5c9f469194088ed0783a113286e11c083cab"
+      },
+      {
+        "path": "docs/COMPONENT_INVENTORY.md",
+        "sha256": "fa334ae20baaa3eb6c912071403f95774f9b162b669311d9925615a475329724"
+      },
+      {
+        "path": "docs/MIGRATION-STATUS.md",
+        "sha256": "b44d11212a337f3c6618c5096f7d65d02fcf4bdd6a3c187e947bf977388919bd"
+      },
+      {
+        "path": "docs/framer/component-inventory.json",
+        "sha256": "975a9ffb96b70d12d30c9bc4fb72101fa1b5b0f32bf8a3033b8ab0ae6e0e80db"
+      },
+      {
+        "path": "docs/framer/hardcoded-audit.json",
+        "sha256": "d3123bf427d4a49438db27f85c004715943dab95bc378e013a56ab5492ad316e"
+      }
+    ]
+  },
+  "inventory": {
+    "total": 137,
+    "completed": 59,
+    "notMigrated": 76,
+    "legacyUnused": 2,
+    "runtimeFiles": 29,
+    "catalogEntries": 29,
+    "heroHome": "not-migrated,parts-available"
+  },
+  "persistence": "Loruni Brain MCP note/index/status/log update performed in this task; global Codex memory unchanged",
+  "remainingInternalWork": []
+}

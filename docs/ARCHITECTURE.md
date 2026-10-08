@@ -48,7 +48,7 @@ LoadMore is controlled pagination UI: loading/hasMore/onLoadMore, native type=bu
 ImageReveal is the shared viewport media utility extracted from TestimonialsSection. ImageFill forwards string/responsive descriptors; parent owns frame, image identity and visibility. Eventi source uses the same utility with Neutral950; no CMS route is ported. See IMAGE-REVEAL.md.
 
 
-FAQRow is one controlled accordion row: title/text/open/onOpenChange/onClick. FaqIcon decorative composition preserves the existing glyph in one native trigger. Parent owns availability, sibling policy and layout; FAQ Section is not ported. See FAQ-ROW.md.
+FAQRow is one controlled accordion row: title/text/open/onOpenChange/onClick. FaqIcon decorative composition preserves the existing glyph in one native trigger. FAQSection now owns availability and exclusive sibling state; page layout/content remain consumer-owned. See FAQ-ROW.md and FAQ-SECTION.md.
 
 
 ### Rolling Text / Arrow Right Alt — closed 2026-10-07
@@ -57,3 +57,24 @@ RollingText is the single glyph/shadow utility for NavItem, Button and MainFormB
 
 
 ImageParallax is the shared fill media primitive for all11source instances. ImageFill retains cover/center and supports caller-provided srcSet/sizes/alt/intrinsic dimensions/loading and positionX/Y, without deriving CDN URLs. Parent owns frames, responsive X/Y selection and CMS values. Real catalog examples plus /design-system?fixture=image-parallax provide comparison geometry without porting product pages. See IMAGE-PARALLAX.md.
+
+Grain fills a positioned parent with the original repeated raster and inner opacity. Consumer owns outer opacity/masks/stacking/responsive frame. LiquidHover composes ImageFill with a scoped WebGL surface, centered source cover crop, existing GSAP ticker and shared live reduced policy. Mobile touch is an authorized opt-in at the consumer visibility boundary, with native vertical scrolling retained. Hero Home remains pending; /design-system?fixture=grain is documentary media composition. See GRAIN-LIQUID-HOVER.md.
+
+
+### TextFitWidth / TextStagger — 2026-10-07
+
+Separate TextFitWidth/TextStagger canonical components use shared TextFont and useTextMeasurement. Source snapshots stay outside browser imports; documentation fixtures expose all21 configurations. Parent owns breakpoints/frames/content. One shared ResizeObserver/window/font-ready service batches external measurements before paint, no frame loop. See [TEXT-UTILITIES.md](TEXT-UTILITIES.md) and executed proof.
+
+
+### Project Card — 2026-10-08
+
+ProjectCard owns one responsive main/inner visual tree, optional content and discrete hover. Reuses ImageFill/ArrowForward/typography and shared reduced policy. Parent supplies dimensions, links, CMS and sticky/scroll; native default Inner aspect16/9 and Phone760 retained. No product page or other composite port. See PROJECT-CARD.md.
+
+### Service Card — 2026-10-08
+
+ServiceCard owns a single responsive media/content tree and optional six-slot labels/price. ImageParallax, CategoryLabel, Divider and canonical presets are unchanged. Actual Home boundary810 changes media axis/layout; parent owns allocation, ID, content/visibility and horizontal Section choreography. Services Section remains pending. See SERVICE-CARD.md.
+
+
+### FAQ Section — 2026-10-08
+
+FAQSection owns one exclusive identity-based state and isSet availability, composing unchanged Row markup/motion/accessibility and existing Icon Engine. A scoped LayoutGroup coordinates projection; the outer vertical reservation absorbs Layout Jump Preventer using bounded Motion postRender plus ResizeObserver. No global helper/page/CMS. See FAQ-SECTION.md.

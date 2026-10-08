@@ -11,7 +11,7 @@ Catalog-only: 3
 With variants: 24 (19 con più varianti native)
 Possible / ambiguous components: 22
 
-Data stato corrente:2026-10-07. Fonte: [progetto Framer LORUNI](https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6) e riconciliazione del codice locale. Stato:57 completed,0 to-complete,78 not-migrated,2 legacy-unused. Mapping source/runtime e confini: [MIGRATION-STATUS.md](MIGRATION-STATUS.md).
+Data stato corrente:2026-10-08. Fonte: [progetto Framer LORUNI](https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6) e riconciliazione del codice locale. Stato:65 completed,0 to-complete,70 not-migrated,2 legacy-unused. Mapping source/runtime e confini: [MIGRATION-STATUS.md](MIGRATION-STATUS.md).
 
 Metodo/copertura e schede originali sotto descrivono la cattura iniziale. Lo stato corrente e le prove dei port sono nella sezione finale delle migrazioni e nei record `migration` JSON; le limitazioni dell'audit generale non riaprono i componenti verificati successivamente.
 
@@ -32,7 +32,7 @@ La cattura strutturale iniziale era documentale, senza modifiche runtime o verif
 - **interactive**: Explicit actions/links/input/states/gesture/trigger. pointerEvents and elementID alone excluded.
 - **variants**: Native declared/recovered variants including gestures. Page breakpoint replicas are not new variants.
 
-Il repository locale contiene la shell Vite e /design-system, non le pagine prodotto migrate. Il catalogo corrente ha27voci reali e27file componenti TSX. I57record completed hanno mapping dedicato; FAQRow chiusa nella propria task, ImageReveal attestato dal suo port indipendente. Il vecchio repositoryAudit descrive il bootstrap e non lo stato runtime corrente. ID Framer = riferimenti di audit, non nomi runtime.
+Il repository locale contiene la shell Vite e /design-system, non le pagine prodotto migrate. Il catalogo corrente ha34voci reali e34file componenti TSX. I65record completed hanno mapping dedicato; FAQRow chiusa nella propria task, ImageReveal attestato dal suo port indipendente. Il vecchio repositoryAudit descrive il bootstrap e non lo stato runtime corrente. ID Framer = riferimenti di audit, non nomi runtime.
 
 - Acquisizione sequenziale non atomica; timestamp/hash identificano i dati letti, non una revisione immutabile Framer.
 - Logo/Testimonials Arrow: frame/figli e screenshot recuperati; risoluzione controlli icone continua a fallire.
@@ -216,7 +216,9 @@ Nessuna definizione separata individuata nella fonte acquisita: tabs, tooltip, s
 <a id="component-001"></a>
 ### 001. Project Card
 
-framer-mIHy1XHUz · original-name · canvas · content component · shared · not-migrated.
+framer-mIHy1XHUz · original-name · canvas · content component · shared · completed.
+
+Chiusura2026-10-08: [PROJECT-CARD.md](PROJECT-CARD.md), [proof](PROJECT-CARD-VERIFICATION.json). Tutte21istanze e39rendering CMS confrontati; quattro layout/two hover, crop e binding osservati. Le sezioni di audit iniziale sotto restano reference; parent/CMS/scroll non migrati.
 
 Uso:21 serializzati/7 indipendenti/21 diretti pagina-template. Pagine: /, /eventi, /eventi/:Eventi.
 
@@ -554,7 +556,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-003"></a>
 ### 003. Service card
 
-framer-MbD5vvr42 · original-name · canvas · content component · page-specific · not-migrated.
+framer-MbD5vvr42 · original-name · canvas · content component · page-specific · completed.
 
 Uso:12 serializzati/8 indipendenti/0 diretti pagina-template. Pagine: /.
 
@@ -1524,7 +1526,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-009"></a>
 ### 009. FAQ Section
 
-framer-cWdeMLg1M · original-name · canvas · section · page-specific · not-migrated.
+framer-cWdeMLg1M · original-name · canvas · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /vieni-a-trovarci.
 
@@ -4361,7 +4363,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-025"></a>
 ### 025. TextFitWidth
 
-codeFile/ijeV_im:default · original-name · code · content component · shared · not-migrated.
+codeFile/ijeV_im:default · original-name · code · content component · shared · completed.
 
 Uso:6 serializzati/2 indipendenti/6 diretti pagina-template. Pagine: /, /esperienza.
 
@@ -4517,7 +4519,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-026"></a>
 ### 026. TextStagger
 
-codeFile/VN4Z8bL:default · original-name · code · content component · shared · not-migrated.
+codeFile/VN4Z8bL:default · original-name · code · content component · shared · completed.
 
 Uso:15 serializzati/6 indipendenti/12 diretti pagina-template. Pagine: /, /esperienza, /eventi/:Eventi.
 
@@ -5063,7 +5065,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-030"></a>
 ### 030. Layout Jump Preventer
 
-h8ioHyt4BUxuvVCE1Q10 · original-name · external · interactive component · page-specific · not-migrated.
+h8ioHyt4BUxuvVCE1Q10 · original-name · external · interactive component · page-specific · completed.
 
 Uso:1 serializzati/1 indipendenti/0 diretti pagina-template. Pagine: /vieni-a-trovarci.
 
@@ -5134,7 +5136,9 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-031"></a>
 ### 031. Liquid Hover
 
-kjaMVdquZjJQkUAY4ixo · original-name · external · media component · page-specific · not-migrated.
+kjaMVdquZjJQkUAY4ixo · original-name · external · media component · page-specific · completed.
+
+Aggiornamento2026-10-07: modulo originale, tutte3istanze e preview responsive letti; [contratto/prove/limiti](GRAIN-LIQUID-HOVER.md). Le descrizioni di internals unknown sotto sono della cattura iniziale, superate da questa task.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /.
 
@@ -5240,7 +5244,7 @@ Hidden/conditional:2; condizioni esatte nel JSON. Varianti non selezionate conse
 | HARDCODED VALUE FOUND | Posizione / classificazione |
 | --- | --- |
 | right = 0px | augiA20Il/ClYf5hhBddekRuNsq8 · 1 occorrenze · structural/canvas/calculated |
-Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
+Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Migrazione utility completata2026-10-07; consumer Hero resta pending.
 <a id="component-032"></a>
 ### 032. Image Parallax
 
@@ -5357,7 +5361,9 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-033"></a>
 ### 033. Grain
 
-cKGD16u2MGB7MfqfVXFp · original-name · external · media component · page-specific · not-migrated.
+cKGD16u2MGB7MfqfVXFp · original-name · external · media component · page-specific · completed.
+
+Aggiornamento2026-10-07: modulo originale, tutte3istanze e preview responsive letti; [contratto/prove/limiti](GRAIN-LIQUID-HOVER.md). Le descrizioni di internals unknown sotto sono della cattura iniziale, superate da questa task.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /.
 
@@ -5442,7 +5448,7 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 | bottom = 0px | augiA20Il/ZrqU4lOs2 · 3 occorrenze · structural/canvas/calculated |
 | masks[0].mask = radial-gradient(50% 34% at 55.50000000000001% 35.6%, rgba(0, 0, 0, 0) 39%, rgb(0, 0, 0) 57.00000000000001%, rgba(0, 0, 0, 0) 73%) | augiA20Il/MVAXQZXjMZrqU4lOs2 · 1 occorrenze · unmapped-source-value |
 | masks[0].mask = radial-gradient(50% 36% at 33.800000000000004% 38.5%, rgba(0, 0, 0, 0) 39%, rgb(0, 0, 0) 55.00000000000001%, rgba(0, 0, 0, 0) 73%) | augiA20Il/ClYf5hhBdZrqU4lOs2 · 1 occorrenze · unmapped-source-value |
-Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
+Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Migrazione utility completata2026-10-07; consumer Hero resta pending.
 <a id="component-034"></a>
 ### 034. BTN 2
 
@@ -17352,3 +17358,28 @@ Catalogo osservato al check finale:27voci, inclusa ImageParallax concorrente in 
 ### Image Parallax — ONE TOUCH CLOSED,2026-10-07
 
 All11instances, shared ImageFill/live reduced policy, centralized GSAP/ScrollTrigger and source-derived X/Y/overscan. Seven catalog examples plus full-width comparison; exact source algorithm verified, hidden/native-wrapper limits explicit. [Contract](IMAGE-PARALLAX.md), [executed evidence](IMAGE-PARALLAX-VERIFICATION.json). Current57completed/78not-migrated/2legacy-unused;27runtime/catalogentries. Grain/TextFitWidth/TextStagger excluded.
+
+
+## Grain / Liquid Hover — ONE TOUCH,2026-10-07
+
+Grain raster originale e CSS8s/steps, opacity interna distinta dal layer, maschere e stacking parent; Liquid Hover solver indipendente con equazioni source, GSAP ticker, shared ImageFill/reduced policy e touch opt-in autorizzato. Tutte6istanze lette, preview1440/810/390 e controlli/resize/media/reduced/unmount verificati. Hardware touch e GPU failure injection non attestati. [Contratto/prove/limiti](GRAIN-LIQUID-HOVER.md). Stato corrente59completed/76pending/2legacy,29runtime/catalog. Hero Home, TextFitWidth e TextStagger restano pending.
+
+
+## TextFitWidth / TextStagger — ONE TOUCH CLOSED, 2026-10-07
+
+Original Code Files 188/266 lines read fully; 6Fit+15Stagger source configurations, all five Event CMS texts and source whitespace preserved. 20 visible native comparisons match; hidden OurStory Desktop is configuration-only. Canonical separate utilities share resize/font measurement and existing Motion/reduced policy. Native RichText reveals remain separate. [Contract](TEXT-UTILITIES.md), [executed proof](TEXT-UTILITIES-VERIFICATION.json). Current61completed/74pending/2legacy;31runtime/catalog entries. Product parents remain parts-available.
+
+
+### Project Card — current closure2026-10-08
+
+Canonical ProjectCard in catalog32; all21source configurations/current five CMS items,39 numeric comparisons. Only Project Card completed; dependent parents parts-available, not migrated. See PROJECT-CARD.md and verification JSON.
+
+
+## Service Card — ONE TOUCH CLOSED, 2026-10-08
+
+Canonical ServiceCard in catalog33: all12configurations/current four Home contents, native Desktop/Tablet and four Phone comparisons. Only card completed; Services Section/slot remain parts-available. Parent owns IDs, visibility, transport and allocations. See SERVICE-CARD.md and SERVICE-CARD-VERIFICATION.json for native preview and device/pixel limits.
+
+
+### FAQ Section closure — 2026-10-08
+
+Section/FAQ Section cWdeMLg1M completed; h8ioHyt4BUxuvVCE1Q10 Layout Jump Preventer completed as absorbed in FAQSection. Three contact replicas/eight slots inspected, five real questions, White Color UNUSED LEGACY CONTROL. All18 native/local final states match at1200/810/390; explicit user-exclusive policy differs from current source multi-open. No new standalone dependency. Counts65completed/70pending/2legacy,34runtime/catalog,59parts-available parents. Contract FAQ-SECTION.md; proof FAQ-SECTION-VERIFICATION.json.

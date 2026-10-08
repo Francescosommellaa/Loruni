@@ -36,7 +36,7 @@
 }
 /* The root clips the source reveal; draw the existing focus ring within that clip. */
 .loruni-faq-row__trigger:focus-visible { outline-offset: -2px; }
-.loruni-faq-row__title { flex: 1 0 0; min-width: 0; color: var(--color-neutral-950); }
+.loruni-faq-row .loruni-faq-row__title { flex: 1 0 0; min-width: 0; color: var(--color-neutral-950); }
 .loruni-faq-row__answer {
   display: flex;
   flex-flow: row nowrap;
@@ -54,7 +54,7 @@
   bottom: calc(-1 * var(--space-80));
   pointer-events: none;
 }
-.loruni-faq-row__text {
+.loruni-faq-row .loruni-faq-row__text {
   flex: 1 0 0;
   min-width: 0;
   width: 100%;

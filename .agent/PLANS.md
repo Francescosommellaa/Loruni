@@ -1,6 +1,14 @@
-Completed authorized ONE TOUCH slice: [Image Parallax](plans/2026-10-07-image-parallax.md). All11instances, shared media/scroll ownership; Grain/TextFitWidth/TextStagger excluded.
+Completed authorized ONE TOUCH slice: [Project Card](plans/2026-10-08-project-card.md). Four responsive variants/two hover gestures; all21 consumers and current CMS content. Other composites and product parents remain excluded.
+
+Completed authorized ONE TOUCH slice: [TextFitWidth / TextStagger](plans/2026-10-07-text-utilities.md). Original Code Files and21instances, source algorithms/controls, font/resize lifecycle and triggers.
+
+Completed authorized ONE TOUCH slice: [Grain / Liquid Hover](plans/2026-10-07-grain-liquid-hover.md). Original raster/animation and fluid solver, parent masks and authorized mobile touch; TextFitWidth/TextStagger excluded from that earlier task.
+
+Completed authorized ONE TOUCH slice: [Image Parallax](plans/2026-10-07-image-parallax.md). All11instances, shared media/scroll ownership; Grain/TextFitWidth/TextStagger excluded from that prior slice.
 
 # Work plans
+
+Completed authorized ONE TOUCH slice: [FAQ Section](plans/2026-10-08-faq-section.md). Compose existing FAQRow/FaqIcon, exclusive state and local projection reservation; no other composite/page migration.
 
 Completed authorized ONE TOUCH slice: [Rolling Text / Arrow Right Alt](plans/2026-10-07-rolling-text-arrow-alt.md). Canonical utility consolidation and unused external-module audit only.
 
@@ -31,6 +39,8 @@ Icon slice: [Global icon engine](plans/2026-10-06-icon-engine.md). Existing refi
 Atom slice: [Fondamenta / Atom UI](plans/2026-10-06-atom-ui.md), pure visual primitives only.
 
 Use one bounded plan per multi-file implementation slice. Record intent/authorization, actual source state and unrelated changes, ownership/interfaces, deliverables, static/mobile/reduced/failure paths, minimum sufficient verification and final evidence. Do not report unexecuted checks or proposals as completed implementation.
+
+Completed authorized ONE TOUCH slice: [Service Card](plans/2026-10-08-service-card.md). Only the card; Services Section and horizontal/visibility orchestration remain pending.
 
 Current plan: [Design system refinement](plans/2026-10-06-design-system-refinement.md). Previous: [Complete token audit](plans/2026-10-06-complete-token-audit.md), [Layout tokens and base CSS](plans/2026-10-06-layout-tokens-base.md). Completed: [Design system page](plans/2026-10-06-design-system-page.md), [Framer tokens and base.css](plans/2026-10-06-framer-tokens.md), [Vite / Framer bootstrap](plans/2026-10-05-vite-framer-bootstrap.md).
 

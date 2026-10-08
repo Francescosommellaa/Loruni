@@ -1,4 +1,6 @@
 import { createElement, useState, type ReactNode } from 'react'
+import { ProjectCardDefaultExample, ProjectCardConsumerExample, ProjectCardControlsExample } from './ProjectCardExamples'
+import { ServiceCardDefaultExample, ServiceCardSourceExample, ServiceCardControlsExample } from './ServiceCardExamples'
 import { Icon, type IconProps } from '../../components/Icon'
 import { iconNames } from '../../components/Icon.registry'
 import { Divider } from '../../components/Divider'
@@ -12,11 +14,14 @@ import { MainFormButtonLifecycleExample, MainFormButtonStatesExample } from './M
 import { LoadMore } from '../../components/LoadMore'
 import { LoadMoreLifecycleExample } from './LoadMoreExamples'
 import { FAQRow } from '../../components/FAQRow'
+import { FAQSectionControlsExample, FAQSectionEmptyExample, FAQSectionSourceExample } from './FAQSectionExamples'
 import { FAQRowExample } from './FAQRowExamples'
 import { faqRowSlots } from './FAQRowExamples.data'
 import { ImageRevealExample } from './ImageRevealExamples'
 import { ImageParallaxExample } from './ImageParallaxExamples'
 import { GrainDefaultExample, GrainHeroExample, LiquidControlsExample } from './GrainExamples'
+import { TextFitSourceExample, TextFitControlsExample, TextStaggerSourceExample, TextStaggerControlsExample, TextResponsiveExample } from './TextUtilityExamples'
+import { textFitCases, textStaggerCases } from './TextUtilityExamples.data'
 import { ArrowForward } from '../../components/ArrowForward'
 import { CategoryLabel } from '../../components/CategoryLabel'
 import { Label } from '../../components/Label'
@@ -91,6 +96,49 @@ function attributedTestimonials(): Testimonials {
 
 export const componentExamples: readonly ComponentExample[] = [
   {
+    name: 'Service Card',
+    description: 'Card responsive con Image Parallax, labels opzionali e copy price. Parent possiede visibilità, scroll, ID e dimensioni.',
+    source: 'Cards/Service card → ServiceCard; due varianti sorgente, nessuna variant pubblica o Services Section.',
+    examples: [
+      { name: 'Default sorgente', preview: createElement(ServiceCardDefaultExample) },
+      ...['Al tavolo', 'Gioco', 'Eventi', 'Il bar'].map((name, index) => ({ name, preview: createElement(ServiceCardSourceExample, { index }) })),
+      { name: 'Labels, price, media, parent e lifecycle', preview: createElement(ServiceCardControlsExample) },
+    ],
+  },
+  {
+    name: 'Project Card',
+    description: 'Main / Inner, Desktop + Tablet / Phone. ImageFill, typography e arrow_forward originali; label opzionali. Il parent gestisce link, dimensioni e CMS. Hover desktop: freccia −45°→0°, zoom 1→1.1 solo Inner, tween 0.5s. Nessuna interazione tap aggiunta.',
+    source: 'Framer · Cards/Project Card · 21 istanze · docs/PROJECT-CARD.md',
+    examples: [
+      { name: 'Main · responsive', preview: createElement(ProjectCardDefaultExample, { mode: 'main' }) },
+      { name: 'Inner · responsive / hover', preview: createElement(ProjectCardDefaultExample, { mode: 'inner' }) },
+      { name: 'Home · 4 contenuti CMS / parent fill e 100vh', preview: createElement(ProjectCardConsumerExample, { page: 'home' }) },
+      { name: 'Eventi · Main e Inner / parent auto', preview: createElement(ProjectCardConsumerExample, { page: 'events' }) },
+      { name: 'Dettaglio evento · Inner', preview: createElement(ProjectCardConsumerExample, { page: 'event-detail' }) },
+      { name: 'CMS, label mancanti, media, sizing e reduced motion', preview: createElement(ProjectCardControlsExample) },
+    ],
+  },
+  {
+    name: 'TextFitWidth',
+    description: 'Ricerca binaria originale sulla riga preformattata più larga. Font parametrico, whitespace e newline intatti; parent e font loading invalidano il fitting.',
+    source: 'Framer · Text_fit.tsx · 6 istanze Home / Esperienza',
+    examples: [
+      ...textFitCases.map(c => ({ name: c.key, preview: createElement(TextFitSourceExample, { caseKey: c.key }) })),
+      { name: 'Testo dinamico / font / resize / align / lifecycle', preview: createElement(TextFitControlsExample) },
+      { name: 'Home · parent responsive', preview: createElement(TextResponsiveExample) },
+      { name: 'Esperienza · parent responsive', preview: createElement(TextResponsiveExample, { page: 'experience' }) },
+    ],
+  },
+  {
+    name: 'TextStagger',
+    description: 'DOM Range rileva il wrapping reale; reveal per linea y70→0. Trigger una volta, wght500/700 statico e half-opacity per inizio linea, come nel sorgente.',
+    source: 'Framer · Workshop_Component/TextStagger_1.tsx · 15 istanze',
+    examples: [
+      ...textStaggerCases.map(c => ({ name: c.key, preview: createElement(TextStaggerSourceExample, { caseKey: c.key }) })),
+      { name: 'CMS / trigger / weight / half-opacity / resize / reduced / lifecycle', preview: createElement(TextStaggerControlsExample) },
+    ],
+  },
+  {
     name: 'Grain',
     description: 'Raster originale ripetuto, ciclo 8s a step verificato. Opacity interna separata dal layer. Mask, sizing e stacking appartengono al consumer Hero; overlay sempre passivo.',
     source: 'Framer · Grain · Home Desktop / Tablet / Phone',
@@ -117,6 +165,17 @@ export const componentExamples: readonly ComponentExample[] = [
       { name: 'Our Story · X−50 · 660px × fill', preview: createElement(ImageParallaxExample, { kind: 'story-horizontal' }) },
       { name: 'X+Y / immagine dinamica / crop / decorazioni / reduced / unmount', preview: createElement(ImageParallaxExample) },
       { name: 'Confronto media a viewport intero', preview: createElement('a', { href: '/design-system?fixture=image-parallax' }, 'Apri confronto Image Parallax') },
+    ],
+  },
+  {
+    name: 'FAQ Section',
+    description: 'Accordion esclusivo con FAQRow/FaqIcon esistenti. Domande vuote omesse; identità persistenti, riserva del layout e policy reduced condivisa.',
+    source: 'Framer · Section/FAQ Section · tre istanze /vieni-a-trovarci',
+    examples: [
+      { name: 'Cinque FAQ reali · tre slot vuoti · tutti Closed iniziali', preview: createElement(FAQSectionSourceExample) },
+      { name: 'Accordion · resize · contenuto dinamico · focus · reduced motion', preview: createElement(FAQSectionControlsExample) },
+      { name: 'Question assente · answer sola · nessuna row o gap', preview: createElement(FAQSectionEmptyExample) },
+      { name: 'Confronto nei viewport nativi · Desktop / Tablet / Phone', preview: createElement('a', { href: '/design-system?fixture=faq-section-frame' }, 'Apri confronto FAQ Section') },
     ],
   },
   {

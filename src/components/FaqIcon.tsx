@@ -16,11 +16,12 @@ export function FaqIcon({ variant = 'Plus', onClick, className, 'aria-label': la
   // The native SVG retains its last Minus target when Plus has no rotate override.
   // Current Motion resets omitted targets, so preserve that source behavior explicitly.
   const [hasEnteredMinus, setHasEnteredMinus] = useState(variant === 'Minus')
-  if (variant === 'Minus' && !hasEnteredMinus) setHasEnteredMinus(true)
+  if (!decorative && variant === 'Minus' && !hasEnteredMinus) setHasEnteredMinus(true)
 
   if (decorative) return <span className={className ? `loruni-faq-icon ${className}` : 'loruni-faq-icon'}
     data-variant={variant} aria-hidden="true">
-    <Icon name="faq" className="loruni-faq-icon__frame" barRotation={hasEnteredMinus ? 90 : 0} />
+    {/* Current embedded source resets to Plus when the FAQ row closes. */}
+    <Icon name="faq" className="loruni-faq-icon__frame" barRotation={variant === 'Minus' ? 90 : 0} />
   </span>
 
   return (

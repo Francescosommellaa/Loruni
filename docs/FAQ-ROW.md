@@ -41,3 +41,5 @@ Campioni locali durante il tween mostrano altezza105.61→125.89→141.73→148.
 Typecheck/lint/build e digest finale nelle [prove](FAQ-ROW-VERIFICATION.json). Nessuna suite frontend aggiunta/eseguita. Limiti: nessun dispositivo touch fisico, held pointer-down, screen reader, cross-engine, toggle OS reale o raster pixel-diff esercitato. Capture sequenziali e file Framer locali ignorati non attestano una revisione immutabile. Nessun edit/publish Framer, backend, pagina o altro controllo portato.
 
 FAQ ROW — CLOSED
+
+Parent integration 2026-10-08: FAQSection is now ported with the explicitly requested exclusive policy. Live embedded source resets the rotating bar to0 in Closed; decorative FaqIcon now follows variant endpoints, superseding the earlier embedded-retention observation above. Standalone retention is unchanged. Row color selectors are scoped to resist later preset import order. Original row markup/keyboard/reveal remain reused. Current parent/scroll/dynamic proof: FAQ-SECTION-VERIFICATION.json.

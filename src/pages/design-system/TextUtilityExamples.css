@@ -1,0 +1,25 @@
+.ds-text-controls { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; padding: 12px; color: var(--color-neutral-950); background: var(--color-neutral-50); }
+.ds-text-controls label { display: flex; flex-direction: column; gap: 4px; }
+.ds-text-controls label:has(input[type='checkbox']) { flex-direction: row; }
+.ds-text-controls textarea { width: 260px; min-height: 90px; white-space: pre-wrap; }
+.ds-text-controls input[type='number'] { width: 100px; }
+.ds-text-fit-source, .ds-text-stagger-source { position: relative; background: var(--color-neutral-950); }
+.ds-text-stagger-source:has([style*='color: var(--color-neutral-950)']) { background: var(--color-neutral-50); }
+.ds-text-comparison { min-height: 110vh; }
+.ds-text-responsive { min-height: 110vh; }
+.ds-text-responsive-fit { padding: 0 120px; }
+.ds-text-responsive-fit > div { width: 100%; max-width: 1500px; margin: auto; }
+.ds-text-responsive-main, .ds-text-responsive-process { padding: 80px; }
+.ds-text-responsive-main { background: var(--color-neutral-50); }
+.ds-text-responsive-process > div { width: 68%; margin-left: auto; }
+.ds-text-responsive--experience .ds-text-responsive-fit { padding: 0 80px; }
+.ds-text-responsive--experience .ds-text-responsive-fit > div { width: 70%; margin: 0; }
+.ds-text-responsive--experience .ds-text-responsive-main { background: var(--color-neutral-950); }
+@media (max-width: 1199.98px) {
+  .ds-text-responsive-fit { padding: 0 20px; }
+  .ds-text-responsive-main, .ds-text-responsive-process, .ds-text-responsive--experience .ds-text-responsive-fit { padding: 40px; }
+}
+@media (max-width: 809.98px) {
+  .ds-text-responsive-fit, .ds-text-responsive-main, .ds-text-responsive-process, .ds-text-responsive--experience .ds-text-responsive-fit { padding: 12px; }
+  .ds-text-responsive-process > div, .ds-text-responsive--experience .ds-text-responsive-fit > div { width: 100%; }
+}
