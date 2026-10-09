@@ -1,8 +1,10 @@
 # Loruni — stato reale della migrazione
 
-Verificato il 2026-10-08 sul codice, export, catalogo e prove presenti. Le successive chiusure Load More, Image Reveal e FAQ Row hanno prove dedicate.
+Testimonials Section consolidation2026-10-08: already-completed record retained, required items API and fluid parent allocation, existing Arrow/ImageReveal/Icon/Divider,24settled source comparisons and live reduced/dynamic/native keyboard proof. Counts unchanged; parent Home/Esperienza remain pending. [Contract](TESTIMONIALS-SECTION.md).
 
-65 unità completed, 70 not-migrated, 2 legacy-unused, 0 to-complete su137unità.34file componenti React consolidano i65record chiusi;34voci reali in catalogo. Le unità includono repliche, gruppi, pattern e glyph.
+Verificato il 2026-10-09 sul codice, export, catalogo e prove presenti. Le successive chiusure Load More, Image Reveal e FAQ Row hanno prove dedicate.
+
+80 unità completed, 55 not-migrated, 2 legacy-unused, 0 to-complete su137unità.39file componenti React consolidano gli80record chiusi;41voci reali in catalogo. Le unità includono repliche, gruppi, pattern e glyph. Services Desktop content-slot closed2026-10-09; parent Services Section/Lenis remain pending. [Contract](SERVICES-DESKTOP-TRACK.md).
 
 ## Correzioni documentali
 
@@ -12,6 +14,8 @@ Verificato il 2026-10-08 sul codice, export, catalogo e prove presenti. Le succe
 
 | File runtime / export | Record sorgente coperti |
 | --- | --- |
+| [EventTestimonial](../src/components/EventTestimonial.tsx) | Testimonial singolo Evento · pattern-EQzpqx6Vl |
+| [EventCardSlot / EventCollection / CommunityCollection](../src/components/CmsCollections.tsx) | 11pattern CMS assorbiti, mapping nella chiusura sessione sotto |
 | [ArrowForward](../src/components/ArrowForward.tsx) | arrow_forward |
 | [Button](../src/components/Button.tsx) | Button |
 | [CategoryLabel](../src/components/CategoryLabel.tsx) | Category Label |
@@ -40,9 +44,12 @@ Verificato il 2026-10-08 sul codice, export, catalogo e prove presenti. Le succe
 | [OurStoryCard](../src/components/OurStoryCard.tsx) | Our Story Card |
 | [ProjectCard](../src/components/ProjectCard.tsx) | Project Card |
 | [ServiceCard](../src/components/ServiceCard.tsx) | Service card |
+| [TheStoryTrack](../src/components/TheStoryTrack.tsx) | The story · Our Story Section (Desktop content-slot) |
+| [ServicesDesktopTrack](../src/components/ServicesDesktopTrack.tsx) | Desktop · Services Section (content-slot) |
 | [ProcessRow](../src/components/ProcessRow.tsx) | Process Row |
 | [RollingText](../src/components/RollingText.tsx) | Rolling Text |
 | [SplitContent](../src/components/SplitContent.tsx) | Headline · /eventi/:Eventi (originale: Headline); Headline · /eventi/:Eventi (originale: Headline) |
+| [Stats](../src/components/Stats.tsx) | Stats · /esperienza, responsive root using existing StatRow |
 | [StatRow](../src/components/StatRow.tsx) | Stat Row · /esperienza (originale: Stat Row); Stat Row · /esperienza (originale: Stat Row); Stat Row · /esperienza (originale: Stat Row); Stat Row · /esperienza (originale: Stat Row) |
 | [TestimonialsArrow](../src/components/TestimonialsArrow.tsx) | Testimonials Arrow |
 | [TestimonialsSection](../src/components/TestimonialsSection.tsx) | Testimonials Section |
@@ -57,65 +64,50 @@ Queste voci restano not-migrated. Il lavoro già fatto nei figli viene indicato 
 | --- | --- |
 | Header | NavItem |
 | Footer | NavItem |
-| Services Section | Label, ServiceCard |
-| Our Story Section | Label, OurStoryCard, Icon, ImageParallax, TextStagger |
+| Services Section | Label, ServiceCard, ServicesDesktopTrack |
+| Our Story Section | Label, OurStoryCard, Icon, ImageParallax, TextStagger, TheStoryTrack |
 | Logo | Icon |
 | Template | MainFormButton, ContentHeadline, FormControl, FormFieldGroup, FormField |
 | Hero · / | Button, ImageFill, Grain, LiquidHover, TextFitWidth |
 | Headline · / | TextFitWidth |
-| Color container · / | Label, Icon, ProcessRow, TestimonialsSection, ContentHeadline, TextStagger, ProjectCard, CircularImage |
-| Logos and Quote · / | Label, Icon, TextStagger, CircularImage |
-| Quote · / | Label, Icon, TextStagger, CircularImage |
-| Recent Projects · / | ProjectCard |
-| Headline and 1st project · / | ProjectCard |
-| Lista CMS · / | ProjectCard |
-| Lista CMS · / | ProjectCard |
-| Lista CMS · / | ProjectCard |
-| Lista CMS · / | ProjectCard |
+| Color container · / | Label, Icon, ProcessRow, TestimonialsSection, ContentHeadline, TextStagger, ProjectCard, EventCardSlot |
+| Logos and Quote · / | Label, Icon, TextStagger |
+| Quote · / | Label, Icon, TextStagger |
+| Recent Projects · / | ProjectCard, EventCardSlot |
+| Headline and 1st project · / | ProjectCard, EventCardSlot |
 | Process · / | Label, ProcessRow, TextStagger |
 | Headline · / | Label, TextStagger |
 | Testimonials · / | Label, TestimonialsSection, ContentHeadline |
 | Hero · /esperienza | ImageFill, TextFitWidth |
 | Content · /esperienza | TextFitWidth |
-| Color container · /esperienza | Label, TestimonialsSection, CommunityCard, StatRow, ContentHeadline, ImageParallax, TextStagger |
+| Color container · /esperienza | Label, TestimonialsSection, CommunityCard, StatRow, ContentHeadline, ImageParallax, TextStagger, Stats, CommunityCollection |
 | Logos and Intro · /esperienza | Label, TextStagger |
-| Stats · /esperienza | StatRow |
 | Testimonials · /esperienza | Label, TestimonialsSection, ContentHeadline |
-| Blog · /esperienza | Label, CommunityCard, ContentHeadline |
-| Lista CMS · /esperienza | CommunityCard |
+| Blog · /esperienza | Label, CommunityCard, ContentHeadline, CommunityCollection |
 | Hero · /eventi/:Eventi | CategoryLabel, CategoryLabelGroup |
 | Content · /eventi/:Eventi | CategoryLabel, CategoryLabelGroup |
-| Color container · /eventi/:Eventi | Label, Button, SplitContent, Icon, ContentHeadline, TextStagger, ProjectCard, Divider |
+| Color container · /eventi/:Eventi | Label, Button, SplitContent, Icon, ContentHeadline, TextStagger, ProjectCard, EventCollection, EventTestimonial |
 | Intro · /eventi/:Eventi | Label, Button, TextStagger |
 | Section 1 · /eventi/:Eventi | SplitContent |
 | Section 2 · /eventi/:Eventi | SplitContent |
-| Testimonial · /eventi/:Eventi | Icon, Divider |
-| More Projects · /eventi/:Eventi | ContentHeadline, ProjectCard |
-| Lista CMS · /eventi/:Eventi | ProjectCard |
-| Main · /eventi | LoadMore, ProjectCard |
-| Recent Projects · /eventi | ProjectCard |
-| Headline and 1st project · /eventi | ProjectCard |
-| Lista CMS · /eventi | ProjectCard |
-| Lista CMS · /eventi | LoadMore, ProjectCard |
-| Main · /vieni-a-trovarci | NavItem, MainFormButton, Label, CommunityCard, FormControl, FormFieldGroup, FormField, ImageParallax |
+| More Projects · /eventi/:Eventi | ContentHeadline, ProjectCard, EventCollection |
+| Main · /eventi | LoadMore, ProjectCard, EventCollection, EventCardSlot |
+| Recent Projects · /eventi | ProjectCard, EventCardSlot |
+| Headline and 1st project · /eventi | ProjectCard, EventCardSlot |
+| Main · /vieni-a-trovarci | NavItem, MainFormButton, Label, CommunityCard, FormControl, FormFieldGroup, FormField, ImageParallax, CommunityCollection |
 | Contact · /vieni-a-trovarci | NavItem, MainFormButton, FormControl, FormFieldGroup, FormField |
 | Modulo · /vieni-a-trovarci | MainFormButton, FormControl, FormFieldGroup, FormField |
-| Blog · /vieni-a-trovarci | Label, CommunityCard |
-| Lista CMS · /vieni-a-trovarci | CommunityCard |
+| Blog · /vieni-a-trovarci | Label, CommunityCard, CommunityCollection |
 | Main · /404 | Button |
-| Blog · /community | CommunityCard, ContentHeadline, LoadMore |
-| Lista CMS · /community | CommunityCard, LoadMore |
-| Main · /community/:Community | CategoryLabel, CommunityCard, CommunityDetails, ContentHeadline, CircularImage |
-| Hero · /community/:Community | CategoryLabel, CommunityDetails, CircularImage |
-| More content · /community/:Community | CommunityCard, ContentHeadline |
-| Lista CMS · /community/:Community | CommunityCard |
+| Blog · /community | CommunityCard, ContentHeadline, LoadMore, CommunityCollection |
+| Main · /community/:Community | CategoryLabel, CommunityCard, CommunityDetails, ContentHeadline, CommunityCollection |
+| Hero · /community/:Community | CategoryLabel, CommunityDetails |
+| More content · /community/:Community | CommunityCard, ContentHeadline, CommunityCollection |
 | Contact From · Template | MainFormButton, ContentHeadline, FormControl, FormFieldGroup, FormField |
 | Content container · Template | MainFormButton, ContentHeadline, FormControl, FormFieldGroup, FormField |
 | Modulo · Template | MainFormButton, FormControl, FormFieldGroup, FormField |
-| Desktop · Services Section | Label, ServiceCard |
-| The story · Our Story Section | Label, OurStoryCard, Icon, ImageParallax, TextStagger |
 
-61 parent hanno parti disponibili; tutti restano pending.
+44 parent hanno parti disponibili; tutti restano pending.
 
 ## Capacità interne, non port autonomi
 
@@ -130,7 +122,7 @@ BTN 2 è legacy-unused/no migration required secondo audit live separato [BTN-2.
 
 ## Resta da sviluppare
 
-74 record: parent/sezioni/hero/Template/globalnavigation/cardnonmigrate/CMSlists e interazioni/motion autonomi. Le otto pagine prodotto, routing/CMSdestinazione/invioform/SEO/hosting restano fuori dai port dei singoli componenti. src/app/App.tsx mostra ancora la shell e /design-system.
+55 record: parent/sezioni/hero/Template/global navigation e runtime/interazioni/motion autonomi. I piccoli adapter CMS di questa sessione sono completati; le loro pagine prodotto non lo sono. Le otto pagine prodotto, routing/CMSdestinazione/invioform/SEO/hosting restano fuori dai port dei singoli componenti. src/app/App.tsx mostra ancora la shell e /design-system.
 
 Prove tecniche di questa riconciliazione: [MIGRATION-STATUS-VERIFICATION.json](MIGRATION-STATUS-VERIFICATION.json). Runtime invariato nella riconciliazione iniziale. La nuova slice Load More ha check e browser dedicati in [LOAD-MORE-VERIFICATION.json](LOAD-MORE-VERIFICATION.json); nessun altro port riaperto.
 
@@ -173,3 +165,108 @@ Only Cards/Service card promoted. All12source instances/four Home contents read;
 ### FAQ Section — 2026-10-08
 
 FAQ Section and its one Layout Jump Preventer dependency promoted together; dependency absorbed, no standalone export. One exclusive state, stable identities and existing FAQRow/FaqIcon composition. White Color unused legacy. All18 native/local geometry/font/color/opacity/icon endpoint comparisons match; actual source multi-open is deliberately overridden by user instruction.65completed/70pending/2legacy,34runtime/catalog,59parts-available. [Contract](FAQ-SECTION.md), [proof](FAQ-SECTION-VERIFICATION.json).
+
+
+The story static slot closed2026-10-09: parent Our Story Section and Lenis remain pending. [Contract](THE-STORY-TRACK.md), [proof](THE-STORY-TRACK-VERIFICATION.json).
+
+
+Stats root closed2026-10-09; four StatRow records already completed remain canonical. Parent/page pending. [Contract](STATS.md), [proof](STATS-VERIFICATION.json).
+
+
+Community Label Container adB9Vb46p /esperienza closed2026-10-09 by absorption in existing ContentHeadline labelled wrapper > Label, not CategoryLabelGroup. All3replicas static; only wrapper fill sizing corrected. No new inventory/catalog unit or status promotion; totals unchanged. See COMMUNITY-LABEL-CONTAINER.md. Full Community parent/page pending.
+
+
+<a id="session-final-2026-10-09"></a>
+## Session final — 2026-10-09
+
+**SESSION CLOSED — COMPONENTI COMPOSTI STILL OPEN.** 137 unità:80completed/55not-migrated/2legacy-unused/0to-complete.39file runtime,41voci catalogo;44parent parts-available. HEAD64873750eba59cfd4bd73f142dcf0dc69f49bcd2 con lavoro locale preservato. Nessuna pagina prodotto, backend o nuova macro section implementata.
+
+EventTestimonial: `image?:ImageFillImage, title?, quote?:string|null, name?, role?, id/className/style`. La quote non impostata rimuove l'intera section senza trim/fallback. Grid12/span4+1+7, height750; Phone auto e media/spacer assenti; Quote Icon presente anche Phone. Existing ImageReveal/Divider/Icon/preset/reduced policy. Title word-opacity once spring.5/bounce0/stagger.06 condiviso con TestimonialsSection attraverso WordOpacityReveal, stesso markup/algoritmo senza wrapper aggiuntivo. Quote element once spring.4/delay.4/opacityinitial.001, outeropacity.7. Brand Accent divider; Neutral50 text, Neutral950 image cover. Text2/3/4 legacy hidden esclusi; nessuna logica carousel.
+
+CMS: `EventRecord` conserva slug/image/title/text/label1–3/year/testimonial e compactLabel opzionale; `CommunityRecord` slug/image/title/subtitle. Input normalizzato, null/undefined/draft/missing slug/duplicate slug esclusi; ordine della collection preservato. Nessun ID campo Framer entra nei componenti browser. CurrentCms.data.ts è un dataset documentale normalizzato da5Eventi/4Community correnti, condiviso con le card già esistenti, non un backend.
+
+API adapter: `EventCardSlot({items,offset?,cardStyle?,id/ref/className/style})`; `EventCollection({items,mode:remaining|related,currentSlug?,pagination?,id/ref/className/style})`; `CommunityCollection({items,mode:preview|all|related,currentSlug?,pagination?,id/ref/className/style})`. Pagination opzionale controllata `{loading,hasMore,onLoadMore}` riceve record già caricati della collection; in sua assenza la lista locale espone12item per volta. Eventi remaining applica offset1 alla collection completa; related esclude currentSlug. Cambi di identità/ordine resettano count; i consumer forniscono la data source reale successivamente.
+
+| Pattern | Destino / comportamento |
+| --- | --- |
+| pattern-rG_Llb_4m | ABSORBED INTO CONSUMER — NO DEDICATED COMPONENT REQUIRED → `EventCardSlot`; Home offset0/limit1; allocation fill |
+| pattern-Vys401Mev | ABSORBED INTO CONSUMER — NO DEDICATED COMPONENT REQUIRED → `EventCardSlot`; Home offset1/limit1; project-2, allocation100vh |
+| pattern-ZZ6z7kb1H | ABSORBED INTO CONSUMER — NO DEDICATED COMPONENT REQUIRED → `EventCardSlot`; Home offset2/limit1; project-3, allocation100vh |
+| pattern-PyH9cfIM7 | ABSORBED INTO CONSUMER — NO DEDICATED COMPONENT REQUIRED → `EventCardSlot`; Home offset3/limit1; project-4, allocation100vh |
+| pattern-JI34iSQE6 | ABSORBED INTO CONSUMER — NO DEDICATED COMPONENT REQUIRED → `CommunityCollection`; Esperienza previewCommunity limit4D/T,3Phone;2colD/T,1Phone;gap60×8;h3 |
+| pattern-whW0aCLUP | ABSORBED INTO CONSUMER — NO DEDICATED COMPONENT REQUIRED → `EventCollection`; Eventi related exclude current;limit6D/T,4Phone;2colD/T,1Phone;gap8 |
+| pattern-X2iRXrVnI | ABSORBED INTO CONSUMER — NO DEDICATED COMPONENT REQUIRED → `EventCardSlot`; Eventi featured offset0/limit1; fill allocation |
+| pattern-Jo1JXGYo6 | ABSORBED INTO CONSUMER — NO DEDICATED COMPONENT REQUIRED → `EventCollection`; Eventi offset1/pageSize12;2col Desktop,1col Tablet/Phone;gap8;LoadMore bottom−80/−64 |
+| pattern-EWW2HEI9X | ABSORBED INTO CONSUMER — NO DEDICATED COMPONENT REQUIRED → `CommunityCollection`; Visit previewCommunity identico;h3 |
+| pattern-zkyIqN31n | ABSORBED INTO CONSUMER — NO DEDICATED COMPONENT REQUIRED → `CommunityCollection`; Community pageSize12;2colD/T,1Phone;gap60×8;h2;LoadMore absoluteD/T,flowPhone |
+| pattern-yjtNkZRh_ | ABSORBED INTO CONSUMER — NO DEDICATED COMPONENT REQUIRED → `CommunityCollection`; Community related exclude current/limit4;2colD/T,1Phone;gap60×8;h3 |
+
+ProjectCard/CommunityCard sono solo visuali: link completo nel consumer, route `/eventi/:slug` e `/community/:slug`, nessuna nested anchor. Desktop category label1 CMS; Tablet/Phone `compactLabel="Eventi"` nei dati attuali riproduce il fallback nativo già documentato in PROJECT-CARD.md, senza cambiare ProjectCard. Community Phone conserva i60px finali della sorgente davanti al wrapper LoadMore Hidden di height0 attraverso padding, senza un wrapper vuoto; liste vuote tornano null.
+
+**Home ownership verificata**: effetti registrati sulle Collection List riferiscono headline-trigger, sibling successiva e Services Section. Sono una sequenza cross-section: il futuro parent Recent Projects/Headline and 1st project possiede sticky top0, ordine stacking e progress GSAP per opacity/y/scale. EventCardSlot espone id/ref/style/cardStyle per target distinti, senza writer transform. Riferimenti originali in session-final-source.json e inventory: first scale0 → headline target → opacity0/y−120px/scale.5 al target project-2;2→3→4→Services con gli stessi endpoint. Questo scope chiude query/data/link/target adapter; **la scena Home resta pending e non è dichiarata verificata localmente**. Nessun height1%/10000%, canvas offset o backend artificiale.
+
+Riconciliazione: ImageParallax, Grain/LiquidHover, TextFitWidth/TextStagger, ProjectCard, ServiceCard, FAQSection, TestimonialsSection, ServicesDesktopTrack, TheStoryTrack, Stats e Community Label Container hanno implementazione/mapping/prove dedicate reali. Gates finali coprono l'intero checkout; prove precedenti restano datate e non diventano una nuova certificazione di tutte le motion. Label Container assorbito ContentHeadline; Layout Jump Preventer assorbito FAQSection; whiteColor/iconCal unusedlegacy; BTN2/ArrowRightAlt external legacy-unused. Nessuna duplicazione di Icon Engine, RollingText, TextStagger, ImageParallax o carousel.
+
+Verifiche correnti:36source roots e CMS correnti letti, source readback identico; testimonial geometry/typography a1200/810/390 coincide con Framer; main Eventi/Community list native/local geometry e routing;21local consumer cases, empty/one/missing/null/dynamic, related exclusion, pagination12→24→25/Loading/Hidden/native keyboard. Typecheck/lint/build/tokens:check PASS; stale hardcoded audit rigenerato senza cambiamenti ai token canonici. Browser Chromium soltanto; MotionConfig reduced policy esercitata, nessuna certificazione touchfisico/crossengine/screenreader/synchronizedframe/rasterpixel-diff. Link URL risolti correttamente; le pagine prodotto locali mostrano ancora la shell di sviluppo, quindi il routing prodotto end-to-end e CMS fetch/authoring rimangono aperti. Prova corrente e manifest: `docs/MIGRATION-STATUS-VERIFICATION.json.sessionFinal`.
+
+### NEXT SESSION
+
+Ripartire dai parent ancora not-migrated sotto, senza riaprire i figli chiusi. Boundary pronto: ServicesDesktopTrack + ServiceCard e TheStoryTrack + OurStoryCard/ImageParallax/TextStagger; fullServicesSection/fullOurStorySection e LenisHorizontalSection richiedono una nuova task autorizzata. Gli adapter CMS sono pronti per i parent; Home scene necessita progress/target mapping e routing/backend/hosting restano decisioni aperte. Il tracking esatto dei residui è la tabella seguente, non un elenco di lavori inventati.
+
+| Record ancora aperto | Nome sorgente | Tipo |
+| --- | --- | --- |
+| framer-E3CLvSQi8 | Header | navigation |
+| framer-rN_k4pVAj | Footer | navigation |
+| framer-Va_5BuuHV | Services Section | section |
+| framer-j6BGVOcku | Mobile Nav | navigation |
+| framer-wUaTYVV3U | Our Story Section | section |
+| framer-LdaCEGUab | 👀 Pre-Loader | interactive component |
+| framer-pDiVZWXZp | Logo | media component |
+| bSeEZJm22jsjERCOGQvq | Lenis | interactive component |
+| 8OGeHARPZoZUqP5j1buZ | Lenis Horizontal Section | interactive component |
+| template-ahDJpZJjb | Template | layout component |
+| pattern-H6RV6mcOu | Hero · / | section |
+| pattern-l4Hx2sTr1 | Headline · / | section |
+| pattern-T_kKQBX63 | Color container · / | layout component |
+| pattern-CU36SWeyR | Logos and Quote · / | section |
+| pattern-Npr_ZavYL | Logos · / | section |
+| pattern-BvAMtkvhr | Quote · / | section |
+| pattern-ut4tqcHWL | Recent Projects · / | section |
+| pattern-n8mpVhYJ6 | Headline and 1st project · / | section |
+| pattern-oXNPkQNkN | Headline trigger · / | section |
+| pattern-MxT1gxvg5 | Process · / | section |
+| pattern-DUIrhpb0e | Headline · / | section |
+| pattern-dyQ5jBO0A | Testimonials · / | section |
+| pattern-I5SNW1MVl | Hero · /esperienza | section |
+| pattern-pVmauuZ2g | Content · /esperienza | layout component |
+| pattern-jyNRFDvt2 | Color container · /esperienza | layout component |
+| pattern-ZPvGsPv3Z | Logos and Intro · /esperienza | section |
+| pattern-Jsd2pjqLq | Logos · /esperienza | section |
+| pattern-BGa5oNSIN | Testimonials · /esperienza | section |
+| pattern-Ik7aKijYN | Blog · /esperienza | section |
+| pattern-aj8UocIEh | Hero · /eventi/:Eventi | section |
+| pattern-hfPb23Ta6 | Content · /eventi/:Eventi | layout component |
+| pattern-zLQBFP6XB | Color container · /eventi/:Eventi | layout component |
+| pattern-Rq9qdzotO | Intro · /eventi/:Eventi | section |
+| pattern-oeZu6j5Sf | Section 1 · /eventi/:Eventi | section |
+| pattern-WFPN6Mc9q | Section 2 · /eventi/:Eventi | section |
+| pattern-OC7BXKW3i | More Projects · /eventi/:Eventi | section |
+| pattern-F2ZIXiJXy | Main · /eventi | section |
+| pattern-xE8PURxwx | Recent Projects · /eventi | section |
+| pattern-xXCtTmpiE | Headline and 1st project · /eventi | section |
+| pattern-fu2tf1hGp | Headline trigger · /eventi | section |
+| pattern-r89Pf6QJy | Main · /vieni-a-trovarci | section |
+| pattern-JMRvZFIEA | Contact · /vieni-a-trovarci | section |
+| pattern-n_vp9VrGq | Modulo · /vieni-a-trovarci | interactive component |
+| pattern-KWxSIDWdL | FAQ · /vieni-a-trovarci | section |
+| pattern-OygYg_WNE | Blog · /vieni-a-trovarci | section |
+| pattern-JcLLUP2Jf | Main · /404 | section |
+| pattern-B853j3_Yd | Blog · /community | section |
+| pattern-QOkfs6Ps9 | Main · /community/:Community | section |
+| pattern-ndrT49rsU | Hero · /community/:Community | section |
+| pattern-sRThMEavK | Content · /community/:Community | layout component |
+| pattern-GRPA250EV | More content · /community/:Community | section |
+| pattern-POmM3Cn0Y | Overlay menu · Template | interactive component |
+| pattern-slofgrfjX | Contact From · Template | section |
+| pattern-XXZunElsz | Content container · Template | layout component |
+| pattern-sUr7gnSzE | Modulo · Template | interactive component |

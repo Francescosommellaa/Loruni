@@ -1,5 +1,9 @@
 # Loruni Vite architecture
 
+ServicesDesktopTrack2026-10-09: static Desktop/Tablet content-slot, Label/Headline180 intro and existing ServiceCard array. Intrinsic max-content/nowrap, stable targets, no motion/state/transport; parent owns clipping, breakpoint selection and Lenis. See SERVICES-DESKTOP-TRACK.md. Services Section remains pending.
+
+TestimonialsSection consolidated2026-10-08: required items image/title/quote/name/role with optional id, one dynamic carousel selection and existing ImageReveal/TestimonialsArrow/Icon/Divider. Parent owns allocation; Desktop/Tablet grid and Phone content-only layout. See TESTIMONIALS-SECTION.md; no product page migrated.
+
 Current: 2026-10-06. This checkout was empty except for Git metadata and pre-existing asset deletions at bootstrap start. Historical Next.js and cinematic runtime files are absent.
 
 ## Implemented
@@ -20,9 +24,9 @@ Current: 2026-10-06. This checkout was empty except for Git metadata and pre-exi
 
 Framer is the reference for the requested future 1:1 visual/behavioral port. Preserve source IDs for traceability; keep markup/components, content, tokens and motion responsibilities separate. Extract shared abstractions only from real page/component consumers. Keep the app composition small and put audit artifacts outside runtime imports.
 
-GSAP/ScrollTrigger owns ImageParallax geometry and future scroll choreography; Motion owns discrete UI behavior with separate property writers. See [MOTION.md](MOTION.md). No Lenis, router, CMS backend, WebGL or design-system library is installed in this bootstrap. Adding any follows a concrete consumer need and its authorized slice.
+GSAP/ScrollTrigger owns ImageParallax geometry and future scroll choreography; Motion owns discrete UI behavior with separate property writers. See [MOTION.md](MOTION.md). No Lenis, router, CMS backend or external design-system library is installed. The closed LiquidHover uses the native WebGL runtime; see GRAIN-LIQUID-HOVER.md. Adding any follows a concrete consumer need and its authorized slice.
 
-CMS schema/counts are captured; content records are not yet migrated. Dynamic routes and data authoring need a destination decision. Vite's client bootstrap is not evidence of server rendering or SEO parity. Public hosting must define route fallback/prerender requirements during the page migration.
+CMS schema/counts are captured and current normalized content fixtures are available; no production CMS provider is installed. Dynamic routes and data authoring need a destination decision. Vite's client bootstrap is not evidence of server rendering or SEO parity. Public hosting must define route fallback/prerender requirements during the page migration.
 
 ## Sources
 
@@ -78,3 +82,16 @@ ServiceCard owns a single responsive media/content tree and optional six-slot la
 ### FAQ Section — 2026-10-08
 
 FAQSection owns one exclusive identity-based state and isSet availability, composing unchanged Row markup/motion/accessibility and existing Icon Engine. A scoped LayoutGroup coordinates projection; the outer vertical reservation absorbs Layout Jump Preventer using bounded Motion postRender plus ResizeObserver. No global helper/page/CMS. See FAQ-SECTION.md.
+
+### The story content-slot — 2026-10-09
+
+TheStoryTrack composes existing primitives in one intrinsic horizontal frame. Required consumer content, card models derived from OurStoryCardProps, normal div integration. No own state/effects/listeners/scroll runtime. Root clips only its5760×1080 content bounds; external wrapper owns viewport clipping, breakpoint mounting and future transport. [Contract](THE-STORY-TRACK.md).
+
+### Stats /esperienza — 2026-10-09
+
+Stats owns only responsive section composition, one data array and existing StatRow. value/label strings, optionalid/labelStyle; no state/effects/motion. Page owns copy and ancestor clipping; source Phone caption remains intrinsic/unwrapped. [Contract](STATS.md).
+
+
+## Final component/CMS batch — 2026-10-09
+EventTestimonial is a single conditional presentational section, distinct from TestimonialsSection. Existing ImageReveal/Divider/Icon/reduced policy and exact word-opacity title reveal are reused; WordOpacityReveal is the shared internal helper for both testimonial titles. CmsCollections.tsx exports EventCardSlot, EventCollection and CommunityCollection; normalized semantic records, filtering/query/route/heading/layout/pagination are owned by these consumers. Card visual primitives remain routing-free. CurrentCms.data.ts is documentary current CMS data, shared with existing card examples; no provider/backend/product pages added.41catalog entries,39component files;80completed/55pending/2legacy over137records. Existing MIGRATION-STATUS.md and its verification JSON contain the full closure/contracts/residual list/NEXT SESSION.
+Home scene references external headline/sibling/Services targets: CMS adapters expose native id/ref/allocation, while the future Home parent owns sticky/stacking/progress and opacity/y/scale. No percentage artifacts or transform writer added to the adapters. Full Services/OurStory/Lenis/navigation/template/page work remains pending.

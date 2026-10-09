@@ -1,0 +1,9 @@
+.ds-the-story-viewport { overflow: auto; width: 100%; max-width: 100%; background: var(--color-neutral-950); }
+.ds-the-story-standalone { overflow: visible; background: var(--color-neutral-950); }
+.ds-the-story-demo { min-width: 0; }
+.ds-the-story-controls { display: flex; flex-wrap: wrap; align-items: start; gap: var(--space-16); margin-bottom: var(--space-16); }
+.ds-the-story-controls label { display: flex; flex-direction: column; gap: var(--space-4); width: 240px; }
+.ds-the-story-controls textarea { min-height: 80px; }
+.ds-the-story-comparison { margin: 0; padding: var(--space-16); }
+.ds-the-story-frame-scroll { overflow: auto; max-width: 100%; }
+.ds-the-story-frame-scroll iframe { display: block; max-width: none; border: 0; }

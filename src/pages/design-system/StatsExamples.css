@@ -1,0 +1,9 @@
+.ds-stats-comparison {
+  /* Document-only page viewport reproduces Framer's vertical scrollbar and ancestor clipping. */
+  min-height: 110vh;
+  overflow-x: clip;
+}
+.ds-stats-frame__viewport { max-width: 100%; overflow: auto; }
+.ds-stats-frame iframe { display: block; max-width: none; border: 0; }
+.ds-stats-controls__fields { display: flex; flex-wrap: wrap; gap: var(--space-16); margin-bottom: var(--space-16); }
+.ds-stats-controls__fields label { display: flex; flex-direction: column; }

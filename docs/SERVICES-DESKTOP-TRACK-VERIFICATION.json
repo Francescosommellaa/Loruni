@@ -1,0 +1,2794 @@
+{
+  "at": "2026-10-09",
+  "status": "closed",
+  "scope": "Only static Services Section Desktop content-slot",
+  "head": "64873750eba59cfd4bd73f142dcf0dc69f49bcd2",
+  "source": {
+    "slot": "slot-Hj3TkRU1e",
+    "originalNode": "Hj3TkRU1e",
+    "parent": "Va_5BuuHV",
+    "lenisExcluded": "8OGeHARPZoZUqP5j1buZ",
+    "homeConsumers": [
+      "FXzvqzqti",
+      "MVAXQZXjMFXzvqzqti"
+    ],
+    "sourceUnchanged": {
+      "sectionUnchanged": true,
+      "homeUnchanged": true
+    },
+    "canvasScale": 0.5,
+    "canvasDefaultFirstCardDifference": "Old first title and labels3/6; current Home uses existing dataset Al tavolo",
+    "currentHomeDataset": "src/pages/design-system/ServiceCardExamples.data.ts Desktop cases",
+    "currentBindingsVerified": true
+  },
+  "api": {
+    "component": "ServicesDesktopTrack",
+    "props": "label/title/items readonly ServiceCardProps content + unique id/active?; ordinary div props",
+    "inactive": "null/undefined/active=false omit DOM",
+    "limits": "No item-count limit"
+  },
+  "architecture": {
+    "intrinsicWidth": "800+n*1912px",
+    "defaultHeight": 1013,
+    "heightOverride": "parent div style; all children fill",
+    "overflow": "visible, external consumer clips",
+    "intro": "800px / padding40 0 40 80 / space-between, no549gap",
+    "responsive": "No track media query or column conversion; future parent mounts Desktop/Tablet only; child presets canonical",
+    "state": "none",
+    "motion": "none; existing ServiceCard/ImageParallax unchanged"
+  },
+  "browser": {
+    "geometryComparison": {
+      "count": 116,
+      "allEqual": true,
+      "fields": [
+        {
+          "field": "root.x",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "root.y",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "root.width",
+          "source": 8448,
+          "local": 8448,
+          "difference": 0
+        },
+        {
+          "field": "root.height",
+          "source": 1013,
+          "local": 1013,
+          "difference": 0
+        },
+        {
+          "field": "child0.x",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "child0.y",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "child0.width",
+          "source": 800,
+          "local": 800,
+          "difference": 0
+        },
+        {
+          "field": "child0.height",
+          "source": 1013,
+          "local": 1013,
+          "difference": 0
+        },
+        {
+          "field": "child1.x",
+          "source": 800,
+          "local": 800,
+          "difference": 0
+        },
+        {
+          "field": "child1.y",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "child1.width",
+          "source": 1912,
+          "local": 1912,
+          "difference": 0
+        },
+        {
+          "field": "child1.height",
+          "source": 1013,
+          "local": 1013,
+          "difference": 0
+        },
+        {
+          "field": "child2.x",
+          "source": 2712,
+          "local": 2712,
+          "difference": 0
+        },
+        {
+          "field": "child2.y",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "child2.width",
+          "source": 1912,
+          "local": 1912,
+          "difference": 0
+        },
+        {
+          "field": "child2.height",
+          "source": 1013,
+          "local": 1013,
+          "difference": 0
+        },
+        {
+          "field": "child3.x",
+          "source": 4624,
+          "local": 4624,
+          "difference": 0
+        },
+        {
+          "field": "child3.y",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "child3.width",
+          "source": 1912,
+          "local": 1912,
+          "difference": 0
+        },
+        {
+          "field": "child3.height",
+          "source": 1013,
+          "local": 1013,
+          "difference": 0
+        },
+        {
+          "field": "child4.x",
+          "source": 6536,
+          "local": 6536,
+          "difference": 0
+        },
+        {
+          "field": "child4.y",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "child4.width",
+          "source": 1912,
+          "local": 1912,
+          "difference": 0
+        },
+        {
+          "field": "child4.height",
+          "source": 1013,
+          "local": 1013,
+          "difference": 0
+        },
+        {
+          "field": "intro.label.x",
+          "source": 88,
+          "local": 88,
+          "difference": 0
+        },
+        {
+          "field": "intro.label.y",
+          "source": 42.796875,
+          "local": 42.796875,
+          "difference": 0
+        },
+        {
+          "field": "intro.label.width",
+          "source": 40.171875,
+          "local": 40.171875,
+          "difference": 0
+        },
+        {
+          "field": "intro.label.height",
+          "source": 13.203125,
+          "local": 13.203125,
+          "difference": 0
+        },
+        {
+          "field": "intro.title.x",
+          "source": 80,
+          "local": 80,
+          "difference": 0
+        },
+        {
+          "field": "intro.title.y",
+          "source": 589,
+          "local": 589,
+          "difference": 0
+        },
+        {
+          "field": "intro.title.width",
+          "source": 720,
+          "local": 720,
+          "difference": 0
+        },
+        {
+          "field": "intro.title.height",
+          "source": 384,
+          "local": 384,
+          "difference": 0
+        },
+        {
+          "field": "card1.media.x",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "card1.media.y",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "card1.media.width",
+          "source": 600,
+          "local": 600,
+          "difference": 0
+        },
+        {
+          "field": "card1.media.height",
+          "source": 1013,
+          "local": 1013,
+          "difference": 0
+        },
+        {
+          "field": "card1.labels.x",
+          "source": 1464,
+          "local": 1464,
+          "difference": 0
+        },
+        {
+          "field": "card1.labels.y",
+          "source": 74,
+          "local": 74,
+          "difference": 0
+        },
+        {
+          "field": "card1.labels.width",
+          "source": 320,
+          "local": 320,
+          "difference": 0
+        },
+        {
+          "field": "card1.labels.height",
+          "source": 82.609375,
+          "local": 82.609375,
+          "difference": 0
+        },
+        {
+          "field": "card1.description.x",
+          "source": 728,
+          "local": 728,
+          "difference": 0
+        },
+        {
+          "field": "card1.description.y",
+          "source": 224,
+          "local": 224,
+          "difference": 0
+        },
+        {
+          "field": "card1.description.width",
+          "source": 672,
+          "local": 672,
+          "difference": 0
+        },
+        {
+          "field": "card1.description.height",
+          "source": 192.03125,
+          "local": 192.03125,
+          "difference": 0
+        },
+        {
+          "field": "card1.number.x",
+          "source": 1652.15625,
+          "local": 1652.15625,
+          "difference": 0
+        },
+        {
+          "field": "card1.number.y",
+          "source": 821,
+          "local": 821,
+          "difference": 0
+        },
+        {
+          "field": "card1.number.width",
+          "source": 131.84375,
+          "local": 131.84375,
+          "difference": 0
+        },
+        {
+          "field": "card1.number.height",
+          "source": 128,
+          "local": 128,
+          "difference": 0
+        },
+        {
+          "field": "card1.price.x",
+          "source": 728,
+          "local": 728,
+          "difference": 0
+        },
+        {
+          "field": "card1.price.y",
+          "source": 892.203125,
+          "local": 892.203125,
+          "difference": 0
+        },
+        {
+          "field": "card1.price.width",
+          "source": 916.15625,
+          "local": 916.15625,
+          "difference": 0
+        },
+        {
+          "field": "card1.price.height",
+          "source": 56.796875,
+          "local": 56.796875,
+          "difference": 0
+        },
+        {
+          "field": "card1.labelCount",
+          "source": 6,
+          "local": 6,
+          "difference": 0
+        },
+        {
+          "field": "card2.media.x",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "card2.media.y",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "card2.media.width",
+          "source": 600,
+          "local": 600,
+          "difference": 0
+        },
+        {
+          "field": "card2.media.height",
+          "source": 1013,
+          "local": 1013,
+          "difference": 0
+        },
+        {
+          "field": "card2.labels.x",
+          "source": 1464,
+          "local": 1464,
+          "difference": 0
+        },
+        {
+          "field": "card2.labels.y",
+          "source": 74,
+          "local": 74,
+          "difference": 0
+        },
+        {
+          "field": "card2.labels.width",
+          "source": 320,
+          "local": 320,
+          "difference": 0
+        },
+        {
+          "field": "card2.labels.height",
+          "source": 82.609375,
+          "local": 82.609375,
+          "difference": 0
+        },
+        {
+          "field": "card2.description.x",
+          "source": 728,
+          "local": 728,
+          "difference": 0
+        },
+        {
+          "field": "card2.description.y",
+          "source": 224,
+          "local": 224,
+          "difference": 0
+        },
+        {
+          "field": "card2.description.width",
+          "source": 672,
+          "local": 672,
+          "difference": 0
+        },
+        {
+          "field": "card2.description.height",
+          "source": 192.03125,
+          "local": 192.03125,
+          "difference": 0
+        },
+        {
+          "field": "card2.number.x",
+          "source": 1652.15625,
+          "local": 1652.15625,
+          "difference": 0
+        },
+        {
+          "field": "card2.number.y",
+          "source": 821,
+          "local": 821,
+          "difference": 0
+        },
+        {
+          "field": "card2.number.width",
+          "source": 131.84375,
+          "local": 131.84375,
+          "difference": 0
+        },
+        {
+          "field": "card2.number.height",
+          "source": 128,
+          "local": 128,
+          "difference": 0
+        },
+        {
+          "field": "card2.price.x",
+          "source": 728,
+          "local": 728,
+          "difference": 0
+        },
+        {
+          "field": "card2.price.y",
+          "source": 892.203125,
+          "local": 892.203125,
+          "difference": 0
+        },
+        {
+          "field": "card2.price.width",
+          "source": 916.15625,
+          "local": 916.15625,
+          "difference": 0
+        },
+        {
+          "field": "card2.price.height",
+          "source": 56.796875,
+          "local": 56.796875,
+          "difference": 0
+        },
+        {
+          "field": "card2.labelCount",
+          "source": 6,
+          "local": 6,
+          "difference": 0
+        },
+        {
+          "field": "card3.media.x",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "card3.media.y",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "card3.media.width",
+          "source": 600,
+          "local": 600,
+          "difference": 0
+        },
+        {
+          "field": "card3.media.height",
+          "source": 1013,
+          "local": 1013,
+          "difference": 0
+        },
+        {
+          "field": "card3.labels.x",
+          "source": 1464,
+          "local": 1464,
+          "difference": 0
+        },
+        {
+          "field": "card3.labels.y",
+          "source": 74,
+          "local": 74,
+          "difference": 0
+        },
+        {
+          "field": "card3.labels.width",
+          "source": 320,
+          "local": 320,
+          "difference": 0
+        },
+        {
+          "field": "card3.labels.height",
+          "source": 82.609375,
+          "local": 82.609375,
+          "difference": 0
+        },
+        {
+          "field": "card3.description.x",
+          "source": 728,
+          "local": 728,
+          "difference": 0
+        },
+        {
+          "field": "card3.description.y",
+          "source": 224,
+          "local": 224,
+          "difference": 0
+        },
+        {
+          "field": "card3.description.width",
+          "source": 672,
+          "local": 672,
+          "difference": 0
+        },
+        {
+          "field": "card3.description.height",
+          "source": 153.625,
+          "local": 153.625,
+          "difference": 0
+        },
+        {
+          "field": "card3.number.x",
+          "source": 1652.15625,
+          "local": 1652.15625,
+          "difference": 0
+        },
+        {
+          "field": "card3.number.y",
+          "source": 821,
+          "local": 821,
+          "difference": 0
+        },
+        {
+          "field": "card3.number.width",
+          "source": 131.84375,
+          "local": 131.84375,
+          "difference": 0
+        },
+        {
+          "field": "card3.number.height",
+          "source": 128,
+          "local": 128,
+          "difference": 0
+        },
+        {
+          "field": "card3.price.x",
+          "source": 728,
+          "local": 728,
+          "difference": 0
+        },
+        {
+          "field": "card3.price.y",
+          "source": 892.203125,
+          "local": 892.203125,
+          "difference": 0
+        },
+        {
+          "field": "card3.price.width",
+          "source": 916.15625,
+          "local": 916.15625,
+          "difference": 0
+        },
+        {
+          "field": "card3.price.height",
+          "source": 56.796875,
+          "local": 56.796875,
+          "difference": 0
+        },
+        {
+          "field": "card3.labelCount",
+          "source": 5,
+          "local": 5,
+          "difference": 0
+        },
+        {
+          "field": "card4.media.x",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "card4.media.y",
+          "source": 0,
+          "local": 0,
+          "difference": 0
+        },
+        {
+          "field": "card4.media.width",
+          "source": 600,
+          "local": 600,
+          "difference": 0
+        },
+        {
+          "field": "card4.media.height",
+          "source": 1013,
+          "local": 1013,
+          "difference": 0
+        },
+        {
+          "field": "card4.labels.x",
+          "source": 1464,
+          "local": 1464,
+          "difference": 0
+        },
+        {
+          "field": "card4.labels.y",
+          "source": 74,
+          "local": 74,
+          "difference": 0
+        },
+        {
+          "field": "card4.labels.width",
+          "source": 320,
+          "local": 320,
+          "difference": 0
+        },
+        {
+          "field": "card4.labels.height",
+          "source": 54.40625,
+          "local": 54.40625,
+          "difference": 0
+        },
+        {
+          "field": "card4.description.x",
+          "source": 728,
+          "local": 728,
+          "difference": 0
+        },
+        {
+          "field": "card4.description.y",
+          "source": 224,
+          "local": 224,
+          "difference": 0
+        },
+        {
+          "field": "card4.description.width",
+          "source": 672,
+          "local": 672,
+          "difference": 0
+        },
+        {
+          "field": "card4.description.height",
+          "source": 192.03125,
+          "local": 192.03125,
+          "difference": 0
+        },
+        {
+          "field": "card4.number.x",
+          "source": 1652.15625,
+          "local": 1652.15625,
+          "difference": 0
+        },
+        {
+          "field": "card4.number.y",
+          "source": 821,
+          "local": 821,
+          "difference": 0
+        },
+        {
+          "field": "card4.number.width",
+          "source": 131.84375,
+          "local": 131.84375,
+          "difference": 0
+        },
+        {
+          "field": "card4.number.height",
+          "source": 128,
+          "local": 128,
+          "difference": 0
+        },
+        {
+          "field": "card4.price.x",
+          "source": 728,
+          "local": 728,
+          "difference": 0
+        },
+        {
+          "field": "card4.price.y",
+          "source": 892.203125,
+          "local": 892.203125,
+          "difference": 0
+        },
+        {
+          "field": "card4.price.width",
+          "source": 916.15625,
+          "local": 916.15625,
+          "difference": 0
+        },
+        {
+          "field": "card4.price.height",
+          "source": 56.796875,
+          "local": 56.796875,
+          "difference": 0
+        },
+        {
+          "field": "card4.labelCount",
+          "source": 4,
+          "local": 4,
+          "difference": 0
+        }
+      ]
+    },
+    "source": {
+      "cards": [
+        {
+          "image": {
+            "color": "rgb(0, 0, 0)",
+            "display": "inline",
+            "flex": "0 1 auto",
+            "font": "12px sans-serif",
+            "fontSize": "12px",
+            "gap": "normal",
+            "height": 1013,
+            "lineHeight": "normal",
+            "overflow": "clip",
+            "padding": "0px",
+            "width": 600,
+            "x": 800,
+            "y": 0
+          },
+          "imageSrc": "https://framerusercontent.com/images/IxJ8jNad7cp8qFpe1yU6xRMYdM.png?width=1024&height=1536",
+          "title": {
+            "color": "rgb(244, 240, 232)",
+            "display": "block",
+            "flex": "0 1 auto",
+            "font": "",
+            "fontSize": "60px",
+            "gap": "normal",
+            "height": 66,
+            "lineHeight": "66px",
+            "overflow": "visible",
+            "padding": "0px",
+            "width": 1056,
+            "x": 1528,
+            "y": 64
+          }
+        },
+        {
+          "image": {
+            "color": "rgb(0, 0, 0)",
+            "display": "inline",
+            "flex": "0 1 auto",
+            "font": "12px sans-serif",
+            "fontSize": "12px",
+            "gap": "normal",
+            "height": 1013,
+            "lineHeight": "normal",
+            "overflow": "clip",
+            "padding": "0px",
+            "width": 600,
+            "x": 2712,
+            "y": 0
+          },
+          "imageSrc": "https://framerusercontent.com/images/TEPXuqDtmHLDLbfzRqv27b5U7M.png?width=1024&height=1536",
+          "title": {
+            "color": "rgb(244, 240, 232)",
+            "display": "block",
+            "flex": "0 1 auto",
+            "font": "",
+            "fontSize": "60px",
+            "gap": "normal",
+            "height": 66,
+            "lineHeight": "66px",
+            "overflow": "visible",
+            "padding": "0px",
+            "width": 1056,
+            "x": 3440,
+            "y": 64
+          }
+        },
+        {
+          "image": {
+            "color": "rgb(0, 0, 0)",
+            "display": "inline",
+            "flex": "0 1 auto",
+            "font": "12px sans-serif",
+            "fontSize": "12px",
+            "gap": "normal",
+            "height": 1013,
+            "lineHeight": "normal",
+            "overflow": "clip",
+            "padding": "0px",
+            "width": 600,
+            "x": 4624,
+            "y": 0
+          },
+          "imageSrc": "https://framerusercontent.com/images/1B5oO5DK3gUDDEAT1BidPMnnA.png?width=1024&height=1536",
+          "title": {
+            "color": "rgb(244, 240, 232)",
+            "display": "block",
+            "flex": "0 1 auto",
+            "font": "",
+            "fontSize": "60px",
+            "gap": "normal",
+            "height": 66,
+            "lineHeight": "66px",
+            "overflow": "visible",
+            "padding": "0px",
+            "width": 1056,
+            "x": 5352,
+            "y": 64
+          }
+        },
+        {
+          "image": {
+            "color": "rgb(0, 0, 0)",
+            "display": "inline",
+            "flex": "0 1 auto",
+            "font": "12px sans-serif",
+            "fontSize": "12px",
+            "gap": "normal",
+            "height": 1013,
+            "lineHeight": "normal",
+            "overflow": "clip",
+            "padding": "0px",
+            "width": 600,
+            "x": 6536,
+            "y": 0
+          },
+          "imageSrc": "https://framerusercontent.com/images/AZDsREBLxvrKisXZuBrgmhaucg.png?width=1024&height=1536",
+          "title": {
+            "color": "rgb(244, 240, 232)",
+            "display": "block",
+            "flex": "0 1 auto",
+            "font": "",
+            "fontSize": "60px",
+            "gap": "normal",
+            "height": 66,
+            "lineHeight": "66px",
+            "overflow": "visible",
+            "padding": "0px",
+            "width": 1056,
+            "x": 7264,
+            "y": 64
+          }
+        }
+      ],
+      "children": [
+        {
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "flex": "0 0 auto",
+          "font": "12px sans-serif",
+          "fontSize": "12px",
+          "gap": "normal",
+          "height": 1013,
+          "lineHeight": "normal",
+          "overflow": "visible",
+          "padding": "40px 0px 40px 80px",
+          "width": 800,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "color": "rgb(0, 0, 0)",
+          "display": "block",
+          "flex": "0 0 auto",
+          "font": "12px sans-serif",
+          "fontSize": "12px",
+          "gap": "normal",
+          "height": 1013,
+          "lineHeight": "normal",
+          "overflow": "visible",
+          "padding": "0px",
+          "width": 1912,
+          "x": 800,
+          "y": 0
+        },
+        {
+          "color": "rgb(0, 0, 0)",
+          "display": "block",
+          "flex": "0 0 auto",
+          "font": "12px sans-serif",
+          "fontSize": "12px",
+          "gap": "normal",
+          "height": 1013,
+          "lineHeight": "normal",
+          "overflow": "visible",
+          "padding": "0px",
+          "width": 1912,
+          "x": 2712,
+          "y": 0
+        },
+        {
+          "color": "rgb(0, 0, 0)",
+          "display": "block",
+          "flex": "0 0 auto",
+          "font": "12px sans-serif",
+          "fontSize": "12px",
+          "gap": "normal",
+          "height": 1013,
+          "lineHeight": "normal",
+          "overflow": "visible",
+          "padding": "0px",
+          "width": 1912,
+          "x": 4624,
+          "y": 0
+        },
+        {
+          "color": "rgb(0, 0, 0)",
+          "display": "block",
+          "flex": "0 0 auto",
+          "font": "12px sans-serif",
+          "fontSize": "12px",
+          "gap": "normal",
+          "height": 1013,
+          "lineHeight": "normal",
+          "overflow": "visible",
+          "padding": "0px",
+          "width": 1912,
+          "x": 6536,
+          "y": 0
+        }
+      ],
+      "intro": {
+        "label": {
+          "color": "rgb(244, 240, 232)",
+          "display": "block",
+          "flex": "0 1 auto",
+          "font": "",
+          "fontSize": "12px",
+          "gap": "normal",
+          "height": 13.203125,
+          "lineHeight": "13.2px",
+          "overflow": "visible",
+          "padding": "0px",
+          "text": "Al bar",
+          "width": 40.171875,
+          "x": 88,
+          "y": 42.796875
+        },
+        "title": {
+          "color": "rgb(244, 240, 232)",
+          "display": "block",
+          "flex": "0 1 auto",
+          "font": "",
+          "fontSize": "128px",
+          "gap": "normal",
+          "height": 384,
+          "lineHeight": "128px",
+          "overflow": "visible",
+          "padding": "0px",
+          "text": "Un’altra, poi vediamo.",
+          "width": 720,
+          "x": 80,
+          "y": 589
+        }
+      },
+      "root": {
+        "color": "rgb(0, 0, 0)",
+        "display": "flex",
+        "flex": "0 0 auto",
+        "font": "12px sans-serif",
+        "fontSize": "12px",
+        "gap": "0px",
+        "height": 1013,
+        "lineHeight": "normal",
+        "overflow": "visible",
+        "padding": "0px",
+        "width": 8448,
+        "x": 0,
+        "y": 0
+      },
+      "scale": 0.5
+    },
+    "local": {
+      "cards": [
+        {
+          "id": "1",
+          "image": {
+            "color": "rgb(244, 240, 232)",
+            "display": "block",
+            "flex": "0 1 auto",
+            "font": "20px / 28px \"Funnel Sans\", sans-serif",
+            "fontSize": "20px",
+            "gap": "normal",
+            "height": 1013,
+            "lineHeight": "28px",
+            "overflow": "clip",
+            "padding": "0px",
+            "width": 900,
+            "x": 542.1875,
+            "y": 0
+          },
+          "imageSrc": "https://framerusercontent.com/images/IxJ8jNad7cp8qFpe1yU6xRMYdM.png",
+          "title": {
+            "color": "rgb(244, 240, 232)",
+            "display": "block",
+            "flex": "0 1 auto",
+            "font": "",
+            "fontSize": "60px",
+            "gap": "normal",
+            "height": 66,
+            "lineHeight": "66px",
+            "overflow": "visible",
+            "padding": "0px",
+            "width": 1056,
+            "x": 1528,
+            "y": 64
+          }
+        },
+        {
+          "id": "2",
+          "image": {
+            "color": "rgb(244, 240, 232)",
+            "display": "block",
+            "flex": "0 1 auto",
+            "font": "20px / 28px \"Funnel Sans\", sans-serif",
+            "fontSize": "20px",
+            "gap": "normal",
+            "height": 1013,
+            "lineHeight": "28px",
+            "overflow": "clip",
+            "padding": "0px",
+            "width": 900,
+            "x": 2006.0625,
+            "y": 0
+          },
+          "imageSrc": "https://framerusercontent.com/images/TEPXuqDtmHLDLbfzRqv27b5U7M.png",
+          "title": {
+            "color": "rgb(244, 240, 232)",
+            "display": "block",
+            "flex": "0 1 auto",
+            "font": "",
+            "fontSize": "60px",
+            "gap": "normal",
+            "height": 66,
+            "lineHeight": "66px",
+            "overflow": "visible",
+            "padding": "0px",
+            "width": 1056,
+            "x": 3440,
+            "y": 64
+          }
+        },
+        {
+          "id": "3",
+          "image": {
+            "color": "rgb(244, 240, 232)",
+            "display": "block",
+            "flex": "0 1 auto",
+            "font": "20px / 28px \"Funnel Sans\", sans-serif",
+            "fontSize": "20px",
+            "gap": "normal",
+            "height": 1013,
+            "lineHeight": "28px",
+            "overflow": "clip",
+            "padding": "0px",
+            "width": 900,
+            "x": 3469.9375,
+            "y": 0
+          },
+          "imageSrc": "https://framerusercontent.com/images/1B5oO5DK3gUDDEAT1BidPMnnA.png",
+          "title": {
+            "color": "rgb(244, 240, 232)",
+            "display": "block",
+            "flex": "0 1 auto",
+            "font": "",
+            "fontSize": "60px",
+            "gap": "normal",
+            "height": 66,
+            "lineHeight": "66px",
+            "overflow": "visible",
+            "padding": "0px",
+            "width": 1056,
+            "x": 5352,
+            "y": 64
+          }
+        },
+        {
+          "id": "4",
+          "image": {
+            "color": "rgb(244, 240, 232)",
+            "display": "block",
+            "flex": "0 1 auto",
+            "font": "20px / 28px \"Funnel Sans\", sans-serif",
+            "fontSize": "20px",
+            "gap": "normal",
+            "height": 1013,
+            "lineHeight": "28px",
+            "overflow": "clip",
+            "padding": "0px",
+            "width": 900,
+            "x": 4933.8125,
+            "y": 0
+          },
+          "imageSrc": "https://framerusercontent.com/images/AZDsREBLxvrKisXZuBrgmhaucg.png",
+          "title": {
+            "color": "rgb(244, 240, 232)",
+            "display": "block",
+            "flex": "0 1 auto",
+            "font": "",
+            "fontSize": "60px",
+            "gap": "normal",
+            "height": 66,
+            "lineHeight": "66px",
+            "overflow": "visible",
+            "padding": "0px",
+            "width": 1056,
+            "x": 7264,
+            "y": 64
+          }
+        }
+      ],
+      "children": [
+        {
+          "color": "rgb(244, 240, 232)",
+          "display": "flex",
+          "flex": "0 0 800px",
+          "font": "20px / 28px \"Funnel Sans\", sans-serif",
+          "fontSize": "20px",
+          "gap": "normal",
+          "height": 1013,
+          "lineHeight": "28px",
+          "overflow": "visible",
+          "padding": "40px 0px 40px 80px",
+          "width": 800,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "color": "rgb(244, 240, 232)",
+          "display": "flex",
+          "flex": "0 0 1912px",
+          "font": "20px / 28px \"Funnel Sans\", sans-serif",
+          "fontSize": "20px",
+          "gap": "0px",
+          "height": 1013,
+          "lineHeight": "28px",
+          "overflow": "clip",
+          "padding": "0px",
+          "width": 1912,
+          "x": 800,
+          "y": 0
+        },
+        {
+          "color": "rgb(244, 240, 232)",
+          "display": "flex",
+          "flex": "0 0 1912px",
+          "font": "20px / 28px \"Funnel Sans\", sans-serif",
+          "fontSize": "20px",
+          "gap": "0px",
+          "height": 1013,
+          "lineHeight": "28px",
+          "overflow": "clip",
+          "padding": "0px",
+          "width": 1912,
+          "x": 2712,
+          "y": 0
+        },
+        {
+          "color": "rgb(244, 240, 232)",
+          "display": "flex",
+          "flex": "0 0 1912px",
+          "font": "20px / 28px \"Funnel Sans\", sans-serif",
+          "fontSize": "20px",
+          "gap": "0px",
+          "height": 1013,
+          "lineHeight": "28px",
+          "overflow": "clip",
+          "padding": "0px",
+          "width": 1912,
+          "x": 4624,
+          "y": 0
+        },
+        {
+          "color": "rgb(244, 240, 232)",
+          "display": "flex",
+          "flex": "0 0 1912px",
+          "font": "20px / 28px \"Funnel Sans\", sans-serif",
+          "fontSize": "20px",
+          "gap": "0px",
+          "height": 1013,
+          "lineHeight": "28px",
+          "overflow": "clip",
+          "padding": "0px",
+          "width": 1912,
+          "x": 6536,
+          "y": 0
+        }
+      ],
+      "intro": {
+        "label": {
+          "color": "rgb(244, 240, 232)",
+          "display": "block",
+          "flex": "0 1 auto",
+          "font": "",
+          "fontSize": "12px",
+          "gap": "normal",
+          "height": 13.203125,
+          "lineHeight": "13.2px",
+          "overflow": "visible",
+          "padding": "0px",
+          "text": "Al bar",
+          "width": 40.171875,
+          "x": 88,
+          "y": 42.796875
+        },
+        "title": {
+          "color": "rgb(244, 240, 232)",
+          "display": "block",
+          "flex": "0 0 auto",
+          "font": "",
+          "fontSize": "128px",
+          "gap": "normal",
+          "height": 384,
+          "lineHeight": "128px",
+          "overflow": "visible",
+          "padding": "0px",
+          "text": "Un’altra, poi vediamo.",
+          "width": 720,
+          "x": 80,
+          "y": 589
+        }
+      },
+      "root": {
+        "color": "rgb(244, 240, 232)",
+        "display": "flex",
+        "flex": "0 0 auto",
+        "font": "20px / 28px \"Funnel Sans\", sans-serif",
+        "fontSize": "20px",
+        "gap": "0px",
+        "height": 1013,
+        "lineHeight": "28px",
+        "overflow": "visible",
+        "padding": "0px",
+        "width": 8448,
+        "x": 0,
+        "y": 0
+      }
+    },
+    "cardFrames": {
+      "source": [
+        {
+          "description": {
+            "height": 192.03125,
+            "width": 672,
+            "x": 728,
+            "y": 224
+          },
+          "labelCount": 6,
+          "labels": {
+            "height": 82.609375,
+            "width": 320,
+            "x": 1464,
+            "y": 74
+          },
+          "media": {
+            "height": 1013,
+            "width": 600,
+            "x": 0,
+            "y": 0
+          },
+          "number": {
+            "height": 128,
+            "width": 131.84375,
+            "x": 1652.15625,
+            "y": 821
+          },
+          "price": {
+            "height": 56.796875,
+            "width": 916.15625,
+            "x": 728,
+            "y": 892.203125
+          }
+        },
+        {
+          "description": {
+            "height": 192.03125,
+            "width": 672,
+            "x": 728,
+            "y": 224
+          },
+          "labelCount": 6,
+          "labels": {
+            "height": 82.609375,
+            "width": 320,
+            "x": 1464,
+            "y": 74
+          },
+          "media": {
+            "height": 1013,
+            "width": 600,
+            "x": 0,
+            "y": 0
+          },
+          "number": {
+            "height": 128,
+            "width": 131.84375,
+            "x": 1652.15625,
+            "y": 821
+          },
+          "price": {
+            "height": 56.796875,
+            "width": 916.15625,
+            "x": 728,
+            "y": 892.203125
+          }
+        },
+        {
+          "description": {
+            "height": 153.625,
+            "width": 672,
+            "x": 728,
+            "y": 224
+          },
+          "labelCount": 5,
+          "labels": {
+            "height": 82.609375,
+            "width": 320,
+            "x": 1464,
+            "y": 74
+          },
+          "media": {
+            "height": 1013,
+            "width": 600,
+            "x": 0,
+            "y": 0
+          },
+          "number": {
+            "height": 128,
+            "width": 131.84375,
+            "x": 1652.15625,
+            "y": 821
+          },
+          "price": {
+            "height": 56.796875,
+            "width": 916.15625,
+            "x": 728,
+            "y": 892.203125
+          }
+        },
+        {
+          "description": {
+            "height": 192.03125,
+            "width": 672,
+            "x": 728,
+            "y": 224
+          },
+          "labelCount": 4,
+          "labels": {
+            "height": 54.40625,
+            "width": 320,
+            "x": 1464,
+            "y": 74
+          },
+          "media": {
+            "height": 1013,
+            "width": 600,
+            "x": 0,
+            "y": 0
+          },
+          "number": {
+            "height": 128,
+            "width": 131.84375,
+            "x": 1652.15625,
+            "y": 821
+          },
+          "price": {
+            "height": 56.796875,
+            "width": 916.15625,
+            "x": 728,
+            "y": 892.203125
+          }
+        }
+      ],
+      "local": [
+        {
+          "description": {
+            "height": 192.03125,
+            "width": 672,
+            "x": 728,
+            "y": 224
+          },
+          "labelCount": 6,
+          "labels": {
+            "height": 82.609375,
+            "width": 320,
+            "x": 1464,
+            "y": 74
+          },
+          "media": {
+            "height": 1013,
+            "width": 600,
+            "x": 0,
+            "y": 0
+          },
+          "number": {
+            "height": 128,
+            "width": 131.84375,
+            "x": 1652.15625,
+            "y": 821
+          },
+          "price": {
+            "height": 56.796875,
+            "width": 916.15625,
+            "x": 728,
+            "y": 892.203125
+          }
+        },
+        {
+          "description": {
+            "height": 192.03125,
+            "width": 672,
+            "x": 728,
+            "y": 224
+          },
+          "labelCount": 6,
+          "labels": {
+            "height": 82.609375,
+            "width": 320,
+            "x": 1464,
+            "y": 74
+          },
+          "media": {
+            "height": 1013,
+            "width": 600,
+            "x": 0,
+            "y": 0
+          },
+          "number": {
+            "height": 128,
+            "width": 131.84375,
+            "x": 1652.15625,
+            "y": 821
+          },
+          "price": {
+            "height": 56.796875,
+            "width": 916.15625,
+            "x": 728,
+            "y": 892.203125
+          }
+        },
+        {
+          "description": {
+            "height": 153.625,
+            "width": 672,
+            "x": 728,
+            "y": 224
+          },
+          "labelCount": 5,
+          "labels": {
+            "height": 82.609375,
+            "width": 320,
+            "x": 1464,
+            "y": 74
+          },
+          "media": {
+            "height": 1013,
+            "width": 600,
+            "x": 0,
+            "y": 0
+          },
+          "number": {
+            "height": 128,
+            "width": 131.84375,
+            "x": 1652.15625,
+            "y": 821
+          },
+          "price": {
+            "height": 56.796875,
+            "width": 916.15625,
+            "x": 728,
+            "y": 892.203125
+          }
+        },
+        {
+          "description": {
+            "height": 192.03125,
+            "width": 672,
+            "x": 728,
+            "y": 224
+          },
+          "labelCount": 4,
+          "labels": {
+            "height": 54.40625,
+            "width": 320,
+            "x": 1464,
+            "y": 74
+          },
+          "media": {
+            "height": 1013,
+            "width": 600,
+            "x": 0,
+            "y": 0
+          },
+          "number": {
+            "height": 128,
+            "width": 131.84375,
+            "x": 1652.15625,
+            "y": 821
+          },
+          "price": {
+            "height": 56.796875,
+            "width": 916.15625,
+            "x": 728,
+            "y": 892.203125
+          }
+        }
+      ]
+    },
+    "cases": [
+      {
+        "name": "empty plus null slot",
+        "geometry": {
+          "height": 1013,
+          "ids": [],
+          "width": 800
+        }
+      },
+      {
+        "name": "1 items",
+        "geometry": {
+          "cards": [
+            {
+              "height": 1013,
+              "id": "1",
+              "shrink": "0",
+              "width": 1912,
+              "x": 800,
+              "y": 0
+            }
+          ],
+          "flexWrap": "nowrap",
+          "height": 1013,
+          "overflow": "visible",
+          "width": 2712
+        }
+      },
+      {
+        "name": "3 items",
+        "geometry": {
+          "cards": [
+            {
+              "height": 1013,
+              "id": "1",
+              "shrink": "0",
+              "width": 1912,
+              "x": 800,
+              "y": 0
+            },
+            {
+              "height": 1013,
+              "id": "2",
+              "shrink": "0",
+              "width": 1912,
+              "x": 2712,
+              "y": 0
+            },
+            {
+              "height": 1013,
+              "id": "3",
+              "shrink": "0",
+              "width": 1912,
+              "x": 4624,
+              "y": 0
+            }
+          ],
+          "flexWrap": "nowrap",
+          "height": 1013,
+          "overflow": "visible",
+          "width": 6536
+        }
+      },
+      {
+        "name": "5 items",
+        "geometry": {
+          "cards": [
+            {
+              "height": 1013,
+              "id": "1",
+              "shrink": "0",
+              "width": 1912,
+              "x": 800,
+              "y": 0
+            },
+            {
+              "height": 1013,
+              "id": "2",
+              "shrink": "0",
+              "width": 1912,
+              "x": 2712,
+              "y": 0
+            },
+            {
+              "height": 1013,
+              "id": "3",
+              "shrink": "0",
+              "width": 1912,
+              "x": 4624,
+              "y": 0
+            },
+            {
+              "height": 1013,
+              "id": "4",
+              "shrink": "0",
+              "width": 1912,
+              "x": 6536,
+              "y": 0
+            },
+            {
+              "height": 1013,
+              "id": "5",
+              "shrink": "0",
+              "width": 1912,
+              "x": 8448,
+              "y": 0
+            }
+          ],
+          "flexWrap": "nowrap",
+          "height": 1013,
+          "overflow": "visible",
+          "width": 10360
+        }
+      },
+      {
+        "name": "4 items",
+        "geometry": {
+          "cards": [
+            {
+              "height": 1013,
+              "id": "1",
+              "shrink": "0",
+              "width": 1912,
+              "x": 800,
+              "y": 0
+            },
+            {
+              "height": 1013,
+              "id": "2",
+              "shrink": "0",
+              "width": 1912,
+              "x": 2712,
+              "y": 0
+            },
+            {
+              "height": 1013,
+              "id": "3",
+              "shrink": "0",
+              "width": 1912,
+              "x": 4624,
+              "y": 0
+            },
+            {
+              "height": 1013,
+              "id": "4",
+              "shrink": "0",
+              "width": 1912,
+              "x": 6536,
+              "y": 0
+            }
+          ],
+          "flexWrap": "nowrap",
+          "height": 1013,
+          "overflow": "visible",
+          "width": 8448
+        }
+      },
+      {
+        "name": "middle inactive, stable targets",
+        "geometry": {
+          "ghost": false,
+          "ids": [
+            "1",
+            "3",
+            "4"
+          ],
+          "width": 6536,
+          "x": [
+            800,
+            2712,
+            4624
+          ]
+        }
+      },
+      {
+        "name": "long current content",
+        "geometry": {
+          "cards": [
+            {
+              "id": "1",
+              "width": 1912,
+              "y": 0
+            },
+            {
+              "id": "2",
+              "width": 1912,
+              "y": 0
+            },
+            {
+              "id": "3",
+              "width": 1912,
+              "y": 0
+            },
+            {
+              "id": "4",
+              "width": 1912,
+              "y": 0
+            }
+          ],
+          "descriptionHeight": 384.0625,
+          "height": 1013,
+          "title": "Una sedia in più al tavolo",
+          "width": 8448
+        }
+      },
+      {
+        "name": "parent height 700",
+        "geometry": {
+          "height": 700,
+          "heights": [
+            700,
+            700,
+            700,
+            700,
+            700
+          ]
+        }
+      },
+      {
+        "name": "standalone",
+        "geometry": {
+          "cards": 4,
+          "height": 1013,
+          "overflow": "visible",
+          "parentOverflow": "visible",
+          "scrollWidth": 8448,
+          "width": 8448
+        }
+      },
+      {
+        "name": "external overflow viewport",
+        "geometry": {
+          "overflow": "auto",
+          "scrollWidth": 8448,
+          "trackWidth": 8448,
+          "viewport": 1200
+        }
+      },
+      {
+        "name": "Tablet 810 actual iframe",
+        "geometry": {
+          "cards": [
+            {
+              "height": 1013,
+              "id": "1",
+              "layout": "row",
+              "mediaWidth": 600,
+              "titleFont": "44px",
+              "width": 1912
+            },
+            {
+              "height": 1013,
+              "id": "2",
+              "layout": "row",
+              "mediaWidth": 600,
+              "titleFont": "44px",
+              "width": 1912
+            },
+            {
+              "height": 1013,
+              "id": "3",
+              "layout": "row",
+              "mediaWidth": 600,
+              "titleFont": "44px",
+              "width": 1912
+            },
+            {
+              "height": 1013,
+              "id": "4",
+              "layout": "row",
+              "mediaWidth": 600,
+              "titleFont": "44px",
+              "width": 1912
+            }
+          ],
+          "height": 1013,
+          "introWidth": 800,
+          "titleBottom": 40,
+          "titleFont": "84px",
+          "titleHeight": 168,
+          "width": 8448,
+          "wrap": "nowrap"
+        }
+      },
+      {
+        "name": "Desktop 1440 actual iframe resize",
+        "geometry": {
+          "cards": [
+            {
+              "id": "1",
+              "width": 1912
+            },
+            {
+              "id": "2",
+              "width": 1912
+            },
+            {
+              "id": "3",
+              "width": 1912
+            },
+            {
+              "id": "4",
+              "width": 1912
+            }
+          ],
+          "height": 1013,
+          "titleFont": "128px",
+          "width": 8448
+        }
+      },
+      {
+        "name": "live resize dynamic title Tablet 810",
+        "geometry": {
+          "ids": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "title": "Un’altra, poi vediamo. Ancora una sedia.",
+          "titleFont": "84px",
+          "width": 8448
+        }
+      },
+      {
+        "name": "live resize dynamic title Desktop 1440",
+        "geometry": {
+          "ids": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "title": "Un’altra, poi vediamo. Ancora una sedia.",
+          "titleFont": "128px",
+          "width": 8448
+        }
+      }
+    ],
+    "consoleErrors": [],
+    "consoleWarnings": [],
+    "catalog": {
+      "entries": 35,
+      "newEntry": "Services Desktop Track",
+      "examples": 4,
+      "uniqueNewExampleTargets": 11
+    },
+    "artifacts": [
+      ".agent/proofs/services-desktop-track/source-canvas.png",
+      ".agent/proofs/services-desktop-track/local-home-desktop.png",
+      ".agent/proofs/services-desktop-track/local-tablet.png",
+      ".agent/proofs/services-desktop-track/catalog.png"
+    ]
+  },
+  "gates": {
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "tokensCheck": "PASS",
+    "build": "PASS",
+    "diffCheck": "PASS",
+    "automaticFrontendSuite": "not added or run per AGENTS",
+    "buildOutput": {
+      "modules": 573,
+      "cssKB": 177.96,
+      "cssGzipKB": 21.69,
+      "jsKB": 888.06,
+      "jsGzipKB": 235.75,
+      "warning": "Existing minified chunk >500kB retained"
+    }
+  },
+  "inventory": {
+    "total": 137,
+    "completed": 66,
+    "pending": 69,
+    "legacy": 2,
+    "runtime": 35,
+    "catalog": 35,
+    "partsAvailable": 58,
+    "parentServicesSection": "not-migrated",
+    "lenis": "not-migrated"
+  },
+  "finalInputProof": {
+    "at": "2026-10-08T22:10:47.767Z",
+    "count": 204,
+    "sha256": "f9a584b0447a6dcd9a1f8e85fb3a6349602307f164ca4d2d29d8f0a2cf65c45f",
+    "method": "SHA256 of sorted path NUL fileSHA newline; final runtime/config/static/source inputs, inherited prior manifest plus current files",
+    "files": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "b9100d1d60ce8ef96582440aaceecb5db43aca83ec093714ab7c6803d7a78f0f"
+      },
+      {
+        "path": "Logo/SVG/Type=Icon, background=Dark, Corner=Circle, Text=Light.svg",
+        "sha256": "175a20f4cd698f7e5dae2d323a4f2a551d9c6c71154fcc6a7276660d7c590593"
+      },
+      {
+        "path": "Logo/SVG/Type=Icon, background=Dark, Corner=Default, Text=Light.svg",
+        "sha256": "08a39e29fc8b1f84fdf59ec95c7f251e0ced369c5caa3754734da162f634e578"
+      },
+      {
+        "path": "Logo/SVG/Type=Icon, background=Dark, Corner=Rounded, Text=Light.svg",
+        "sha256": "92d7cd02e05e39ba6d51b3dec08a7a97376c95157efc21371cd5f8fd1f319d6d"
+      },
+      {
+        "path": "Logo/SVG/Type=Icon, background=Light, Corner=Circle, Text=dark.svg",
+        "sha256": "8243a7894b816963f31fb01c762e20c8e3e0440d13267c99062c5aa430b8846d"
+      },
+      {
+        "path": "Logo/SVG/Type=Icon, background=Light, Corner=Default, Text=dark.svg",
+        "sha256": "0dcc213de987eb6b405140b527c149f50a8a9f459ce1c4b7930b5edc5340e309"
+      },
+      {
+        "path": "Logo/SVG/Type=Icon, background=Light, Corner=Rounded, Text=dark.svg",
+        "sha256": "5635949a42443216f203d6e02548463599ec08d0c54b8da117db9b27b41a6dc7"
+      },
+      {
+        "path": "Logo/SVG/Type=Watermark, background=Dark, Corner=Circle, Text=Light.svg",
+        "sha256": "c8d13b59cdd5ba79ac0ded032001c02b582aca9a7593ad25e3f61e61c6b04040"
+      },
+      {
+        "path": "Logo/SVG/Type=Watermark, background=Dark, Corner=Default, Text=Light.svg",
+        "sha256": "d67b0caf2c06cdeef7598b400d2f7719c23be5d2c0b50a7dbd6b2e53dbe5149c"
+      },
+      {
+        "path": "Logo/SVG/Type=Watermark, background=Dark, Corner=Rounded, Text=Light.svg",
+        "sha256": "2c938ef07f2974fe44fccaff24733a719b7eb704055a5a8181742423163fd08f"
+      },
+      {
+        "path": "Logo/SVG/Type=Watermark, background=Light, Corner=Circle, Text=dark.svg",
+        "sha256": "81c7788af5555a8e4d7149c6025e8f57fda5c8c8df6cd1723b1f48bb1975c3d2"
+      },
+      {
+        "path": "Logo/SVG/Type=Watermark, background=Light, Corner=Default, Text=dark.svg",
+        "sha256": "81353aab360f77c18dd860e7027c0a6b17ba9556cb19910c1885335f0eadf6a1"
+      },
+      {
+        "path": "Logo/SVG/Type=Watermark, background=Light, Corner=Rounded, Text=dark.svg",
+        "sha256": "06a80ab332959763d1e404d17f2d14efebefdc8672d939691c52b405f81c2a86"
+      },
+      {
+        "path": "Logo/SVG/Type=logo, background=Dark, Corner=Circle, Text=Light.svg",
+        "sha256": "0cf770fda64e4fb70253ea65d2e8efe7ae8f8ce7de2ae428f078e890a84dc198"
+      },
+      {
+        "path": "Logo/SVG/Type=logo, background=Dark, Corner=Default, Text=Light.svg",
+        "sha256": "4e5bfa7d53a8892d9efe69e3b61f0563e97baf3085cf296a72af03e35eafd997"
+      },
+      {
+        "path": "Logo/SVG/Type=logo, background=Dark, Corner=Rounded, Text=Light.svg",
+        "sha256": "4e6623e765311cda54ee0ab3dcda272748da87f6dca9572158898b63ae96197b"
+      },
+      {
+        "path": "Logo/SVG/Type=logo, background=Light, Corner=Circle, Text=dark.svg",
+        "sha256": "a842068d742be7c7d5fc8fc90a7582e7f2f6c1178119a547a641fb3b3b388d5e"
+      },
+      {
+        "path": "Logo/SVG/Type=logo, background=Light, Corner=Default, Text=dark.svg",
+        "sha256": "fa0ee6936108d95f7eddc37008f63ad37dcff7834373e56224a6c7e2807efb00"
+      },
+      {
+        "path": "Logo/SVG/Type=logo, background=Light, Corner=Rounded, Text=dark.svg",
+        "sha256": "dfff45c7b68e0e610b00f849d0903e929aaa48cacd4d5258c94fe926907270dd"
+      },
+      {
+        "path": "Logo/SVG/Type=logo, background=Transparent, Corner=None, Text=Light.svg",
+        "sha256": "c319329c1bcb89abbaf4eb9a96f6b721f3026248b15c5c0258acb083e3a50d3f"
+      },
+      {
+        "path": "Logo/SVG/Type=logo, background=Transparent, Corner=None, Text=dark.svg",
+        "sha256": "a5e38250716c8961963feee8c4c0112cebceb6eb6b9a2c9b19c0ff38f286a8d0"
+      },
+      {
+        "path": "docs/framer/component-inventory.json",
+        "sha256": "4dc97e0d2bfb4a32c9d8339c328f372be1dcf422d4020b30bc1323ce2a334a32"
+      },
+      {
+        "path": "docs/framer/geometry-audit.json",
+        "sha256": "0c3a4cf4c6a2528968345375de48b9a455e3613c137c133dcc55bf1fc2f57ca7"
+      },
+      {
+        "path": "docs/framer/geometry-source.json",
+        "sha256": "ce95f507365cc3dc0b659e5e59ef023b7aaa838dd2a6776096a4c4e6571c19bb"
+      },
+      {
+        "path": "docs/framer/hardcoded-audit.json",
+        "sha256": "ff6ac41e61c3a2a6771bbafcaa56b22d1f38edca43ce0c8b57e72e17b617c70e"
+      },
+      {
+        "path": "docs/framer/project-card-final-read.json",
+        "sha256": "e4b850399b0965575fcac2c61c44700b8be67c74aabe1faa7c706e02bac435a8"
+      },
+      {
+        "path": "docs/framer/project-card-source.json",
+        "sha256": "01ea804c55a6d9840feec4620cab0f4670366c8dced4e837c13159b8587e600e"
+      },
+      {
+        "path": "docs/framer/services-desktop-track-home-source.json",
+        "sha256": "88f4433073fe4bdac5ddd0a11380b1794b6e0c92d898966adf23909988162d74"
+      },
+      {
+        "path": "docs/framer/services-desktop-track-resolved-slot.json",
+        "sha256": "e7c2fefb606b62abc982a1ffd4c0754f9792c878f40e315e38ceebc7cb6ca271"
+      },
+      {
+        "path": "docs/framer/services-desktop-track-source-unchanged.json",
+        "sha256": "dbea4b2f9dc083c7196f90fbceaaa2e8ecf6ac81864277f4cacf1401f1977ead"
+      },
+      {
+        "path": "docs/framer/services-desktop-track-source.json",
+        "sha256": "78f83ab7dff7f0a1669ecdaa77caf9361b6bd36054c7dfa0ac317ffc78ed3cc7"
+      },
+      {
+        "path": "docs/framer/testimonials-section-final-read.json",
+        "sha256": "8ead5cf09b7b93622e125a6914b3ff65c99412f6d9cb6ec35f4c1a61e83d264d"
+      },
+      {
+        "path": "docs/framer/testimonials-section-runtime.js",
+        "sha256": "01f366ae58ff6b71aa623987a4d423005ff648f5d527da5d659a0d07271aa144"
+      },
+      {
+        "path": "docs/framer/testimonials-section-source.json",
+        "sha256": "0983e6fb41b039cd19ee7bf6fe45b8d3ea2b2fcad9aec62200b807a60897cff5"
+      },
+      {
+        "path": "docs/framer/token-policy.json",
+        "sha256": "ffeb47478ea041d55c9f10445107d38c961bdd6e3fc31f71f22214507ac3f67e"
+      },
+      {
+        "path": "docs/framer/token-source.json",
+        "sha256": "91c309cbcbc998913c404d0c032e601a777ffe313b3455a804274e9ad5bd4012"
+      },
+      {
+        "path": "index.html",
+        "sha256": "68dbf94d63a2dc6a2e9710804ddfeca0b1a489df1044ddf6c2221bec7271cf26"
+      },
+      {
+        "path": "package.json",
+        "sha256": "a601b546c98c0bad2a6e49b56080aade2d8c56fa12dd54953b4354a7d7170e15"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "sha256": "244ef4200c5af9560069d0a7375cc3b324181b552d3e3e24305d896be80fcb15"
+      },
+      {
+        "path": "public/fonts/funnel-display-600-normal.woff2",
+        "sha256": "0eb50930cbadee5871422774e228fe11d0d2fbcf53c69e52a59fd9fd1f1a0d3c"
+      },
+      {
+        "path": "public/fonts/funnel-display-800-normal.woff2",
+        "sha256": "76d9900b48ce832f407756ef281d22d2873dd23d6340b06df59b6ff5d71612e4"
+      },
+      {
+        "path": "public/fonts/funnel-display-OFL.txt",
+        "sha256": "48033806679b740fa27d25f4a16946f48285de6fd144a8ab24b93f163845718a"
+      },
+      {
+        "path": "public/fonts/funnel-sans-400-italic.woff2",
+        "sha256": "e5d6074b15b7672d491704d3ba40af0cb2e20b1c57c1bf99de0783cbfaf26daa"
+      },
+      {
+        "path": "public/fonts/funnel-sans-400-normal.woff2",
+        "sha256": "89eb0ff8e0896d5cc9c91fd43c29828da93a9517955129fe5f390759afac9ac7"
+      },
+      {
+        "path": "public/fonts/funnel-sans-600-italic.woff2",
+        "sha256": "87538f38352e86c372ad3301bc4ac0626398c553e29afca74dd3a50b2dbb5dd5"
+      },
+      {
+        "path": "public/fonts/funnel-sans-600-normal.woff2",
+        "sha256": "53c595beb5ae285bbba974362953b9f823c697753200e183380bbeab250f3192"
+      },
+      {
+        "path": "public/fonts/funnel-sans-700-italic.woff2",
+        "sha256": "aa3d4735dc5c6d421d98251035ff6794133ade221b3586cfce2c29f063e47048"
+      },
+      {
+        "path": "public/fonts/funnel-sans-700-normal.woff2",
+        "sha256": "a5326e42e54c221a0b482b21137ad8217a48295ba4397e764362f192e8f027b5"
+      },
+      {
+        "path": "public/fonts/funnel-sans-800-italic.woff2",
+        "sha256": "b69f6f2eef6065ff3f5cc5634a7e7eb08721c8bba0207fe8e9594cb01cd7884a"
+      },
+      {
+        "path": "public/fonts/funnel-sans-800-normal.woff2",
+        "sha256": "b9063a30b7d3f94b6a78e443b9567a4b4befc6d7791ab201b2839b2b0b966298"
+      },
+      {
+        "path": "public/fonts/funnel-sans-OFL.txt",
+        "sha256": "48033806679b740fa27d25f4a16946f48285de6fd144a8ab24b93f163845718a"
+      },
+      {
+        "path": "public/fonts/ibm-plex-sans-600-italic.woff2",
+        "sha256": "b5ca90658b5e340bae097b15084047194bc69881f0a36aba82cfb92203c2fd79"
+      },
+      {
+        "path": "public/fonts/ibm-plex-sans-600-normal.woff2",
+        "sha256": "48b4a50176dbc8389ab3db4824289692fbed1863541c427f89f4ca500d3f1ca8"
+      },
+      {
+        "path": "public/fonts/ibm-plex-sans-OFL.txt",
+        "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+      },
+      {
+        "path": "public/media/grain.png",
+        "sha256": "7867172cbddd0172eb2fcf5803679ab8fb337eddb8397d43c918788016181409"
+      },
+      {
+        "path": "scripts/framer/capture-geometry.js",
+        "sha256": "efcd8a6ce9f7f9ca5458ae323c0e6c8aba24fb08e325314c79fb004321e9371f"
+      },
+      {
+        "path": "scripts/framer/capture-inventory.ps1",
+        "sha256": "7820777487536dd9c28d53f848b95460eac4636c83e3ab6ed7f2851f9d4f0774"
+      },
+      {
+        "path": "scripts/framer/design-audit.mjs",
+        "sha256": "f7a072b2d89a9f8bba0b9942ea312fe24035b34494c70a50bda0b15414d9937e"
+      },
+      {
+        "path": "scripts/framer/export-inventory.js",
+        "sha256": "c73bd8b3c7556b39cd637355b86b91e7ae8550251e23cf9f1b251ecb496dc250"
+      },
+      {
+        "path": "scripts/framer/geometry.mjs",
+        "sha256": "438b0ccb39751750689a712e07eae5a4c77b9c2925fadabff0d251d442aad7ae"
+      },
+      {
+        "path": "scripts/framer/hardcodes.mjs",
+        "sha256": "8d1e6908093c9ff2874bbf69634103572f6b1140c0fdca3f5a91b0c287ab248f"
+      },
+      {
+        "path": "scripts/framer/model.mjs",
+        "sha256": "11b0c337dce3d69da0de5d27a1402c9c7910838f730cb63ab42303673487b5e0"
+      },
+      {
+        "path": "scripts/framer/project-card-fixtures.mjs",
+        "sha256": "2e5cda1215fd63800c8f3d31e1bd9cbbd08f7734d6ed7110aa52379927d78583"
+      },
+      {
+        "path": "scripts/framer/report.mjs",
+        "sha256": "969d42506cb7effc2fa9177efdb0daea3c0f7ac809a051658215cd022c1a911c"
+      },
+      {
+        "path": "scripts/framer/service-card-fixtures.mjs",
+        "sha256": "0dd342091dd362d0780105d2f7cace13501da16746a823a7b4f826bbae47306b"
+      },
+      {
+        "path": "scripts/framer/text-utilities-fixtures.mjs",
+        "sha256": "b5b19c99ee7d2399bb89c337428505d7b25d31aa42bbabba8259a735e0830fe0"
+      },
+      {
+        "path": "scripts/framer/tokens.mjs",
+        "sha256": "27e0bf25f82053bf27d9a2cdb6e55bbc9b4314cdad1162c5bf9f1bfb4195ad80"
+      },
+      {
+        "path": "src/app/App.css",
+        "sha256": "0b85d554785e272aab5bdf6e163d8237f21d1754688fe2b1d7977eb98a87b561"
+      },
+      {
+        "path": "src/app/App.tsx",
+        "sha256": "390ea915b51d0eae31f8c25afdbbf6642fd0c0b9ba22fc32eee8f662dde1979a"
+      },
+      {
+        "path": "src/components/ArrowForward.tsx",
+        "sha256": "2273618fa9e8c522c7b125a23ef3fb5988b60e14d17075f0163334642bfce1a3"
+      },
+      {
+        "path": "src/components/Button.css",
+        "sha256": "b3a2931a655ad0941f5adeb7358828fa4001d6e44291ef83edcb20df0b6ed414"
+      },
+      {
+        "path": "src/components/Button.tsx",
+        "sha256": "956ff9cad256e0e984ddae417c0701ea2966674aa1f5bdaf0373d5e8167739bd"
+      },
+      {
+        "path": "src/components/CategoryLabel.css",
+        "sha256": "54523e6545c1fde868806f22ab7b0370b5662d2ff8469b4c83d04d7ca358efb3"
+      },
+      {
+        "path": "src/components/CategoryLabel.tsx",
+        "sha256": "aa7746826712dcaddd30b59e0a7622889206805f7b666e11a43f5e896a38373a"
+      },
+      {
+        "path": "src/components/CategoryLabelGroup.css",
+        "sha256": "90c05a3f6b1f3b14b038cd84a4f0caa77b4fbd47ac26aaa89be0ef1cc3ca4781"
+      },
+      {
+        "path": "src/components/CategoryLabelGroup.tsx",
+        "sha256": "ba677fb7d5b31cebe658be6d36bdfcc723ffc6b23e62e155ea9eafaaaf6d91ae"
+      },
+      {
+        "path": "src/components/CircularImage.css",
+        "sha256": "8c9fb1f76b1721d92553922be44fd4e7facdda90a0ab941061a9ae8265ac1ec3"
+      },
+      {
+        "path": "src/components/CircularImage.tsx",
+        "sha256": "ec17f6239648e2b780c67ca950688c6f0db9ecdfb140a2172b3d8c2f5a139aac"
+      },
+      {
+        "path": "src/components/CommunityCard.css",
+        "sha256": "491b90b1b8b985a1557ec26d0f5fc3b11d803293348ee36a7f8393046d4f7cde"
+      },
+      {
+        "path": "src/components/CommunityCard.tsx",
+        "sha256": "10b2af93eddd683291c022fbe883f81a220bff5df306b30d71bf73df83cac13a"
+      },
+      {
+        "path": "src/components/CommunityDetails.css",
+        "sha256": "a03384226fbe69e707d5c1edb5fb1ccd3ff674576744fdd94e1800c9f2bd9274"
+      },
+      {
+        "path": "src/components/CommunityDetails.tsx",
+        "sha256": "33c7caf7ccbc8a48c72ebd764c45c211f76cd294b9b70a6dcb75563fa87dbaa9"
+      },
+      {
+        "path": "src/components/ContentHeadline.css",
+        "sha256": "69524280f3357049817b1cfe8416d182b9df63369b76ed243e7b331a823c0d96"
+      },
+      {
+        "path": "src/components/ContentHeadline.tsx",
+        "sha256": "4e6fb2b9cf4477d026ce39bf2fc7dcf0497892092b33cf9170d2d254d7faa2bc"
+      },
+      {
+        "path": "src/components/Divider.css",
+        "sha256": "8fb4bb1d6e0d38f7d250caca958076f6094c7e816e119f9cfaa3c2057b077248"
+      },
+      {
+        "path": "src/components/Divider.tsx",
+        "sha256": "fe1a7b927409e992bf40c159c439a9db1cf5a2739680f63d92ba12e101240edd"
+      },
+      {
+        "path": "src/components/FAQRow.css",
+        "sha256": "8a1010889bbc2046af06bd0d277ea9dec58549dff1dc2dcfdf40ed9a519c2277"
+      },
+      {
+        "path": "src/components/FAQRow.tsx",
+        "sha256": "99a63ffa88a115d956b36c17df4dfabb9ec50574c0d7153667e85fb135aa4a9e"
+      },
+      {
+        "path": "src/components/FAQSection.css",
+        "sha256": "90b1f9c871d732296697f76b4f3f1d697e0a756397a332a1f607bbb2ce8b164d"
+      },
+      {
+        "path": "src/components/FAQSection.tsx",
+        "sha256": "c54d58ebd1189c88f443b3c9925c3fc291599ac7bba7559cf8e5106c607da099"
+      },
+      {
+        "path": "src/components/FaqIcon.css",
+        "sha256": "78a657a4d07e9f5bce61e55cc3b9347a8d08f806e0c7c5a31ce44de82e04c5a3"
+      },
+      {
+        "path": "src/components/FaqIcon.tsx",
+        "sha256": "4f8b1739b1845784fade18b5d2bb7d8e0665e7d1f5d066bdb65a2bdeadac4d1b"
+      },
+      {
+        "path": "src/components/FormField.css",
+        "sha256": "73ef62c84d1cb47d57304c02a5e25fb3a4a84f29482347b8ec626a05e1a8fb00"
+      },
+      {
+        "path": "src/components/FormField.data.ts",
+        "sha256": "94d5c9881414348c47d96edb44a1993b14f6b4c099ed650e421955895badce87"
+      },
+      {
+        "path": "src/components/FormField.tsx",
+        "sha256": "24f3a26a8485390c89594aa7040c82fab7e44c73efff15bec122d96a0d0cbabd"
+      },
+      {
+        "path": "src/components/Grain.css",
+        "sha256": "d9379026d8bc7f61b8cb49d296cac8963f8d93e71be8b5678b1ac4b5e7359a86"
+      },
+      {
+        "path": "src/components/Grain.tsx",
+        "sha256": "59643987e6cba7d7bf7f96e8f524f34456a8ecbcfa8952ce12196b9915b1aaff"
+      },
+      {
+        "path": "src/components/Icon.css",
+        "sha256": "f87e50d9f9d5a934de8e162191e516249b1880c57b52165c8008443d79d68061"
+      },
+      {
+        "path": "src/components/Icon.registry.ts",
+        "sha256": "35f1a30c52ad06714745cc071815b6bfe8d3ead07478c9a2d634a7c1dd073576"
+      },
+      {
+        "path": "src/components/Icon.tsx",
+        "sha256": "00c99742150f963589330dee71826971a0f89d226bee10a51488ddb704d24d89"
+      },
+      {
+        "path": "src/components/ImageFill.css",
+        "sha256": "c32b122e8e14288ce2716bda75ea4ca879819b5eab38b981342d05dae2f50b0d"
+      },
+      {
+        "path": "src/components/ImageFill.tsx",
+        "sha256": "4a57a587af903f50c918fa02ac5c8a21d99fbad45292cf3dd59deadb3a812529"
+      },
+      {
+        "path": "src/components/ImageParallax.css",
+        "sha256": "6ca44af72ae0947e79f223c3d0bf8b09ca8005440d988ec6a10b31c93d73cf67"
+      },
+      {
+        "path": "src/components/ImageParallax.tsx",
+        "sha256": "37784aacda6c5f476128832958e9cdf30e5d062b616feae7c57c27fed15ad5c8"
+      },
+      {
+        "path": "src/components/ImageReveal.css",
+        "sha256": "572395767ba9820ef990b2ee4d72cdcf13550f37ca7d4dae39612f88b2afae91"
+      },
+      {
+        "path": "src/components/ImageReveal.tsx",
+        "sha256": "a4e3077fcfe8c16f72bf8e68cfa86109a5aa899d93a209efefb51895006e2372"
+      },
+      {
+        "path": "src/components/Label.css",
+        "sha256": "16d24f71499a89ed992c2f15683e5af3fb7f98f468e5e9e8dfa064c4a829ec5d"
+      },
+      {
+        "path": "src/components/Label.tsx",
+        "sha256": "8c3e775d1e8ea794dae722fddc27c90cf008d24275d77d09a553363f19b2e966"
+      },
+      {
+        "path": "src/components/LiquidHover.css",
+        "sha256": "1768e0254907acc242cfdcc8aae1ae8396f36932f330723c8a5ef05fda9642e1"
+      },
+      {
+        "path": "src/components/LiquidHover.tsx",
+        "sha256": "f110c10e4ed1ba30c8140a571da1bdb49b96b2a66f648e0fb967becc8933c5f7"
+      },
+      {
+        "path": "src/components/LoadMore.css",
+        "sha256": "a5f71aedba5b726beee73f68fcda7d1650ac4d94f3803a72c1d714889e135a4b"
+      },
+      {
+        "path": "src/components/LoadMore.tsx",
+        "sha256": "a7a7f6d269f1e2dd56cc8be8124430684883c28debfd74f2d3ed23bb6b9ab8cf"
+      },
+      {
+        "path": "src/components/MainFormButton.css",
+        "sha256": "074d631365a494253419401b413fd0a4fec0d7ed3bfb06144e6a64c014cf218d"
+      },
+      {
+        "path": "src/components/MainFormButton.state.ts",
+        "sha256": "a3ce539027417e43a8789d0cd5681b54154832b422b95080e6f9fbd43ddb6a09"
+      },
+      {
+        "path": "src/components/MainFormButton.tsx",
+        "sha256": "f391b60b9c9b89333c3dc99e0ea1f5ac0650774e6f6abc8c29666ab95a80ad82"
+      },
+      {
+        "path": "src/components/NavItem.css",
+        "sha256": "53d9a19b479bc76f4bc2a5dcbf8fd6d8ceee4e3795b772f199cf03cbfde85534"
+      },
+      {
+        "path": "src/components/NavItem.tsx",
+        "sha256": "ab2f6096f5ae82c8d674d48ea1616e0ad42f335368b8f52f756cce27448b1cd4"
+      },
+      {
+        "path": "src/components/OurStoryCard.css",
+        "sha256": "e5e937e05eb8e49f7b97faa64c4feb500e17b70122987cc2a7cdcb04e4f4671d"
+      },
+      {
+        "path": "src/components/OurStoryCard.tsx",
+        "sha256": "5bdc2768c62a16432535a58286ceeb80e76ee526049a18bfb71df733a8e14360"
+      },
+      {
+        "path": "src/components/ProcessRow.css",
+        "sha256": "4fb15a06a62232b88a0ef5c350d6172bd075b3d20df76b9393ed44d764ac6ea4"
+      },
+      {
+        "path": "src/components/ProcessRow.tsx",
+        "sha256": "c58fccada7482b206fa7720dea1fffeed396edc2e5663bb970d12adce3dacb1c"
+      },
+      {
+        "path": "src/components/ProjectCard.css",
+        "sha256": "d9778ac9019f0cc988c573416da536320c83db08125d0aae5daf547f61912b2d"
+      },
+      {
+        "path": "src/components/ProjectCard.tsx",
+        "sha256": "f31ecb26ac8b81564c610652684aec8793e29b7c8f2982451f42183b51f6559f"
+      },
+      {
+        "path": "src/components/RollingText.css",
+        "sha256": "9f6e42c05e91191296bfb4caa01290840bddc83f87681e650186a0a6d41ffc3d"
+      },
+      {
+        "path": "src/components/RollingText.tsx",
+        "sha256": "5e73e1403e39af0fd04d170a7a7812343ae808d9d1ef718d971ae750ba819adf"
+      },
+      {
+        "path": "src/components/ServiceCard.css",
+        "sha256": "5db146708a15ed26265833af71c9cc1a313ed6779a4d8a4219afa9cd35ebe367"
+      },
+      {
+        "path": "src/components/ServiceCard.tsx",
+        "sha256": "d2cded659f919435239dae9a45c5dc59f136ca14fa3804f6366fe76555c840b0"
+      },
+      {
+        "path": "src/components/ServicesDesktopTrack.css",
+        "sha256": "855f175f83ce145d9e9f85e2b6c355b85074ae44568105fe0fb698f51e15e9c9"
+      },
+      {
+        "path": "src/components/ServicesDesktopTrack.tsx",
+        "sha256": "e04a70d95a231f298488389df517ea9eb8cc012656b72c8a7480968b78d702a6"
+      },
+      {
+        "path": "src/components/SplitContent.css",
+        "sha256": "b17c20b85736e01c7259a44bdfb8ab95e11378c43b754994b9199c18fdb0c2b6"
+      },
+      {
+        "path": "src/components/SplitContent.tsx",
+        "sha256": "f475a54e395285afcf52ef185b9972a74cde98daca69220f5d4dbe92e1f85af0"
+      },
+      {
+        "path": "src/components/StatRow.css",
+        "sha256": "e57803a5342c1a7dfd1101ab4186a11d6cc26f59d0c61e2fa8866318722e1010"
+      },
+      {
+        "path": "src/components/StatRow.tsx",
+        "sha256": "0da03068738cabba2d69014ca8338631cc4fc4eeae7c487a6f67c6fca66e436a"
+      },
+      {
+        "path": "src/components/TestimonialsArrow.css",
+        "sha256": "bad33b77ee5a72902b8f27adc4ba5c112878d8734ad754c270185fb2d2b3d4c4"
+      },
+      {
+        "path": "src/components/TestimonialsArrow.tsx",
+        "sha256": "f8ff529d4b13acf0970e1df3bce8df7938c08ff6a3d0f8ef6b08ff35cc2734de"
+      },
+      {
+        "path": "src/components/TestimonialsSection.css",
+        "sha256": "90dff5f7df455e2cb07248d68af1badcda40c7835f822a54ec6087ab50c3eeb2"
+      },
+      {
+        "path": "src/components/TestimonialsSection.data.ts",
+        "sha256": "96d3b27631cae0c8024c6c5d32aaede9a0795e040896c2ffb63c5fbeb498d3bf"
+      },
+      {
+        "path": "src/components/TestimonialsSection.tsx",
+        "sha256": "66b1f7ce638daba1e789491d060d3a2cfede48bea7f3dd840a1d0359a2e0f1c8"
+      },
+      {
+        "path": "src/components/TextFitWidth.tsx",
+        "sha256": "a03044870dec34057b42d0e25763d15344a9c353ff940a418c0594f06a7552a9"
+      },
+      {
+        "path": "src/components/TextFont.ts",
+        "sha256": "a5fd0157ee3ec52ce8614c65466de7f15e013db8ec5f7365a898135248d80dd7"
+      },
+      {
+        "path": "src/components/TextStagger.tsx",
+        "sha256": "9ebf3aad15369a9c37fbfb27ac11f81f94f5f486d162737360bd25a2757c0f80"
+      },
+      {
+        "path": "src/main.tsx",
+        "sha256": "b66758b00afe2c26f0005762fa49e91bdf61077c2fc6c9e3d4e277184f8b3354"
+      },
+      {
+        "path": "src/motion/imageParallax.ts",
+        "sha256": "ebebba3b7d0fe7fc11070764fcfcdf25d5db6d79c06666372ca619d54390aff6"
+      },
+      {
+        "path": "src/motion/liquidSurface.ts",
+        "sha256": "9fab16ba25b099305c0a853cd1d48c9e62559604fe439db8ee9403563f80460b"
+      },
+      {
+        "path": "src/motion/useLineReveal.ts",
+        "sha256": "01c665019bf2916e6ffb4304feb242d3ba3e78744c0cfb1427c8746bda7e692d"
+      },
+      {
+        "path": "src/motion/useReducedMotionPreference.ts",
+        "sha256": "519f33c7970d710c8c33fefcd01bca2249c52dc9003bc4429466dba0c5ebeb1c"
+      },
+      {
+        "path": "src/motion/useTextMeasurement.ts",
+        "sha256": "c8a11bd222bc6b95edeb7b9db63fc58ce52a0e5790ea8558e5fe360e22173d44"
+      },
+      {
+        "path": "src/pages/design-system/ButtonExamples.tsx",
+        "sha256": "b02655e4bda14b4c1ace4db12f0ccfc72aabf5b07a7748a84c0cbaeff01e7144"
+      },
+      {
+        "path": "src/pages/design-system/CatalogTools.tsx",
+        "sha256": "d12b7057e9373aad4137f48d93119da414243821eb36bcc9998002f3b58215bb"
+      },
+      {
+        "path": "src/pages/design-system/CommunityCardExamples.css",
+        "sha256": "17305cfbafe88a62f7cdfaa9c0eded0cf93682f3bd4e7afd55e169fcd1f0e05a"
+      },
+      {
+        "path": "src/pages/design-system/CommunityCardExamples.data.ts",
+        "sha256": "94c168d6fcd43339edbb1444561277904387af1ae8adc39bbd33d7a53ff74556"
+      },
+      {
+        "path": "src/pages/design-system/CommunityCardExamples.tsx",
+        "sha256": "d9bbcf60bfd6aead6afe2e230ef0c5fbee87b484ff9af235d30e8ce90a3b2357"
+      },
+      {
+        "path": "src/pages/design-system/ContentFormAtomExamples.css",
+        "sha256": "4e579cd698887baa361b6bbb09944c29521fd8ccb75971c899f63cf102c27600"
+      },
+      {
+        "path": "src/pages/design-system/ContentFormAtomExamples.data.ts",
+        "sha256": "c83cd61e4f368aab8637a3eac9643ac26e684435ef375f93cc45419b1350148a"
+      },
+      {
+        "path": "src/pages/design-system/ContentFormAtomExamples.tsx",
+        "sha256": "2f1c3f21461c081ec23e33adf0b0a4762915228cc03f768951b953cbab3ff28c"
+      },
+      {
+        "path": "src/pages/design-system/DesignSystemPage.css",
+        "sha256": "3bb46a3cb6045c3ce25a99787a68a0dd42d0d718a00d95d6db141e44a1e64acb"
+      },
+      {
+        "path": "src/pages/design-system/DesignSystemPage.tsx",
+        "sha256": "fa5f9b2f1dbf1240ebe3c0c3c2109e5c6e14ed55d296e123bad00b0ea3736dd5"
+      },
+      {
+        "path": "src/pages/design-system/FAQRowExamples.css",
+        "sha256": "d638193cfd51a7711ddd0e07fbece66967def64744f6061d732c8e09cf691a1d"
+      },
+      {
+        "path": "src/pages/design-system/FAQRowExamples.data.ts",
+        "sha256": "648a90003899ecac69cbc159c5f1ec180bfc9c3910fd17466168e48157aed302"
+      },
+      {
+        "path": "src/pages/design-system/FAQRowExamples.tsx",
+        "sha256": "17886197c5d63d54b73f1162d844a1d448eede17a2df0521cab789cd7c6eaffc"
+      },
+      {
+        "path": "src/pages/design-system/FAQSectionExamples.css",
+        "sha256": "7e8f4f84eedb9221331d9c70f154012d153887738a32e26fb35ff4545f3e71a4"
+      },
+      {
+        "path": "src/pages/design-system/FAQSectionExamples.tsx",
+        "sha256": "ea1d5ab590f702a6ca69049421c3685d316c7a5dba9e7d05eb644c862081dd2d"
+      },
+      {
+        "path": "src/pages/design-system/GeometryCatalog.tsx",
+        "sha256": "aec00d05cc9ae718ecfa763df7e6275b8a5b55bd12fbb9ffae9781d7ec9e1f33"
+      },
+      {
+        "path": "src/pages/design-system/GrainExamples.css",
+        "sha256": "cc62218e4c3193398bdb8a97c75e7e31ad869c569c1fa0096ec46659122109d2"
+      },
+      {
+        "path": "src/pages/design-system/GrainExamples.tsx",
+        "sha256": "53d8e0e172b4c1ff4b4d969b844b9f3be2f6f69a6b9fa974399c05e6526b440b"
+      },
+      {
+        "path": "src/pages/design-system/ImageParallaxExamples.css",
+        "sha256": "dc069e8d7ca1e308a23dd4ac9a664dcf5b326992ffdcca391fe5302c4f8f1a29"
+      },
+      {
+        "path": "src/pages/design-system/ImageParallaxExamples.tsx",
+        "sha256": "68fc927e7c61388c275a21733e194130db4579bbef8b898e622db1170df076e0"
+      },
+      {
+        "path": "src/pages/design-system/ImageRevealExamples.tsx",
+        "sha256": "e58a12e5b1d52a1d0fed21308847ac3f1515298e417fe7a5f3efc0e2f9f66815"
+      },
+      {
+        "path": "src/pages/design-system/LoadMoreExamples.tsx",
+        "sha256": "41d6bdd4f7e9dc2e9e6a6aba5c11f97fa6449ef9605d4c37a581c2021ff785dd"
+      },
+      {
+        "path": "src/pages/design-system/MainFormButtonExamples.tsx",
+        "sha256": "56f3a87a6eb9a383bc68e28e1a25296a6532bcd4c83af3d22c28e08c50e24a78"
+      },
+      {
+        "path": "src/pages/design-system/OurStoryCardExamples.css",
+        "sha256": "2647cdef792a5cd07b04453096a133deeb106fb2c3e608caa0ae27ad93048689"
+      },
+      {
+        "path": "src/pages/design-system/OurStoryCardExamples.tsx",
+        "sha256": "7964bd3b79a13154447d2189a20608a0f9314bf54b2edad105dddf3722aba0c7"
+      },
+      {
+        "path": "src/pages/design-system/ProcessRowExamples.css",
+        "sha256": "1eb6557f9acd2f2cad96f36fd1892fd379c7f5ad741558d7f70c79ed1300b188"
+      },
+      {
+        "path": "src/pages/design-system/ProcessRowExamples.tsx",
+        "sha256": "a38abdfcb16dfe627014d2854ae079df91a13a8673ef6f6a56978d54662650c1"
+      },
+      {
+        "path": "src/pages/design-system/ProjectCardExamples.css",
+        "sha256": "67c70ecca2adb60a308126acec9abce2d77fa38fd7878b7e898cc3f84fa61665"
+      },
+      {
+        "path": "src/pages/design-system/ProjectCardExamples.data.ts",
+        "sha256": "469c870151e40b434841eca46cfbcf1339c113d48ef9774b106cf10a5ebafcbd"
+      },
+      {
+        "path": "src/pages/design-system/ProjectCardExamples.tsx",
+        "sha256": "9b12f22192caf186843218ff425aefb40b91bb68fe831ff4ee7ab5542a0d0e58"
+      },
+      {
+        "path": "src/pages/design-system/RollingTextExamples.data.ts",
+        "sha256": "135e559dc6f860ab61375ff8ff2b1d80e2f24e381a261e16d60388f0b8241950"
+      },
+      {
+        "path": "src/pages/design-system/RollingTextExamples.tsx",
+        "sha256": "fd2b4bb1b7d99e9b82469d30d8638abfc66b388d03ce92910070123281b50d12"
+      },
+      {
+        "path": "src/pages/design-system/ServiceCardExamples.css",
+        "sha256": "37f8134c28402d3276f328f2c191acdf9dd82d559c408905a8b3c0cec5886607"
+      },
+      {
+        "path": "src/pages/design-system/ServiceCardExamples.data.ts",
+        "sha256": "e18ffdcf33baf04ac43203f9e47ce7bfbc5228ef0ed6ff5a016135ac3523a286"
+      },
+      {
+        "path": "src/pages/design-system/ServiceCardExamples.tsx",
+        "sha256": "c562986c2481484e277638b554364b7f4f6256845bef8d461633055289999b30"
+      },
+      {
+        "path": "src/pages/design-system/ServicesDesktopTrackExamples.css",
+        "sha256": "27d7b26198e8fc32cdf081209f2b8a976494f57eee00082f57cd62652ef94283"
+      },
+      {
+        "path": "src/pages/design-system/ServicesDesktopTrackExamples.tsx",
+        "sha256": "729718fafab67f9a6fd6fcbd377d885595ac5c618589684ef4f79485334d17c6"
+      },
+      {
+        "path": "src/pages/design-system/SourceCatalog.tsx",
+        "sha256": "1140a31f781b69dfdd920b07ae2ab5a4067de7056535af79f42d74a0f00fc87b"
+      },
+      {
+        "path": "src/pages/design-system/TestimonialsSectionExamples.css",
+        "sha256": "519905e08c18e94b98218d88718c56e1d8fe4b4f82011d51206773e16e90b4d4"
+      },
+      {
+        "path": "src/pages/design-system/TestimonialsSectionExamples.tsx",
+        "sha256": "dc6774c5447fed1626fb6bd294e4af7dc2b8daedb608fb87ba0a21ca100ebb73"
+      },
+      {
+        "path": "src/pages/design-system/TextUtilityExamples.css",
+        "sha256": "b2f3a4a2e08b4d09a498dcb16d17d8c70b2f4fafc55fa64afed87013c8b9e26a"
+      },
+      {
+        "path": "src/pages/design-system/TextUtilityExamples.data.ts",
+        "sha256": "bd98605c3288440badb457ed2ad4d0f2b6bf52c1ac8f58e4efb1e653fbf8eaeb"
+      },
+      {
+        "path": "src/pages/design-system/TextUtilityExamples.tsx",
+        "sha256": "de8c3909420078ef612a6319f9e813b497321af567ec519b1757eef2b2fbac07"
+      },
+      {
+        "path": "src/pages/design-system/catalogIndex.ts",
+        "sha256": "b827b8c82f066366cfc7d1f6a6b772733da83dda5711412a00c71ac8658ec9be"
+      },
+      {
+        "path": "src/pages/design-system/componentExamples.ts",
+        "sha256": "854879222efd4f70310ebe647285fe018c05054f425bbc3f8f0bf7ee697d8a01"
+      },
+      {
+        "path": "src/styles/base.css",
+        "sha256": "e6a100b1ca4dab991bf0580821c6d2035cd5a505886f48642772240a807e9994"
+      },
+      {
+        "path": "src/styles/fonts.css",
+        "sha256": "edacce7d8c78f94e9e1637b83864f029bc1f2148232da624bc8d7b81b67b8e69"
+      },
+      {
+        "path": "src/styles/geometry.css",
+        "sha256": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b"
+      },
+      {
+        "path": "src/styles/geometry.ts",
+        "sha256": "0dc588e40f4f38af4a433477ee48030097eee212b0eb675c27c55cf71767d515"
+      },
+      {
+        "path": "src/styles/token.css",
+        "sha256": "fb153ef97d0a931254d40b8c98fcefa35160bc39a87da1633870276009db85fd"
+      },
+      {
+        "path": "src/styles/token.ts",
+        "sha256": "badd46b62fdbc1e4ff716712335952736092113b0658a6d9de3406cc75725876"
+      },
+      {
+        "path": "src/styles/tokens.css",
+        "sha256": "3dd0812f4446f0d91e238d75c489fc1236a54b7a0cbc88541e5fefe3177d5c7b"
+      },
+      {
+        "path": "src/styles/tokens.ts",
+        "sha256": "332968b0a8e8a69b2afad954061eb9896d9133e4548d44fc5c7c956c3e4511c0"
+      },
+      {
+        "path": "tsconfig.app.json",
+        "sha256": "5a0f245531a5671bce41b437886416f7b6a8bc213613b0bc89c6f8c03a3e5465"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha256": "ad28d132ee48d6e23917cf5827cace785d0fc01a44ca68b0dda51cc8c3fd3f52"
+      },
+      {
+        "path": "tsconfig.node.json",
+        "sha256": "36d43ab5fb39667908ec0fa9d7afeb2c3a6cc030f49099f8f4f43559e4c057f8"
+      },
+      {
+        "path": "vite.config.ts",
+        "sha256": "f58edcc886dbf642f0aad60dce0c36a378df3022aa88cec76592532b12d529cc"
+      }
+    ],
+    "finalRecheck": {
+      "at": "2026-10-08T22:13:24.054Z",
+      "stable": true,
+      "metadataCorrection": "Lenis inventory identity normalized to actual audit record"
+    }
+  },
+  "referenceDigests": [
+    {
+      "path": "docs/framer/services-desktop-track-source.json",
+      "sha256": "78f83ab7dff7f0a1669ecdaa77caf9361b6bd36054c7dfa0ac317ffc78ed3cc7"
+    },
+    {
+      "path": "docs/framer/services-desktop-track-resolved-slot.json",
+      "sha256": "e7c2fefb606b62abc982a1ffd4c0754f9792c878f40e315e38ceebc7cb6ca271"
+    },
+    {
+      "path": "docs/framer/services-desktop-track-home-source.json",
+      "sha256": "88f4433073fe4bdac5ddd0a11380b1794b6e0c92d898966adf23909988162d74"
+    },
+    {
+      "path": "docs/framer/services-desktop-track-source-unchanged.json",
+      "sha256": "dbea4b2f9dc083c7196f90fbceaaa2e8ecf6ac81864277f4cacf1401f1977ead"
+    },
+    {
+      "path": "docs/framer/component-inventory.json",
+      "sha256": "4dc97e0d2bfb4a32c9d8339c328f372be1dcf422d4020b30bc1323ce2a334a32"
+    }
+  ],
+  "limits": [
+    "Framer Lenis preview blank: source canvas composition comparison only, no transport acceptance",
+    "Canvas static img frames differ from active local inherited parallax overscan; no synchronized crop/motion claim",
+    "Two iframe checkbox UI actions unavailable; standalone inactive filtering and dynamic-title live resize independently verified",
+    "No physical device/cross-engine/screen-reader/synchronized raster/frame certification",
+    "Local source/artifacts ignored; tracked proof embeds geometry/source mapping/digests"
+  ],
+  "brainPersistence": {
+    "at": "2026-10-09",
+    "files": [
+      "03_Components/services-desktop-track.md",
+      "00_System/index.json",
+      "00_System/current-state.md",
+      "03_Components/migrated-components.md",
+      "03_Components/design-system-catalog.md",
+      "03_Components/inventory-reconciliation.md"
+    ],
+    "exactReadback": true,
+    "sessionLogAppendedAndRead": true
+  }
+}

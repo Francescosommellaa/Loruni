@@ -1,0 +1,12 @@
+.ds-services-track-viewport {
+  max-width: 100%;
+  overflow: auto;
+  background: var(--color-neutral-950);
+}
+.ds-services-track-standalone { background: var(--color-neutral-950); }
+.ds-services-track-controls { display: flex; flex-wrap: wrap; gap: 12px; padding: 12px; }
+.ds-services-track-controls > label { display: flex; gap: 8px; align-items: center; }
+.ds-services-track-comparison { background: var(--color-neutral-950); color: var(--color-neutral-50); }
+.ds-services-track-comparison .ds-services-track-controls { position: sticky; top: 0; left: 0; z-index: 5; background: var(--color-neutral-950); }
+.ds-services-track-frame-scroll { overflow: auto; max-width: 100%; }
+.ds-services-track-frame-scroll iframe { display: block; border: 0; }

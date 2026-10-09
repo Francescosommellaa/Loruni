@@ -5,10 +5,26 @@ import { GrainHeroExample } from '../pages/design-system/GrainExamples'
 import { TextUtilityComparison } from '../pages/design-system/TextUtilityExamples'
 import { ProjectCardComparison } from '../pages/design-system/ProjectCardExamples'
 import { ServiceCardComparison } from '../pages/design-system/ServiceCardExamples'
+import { ServicesDesktopTrackControls, ServicesDesktopTrackFrame } from '../pages/design-system/ServicesDesktopTrackExamples'
+import { StatsComparison, StatsFrame } from '../pages/design-system/StatsExamples'
+import { TheStoryTrackControls, TheStoryTrackFrame } from '../pages/design-system/TheStoryTrackExamples'
 import { FAQSectionControlsExample, FAQSectionFrameComparison } from '../pages/design-system/FAQSectionExamples'
+import { EventTestimonialExample, CmsCollectionsExample } from '../pages/design-system/SessionFinalExamples'
 import './App.css'
+import { TestimonialsControlsExample, TestimonialsFrameComparison } from '../pages/design-system/TestimonialsSectionExamples'
 
 export function App() {
+  const fixture = new URLSearchParams(window.location.search).get('fixture')
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && fixture === 'event-testimonial') return <EventTestimonialExample comparison />
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && fixture === 'cms-collections') return <CmsCollectionsExample comparison />
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && new URLSearchParams(window.location.search).get('fixture') === 'stats-frame') return <StatsFrame />
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && new URLSearchParams(window.location.search).get('fixture') === 'stats') return <StatsComparison />
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && new URLSearchParams(window.location.search).get('fixture') === 'the-story-track-frame') return <TheStoryTrackFrame />
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && new URLSearchParams(window.location.search).get('fixture') === 'the-story-track') return <TheStoryTrackControls comparison />
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && new URLSearchParams(window.location.search).get('fixture') === 'services-track-frame') return <ServicesDesktopTrackFrame />
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && new URLSearchParams(window.location.search).get('fixture') === 'services-track') return <ServicesDesktopTrackControls comparison />
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && new URLSearchParams(window.location.search).get('fixture') === 'testimonials-frame') return <TestimonialsFrameComparison />
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && new URLSearchParams(window.location.search).get('fixture') === 'testimonials') return <TestimonialsControlsExample comparison />
   if (window.location.pathname.replace(/\/$/, '') === '/design-system' && new URLSearchParams(window.location.search).get('fixture') === 'faq-section-frame') return <FAQSectionFrameComparison />
   if (window.location.pathname.replace(/\/$/, '') === '/design-system' && new URLSearchParams(window.location.search).get('fixture') === 'faq-section') return <FAQSectionControlsExample comparison />
   if (window.location.pathname.replace(/\/$/, '') === '/design-system' && new URLSearchParams(window.location.search).get('fixture') === 'service-card') return <ServiceCardComparison />

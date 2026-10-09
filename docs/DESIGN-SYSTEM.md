@@ -1,5 +1,9 @@
 # Catalogo vivo Loruni
 
+Services Desktop Track2026-10-09:35 real catalog entries. Four new examples reuse current ServiceCard data and one canonical track: four services, inactive item, variable-content/height/viewport controls, native Desktop/Tablet iframe. ?fixture=services-track and services-track-frame are documentation consumers only. See SERVICES-DESKTOP-TRACK.md.
+
+TestimonialsSection2026-10-08: four real examples (explicit source data, attributed Home/Esperienza, native viewport comparison and dynamic/reduced/lifecycle controls), all using one canonical Section. Existing catalog count unchanged. See TESTIMONIALS-SECTION.md.
+
 Pagina richiesta dall'utente il 2026-10-06: [design system locale](http://127.0.0.1:5173/design-system). Link anche nella schermata root. Documentazione visiva del codice attuale, distinta dal port delle pagine Framer.
 
 ## Copertura attuale
@@ -86,3 +90,15 @@ Two real Grain examples at #ds-component-grain (default0.5 and responsive Hero m
 ### FAQ Section — 2026-10-08
 
 34real component entries. FAQ Section has four real catalog examples: five source FAQs/eight slots, dynamic/exclusive/resize/reduced/lifecycle controls, answer-only empty state and native viewport iframe sandbox at ?fixture=faq-section-frame. Direct ?fixture=faq-section exposes isolated geometry and optional parent top offset for scroll verification. No product page or Layout Jump Preventer standalone entry.
+
+### The Story Track — 2026-10-09
+
+36real component entries. Three examples: real Esperienza horizontal composition, editable default/canvas/long/missing-image/standalone/viewport specimen, Desktop/Tablet iframe resize. Fixtures ?fixture=the-story-track and ?fixture=the-story-track-frame remain documentation-only; no product pages/full-section/scroll wrapper.
+
+### Stats — 2026-10-09
+
+37real entries. Stats adds3examples: currentEsperienza array, realiframe viewport390/809/810/1024/1200/1440 and string/caption controls. Existing StatRow examples share one confirmed copy dataset. ?fixture=stats and stats-frame are documentation-only, no productpage.
+
+
+### Session final — 2026-10-09
+41real entries/39component files. EventTestimonial and shared EventCardSlot/EventCollection/CommunityCollection have actual React examples with normalized current CMS input; empty/dynamic/reduced/one/missing-image/pagination/controlled-loading cases. Fixtures `?fixture=event-testimonial` and `?fixture=cms-collections` are documentation only. Existing CommunityCard examples share the same current dataset; no duplicate source-ID model or product pages. Contracts/verification/NEXT SESSION are in MIGRATION-STATUS.md and MIGRATION-STATUS-VERIFICATION.json.sessionFinal.

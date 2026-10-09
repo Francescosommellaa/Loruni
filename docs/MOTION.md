@@ -1,5 +1,7 @@
 # Animation boundaries
 
+TestimonialsSection consolidation2026-10-08 preserves source tween.3/[.82,.18,.23,.74], parent-triggered word opacity spring.5/delay index*.06 and element quote reveal threshold.5/delay.2. Keyed existing ImageReveal owns cover; shared live reduced policy completes readable content. No second carousel/scroll scheduler. See TESTIMONIALS-SECTION.md.
+
 Current: 2026-10-07. GSAP + @gsap/react + Motion installed. Motion is active in migrated UI components; ImageParallax centrally registers ScrollTrigger and one shared GSAP ticker. Scrolling remains native.
 
 | Boundary | Owner |
@@ -67,3 +69,14 @@ ServiceCard has no gesture/timeline: it selects existing ImageParallax X−50/Y0
 ### FAQ Section — 2026-10-08
 
 Motion owns content-root size projection, sibling-wrapper position projection and existing FAQRow local targets; exact canonical0.2s/ease[.44,0,.56,1]. Outer height copies projected geometry only during discrete transitions, then one intrinsic ResizeObserver sync; no second height tween or component RAF/scroll owner. Existing live reduced policy cancels projection scheduling. See FAQ-SECTION.md.
+
+### TheStoryTrack — static composition
+
+No slot timeline or animated properties. ImageParallax retains its canonical shared GSAP registration and reduced policy; TextStagger retains its measurement/inView lifecycle and source-instance delay0.1/durPerLine0.7. OurStoryCard Desktop projection remains scoped to its own targets; Icon quote is static. No new progress owner/writer. Lenis/full Our Story Section remains pending.
+
+Stats/StatRow are static markup/CSS only; uppercase is typography, no counter/inView/RAF/interaction/reduced-motion engine.
+
+
+## EventTestimonial / CMS boundary — 2026-10-09
+The existing testimonial title word-opacity algorithm is shared through motion/WordOpacityReveal.tsx; same heading/span DOM, once/threshold0, spring.5/bounce0/per-word.06, live readable reduced/failure path. Event quote uses element opacity once/threshold0 with source spring.4/delay.4, distinct from carousel quote tween.3/delay.2/threshold.5. No duplicated TextStagger, no carousel state in EventTestimonial.
+CMS adapters own no scroll transform/progress. Home Collection List source effects reference headline-trigger, successive project roots and Services: cross-section choreography belongs to the pending Home scene on native wrapper refs. ProjectCard hover retains separate image/arrow targets; future GSAP must write only the outer scene wrapper. Current metadata records the endpoints; native/local Home scene transport is not certified by this task.

@@ -32,3 +32,7 @@ Catalogo reale: otto nuove voci, due configurazioni form, tre varianti Nav e int
 Prove e input digest: CONTENT-FORM-ATOMS-VERIFICATION.json. Confronto browser a1200/810/390 e resize1199/809; misure coincidenti per headline, SplitContent, StatRow, dettaglio Community e frame contatto a parità di parent. Verifica focus/typing/email nativa, resize textarea, callback tastiera, target blank, hover/leave, MotionConfig always/user e condizioni CMS. Nessuna suite frontend eseguita, come richiesto dal progetto.
 
 Limiti di evidenza: browser disponibile, snapshot sequenziali non revisione immutabile Framer; nessun confronto sincronizzato frame per frame o matrice multi-browser. Il sito pubblico aveva media/dettagli Community precedenti: per quei casi è stato usato il canvas/preview corrente. Le pagine e i loro parent non sono portati da questa task; le misure sono confrontate in una composizione locale isolata con le stesse larghezze effettive. Nessuna differenza residua osservata negli atom dopo le correzioni.
+
+
+## Community Label Container — 2026-10-09
+Only /esperienza adB9Vb46p and replicas verified/absorbed in existing ContentHeadline labelled wrapper. One unchanged Label Community/Neutral50; explicit wrapper width100% repairs Phone fill. Flex column/center/start/auto height/existing clip; no wrapper breakpoint, inactive gap80 omitted. No new runtime/catalog entry or parent section migration. [Contract](COMMUNITY-LABEL-CONTAINER.md) and scoped proof.

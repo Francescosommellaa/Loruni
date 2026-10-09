@@ -1,11 +1,9 @@
 import { useState, useSyncExternalStore } from 'react'
 import { OurStoryCard, type OurStoryCardProps } from '../../components/OurStoryCard'
+import { realCards } from './OurStoryCardExamples.data'
 import './OurStoryCardExamples.css'
 
-const realCards = [
-  { cardTitle: 'Al tavolo', cardTextLeft: 'Arrivi con chi conosci. Al tavolo accanto qualcuno chiede se manca un giocatore. Si sposta una sedia, si rifanno le squadre. Il discorso riprende tra un turno e l’altro. Quando ti alzi, saluti anche chi prima non conoscevi.', cardTextRight: 'Puoi sederti, restare al bancone o guardare gli altri giocare. Nessun giro di presentazioni obbligatorio. A volte basta chiedere di chi è il turno. E qualcuno comincia a spiegarti tutto.', number: '01' },
-  { cardTitle: 'Eventi', cardTextLeft: 'Musica, carte, tornei. Cambia il programma, non serve cambiare compagnia. C’è chi viene per giocare e chi resta a fare il tifo. Data, ora e modalità di partecipazione sono nella scheda della serata.', cardTextRight: 'Leggi cosa succede, controlla se serve iscriversi. Puoi arrivare per una sfida e fermarti dopo l’ultima partita. O seguire la musica fino al bancone. Il calendario mette in ordine gli appuntamenti, non tutta la sera.', number: '03' },
-] as const
+
 
 const desktopQuery = '(min-width: 810px)'
 function subscribeViewport(listener: () => void) {

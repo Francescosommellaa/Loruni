@@ -1,6 +1,10 @@
+import { EventTestimonialExample, CmsCollectionsExample } from './SessionFinalExamples'
 import { createElement, useState, type ReactNode } from 'react'
+import { StatsExample, StatsFrame, StatsControls } from './StatsExamples'
+import { TheStoryTrackExample, TheStoryTrackControls, TheStoryTrackFrame } from './TheStoryTrackExamples'
 import { ProjectCardDefaultExample, ProjectCardConsumerExample, ProjectCardControlsExample } from './ProjectCardExamples'
 import { ServiceCardDefaultExample, ServiceCardSourceExample, ServiceCardControlsExample } from './ServiceCardExamples'
+import { ServicesDesktopTrackExample, ServicesDesktopTrackControls, ServicesDesktopTrackFrame } from './ServicesDesktopTrackExamples'
 import { Icon, type IconProps } from '../../components/Icon'
 import { iconNames } from '../../components/Icon.registry'
 import { Divider } from '../../components/Divider'
@@ -27,8 +31,7 @@ import { CategoryLabel } from '../../components/CategoryLabel'
 import { Label } from '../../components/Label'
 import { FaqIcon } from '../../components/FaqIcon'
 import { TestimonialsArrow, type TestimonialsArrowProps } from '../../components/TestimonialsArrow'
-import { TestimonialsSection } from '../../components/TestimonialsSection'
-import { defaultTestimonials, type Testimonials } from '../../components/TestimonialsSection.data'
+import { TestimonialsSourceExample, TestimonialsControlsExample, TestimonialsFrameComparison } from './TestimonialsSectionExamples'
 import { colors } from '../../styles/token'
 import { ProcessHomeExample, ProcessRowControlsExample } from './ProcessRowExamples'
 import { OurStoryControlsExample, OurStoryDefaultExample, OurStoryRealCardsExample } from './OurStoryCardExamples'
@@ -87,14 +90,42 @@ function TestimonialsArrowInteractionExample({ icon }: Pick<TestimonialsArrowPro
     createElement('output', { 'aria-live': 'polite' }, `Click: ${clicks}`))
 }
 
-function attributedTestimonials(): Testimonials {
-  const names = ['Ray Oldenburg', 'Bernard Suits', 'Sid Meier', 'Ray Oldenburg & Karen Christensen'] as const
-  const jobTitles = ['Sociologo · Traduzione italiana', 'Filosofo · Traduzione italiana', 'Game designer · Traduzione italiana', 'Traduzione italiana'] as const
-  const item = (index: 0 | 1 | 2 | 3) => ({ ...defaultTestimonials[index], name: names[index], jobTitle: jobTitles[index] })
-  return [item(0), item(1), item(2), item(3)]
-}
-
 export const componentExamples: readonly ComponentExample[] = [
+  { name: 'Event Testimonial', description: 'Singolo testimonial CMS Evento; quote isSet, immagine Desktop/Tablet, Quote Icon anche Phone. Nessun carousel.', source: 'Framer · /eventi/:Eventi · Testimonial', examples: [{ name: 'CMS corrente / vuoto / dinamico / reduced motion', preview: createElement(EventTestimonialExample) }] },
+  { name: 'Event Card Slot', description: 'Adapter della prima card Eventi e dei quattro consumer Home. Routing, offset, id/ref; la scena Home possiede sticky e trasformazioni tra target.', source: 'Framer · Collection List Eventi · Home / Eventi', examples: [{ name: 'Main Card · collection item', preview: createElement(CmsCollectionsExample, { initial: 'featured' }) }] },
+  { name: 'Event Collection', description: 'Lista restante e correlati Eventi. Inner ProjectCard, esclusione del corrente, responsive e pagination controllata.', source: 'Framer · /eventi · /eventi/:Eventi', examples: [{ name: 'Eventi · lista / empty / pagination', preview: createElement(CmsCollectionsExample) }] },
+  { name: 'Community Collection', description: 'Preview Esperienza/visita, elenco Community e correlati. CommunityCard, heading semantics e LoadMore originali.', source: 'Framer · Community Collection List', examples: [{ name: 'Community · lista / preview / correlati', preview: createElement(CmsCollectionsExample, { initial: 'community' }) }] },
+  {
+    name: 'Stats',
+    description: 'Section fluida di StatRow statiche: Desktop/Tablet distribuiti, Phone grid2×2; primo label compact originale. Copy fornito dal consumer.',
+    source: 'Stats · /esperienza → Stats · docs/STATS.md',
+    examples: [
+      { name: 'Esperienza · quattro contenuti correnti', preview: createElement(StatsExample) },
+      { name: 'Desktop / Tablet / Phone · browser reale', preview: createElement(StatsFrame) },
+      { name: 'Stringhe, label lungo e compact/display', preview: createElement(StatsControls) },
+    ],
+  },
+  {
+    name: 'The Story Track',
+    description: 'Slot orizzontale statico: Intro, ImageParallax, due OurStoryCard e Quote con TextStagger. Il parent possiede responsive selection e trasporto scroll.',
+    source: 'The story · Our Story Section → TheStoryTrack · docs/THE-STORY-TRACK.md',
+    examples: [
+      { name: 'Esperienza · composizione reale', preview: createElement(TheStoryTrackExample) },
+      { name: 'Default sorgente, contenuto dinamico, standalone e viewport', preview: createElement(TheStoryTrackControls) },
+      { name: 'Desktop/Tablet · resize browser reale', preview: createElement(TheStoryTrackFrame) },
+    ],
+  },
+  {
+    name: 'Services Desktop Track',
+    description: 'Content-slot statico Desktop/Tablet: intro e ServiceCard, larghezza intrinseca, item opzionali e target stabili. Il parent possiede viewport, trasporto e selezione Mobile.',
+    source: 'Desktop · Services Section → ServicesDesktopTrack · docs/SERVICES-DESKTOP-TRACK.md',
+    examples: [
+      { name: 'Home · quattro service e intro', preview: createElement(ServicesDesktopTrackExample) },
+      { name: 'Item disattivato · nessuno spazio fantasma', preview: createElement(ServicesDesktopTrackExample, { optional: true }) },
+      { name: '0–8 item, target, altezza, contenuto e viewport', preview: createElement(ServicesDesktopTrackControls) },
+      { name: 'Desktop/Tablet · browser iframe', preview: createElement(ServicesDesktopTrackFrame) },
+    ],
+  },
   {
     name: 'Service Card',
     description: 'Card responsive con Image Parallax, labels opzionali e copy price. Parent possiede visibilità, scroll, ID e dimensioni.',
@@ -324,11 +355,10 @@ export const componentExamples: readonly ComponentExample[] = [
     description: 'Section/Testimonials Section · quattro testimonial configurabili, loop precedente/successivo, griglia Desktop/Tablet e stack Phone. Reveal immagine, titolo per parole e testo con gli effetti originali.',
     source: 'Framer · Section/Testimonials Section · Desktop 1–4 / Mobile 1–4',
     examples: [
-      { name: 'Controlli predefiniti · tutti i quattro testimonial', preview: createElement('div', { style: { maxWidth: '100%', overflowX: 'auto', backgroundColor: `var(${colors.neutral50.cssVariable})` } }, createElement(TestimonialsSection)) },
-      { name: 'Home / Esperienza · override dei contenuti · larghezza del parent', preview: createElement('div', { style: { backgroundColor: `var(${colors.neutral50.cssVariable})` } }, createElement(TestimonialsSection, {
-        style: { width: '100%' },
-        testimonials: attributedTestimonials(),
-      })) },
+      { name: 'Controlli sorgente · quattro testimonial', preview: createElement(TestimonialsSourceExample, { sourceDefaults: true }) },
+      { name: 'Home / Esperienza · contenuti reali', preview: createElement(TestimonialsSourceExample) },
+      { name: 'Desktop / Tablet / Phone · consumer', preview: createElement(TestimonialsFrameComparison) },
+      { name: 'Contenuti dinamici, parent, reduced motion e lifecycle', preview: createElement(TestimonialsControlsExample) },
     ],
   },
   {

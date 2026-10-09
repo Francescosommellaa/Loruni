@@ -1,0 +1,25 @@
+.loruni-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(var(--source-grid-column-min-width-value50px), 1fr));
+  justify-content: center;
+  gap: var(--space-60) var(--space-8);
+  padding: var(--source-padding-esperienza-phone-color-container-stats);
+  width: 100%;
+  height: auto;
+  background: var(--color-brand-accent);
+}
+.loruni-stats > .loruni-stat-row {
+  flex: none;
+  width: max-content;
+}
+@media (min-width: 810px) {
+  .loruni-stats {
+    display: flex;
+    grid-template-columns: none;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: normal;
+    padding: var(--source-padding-esperienza-desktop-color-container-stats);
+  }
+}

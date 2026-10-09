@@ -11,7 +11,7 @@ Catalog-only: 3
 With variants: 24 (19 con più varianti native)
 Possible / ambiguous components: 22
 
-Data stato corrente:2026-10-08. Fonte: [progetto Framer LORUNI](https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6) e riconciliazione del codice locale. Stato:65 completed,0 to-complete,70 not-migrated,2 legacy-unused. Mapping source/runtime e confini: [MIGRATION-STATUS.md](MIGRATION-STATUS.md).
+Data stato corrente:2026-10-09. Fonte: [progetto Framer LORUNI](https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6) e riconciliazione del codice locale. Stato:80 completed,0 to-complete,55 not-migrated,2 legacy-unused. Mapping source/runtime e confini: [MIGRATION-STATUS.md](MIGRATION-STATUS.md).
 
 Metodo/copertura e schede originali sotto descrivono la cattura iniziale. Lo stato corrente e le prove dei port sono nella sezione finale delle migrazioni e nei record `migration` JSON; le limitazioni dell'audit generale non riaprono i componenti verificati successivamente.
 
@@ -32,7 +32,7 @@ La cattura strutturale iniziale era documentale, senza modifiche runtime o verif
 - **interactive**: Explicit actions/links/input/states/gesture/trigger. pointerEvents and elementID alone excluded.
 - **variants**: Native declared/recovered variants including gestures. Page breakpoint replicas are not new variants.
 
-Il repository locale contiene la shell Vite e /design-system, non le pagine prodotto migrate. Il catalogo corrente ha34voci reali e34file componenti TSX. I65record completed hanno mapping dedicato; FAQRow chiusa nella propria task, ImageReveal attestato dal suo port indipendente. Il vecchio repositoryAudit descrive il bootstrap e non lo stato runtime corrente. ID Framer = riferimenti di audit, non nomi runtime.
+Il repository locale contiene la shell Vite e /design-system, non le pagine prodotto migrate. Il catalogo corrente ha41voci reali e39file componenti TSX. Gli80record completed hanno mapping dedicato; FAQRow chiusa nella propria task, ImageReveal attestato dal suo port indipendente. Il vecchio repositoryAudit descrive il bootstrap e non lo stato runtime corrente. ID Framer = riferimenti di audit, non nomi runtime.
 
 - Acquisizione sequenziale non atomica; timestamp/hash identificano i dati letti, non una revisione immutabile Framer.
 - Logo/Testimonials Arrow: frame/figli e screenshot recuperati; risoluzione controlli icone continua a fallire.
@@ -2336,6 +2336,8 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
 <a id="component-014"></a>
 ### 014. Testimonials Section
+
+ONE TOUCH consolidated2026-10-08: required items image/title/quote/name/role, optional stableid, one modulo-length selection; fluid parent sizing and existing ImageReveal/Arrow/Icon/Divider. iconCal unused legacy.24settled comparisons across six consumers. Historical structural capture below; current contract/proof in [TESTIMONIALS-SECTION.md](TESTIMONIALS-SECTION.md).
 
 Migrazione completata: [carousel e prove aggiornate](#testimonials-section--migrazione-verificata-2026-10-06). Le otto variant e le sei istanze sono state rilette integralmente; sorgenti correnti e mapping nel record `migration` JSON.
 
@@ -7374,7 +7376,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-047"></a>
 ### 047. Lista CMS · /
 
-pattern-rG_Llb_4m · inferred-name · pattern · section · page-specific · not-migrated.
+pattern-rG_Llb_4m · inferred-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /.
 
@@ -7531,7 +7533,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-049"></a>
 ### 049. Lista CMS · /
 
-pattern-Vys401Mev · inferred-name · pattern · section · page-specific · not-migrated.
+pattern-Vys401Mev · inferred-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /.
 
@@ -7618,7 +7620,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-050"></a>
 ### 050. Lista CMS · /
 
-pattern-ZZ6z7kb1H · inferred-name · pattern · section · page-specific · not-migrated.
+pattern-ZZ6z7kb1H · inferred-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /.
 
@@ -7705,7 +7707,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-051"></a>
 ### 051. Lista CMS · /
 
-pattern-PyH9cfIM7 · inferred-name · pattern · section · page-specific · not-migrated.
+pattern-PyH9cfIM7 · inferred-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /.
 
@@ -9150,7 +9152,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-062"></a>
 ### 062. Stats · /esperienza
 
-pattern-BDsGjDpwB · original-name · pattern · section · page-specific · not-migrated.
+pattern-BDsGjDpwB · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /esperienza.
 
@@ -10088,7 +10090,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-071"></a>
 ### 071. Lista CMS · /esperienza
 
-pattern-JI34iSQE6 · inferred-name · pattern · section · page-specific · not-migrated.
+pattern-JI34iSQE6 · inferred-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /esperienza.
 
@@ -11244,7 +11246,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-081"></a>
 ### 081. Testimonial · /eventi/:Eventi
 
-pattern-EQzpqx6Vl · original-name · pattern · section · page-specific · not-migrated.
+pattern-EQzpqx6Vl · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /eventi/:Eventi.
 
@@ -11665,7 +11667,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-085"></a>
 ### 085. Lista CMS · /eventi/:Eventi
 
-pattern-whW0aCLUP · inferred-name · pattern · section · page-specific · not-migrated.
+pattern-whW0aCLUP · inferred-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /eventi/:Eventi.
 
@@ -12112,7 +12114,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-089"></a>
 ### 089. Lista CMS · /eventi
 
-pattern-X2iRXrVnI · inferred-name · pattern · section · page-specific · not-migrated.
+pattern-X2iRXrVnI · inferred-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /eventi.
 
@@ -12260,7 +12262,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-091"></a>
 ### 091. Lista CMS · /eventi
 
-pattern-Jo1JXGYo6 · inferred-name · pattern · section · page-specific · not-migrated.
+pattern-Jo1JXGYo6 · inferred-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /eventi.
 
@@ -13903,7 +13905,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-105"></a>
 ### 105. Lista CMS · /vieni-a-trovarci
 
-pattern-EWW2HEI9X · inferred-name · pattern · section · page-specific · not-migrated.
+pattern-EWW2HEI9X · inferred-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /vieni-a-trovarci.
 
@@ -14265,7 +14267,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-109"></a>
 ### 109. Lista CMS · /community
 
-pattern-zkyIqN31n · inferred-name · pattern · section · page-specific · not-migrated.
+pattern-zkyIqN31n · inferred-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /community.
 
@@ -14983,7 +14985,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-116"></a>
 ### 116. Lista CMS · /community/:Community
 
-pattern-yjtNkZRh_ · inferred-name · pattern · section · page-specific · not-migrated.
+pattern-yjtNkZRh_ · inferred-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /community/:Community.
 
@@ -16550,7 +16552,9 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-130"></a>
 ### 130. Desktop · Services Section
 
-slot-Hj3TkRU1e · original-name · content-slot · content component · page-specific · not-migrated.
+slot-Hj3TkRU1e · original-name · content-slot · content component · page-specific · completed.
+
+Current closure2026-10-09: ServicesDesktopTrack static composition only, existing Label/ServiceCard/presets/tokens, intrinsic800+n×1912 width and fill height. Original audit below remains historical. Parent Services Section/Lenis/Mobile excluded. See SERVICES-DESKTOP-TRACK.md and verification JSON.
 
 Uso:1 serializzati/1 indipendenti/0 diretti pagina-template. Pagine: /.
 
@@ -16645,7 +16649,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-131"></a>
 ### 131. The story · Our Story Section
 
-slot-ECF_um_EE · original-name · content-slot · content component · page-specific · not-migrated.
+slot-ECF_um_EE · original-name · content-slot · content component · page-specific · completed.
 
 Uso:1 serializzati/1 indipendenti/0 diretti pagina-template. Pagine: /esperienza.
 
@@ -17383,3 +17387,17 @@ Canonical ServiceCard in catalog33: all12configurations/current four Home conten
 ### FAQ Section closure — 2026-10-08
 
 Section/FAQ Section cWdeMLg1M completed; h8ioHyt4BUxuvVCE1Q10 Layout Jump Preventer completed as absorbed in FAQSection. Three contact replicas/eight slots inspected, five real questions, White Color UNUSED LEGACY CONTROL. All18 native/local final states match at1200/810/390; explicit user-exclusive policy differs from current source multi-open. No new standalone dependency. Counts65completed/70pending/2legacy,34runtime/catalog,59parts-available parents. Contract FAQ-SECTION.md; proof FAQ-SECTION-VERIFICATION.json.
+
+
+## The story content-slot — closure2026-10-09
+
+TheStoryTrack: static five-child composition,5760×1080, no wrap/shrink, gap200/right padding200. Existing Label/ImageParallax/OurStoryCard/TextStagger/Icon only.88numeric geometry fields and three Quote lines match detached source canvas. Quote instance durPerLine0.7, unrotated glyphs, whitespace preserved.67completed/68pending/2legacy;36runtime/catalog,57parts-available pending. Parent/Lenis/Mobile excluded. [Contract](THE-STORY-TRACK.md), [proof](THE-STORY-TRACK-VERIFICATION.json).
+
+
+## Stats /esperienza — closure2026-10-09
+
+Stats composition reuses existing StatRow for all four records. Three live breakpoint trees/previews confirm currentItalian copy, firstcompact caption12/FunnelSans/122 vsotherDisplay16. Flexdistributed gapnormal above810, grid2columns/gap60 8/pad60 12 below.156numeric fields and visible typography/copy equal. Source Phone fourthlabel clipping kept as ancestor responsibility.68completed/67pending/2legacy,37runtime/catalog,56partsavailable. [Contract](STATS.md), [proof](STATS-VERIFICATION.json).
+
+
+## Session final — 2026-10-09
+EventTestimonial e11pattern CMS completati nel loro scope; adapter condivisi, nessun file per frame. Home scroll scene, macro parent, routing pagine e CMS backend restano pending. Stato80completed/55pending/2legacy;39file runtime/41voci catalogo. Contratti, tabella completa dei residui e NEXT SESSION in [MIGRATION-STATUS.md](MIGRATION-STATUS.md#session-final-2026-10-09); prove e manifest nella sessionFinal di MIGRATION-STATUS-VERIFICATION.json.

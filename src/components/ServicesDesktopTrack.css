@@ -1,0 +1,37 @@
+.loruni-services-desktop-track {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  flex: none;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--component-services-section-desktop-gap);
+  width: max-content;
+  height: var(--component-services-section-desktop-height);
+  overflow: visible;
+}
+
+.loruni-services-desktop-track__intro {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 var(--component-services-section-desktop-headline-width);
+  align-items: flex-start;
+  justify-content: space-between;
+  width: var(--component-services-section-desktop-headline-width);
+  height: 100%;
+  padding: var(--component-services-section-desktop-headline-padding);
+}
+
+.loruni-services-desktop-track__intro > .loruni-label { z-index: 1; }
+.loruni-services-desktop-track__intro > h2 {
+  flex: none;
+  width: 100%;
+  color: var(--color-neutral-50);
+}
+
+/* Source auto-width instances retain the native card's 1912px intrinsic width. */
+.loruni-services-desktop-track > .loruni-service-card {
+  flex: 0 0 var(--component-service-card-deskop-width);
+  width: var(--component-service-card-deskop-width);
+  height: 100%;
+}

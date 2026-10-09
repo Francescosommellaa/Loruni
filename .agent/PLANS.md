@@ -8,6 +8,10 @@ Completed authorized ONE TOUCH slice: [Image Parallax](plans/2026-10-07-image-pa
 
 # Work plans
 
+Completed authorized ONE TOUCH slice: [Services Desktop Track](plans/2026-10-08-services-desktop-track.md). Only the static Desktop content-slot; Services Section, Lenis and mobile remain pending.
+
+Completed authorized ONE TOUCH slice: [Testimonials Section](plans/2026-10-08-testimonials-section.md). Existing carousel/media/icon primitives consolidated; only this composite.
+
 Completed authorized ONE TOUCH slice: [FAQ Section](plans/2026-10-08-faq-section.md). Compose existing FAQRow/FaqIcon, exclusive state and local projection reservation; no other composite/page migration.
 
 Completed authorized ONE TOUCH slice: [Rolling Text / Arrow Right Alt](plans/2026-10-07-rolling-text-arrow-alt.md). Canonical utility consolidation and unused external-module audit only.
@@ -45,3 +49,13 @@ Completed authorized ONE TOUCH slice: [Service Card](plans/2026-10-08-service-ca
 Current plan: [Design system refinement](plans/2026-10-06-design-system-refinement.md). Previous: [Complete token audit](plans/2026-10-06-complete-token-audit.md), [Layout tokens and base CSS](plans/2026-10-06-layout-tokens-base.md). Completed: [Design system page](plans/2026-10-06-design-system-page.md), [Framer tokens and base.css](plans/2026-10-06-framer-tokens.md), [Vite / Framer bootstrap](plans/2026-10-05-vite-framer-bootstrap.md).
 
 The first slice initializes tooling and inventories Framer. Subsequent conversion should proceed through verified used tokens/shared layout, then page sections and responsive/interaction states with direct source comparisons. CMS destination and hosting/routing remain open decisions until a slice needs them.
+
+The story slot slice: [TheStoryTrack](plans/2026-10-09-the-story-track.md). Only static Desktop composition; full section/Lenis/Mobile remain pending.
+
+Stats root slice: [Stats](plans/2026-10-09-stats.md), existing four StatRow records reused.
+
+
+Scoped wrapper closure: [Community Label Container](plans/2026-10-09-community-label-container.md), absorbed in existing ContentHeadline/Label; no autonomous component.
+
+
+Final authorized session batch: [EventTestimonial / CMS / reconciliation](plans/2026-10-09-session-final.md). Single testimonial and11small adapters only, source readback/manual browser/build proof; no new macro sections/pages/backend. Current progress and exact NEXT SESSION remain in docs/MIGRATION-STATUS.md.

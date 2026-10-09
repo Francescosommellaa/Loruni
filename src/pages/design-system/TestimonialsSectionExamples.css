@@ -1,0 +1,8 @@
+.ds-testimonials-source { width: 100%; height: 750px; background: var(--color-neutral-50); }
+.ds-testimonials-example, .ds-testimonials-comparison, .ds-testimonials-frame { background: var(--color-neutral-50); }
+.ds-testimonials-example { max-width: 100%; overflow: auto; }
+.ds-testimonials-controls { display: flex; flex-wrap: wrap; gap: 12px; padding: 20px; font-family: var(--font-family-body); }
+.ds-testimonials-controls label { display: flex; gap: 8px; align-items: center; }
+.ds-testimonials-allocation { max-width: none; }
+.ds-testimonials-frame iframe { display: block; border: 0; }
+@media (max-width: 809.98px) { .ds-testimonials-source { height: auto; } }

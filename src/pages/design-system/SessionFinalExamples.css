@@ -1,0 +1,14 @@
+.ds-session-final-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 12px; background: var(--color-neutral-50); color: var(--color-neutral-950); }
+.ds-session-final-controls label { display: inline-flex; align-items: center; gap: 4px; }
+.ds-event-testimonial-allocation { background: var(--color-neutral-950); }
+.ds-event-testimonial-comparison { min-height: calc(100vh + 1px); background: var(--color-neutral-950); }
+.ds-event-testimonial-comparison .ds-event-testimonial-allocation, .ds-cms-comparison .ds-cms-allocation { padding: 80px; }
+.ds-cms-allocation { padding-bottom: 100px; }
+.ds-cms-comparison { background: var(--color-neutral-950); color: var(--color-neutral-50); }
+.ds-cms-comparison { min-height: calc(100vh + 1px); }
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .ds-event-testimonial-comparison .ds-event-testimonial-allocation, .ds-cms-comparison .ds-cms-allocation { padding-inline: 40px; }
+}
+@media (max-width: 809.98px) {
+  .ds-event-testimonial-comparison .ds-event-testimonial-allocation, .ds-cms-comparison .ds-cms-allocation { padding-inline: 12px; }
+}

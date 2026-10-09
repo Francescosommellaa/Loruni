@@ -6,6 +6,7 @@ import { NavItem } from '../../components/NavItem'
 import { ContentHeadline } from '../../components/ContentHeadline'
 import { SplitContent } from '../../components/SplitContent'
 import { StatRow } from '../../components/StatRow'
+import { experienceStats } from './StatsExamples.data'
 import { CategoryLabelGroup } from '../../components/CategoryLabelGroup'
 import { CategoryLabel } from '../../components/CategoryLabel'
 import { CommunityDetails } from '../../components/CommunityDetails'
@@ -46,7 +47,7 @@ export function SplitContentsExample() {
   return <div className="ds-content-atoms"><label>Contenuto reale<select value={index} onChange={e => setIndex(Number(e.target.value))}>{eventAtomExamples.map((item, i) => <option key={item.slug} value={i}>{item.slug}</option>)}</select></label>{event.content.map(item => <SplitContent key={item.title} {...item} />)}</div>
 }
 export function StatRowsExample() {
-  return <div className="ds-content-atoms ds-content-atoms__stats">{([['01', 'Al tavolo'], ['02', 'Gioco'], ['03', 'Eventi'], ['∞', 'Un’altra, poi vediamo']] as const).map(([number, text], i) => <StatRow key={number} number={number} text={text} caption={i === 0 ? 'compact' : 'display'} />)}</div>
+  return <div className="ds-content-atoms ds-content-atoms__stats">{experienceStats.map(item => <StatRow key={item.id} number={item.value} text={item.label} caption={'labelStyle' in item ? item.labelStyle : undefined} />)}</div>
 }
 export function CategoryLabelsExample() {
   return <div className="ds-content-atoms"><CategoryLabelGroup>{eventAtomExamples[0].labels.map(title => <CategoryLabel key={title} title={title} backgroundColor="var(--color-neutral-bone-highlight)" textColor="var(--color-neutral-950)" />)}</CategoryLabelGroup></div>
