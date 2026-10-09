@@ -1,3 +1,4 @@
+import { DemoControls } from './DemoControls'
 import { useState, useSyncExternalStore } from 'react'
 import { MotionConfig } from 'motion/react'
 import { ServiceCard, type ServiceCardProps } from '../../components/ServiceCard'
@@ -45,20 +46,20 @@ export function ServiceCardControlsExample() {
   const item = caseFor(index, phone).card
   const image = imageValue ?? item.image
   return <div className="ds-service-controls-example">
-    <div className="ds-service-controls">
-      <label>Contenuto service<select value={index} onChange={e => { setIndex(Number(e.target.value)); setTitle(null); setText(null); setImageValue(null) }}>{[0, 1, 2, 3].map(i => <option key={i} value={i}>{caseFor(i, phone).card.title}</option>)}</select></label>
-      <label>Titolo service<input value={title ?? item.title} onChange={e => setTitle(e.target.value)} /></label>
-      <label>Testo service<textarea value={text ?? item.text} onChange={e => setText(e.target.value)} /></label>
-      <label>Numero labels<input type="number" min="0" max="6" value={labelCount} onChange={e => setLabelCount(Number(e.target.value))} /></label>
-      <label>Larghezza parent service<input type="number" min="240" max="2400" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
-      <label>Altezza parent service<select value={height} onChange={e => setHeight(e.target.value)}><option value="1013">fill · 1013px</option><option value="700">fill · 700px</option><option value="auto">auto</option></select></label>
-      <label>Offset parent service<input type="range" min="-1500" max="1200" value={offset} onChange={e => setOffset(Number(e.target.value))} /></label>
-      <label>Immagine service<input value={image} onChange={e => setImageValue(e.target.value)} /></label>
-      <label><input type="checkbox" checked={descriptor} onChange={e => setDescriptor(e.target.checked)} />Immagine descriptor</label>
-      <label><input type="checkbox" checked={price} onChange={e => setPrice(e.target.checked)} />Price presente</label>
-      <label><input type="checkbox" checked={reduced} onChange={e => setReduced(e.target.checked)} />Reduced motion service</label>
-      <button type="button" onClick={() => setMounted(m => !m)}>{mounted ? 'Smonta service' : 'Monta service'}</button>
-    </div>
+    <DemoControls>
+      <label className="ds-demo-field">Contenuto<select value={index} onChange={e => { setIndex(Number(e.target.value)); setTitle(null); setText(null); setImageValue(null) }}>{[0, 1, 2, 3].map(i => <option key={i} value={i}>{caseFor(i, phone).card.title}</option>)}</select></label>
+      <label className="ds-demo-field">Titolo<input value={title ?? item.title} onChange={e => setTitle(e.target.value)} /></label>
+      <label className="ds-demo-field">Testo<textarea value={text ?? item.text} onChange={e => setText(e.target.value)} /></label>
+      <label className="ds-demo-field">Numero di etichette<input type="number" min="0" max="6" value={labelCount} onChange={e => setLabelCount(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Larghezza<input type="number" min="240" max="2400" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Altezza<select value={height} onChange={e => setHeight(e.target.value)}><option value="1013">fill · 1013px</option><option value="700">fill · 700px</option><option value="auto">auto</option></select></label>
+      <label className="ds-demo-field">Spostamento<input type="range" min="-1500" max="1200" value={offset} onChange={e => setOffset(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Immagine<input value={image} onChange={e => setImageValue(e.target.value)} /></label>
+      <label className="ds-demo-field"><input type="checkbox" checked={descriptor} onChange={e => setDescriptor(e.target.checked)} />Immagine descriptor</label>
+      <label className="ds-demo-field"><input type="checkbox" checked={price} onChange={e => setPrice(e.target.checked)} />Price presente</label>
+      <label className="ds-demo-field"><input type="checkbox" checked={reduced} onChange={e => setReduced(e.target.checked)} />Reduced motion service</label>
+      <button className="ds-demo-action" type="button" onClick={() => setMounted(m => !m)}>{mounted ? 'Smonta service' : 'Monta service'}</button>
+    </DemoControls>
     <MotionConfig reducedMotion={reduced ? 'always' : 'user'}>
       <div className="ds-service-overflow"><div className="ds-service-allocation" style={{ width: phone ? '100%' : width, height: phone ? 'auto' : height === 'auto' ? 'auto' : Number(height), transform: `translateX(${offset}px)` }}>
         {mounted && <ServiceCard {...item} title={title ?? item.title} text={text ?? item.text}
@@ -79,12 +80,12 @@ export function ServiceCardComparison() {
   const [offset, setOffset] = useState(Number(params.get('offset') ?? '0'))
   const item: ServiceCardProps = index < 0 ? { labels: defaultLabels } : caseFor(index, phone).card
   return <main className="ds-service-comparison">
-    <div className="ds-service-controls">
-      <label>Service confronto<select value={index} onChange={e => setIndex(Number(e.target.value))}><option value="-1">Default sorgente</option>{[0, 1, 2, 3].map(i => <option key={i} value={i}>{caseFor(i, phone).card.title}</option>)}</select></label>
-      <label>Larghezza service confronto<input type="number" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
-      <label>Altezza service confronto<input value={height} onChange={e => setHeight(e.target.value)} /></label>
-      <label>Offset service confronto<input type="number" value={offset} onChange={e => setOffset(Number(e.target.value))} /></label>
-    </div>
+    <DemoControls>
+      <label className="ds-demo-field">Service confronto<select value={index} onChange={e => setIndex(Number(e.target.value))}><option value="-1">Default sorgente</option>{[0, 1, 2, 3].map(i => <option key={i} value={i}>{caseFor(i, phone).card.title}</option>)}</select></label>
+      <label className="ds-demo-field">Larghezza service confronto<input type="number" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Altezza service confronto<input value={height} onChange={e => setHeight(e.target.value)} /></label>
+      <label className="ds-demo-field">Offset service confronto<input type="number" value={offset} onChange={e => setOffset(Number(e.target.value))} /></label>
+    </DemoControls>
     <div className="ds-service-comparison-frame" style={{ width, height: height === 'auto' ? 'auto' : Number(height), transform: `translateX(${offset}px)` }}>
       <ServiceCard {...item} id={`service-comparison-${index + 1}`} />
     </div>

@@ -2,6 +2,7 @@
 export const eventAtomExamples = [
   {
     "slug": "board-game-night",
+    "sectionEnabled": [true, true],
     "labels": [
       "Giochi da tavolo",
       "Serate LORUNI",
@@ -22,6 +23,7 @@ export const eventAtomExamples = [
   },
   {
     "slug": "musica-al-bar",
+    "sectionEnabled": [true, true],
     "labels": [
       "Musica",
       "Serate LORUNI",
@@ -42,6 +44,7 @@ export const eventAtomExamples = [
   },
   {
     "slug": "community-night",
+    "sectionEnabled": [true, true],
     "labels": [
       "Community",
       "Special Event",
@@ -62,6 +65,7 @@ export const eventAtomExamples = [
   },
   {
     "slug": "carte-al-tavolo",
+    "sectionEnabled": [true, true],
     "labels": [
       "Carte",
       "Tornei",
@@ -82,6 +86,7 @@ export const eventAtomExamples = [
   },
   {
     "slug": "digital-challenge",
+    "sectionEnabled": [false, true],
     "labels": [
       "Gaming digitale",
       "Tornei",

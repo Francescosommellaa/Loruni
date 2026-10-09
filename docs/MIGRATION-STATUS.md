@@ -4,7 +4,7 @@ Testimonials Section consolidation2026-10-08: already-completed record retained,
 
 Verificato il 2026-10-09 sul codice, export, catalogo e prove presenti. Le successive chiusure Load More, Image Reveal e FAQ Row hanno prove dedicate.
 
-80 unità completed, 55 not-migrated, 2 legacy-unused, 0 to-complete su137unità.39file componenti React consolidano gli80record chiusi;41voci reali in catalogo. Le unità includono repliche, gruppi, pattern e glyph. Services Desktop content-slot closed2026-10-09; parent Services Section/Lenis remain pending. [Contract](SERVICES-DESKTOP-TRACK.md).
+84 unità completed, 51 not-migrated, 2 legacy-unused, 0 to-complete su137unità.43file componenti React consolidano gli84record chiusi;45voci reali in catalogo. Le unità includono repliche, gruppi, pattern e glyph. Logos and Intro closed2026-10-09; parent Color container/pagina e Services Section/Lenis remain pending.
 
 ## Correzioni documentali
 
@@ -69,14 +69,14 @@ Queste voci restano not-migrated. Il lavoro già fatto nei figli viene indicato 
 | Logo | Icon |
 | Template | MainFormButton, ContentHeadline, FormControl, FormFieldGroup, FormField |
 | Hero · / | Button, ImageFill, Grain, LiquidHover, TextFitWidth |
-| Headline · / | TextFitWidth |
+| Hero · / | HeroFittedHeadline, TextFitWidth |
 | Color container · / | Label, Icon, ProcessRow, TestimonialsSection, ContentHeadline, TextStagger, ProjectCard, EventCardSlot |
 | Logos and Quote · / | Label, Icon, TextStagger |
 | Quote · / | Label, Icon, TextStagger |
 | Recent Projects · / | ProjectCard, EventCardSlot |
 | Headline and 1st project · / | ProjectCard, EventCardSlot |
 | Process · / | Label, ProcessRow, TextStagger |
-| Headline · / | Label, TextStagger |
+| Process · / | LabelledStaggerHeadline, Label, TextStagger |
 | Testimonials · / | Label, TestimonialsSection, ContentHeadline |
 | Hero · /esperienza | ImageFill, TextFitWidth |
 | Content · /esperienza | TextFitWidth |
@@ -122,7 +122,7 @@ BTN 2 è legacy-unused/no migration required secondo audit live separato [BTN-2.
 
 ## Resta da sviluppare
 
-55 record: parent/sezioni/hero/Template/global navigation e runtime/interazioni/motion autonomi. I piccoli adapter CMS di questa sessione sono completati; le loro pagine prodotto non lo sono. Le otto pagine prodotto, routing/CMSdestinazione/invioform/SEO/hosting restano fuori dai port dei singoli componenti. src/app/App.tsx mostra ancora la shell e /design-system.
+53 record: parent/sezioni/hero/Template/global navigation e runtime/interazioni/motion autonomi. I piccoli adapter CMS di questa sessione sono completati; le loro pagine prodotto non lo sono. Le otto pagine prodotto, routing/CMSdestinazione/invioform/SEO/hosting restano fuori dai port dei singoli componenti. src/app/App.tsx mostra ancora la shell e /design-system.
 
 Prove tecniche di questa riconciliazione: [MIGRATION-STATUS-VERIFICATION.json](MIGRATION-STATUS-VERIFICATION.json). Runtime invariato nella riconciliazione iniziale. La nuova slice Load More ha check e browser dedicati in [LOAD-MORE-VERIFICATION.json](LOAD-MORE-VERIFICATION.json); nessun altro port riaperto.
 
@@ -179,7 +179,7 @@ Community Label Container adB9Vb46p /esperienza closed2026-10-09 by absorption i
 <a id="session-final-2026-10-09"></a>
 ## Session final — 2026-10-09
 
-**SESSION CLOSED — COMPONENTI COMPOSTI STILL OPEN.** 137 unità:80completed/55not-migrated/2legacy-unused/0to-complete.39file runtime,41voci catalogo;44parent parts-available. HEAD64873750eba59cfd4bd73f142dcf0dc69f49bcd2 con lavoro locale preservato. Nessuna pagina prodotto, backend o nuova macro section implementata.
+**SESSION CLOSED — COMPONENTI COMPOSTI STILL OPEN.** 137 unità:80completed/55not-migrated/2legacy-unused/0to-complete.39file runtime,41voci catalogo;44parent parts-available. HEAD2492361729a57b7faff01d793693bfb3be9f59e7 al readback finale: commit esterno osservato durante la chiusura, input verificati invariati rispetto al checkout precedente64873750. Nessuna pagina prodotto, backend o nuova macro section implementata.
 
 EventTestimonial: `image?:ImageFillImage, title?, quote?:string|null, name?, role?, id/className/style`. La quote non impostata rimuove l'intera section senza trim/fallback. Grid12/span4+1+7, height750; Phone auto e media/spacer assenti; Quote Icon presente anche Phone. Existing ImageReveal/Divider/Icon/preset/reduced policy. Title word-opacity once spring.5/bounce0/stagger.06 condiviso con TestimonialsSection attraverso WordOpacityReveal, stesso markup/algoritmo senza wrapper aggiuntivo. Quote element once spring.4/delay.4/opacityinitial.001, outeropacity.7. Brand Accent divider; Neutral50 text, Neutral950 image cover. Text2/3/4 legacy hidden esclusi; nessuna logica carousel.
 
@@ -226,7 +226,6 @@ Ripartire dai parent ancora not-migrated sotto, senza riaprire i figli chiusi. B
 | 8OGeHARPZoZUqP5j1buZ | Lenis Horizontal Section | interactive component |
 | template-ahDJpZJjb | Template | layout component |
 | pattern-H6RV6mcOu | Hero · / | section |
-| pattern-l4Hx2sTr1 | Headline · / | section |
 | pattern-T_kKQBX63 | Color container · / | layout component |
 | pattern-CU36SWeyR | Logos and Quote · / | section |
 | pattern-Npr_ZavYL | Logos · / | section |
@@ -235,7 +234,6 @@ Ripartire dai parent ancora not-migrated sotto, senza riaprire i figli chiusi. B
 | pattern-n8mpVhYJ6 | Headline and 1st project · / | section |
 | pattern-oXNPkQNkN | Headline trigger · / | section |
 | pattern-MxT1gxvg5 | Process · / | section |
-| pattern-DUIrhpb0e | Headline · / | section |
 | pattern-dyQ5jBO0A | Testimonials · / | section |
 | pattern-I5SNW1MVl | Hero · /esperienza | section |
 | pattern-pVmauuZ2g | Content · /esperienza | layout component |
@@ -270,3 +268,36 @@ Ripartire dai parent ancora not-migrated sotto, senza riaprire i figli chiusi. B
 | pattern-slofgrfjX | Contact From · Template | section |
 | pattern-XXZunElsz | Content container · Template | layout component |
 | pattern-sUr7gnSzE | Modulo · Template | interactive component |
+
+
+## Headline Sections — CLOSED · 2026-10-09
+
+Undici pattern e33repliche riletti in Framer; due nuovi port A/B, nove composition esistenti revalidate. Sette famiglie semantiche consolidate in quattro implementazioni. Nessun universal headline, nuovo preset/token, glyph o motore fit/stagger.
+
+| Framer pattern | Famiglia | Runtime | Stato |
+| --- | --- | --- | --- |
+| pattern-l4Hx2sTr1 | A | `HeroFittedHeadline` | MIGRATED |
+| pattern-DUIrhpb0e | B | `LabelledStaggerHeadline` | MIGRATED |
+| pattern-wIf2vBmrp | C | `ContentHeadline` | CONSOLIDATED WITH ContentHeadline labelled |
+| pattern-VuSLlvonD | C | `ContentHeadline` | CONSOLIDATED WITH ContentHeadline labelled |
+| pattern-qgLuHW8XG | C | `ContentHeadline` | CONSOLIDATED WITH ContentHeadline labelled |
+| pattern-RuA0JWZsP | D | `SplitContent` | CONSOLIDATED WITH SplitContent |
+| pattern-nN8BISdtN | D | `SplitContent` | CONSOLIDATED WITH SplitContent |
+| pattern-UNMBQYnKg | E | `ContentHeadline` | CONSOLIDATED WITH ContentHeadline centered |
+| pattern-IMQdwgcx4 | E | `ContentHeadline` | CONSOLIDATED WITH ContentHeadline centered |
+| pattern-dR7SkYjAS | F | `ContentHeadline` | ABSORBED INTO ContentHeadline centered-large |
+| pattern-GXDcxsQa9 | G | `ContentHeadline` | ABSORBED INTO ContentHeadline contact |
+
+G è Template live su sei pagine abilitate, non legacy. Wrapper Community Label Container resta assorbito nel ContentHeadline; CMS field mapping/Section1–2 availability nel consumer. digital-challenge ha Section1=false e Section2=true. Hero/Process/Testimonials/Blog/MoreContent/form/pagine rimangono parent aperti.
+
+33confronti geometry/typography PASS a1200/810/390, righe Fit/Stagger e whitespace identici,30casi CMS e copy lunga, resize continuo tramite slider nativo con transizioni809/810 e1199/1200 senza overflow, live MotionConfig always/user e console pulita. Typecheck/lint/build/tokens:check PASS; audit obsoleto rigenerato, token canonici byte-identici. Build602moduli, warning chunk>500kB esistente. Nessuna suite frontend.
+
+Prova/manifest corrente: MIGRATION-STATUS-VERIFICATION.json.headlineSections. Limiti: Chromium e osservazioni sequenziali; nessun rasterpixel-diff/synchronizedframe/OSpreference/screenreader attestato. Fixture Hero verifica allocation su fondo neutro; media/parallax del parent non migrati.82completed/53pending/2legacy,41runtime/43catalog,42parts-available. Le prove sessionFinal precedenti restano snapshot storici. Non procedere a Logos senza nuova task.
+
+
+## LOGOS AND INTRO — CLOSED, 2026-10-09
+
+Esperienza `pattern-ZPvGsPv3Z` → `LogosAndIntro` (MIGRATED); contained `pattern-Jsd2pjqLq` → internal Logos + `BrandTicker` (ABSORBED INTO); Intro `OhvkaBGPZ` and responsive replicas → internal Intro (ABSORBED INTO). All three mappings CLOSED. Intro has no separate inventory unit: no phantom record added. 137 units: **84 completed / 51 not-migrated / 2 legacy-unused / 0 to-complete; 43 runtime files / 45 catalog entries / 41 pending parents parts-available**. Parent Color container and product Esperienza page remain pending.
+
+
+Contracts, motion details and original assets: CONTENT-FORM-ATOMS.md#logos-and-intro--closed-2026-10-09; authoritative proof MIGRATION-STATUS-VERIFICATION.json.logosAndIntro. Native/local geometry, copy, line splitting, whitespace and Label placement match except explicitly retained Phone heading (+41.59375px). Typecheck/lint/build/tokens pass; source preview clock discrepancy and actual hidden-tab limitation retained in proof. No full Color container/product page migration.

@@ -1,3 +1,4 @@
+import { DemoControls } from './DemoControls'
 import { useState } from 'react'
 import { CommunityCard } from '../../components/CommunityCard'
 import './CommunityCardExamples.css'
@@ -14,12 +15,12 @@ export function CommunityCardControlsExample() {
   const [image, setImage] = useState(communityCardExamples[0].image as string)
   const [h3, setH3] = useState(true)
   return <div className="ds-community-controls">
-    <div className="ds-community-controls__fields">
-      <label>Titolo<input value={title} onChange={event => setTitle(event.target.value)} /></label>
-      <label>Sottotitolo<textarea value={subtitle} onChange={event => setSubtitle(event.target.value)} /></label>
-      <label>Immagine<input value={image} onChange={event => setImage(event.target.value)} /></label>
-      <label><input type="checkbox" checked={h3} onChange={event => setH3(event.target.checked)} />Titolo H3 (disattivato: H2)</label>
-    </div>
+    <DemoControls>
+      <label className="ds-demo-field">Titolo<input value={title} onChange={event => setTitle(event.target.value)} /></label>
+      <label className="ds-demo-field">Sottotitolo<textarea value={subtitle} onChange={event => setSubtitle(event.target.value)} /></label>
+      <label className="ds-demo-field">Immagine<input value={image} onChange={event => setImage(event.target.value)} /></label>
+      <label className="ds-demo-field"><input type="checkbox" checked={h3} onChange={event => setH3(event.target.checked)} />Usa un titolo di livello 3</label>
+    </DemoControls>
     <div className="ds-community-card-intrinsic"><CommunityCard title={title} subtitle={subtitle} image={image || undefined} h3={h3} /></div>
   </div>
 }

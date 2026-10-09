@@ -1,5 +1,14 @@
 # FAQ Section
 
+## Correzione richiesta dall'utente — 2026-10-09
+
+Stato corrente: click sul + e sul − entrambi validi; anche i campioni inizialmente aperti/chiusi del catalogo cambiano stato. La richiesta esplicita supersede il precedente click assorbito dell'icona e il tween/projection fedele alla fonte. FAQRow ora anima l'altezza della risposta da0 adauto e viceversa senza deformare il testo, con0.32s/ease[.22,1,.36,1]; contenuto retained/inert quando chiuso. Icon Engine riusa il path esistente: la barra verticale cresce dal centro in altezza (scaleY), spessore2px costante, centro condiviso con la barra orizzontale;0.32s/ease[.4,0,.2,1], senza rotazione animata/fade/retention. Standalone e decorative seguono entrambi la variante richiesta. Reduced motion usa la policy live comune.
+
+FAQSection conserva le identità e la policy esclusiva. Le righe sono nel flow; un ResizeObserver segue l'altezza effettivamente animata e aggiorna la riserva, sostituendo la precedente proiezione Motion e il frame scheduler. Nessun secondo height writer/RAF/scroll owner. Catalogo scuro tramite --faq-foreground, con fallback prodotto Neutral950. Le prove Framer sotto sono storiche e non attestano la nuova animazione. Verifica della correzione: DESIGN-SYSTEM-VISUAL-REFINEMENT-VERIFICATION.md.
+
+## Prova storica della migrazione
+
+
 2026-10-08, authorized ONE TOUCH: Section/FAQ Section cWdeMLg1M and its single Layout Jump Preventer dependency. Three /vieni-a-trovarci replicas read live, all eight q/a pairs and original compiled modules inspected read-only. No product page, CMS backend or other composite port.
 
 API: `FAQSection({ items, ...divProps })`, where `items: readonly { id?: string; question: string; answer: string }[]`. No artificial eight-item limit, default copy, public breakpoint variants or whiteColor control. Consumer owns content and page allocation. Width fills its parent; height follows rendered content. `id`, className, style and ordinary HTML attributes pass to the outer root; its measured height is owned by the reservation.

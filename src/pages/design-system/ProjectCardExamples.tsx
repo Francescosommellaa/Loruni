@@ -1,3 +1,4 @@
+import { DemoControls } from './DemoControls'
 import { useState, useSyncExternalStore } from 'react'
 import { MotionConfig } from 'motion/react'
 import { ProjectCard, type ProjectCardProps } from '../../components/ProjectCard'
@@ -48,18 +49,18 @@ export function ProjectCardControlsExample() {
   const update = (key: keyof ProjectCardProps, value: string) => setContent(c => ({ ...c, [key]: value }))
   const image = typeof content.image === 'string' ? content.image : content.image?.src ?? ''
   return <div className="ds-project-playground">
-    <div className="ds-project-controls">
-      <label>Modalità card<select value={mode} onChange={e => setMode(e.target.value as typeof mode)}><option>main</option><option>inner</option></select></label>
-      <label>Contenuto card CMS<select defaultValue="0" onChange={e => setContent({ ...projectEvents[Number(e.target.value)] })}>{projectEvents.map((item, i) => <option key={item.slug} value={i}>{item.title}</option>)}</select></label>
+    <DemoControls>
+      <label className="ds-demo-field">Modalità card<select value={mode} onChange={e => setMode(e.target.value as typeof mode)}><option>main</option><option>inner</option></select></label>
+      <label className="ds-demo-field">Contenuto card CMS<select defaultValue="0" onChange={e => setContent({ ...projectEvents[Number(e.target.value)] })}>{projectEvents.map((item, i) => <option key={item.slug} value={i}>{item.title}</option>)}</select></label>
       {(['title', 'text', 'label1', 'label2', 'label3', 'year'] as const).map(key => <label key={key}>{key}<input value={content[key] ?? ''} onChange={e => update(key, e.target.value)} /></label>)}
-      <label>Immagine card<input value={image} onChange={e => update('image', e.target.value)} /></label>
-      <label><input type="checkbox" checked={responsiveImage} onChange={e => setResponsiveImage(e.target.checked)} />Descriptor responsive / asset statico</label>
-      <label>Larghezza card<input type="range" min="240" max="1200" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
-      <label>Altezza parent<select value={allocation} onChange={e => setAllocation(e.target.value)}><option value="auto">auto</option><option value="fill">fill · 585px</option><option value="viewport">100vh</option></select></label>
-      <label><input type="checkbox" checked={reduced} onChange={e => setReduced(e.target.checked)} />Reduced motion card</label>
-      <button type="button" onClick={() => setContent(c => ({ ...c, label1: undefined, label2: '', label3: null }))}>Rimuovi labels</button>
-      <button type="button" onClick={() => setMounted(v => !v)}>{mounted ? 'Smonta card' : 'Monta card'}</button>
-    </div>
+      <label className="ds-demo-field">Immagine card<input value={image} onChange={e => update('image', e.target.value)} /></label>
+      <label className="ds-demo-field"><input type="checkbox" checked={responsiveImage} onChange={e => setResponsiveImage(e.target.checked)} />Descriptor responsive / asset statico</label>
+      <label className="ds-demo-field">Larghezza card<input type="range" min="240" max="1200" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Altezza parent<select value={allocation} onChange={e => setAllocation(e.target.value)}><option value="auto">auto</option><option value="fill">fill · 585px</option><option value="viewport">100vh</option></select></label>
+      <label className="ds-demo-field"><input type="checkbox" checked={reduced} onChange={e => setReduced(e.target.checked)} />Reduced motion card</label>
+      <button className="ds-demo-action" type="button" onClick={() => setContent(c => ({ ...c, label1: undefined, label2: '', label3: null }))}>Rimuovi labels</button>
+      <button className="ds-demo-action" type="button" onClick={() => setMounted(v => !v)}>{mounted ? 'Smonta card' : 'Monta card'}</button>
+    </DemoControls>
     <MotionConfig reducedMotion={reduced ? 'always' : 'user'}>
       <div className={`ds-project-allocation ds-project-allocation--${allocation}`} style={{ width, maxWidth: '100%' }}>
         <a href="#project-card-parent-link">{mounted && <ProjectCard {...content} mode={mode} image={responsiveImage ? media(content, `${width}px`) : image} style={allocation === 'auto' ? undefined : { height: '100%' }} />}</a>
@@ -78,12 +79,12 @@ export function ProjectCardComparison() {
   const breakpoint = useBreakpoint()
   const content: ProjectCardProps = eventIndex === -1 ? { image: projectEvents[0]?.image, label1: 'Eventi', label2: 'Community', label3: 'Da annunciare' } : projectEvents[eventIndex] ?? {}
   return <main className="ds-project-comparison">
-    <div className="ds-project-controls">
-      <label>Modalità confronto<select value={mode} onChange={e => setMode(e.target.value as typeof mode)}><option>main</option><option>inner</option></select></label>
-      <label>Evento confronto<select value={eventIndex} onChange={e => setEvent(Number(e.target.value))}><option value="-1">Default sorgente</option>{projectEvents.map((item, i) => <option key={item.slug} value={i}>{item.title}</option>)}</select></label>
-      <label>Larghezza confronto<input type="number" step="0.5" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
-      <label>Altezza confronto<input value={height} onChange={e => setHeight(e.target.value)} /></label>
-    </div>
+    <DemoControls>
+      <label className="ds-demo-field">Modalità confronto<select value={mode} onChange={e => setMode(e.target.value as typeof mode)}><option>main</option><option>inner</option></select></label>
+      <label className="ds-demo-field">Evento confronto<select value={eventIndex} onChange={e => setEvent(Number(e.target.value))}><option value="-1">Default sorgente</option>{projectEvents.map((item, i) => <option key={item.slug} value={i}>{item.title}</option>)}</select></label>
+      <label className="ds-demo-field">Larghezza confronto<input type="number" step="0.5" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Altezza confronto<input value={height} onChange={e => setHeight(e.target.value)} /></label>
+    </DemoControls>
     <a href="#comparison-parent-link" style={{ display: 'block', width, maxWidth: '100%' }}>
       <ProjectCard {...content} mode={mode}
         image={media(content, `${width}px`, mode === 'inner' ? 'lazy' : 'eager')}

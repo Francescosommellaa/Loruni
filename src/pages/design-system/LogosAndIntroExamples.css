@@ -1,0 +1,6 @@
+.ds-logos-intro-parent { background: var(--color-neutral-950); width: 100%; min-width: 0; }
+.ds-logos-intro-controls { display: flex; flex-wrap: wrap; gap: var(--space-16); padding: var(--space-12); max-width: 100%; }
+.ds-logos-intro-controls label { display: flex; align-items: center; gap: var(--space-8); }
+.ds-logos-intro-frame { overflow: auto; max-width: 100%; }
+.ds-logos-intro-frame iframe { display: block; height: 844px; max-width: none; border: 0; }
+.ds-logos-intro-comparison { padding-bottom: 100vh; }

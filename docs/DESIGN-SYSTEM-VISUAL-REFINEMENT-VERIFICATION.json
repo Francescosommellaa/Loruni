@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-09",
+  "head": "2492361729a57b7faff01d793693bfb3be9f59e7",
+  "scopeFiles": [
+    "src/components/FAQRow.tsx",
+    "src/components/FAQRow.css",
+    "src/components/FAQSection.tsx",
+    "src/components/FaqIcon.tsx",
+    "src/components/FaqIcon.css",
+    "src/components/Icon.tsx",
+    "src/components/Icon.css",
+    "src/pages/design-system/ButtonExamples.tsx",
+    "src/pages/design-system/CatalogShell.css",
+    "src/pages/design-system/CommunityCardExamples.tsx",
+    "src/pages/design-system/ContentFormAtomExamples.tsx",
+    "src/pages/design-system/ContentFormAtomExamples.css",
+    "src/pages/design-system/DemoControls.tsx",
+    "src/pages/design-system/DemoControls.css",
+    "src/pages/design-system/DesignSystemPage.tsx",
+    "src/pages/design-system/FAQRowExamples.tsx",
+    "src/pages/design-system/FAQSectionExamples.tsx",
+    "src/pages/design-system/FitPreview.tsx",
+    "src/pages/design-system/GeometryCatalog.tsx",
+    "src/pages/design-system/GeometryCatalog.css",
+    "src/pages/design-system/GrainExamples.tsx",
+    "src/pages/design-system/HeadlineSectionsExamples.tsx",
+    "src/pages/design-system/ImageParallaxExamples.tsx",
+    "src/pages/design-system/ImageRevealExamples.tsx",
+    "src/pages/design-system/LoadMoreExamples.tsx",
+    "src/pages/design-system/MainFormButtonExamples.tsx",
+    "src/pages/design-system/OurStoryCardExamples.tsx",
+    "src/pages/design-system/ProcessRowExamples.tsx",
+    "src/pages/design-system/ProjectCardExamples.tsx",
+    "src/pages/design-system/RollingTextExamples.tsx",
+    "src/pages/design-system/ServiceCardExamples.tsx",
+    "src/pages/design-system/ServicesDesktopTrackExamples.tsx",
+    "src/pages/design-system/SessionFinalExamples.tsx",
+    "src/pages/design-system/StatsExamples.tsx",
+    "src/pages/design-system/TestimonialsSectionExamples.tsx",
+    "src/pages/design-system/TextUtilityExamples.tsx",
+    "src/pages/design-system/TheStoryTrackExamples.tsx",
+    "src/pages/design-system/componentExamples.ts"
+  ],
+  "scopeSha256": "fde8adc981299b3953dc9c914c69483484a3c5968b2c83f45473eff7fc0a42a5",
+  "inputCount": 196,
+  "inputSha256": "5d2db08338119d3d6bfc2e772dc80f0a317c707c74875920077e70af31abab79",
+  "inputFilesNewerThanBuild": [],
+  "digestMethod": "sorted relative path + NUL + sha256(file bytes) + LF",
+  "checks": {
+    "build": "PASS;613 modules;JS933.70kB/gzip245.74;CSS207.65kB/gzip26.37;existing >500kB chunk warning",
+    "lint": "PASS",
+    "tokensGenerate": "executed;no canonical token value diff",
+    "tokensCheck": "PASS",
+    "gitDiffCheck": "PASS;Windows LF/CRLF notices only"
+  },
+  "browser": {
+    "viewports": [
+      [
+        320,
+        844
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        810,
+        900
+      ],
+      [
+        1440,
+        1000
+      ]
+    ],
+    "overflow": {
+      "communityControls320": "document305px within viewport320;select197px right251px",
+      "button390": "document375px within viewport390;first3stages clientWidth=scrollWidth333px;Primary fit scale.777778",
+      "shapes810": "document795px within viewport810;7cards/two columns",
+      "spacing1440": "document1425px within viewport1440;three diagrams columns336.33px"
+    },
+    "faq": "icon open/close;Enter/Space;rapid double click stable;source section exclusivity;reserve outer=inner559.90625px;MotionConfig reduced current answerauto/scaleY0 immediate",
+    "faqBarCenters390": [
+      [
+        322,
+        421.59375
+      ],
+      [
+        322,
+        421.59375
+      ]
+    ],
+    "deepLink": "search --gap-rows-8-columns-8 -> existing anchor/details opened/focus;exact clipboard;reload same details/focus",
+    "community": "controls open and signature visibility changed;no forced light wrapper",
+    "headlines": "dark previews with readable colors;contact contrast corrected",
+    "testimonials": "mobile text/attribution dark-stage readable;no page overflow",
+    "console": "no warn/error recorded in controlled tab"
+  },
+  "screenshots": [
+    ".agent/artifacts/design-system-visual-refinement/spacing-desktop.jpg",
+    ".agent/artifacts/design-system-visual-refinement/community-phone.jpg",
+    ".agent/artifacts/design-system-visual-refinement/faq-phone.jpg"
+  ],
+  "limits": [
+    "No automated frontend suites",
+    "No physical touch, cross-engine, screen reader, real OS reduced-motion toggle or synchronized source-frame/pixel proof",
+    "Document-only fitting/theme is distinct from fidelity fixtures",
+    "45 catalog entries observed includes concurrent Logos work;no migration certification for unrelated components",
+    "Unrelated dirty/concurrent work preserved;no commit,push,deploy,Framer edit or global Codex memory update"
+  ],
+  "beforeFinalBuildSha256": "5d2db08338119d3d6bfc2e772dc80f0a317c707c74875920077e70af31abab79",
+  "stableAcrossFinalBuild": true
+}

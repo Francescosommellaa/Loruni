@@ -1,3 +1,4 @@
+import { DemoControls } from './DemoControls'
 import { useState } from 'react'
 import { MotionConfig } from 'motion/react'
 import { ImageReveal } from '../../components/ImageReveal'
@@ -21,13 +22,13 @@ export function ImageRevealExample({ event = false, empty = false, intrinsic = f
   } : media
   const backgroundColor = `var(${(event ? colors.neutral950 : colors.neutral50).cssVariable})`
   return <div>
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 12 }}>
-      <button type="button" onClick={() => setMount(value => value + 1)}>Rimonta reveal</button>
-      <button type="button" onClick={() => setImage(value => (value + 1) % 4)}>Cambia immagine senza remount</button>
-      <button type="button" onClick={() => setVisible(value => !value)}>{visible ? 'Smonta immagine' : 'Monta immagine'}</button>
-      <button type="button" onClick={() => setRetainedHidden(value => !value)}>{retainedHidden ? 'Mostra istanza conservata' : 'Nascondi istanza conservata'}</button>
-      <button type="button" aria-pressed={reduced} onClick={() => setReduced(value => !value)}>Reduced motion</button>
-    </div>
+    <DemoControls>
+      <button className="ds-demo-action" type="button" onClick={() => setMount(value => value + 1)}>Rimonta reveal</button>
+      <button className="ds-demo-action" type="button" onClick={() => setImage(value => (value + 1) % 4)}>Cambia immagine senza remount</button>
+      <button className="ds-demo-action" type="button" onClick={() => setVisible(value => !value)}>{visible ? 'Smonta immagine' : 'Monta immagine'}</button>
+      <button className="ds-demo-action" type="button" onClick={() => setRetainedHidden(value => !value)}>{retainedHidden ? 'Mostra istanza conservata' : 'Nascondi istanza conservata'}</button>
+      <button className="ds-demo-action" type="button" aria-pressed={reduced} onClick={() => setReduced(value => !value)}>Reduced motion</button>
+    </DemoControls>
     <div style={{ width: intrinsic ? 260 : '100%', maxWidth: '100%', height: 256, backgroundColor }}>
       <MotionConfig reducedMotion={reduced ? 'always' : 'user'}>
         {visible && <div hidden={retainedHidden} style={{ width: '100%', height: '100%' }}>

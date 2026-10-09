@@ -1,0 +1,37 @@
+.loruni-hero-fitted-headline {
+  position: absolute;
+  inset-inline: var(--space-120);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  height: auto;
+  pointer-events: none;
+  z-index: var(--source-z-index-value2);
+}
+.loruni-hero-fitted-headline__measure {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  max-width: var(--source-max-width-value1500px);
+  user-select: none;
+}
+@media (810px <= width < 1200px) {
+  .loruni-hero-fitted-headline {
+    inset-inline: var(--space-20);
+    top: auto;
+    bottom: var(--space-200);
+    transform: none;
+  }
+}
+@media (width < 810px) {
+  .loruni-hero-fitted-headline {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    transform: none;
+  }
+}

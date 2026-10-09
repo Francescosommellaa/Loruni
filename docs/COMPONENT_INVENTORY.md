@@ -11,7 +11,7 @@ Catalog-only: 3
 With variants: 24 (19 con più varianti native)
 Possible / ambiguous components: 22
 
-Data stato corrente:2026-10-09. Fonte: [progetto Framer LORUNI](https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6) e riconciliazione del codice locale. Stato:80 completed,0 to-complete,55 not-migrated,2 legacy-unused. Mapping source/runtime e confini: [MIGRATION-STATUS.md](MIGRATION-STATUS.md).
+Data stato corrente:2026-10-09. Fonte: [progetto Framer LORUNI](https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6) e riconciliazione del codice locale. Stato:84 completed,0 to-complete,51 not-migrated,2 legacy-unused. Mapping source/runtime e confini: [MIGRATION-STATUS.md](MIGRATION-STATUS.md).
 
 Metodo/copertura e schede originali sotto descrivono la cattura iniziale. Lo stato corrente e le prove dei port sono nella sezione finale delle migrazioni e nei record `migration` JSON; le limitazioni dell'audit generale non riaprono i componenti verificati successivamente.
 
@@ -32,7 +32,7 @@ La cattura strutturale iniziale era documentale, senza modifiche runtime o verif
 - **interactive**: Explicit actions/links/input/states/gesture/trigger. pointerEvents and elementID alone excluded.
 - **variants**: Native declared/recovered variants including gestures. Page breakpoint replicas are not new variants.
 
-Il repository locale contiene la shell Vite e /design-system, non le pagine prodotto migrate. Il catalogo corrente ha41voci reali e39file componenti TSX. Gli80record completed hanno mapping dedicato; FAQRow chiusa nella propria task, ImageReveal attestato dal suo port indipendente. Il vecchio repositoryAudit descrive il bootstrap e non lo stato runtime corrente. ID Framer = riferimenti di audit, non nomi runtime.
+Il repository locale contiene la shell Vite e /design-system, non le pagine prodotto migrate. Il catalogo corrente ha45voci reali e43file componenti TSX. Gli84record completed hanno mapping dedicato; FAQRow chiusa nella propria task, ImageReveal attestato dal suo port indipendente. Il vecchio repositoryAudit descrive il bootstrap e non lo stato runtime corrente. ID Framer = riferimenti di audit, non nomi runtime.
 
 - Acquisizione sequenziale non atomica; timestamp/hash identificano i dati letti, non una revisione immutabile Framer.
 - Logo/Testimonials Arrow: frame/figli e screenshot recuperati; risoluzione controlli icone continua a fallire.
@@ -6169,7 +6169,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-040"></a>
 ### 040. Headline · /
 
-pattern-l4Hx2sTr1 · original-name · pattern · section · page-specific · not-migrated.
+pattern-l4Hx2sTr1 · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /.
 
@@ -6265,7 +6265,7 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 | right = 20px | augiA20Il/MVAXQZXjMl4Hx2sTr1 · 1 occorrenze · structural/canvas/calculated |
 | bottom = 200px | augiA20Il/MVAXQZXjMl4Hx2sTr1 · 1 occorrenze · structural/canvas/calculated |
 | $control__font = {"fontSelector":"GF;Funnel Display-600","fontSize":"16px","letterSpacing":[-0.03,"em"],"lineHeight":[1,"em"]} | augiA20Il/ClYf5hhBdPFr51brm3 · 1 occorrenze · unmapped-source-value |
-Potential relationship, NON unificata: Headline · / [pattern-l4Hx2sTr1], Headline · / [pattern-DUIrhpb0e], Headline · / [pattern-wIf2vBmrp], Headline · /esperienza [pattern-VuSLlvonD], Headline · /esperienza [pattern-qgLuHW8XG], Headline · /eventi/:Eventi [pattern-RuA0JWZsP], Headline · /eventi/:Eventi [pattern-nN8BISdtN], Headline · /eventi/:Eventi [pattern-UNMBQYnKg], Headline · /community [pattern-dR7SkYjAS], Headline · /community/:Community [pattern-IMQdwgcx4], Headline · Template [pattern-GXDcxsQa9]. Shared:Same original layer name; source structure retained per node. Differences:Content, geometry, CMS, assets and responsive overrides vary; identical name does not prove interchangeable component.
+Consolidamento headline verificato2026-10-09: sette famiglie semantiche, quattro implementazioni; mapping completo nella chiusura Headline Sections sotto. Il nome comune non è una API universale.
 Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
 <a id="component-041"></a>
 ### 041. Color container · /
@@ -7920,7 +7920,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-053"></a>
 ### 053. Headline · /
 
-pattern-DUIrhpb0e · original-name · pattern · section · page-specific · not-migrated.
+pattern-DUIrhpb0e · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /.
 
@@ -8010,7 +8010,7 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 | left = 0px | augiA20Il/ClYf5hhBdYD_7SpzTL · 1 occorrenze · structural/canvas/calculated |
 | top = 9px | augiA20Il/ClYf5hhBdYD_7SpzTL · 1 occorrenze · structural/canvas/calculated |
 | $control__font = {"fontSelector":"GF;Funnel Sans-regular","fontSize":"28px","textAlignment":"left","letterSpacing":[-0.02,"em"],"lineHeight":[1.3,"em"]} | augiA20Il/ClYf5hhBdHIvJ249D7 · 1 occorrenze · unmapped-source-value |
-Potential relationship, NON unificata: Headline · / [pattern-l4Hx2sTr1], Headline · / [pattern-DUIrhpb0e], Headline · / [pattern-wIf2vBmrp], Headline · /esperienza [pattern-VuSLlvonD], Headline · /esperienza [pattern-qgLuHW8XG], Headline · /eventi/:Eventi [pattern-RuA0JWZsP], Headline · /eventi/:Eventi [pattern-nN8BISdtN], Headline · /eventi/:Eventi [pattern-UNMBQYnKg], Headline · /community [pattern-dR7SkYjAS], Headline · /community/:Community [pattern-IMQdwgcx4], Headline · Template [pattern-GXDcxsQa9]. Shared:Same original layer name; source structure retained per node. Differences:Content, geometry, CMS, assets and responsive overrides vary; identical name does not prove interchangeable component.
+Consolidamento headline verificato2026-10-09: sette famiglie semantiche, quattro implementazioni; mapping completo nella chiusura Headline Sections sotto. Il nome comune non è una API universale.
 Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
 <a id="component-054"></a>
 ### 054. Testimonials · /
@@ -8220,7 +8220,7 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 **8. Hardcoded, relazioni, fedeltà**
 
 Nessun finding hardcoded per fonte disponibile; nessuna prova sugli interni non esposti.
-Potential relationship, NON unificata: Headline · / [pattern-l4Hx2sTr1], Headline · / [pattern-DUIrhpb0e], Headline · / [pattern-wIf2vBmrp], Headline · /esperienza [pattern-VuSLlvonD], Headline · /esperienza [pattern-qgLuHW8XG], Headline · /eventi/:Eventi [pattern-RuA0JWZsP], Headline · /eventi/:Eventi [pattern-nN8BISdtN], Headline · /eventi/:Eventi [pattern-UNMBQYnKg], Headline · /community [pattern-dR7SkYjAS], Headline · /community/:Community [pattern-IMQdwgcx4], Headline · Template [pattern-GXDcxsQa9]. Shared:Same original layer name; source structure retained per node. Differences:Content, geometry, CMS, assets and responsive overrides vary; identical name does not prove interchangeable component.
+Consolidamento headline verificato2026-10-09: sette famiglie semantiche, quattro implementazioni; mapping completo nella chiusura Headline Sections sotto. Il nome comune non è una API universale.
 Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
 <a id="component-056"></a>
 ### 056. Hero · /esperienza
@@ -8845,7 +8845,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-060"></a>
 ### 060. Logos and Intro · /esperienza
 
-pattern-ZPvGsPv3Z · original-name · pattern · section · page-specific · not-migrated.
+pattern-ZPvGsPv3Z · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /esperienza.
 
@@ -9012,7 +9012,7 @@ Per ricostruire consultare raw nodes e override. Non dedurre path, valori assent
 <a id="component-061"></a>
 ### 061. Logos · /esperienza
 
-pattern-Jsd2pjqLq · original-name · pattern · section · page-specific · not-migrated.
+pattern-Jsd2pjqLq · original-name · pattern · section · page-specific · completed.
 
 Uso:3 serializzati/1 indipendenti/3 diretti pagina-template. Pagine: /esperienza.
 
@@ -9879,7 +9879,7 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 **8. Hardcoded, relazioni, fedeltà**
 
 Nessun finding hardcoded per fonte disponibile; nessuna prova sugli interni non esposti.
-Potential relationship, NON unificata: Headline · / [pattern-l4Hx2sTr1], Headline · / [pattern-DUIrhpb0e], Headline · / [pattern-wIf2vBmrp], Headline · /esperienza [pattern-VuSLlvonD], Headline · /esperienza [pattern-qgLuHW8XG], Headline · /eventi/:Eventi [pattern-RuA0JWZsP], Headline · /eventi/:Eventi [pattern-nN8BISdtN], Headline · /eventi/:Eventi [pattern-UNMBQYnKg], Headline · /community [pattern-dR7SkYjAS], Headline · /community/:Community [pattern-IMQdwgcx4], Headline · Template [pattern-GXDcxsQa9]. Shared:Same original layer name; source structure retained per node. Differences:Content, geometry, CMS, assets and responsive overrides vary; identical name does not prove interchangeable component.
+Consolidamento headline verificato2026-10-09: sette famiglie semantiche, quattro implementazioni; mapping completo nella chiusura Headline Sections sotto. Il nome comune non è una API universale.
 Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
 <a id="component-069"></a>
 ### 069. Blog · /esperienza
@@ -10085,7 +10085,7 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 **8. Hardcoded, relazioni, fedeltà**
 
 Nessun finding hardcoded per fonte disponibile; nessuna prova sugli interni non esposti.
-Potential relationship, NON unificata: Headline · / [pattern-l4Hx2sTr1], Headline · / [pattern-DUIrhpb0e], Headline · / [pattern-wIf2vBmrp], Headline · /esperienza [pattern-VuSLlvonD], Headline · /esperienza [pattern-qgLuHW8XG], Headline · /eventi/:Eventi [pattern-RuA0JWZsP], Headline · /eventi/:Eventi [pattern-nN8BISdtN], Headline · /eventi/:Eventi [pattern-UNMBQYnKg], Headline · /community [pattern-dR7SkYjAS], Headline · /community/:Community [pattern-IMQdwgcx4], Headline · Template [pattern-GXDcxsQa9]. Shared:Same original layer name; source structure retained per node. Differences:Content, geometry, CMS, assets and responsive overrides vary; identical name does not prove interchangeable component.
+Consolidamento headline verificato2026-10-09: sette famiglie semantiche, quattro implementazioni; mapping completo nella chiusura Headline Sections sotto. Il nome comune non è una API universale.
 Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
 <a id="component-071"></a>
 ### 071. Lista CMS · /esperienza
@@ -11045,7 +11045,7 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 **8. Hardcoded, relazioni, fedeltà**
 
 Nessun finding hardcoded per fonte disponibile; nessuna prova sugli interni non esposti.
-Potential relationship, NON unificata: Headline · / [pattern-l4Hx2sTr1], Headline · / [pattern-DUIrhpb0e], Headline · / [pattern-wIf2vBmrp], Headline · /esperienza [pattern-VuSLlvonD], Headline · /esperienza [pattern-qgLuHW8XG], Headline · /eventi/:Eventi [pattern-RuA0JWZsP], Headline · /eventi/:Eventi [pattern-nN8BISdtN], Headline · /eventi/:Eventi [pattern-UNMBQYnKg], Headline · /community [pattern-dR7SkYjAS], Headline · /community/:Community [pattern-IMQdwgcx4], Headline · Template [pattern-GXDcxsQa9]. Shared:Same original layer name; source structure retained per node. Differences:Content, geometry, CMS, assets and responsive overrides vary; identical name does not prove interchangeable component.
+Consolidamento headline verificato2026-10-09: sette famiglie semantiche, quattro implementazioni; mapping completo nella chiusura Headline Sections sotto. Il nome comune non è una API universale.
 Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
 <a id="component-079"></a>
 ### 079. Section 2 · /eventi/:Eventi
@@ -11241,7 +11241,7 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 **8. Hardcoded, relazioni, fedeltà**
 
 Nessun finding hardcoded per fonte disponibile; nessuna prova sugli interni non esposti.
-Potential relationship, NON unificata: Headline · / [pattern-l4Hx2sTr1], Headline · / [pattern-DUIrhpb0e], Headline · / [pattern-wIf2vBmrp], Headline · /esperienza [pattern-VuSLlvonD], Headline · /esperienza [pattern-qgLuHW8XG], Headline · /eventi/:Eventi [pattern-RuA0JWZsP], Headline · /eventi/:Eventi [pattern-nN8BISdtN], Headline · /eventi/:Eventi [pattern-UNMBQYnKg], Headline · /community [pattern-dR7SkYjAS], Headline · /community/:Community [pattern-IMQdwgcx4], Headline · Template [pattern-GXDcxsQa9]. Shared:Same original layer name; source structure retained per node. Differences:Content, geometry, CMS, assets and responsive overrides vary; identical name does not prove interchangeable component.
+Consolidamento headline verificato2026-10-09: sette famiglie semantiche, quattro implementazioni; mapping completo nella chiusura Headline Sections sotto. Il nome comune non è una API universale.
 Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
 <a id="component-081"></a>
 ### 081. Testimonial · /eventi/:Eventi
@@ -11662,7 +11662,7 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 **8. Hardcoded, relazioni, fedeltà**
 
 Nessun finding hardcoded per fonte disponibile; nessuna prova sugli interni non esposti.
-Potential relationship, NON unificata: Headline · / [pattern-l4Hx2sTr1], Headline · / [pattern-DUIrhpb0e], Headline · / [pattern-wIf2vBmrp], Headline · /esperienza [pattern-VuSLlvonD], Headline · /esperienza [pattern-qgLuHW8XG], Headline · /eventi/:Eventi [pattern-RuA0JWZsP], Headline · /eventi/:Eventi [pattern-nN8BISdtN], Headline · /eventi/:Eventi [pattern-UNMBQYnKg], Headline · /community [pattern-dR7SkYjAS], Headline · /community/:Community [pattern-IMQdwgcx4], Headline · Template [pattern-GXDcxsQa9]. Shared:Same original layer name; source structure retained per node. Differences:Content, geometry, CMS, assets and responsive overrides vary; identical name does not prove interchangeable component.
+Consolidamento headline verificato2026-10-09: sette famiglie semantiche, quattro implementazioni; mapping completo nella chiusura Headline Sections sotto. Il nome comune non è una API universale.
 Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
 <a id="component-085"></a>
 ### 085. Lista CMS · /eventi/:Eventi
@@ -14262,7 +14262,7 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 **8. Hardcoded, relazioni, fedeltà**
 
 Nessun finding hardcoded per fonte disponibile; nessuna prova sugli interni non esposti.
-Potential relationship, NON unificata: Headline · / [pattern-l4Hx2sTr1], Headline · / [pattern-DUIrhpb0e], Headline · / [pattern-wIf2vBmrp], Headline · /esperienza [pattern-VuSLlvonD], Headline · /esperienza [pattern-qgLuHW8XG], Headline · /eventi/:Eventi [pattern-RuA0JWZsP], Headline · /eventi/:Eventi [pattern-nN8BISdtN], Headline · /eventi/:Eventi [pattern-UNMBQYnKg], Headline · /community [pattern-dR7SkYjAS], Headline · /community/:Community [pattern-IMQdwgcx4], Headline · Template [pattern-GXDcxsQa9]. Shared:Same original layer name; source structure retained per node. Differences:Content, geometry, CMS, assets and responsive overrides vary; identical name does not prove interchangeable component.
+Consolidamento headline verificato2026-10-09: sette famiglie semantiche, quattro implementazioni; mapping completo nella chiusura Headline Sections sotto. Il nome comune non è una API universale.
 Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
 <a id="component-109"></a>
 ### 109. Lista CMS · /community
@@ -14980,7 +14980,7 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 **8. Hardcoded, relazioni, fedeltà**
 
 Nessun finding hardcoded per fonte disponibile; nessuna prova sugli interni non esposti.
-Potential relationship, NON unificata: Headline · / [pattern-l4Hx2sTr1], Headline · / [pattern-DUIrhpb0e], Headline · / [pattern-wIf2vBmrp], Headline · /esperienza [pattern-VuSLlvonD], Headline · /esperienza [pattern-qgLuHW8XG], Headline · /eventi/:Eventi [pattern-RuA0JWZsP], Headline · /eventi/:Eventi [pattern-nN8BISdtN], Headline · /eventi/:Eventi [pattern-UNMBQYnKg], Headline · /community [pattern-dR7SkYjAS], Headline · /community/:Community [pattern-IMQdwgcx4], Headline · Template [pattern-GXDcxsQa9]. Shared:Same original layer name; source structure retained per node. Differences:Content, geometry, CMS, assets and responsive overrides vary; identical name does not prove interchangeable component.
+Consolidamento headline verificato2026-10-09: sette famiglie semantiche, quattro implementazioni; mapping completo nella chiusura Headline Sections sotto. Il nome comune non è una API universale.
 Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
 <a id="component-116"></a>
 ### 116. Lista CMS · /community/:Community
@@ -15583,7 +15583,7 @@ Hidden/conditional:0; condizioni esatte nel JSON. Varianti non selezionate conse
 **8. Hardcoded, relazioni, fedeltà**
 
 Nessun finding hardcoded per fonte disponibile; nessuna prova sugli interni non esposti.
-Potential relationship, NON unificata: Headline · / [pattern-l4Hx2sTr1], Headline · / [pattern-DUIrhpb0e], Headline · / [pattern-wIf2vBmrp], Headline · /esperienza [pattern-VuSLlvonD], Headline · /esperienza [pattern-qgLuHW8XG], Headline · /eventi/:Eventi [pattern-RuA0JWZsP], Headline · /eventi/:Eventi [pattern-nN8BISdtN], Headline · /eventi/:Eventi [pattern-UNMBQYnKg], Headline · /community [pattern-dR7SkYjAS], Headline · /community/:Community [pattern-IMQdwgcx4], Headline · Template [pattern-GXDcxsQa9]. Shared:Same original layer name; source structure retained per node. Differences:Content, geometry, CMS, assets and responsive overrides vary; identical name does not prove interchangeable component.
+Consolidamento headline verificato2026-10-09: sette famiglie semantiche, quattro implementazioni; mapping completo nella chiusura Headline Sections sotto. Il nome comune non è una API universale.
 Per ricostruire consultare raw nodes e override. Non dedurre path, valori assenti, fallback/stati/browser behavior non esposti. Nessun componente migrato.
 <a id="component-121"></a>
 ### 121. Modulo · Template
@@ -17401,3 +17401,30 @@ Stats composition reuses existing StatRow for all four records. Three live break
 
 ## Session final — 2026-10-09
 EventTestimonial e11pattern CMS completati nel loro scope; adapter condivisi, nessun file per frame. Home scroll scene, macro parent, routing pagine e CMS backend restano pending. Stato80completed/55pending/2legacy;39file runtime/41voci catalogo. Contratti, tabella completa dei residui e NEXT SESSION in [MIGRATION-STATUS.md](MIGRATION-STATUS.md#session-final-2026-10-09); prove e manifest nella sessionFinal di MIGRATION-STATUS-VERIFICATION.json.
+
+
+## Headline Sections — 2026-10-09
+
+| Framer pattern | Famiglia | Runtime | Stato |
+| --- | --- | --- | --- |
+| pattern-l4Hx2sTr1 | A | `HeroFittedHeadline` | MIGRATED |
+| pattern-DUIrhpb0e | B | `LabelledStaggerHeadline` | MIGRATED |
+| pattern-wIf2vBmrp | C | `ContentHeadline` | CONSOLIDATED WITH ContentHeadline labelled |
+| pattern-VuSLlvonD | C | `ContentHeadline` | CONSOLIDATED WITH ContentHeadline labelled |
+| pattern-qgLuHW8XG | C | `ContentHeadline` | CONSOLIDATED WITH ContentHeadline labelled |
+| pattern-RuA0JWZsP | D | `SplitContent` | CONSOLIDATED WITH SplitContent |
+| pattern-nN8BISdtN | D | `SplitContent` | CONSOLIDATED WITH SplitContent |
+| pattern-UNMBQYnKg | E | `ContentHeadline` | CONSOLIDATED WITH ContentHeadline centered |
+| pattern-IMQdwgcx4 | E | `ContentHeadline` | CONSOLIDATED WITH ContentHeadline centered |
+| pattern-dR7SkYjAS | F | `ContentHeadline` | ABSORBED INTO ContentHeadline centered-large |
+| pattern-GXDcxsQa9 | G | `ContentHeadline` | ABSORBED INTO ContentHeadline contact |
+
+All33responsive roots verified,82completed/53pending/2legacy;41runtimefiles/43catalogentries/42parts-available. A/B now migrated; C/D/E/F/G existing implementations revalidated. Template contact is live, no new legacy classification. Source and browser evidence/manifest in MIGRATION-STATUS-VERIFICATION.json.headlineSections; contracts in CONTENT-FORM-ATOMS.md. Full parent/page motion and Logos excluded.
+
+
+## LOGOS AND INTRO — CLOSED, 2026-10-09
+
+Esperienza `pattern-ZPvGsPv3Z` → `LogosAndIntro` (MIGRATED); contained `pattern-Jsd2pjqLq` → internal Logos + `BrandTicker` (ABSORBED INTO); Intro `OhvkaBGPZ` and responsive replicas → internal Intro (ABSORBED INTO). All three mappings CLOSED. Intro has no separate inventory unit: no phantom record added. 137 units: **84 completed / 51 not-migrated / 2 legacy-unused / 0 to-complete; 43 runtime files / 45 catalog entries / 41 pending parents parts-available**. Parent Color container and product Esperienza page remain pending.
+
+
+Source-node mapping and proof: MIGRATION-STATUS-VERIFICATION.json.logosAndIntro. Original Icon Engine assets reused; Label/TextStagger unchanged. Intro has no separate unit but all three node replicas mapped CLOSED.

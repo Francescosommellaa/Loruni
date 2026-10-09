@@ -30,7 +30,7 @@ _reference-repos/
 *.sln
 *.sw?
 
-.agent/proofs/
+.agent/
 
 
 

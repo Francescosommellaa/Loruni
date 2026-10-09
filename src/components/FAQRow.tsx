@@ -1,6 +1,6 @@
-import { useId, type CSSProperties, type MouseEvent } from 'react'
-import { domMax, LazyMotion, m } from 'motion/react'
-import { motion as motionTokens, typography } from '../styles/token'
+import { useId, type CSSProperties } from 'react'
+import { domAnimation, LazyMotion, m } from 'motion/react'
+import { typography } from '../styles/token'
 import { useReducedMotionPreference } from '../motion/useReducedMotionPreference'
 import { FaqIcon } from './FaqIcon'
 import './FAQRow.css'
@@ -16,9 +16,8 @@ export type FAQRowProps = {
   style?: CSSProperties
 }
 
-// Exact source tween already present in the canonical motion exports.
-const source = motionTokens.transitions.faqSectionDefaultTransition.config
-const tween = { type: source.type, duration: Number.parseFloat(source.duration), delay: Number.parseFloat(source.delay), ease: [...source.ease] as [number, number, number, number] }
+// User-requested refinement: animate the reveal without scaling the text.
+const tween = { duration: 0.32, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }
 
 /** One controlled row. Availability and sibling orchestration belong to its parent. */
 export function FAQRow({ title, text, open, onOpenChange, onClick, className, style }: FAQRowProps) {
@@ -27,30 +26,26 @@ export function FAQRow({ title, text, open, onOpenChange, onClick, className, st
   const answerId = `${identity}-answer`
   const reduced = useReducedMotionPreference()
   const transition = reduced ? { ...tween, duration: 0 } : tween
-  function activate(event: MouseEvent<HTMLDivElement>) {
-    // The source icon's separate DISMISS_OVERLAY action consumes its pointer click.
-    // Current consumers have no overlay; retain that area without inventing an action.
-    if (event.target instanceof Element && event.target.closest('.loruni-faq-icon')) return
+  function activate() {
     onClick?.()
     onOpenChange(!open)
   }
-  return <LazyMotion features={domMax} strict>
+  return <LazyMotion features={domAnimation} strict>
     {/* Delegation extends the native trigger's pointer area to the answer, as in Framer. */}
-    <m.div className={['loruni-faq-row', className].filter(Boolean).join(' ')} style={style}
-      data-state={open ? 'Opened' : 'Closed'} initial={false} layout={reduced ? false : 'size'}
-      transition={transition} onClick={activate}>
-      <m.h3 className="loruni-faq-row__question" layout={reduced ? false : 'position'} transition={transition}>
+    <div className={['loruni-faq-row', className].filter(Boolean).join(' ')} style={style}
+      data-state={open ? 'Opened' : 'Closed'} onClick={activate}>
+      <h3 className="loruni-faq-row__question">
         <button type="button" id={triggerId} className="loruni-faq-row__trigger"
           aria-expanded={open} aria-controls={answerId}>
           <span className={`${typography.headline28.className} loruni-faq-row__title`}>{title}</span>
           <FaqIcon variant={open ? 'Minus' : 'Plus'} decorative />
         </button>
-      </m.h3>
+      </h3>
       <m.div id={answerId} role="region" aria-labelledby={triggerId} aria-hidden={!open} inert={!open}
-        className="loruni-faq-row__answer" initial={false} layout={reduced ? false : 'position'}
-        animate={{ opacity: open ? 1 : 0 }} transition={transition}>
-        <p className={`${typography.text20.className} loruni-faq-row__text`}>{text}</p>
+        className="loruni-faq-row__reveal" initial={false}
+        animate={{ height: open ? 'auto' : 0, opacity: open ? 1 : 0 }} transition={transition}>
+        <div className="loruni-faq-row__answer"><p className={`${typography.text20.className} loruni-faq-row__text`}>{text}</p></div>
       </m.div>
-    </m.div>
+    </div>
   </LazyMotion>
 }

@@ -80,3 +80,15 @@ Stats/StatRow are static markup/CSS only; uppercase is typography, no counter/in
 ## EventTestimonial / CMS boundary — 2026-10-09
 The existing testimonial title word-opacity algorithm is shared through motion/WordOpacityReveal.tsx; same heading/span DOM, once/threshold0, spring.5/bounce0/per-word.06, live readable reduced/failure path. Event quote uses element opacity once/threshold0 with source spring.4/delay.4, distinct from carousel quote tween.3/delay.2/threshold.5. No duplicated TextStagger, no carousel state in EventTestimonial.
 CMS adapters own no scroll transform/progress. Home Collection List source effects reference headline-trigger, successive project roots and Services: cross-section choreography belongs to the pending Home scene on native wrapper refs. ProjectCard hover retains separate image/arrow targets; future GSAP must write only the outer scene wrapper. Current metadata records the endpoints; native/local Home scene transport is not certified by this task.
+
+
+### Headline sections — 2026-10-09
+Headline compositions add no motion owner. HeroFittedHeadline configures the canonical TextFitWidth; LabelledStaggerHeadline configures the canonical one-shot inView TextStagger (.1line delay/.5duration/variableWeightfalse/halfOpacityfalse) and existing live reduced policy. All other headline compositions are static. Hero parallax and cross-target Home choreography stay with the future parent; no observers/RAF/splitting/fitting engines added here.
+
+
+### FAQ — user correction 2026-10-09
+Explicit visual correction overrides the previous source tween: FAQRow alone writes answer height/opacity (0.32s/ease[.22,1,.36,1]); Icon Engine alone writes the centered vertical bar scaleY (0.32s/ease[.4,0,.2,1]). Constant thickness, fixed horizontal bar, no animated rotation/fade or text scaling. FAQSection intrinsic ResizeObserver reserve follows the row, with no layout projection/frame scheduler/RAF. Shared live reduced policy and controlled/exclusive identity remain. See DESIGN-SYSTEM-VISUAL-REFINEMENT-VERIFICATION.md; previous source-frame comparisons are dated history.
+
+
+### BrandTicker — source-derived transport, 2026-10-09
+Native Web Animations owns the ticker track transform only; linear80px/s left, period measured at resize only, two bounded copies. Original hover100%=factor1 unchanged, no drag. IntersectionObserver margin100px + document visibility play/pause, phase-preserving resize, scoped cancel/disconnect/listener removal. No per-frame React state/layout/RAF or cinematic progress owner. Shared live reduced policy cancels transport and exposes all six original concept marks in a wrapped static group. Intro motion remains entirely canonical TextStagger, delay.1/durPerLine.5/inView. Preview wall-clock speed sample discrepancy and unavailable actual document-hidden transition are recorded in logosAndIntro proof; no speculative speed compensation.

@@ -1,0 +1,49 @@
+.ds-spacing-explainer, .ds-geometry-grid, .ds-layout-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.ds-spacing-explainer article, .ds-geometry-grid article, .ds-layout-cards article { min-width: 0; }
+.ds-spacing-explainer h2, .ds-geometry-grid :is(h2, h3), .ds-layout-cards h2 { font-size: 15px; font-weight: 500; margin: 18px 0 6px; }
+.ds-spacing-explainer p, .ds-geometry-grid p, .ds-geometry-note { color: var(--color-neutral-400); font-size: 14px; line-height: 1.6; margin: 0 0 8px; }
+.ds-spacing-explainer small, .ds-geometry-grid small { display: block; color: var(--color-neutral-500); font-size: 12px; }
+.ds-spacing-diagram, .ds-inset-diagram, .ds-shape-preview, .ds-border-preview, .ds-focus-preview { height: 136px; display: flex; align-items: center; justify-content: center; background: var(--color-neutral-900); border: 1px solid var(--color-neutral-800); border-radius: 8px; }
+.ds-spacing-diagram span { padding: 12px; background: var(--color-neutral-800); border: 1px solid var(--color-neutral-600); color: var(--color-neutral-50); font-size: 12px; }
+.ds-spacing-diagram--inside { padding: var(--space-24); background: repeating-linear-gradient(135deg, var(--color-neutral-900), var(--color-neutral-900) 5px, var(--color-neutral-800) 5px, var(--color-neutral-800) 6px); }
+.ds-spacing-diagram--inside span { width: 100%; height: 100%; display: grid; place-items: center; }
+.ds-spacing-diagram--between { gap: var(--space-16); position: relative; }
+.ds-spacing-diagram--between span { width: 48px; height: 48px; }
+.ds-spacing-diagram--between i { position: absolute; width: var(--space-16); height: 1px; background: var(--color-brand-primary); }
+.ds-spacing-diagram--outside span { margin: var(--space-24); outline: 1px dashed var(--color-neutral-600); outline-offset: 24px; }
+.ds-spacing-scale { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; }
+.ds-spacing-scale > li { min-width: 0; padding: 16px 0; border-bottom: 1px solid var(--color-neutral-800); }
+.ds-spacing-scale__sample { display: flex; align-items: center; gap: 20px; height: 28px; }
+.ds-spacing-scale strong { font-size: 14px; font-weight: 500; flex: 0 0 48px; }
+.ds-spacing-ruler { min-width: 0; flex: 1; overflow-x: auto; }
+.ds-spacing-ruler span { display: block; height: 6px; min-height: 6px; background: var(--color-neutral-50); border-radius: 1px; }
+.ds-page .ds-geometry-details { border: 0; border-radius: 0; padding: 0; margin: 12px 0 0; background: none; }
+.ds-page .ds-geometry-details > summary { color: var(--color-neutral-500); font-size: 12px; font-weight: 400; cursor: pointer; }
+.ds-geometry-details > div { margin-top: 12px; padding: 14px; border: 1px solid var(--color-neutral-800); border-radius: 6px; background: var(--color-neutral-900); }
+.ds-geometry-details code { font-size: 11px; overflow-wrap: anywhere; }
+.ds-geometry-details p { font-size: 12px; margin: 10px 0 0; }
+.ds-inset-diagram { padding-inline: 24px; }
+.ds-inset-diagram span { width: 100%; height: 100%; background: var(--color-neutral-800); border-inline: 1px dashed var(--color-neutral-600); }
+.ds-inset-diagram--section { padding-block: 24px; }
+.ds-inset-diagram--section span { border: 1px dashed var(--color-neutral-600); }
+.ds-gap-diagram { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 20px; background: var(--color-neutral-900); border: 1px solid var(--color-neutral-800); border-radius: 8px; min-height: 136px; }
+.ds-gap-diagram span { height: 36px; background: var(--color-neutral-800); border: 1px solid var(--color-neutral-700); }
+.ds-shape-preview span { width: 80px; height: 80px; border: 1px solid var(--color-neutral-600); background: var(--color-neutral-800); }
+.ds-border-preview span { width: 65%; height: 44px; background: var(--color-neutral-50); }
+.ds-border-preview--separator span { height: 0; }
+.ds-border-preview--hairline span { height: 0; background: none; border-top: solid var(--color-neutral-50); }
+.ds-focus-preview span { background: var(--color-neutral-50); color: var(--color-neutral-950); padding: 12px 18px; font-size: 14px; }
+.ds-layout-cards article { border: 1px solid var(--color-neutral-800); border-radius: 8px; padding: 20px; }
+.ds-layout-cards h2 { margin-top: 0; }
+.ds-layout-cards dl { margin: 24px 0; }
+.ds-layout-cards dl > div { display: flex; justify-content: space-between; gap: 16px; padding: 8px 0; font-size: 13px; }
+.ds-layout-cards dt { color: var(--color-neutral-400); }
+.ds-layout-cards dd { margin: 0; }
+.ds-layout-cards strong { display: block; font-size: 32px; margin: 24px 0; font-weight: 500; }
+.ds-page-diagram { padding: 32px var(--preview-gutter); background: var(--color-neutral-900); border: 1px solid var(--color-neutral-800); border-radius: 8px; margin-bottom: 16px; }
+.ds-page-diagram > div { max-width: var(--layout-content-measure); margin-inline: auto; padding: 24px; border: 1px dashed var(--color-neutral-600); display: grid; gap: 16px; }
+.ds-page-diagram span { display: block; height: 6px; background: var(--color-neutral-700); }
+.ds-page-diagram span:first-child { width: 55%; height: 12px; background: var(--color-neutral-50); }
+.ds-page-diagram span:last-child { width: 75%; }
+@media (width < 1100px) { .ds-spacing-explainer, .ds-geometry-grid, .ds-layout-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (width < 600px) { .ds-spacing-explainer, .ds-geometry-grid, .ds-layout-cards, .ds-spacing-scale { grid-template-columns: minmax(0, 1fr); } .ds-spacing-explainer { gap: 32px; } }

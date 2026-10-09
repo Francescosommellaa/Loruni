@@ -1,3 +1,4 @@
+import { DemoControls } from './DemoControls'
 import { useId, useRef, useState } from 'react'
 import { LoadMore } from '../../components/LoadMore'
 
@@ -28,11 +29,11 @@ export function LoadMoreLifecycleExample() {
       <LoadMore loading={loading} hasMore={hasMore} onLoadMore={start} aria-controls={resultsId} />
     </div>
     <p role="status" aria-atomic="true">{status}</p>
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
-      <button type="button" disabled={!loading} onClick={() => complete(true)}>Completa · altri risultati</button>
-      <button type="button" disabled={!loading} onClick={() => complete(false)}>Completa · fine risultati</button>
-      <button type="button" disabled={!loading} onClick={() => complete(true)}>Errore · abilita riprova</button>
-      <button type="button" onClick={() => { complete(true); setRequests(0); setStatus('') }}>Ripristina esempio</button>
-    </div>
+    <DemoControls>
+      <button className="ds-demo-action" type="button" disabled={!loading} onClick={() => complete(true)}>Completa · altri risultati</button>
+      <button className="ds-demo-action" type="button" disabled={!loading} onClick={() => complete(false)}>Completa · fine risultati</button>
+      <button className="ds-demo-action" type="button" disabled={!loading} onClick={() => complete(true)}>Errore · abilita riprova</button>
+      <button className="ds-demo-action" type="button" onClick={() => { complete(true); setRequests(0); setStatus('') }}>Ripristina esempio</button>
+    </DemoControls>
   </div>
 }

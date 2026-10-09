@@ -1,3 +1,4 @@
+import { DemoControls } from './DemoControls'
 import { useState, useSyncExternalStore, type CSSProperties } from 'react'
 import { MotionConfig } from 'motion/react'
 import { TextFitWidth } from '../../components/TextFitWidth'
@@ -44,15 +45,15 @@ export function TextFitControlsExample() {
   const [align, setAlign] = useState<'left' | 'center' | 'right'>('left')
   const [mounted, setMounted] = useState(true)
   return <div>
-    <div className="ds-text-controls">
-      <label>Testo fit<textarea value={text} onChange={e => setText(e.target.value)} /></label>
-      <label>Larghezza fit<input type="range" min="100" max="1200" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
-      <label>Font fit<select value={fontFamily} onChange={e => setFamily(e.target.value)}>{families.map((family, i) => <option key={family} value={family}>{['Funnel Display', 'Funnel Sans', 'IBM Plex Sans'][i]}</option>)}</select></label>
-      <label>Align fit<select value={align} onChange={e => setAlign(e.target.value as typeof align)}>{['left', 'center', 'right'].map(a => <option key={a}>{a}</option>)}</select></label>
-      <label>Letter spacing fit<input type="number" step="0.01" value={spacing} onChange={e => setSpacing(Number(e.target.value))} /></label>
-      <label>Line height fit<input type="number" step="0.1" value={height} onChange={e => setHeight(Number(e.target.value))} /></label>
-      <button type="button" onClick={() => setMounted(v => !v)}>{mounted ? 'Smonta fit' : 'Monta fit'}</button>
-    </div>
+    <DemoControls>
+      <label className="ds-demo-field">Testo fit<textarea value={text} onChange={e => setText(e.target.value)} /></label>
+      <label className="ds-demo-field">Larghezza fit<input type="range" min="100" max="1200" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Font fit<select value={fontFamily} onChange={e => setFamily(e.target.value)}>{families.map((family, i) => <option key={family} value={family}>{['Funnel Display', 'Funnel Sans', 'IBM Plex Sans'][i]}</option>)}</select></label>
+      <label className="ds-demo-field">Align fit<select value={align} onChange={e => setAlign(e.target.value as typeof align)}>{['left', 'center', 'right'].map(a => <option key={a}>{a}</option>)}</select></label>
+      <label className="ds-demo-field">Letter spacing fit<input type="number" step="0.01" value={spacing} onChange={e => setSpacing(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Line height fit<input type="number" step="0.1" value={height} onChange={e => setHeight(Number(e.target.value))} /></label>
+      <button className="ds-demo-action" type="button" onClick={() => setMounted(v => !v)}>{mounted ? 'Smonta fit' : 'Monta fit'}</button>
+    </DemoControls>
     <div className="ds-text-fit-source" style={{ width, maxWidth: '100%' }}>{mounted && <TextFitWidth text={text} font={{ fontFamily, fontWeight: 600, letterSpacing: `${spacing}em`, lineHeight: `${height}em` }} align={align} text1="var(--color-brand-primary)" />}</div>
   </div>
 }
@@ -71,21 +72,21 @@ export function TextStaggerControlsExample() {
   const [generation, setGeneration] = useState(0)
   const [align, setAlign] = useState<'left' | 'center'>('left')
   return <div>
-    <div className="ds-text-controls">
-      <label>Testo stagger<textarea value={text} onChange={e => setText(e.target.value)} /></label>
-      <label>Contenuto CMS<select defaultValue="0" onChange={e => setText(eventTexts[Number(e.target.value)]!.text)}>{eventTexts.map((item, i) => <option key={item.slug} value={i}>{item.name}</option>)}</select></label>
-      <label>Larghezza stagger<input type="range" min="100" max="1200" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
-      <label>Trigger stagger<select value={trigger} onChange={e => { setTrigger(e.target.value as typeof trigger); setGeneration(v => v + 1) }}>{['inView', 'hover', 'click'].map(t => <option key={t}>{t}</option>)}</select></label>
-      <label>Font size stagger<input type="number" value={size} onChange={e => setSize(Number(e.target.value))} /></label>
-      <label>Delay stagger<input type="number" step="0.01" value={delay} onChange={e => setDelay(Number(e.target.value))} /></label>
-      <label>Durata per linea<input type="number" step="0.1" value={duration} onChange={e => setDuration(Number(e.target.value))} /></label>
-      <label>Align stagger<select value={align} onChange={e => setAlign(e.target.value as typeof align)}><option>left</option><option>center</option></select></label>
-      <label><input type="checkbox" checked={weight} onChange={e => setWeight(e.target.checked)} />Variable weight</label>
-      <label><input type="checkbox" checked={half} onChange={e => setHalf(e.target.checked)} />Half opacity</label>
-      <label><input type="checkbox" checked={reduced} onChange={e => setReduced(e.target.checked)} />Reduced motion</label>
-      <button type="button" onClick={() => setGeneration(v => v + 1)}>Rimonta stagger</button>
-      <button type="button" onClick={() => setMounted(v => !v)}>{mounted ? 'Smonta stagger' : 'Monta stagger'}</button>
-    </div>
+    <DemoControls>
+      <label className="ds-demo-field">Testo stagger<textarea value={text} onChange={e => setText(e.target.value)} /></label>
+      <label className="ds-demo-field">Contenuto CMS<select defaultValue="0" onChange={e => setText(eventTexts[Number(e.target.value)]!.text)}>{eventTexts.map((item, i) => <option key={item.slug} value={i}>{item.name}</option>)}</select></label>
+      <label className="ds-demo-field">Larghezza stagger<input type="range" min="100" max="1200" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Trigger stagger<select value={trigger} onChange={e => { setTrigger(e.target.value as typeof trigger); setGeneration(v => v + 1) }}>{['inView', 'hover', 'click'].map(t => <option key={t}>{t}</option>)}</select></label>
+      <label className="ds-demo-field">Font size stagger<input type="number" value={size} onChange={e => setSize(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Delay stagger<input type="number" step="0.01" value={delay} onChange={e => setDelay(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Durata per linea<input type="number" step="0.1" value={duration} onChange={e => setDuration(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Align stagger<select value={align} onChange={e => setAlign(e.target.value as typeof align)}><option>left</option><option>center</option></select></label>
+      <label className="ds-demo-field"><input type="checkbox" checked={weight} onChange={e => setWeight(e.target.checked)} />Variable weight</label>
+      <label className="ds-demo-field"><input type="checkbox" checked={half} onChange={e => setHalf(e.target.checked)} />Half opacity</label>
+      <label className="ds-demo-field"><input type="checkbox" checked={reduced} onChange={e => setReduced(e.target.checked)} />Reduced motion</label>
+      <button className="ds-demo-action" type="button" onClick={() => setGeneration(v => v + 1)}>Rimonta stagger</button>
+      <button className="ds-demo-action" type="button" onClick={() => setMounted(v => !v)}>{mounted ? 'Smonta stagger' : 'Monta stagger'}</button>
+    </DemoControls>
     <MotionConfig reducedMotion={reduced ? 'always' : 'user'}>
       <div className="ds-text-stagger-source" style={{ width, maxWidth: '100%' }}>{mounted && <TextStagger key={generation} text={text} trigger={trigger} font={{ fontFamily: families[1], fontSize: size, fontWeight: 400, lineHeight: '1.2em', letterSpacing: '-0.04em', textAlign: align }} delay={delay} durPerLine={duration} variableWeight={weight} halfOpacity={half} color="var(--color-neutral-50)" />}</div>
     </MotionConfig>
@@ -106,12 +107,12 @@ export function TextUtilityComparison() {
   if (caseKey === 'stagger-controls') return <TextStaggerControlsExample />
   if (caseKey === 'home-responsive' || caseKey === 'experience-responsive') return <TextResponsiveExample page={caseKey === 'home-responsive' ? 'home' : 'experience'} />
   return <main className="ds-text-comparison">
-    <div className="ds-text-controls">
-      <label>Configurazione<select value={caseKey} onChange={e => setCase(e.target.value)}>{[...textFitCases, ...textStaggerCases].map(c => <option key={c.key}>{c.key}</option>)}</select></label>
-      <label>Larghezza frame<input type="number" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
-      <label><input type="checkbox" checked={reduced} onChange={e => setReduced(e.target.checked)} />Reduced motion</label>
-      <button type="button" onClick={() => setGeneration(v => v + 1)}>Rimonta</button>
-    </div>
+    <DemoControls>
+      <label className="ds-demo-field">Configurazione<select value={caseKey} onChange={e => setCase(e.target.value)}>{[...textFitCases, ...textStaggerCases].map(c => <option key={c.key}>{c.key}</option>)}</select></label>
+      <label className="ds-demo-field">Larghezza frame<input type="number" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
+      <label className="ds-demo-field"><input type="checkbox" checked={reduced} onChange={e => setReduced(e.target.checked)} />Reduced motion</label>
+      <button className="ds-demo-action" type="button" onClick={() => setGeneration(v => v + 1)}>Rimonta</button>
+    </DemoControls>
     <MotionConfig reducedMotion={reduced ? 'always' : 'user'}>
       <div className={fit ? 'ds-text-fit-source' : 'ds-text-stagger-source'} style={frameStyle}>
         {fit ? <TextFitWidth {...fit.props} /> : stagger ? <TextStagger key={`${caseKey}-${generation}`} {...stagger.props} /> : null}

@@ -24,18 +24,18 @@ export function MainFormButtonLifecycleExample() {
   }
   return <div>
     <p>Form nativo locale: submit → pending; i controlli documentali completano l’esito senza inviare dati.</p>
-    <p><label>Larghezza form button <select value={width} onChange={event => setWidth(event.target.value as 'auto' | 'fill')}><option value="auto">auto · contatto</option><option value="fill">fill · Template</option></select></label></p>
+    <p><label className="ds-demo-field">Larghezza form button <select value={width} onChange={event => setWidth(event.target.value as 'auto' | 'fill')}><option value="auto">auto · contatto</option><option value="fill">fill · Template</option></select></label></p>
     <form ref={form} onSubmit={submit} aria-label="Lifecycle Main form button" aria-busy={status === 'pending'}>
       <FormField type="text" label="Nome" name="Name" required value={name} disabled={status === 'pending'}
         onChange={event => { setName(event.target.value); complete(event.target.value ? 'default' : 'incomplete') }} />
       <MainFormButton formStatus={status} width={width} />
     </form>
     <p><output aria-live="polite">Form status: {status} · Submit: {submits}</output></p>
-    <p><button type="button" disabled={status !== 'pending'} onClick={() => complete('success')}>Completa success</button>{' '}
-      <button type="button" disabled={status !== 'pending'} onClick={() => complete('error')}>Completa error</button>{' '}
-      <button type="button" disabled={status === 'pending'} onClick={() => complete('incomplete')}>Form incomplete</button>{' '}
-      <button type="button" disabled={status === 'pending'} onClick={() => { setName('Verifica locale'); complete('default') }}>Form completo / reset</button>{' '}
-      <button type="button" onClick={() => form.current?.requestSubmit()}>Ripeti submit form · prova locale</button></p>
+    <p><button className="ds-demo-action" type="button" disabled={status !== 'pending'} onClick={() => complete('success')}>Completa success</button>{' '}
+      <button className="ds-demo-action" type="button" disabled={status !== 'pending'} onClick={() => complete('error')}>Completa error</button>{' '}
+      <button className="ds-demo-action" type="button" disabled={status === 'pending'} onClick={() => complete('incomplete')}>Form incomplete</button>{' '}
+      <button className="ds-demo-action" type="button" disabled={status === 'pending'} onClick={() => { setName('Verifica locale'); complete('default') }}>Form completo / reset</button>{' '}
+      <button className="ds-demo-action" type="button" onClick={() => form.current?.requestSubmit()}>Ripeti submit form · prova locale</button></p>
   </div>
 }
 

@@ -4,6 +4,7 @@
 .ds-content-atoms__controls label { display: flex; flex-wrap: wrap; min-width: 0; max-width: 100%; align-items: center; gap: 8px; }
 .ds-content-atoms > label { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .ds-content-atoms__dark { padding: 12px; background: var(--color-neutral-950); }
+.ds-label-group-preview, .ds-details-preview { display: grid; gap: 24px; min-width: 0; }
 .ds-content-atoms__stats { flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
 .ds-content-atoms__home-media { height: 1080px; display: none; }
 .ds-content-atoms__experience-media { aspect-ratio: 1200 / 848; }

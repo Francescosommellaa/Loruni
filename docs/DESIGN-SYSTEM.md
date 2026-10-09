@@ -1,5 +1,27 @@
 # Catalogo vivo Loruni
 
+## Rifinitura corrente — 2026-10-09
+
+Feedback utente: fondamenti troppo tecnici, controlli nativi grigi, wrapper chiari incoerenti, anteprime tagliate e FAQ meccaniche. Il catalogo ora dà precedenza ai campioni: GeometryCatalog mostra padding/gap/margine separati, scala e griglie reali, raggi/bordi/focus e misure responsive. Variabili, valori esatti, provenienza e copia sono dentro Dettagli CSS; ancore e ricerca restano stabili. I diagrammi degli inset sono schematici, con valori letti dagli export canonici.
+
+DemoControls raccoglie i controlli delle demo esistenti in Personalizza esempio, chiuso inizialmente: campi scuri, label leggibili, focus, checkbox e azioni coerenti. Le note del componente sono in Uso e riferimenti. Il catalogo usa una presentazione scura tramite props colore esistenti e CSS limitato a .ds-page: niente wrapper bianchi per FAQ, Community, form, titoli e statistiche. Le allocazioni delle fixture di confronto rimangono distinte. FitPreview adatta uniformemente i campioni Button fissi alla larghezza disponibile senza cambiare props/token; il playground sceglie Primary Mobile su Phone per default, con selezione manuale ancora disponibile.
+
+Eccezione prodotto autorizzata esplicitamente: FAQRow ora accetta il click anche sull'icona; le demo inizialmente Opened/Closed sono interattive. Il reveal anima altezza e opacità senza proiezione/scalatura del testo (0.32s, ease [.22,1,.36,1]). Il segno usa sempre il glyph dell'Icon Engine: barra verticale scaleY 0–1 dal centro, spessore costante e barra orizzontale ferma; nessuna rotazione animata o dissolvenza (0.32s, ease [.4,0,.2,1]). Le due barre hanno il medesimo centro. FAQSection conserva identità/esclusività e segue l'altezza reale con ResizeObserver; nessuna seconda animazione, RAF o scroll owner. Policy reduced condivisa, aria-expanded/controls/inert e tastiera conservati. --faq-foreground è un'integrazione locale con fallback Neutral950; i valori generati non cambiano.
+
+Registro osservato durante la verifica:45 voci, incluse due voci Logos aggiunte in parallelo. Questa task non certifica le relative migrazioni. Prove: [DESIGN-SYSTEM-VISUAL-REFINEMENT-VERIFICATION.md](DESIGN-SYSTEM-VISUAL-REFINEMENT-VERIFICATION.md). La prova Geist precedente è storica rispetto a questa rifinitura.
+
+## Prima revisione Geist — 2026-10-09
+
+Su richiesta dell’utente, layout e organizzazione si ispirano a [Geist Introduction](https://vercel.com/geist/introduction): barra superiore persistente con ricerca, sidebar raggruppata con scorrimento indipendente, introduzione compatta e griglia di sei anteprime, documenti dedicati per fondamento/componente/riferimento, navigazione precedente/successivo. La palette e le tre famiglie Loruni restano quelle canoniche. Nessun codice o asset Geist copiato.
+
+`CatalogShell.css` contiene la composizione documentale; `DesignSystemPage.css` conserva gli stili dei campioni. `CatalogOverview.tsx` mostra token reali e Label/CategoryLabel/Icon canonici. `catalogNavigation.ts` ordina alfabeticamente il registro corrente e risolve le ancore esistenti tramite `catalogIndex`: ricerca e link diretti aprono il documento corretto, gli antenati details e il focus sul valore. Back/forward e reload usano la cronologia nativa hash; nessun router o dipendenza aggiunta.
+
+Una sola voce è montata alla volta. L’indice Componenti mostra le descrizioni senza montare tutte le demo; il documento selezionato mostra tutti gli esempi reali a larghezza disponibile. Tornando a una voce, i controlli locali delle demo ripartono dai default; il testo del campione tipografico resta nello stato della pagina. Nuove voci in `componentExamples.ts` compaiono automaticamente nell’indice, nel conteggio e nella ricerca. Registro osservato: 43 voci, incluse le headline aggiunte da lavoro concorrente; questa task non ne certifica la migrazione.
+
+Ricerca nella topbar per nome/variabile/categoria/valore, scorciatoie `/` e Ctrl/Cmd+K, paginazione a24 risultati, Escape/Cancella e chiusura quando si esce o si naviga. Menu mobile nativo details, chiuso all’avvio e dopo la selezione, con cambio breakpoint live; sidebar desktop mantiene visibile la voce attiva. Nessun nuovo timeline/RAF/smoothing o modifica ai token/componenti prodotto.
+
+Prove e limiti correnti: [DESIGN-SYSTEM-GEIST-VERIFICATION.md](DESIGN-SYSTEM-GEIST-VERIFICATION.md). I paragrafi successivi descrivono le slice storiche.
+
 Services Desktop Track2026-10-09:35 real catalog entries. Four new examples reuse current ServiceCard data and one canonical track: four services, inactive item, variable-content/height/viewport controls, native Desktop/Tablet iframe. ?fixture=services-track and services-track-frame are documentation consumers only. See SERVICES-DESKTOP-TRACK.md.
 
 TestimonialsSection2026-10-08: four real examples (explicit source data, attributed Home/Esperienza, native viewport comparison and dynamic/reduced/lifecycle controls), all using one canonical Section. Existing catalog count unchanged. See TESTIMONIALS-SECTION.md.
@@ -16,7 +38,7 @@ Pagina richiesta dall'utente il 2026-10-06: [design system locale](http://127.0.
 - Valori della fonte per proprietà; configurazioni motion tween/spring; ricette delle varianti e dei loro elementi nominati, default dei controlli. Sono riferimenti, non componenti React implementati.
 - Componenti React registrati in componentExamples.ts, con varianti e stati interattivi reali. Il conteggio segue il registro, anche durante importazioni concorrenti. I controlli del catalogo non sono componenti del prodotto.
 
-## Presentazione e ispezione — 2026-10-06
+## Presentazione e ispezione storiche — 2026-10-06
 
 Rifinitura richiesta dall'utente: superfici scure e testo bone, accenti corallo, Funnel per la gerarchia e IBM Plex Sans per i riferimenti. Colori, spaziature, raggi e dimensioni tipografiche consumano i token canonici; la geometria specifica della documentazione rimane locale. Nessuna modifica dei valori di prodotto o del progetto Framer.
 
@@ -102,3 +124,11 @@ Two real Grain examples at #ds-component-grain (default0.5 and responsive Hero m
 
 ### Session final — 2026-10-09
 41real entries/39component files. EventTestimonial and shared EventCardSlot/EventCollection/CommunityCollection have actual React examples with normalized current CMS input; empty/dynamic/reduced/one/missing-image/pagination/controlled-loading cases. Fixtures `?fixture=event-testimonial` and `?fixture=cms-collections` are documentation only. Existing CommunityCard examples share the same current dataset; no duplicate source-ID model or product pages. Contracts/verification/NEXT SESSION are in MIGRATION-STATUS.md and MIGRATION-STATUS-VERIFICATION.json.sessionFinal.
+
+
+### Headline sections — 2026-10-09
+43real entries/41componentfiles. Hero Fitted Headline and Labelled Stagger Headline are new actual exports; existing Content Headline and Split Content gain source-allocation/CMS controls. Eleven source cases at ?fixture=headline-sections&case=hero and real viewport slider ?fixture=headline-sections-frame. Controls/layout remain documentary, CMS flags/copy stay in consumer; digital-challenge Section1false observed. Hero fixture keeps the original allocation/CTA with neutral backdrop; parent media/parallax remain excluded.
+
+
+### Logos and Intro — 2026-10-09
+45real entries/43component files: Logos and Intro and Brand Ticker examples render actual exports/current original concept marks. Controls stay documentary (reduced/mount); composition and real viewport slider at ?fixture=logos-and-intro and ?fixture=logos-and-intro-frame. Parent background belongs to example, not product component. Original source assets and semantic non-partner disclaimer retained; no partner link. Responsive copy6/10/12leading spaces and Phone heading user override documented in existing CONTENT-FORM-ATOMS.md.

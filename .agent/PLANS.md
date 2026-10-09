@@ -8,6 +8,10 @@ Completed authorized ONE TOUCH slice: [Image Parallax](plans/2026-10-07-image-pa
 
 # Work plans
 
+Completed authorized medium-complexity slice: [Logos and Intro](plans/2026-10-09-logos-and-intro.md). Esperienza wrapper/Logos/Intro closed; original Icon Engine assets and canonical text primitives; Color container and other blocks excluded. Source preview clock and actual hidden-tab verification limits retained in proof.
+
+Completed authorized medium-complexity slice: [Headline sections](plans/2026-10-09-headline-sections.md). All11patterns, existing compositions revalidated, only two missing Home compositions added; Logos and macro parents remain outside scope.
+
 Completed authorized ONE TOUCH slice: [Services Desktop Track](plans/2026-10-08-services-desktop-track.md). Only the static Desktop content-slot; Services Section, Lenis and mobile remain pending.
 
 Completed authorized ONE TOUCH slice: [Testimonials Section](plans/2026-10-08-testimonials-section.md). Existing carousel/media/icon primitives consolidated; only this composite.
@@ -59,3 +63,7 @@ Scoped wrapper closure: [Community Label Container](plans/2026-10-09-community-l
 
 
 Final authorized session batch: [EventTestimonial / CMS / reconciliation](plans/2026-10-09-session-final.md). Single testimonial and11small adapters only, source readback/manual browser/build proof; no new macro sections/pages/backend. Current progress and exact NEXT SESSION remain in docs/MIGRATION-STATUS.md.
+
+Authorized documentation layout slice: [Design system / Geist](plans/2026-10-09-design-system-geist.md). Documentation shell and focused catalog views only.
+
+Current user-directed visual refinement: [Design-system foundations, demos and FAQ](plans/2026-10-09-design-system-visual-foundations.md). Explicit screenshot feedback extends the catalog work to shared controls/dark presentation and FAQ interaction/motion.

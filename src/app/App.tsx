@@ -1,4 +1,6 @@
 import { typography } from '../styles/token'
+import { LogosAndIntroExample, LogosAndIntroFrame } from '../pages/design-system/LogosAndIntroExamples'
+import { HeadlineSectionsExample, HeadlineSectionsFrame } from '../pages/design-system/HeadlineSectionsExamples'
 import { DesignSystemPage } from '../pages/design-system/DesignSystemPage'
 import { ImageParallaxComparison } from '../pages/design-system/ImageParallaxExamples'
 import { GrainHeroExample } from '../pages/design-system/GrainExamples'
@@ -15,6 +17,10 @@ import { TestimonialsControlsExample, TestimonialsFrameComparison } from '../pag
 
 export function App() {
   const fixture = new URLSearchParams(window.location.search).get('fixture')
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && fixture === 'logos-and-intro') return <LogosAndIntroExample comparison />
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && fixture === 'logos-and-intro-frame') return <LogosAndIntroFrame />
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && fixture === 'headline-sections') return <HeadlineSectionsExample comparison />
+  if (window.location.pathname.replace(/\/$/, '') === '/design-system' && fixture === 'headline-sections-frame') return <HeadlineSectionsFrame />
   if (window.location.pathname.replace(/\/$/, '') === '/design-system' && fixture === 'event-testimonial') return <EventTestimonialExample comparison />
   if (window.location.pathname.replace(/\/$/, '') === '/design-system' && fixture === 'cms-collections') return <CmsCollectionsExample comparison />
   if (window.location.pathname.replace(/\/$/, '') === '/design-system' && new URLSearchParams(window.location.search).get('fixture') === 'stats-frame') return <StatsFrame />

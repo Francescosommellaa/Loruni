@@ -2,32 +2,77 @@ import { useId, useState, type CSSProperties } from 'react'
 import { borders, gaps, insets, layout, radii, shadows, spacing } from '../../styles/token'
 import { catalogId } from './catalogIndex'
 import { CopyToken } from './CatalogTools'
+import './GeometryCatalog.css'
+
+type GeometryToken = { cssVariable: string; value: string; sourceNodes?: number; properties?: readonly string[] }
+function TokenDetails({ token }: { token: GeometryToken }) {
+  return <details className="ds-geometry-details"><summary>Dettagli CSS</summary>
+    <div id={catalogId('geometry', token.cssVariable)} tabIndex={-1}>
+      <div className="ds-token-line"><code>{token.cssVariable}</code><CopyToken value={token.cssVariable} /></div>
+      <code>{token.value}</code>
+      {token.sourceNodes !== undefined && <p>{token.sourceNodes} elementi della fonte{token.properties ? ` · ${token.properties.join(', ')}` : ''}</p>}
+    </div>
+  </details>
+}
+const devices: Record<string, string> = { phone: 'Telefono', tablet: 'Tablet', desktop: 'Desktop' }
+const resolveSpace = (value: string) => value.replace(/var\((--space-[^)]+)\)/g, (_, name: string) => Object.values(spacing).find(t => t.cssVariable === name)?.value ?? name)
 
 export function SpacingCatalog() {
   return <>
-    <ul className="ds-space-list">{Object.entries(spacing).map(([name, token]) => <li key={name} id={catalogId('geometry', token.cssVariable)} tabIndex={-1}><header><div className="ds-token-line"><code>{token.cssVariable}</code><CopyToken value={token.cssVariable} /></div><span>{token.value}</span></header><div className="ds-space-track"><span style={{ width: `var(${token.cssVariable})` }} /></div><p>{token.sourceNodes} nodi distinti · {token.properties.join(', ')}</p></li>)}</ul>
-    <h3 className="ds-subheading">Padding, gap e margini</h3>
-    <p className="ds-explanation">Una sola scala per lo spazio. Il padding è interno, il gap appartiene al contenitore, il margine separa gli elementi. La fonte usa padding e gap: non imponiamo margini automatici.</p>
-    <div className="ds-box-model" aria-label="Campione illustrativo: margin24, padding24 e gap16"><div className="ds-box-model-margin"><span>margin · 24px</span><div className="ds-box-model-padding"><span>padding · 24px</span><div className="ds-box-model-gap"><span>Elemento</span><span>gap · 16px</span><span>Elemento</span></div></div></div></div>
-    <div className="ds-recipe-list">{Object.entries({ ...insets, ...gaps }).map(([name, token]) => <div key={name} id={catalogId('geometry', token.cssVariable)} tabIndex={-1}><code>{token.cssVariable}</code><span>{token.value}</span></div>)}</div>
+    <div className="ds-spacing-explainer">
+      <article><div className="ds-spacing-diagram ds-spacing-diagram--inside"><span>Contenuto</span></div><h2>Spazio interno</h2><p>Respiro tra il contenuto e il suo bordo.</p><small>Padding · 24px</small></article>
+      <article><div className="ds-spacing-diagram ds-spacing-diagram--between"><span /><i aria-hidden="true" /><span /></div><h2>Tra gli elementi</h2><p>Una distanza regolare all’interno del gruppo.</p><small>Gap · 16px</small></article>
+      <article><div className="ds-spacing-diagram ds-spacing-diagram--outside"><span>Contenuto</span></div><h2>Spazio esterno</h2><p>Separazione rispetto a ciò che sta intorno.</p><small>Margine · 24px, esempio illustrativo</small></article>
+    </div>
+    <h2 className="ds-subheading">Scala degli spazi</h2>
+    <ul className="ds-spacing-scale">{Object.entries(spacing).map(([name, token]) => <li key={name}>
+      <div className="ds-spacing-scale__sample"><strong>{token.value}</strong><div className="ds-spacing-ruler"><span style={{ width: `var(${token.cssVariable})` }} /></div></div>
+      <TokenDetails token={token} />
+    </li>)}</ul>
+    <h2 className="ds-subheading">Spazi intorno al contenuto</h2>
+    <div className="ds-geometry-grid">{Object.entries(insets).map(([name, token]) => <article key={name}>
+      <div className={`ds-inset-diagram ${name === 'section' ? 'ds-inset-diagram--section' : ''}`} aria-hidden="true"><span /></div>
+      <h3>{name === 'section' ? 'Intorno alla sezione' : 'Ai lati della pagina'}</h3>
+      <p>Ai lati: {Object.values(layout.pageGutter.breakpoints).map(bp => bp.value).join(' / ')}{name === 'section' ? ` · sopra e sotto: ${Object.values(layout.sectionBlock.breakpoints).map(bp => bp.value).join(' / ')}` : ''}</p><small>Telefono / Tablet / Desktop</small>
+      <TokenDetails token={token} />
+    </article>)}</div>
+    <h2 className="ds-subheading">Distanze nella griglia</h2>
+    <div className="ds-geometry-grid">{Object.entries(gaps).map(([name, token]) => <article key={name}>
+      <div className="ds-gap-diagram" style={{ gap: `var(${token.cssVariable})` }} aria-hidden="true">{Array.from({ length: 6 }, (_, i) => <span key={i} />)}</div>
+      <h3>{name === 'rows0Columns8' ? 'Righe unite' : name === 'rows8Columns8' ? 'Distanza uniforme' : 'Righe distanziate'}</h3>
+      <p>{resolveSpace(token.value).split(' ').map((v, i) => `${i ? 'Colonne' : 'Righe'} ${v}`).join(' · ')}</p><TokenDetails token={token} />
+    </article>)}</div>
   </>
 }
 
 export function ShapeCatalog() {
   return <>
-    <ul className="ds-radius-list">{Object.entries(radii).map(([name, token]) => <li key={name} id={catalogId('geometry', token.cssVariable)} tabIndex={-1}><div className="ds-radius-sample" style={{ borderRadius: `var(${token.cssVariable})` }} aria-hidden="true" /><h3>{name === 'none' ? 'Nessun raggio' : name === 'subtle' ? 'Raggio minimo' : 'Raggio immagini / avatar'}</h3><code>{token.cssVariable}</code><p>{token.value} · {token.sourceNodes} nodi distinti</p></li>)}</ul>
-    <h3 className="ds-subheading">Bordi ed effetto focus della fonte</h3>
-    <div className="ds-recipe-list">{Object.entries(borders).map(([name, token]) => <div key={name} id={catalogId('geometry', token.cssVariable)} tabIndex={-1}><code>{token.cssVariable}</code><span>{token.value}</span></div>)}</div>
-    <div className="ds-source-focus" id={catalogId('geometry', shadows.formFocus.cssVariable)} tabIndex={-1}><div style={{ border: `var(${borders.formInput.cssVariable})`, boxShadow: `var(${shadows.formFocus.cssVariable})` }}>Campione bordo e ombra dei campi Framer</div><code>{shadows.formFocus.cssVariable}</code><span>{shadows.formFocus.value}</span></div>
-    <p className="ds-explanation">Il raggio 56px proviene dalle immagini; non è un raggio universale delle card. I controlli Framer senza raggio rimangono a 0px.</p>
+    <div className="ds-geometry-grid">{Object.entries(radii).map(([name, token]) => <article key={name}>
+      <div className="ds-shape-preview"><span style={{ borderRadius: `var(${token.cssVariable})` }} /></div>
+      <h2>{name === 'none' ? 'Angoli retti' : name === 'subtle' ? 'Raggio minimo' : 'Immagini arrotondate'}</h2><p>{token.value}</p><TokenDetails token={token} />
+    </article>)}</div>
+    <h2 className="ds-subheading">Bordi e focus</h2>
+    <div className="ds-geometry-grid">{Object.entries(borders).map(([name, token]) => <article key={name}>
+      <div className={`ds-border-preview ds-border-preview--${name}`}><span style={name === 'hairline' ? { borderTopWidth: `var(${token.cssVariable})` } : { border: `var(${token.cssVariable})` }} /></div>
+      <h3>{name === 'hairline' ? 'Linea sottile' : name === 'separator' ? 'Separatore' : 'Bordo del campo'}</h3><p>1px</p><TokenDetails token={token} />
+    </article>)}<article>
+      <div className="ds-focus-preview"><span style={{ border: `var(${borders.formInput.cssVariable})`, boxShadow: `var(${shadows.formFocus.cssVariable})` }}>Campo attivo</span></div>
+      <h3>Focus del campo</h3><p>Un’ombra netta accompagna il bordo.</p><TokenDetails token={shadows.formFocus} />
+    </article></div>
+    <p className="ds-geometry-note">Il raggio di 56px è usato per le immagini. Ogni componente mantiene la propria forma.</p>
   </>
 }
 
 export function LayoutCatalog() {
   return <>
-    <div className="ds-layout-values">{Object.entries(layout).map(([name, token]) => <article key={name} id={catalogId('geometry', token.cssVariable)} tabIndex={-1}><h3>{({ pageGutter: 'Gutter delle sezioni', sectionBlock: 'Padding verticale delle sezioni', contentMeasure: 'Larghezza contenuti' })[name]}</h3><code>{token.cssVariable}</code>{'breakpoints' in token ? <dl>{Object.entries(token.breakpoints).map(([label, bp]) => <div key={label}><dt>{label}</dt><dd>{bp.value} · da {bp.minWidth}px</dd></div>)}</dl> : <p>{token.value}</p>}</article>)}</div>
-    <div className="ds-layout-preview" style={{ '--preview-gutter': `var(${layout.pageGutter.cssVariable})` } as CSSProperties}><span>Il gutter segue la finestra</span><div>Area del contenuto</div></div>
-    <p className="ds-explanation">Contratti osservati nelle sezioni Quote e Process. I valori sono disponibili ai componenti, senza applicarli globalmente a ogni pagina o sezione.</p>
+    <div className="ds-layout-cards">{Object.entries(layout).map(([name, token]) => <article key={name}>
+      <h2>{({ pageGutter: 'Spazio ai lati', sectionBlock: 'Spazio tra le sezioni', contentMeasure: 'Larghezza di lettura' })[name]}</h2>
+      {'breakpoints' in token ? <dl>{Object.entries(token.breakpoints).map(([device, bp]) => <div key={device}><dt>{devices[device]}</dt><dd>{bp.value}</dd></div>)}</dl> : <strong>{token.value}</strong>}
+      <TokenDetails token={{ ...token, value: 'breakpoints' in token ? Object.entries(token.breakpoints).map(([device, bp]) => `${devices[device]}: ${bp.value} (da ${bp.minWidth}px)`).join(' · ') : token.value }} />
+    </article>)}</div>
+    <h2 className="ds-subheading">Il contenuto nella pagina</h2>
+    <div className="ds-page-diagram" style={{ '--preview-gutter': `var(${layout.pageGutter.cssVariable})` } as CSSProperties}><div><span /><span /><span /></div></div>
+    <p className="ds-geometry-note">Lo spazio laterale si adatta alla finestra. La larghezza di lettura mantiene i testi raccolti.</p>
   </>
 }
 

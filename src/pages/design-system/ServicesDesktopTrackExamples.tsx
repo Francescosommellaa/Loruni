@@ -1,3 +1,4 @@
+import { DemoControls } from './DemoControls'
 import { useId, useState } from 'react'
 import { ServicesDesktopTrack, type ServicesDesktopTrackItem } from '../../components/ServicesDesktopTrack'
 import { serviceCardCases } from './ServiceCardExamples.data'
@@ -38,16 +39,16 @@ export function ServicesDesktopTrackControls({ comparison = false }: { compariso
   // Explicit missing slots, equivalent to absent Framer parent content, do not render.
   items.push(null)
   const content = <div className="ds-services-track-demo">
-    <div className="ds-services-track-controls">
-      <label>Numero service<input type="number" min="0" max="8" value={count} onChange={e => setCount(Math.max(0, Math.min(8, Number(e.target.value))))} /></label>
-      <label>Titolo intro<input value={title} onChange={e => setTitle(e.target.value)} /></label>
-      <label>Altezza track<input type="number" min="600" value={height} onChange={e => setHeight(Number(e.target.value))} /></label>
-      <label>Viewport Desktop/Tablet<input type="number" min="810" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
-      <label><input type="checkbox" checked={hideSecond} onChange={e => setHideSecond(e.target.checked)} />Disattiva card 2</label>
-      <label><input type="checkbox" checked={long} onChange={e => setLong(e.target.checked)} />Contenuto lungo</label>
-      <label><input type="checkbox" checked={sourceDefaults} onChange={e => setSourceDefaults(e.target.checked)} />Default canvas sorgente</label>
-      <label><input type="checkbox" checked={viewport} onChange={e => setViewport(e.target.checked)} />Viewport overflow esterno</label>
-    </div>
+    <DemoControls>
+      <label className="ds-demo-field">Numero service<input type="number" min="0" max="8" value={count} onChange={e => setCount(Math.max(0, Math.min(8, Number(e.target.value))))} /></label>
+      <label className="ds-demo-field">Titolo<input value={title} onChange={e => setTitle(e.target.value)} /></label>
+      <label className="ds-demo-field">Altezza<input type="number" min="600" value={height} onChange={e => setHeight(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Viewport Desktop/Tablet<input type="number" min="810" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
+      <label className="ds-demo-field"><input type="checkbox" checked={hideSecond} onChange={e => setHideSecond(e.target.checked)} />Disattiva card 2</label>
+      <label className="ds-demo-field"><input type="checkbox" checked={long} onChange={e => setLong(e.target.checked)} />Contenuto lungo</label>
+      <label className="ds-demo-field"><input type="checkbox" checked={sourceDefaults} onChange={e => setSourceDefaults(e.target.checked)} />Default canvas sorgente</label>
+      <label className="ds-demo-field"><input type="checkbox" checked={viewport} onChange={e => setViewport(e.target.checked)} />Viewport overflow esterno</label>
+    </DemoControls>
     <div className={viewport ? 'ds-services-track-viewport' : 'ds-services-track-standalone'}
       style={{ width }} tabIndex={viewport ? 0 : undefined} role={viewport ? 'region' : undefined}
       aria-label={viewport ? 'Viewport della track, scorrimento manuale' : undefined}>
@@ -61,7 +62,7 @@ export function ServicesDesktopTrackControls({ comparison = false }: { compariso
 export function ServicesDesktopTrackFrame() {
   const [width, setWidth] = useState(1200)
   return <div>
-    <label>Browser Desktop/Tablet<input type="range" min="810" max="1440" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
+    <label className="ds-demo-field">Browser Desktop/Tablet<input type="range" min="810" max="1440" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
     <output>{width}px</output>
     <div className="ds-services-track-frame-scroll"><iframe title="Services Desktop Track · viewport reale" width={width} height={1200}
       src="/design-system?fixture=services-track&width=1440" /></div>

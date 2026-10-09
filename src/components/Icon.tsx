@@ -1,6 +1,7 @@
 import { useId, type CSSProperties } from 'react'
 import { domAnimation, LazyMotion, m, useReducedMotion } from 'motion/react'
 import { motion as motionTokens } from '../styles/token'
+import { useReducedMotionPreference } from '../motion/useReducedMotionPreference'
 import { iconRegistry, type IconName } from './Icon.registry'
 import './Icon.css'
 
@@ -24,9 +25,7 @@ export type IconProps = Integration & (
 )
 
 const rotationSource = motionTokens.transitions.projectCardMainPageDesktopTransition.config
-const faqSource = motionTokens.transitions.faqSectionDefaultTransition.config
 const arrowTransition = { type: rotationSource.type, duration: parseFloat(rotationSource.duration), delay: parseFloat(rotationSource.delay), ease: [...rotationSource.ease] as [number, number, number, number] }
-const faqTransition = { type: faqSource.type, duration: parseFloat(faqSource.duration), delay: parseFloat(faqSource.delay), ease: [...faqSource.ease] as [number, number, number, number] }
 const buttonSource = motionTokens.transitions.buttonPrimaryTransition.config
 const buttonTransition = { type: buttonSource.type, duration: parseFloat(buttonSource.duration), delay: parseFloat(buttonSource.delay), ease: [...buttonSource.ease] as [number, number, number, number] }
 const spinnerSource = motionTokens.transitions.mainFormButtonDefaultSpinnerConicLoopEffectTransition.config
@@ -62,6 +61,7 @@ function Spinner({ name, className, style, label }: Integration & { name: 'form-
 
 export function Icon(props: IconProps) {
   const maskId = `loruni-icon-mask-${useId()}`
+  const reduced = useReducedMotionPreference()
   if (props.visible === false) return null
   const glyph = iconRegistry[props.name]
   const width = 'size' in props ? props.size ?? glyph.width : 'width' in props ? props.width ?? glyph.width : glyph.width
@@ -80,10 +80,12 @@ export function Icon(props: IconProps) {
     return <span className={className} data-icon={props.name} {...accessibility} style={{ ...style, ...(glyph.kind === 'remoteMask' ? { overflow: 'clip' } : {}), backgroundColor: fill ?? glyph.fill, mask, WebkitMask: mask }} />
   }
   if (glyph.kind === 'faq') {
-    const bar = <svg viewBox="0 0 17 1.5" width="100%" height="100%" overflow="visible" preserveAspectRatio="none"><path d={glyph.path} fill="var(--color-neutral-950)" /></svg>
+    const bar = <svg viewBox="0 0 17 1.5" width="100%" height="100%" overflow="visible" preserveAspectRatio="none"><path d={glyph.path} fill="var(--faq-foreground, var(--color-neutral-950))" /></svg>
     return <span className={`${className} loruni-icon--faq`} data-icon={props.name} {...accessibility} style={style}>
       <LazyMotion features={domAnimation} strict>
-        <m.span className="loruni-icon__bar" initial={false} animate={{ rotate: props.name === 'faq' ? props.barRotation ?? 0 : 0 }} transition={faqTransition}>{bar}</m.span>
+        <m.span className="loruni-icon__bar loruni-icon__bar--growing" initial={false}
+          animate={{ scaleY: props.name === 'faq' && props.barRotation === 90 ? 0 : 1 }}
+          transition={{ duration: reduced ? 0 : 0.32, ease: [0.4, 0, 0.2, 1] }}><span className="loruni-icon__vertical-glyph">{bar}</span></m.span>
         <span className="loruni-icon__bar loruni-icon__bar--fixed">{bar}</span>
       </LazyMotion>
     </span>

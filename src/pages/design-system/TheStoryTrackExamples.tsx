@@ -1,3 +1,4 @@
+import { DemoControls } from './DemoControls'
 import { useState } from 'react'
 import { TheStoryTrack, type TheStoryTrackProps } from '../../components/TheStoryTrack'
 import { realCards } from './OurStoryCardExamples.data'
@@ -28,14 +29,14 @@ export function TheStoryTrackControls({ comparison = false }: { comparison?: boo
   const firstCard = { ...story.firstCard, ...(content === 'canvas' ? { cardTitle: 'Sociologo · Traduzione italiana' } : {}),
     ...(content === 'long' ? { cardTitle: 'Una sedia in più al tavolo', cardTextLeft: `${realCards[0].cardTextLeft}\n${realCards[0].cardTextLeft}` } : {}) }
   const body = <div className="ds-the-story-demo">
-    <div className="ds-the-story-controls">
-      <label>Titolo intro<input value={title} onChange={e => setTitle(e.target.value)} /></label>
-      <label>Quote<textarea value={quote} onChange={e => setQuote(e.target.value)} /></label>
-      <label>Contenuto<select value={content} onChange={e => setContent(e.target.value)}><option value="esperienza">Esperienza</option><option value="canvas">Default canvas</option><option value="long">Testo lungo</option><option value="no-image">Immagine assente</option></select></label>
-      <label>Presentazione<select value={display} onChange={e => setDisplay(e.target.value)}><option value="viewport">Viewport overflow esterno</option><option value="standalone">Standalone</option></select></label>
-      <label>Altezza track<input type="number" min="600" value={height} onChange={e => setHeight(Number(e.target.value))} /></label>
-      <label>Viewport<input type="number" min="810" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
-    </div>
+    <DemoControls>
+      <label className="ds-demo-field">Titolo<input value={title} onChange={e => setTitle(e.target.value)} /></label>
+      <label className="ds-demo-field">Citazione<textarea value={quote} onChange={e => setQuote(e.target.value)} /></label>
+      <label className="ds-demo-field">Contenuto<select value={content} onChange={e => setContent(e.target.value)}><option value="esperienza">Esperienza</option><option value="canvas">Default canvas</option><option value="long">Testo lungo</option><option value="no-image">Immagine assente</option></select></label>
+      <label className="ds-demo-field">Presentazione<select value={display} onChange={e => setDisplay(e.target.value)}><option value="viewport">Viewport overflow esterno</option><option value="standalone">Standalone</option></select></label>
+      <label className="ds-demo-field">Altezza<input type="number" min="600" value={height} onChange={e => setHeight(Number(e.target.value))} /></label>
+      <label className="ds-demo-field">Viewport<input type="number" min="810" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
+    </DemoControls>
     <div className={display === 'viewport' ? 'ds-the-story-viewport' : 'ds-the-story-standalone'} style={{ width }}
       tabIndex={display === 'viewport' ? 0 : undefined} role={display === 'viewport' ? 'region' : undefined}
       aria-label={display === 'viewport' ? 'Viewport The story, scorrimento manuale' : undefined}>
@@ -48,7 +49,7 @@ export function TheStoryTrackControls({ comparison = false }: { comparison?: boo
 /** Real viewport resize sandbox belongs exclusively to the documentation consumer. */
 export function TheStoryTrackFrame() {
   const [width, setWidth] = useState(1200)
-  return <div><label>Browser Desktop/Tablet<input type="range" min="810" max="1440" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
+  return <div><label className="ds-demo-field">Browser Desktop/Tablet<input type="range" min="810" max="1440" value={width} onChange={e => setWidth(Number(e.target.value))} /></label>
     <output>{width}px</output><div className="ds-the-story-frame-scroll">
       <iframe title="The Story Track · viewport reale" width={width} height={1350} src="/design-system?fixture=the-story-track" />
     </div></div>

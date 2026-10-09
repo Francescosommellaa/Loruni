@@ -1,0 +1,16 @@
+.loruni-labelled-stagger-headline {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  z-index: var(--source-z-index-value2);
+}
+.loruni-labelled-stagger-headline__label { flex: 0 0 var(--source-width-value32percent); }
+.loruni-labelled-stagger-headline__text { flex: 1 0 0; min-width: 0; }
+@media (width < 810px) {
+  /* Verified local offset in the first text line; no canvas anchor percentages. */
+  .loruni-labelled-stagger-headline__label { position: absolute; left: 0; top: 9px; z-index: 1; }
+}

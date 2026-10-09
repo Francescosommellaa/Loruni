@@ -9,7 +9,7 @@
   height: auto;
   position: relative;
   overflow: hidden;
-  color: var(--color-neutral-950);
+  color: var(--faq-foreground, var(--color-neutral-950));
   cursor: pointer;
 }
 .loruni-faq-row__question {
@@ -30,13 +30,14 @@
   border: 0;
   border-radius: 0;
   background: transparent;
+  color: inherit;
   text-align: start;
   overflow: hidden;
   user-select: none;
 }
 /* The root clips the source reveal; draw the existing focus ring within that clip. */
 .loruni-faq-row__trigger:focus-visible { outline-offset: -2px; }
-.loruni-faq-row .loruni-faq-row__title { flex: 1 0 0; min-width: 0; color: var(--color-neutral-950); }
+.loruni-faq-row .loruni-faq-row__title { flex: 1 0 0; min-width: 0; color: inherit; }
 .loruni-faq-row__answer {
   display: flex;
   flex-flow: row nowrap;
@@ -47,19 +48,14 @@
   position: relative;
   z-index: var(--component-faq-row-opened-answer-zindex);
 }
-.loruni-faq-row[data-state='Closed'] > .loruni-faq-row__answer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: calc(-1 * var(--space-80));
-  pointer-events: none;
-}
+.loruni-faq-row__reveal { width: 100%; overflow: hidden; }
+.loruni-faq-row[data-state='Closed'] > .loruni-faq-row__reveal { pointer-events: none; }
 .loruni-faq-row .loruni-faq-row__text {
   flex: 1 0 0;
   min-width: 0;
   width: 100%;
   max-width: var(--component-faq-row-closed-answer-width);
-  color: var(--color-neutral-950);
+  color: var(--faq-foreground, var(--color-neutral-950));
   opacity: var(--source-opacity-value0point7);
   white-space: pre-wrap;
   overflow-wrap: break-word;

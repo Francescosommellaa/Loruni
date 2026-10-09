@@ -1,4 +1,6 @@
 import { EventTestimonialExample, CmsCollectionsExample } from './SessionFinalExamples'
+import { LogosAndIntroExample, LogosAndIntroFrame } from './LogosAndIntroExamples'
+import { HeadlineSectionsExample, HeadlineSectionsFrame } from './HeadlineSectionsExamples'
 import { createElement, useState, type ReactNode } from 'react'
 import { StatsExample, StatsFrame, StatsControls } from './StatsExamples'
 import { TheStoryTrackExample, TheStoryTrackControls, TheStoryTrackFrame } from './TheStoryTrackExamples'
@@ -17,7 +19,6 @@ import { ButtonControlsExample } from './ButtonExamples'
 import { MainFormButtonLifecycleExample, MainFormButtonStatesExample } from './MainFormButtonExamples'
 import { LoadMore } from '../../components/LoadMore'
 import { LoadMoreLifecycleExample } from './LoadMoreExamples'
-import { FAQRow } from '../../components/FAQRow'
 import { FAQSectionControlsExample, FAQSectionEmptyExample, FAQSectionSourceExample } from './FAQSectionExamples'
 import { FAQRowExample } from './FAQRowExamples'
 import { faqRowSlots } from './FAQRowExamples.data'
@@ -48,21 +49,21 @@ export type ComponentExample = {
 // Catalog-only control: the real card supplies rotation through its hover state.
 function ArrowForwardTransitionExample({ size }: { size: 28 | 40 }) {
   const [hoverState, setHoverState] = useState(false)
-  return createElement('div', null,
+  return createElement('div', { className: 'ds-demo-inline' },
     createElement(ArrowForward, { size, rotation: hoverState ? 0 : -45 }),
     createElement('button', {
-      type: 'button',
+      type: 'button', className: 'ds-demo-action',
       'aria-pressed': hoverState,
       onClick: () => setHoverState(value => !value),
-    }, hoverState ? `Ripristina −45° · ${size}px` : `Riproduci hover 0° · ${size}px`))
+    }, hoverState ? 'Ripristina' : 'Prova hover'))
 }
 
 function ButtonArrowVisualExample({ name }: { name: 'button-arrow' | 'button-arrow-secondary' }) {
   const [hovered, setHovered] = useState(false)
-  return createElement('div', null,
+  return createElement('div', { className: 'ds-demo-inline' },
     createElement(Icon, { name, hovered }),
-    createElement('button', { type: 'button', 'aria-pressed': hovered, onClick: () => setHovered(value => !value) },
-      hovered ? `Ripristina ${name}` : `Riproduci hover ${name}`))
+    createElement('button', { type: 'button', className: 'ds-demo-action', 'aria-pressed': hovered, onClick: () => setHovered(value => !value) },
+      hovered ? 'Ripristina' : 'Prova hover'))
 }
 
 // Catalog-only state owner; FAQ Icon emits Click without toggling itself.
@@ -91,10 +92,14 @@ function TestimonialsArrowInteractionExample({ icon }: Pick<TestimonialsArrowPro
 }
 
 export const componentExamples: readonly ComponentExample[] = [
-  { name: 'Event Testimonial', description: 'Singolo testimonial CMS Evento; quote isSet, immagine Desktop/Tablet, Quote Icon anche Phone. Nessun carousel.', source: 'Framer · /eventi/:Eventi · Testimonial', examples: [{ name: 'CMS corrente / vuoto / dinamico / reduced motion', preview: createElement(EventTestimonialExample) }] },
-  { name: 'Event Card Slot', description: 'Adapter della prima card Eventi e dei quattro consumer Home. Routing, offset, id/ref; la scena Home possiede sticky e trasformazioni tra target.', source: 'Framer · Collection List Eventi · Home / Eventi', examples: [{ name: 'Main Card · collection item', preview: createElement(CmsCollectionsExample, { initial: 'featured' }) }] },
-  { name: 'Event Collection', description: 'Lista restante e correlati Eventi. Inner ProjectCard, esclusione del corrente, responsive e pagination controllata.', source: 'Framer · /eventi · /eventi/:Eventi', examples: [{ name: 'Eventi · lista / empty / pagination', preview: createElement(CmsCollectionsExample) }] },
-  { name: 'Community Collection', description: 'Preview Esperienza/visita, elenco Community e correlati. CommunityCard, heading semantics e LoadMore originali.', source: 'Framer · Community Collection List', examples: [{ name: 'Community · lista / preview / correlati', preview: createElement(CmsCollectionsExample, { initial: 'community' }) }] },
+  { name: 'Logos and Intro', description: 'Esperienza: sei brand affini, non partner, ticker originale e Intro responsive. Background e blocchi successivi appartengono al parent.', source: 'Framer · Logos and Intro → LogosAndIntro', examples: [{ name: 'Esperienza · composizione completa', preview: createElement(LogosAndIntroExample) }, { name: 'Resize · viewport reale', preview: createElement(LogosAndIntroFrame) }] },
+  { name: 'Brand Ticker', description: 'Asset originali Icon Engine; loop lineare 80px/s verso sinistra, hover100%, nessun drag. Tutti i marchi disponibili nel percorso reduced/static.', source: 'Framer · Logos ticker → BrandTicker', examples: [{ name: 'Ticker · motion e reduced', preview: createElement(LogosAndIntroExample, { tickerOnly: true }) }] },
+  { name: 'Hero Fitted Headline', description: 'Headline Home, TextFitWidth canonico; due righe Desktop/Tablet, quattro Phone. Il parent Hero possiede altezza, CTA e motion.', source: 'Framer · Headline Home Hero → HeroFittedHeadline', examples: [{ name: 'Home · allocazione originale', preview: createElement(HeadlineSectionsExample) }, { name: 'Resize continuo · viewport reale', preview: createElement(HeadlineSectionsFrame) }] },
+  { name: 'Labelled Stagger Headline', description: 'Label + TextStagger del Process Home. Copy Phone distinta, whitespace originale, reveal canonico per linea.', source: 'Framer · Headline Home Process → LabelledStaggerHeadline', examples: [{ name: 'Home · La serata', preview: createElement(HeadlineSectionsExample, { initial: 'process' }) }] },
+  { name: 'Event Testimonial', description: 'Singolo testimonial CMS Evento; quote isSet, immagine Desktop/Tablet, Quote Icon anche Phone. Nessun carousel.', source: 'Framer · /eventi/:Eventi · Testimonial', examples: [{ name: 'Citazione evento', preview: createElement(EventTestimonialExample) }] },
+  { name: 'Event Card Slot', description: 'Adapter della prima card Eventi e dei quattro consumer Home. Routing, offset, id/ref; la scena Home possiede sticky e trasformazioni tra target.', source: 'Framer · Collection List Eventi · Home / Eventi', examples: [{ name: 'Evento in evidenza', preview: createElement(CmsCollectionsExample, { initial: 'featured' }) }] },
+  { name: 'Event Collection', description: 'Lista restante e correlati Eventi. Inner ProjectCard, esclusione del corrente, responsive e pagination controllata.', source: 'Framer · /eventi · /eventi/:Eventi', examples: [{ name: 'Elenco Eventi', preview: createElement(CmsCollectionsExample) }] },
+  { name: 'Community Collection', description: 'Preview Esperienza/visita, elenco Community e correlati. CommunityCard, heading semantics e LoadMore originali.', source: 'Framer · Community Collection List', examples: [{ name: 'Elenco Community', preview: createElement(CmsCollectionsExample, { initial: 'community' }) }] },
   {
     name: 'Stats',
     description: 'Section fluida di StatRow statiche: Desktop/Tablet distribuiti, Phone grid2×2; primo label compact originale. Copy fornito dal consumer.',
@@ -214,8 +219,8 @@ export const componentExamples: readonly ComponentExample[] = [
     description: 'Row/FAQ Row · Opened / Closed, API controllata e Click. FAQ Icon riusato; il parent possiede sibling policy e title isSet. Risposta fuori flow/inert in Closed, tween originale 0.2s.',
     source: 'Framer · Row/FAQ Row · FAQ Section · 8 istanze',
     examples: [
-      { name: 'Controlled · click / answer / keyboard / focus / rapid reversal', preview: createElement(FAQRowExample) },
-      ...(['Opened', 'Closed'] as const).map(state => ({ name: state, preview: createElement('div', { style: { maxWidth: 'var(--component-faq-row-opened-width)', width: '100%', background: 'var(--color-neutral-50)' } }, createElement(FAQRow, { ...faqRowSlots[0], open: state === 'Opened', onOpenChange: () => {} })) })),
+      { name: 'Prova apertura e chiusura', preview: createElement(FAQRowExample) },
+      ...(['Opened', 'Closed'] as const).map(state => ({ name: state === 'Opened' ? 'Inizialmente aperta' : 'Inizialmente chiusa', preview: createElement(FAQRowExample, { initialOpen: state === 'Opened' }) })),
       ...faqRowSlots.map((item, slot) => ({ name: `Istanza ${slot + 1} · ${item.title || 'title isSet=false'}`, preview: createElement(FAQRowExample, { slot }) })),
     ],
   },
@@ -255,11 +260,11 @@ export const componentExamples: readonly ComponentExample[] = [
   },
   { name: 'Form Field', description: 'FormControl + FormFieldGroup: label nativa, input text/email e textarea ridimensionabile. Configurazioni condivise Name/Gruppo/Email/Message.', source: 'Framer · /vieni-a-trovarci + Template · 16 record', examples: [{ name: 'Contatti · altezza Message automatica', preview: createElement(FormFieldsExample) }, { name: 'Template · contenitore Message 100px', preview: createElement(FormFieldsExample, { fixed: true }) }] },
   { name: 'Nav Item', description: 'Desktop 22px / Mobile 28px / Compact 16px, selezionati dal parent. Rolling Text, link, callback e nuova scheda.', source: 'Framer · Nav Item · 48 istanze', examples: [{ name: 'Variant / hover / leave / callback / link', preview: createElement(NavItemsExample) }] },
-  { name: 'Content Headline', description: 'Headline semplici: griglia con Label, titolo centrato e titolo contatto. Preset responsive e semantica originali.', source: 'Framer · Home / Esperienza / Eventi / Community / Template · 7 record', examples: [{ name: 'Tutte le configurazioni reali', preview: createElement(HeadlinesExample) }] },
-  { name: 'Split Content', description: 'Headline/76 + Text/32 P; due colonne Desktop/Tablet, stack Phone, misure titolo 480/640.', source: 'Framer · dettagli Eventi · 2 record', examples: [{ name: 'Cinque contenuti CMS · due blocchi', preview: createElement(SplitContentsExample) }] },
+  { name: 'Content Headline', description: 'Composizioni consolidate: Label + titolo, h1 Community, h2 correlati e contatto Template live. Il consumer possiede allocation e colori.', source: 'Framer · Home / Esperienza / Eventi / Community / Template · 7 record', examples: [{ name: 'Tutte le configurazioni reali', preview: createElement(HeadlinesExample) }, { name: 'Consumer sorgente · responsive', preview: createElement(HeadlineSectionsExample, { initial: 'home-section' }) }] },
+  { name: 'Split Content', description: 'Headline/76 + Text/32 P; due colonne Desktop/Tablet, stack Phone, misure titolo 480/640. Binding e visibilità CMS nel consumer.', source: 'Framer · dettagli Eventi · 2 record', examples: [{ name: 'Cinque contenuti CMS · due blocchi', preview: createElement(SplitContentsExample) }, { name: 'Consumer CMS · testo lungo e visibilità', preview: createElement(HeadlineSectionsExample, { initial: 'event-first' }) }] },
   { name: 'Stat Row', description: 'Numeri stringa, incluso ∞. Due configurazioni reali della didascalia.', source: 'Framer · Esperienza · 4 record', examples: [{ name: 'Quattro righe reali', preview: createElement(StatRowsExample) }] },
   { name: 'Category Label Group', description: 'Wrapper con gap 2px: allineamento a destra Desktop/Tablet, a sinistra Phone. Etichette e condizioni appartengono al consumer.', source: 'Framer · dettagli Eventi / Community', examples: [{ name: 'Etichette evento', preview: createElement(CategoryLabelsExample) }] },
-  { name: 'Community Details', description: 'Firma editoriale, tipo di momento, immagine e quattro etichette condizionali. Colori della sorgente conservati.', source: 'Framer · TechDetails · dettaglio Community', examples: [{ name: 'Quattro contenuti e visibility', preview: createElement(CommunityDetailsExample) }] },
+  { name: 'Community Details', description: 'Firma editoriale, tipo di momento, immagine e quattro etichette condizionali. Colori della sorgente conservati.', source: 'Framer · TechDetails · dettaglio Community', examples: [{ name: 'Contenuti e visibilità', preview: createElement(CommunityDetailsExample) }] },
   { name: 'Image Fill', description: 'Media semplice cover/contain, center: dimensioni, posizione e visibility responsive assegnate dal parent.', source: 'Framer · Mobile Image Home / Image Esperienza', examples: [{ name: 'Due media sorgente', preview: createElement(ImageFillsExample) }] },
   {
     name: 'Button',
@@ -272,7 +277,7 @@ export const componentExamples: readonly ComponentExample[] = [
         { name: `404 · ${breakpoint}`, preview: createElement('div', { style: { overflowX: 'auto', padding: '8px' } }, createElement(Button, { variant: breakpoint === 'Phone' ? 'Primary Mobile' : 'Primary', text: 'TORNA A LORUNI', link: '/' })) },
         { name: `Evento · ${breakpoint} · contenuto/link dal consumer`, preview: createElement(Button, { variant: 'Secondary', text: 'INFO SULLA SERATA', link: '/vieni-a-trovarci' }) },
       ]),
-      { name: 'Variant / Text / Link / New Tab · navigazione e contenuti dinamici', preview: createElement(ButtonControlsExample) },
+      { name: 'Personalizza il pulsante', preview: createElement(ButtonControlsExample) },
       { name: 'Link esterno · nuova scheda', preview: createElement(Button, { variant: 'Secondary', text: 'LORUNI · Framer', link: 'https://framer.com/projects/Loruni--F3868vuk7YeE7pDEgpP6', newTab: true }) },
       { name: 'Link non configurato · default sorgente', preview: createElement('div', { style: { overflowX: 'auto' } }, createElement(Button)) },
     ],
@@ -284,7 +289,7 @@ export const componentExamples: readonly ComponentExample[] = [
     examples: [
       { name: 'Community · H2 · quattro momenti reali', preview: createElement(CommunityCardRealExamples, { h3: false }) },
       { name: 'Esperienza / Vieni a trovarci / altri momenti · H3', preview: createElement(CommunityCardRealExamples, { h3: true }) },
-      { name: 'Contenuti configurabili e semantica', preview: createElement(CommunityCardControlsExample) },
+      { name: 'Personalizza la card', preview: createElement(CommunityCardControlsExample) },
       { name: 'Default nativo · nessuna fotografia', preview: createElement(CommunityCardDefaultExample) },
     ],
   },
@@ -342,7 +347,7 @@ export const componentExamples: readonly ComponentExample[] = [
     source: 'Framer · SVG originali / Logo/SVG ufficiali',
     examples: [
       { name: 'testimonial-arrow · glyph esistente / fill configurabile', preview: createElement(ExistingArrowGlyphFillExample) },
-      ...iconNames.map(name => ({ name, preview: createElement('div', { style: { maxWidth: '100%', overflowX: 'auto', backgroundColor: name === 'faq' || name === 'load-more-spinner' || name.startsWith('brand-') ? `var(${colors.neutral50.cssVariable})` : `var(${colors.neutral950.cssVariable})` } }, createElement(Icon, { name, label: name } as IconProps)) })),
+      ...iconNames.map(name => ({ name, preview: createElement('div', { style: { maxWidth: '100%', overflowX: 'auto', backgroundColor: name === 'load-more-spinner' || name.startsWith('brand-') ? `var(${colors.neutral50.cssVariable})` : `var(${colors.neutral950.cssVariable})` } }, createElement(Icon, { name, label: name } as IconProps)) })),
       ...[{ width: 63, height: 52.5 }, { width: 55, height: 52.5 }, { width: 50, height: 45.5 }].map(dimensions => ({ name: `Quote · ${dimensions.width}×${dimensions.height} · istanza originale`, preview: createElement('div', { style: dimensions }, createElement(Icon, { name: 'quote', width: dimensions.width })) })),
       { name: 'Quote · Phone Testimonials · assente', preview: createElement(Icon, { name: 'quote', width: 50, height: 45.5, visible: false }) },
       { name: 'Button Primary · hover 135°', preview: createElement(ButtonArrowVisualExample, { name: 'button-arrow' }) },
@@ -373,12 +378,12 @@ export const componentExamples: readonly ComponentExample[] = [
   },
   {
     name: 'FAQ Icon',
-    description: 'Misc/FAQ Icon · Plus / Minus. Evento Click, variant controllata dal parent; frame 24px, padding 4px. Nel ritorno da Minus a Plus la sorgente conserva la rotazione della barra.',
+    description: 'Misc/FAQ Icon · Plus / Minus. Evento Click, variant controllata dal parent; frame 24px, padding 4px. Il segno cresce verticalmente dal centro, secondo la correzione richiesta dall’utente.',
     source: 'Framer · Misc/FAQ Icon · FAQ Row Opened/Closed',
     examples: [
-      { name: 'Plus · FAQ Row Closed', preview: createElement('div', { style: { backgroundColor: `var(${colors.neutral50.cssVariable})` } }, createElement(FaqIcon)) },
-      { name: 'Minus · FAQ Row Opened', preview: createElement('div', { style: { backgroundColor: `var(${colors.neutral50.cssVariable})` } }, createElement(FaqIcon, { variant: 'Minus' })) },
-      { name: 'Click / tap · transizione originale', preview: createElement('div', { style: { backgroundColor: `var(${colors.neutral50.cssVariable})`, color: `var(${colors.neutral950.cssVariable})` } }, createElement(FaqIconInteractionExample)) },
+      { name: 'Plus · FAQ Row Closed', preview: createElement(FaqIcon) },
+      { name: 'Minus · FAQ Row Opened', preview: createElement(FaqIcon, { variant: 'Minus' }) },
+      { name: 'Prova il segno', preview: createElement(FaqIconInteractionExample) },
     ],
   },
   {
@@ -388,12 +393,11 @@ export const componentExamples: readonly ComponentExample[] = [
     examples: [
       {
         name: 'Controlli predefiniti · Intro',
-        preview: createElement(Label),
+        preview: createElement(Label, { color: `var(${colors.neutral50.cssVariable})` }),
       },
       {
         name: 'Home · LORUNI',
-        preview: createElement('div', { style: { backgroundColor: `var(${colors.neutral50.cssVariable})` } },
-          createElement(Label, { title: 'LORUNI', color: `var(${colors.neutral950.cssVariable})` })),
+        preview: createElement(Label, { title: 'LORUNI', color: `var(${colors.neutral50.cssVariable})` }),
       },
       {
         name: 'Home · La serata',
@@ -401,8 +405,7 @@ export const componentExamples: readonly ComponentExample[] = [
       },
       {
         name: 'Home · Dentro LORUNI',
-        preview: createElement('div', { style: { backgroundColor: `var(${colors.neutral50.cssVariable})` } },
-          createElement(Label, { title: 'Dentro LORUNI', color: `var(${colors.neutral950.cssVariable})` })),
+        preview: createElement(Label, { title: 'Dentro LORUNI', color: `var(${colors.neutral50.cssVariable})` }),
       },
       {
         name: 'Evento · Partecipazione',

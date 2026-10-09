@@ -1,5 +1,14 @@
 # FAQ Row — CLOSED
 
+## Correzione richiesta dall'utente — 2026-10-09
+
+Stato corrente: click sul + e sul − entrambi validi; anche i campioni inizialmente aperti/chiusi del catalogo cambiano stato. La richiesta esplicita supersede il precedente click assorbito dell'icona e il tween/projection fedele alla fonte. FAQRow ora anima l'altezza della risposta da0 adauto e viceversa senza deformare il testo, con0.32s/ease[.22,1,.36,1]; contenuto retained/inert quando chiuso. Icon Engine riusa il path esistente: la barra verticale cresce dal centro in altezza (scaleY), spessore2px costante, centro condiviso con la barra orizzontale;0.32s/ease[.4,0,.2,1], senza rotazione animata/fade/retention. Standalone e decorative seguono entrambi la variante richiesta. Reduced motion usa la policy live comune.
+
+FAQSection conserva le identità e la policy esclusiva. Le righe sono nel flow; un ResizeObserver segue l'altezza effettivamente animata e aggiorna la riserva, sostituendo la precedente proiezione Motion e il frame scheduler. Nessun secondo height writer/RAF/scroll owner. Catalogo scuro tramite --faq-foreground, con fallback prodotto Neutral950. Le prove Framer sotto sono storiche e non attestano la nuova animazione. Verifica della correzione: DESIGN-SYSTEM-VISUAL-REFINEMENT-VERIFICATION.md.
+
+## Prova storica della migrazione
+
+
 Verificato 2026-10-07. Solo Row/FAQ Row; FAQ Section e le pagine prodotto non vengono migrate. Fonte corrente Framer letta in sola lettura: componente, controls, otto slot della Section e i tre consumer `/vieni-a-trovarci`; preview isolato e della pagina. Capture locale di riferimento in `docs/framer/faq-row-source.json`, fuori dal bundle.
 
 ```tsx

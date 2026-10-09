@@ -2,6 +2,7 @@
   appearance: none;
   border: 0;
   background: transparent;
+  color: var(--faq-foreground, var(--color-neutral-950));
   margin: 0;
   display: flex;
   flex: 0 0 auto;

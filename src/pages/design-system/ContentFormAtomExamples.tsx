@@ -1,3 +1,4 @@
+import { DemoControls } from './DemoControls'
 import { useState } from 'react'
 import { MotionConfig } from 'motion/react'
 import { FormField } from '../../components/FormField'
@@ -22,35 +23,35 @@ export function NavItemsExample() {
   const [variant, setVariant] = useState<'Desktop' | 'Mobile' | 'Compact'>('Desktop')
   const [reduced, setReduced] = useState(false)
   return <MotionConfig reducedMotion={reduced ? 'always' : 'user'}><div className="ds-content-atoms">
-    <div className="ds-content-atoms__controls"><label>Variant<select value={variant} onChange={event => setVariant(event.target.value as typeof variant)}><option>Desktop</option><option>Mobile</option><option>Compact</option></select></label></div>
-    <label><input type="checkbox" checked={reduced} onChange={event => setReduced(event.target.checked)} /> Riduci movimento</label>
-    <NavItem variant={variant} text="EVENTI" color="var(--color-neutral-950)" link="#ds-component-nav-item" onClick={() => setClicks(v => v + 1)} />
-    <NavItem variant="Mobile" text="COMMUNITY" color="var(--color-neutral-950)" onClick={() => setClicks(v => v + 1)} />
-    <NavItem variant="Compact" text="VIENI A TROVARCI" color="var(--color-neutral-950)" link="#ds-component-nav-item" newTab />
+    <DemoControls><label className="ds-demo-field">Variante<select value={variant} onChange={event => setVariant(event.target.value as typeof variant)}><option>Desktop</option><option>Mobile</option><option>Compact</option></select></label>
+    <label className="ds-demo-field"><input type="checkbox" checked={reduced} onChange={event => setReduced(event.target.checked)} /> Riduci movimento</label></DemoControls>
+    <NavItem variant={variant} text="EVENTI" color="var(--color-neutral-50)" link="#ds-component-nav-item" onClick={() => setClicks(v => v + 1)} />
+    <NavItem variant="Mobile" text="COMMUNITY" color="var(--color-neutral-50)" onClick={() => setClicks(v => v + 1)} />
+    <NavItem variant="Compact" text="VIENI A TROVARCI" color="var(--color-neutral-50)" link="#ds-component-nav-item" newTab />
     <div className="ds-content-atoms__dark"><NavItem text="ESPERIENZA" color="var(--color-neutral-50)" link="#ds-component-nav-item" /></div>
     <div className="ds-content-atoms__dark"><NavItem /></div><output aria-live="polite">Click: {clicks}</output>
   </div></MotionConfig>
 }
 export function HeadlinesExample() {
   return <div className="ds-content-atoms">
-    <ContentHeadline variant="labelled" label="Dentro LORUNI" title="Ci vediamo da LORUNI" color="var(--color-neutral-950)" />
+    <ContentHeadline variant="labelled" label="Dentro LORUNI" title="Ci vediamo da LORUNI" color="var(--color-neutral-50)" />
     <ContentHeadline variant="labelled" label="Community" labelColor="var(--color-neutral-50)" title="Momenti da LORUNI" />
     <ContentHeadline variant="centered-large" title="Vita da LORUNI" />
     <ContentHeadline variant="centered" title="E le altre sere?" />
     <ContentHeadline variant="centered" title="Il diario continua" />
-    <ContentHeadline variant="contact" title="Ci vediamo da LORUNI?" />
+    <ContentHeadline variant="contact" title="Ci vediamo da LORUNI?" color="var(--color-neutral-50)" />
   </div>
 }
 export function SplitContentsExample() {
   const [index, setIndex] = useState(0)
   const event = eventAtomExamples[index] ?? eventAtomExamples[0]
-  return <div className="ds-content-atoms"><label>Contenuto reale<select value={index} onChange={e => setIndex(Number(e.target.value))}>{eventAtomExamples.map((item, i) => <option key={item.slug} value={i}>{item.slug}</option>)}</select></label>{event.content.map(item => <SplitContent key={item.title} {...item} />)}</div>
+  return <div className="ds-content-atoms"><DemoControls><label className="ds-demo-field">Contenuto<select value={index} onChange={e => setIndex(Number(e.target.value))}>{eventAtomExamples.map((item, i) => <option key={item.slug} value={i}>{item.slug.replaceAll('-', ' ')}</option>)}</select></label></DemoControls>{event.content.map((item, i) => event.sectionEnabled[i] && <SplitContent key={item.title} {...item} />)}</div>
 }
 export function StatRowsExample() {
   return <div className="ds-content-atoms ds-content-atoms__stats">{experienceStats.map(item => <StatRow key={item.id} number={item.value} text={item.label} caption={'labelStyle' in item ? item.labelStyle : undefined} />)}</div>
 }
 export function CategoryLabelsExample() {
-  return <div className="ds-content-atoms"><CategoryLabelGroup>{eventAtomExamples[0].labels.map(title => <CategoryLabel key={title} title={title} backgroundColor="var(--color-neutral-bone-highlight)" textColor="var(--color-neutral-950)" />)}</CategoryLabelGroup></div>
+  return <div className="ds-label-group-preview"><CategoryLabelGroup>{eventAtomExamples[0].labels.map(title => <CategoryLabel key={title} title={title} backgroundColor="var(--color-neutral-bone-highlight)" textColor="var(--color-neutral-950)" />)}</CategoryLabelGroup></div>
 }
 export function CommunityDetailsExample() {
   const [index, setIndex] = useState(0)
@@ -58,12 +59,12 @@ export function CommunityDetailsExample() {
   const [image, setImage] = useState(true)
   const [labels, setLabels] = useState(true)
   const detail = communityDetailExamples[index] ?? communityDetailExamples[0]
-  return <div className="ds-content-atoms"><div className="ds-content-atoms__controls">
-    <label>Contenuto<select value={index} onChange={e => setIndex(Number(e.target.value))}>{communityDetailExamples.map((item, i) => <option key={item.slug} value={i}>{item.slug}</option>)}</select></label>
-    <label><input type="checkbox" checked={signature} onChange={e => setSignature(e.target.checked)} /> Firma valorizzata</label>
-    <label><input type="checkbox" checked={image} onChange={e => setImage(e.target.checked)} /> Immagine valorizzata</label>
-    <label><input type="checkbox" checked={labels} onChange={e => setLabels(e.target.checked)} /> Etichette valorizzate</label>
-  </div><CommunityDetails {...detail} signature={signature ? detail.signature : undefined} image={image ? detail.image : undefined} labels={labels ? detail.labels : []} /></div>
+  return <div className="ds-details-preview"><DemoControls>
+    <label className="ds-demo-field">Contenuto<select value={index} onChange={e => setIndex(Number(e.target.value))}>{communityDetailExamples.map((item, i) => <option key={item.slug} value={i}>{item.slug.replaceAll('-', ' ')}</option>)}</select></label>
+    <label className="ds-demo-field"><input type="checkbox" checked={signature} onChange={e => setSignature(e.target.checked)} /> Mostra firma</label>
+    <label className="ds-demo-field"><input type="checkbox" checked={image} onChange={e => setImage(e.target.checked)} /> Mostra immagine</label>
+    <label className="ds-demo-field"><input type="checkbox" checked={labels} onChange={e => setLabels(e.target.checked)} /> Mostra etichette</label>
+  </DemoControls><CommunityDetails {...detail} signature={signature ? detail.signature : undefined} image={image ? detail.image : undefined} labels={labels ? detail.labels : []} /></div>
 }
 export function ImageFillsExample() {
   return <div className="ds-content-atoms"><div className="ds-content-atoms__home-media"><ImageFill clip image="https://framerusercontent.com/images/GXDSjBUnxHYtD9KkH245SL839NY.png" /></div><div className="ds-content-atoms__experience-media"><ImageFill fit="contain" image="https://framerusercontent.com/images/f0ddKmNcyU2rlazLETFx8vM69U.svg" /></div></div>

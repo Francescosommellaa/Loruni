@@ -1,3 +1,4 @@
+import { DemoControls } from './DemoControls'
 import { useState } from 'react'
 import { ProcessRow, type ProcessRowProps } from '../../components/ProcessRow'
 import './ProcessRowExamples.css'
@@ -24,14 +25,14 @@ export function ProcessRowControlsExample() {
   const [showText, setShowText] = useState(true)
   const [replay, setReplay] = useState(0)
   return <section className="ds-process-controls" aria-label="Process Row · controlli sorgente">
-    <div className="ds-process-controls__fields">
-      <label>Title<input value={title} onChange={event => setTitle(event.target.value)} /></label>
-      <label>Text<textarea value={text} onChange={event => setText(event.target.value)} /></label>
-      <label>Number<input value={number} onChange={event => setNumber(event.target.value)} /></label>
-      <label>Padding<input value={padding} onChange={event => setPadding(event.target.value)} /></label>
-      <label><input type="checkbox" checked={showText} onChange={event => setShowText(event.target.checked)} /> Text valorizzato</label>
-      <button type="button" onClick={() => setReplay(value => value + 1)}>Riproduci title reveal</button>
-    </div>
+    <DemoControls>
+      <label className="ds-demo-field">Titolo<input value={title} onChange={event => setTitle(event.target.value)} /></label>
+      <label className="ds-demo-field">Testo<textarea value={text} onChange={event => setText(event.target.value)} /></label>
+      <label className="ds-demo-field">Numero<input value={number} onChange={event => setNumber(event.target.value)} /></label>
+      <label className="ds-demo-field">Padding<input value={padding} onChange={event => setPadding(event.target.value)} /></label>
+      <label className="ds-demo-field"><input type="checkbox" checked={showText} onChange={event => setShowText(event.target.checked)} /> Text valorizzato</label>
+      <button className="ds-demo-action" type="button" onClick={() => setReplay(value => value + 1)}>Riproduci title reveal</button>
+    </DemoControls>
     <div className="ds-process-controls__preview"><ProcessRow key={replay} title={title} text={showText ? text : undefined} number={number} padding={padding} /></div>
   </section>
 }

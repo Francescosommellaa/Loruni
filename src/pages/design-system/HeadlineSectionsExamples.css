@@ -1,0 +1,36 @@
+.ds-headline-comparison { min-height: 110vh; }
+.ds-headline-example { min-width: 0; }
+.ds-headline-controls { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; padding: 12px; color: var(--color-neutral-950); background: var(--color-neutral-bone-highlight); }
+.ds-headline-controls label { display: flex; flex-direction: column; gap: 4px; min-width: 0; max-width: 100%; }
+.ds-headline-controls :is(select, textarea) { max-width: 100%; }
+.ds-headline-controls label:has(input[type='checkbox']) { flex-direction: row; }
+.ds-headline-controls textarea { width: 260px; min-height: 70px; }
+.ds-headline-section { padding: var(--inset-section); background: var(--color-neutral-950); }
+.ds-headline-process { background: var(--color-neutral-800); }
+.ds-headline-light { background: var(--color-neutral-50); }
+.ds-headline-hero { position: relative; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-80); }
+.ds-headline-hero__button { position: absolute; left: var(--space-120); bottom: var(--space-80); }
+.ds-headline-page { padding: var(--space-320) var(--layout-page-gutter) var(--space-200); }
+.ds-headline-event-allocation { padding: 0 var(--layout-page-gutter); }
+.ds-headline-community-allocation { padding: var(--space-120) var(--layout-page-gutter) 0; }
+.ds-headline-contact { padding: 0 var(--space-80) var(--space-80); }
+.ds-headline-contact__content { display: flex; align-items: flex-start; gap: var(--space-8); padding: var(--space-80); background: var(--color-brand-primary); }
+.ds-headline-contact__content > .loruni-content-headline { flex: 2 0 0; width: 0; }
+.ds-headline-contact__sibling { flex: 1 0 0; min-width: 0; }
+.ds-headline-frame { overflow: auto; }
+.ds-headline-frame iframe { height: 844px; max-width: none; border: 0; display: block; }
+@media (810px <= width < 1200px) {
+  .ds-headline-hero__button { left: var(--space-40); bottom: var(--space-40); }
+  .ds-headline-contact { padding: 0 var(--space-32) var(--space-32); }
+  .ds-headline-contact__content { padding: var(--space-80) var(--space-40); }
+}
+@media (width < 810px) {
+  .ds-headline-hero { justify-content: flex-end; align-items: flex-start; padding: 0 var(--space-12) var(--space-80); }
+  .ds-headline-hero__button { position: relative; inset: auto; }
+  .ds-headline-experience { padding-inline: var(--space-20); }
+  .ds-headline-page { padding: var(--space-100) var(--space-12); }
+  .ds-headline-contact { padding: 0 var(--space-12) var(--space-12); }
+  .ds-headline-contact__content { flex-direction: column; gap: var(--space-24); padding: var(--space-80) var(--space-20); }
+  .ds-headline-contact__content > .loruni-content-headline { flex: none; width: 100%; }
+}
+:is(#ds-component-hero-fitted-headline, #ds-component-labelled-stagger-headline) .ds-component-grid { grid-template-columns: minmax(0, 1fr); }
